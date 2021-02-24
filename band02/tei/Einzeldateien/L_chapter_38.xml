@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch38" n="38"><head>38.
+DU FROTTEMENT. UN RÉSUMÉ</head>
+<pb type="VIII_2" n="366"/><head>[Ende 1675]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Reinschrift mit Verbesserungen:
+LH XXXVII 5 Bl. 142.
+1 Bl. 4<hi rendition="#sup">o</hi>.
+1 S. auf Bl. 142 r<hi rendition="#sup">o</hi>. Bl. 142 v<hi rendition="#sup">o</hi> leer.
+Blatt durch Papiererhaltungsmaßnahmen stabilisiert.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 948</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch38.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Im vorliegenden Stück N. 38 werden die relevantesten Ergebnisse der Untersuchung über die Reibung als Ursache der gleichförmigen Verzögerung eines sich in einem widerstehenden Medium bewegenden Körpers nahezu stichwortartig zusammenfasst.
+Sämtliche in N. 36 formulierten einschlägigen Thesen sind auch in N. 38 anzutreffen.
+Demgemäß dürfte N. 38 zu etwa der gleichen Zeit wie N. 36 entstanden sein.</hi></p></div><div type="text"><p xml:id="Ch38.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[142 r<hi rendition="#sup">o</hi>]</fw> Personne ayant reduit sous des Loix Geometriques la perte du mouuement qui se fait par le <hi rendition="#g">frottement</hi> du mobile contre son support, ou contre le milieu par le quel il passe; j’y ay travaillé depuis quelques jours, et je trouue la recherche assez considerable.</p><p xml:id="Ch38.p6">Car les corps jettés, les pendules, les balances, <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">les pompes,</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> les machines à lever des fardeaux, <app type="Bfootnote"><lem type="main">les vaisseaux,</lem><rdg wit="#L" cause="deletion">vaisseaux <note type="editorial">|</note> <del>qui ont de la peine à percer l’eau</del>  <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> , <hi rendition="#i">L</hi></rdg></app> y sont interessez, et je m’étonne qu’une partie si necessaire de la mechanique <app type="Bfootnote"><lem type="main">n’a</lem><note type="lemma-abbrev">n’</note><rdg wit="#L" n="1"> ait </rdg><rdg wit="#L" n="2"> a <hi rendition="#i">L</hi></rdg></app> pas encor esté <app type="Bfootnote"><lem type="main">cultivée. Souuent des beaux projets n’ont pas reussi, à cause de l’imperfection de la matiere, ou plustost à cause du frottement, dont les Mathematiciens ne parlent quasi point, comme si c’estoit une chose purement materielle et sujette au hazard et incapable de calcul.</lem><note type="lemma-abbrev">cultivée</note><rdg wit="#L" n="1"> .  </rdg><rdg wit="#L" n="2"> dont la faute a fait que souuent </rdg><rdg wit="#L" n="3"> . Souuent <seg type="apparat-ellipsis"/> calcul. <hi rendition="#i">L</hi></rdg></app></p><p xml:id="Ch38.p7">Galilaei<index indexName="Namensregister"><term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term></index> a traité de l’acceleration et de la diminution du mouuement qui vient de la pesanteur; et il a demonstré geometriquement certaines <app type="Cfootnote"><lem type="main">propositions,</lem><note type="lemma-abbrev">propositions</note><note type="editorial"><bibl corresp="#bib_00050"><bibl corresp="#bib_00048">Vgl. den Abschnitt <hi rendition="#i">De motu naturaliter accelerato</hi> in G. <hi rendition="#k">Galilei</hi>, <hi rendition="#i">Discorsi</hi>, Leiden 1638, S. 156ff. (<hi rendition="#i">GO</hi> VIII, S. 197ff.).</bibl></bibl></note></app> <app type="Bfootnote"><!--is-correction-app-with-future-lemma--><lem type="main"><corr resp="#ed">[qui]</corr></lem><rdg wit="#L"><orig>que </orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> sont toutes differentes de celles que j’ay établies à l’égard du retardement qui vient du frottement. En voicy quelques unes des miennes[:]</p><p xml:id="Ch38.p8" rendition="#hangindent">Dans un mouuement uniforme en soy même, mais retardé <app type="Bfootnote"><lem type="main">continuellement</lem><rdg wit="#L" cause="addition"><add>continuellement</add>  <note type="editorial"><hi rendition="#i">erg.  L</hi></note></rdg></app> par le<!--  \hack{\\
+\hspace*{7,5mm}} -->frottement d’un milieu homogene;</p><p xml:id="Ch38.p9" rendition="#noindent #hangindent">Les <hi rendition="#g">temps</hi> employés estant comme des <hi rendition="#g">nombres,</hi> <hi rendition="#g">les espaces</hi> parcourus se<pb type="VIII_2" n="367"/>ront comme leurs <hi rendition="#g">Logarithmes.</hi></p><p xml:id="Ch38.p10" rendition="#hangindent">NB. Voicy la representation des Logarithmes par la Physique, quoyque on n’ait pû<!--  \hack{\\
+\hspace*{7,5mm}} -->encor les representer dans la Geometrie, par une ligne exactement descriptible.</p><p xml:id="Ch38.p11" rendition="#noindent #hangindent">Les espaces parcourus estant en progression Arithmetique, les temps employés seront en progression geometrique.</p><p xml:id="Ch38.p12" rendition="#noindent #hangindent">Les forces<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Über</hi> forces: vitesses</note> du corps dans chaque moment du mouuement, sont en raison reciproque des temps employés.</p><p xml:id="Ch38.p13" rendition="#noindent #hangindent">Les retardations ne sont pas uniformes (: <app type="Bfootnote"><lem type="main">comme celles</lem><note type="lemma-abbrev">comme</note><rdg wit="#L" n="1"> dans les co </rdg><rdg wit="#L" n="2"> celles <hi rendition="#i">L</hi></rdg></app> qui viennent de la pesanteur :) mais en raison reciproque doublée, des
+temps.<anchor xml:id="_37.05_142r_01"/></p><p xml:id="Ch38.p14" rendition="#noindent #hangindent">Un corps<anchor xml:id="_37.05_142r_02"/><app type="Bfootnote" from="#_37.05_142r_01" to="#_37.05_142r_02"><lem type="main"/><note type="lemma-abbrev">temps.</note><rdg wit="#L" n="1"> Les memes <app><rdg wit="#L" n="a">raiso </rdg><rdg wit="#L" n="b">retardations sont co </rdg></app></rdg><rdg wit="#L" n="2"> Un corps <hi rendition="#i">L</hi></rdg></app> porté en même temps par deux mouuements, l’un uniforme, l’autre decroissant à cause du frottement, décrira cette ligne admirable, qu’on appelle communement <hi rendition="#g">Logarithmique</hi> la quelle si elle pouuoit estre décrite exactement par un certain mouuement continu, seroit d’un <app type="Bfootnote"><lem type="main">usage incomparable</lem><note type="lemma-abbrev">usage</note><rdg wit="#L" n="1"> admirable </rdg><rdg wit="#L" n="2"> incomparable <hi rendition="#i">L</hi></rdg></app> dans les mathematiques. Mais jusqu’icy on n’en a pû donner, qu’un certain nombre fini des points.</p></div></div></body>
+  </text>
+</TEI>

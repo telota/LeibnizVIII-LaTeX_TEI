@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-09" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="undef" xml:id="Chx6">
+     <pb type="VIII_1" n="677"/><head rendition="#smaller">SIGLEN, ABKÜRZUNGEN, ZEICHEN</head> 
+<!--  \hack{ } -->    
+      <p xml:id="Chx6.p1"><hi rendition="#smaller">1. SIGLEN UND EDITORISCHE ZEICHEN</hi><lb/><hi rendition="#smaller">
+</hi><table>
+          
+            <row>
+              <cell><hi rendition="#smaller"/><hi rendition="#i #smaller">E</hi><hi rendition="#smaller"/></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">Erstdruck</hi></cell>
+            </row>
+            <row>
+              <cell><hi rendition="#smaller"/><hi rendition="#i #smaller">E</hi><hi rendition="#smaller"/><hi rendition="#smaller #sup">1</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">E</hi><hi rendition="#smaller"/><hi rendition="#smaller #sup">2</hi></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">weitere Drucke</hi></cell>
+            </row>
+            <row>
+              <cell><hi rendition="#smaller"/><hi rendition="#i #smaller">L</hi><hi rendition="#smaller"/></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">Leibniz, eigenhändig</hi></cell>
+            </row>
+            <row>
+              <cell><hi rendition="#smaller"/><hi rendition="#i #smaller">l</hi><hi rendition="#smaller"/></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">Leibniz, Abschrift von Schreiberhand</hi></cell>
+            </row>
+            <row>
+              <cell><hi rendition="#smaller"/><hi rendition="#i #smaller">A</hi><hi rendition="#smaller"/></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">Abschrift eines fremden Textes</hi></cell>
+            </row>
+            <row>
+              <cell><hi rendition="#smaller"/><hi rendition="#i #smaller">LiH</hi><hi rendition="#smaller"/></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">Leibniz’ eigenhändige Bemerkungen in einem Handexemplar</hi></cell>
+            </row>
+            <row>
+              <cell><hi rendition="#smaller"/><hi rendition="#i #smaller">Lil</hi><hi rendition="#smaller"/></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">Leibniz’ Korrekturen zu einer Abschrift von Schreiberhand</hi></cell>
+            </row>
+            <row>
+              <cell><hi rendition="#smaller"/><hi rendition="#i #smaller">LiA</hi><hi rendition="#smaller"/></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">Leibniz’ Bemerkungen und Korrekturen in der Abschrift eines fremden Textes</hi></cell>
+            </row>
+            <row>
+              <cell><formula xml:id="Chx6.p1.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo maxsize="80%" minsize="80%" rspace="7.5pt">[</m:mo><m:mo maxsize="80%" minsize="80%">]</m:mo></m:mrow></m:math></formula></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">in der Datierung: erschlossenes Datum</hi><!--  \hack{\newline} 
+     \hackfor{\\ &amp;}--></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">im Text: Ergänzungen des Herausgebers</hi><!--  \hack{\newline} 
+     \hackfor{\\ &amp;}--></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">von Leibniz gelegentlich benutzte eckige Klammern werden im Erläuterungsapparat angezeigt</hi></cell>
+            </row>
+            <row>
+              <cell><hi rendition="#smaller"/><hi rendition="#i #smaller">[ ]</hi><hi rendition="#smaller"/></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">vom Herausgeber hinzugefügte Figurenbezeichnungen</hi></cell>
+            </row>
+            <row>
+              <cell><hi rendition="#smaller"/><hi rendition="#i #smaller">( )</hi><hi rendition="#smaller"/></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">von Leibniz in Figuren seines Handexemplars hinzugefügte Bezeichnungen</hi></cell>
+            </row>
+            <row>
+              <cell><formula xml:id="Chx6.p1.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo maxsize="80%" minsize="80%">⟨</m:mo></m:math></formula><hi rendition="#smaller"> </hi><formula xml:id="Chx6.p1.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo maxsize="80%" minsize="80%">⟩</m:mo></m:math></formula></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">Konjektur schwer lesbarer oder durch Beschädigung des Textzeugen ausgefallener Wörter bzw. Wortteile</hi></cell>
+            </row>
+            <row>
+              <cell><formula xml:id="Chx6.p1.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo maxsize="80%" minsize="80%">⟨</m:mo></m:math></formula><hi rendition="#smaller">–</hi><formula xml:id="Chx6.p1.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo maxsize="80%" minsize="80%">⟩</m:mo></m:math></formula><hi rendition="#smaller"> </hi><formula xml:id="Chx6.p1.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo maxsize="80%" minsize="80%">⟨</m:mo></m:math></formula><hi rendition="#smaller">––</hi><formula xml:id="Chx6.p1.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo maxsize="80%" minsize="80%">⟩</m:mo></m:math></formula></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">nicht entziffertes bzw. durch Beschädigung ausgefallenes Wort; die Anzahl der Striche entspricht der Anzahl der vermuteten Wörter.</hi></cell>
+            </row>
+            <row>
+              <cell><hi rendition="#smaller"/><hi rendition="#i #smaller">Kursivierung</hi><hi rendition="#smaller"/></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">wörtliche oder fast wörtliche Zitate, Buchtitel, vom Herausgeber hinzugefügter Text. Fast wörtlich meint geringfügige Abweichungen ohne Signifikanz wie flüchtige Wiedergaben der Wortfolge oder Kasusänderungen durch Leibniz.</hi></cell>
+            </row>
+            <row>
+              <cell><hi rendition="#g #smaller">Sperrung</hi></cell>
+              <cell style="; width:313.0pt"><hi rendition="#smaller">Hervorhebungen von Leibniz. Die Art der Hervorhebung wird im Erläuterungsapparat angezeigt.</hi></cell>
+            </row>
+          
+        </table><hi rendition="#smaller"/></p>
+    
+    
+      <p xml:id="Chx6.p2"><hi rendition="#smaller">2. ABKÜRZUNGEN (allgemein)</hi></p>
+    
+    
+      
+      <table>
+        <row>
+          <cell><hi rendition="#smaller">a.a.O.</hi></cell>
+          <cell><hi rendition="#smaller">am angegebenen Ort</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">Anm.</hi></cell>
+          <cell><hi rendition="#smaller">Anmerkung</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">Aufl.</hi></cell>
+          <cell><hi rendition="#smaller">Auflage</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">Bd(e)</hi></cell>
+          <cell><hi rendition="#smaller">Band (Bände)</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">Bl.</hi></cell>
+          <cell><hi rendition="#smaller">Blatt</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">Bog.</hi></cell>
+          <cell><hi rendition="#smaller">Bogen</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">bzw.</hi></cell>
+          <cell><hi rendition="#smaller">beziehungsweise</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">ca</hi></cell>
+          <cell><hi rendition="#smaller">circa</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">ebd.</hi></cell>
+          <cell><hi rendition="#smaller">ebenda</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">erg.</hi></cell>
+          <cell><hi rendition="#smaller">ergänzt</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">Fig.</hi></cell>
+          <cell><hi rendition="#smaller">Figur</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">f.</hi></cell>
+          <cell><hi rendition="#smaller">folgend</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">ff.</hi></cell>
+          <cell><hi rendition="#smaller">folgende (pl.)</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">gestr.</hi></cell>
+          <cell><hi rendition="#smaller">gestrichen</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">Hrsg. (hrsg.)</hi></cell>
+          <cell><hi rendition="#smaller">Herausgeber (herausgegeben)</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">Jh.</hi></cell>
+          <cell><hi rendition="#smaller">Jahrhundert</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">k.E.</hi></cell>
+          <cell><hi rendition="#smaller">kein Eintrag</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LBr</hi></cell>
+          <cell><hi rendition="#smaller">HANNOVER,</hi> <hi rendition="#i #smaller">Gottfried Wilhelm Leibniz-Bibliothek</hi><hi rendition="#smaller">, Leibniz-Briefwechsel</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH</hi></cell>
+          <cell><hi rendition="#smaller">HANNOVER,</hi> <hi rendition="#i #smaller">Gottfried Wilhelm Leibniz-Bibliothek</hi><hi rendition="#smaller">, Leibniz-Handschriften</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">Marg.</hi></cell>
+          <cell><hi rendition="#smaller">Marginalie(n)</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">Ms.</hi></cell>
+          <cell><hi rendition="#smaller">Manuskript</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">N., Nr.</hi></cell>
+          <cell><hi rendition="#smaller">Nummer</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">Nachdr.</hi></cell>
+          <cell><hi rendition="#smaller">Nachdruck</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">o. S.</hi></cell>
+          <cell><hi rendition="#smaller">ohne Seitenangabe</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">r</hi><hi rendition="#smaller #sup">o</hi></cell>
+          <cell><hi rendition="#smaller">recto</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">RS</hi></cell>
+          <cell><hi rendition="#smaller">Royal Society</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S.</hi></cell>
+          <cell><hi rendition="#smaller">Seite</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">s.a.</hi></cell>
+          <cell><hi rendition="#smaller">siehe auch</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">s.o.</hi></cell>
+          <cell><hi rendition="#smaller">siehe oben</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">s.u.</hi></cell>
+          <cell><hi rendition="#smaller">siehe unten</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">Sp.</hi></cell>
+          <cell><hi rendition="#smaller">Spalte</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">SV</hi></cell>
+          <cell><hi rendition="#smaller">Schriftenverzeichnis</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">TD</hi></cell>
+          <cell><hi rendition="#smaller">Teildruck</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">tlw.</hi></cell>
+          <cell><hi rendition="#smaller">teilweise</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">u.a.</hi></cell>
+          <cell><hi rendition="#smaller">und andere, unter anderem</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">v.</hi></cell>
+          <cell><hi rendition="#smaller">van, von</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">Var.</hi></cell>
+          <cell><hi rendition="#smaller">Variante</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">vgl.</hi></cell>
+          <cell><hi rendition="#smaller">vergleiche</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">vermutl.</hi></cell>
+          <cell><hi rendition="#smaller">vermutlich</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">v</hi><hi rendition="#smaller #sup">o</hi></cell>
+          <cell><hi rendition="#smaller">verso</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">Z.</hi></cell>
+          <cell><hi rendition="#smaller">Zeile</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">\Denarius</hi></cell>
+          <cell><hi rendition="#smaller">destilletur, distilletur (noch zu bedenken)</hi></cell>
+        </row>
+      </table>
+    
+    
+      <pb type="VIII_1" n="678"/><p xml:id="Chx6.p3" rendition="#noindent"><hi rendition="#smaller">3. ABKÜRZUNGEN (Schriften)</hi></p>
+    
+    
+      <p xml:id="Chx6.p4" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#i #smaller">BH</hi><hi rendition="#smaller">:</hi> <hi rendition="#k #smaller">Birch, Th.</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">The History of the Royal Society of London for improving of natural knowledge: from its first rise</hi><hi rendition="#smaller">, London 1757.</hi></p>
+    
+    
+      <p xml:id="Chx6.p5" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#i #smaller">BW</hi><hi rendition="#smaller">:</hi> <hi rendition="#k #smaller">Boyle, R.</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">The Works</hi><hi rendition="#smaller">, hrsg. von M. Hunter und E. B. Davis, London 1999ff.</hi></p>
+    
+    
+      <p xml:id="Chx6.p6" rendition="#noindent #hangindent"><hi rendition="#smaller">Cc 2:</hi> <hi rendition="#i #smaller">Catalogue critique des manuscrits de Leibniz, Fascicule II (Mars 1672–Novembre 1676)</hi><hi rendition="#smaller">, hrsg. von A. Rivaud u.a., Poitiers 1914–1924.</hi></p>
+    
+    
+      <p xml:id="Chx6.p7" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#i #smaller">DO</hi><hi rendition="#smaller">:</hi> <hi rendition="#k #smaller">Descartes, R.</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Oeuvres</hi><hi rendition="#smaller">, hrsg. von Ch. Adam u. P. Tannery, 12 Bde, Paris 1879–1910, 2. Aufl. ebd. 1964–1972.</hi></p>
+    
+    
+      <p xml:id="Chx6.p8" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#k #smaller">Dutens</hi><hi rendition="#smaller">:</hi> <hi rendition="#k #smaller">Leibniz, G. W.</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Opera omnia, nunc primum collecta, in classes distributa, praefationibus et indicibus exornata</hi><hi rendition="#smaller">, hrsg. von L. Dutens, 6 Bde, Genf 1768, Nachdr. Hildesheim 1989.</hi></p>
+    
+    
+      <p xml:id="Chx6.p9" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#k #smaller">Gerland</hi> <hi rendition="#smaller">1906:</hi> <hi rendition="#k #smaller">Leibniz, G. W.</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Nachgelassene Schriften physikalischen, mechanischen und technischen Inhalts</hi><hi rendition="#smaller">, hrsg. von E. Gerland, Leipzig 1906, Nachdr.: Hildesheim, New York 1995.</hi></p>
+    
+    
+      <p xml:id="Chx6.p10" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#i #smaller">GO</hi><hi rendition="#smaller">:</hi> <pb type="VIII_1" n="679"/><hi rendition="#k #smaller">Galilei, G.</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Le Opere</hi><hi rendition="#smaller">, Edizione Nazionale, hrsg. von A. Favaro u.a., 20 Bde, Florenz 1890–1909. Neuausgabe von S. Garbasso u. Mitarbeiter, Florenz 1929–1932.</hi></p>
+    
+    
+      <p xml:id="Chx6.p11" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#i #smaller">GOO</hi><hi rendition="#smaller">:</hi> <hi rendition="#k #smaller">Gassendi, P.</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Opera omnia</hi><hi rendition="#smaller">, 6 Bde, Lyon 1658, Nachdr.: Stuttgart-Bad Cannstatt 1964.</hi></p>
+    
+    
+      <p xml:id="Chx6.p12" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#i #smaller">HO</hi><hi rendition="#smaller">:</hi> <hi rendition="#k #smaller">Huygens, Chr.</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Oeuvres complètes</hi><hi rendition="#smaller">, hrsg. von D. Bierens de Haan, J. Bosscha u.a., 22 Bde, Den Haag 1888–1950.</hi></p>
+    
+    
+      <p xml:id="Chx6.p13" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#i #smaller">JS</hi><hi rendition="#smaller">:</hi> <hi rendition="#i #smaller">Journal des Sçavans</hi><hi rendition="#smaller">, Paris 1665ff.</hi></p>
+    
+    
+      <p xml:id="Chx6.p14" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#i #smaller">KGW</hi><hi rendition="#smaller">:</hi> <hi rendition="#k #smaller">Kepler, J.</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Gesammelte Werke</hi><hi rendition="#smaller">, hrsg. von der Bayerischen Akademie der Wissenschaften, München 1923ff.</hi></p>
+    
+    
+      <p xml:id="Chx6.p15" rendition="#noindent #hangindent"><hi rendition="#smaller">KK 1:</hi> <hi rendition="#i #smaller">Kritischer Katalog der Leibniz-Handschriften, 1. Heft 1646–1672</hi><hi rendition="#smaller">, hrsg. von P. Ritter, als Manuskript veröffentlicht Berlin 1908.</hi></p>
+    
+    
+      <p xml:id="Chx6.p16" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#i #smaller">LSB</hi><hi rendition="#smaller">:</hi> <hi rendition="#k #smaller">Leibniz, G. W.</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Sämtliche Schriften und Briefe</hi><hi rendition="#smaller">, Akademie Ausgabe, Darmstadt 1923ff. (seit 1954: Berlin).</hi></p>
+    
+    
+      <p xml:id="Chx6.p17" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#i #smaller">PO</hi><hi rendition="#smaller">:</hi> <hi rendition="#k #smaller">Pascal, B.</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Oeuvres</hi><hi rendition="#smaller">, hrsg. von P. Boutroux, L. Brunschvicg, F. Gazier, 14 Bde, Paris 1904–1914, Nachdr.: Vaduz 1965.</hi></p>
+    
+    
+      <p xml:id="Chx6.p18" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#i #smaller">PT</hi><hi rendition="#smaller">:</hi> <hi rendition="#i #smaller">Philosophical Transactions</hi><hi rendition="#smaller">, London 1665ff.</hi></p>
+    
+    
+      <p xml:id="Chx6.p19" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#i #smaller">SPW</hi><hi rendition="#smaller">:</hi> <hi rendition="#k #smaller">Stevin, S.</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">The principal works</hi><hi rendition="#smaller">, hrsg. von E. J. Dijksterhuis u.a., Amsterdam 1955–1966.</hi></p>
+    
+    
+      <p xml:id="Chx6.p20" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#i #smaller">TO</hi><hi rendition="#smaller">:</hi> <hi rendition="#k #smaller">Torricelli, E.</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Opere</hi><hi rendition="#smaller">, hrsg. von G. Loria, G. Vassura, 4 Bde, Faenza 1919–1944.</hi></p>
+    
+    
+      <p xml:id="Chx6.p21" rendition="#noindent #hangindent"><hi rendition="#smaller"/><hi rendition="#i #smaller">WO</hi><hi rendition="#smaller">:</hi> <hi rendition="#k #smaller">Wallis, J.</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Opera mathematica</hi><hi rendition="#smaller">, 3 Bde, Oxford 1693–1699, Nachdr.: Hildesheim 1972.</hi></p>
+    
+    
+      <p xml:id="Chx6.p22"><hi rendition="#smaller">4. SYMBOLE UND ZEICHEN</hi></p>
+    
+    
+      
+      <table>
+        <row>
+          <cell><hi rendition="#smaller">♁</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Antimon</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">♄</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Blei (Saturn)</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">♂</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Eisen (Mars)</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">☉</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Gold (Sonne)</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">☿</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Quecksilber (Merkur)</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">\Pfund</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Pfund</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">☽</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Silber (Mond)</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">♃</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Zinn (Jupiter)</hi></cell>
+        </row>
+        <row>
+          <cell><graphic url="../images/vitriol.svg" width="8.6724pt" xml:id="Chx6.T3.g1"/></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Vitriol</hi></cell>
+        </row>
+        <row>
+          <cell><graphic url="../images/salpeter.svg" width="8.6724pt" xml:id="Chx6.T3.g2"/></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Salpetersäure</hi></cell>
+        </row>
+        <row>
+          <cell><graphic url="../images/taros.svg" width="8.6724pt" xml:id="Chx6.T3.g3"/></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Weinstein</hi></cell>
+        </row>
+        <row>
+          <cell><formula xml:id="Chx6.T3.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo mathsize="80%" stretchy="false">△</m:mo></m:math></formula></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Wasser</hi></cell>
+        </row>
+        <row>
+          <cell><graphic url="../images/oleum.svg" width="8.6724pt" xml:id="Chx6.T3.g4"/></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Öl</hi></cell>
+        </row>
+        <row>
+          <cell><formula xml:id="Chx6.T3.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo mathsize="80%" stretchy="false">⌢</m:mo></m:math></formula></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Multiplikation</hi></cell>
+        </row>
+        <row>
+          <cell><formula xml:id="Chx6.T3.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo mathsize="80%" stretchy="false">⌣</m:mo></m:math></formula></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Division</hi></cell>
+        </row>
+        <row>
+          <cell><formula xml:id="Chx6.T3.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo mathsize="80%" stretchy="false">▽</m:mo></m:math></formula></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Dreieck</hi></cell>
+        </row>
+        <row>
+          <cell>—</cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Kürzung eines Bruchs</hi></cell>
+        </row>
+        <row>
+          <cell><formula xml:id="Chx6.T3.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi mathsize="80%">f</m:mi></m:math></formula></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">facit</hi></cell>
+        </row>
+        <row>
+          <cell><!--  \hack{$\square$ \fbox{2}} 
+     \hackfor{$\square\boxed{2}$}--><formula xml:id="Chx6.T3.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi mathsize="80%" mathvariant="normal">□</m:mi><m:mo>⁢</m:mo><m:menclose notation="box"><m:mn mathsize="80%">2</m:mn></m:menclose></m:mrow></m:math></formula></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Quadrat</hi></cell>
+        </row>
+        <row>
+          <cell><!--  \hack{\fbox{3}} 
+     \hackfor{$\boxed{3}$}--><formula xml:id="Chx6.T3.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:menclose notation="box"><m:mn mathsize="80%">3</m:mn></m:menclose></m:math></formula><hi rendition="#smaller">cub.</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Kubus</hi></cell>
+        </row>
+        <row>
+          <cell><formula xml:id="Chx6.T3.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo mathsize="80%" stretchy="false">√</m:mo><m:mo mathsize="80%" mathvariant="italic" separator="true" stretchy="false">   </m:mo><m:msqrt><m:mi/></m:msqrt></m:mrow></m:math></formula></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Quadratwurzel</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">=, aequ., aeq.,</hi> <formula xml:id="Chx6.T3.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo mathsize="80%" stretchy="false">⊓</m:mo></m:math></formula></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">gleich</hi></cell>
+        </row>
+        <row>
+          <cell><formula xml:id="Chx6.T3.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mpadded width="-5.5pt"><m:mpadded depth="-0.8pt" height="+0.8pt"><m:mi mathsize="80%" mathvariant="normal">⌝</m:mi></m:mpadded></m:mpadded><m:mo maxsize="80%" minsize="80%" rspace="5.5pt">|</m:mo></m:mrow></m:math></formula></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">größer als</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">, ,, ,,,</hi> <formula xml:id="Chx6.T3.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi mathsize="80%" mathvariant="normal">⌞</m:mi><m:mo>⁢</m:mo><m:mi mathsize="80%" mathvariant="normal">⌟</m:mi></m:mrow></m:math></formula></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Klammerausdrücke</hi></cell>
+        </row>
+        <row>
+          <cell><!--  \hack{\ovalbox{\makebox[15mm][l]{~~~}}} 
+     \hackfor{$\ovalbox{\hspace{15mm}}$}--><formula xml:id="Chx6.T3.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:menclose class="roundedbox" notation="roundedbox"><m:mtext class="positivehspace"/></m:menclose></m:math></formula></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Umrahmungen zur Bezeichnung wegfallender Terme</hi></cell>
+        </row>
+        <row>
+          <cell><graphic url="../images/pm.svg" style="; height: 7.503885pt" width="3.239951pt" xml:id="Chx6.T3.g5"/></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Vorzeichen plus minus</hi></cell>
+        </row>
+        <row>
+          <cell><graphic url="../images/mp.svg" style="; height: 7.503885pt" width="3.239951pt" xml:id="Chx6.T3.g6"/></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Vorzeichen minus plus</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">…</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller">Platzhalter für Terme</hi></cell>
+        </row>
+      </table>
+    
+  </div></body>
+  </text>
+</TEI>

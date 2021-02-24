@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="section" xml:id="Ch45.S3" n="453"><pb type="VIII_2" n="398"/><head>45<hi rendition="#sub">3</hi>.
+DE VECTIBUS CONJUGATIS 3</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi>
+<list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Konzept: LH XXXVII 3 Bl. 77-78. 1 Bog. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 77 r<hi rendition="#sup">o</hi>. Bl. 77 v<hi rendition="#sup">o</hi> leer. Bl. 78 überliefert N. 45<hi rendition="#sub">2</hi>.
+Je ein verschiedenes Wasserzeichen auf Bl. 77 und 78.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 1213 A</hi></p></item></list></p></div><div type="text"><p xml:id="Ch45.S3.p1" rendition="#c">De vectibus<index indexName="Sachverzeichnis"><term>vectis</term></index> conjugatis</p><p xml:id="Ch45.S3.p2" rendition="#noindent"><pb type="L"/><fw type="folNum">[77 r<hi rendition="#sup">o</hi>]</fw>
+<hi rendition="#g">Vectes<index indexName="Sachverzeichnis"><term>vectis</term></index> conjugati</hi> sunt quorum diversa sunt centra,
+et uno circa suum centrum moto contingit, ut alter quoque circa suum centrum moveatur; ita in fig. 1. sunt vectes<index indexName="Sachverzeichnis"><term>vectis</term></index> conjugati <hi rendition="#i">AC</hi>, et <hi rendition="#i">BC</hi> quorum centra <hi rendition="#i">A</hi> contactus in <hi rendition="#i">C</hi> ita ut vectis<index indexName="Sachverzeichnis"><term>vectis</term></index> <hi rendition="#i">BC</hi> non possit elevari quin <hi rendition="#i">AC</hi> elevetur, nec <hi rendition="#i">AC</hi> deprimi quin <hi rendition="#i">BC</hi>
+<app type="Bfootnote"><lem type="main">deprimatur. Potentiae<index indexName="Sachverzeichnis"><term>potentia</term></index></lem><note type="lemma-abbrev">deprimatur.</note><rdg wit="#L" n="1"> Intelligatur autem pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> <hi rendition="#i">a</hi> </rdg><rdg wit="#L" n="2"> Potentiae<index indexName="Sachverzeichnis"><term>potentia</term></index> <hi rendition="#i">L</hi></rdg></app>
+variis modis applicari possunt, sed experimenti faciendi causa optimum est, potentiam<index indexName="Sachverzeichnis"><term>potentia</term></index> ad vectem<index indexName="Sachverzeichnis"><term>vectis</term></index>
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">vel libram</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+<hi rendition="#i">B</hi> applicatam esse pondus<index indexName="Sachverzeichnis"><term>pondus</term></index>
+<app type="Bfootnote"><lem type="main">applicatum ejus brachio<index indexName="Sachverzeichnis"><term>brachium</term></index> inferiori</lem><note type="lemma-abbrev">applicatum</note><rdg wit="#L" n="1"> opposito </rdg><rdg wit="#L" n="2"> ejus brachio inferiori <hi rendition="#i">L</hi></rdg></app> in
+<formula xml:id="Ch45.S3.p2.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>θ</m:mi></m:math></formula>
+et potentiam<index indexName="Sachverzeichnis"><term>potentia</term></index> applicatam
+<app type="Bfootnote"><lem type="main">ad vectem<index indexName="Sachverzeichnis"><term>vectis</term></index></lem><note type="lemma-abbrev">ad</note><rdg wit="#L" n="1"> libram </rdg><rdg wit="#L" n="2"> vectem<index indexName="Sachverzeichnis"><term>vectis</term></index> <hi rendition="#i">L</hi></rdg></app>
+<hi rendition="#i">A</hi>, applicari superiori ejus brachio<index indexName="Sachverzeichnis"><term>brachium</term></index> in
+<formula xml:id="Ch45.S3.p2.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>η</m:mi></m:math></formula>.
+Ita sibi obnitentur, nam si velis potentiam<index indexName="Sachverzeichnis"><term>potentia</term></index> locare in (<formula xml:id="Ch45.S3.p2.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>η</m:mi></m:math></formula>) vel (<formula xml:id="Ch45.S3.p2.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>θ</m:mi></m:math></formula>) opus erit levitate, et machina<index indexName="Sachverzeichnis"><term>machina</term></index> in aqua locanda est,
+<app type="Bfootnote"><lem type="main">nisi animalia</lem><note type="lemma-abbrev">nisi</note><rdg wit="#L" n="1"> homines </rdg><rdg wit="#L" n="2"> animalia <hi rendition="#i">L</hi></rdg></app>
+aut Elateria<index indexName="Sachverzeichnis"><term>elaterium</term></index>, aut trochleas applicare velis.</p><p xml:id="Ch45.S3.p3">Jam ex datis rectis <formula xml:id="Ch45.S3.p3.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>η</m:mi></m:mrow></m:math></formula>, <formula xml:id="Ch45.S3.p3.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>θ</m:mi></m:mrow></m:math></formula>, <hi rendition="#i">AC</hi>, <hi rendition="#i">BC</hi> angulisque <hi rendition="#i">CAB</hi>, <hi rendition="#i">CBA</hi>, ac ponderibus<index indexName="Sachverzeichnis"><term>pondus</term></index> <formula xml:id="Ch45.S3.p3.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>η</m:mi><m:mo>,</m:mo><m:mi>θ</m:mi></m:mrow></m:math></formula> investigare virium rationem, quam alterum pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> alterius ratione habet, ac proinde ex datis rectis, et potentiis<index indexName="Sachverzeichnis"><term>potentia</term></index>, investigare angulos, ex datis lineis et angulis potentias<index indexName="Sachverzeichnis"><term>potentia</term></index>; ex caeteris datis investigare distantias potentiarum<index indexName="Sachverzeichnis"><term>potentia</term></index> a suis centris; aut ex caeteris datis investigare distantias puncti contactus a centris, aut potentiis<index indexName="Sachverzeichnis"><term>potentia</term></index>: ut potentia<index indexName="Sachverzeichnis"><term>potentia</term></index> altera in alteram virium rationem habeat datam, vel etiam ut fiat aequilibrium<index indexName="Sachverzeichnis"><term>aequilibrium</term></index> aliaque
+<app type="Bfootnote"><lem type="main">infinita problemata<index indexName="Sachverzeichnis"><term>problema</term></index></lem><note type="lemma-abbrev">infinita</note><rdg wit="#L" n="1"> theorema<index indexName="Sachverzeichnis"><term>theorema</term></index> </rdg><rdg wit="#L" n="2"> problemata<index indexName="Sachverzeichnis"><term>problema</term></index> <hi rendition="#i">L</hi></rdg></app> solvere quae ex horum combinatione nasci possint; res non adeo facilis ac parata
+<app type="Bfootnote"><lem type="main">est; et fateor ac theorema<index indexName="Sachverzeichnis"><term>theorema</term></index> generale, cujus unius ope possint omnes casus solvi, non parum</lem><note type="lemma-abbrev">est;</note><rdg wit="#L" n="1"> ac theorema<index indexName="Sachverzeichnis"><term>theorema</term></index> generale, <app><rdg wit="#L" n="a"> ex quo </rdg><rdg wit="#L" n="b"> quod </rdg><rdg wit="#L" n="c"> cujus unius ope <app><rdg wit="#L" n="aa"> solvi </rdg><rdg wit="#L" n="bb"> possint omnes casus solvi, </rdg></app></rdg></app></rdg><rdg wit="#L" n="2" cause="addition"> <note type="editorial">|</note> <add>et fateor</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> ac theorema <seg type="apparat-ellipsis"/> solvi, <app><rdg wit="#L" n="a"> non sine </rdg><rdg wit="#L" n="b"> non parum <hi rendition="#i">L</hi></rdg></app></rdg></app>
+negotii mihi facessisse.
+Juveni<index indexName="Sachverzeichnis"><term>juvenis</term></index> tamen, atque ita omnino id mihi enuntiare posse
+<app type="Bfootnote"><lem type="main">videor ut mox</lem><note type="lemma-abbrev">videor</note><rdg wit="#L" n="1"> praecedente </rdg><rdg wit="#L" n="2"> hac figurae praeparatione, ut </rdg><rdg wit="#L" n="3"> . In figura </rdg><rdg wit="#L" n="4"> ut mox <hi rendition="#i">L</hi></rdg></app>
+praecedente figurae praeparatione sequetur.
+In figura <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">quam vides</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> <app type="Bfootnote"><lem type="main">recta</lem><rdg wit="#L" cause="addition"><add>recta</add>  <note type="editorial"><hi rendition="#i">erg.  L</hi></note></rdg></app> <hi rendition="#i">CL</hi>
+perpendicularis ad
+<app type="Bfootnote"><lem type="main"><hi rendition="#i">BC</hi> perducatur</lem><note type="lemma-abbrev"><hi rendition="#i">BC</hi></note><rdg wit="#L" n="1"> vectem<index indexName="Sachverzeichnis"><term>vectis</term></index> <app><rdg wit="#L" n="a"> moventem </rdg><rdg wit="#L" n="b"> inferiorem </rdg></app></rdg><rdg wit="#L" n="2"> perducatur <hi rendition="#i">L</hi></rdg></app>
+dum ipsi <hi rendition="#i">AB</hi> occurrat in <hi rendition="#i">L</hi>.
+Ipsas <formula xml:id="Ch45.S3.p3.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>η</m:mi><m:mo>⁢</m:mo><m:mi>ξ</m:mi></m:mrow></m:math></formula> et <formula xml:id="Ch45.S3.p3.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>θ</m:mi><m:mo>⁢</m:mo><m:mi>λ</m:mi></m:mrow></m:math></formula> appellabimus <hi rendition="#g">altitudines</hi>.</p></div></div></body>
+  </text>
+</TEI>

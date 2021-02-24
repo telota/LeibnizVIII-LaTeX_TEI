@@ -1,0 +1,6432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="index" xml:id="Chx4_1">
+    <pb type="VIII_2" n="783"/><head rendition="#smaller">SACHEN</head>
+    
+    
+    <p xml:id="Chx4_2"><hi rendition="#smaller">Einträge in dieses Verzeichnis erfolgen in der jeweils von Leibniz verwendeten Sprache.
+Die Reihenfolge der Einträge ist rein alphabetisch bestimmt,
+eine systematische Gliederung findet nicht statt.
+Es wird nach Seiten zitiert.</hi></p>
+  
+    
+    <list>
+      <item>
+        <hi rendition="#smaller">abies, 503</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">abrasio, 758</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Académie Royale des Sciences, 343, 353, 699, 762</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acceleratio, 111, 118, 120, 134, 141, 143, 146, 222–224, 228, 237, 248, 251f., 300, 471, 731, 733</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acceleratio gravium, 269, 273</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acceleration, 216, 224, 226f., 308, 310, 320, 344, 354, 753</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">accessio febris, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">accessus et recessus maris, 7</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acclivitas, 66, 108</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acetum, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acetum squilliticum, 597</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acicula, 52</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acidum, 526, 654, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acidum vitrioli, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acier, 533, 770f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acmé, 677</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">actio, 238</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">actio Solis, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acumen soni, 475</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acus, 51</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acus magnetica, 722</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">adamas, 507</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">adeps, 509</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Aderlassen, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Aderöffnung, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">adhaesio, 757f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">adherence, 756f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">admixtio stibii, 492</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aedes, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aequatio mechanica, 133f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aequatio analytica, 133</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aequator, 8, 42, 51</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aequilibrium, 4, 133f., 235f., 373, 386f., 394–396, 398, 720</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aequilibrium brachiorum, 374</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aequilibrium virium, 235</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aequipondium aeris, 70</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aequivelox, 419</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aer, 52f., 76, 94–97, 268, 334f., 430, 441, 750f., 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aer frigidus, 494</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aer gravitans, 485</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aer in tubo, 467</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aer serotinus, 500</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aerugo, 504</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aestas, 482, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aestus maris, 6, 8</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aether, 4, 120, 247, 311</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aiguille, 48f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Africus, 8</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">agaricum, 506</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">agaricum minerale, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">agate, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">agens, 725</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aggregatum conatuum singulorum, 418</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">agitatio musculorum, 494</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aiguille, 226f., 763</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ail, 675</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aimant (aymant), 48f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">air, 431, 770</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aix, 752f., 755–757</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ala, 742, 745</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">alabaster, 601</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">albumen ovi, 489</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">albus creticus, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Alcahest Helmontianum, 516</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">alcali, 516</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">alga, 598</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Aloe Africana, 597</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">alteratio qualitatum, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">amalgama, 630</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">amarum, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">amourache, 677</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ampulla vitrea, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">amputation, 610</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">analyse, 213, 216</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">analyse géométrique, 234</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">analysis, 439</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">anatomia, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">anatomie, 650, 652, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">anemoscopium, 743</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">angelus, 67, 469</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">angulus decussationis, 505</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">angulus incidentiae, 710</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">angulus refractionis, 505</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">angulus refractus, 710</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">anhelitus, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">anima rationalis, 467</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">animalculum subtile, 503</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">animal, 503</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">animal altivolum, 504</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">anis, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">annulus, 51</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">antidote, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">antidotum, 635</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">antimoine, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">antimonium, 683</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">antimonium crudum, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">antlia, 96, 268</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">antlia Boyliana, 95</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">anus, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">apoplexia, 658</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">apostume, 675</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">apotheca, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Apotheke, 658</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Apotheker, 651, 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Apothekertaxen, 660</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">apparatus Hookii, 19</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Appetit, 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aqua, 50–52, 66, 95–97, 281, 334, 335, 442, 636</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aqua asperata, 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aqua calida, 466, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aqua cerebri, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aqua ferrea, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aqua fortis, 709</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aqua opaca, 489</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aqua pluvialis, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aqua rarefacta, 480</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aqua vitae, 630</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Arabes, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">arbor philosophica Chymicorum, 594</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">arbor, 510</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">arcanum, 658</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">architecture, 699–701</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">arcus, 136, 247f., 250–252, 713, 719</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">arcus et chorda, 478</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">arcus lunatus, 513</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">arena, 510, 512f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">argent, 532, 534, 596</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">argent de coupelle, 596</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">argilla, 509</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Aristotelis autoritas, 481</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">armature, 48</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ars natandi, 487</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ars vomendi, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">arteria aspera, 475</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">artichaut, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Arznei, 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ascia, 89</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">asperge, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">asperitas, 77</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">asthme, 675f., 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">astroites undulatus, 601</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">asymptotos, 104, 112, 239</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">athleta, 99</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">atomus, 525, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">atramentum, 489</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">attractio, 715, 738</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">attractio electrica, 475</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">attractio magnetica, 715, 738</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">attritus, 246f., 250f., 253–256, 268</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aura frigidissima, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">auris, 53</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Auster, 7, 8</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Australis, Austrinus, 7</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">automaton, 740</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">automaton exiguum, 18</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aveline, 600</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">avis, 98</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">avoine, 675</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">avolatio, 493</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">axe du monde, 535f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">axioma, 237f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">axiome de mechanique, 289</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">axioma mechanicae, 135</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">axis, 41f., 79f., 101, 104, 735</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">axis in peritrochio, 267</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">azimuth, 14, 18, 34</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Azzarolo, 605</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">baculus, 16, 168, 420, 424, 457, 515, 622–624</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">balance, 537–539</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">balancier, 66, 292f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">balle, 424, 428</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ballon, 431</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">balneum, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">balsamum, 509</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">balsamum sulphuris, 687</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">barre, 760</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bascule, 311</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bassin, 537, 539</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bateau, 759</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">battement, 423</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">beam-compass, 13</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Beichtvater, medizinalischer, 659</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">belladonna, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Bergkristall, 626</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Bezoar, 601–605</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">bibliotheque du roi, 702</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bilanx, 185</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bilis, 652f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">billard, 431</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bipennis, 89</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bistorta, 599</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bitumen, 500</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bitumen Judaicum, 605</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">blanc d’oeuf, 677</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Blut, 649f., 652</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bois, 540, 770</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bol blanc d’Armenie, 605</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Borea, 7f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Borealis (inhabitans), 497</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">boule, 430–432, 436</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bovis, 503</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">brachium, 99f., 173f., 178–180, 199, 201, 373f., 376, 386, 392, 398, 696, 732</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">brachium librae, 122</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bras, 386</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">brionie, 600</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bruma, 517</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bruslure, 675</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bufo, 635</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bulla, 95, 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bulla aeris, 127f., 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bullulum, 492</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">butyrum, 480, 509</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">butyrum liquidum, 489</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Caecia, 8</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">caillou, 533f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">calaber, 517</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">calcinatio, 490, 501</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">calculus vesicae, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">calor, 95, 469, 492, 516, 617–624, 664, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">calor solis, 499</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">calor vitalis, 494</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">calx, 513</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">calyx, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">camera obscura, 505</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">campana, 713, 714</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">campana tensa, 479</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">campana pulsata, 479</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">canal, 759</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">canaliculus, 489</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">canalis, 52</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">candela, 371</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">canis, 503</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cannelle, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">caput, 100, 498, 503, 656f., 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">caput urinatoris, 488</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">carbo, 495, 500, 511</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Carcharodon carcharias, 601</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cardon, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Carduus fullonum, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">caro, 490, 509, 635</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">carotte, 677</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">carpe, 697</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cassia, 683</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">catapulta rotata, 479</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">catarrhus, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">catena, 235, 236, 744</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">caudices, 512</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">caudices herbarum, 511</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">causa, 109, 235, 237–239</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">causa adaequata, 108</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">causa gravitatis, 109, 120</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">causa infinita, 238</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">causa mortis naturalis, 653, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">causa physica, 92</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">caverna, 53</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">celeritas, 82–85, 88–93, 101, 109–113, 118, 120, 171, 227, 241, 247f., 251–253, 261, 281f., 297, 299, 303, 305, 334, 338, 352, 361, 418, 427f., 437–443, 715, 718f., 721, 727, 738, 744, 771</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">celeritas absoluta, 444</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">celeritas conatus, 109</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">celeritas gravium, 482</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">celeritas ponderis, 227</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">celeritas quaesita, 86</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">celeritas respectiva, 429f., 438, 441</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">celeritas uniformis, 82</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cella, 507</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cellula, 67</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cenere di chebba, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Centaurium minus, 595</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">centre de gravité, 424</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">centrum divulsionis, 168, 185</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">centrum gravitatis, 8, 67, 71f., 78, 85f., 98–101, 134, 200, 236, 372–375, 402, 488, 526f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">centrum percussionis, 85f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">centrum virium, 86f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cera, 371</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cera alba, 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cera flava, 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cerebrum, 499</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cerfeuil, 609, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chaleur, 534, 770</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chalybs, 52, 507f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chandelle, 531</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chapelle, 702</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">charbon ardent, 595</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chardon, 598, 674</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">charniere, 311</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chaux, 530f., 534f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chelidonium, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chemineé, 770</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chesne, 599</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cheville, 311</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chicorée, 598, 611, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chirurgus, 651</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">choc, 293, 332f., 351, 424, 426–428, 431–436</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chopine, 697</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chorda, 4, 696</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chorda unisona, 473</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chordae tensae, 471</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Chrysanthemum creticum, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chymicus, 651</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cibus mercurius, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cicindelae, 501</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cicuta, 510, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cilia, 505</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ciment, 535</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cinabre, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cingulum pneumaticum, 487</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cinis, 52, 495, 499f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cinis purus, 493</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cinnabar, 504</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">circulatio sanguinis, 497</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">circulation, 524</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">circumactio, 190</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">circumforaneus, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cire, 49, 531f., 536f., 540</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">citron, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">clavus, 89</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">clima, 67</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">clystera, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Cnicus sylvestris, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">coagulatio, 509</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">coagulation, 534, 535</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cochlea, 81, 267, 479, 510, 716</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cochlea Archimedea, 127</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cogitatio, 525</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cohaesio, 171, 445, 758</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">colique, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">colle, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">collectio heterogeneorum, 480</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">collectio homogeneorum, 480</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">collectio uliginosarum, 494</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">color, 466, 501, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">color faciei, 661</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cometa, 6, 10, 20, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">compassus, 51</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">composition du mouuement, 756</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">compressio, 242, 470, 512, 720</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">compression, 532</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">conatus, 107, 109–112, 120, 148, 189, 241, 248, 384, 418–420, 739, 758</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">conatus approprinquationis, 757</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">conatus elevationis, 189</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">conatus impossibilis, 241</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">conatus impressus, 418</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">conatus incompossibilis, 241</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">conatus penetrationis, 242</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">conatus simplex, 111</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">conclavia dealbata, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">concours, 430, 432</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">concretio animalium, 480</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">concretio plantarum, 480</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">concursus, 241, 372, 419, 430, 439, 444</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">concursus directus, 440</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">condensatio, 470, 479, 516</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">conflictus, 418, 419</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">congelatio, 509</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">connexio, 526</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">consensus partium, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">constitutio corporis, 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">constructio, 741</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">contactus, 78, 91, 93</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">contignatio, 73f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">continuum, 524</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">convexitas vitri, 516</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corail, 593–596, 599, 606–608, 611</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">corallium, 594</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corde, 756</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corne d’ammon, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cornea, 503</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cornu, 476</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corps choquant, 426</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corps jeté, 344, 354</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corps mol, 426f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corpus aequivelox, 418</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corpus animalis, 506</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corpus arenulum, 508</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corpus bubulum, 510</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corpus coelestis, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corpus cylindricum, 417–419</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corpus elasticum, 89, 242, 440, 442</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corpus grave, 134, 237</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corpus humanum, 507</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corpus porcinum, 510</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corpuscule, 531, 532, 535</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corpusculum, 335</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corroyement, 532</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cortex mali, 517</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cos, 508</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cotinus coggygria, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">coton, 48, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">couperose, 675</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">courant d’eau, 762</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cranium, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">crassities, 199–201, 445</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">crassitudo, 515</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cremor tartari, 683</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cresson des prez, 599</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">cristallisatio, 371</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cristallus, 52, 371</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">croceus (color), 501</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">crocus, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">crocus martis, 628</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cubiculum, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cucurbitula, 491</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cucurbitulae Belgicae, 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cuir, 532</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cuivre, 532–534</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cultrivorus, 663, 666</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cuneus, 70, 88f., 267</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">curcuma, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">currus, 76, 80</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cutis, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cycloeides, 101</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cydoniacum, 683</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cylinder, 223</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cylinder aquae, 482</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cyperus, 598</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">daemon, 67</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">declinatio, 42f., 51</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">declinationes stellarum, 17</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">declivitas, 108</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">decrementum celeritatis, 305</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">defectus humoris, 512</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">defluvium, 502</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">degré de vitesse, 311, 344, 351, 354</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">demonstratio, 133, 135</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">dens, 76, 252, 512, 743, 744</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">densatio, 496, 525</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">densitas, 525</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">densitas homogenea, 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">dent, 232, 311</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">descensio gravium, 481</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">descensus, 141f., 236, 238</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">descensus gravium, 472</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">desert, 770</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">destillatio, 502</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">destillieren, 649, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">detrimentum, 247, 251, 267</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">detrimentum motus, 246, 267, 279, 442</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">detumescentia corporis, 499</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">diameter (diametrus) Solis, 17f., 37</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">diametre, 215f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">diaphoretique, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">diastole, 499</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Diät, 653, 659, 660</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">differentia celeritatum, 417, 419</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">differentia virium, 190</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">digestion, 595f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">digue, 759f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">dioptra, 10–14, 17–21, 23–25, 27, 31, 34f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">directio, 108</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">direction, 423, 427</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">disiectio, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">dissolvieren, 650</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">distillatio, 474</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">distillation, 631</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">distiller, 631</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">distractio, 190</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">divisio diagonalium, 10</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">divisio Heveliana, 9</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">divisio Nonnii, 10</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">divisio Tychonica, 12</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">divulsio, 168, 171, 201</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">doctrina motus gravium, 208</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">dolabra, 104</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">dolium, 492</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">dolor, 497, 657, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">dorsum, 503</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">douleur des yeux, 675</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ductilitas, 513</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ductus, 652</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">dulce, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">dureté, 530, 532, 534</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">durities, 241f., 525</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">durities vitri, 492</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">dysenterie, 674</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">eau, 431, 530–537, 539f., 753, 755, 759, 770</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">eau de rose, 675, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">eau de vie, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">eau forte, 596</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">eau puteoly, 535</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ebur fossile, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">eclipsis, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ecliptica, 11, 19</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">écu, 697</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">eelbogen, 685</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">effectus, 83, 92, 108f., 177, 235, 237–239, 241f., 444, 725, 740</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">effectus aequalis, 237</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">effectus aequipollens, 237</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">effectus infinite parvus, 239</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">effectus infinitus, 238, 239</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">effectus plenus, 237</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">effervescence, 535</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">effet, 424</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">effort, 757</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">effusio, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">einspritzen, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">elasticum, 383, 444, 719, 746</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Elastizität der Luft, 717</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">elater, 70, 89–92, 267, 269, 273, 430, 442, 526, 713f., 719f., 723</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">elaterium, 127, 160, 237, 241, 398, 437, 439–442, 444, 723, 725–728, 731, 733, 745, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">electricus, 53, 473, 686</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">elementa, 466, 476</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">elephas, 515</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">elevatio, 258</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">elixir vitae, 602f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">embolum, 518</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">emissio mercurii, 518</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">emissio sanguinis, 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">empyema, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Empyriques de Sicile, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">encens, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">endurcissement, 533f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ens respectivum, 467</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">entortillement, 539</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ephemeris, 95</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">epilepsia, 636, 658</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">equilibre, 232</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">equus, 503, 515</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">erable, 600</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">espace, 313</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">espace parcouru, 313, 334, 351, 358</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">essieu, 226</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Essig, 628</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">etain, 532–534</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ether, 531, 535–537</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">étouffement, 675</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">evagatio, 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">evaporation, 532f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">exacon, 595</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Exkrement, 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">experience, 423f., 530f., 533, 537, 539f., 759f., 762f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">experientia, 47, 137, 143, 160, 252, 444</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">experientia vacui, 716</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">experimentum, 46, 92, 98, 134, 138, 162f., 168, 206, 437, 528, 758, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">experimentum de thermometro, 516</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">experimentum hydrostaticum, 48</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">esperimentum medicum elasticum, 650</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">experimentum Torricellianum, 95</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">exsiccatio, 509</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">extractio, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">extravasatio, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">exustio, 663</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">Fall, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">farina, 510</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">febris, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fel, 503</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">felis, 503</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fenestra, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fenouil, 609, 611, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fer, 532f., 770f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fermentatio, 526</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ferramenta, 474</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ferrum, 50–53, 492, 507, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ferrum politum, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ferrum rubigum, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">feu, 532–535</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fibra, 95</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fibra cerebri, 475, 501</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fibra corporis humani, 475</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fibra nervorum, 475, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fievre continue, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fievre quarte, 677f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fievre tierce, 677f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">figue, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">figura flammae, 520</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">filiere, 533</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">filum, 66, 94, 189, 193, 513</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">filum ferreum, 521</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">firmitas, 185, 198</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fissile, 512</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fissura, 509</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fistula, 475f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fistula vitrea, 521</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">flamma, 430, 520</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">flamme, 430</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">flatus, 98, 652</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Fleisch, 652</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fleur de passion, 598</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">flexio, 90, 511</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">flumen, 424</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fluxus et refluxus maris, 6, 8</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">foenum, 682</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">force, 210–212, 215f., 224, 292, 295, 309, 311, 350f., 423, 436</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">force absolue, 212f., 216</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">force acquise, 225</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">force de la machine, 226</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">force de ressort, 433</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">force du poids, 221</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">force du vent, 763</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">force gagnée, 216, 226f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">force simple, 216</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">forge, 532</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">formica, 515</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fornax, 618, 620, 622</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fortitudo, 241</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fourneau, 535</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fractio vitrorum, 492</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fractura ovi, 186</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fresne, 600</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">frictio, 79, 80, 300, 303, 308, 326, 361, 391, 758</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">frictus, 53</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">frigus, 96, 480, 492, 494f., 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">froissement, 532</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fronde, 536</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">frottement, 293, 300, 310, 319f., 343, 349, 353, 360, 442, 538f., 753–756</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fructus, 495, 510</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fucus maritimus, 598, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Fühlen, 651, 661</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fulcrum, 70–73, 79, 88, 98–100, 168f., 174f., 177–180, 186f., 191</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fumée, 531</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fumus, 481, 488</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">funambulus, 99</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">funda, 76</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fundamentum, 200</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">funependulum, 87</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fungus, 600</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fungus maritimus, 601</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fungus maritimus Coralloeides, 600</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fungus undulatus, 600, 601</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">funis, 77, 79, 235, 252, 256, 470, 514</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">furfur capiti, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fusée, 430</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fusain, 600</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">fusil, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Galeniste, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gangrene, 610</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gelu, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">generatio animalium, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">generatio corporum, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">genest, 598</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">geneuvre, 678</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">genistella tinctorum, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">genitalia, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">genus fungi, 506</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">genus plantae, 506</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">geographia, 686</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">geometria pura, 133</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">Geruch, 651, 660f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Geschmack, 651, 661</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Gesundheit, 660</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Gesundheitsordnung, 660</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gibier, 770</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">girofle, 676f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">glacies, 96, 497, 517</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gladiolus, 526</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">glandes d’Esculus, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Glastum, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Glied, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Gliedmaßen, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">globulus, 247, 335</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">globulus vitreus, 66</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">globus, 8, 66f., 143, 731, 738</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">globus argillaceus, 98</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">globus ligneus, 5, 481</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">globus marmoreus, 4</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">globus plumbeus, 4f., 481</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">globus terrestris, 485</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gluten, 89, 509</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">glutinosité, 756</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gnomon ventaneum, 743</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gossyps, 521</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">goust, 631</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">goutte, 530f., 534, 675</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gouvernail, 540</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gradus delectationis, 653</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gradus salsedinis, 650, 661</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gradus velocitatis, 472</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gradus virium, 84</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gratte-cul, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">grave, 82f., 85, 87, 89–93, 109, 111f., 141f., 145–151, 153f., 237f., 269, 282, 295, 297, 328, 340, 371, 735, 746</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">grave elasticum, 93</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gravelle, 677</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gravitas, 65f., 79, 85, 92, 108–110, 118, 127, 254, 262, 281, 299f., 371, 381, 384, 719, 723, 725, 735, 743</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gravitas atmosphearae, 470</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gravitas in vacuo, 482</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gravitas modica, 520</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gravitas naturalis, 722</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gravitas navis, 488</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gravitas plumbi, 469</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gravitatio, 100, 249, 379, 380, 387</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gubernaculus, 487</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gummi cortici, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gutta, 119, 162</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gypsum, 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gyratio, 737</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gyrinus, 95</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Haar, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">halitus, 470, 480, 492, 650</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">halitus corporeus, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">halitus igneus, 494</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">halitus odorifer, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Hals, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Hammelblut, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Hand, 650, 652f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Haupt, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hausenblasen, 630</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">helix, 81</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hemerocallis valentina, 597</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">hemorroides, 670</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">herbe de Balestrero, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">historia naturalis, 652</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">historia temporum, 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hold-fast, 14</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">homo, 466, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">horloge, 763</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">horologium, 272, 475, 713, 715, 719, 723, 728, 740f., 745</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">horologium ventaneum, 740, 742</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">horror, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Hospital, 651</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">huile, 535</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">huile de Tartre, 535</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">huile de vitriol, 535</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">humeur, 659</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">humeur lactée, 594</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">humor, 652, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">humor congelatus, 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">humor lenticularis, 502</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">humor noxius, 474</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">humor purus, 494</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">humor subtilis, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">humor uliginosus, 505</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hydrargyrum (hydrargyrus), 94, 96f., 716</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hydrops, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hydrostatica, 70, 94, 96, 267</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hyems, 482, 495, 510</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hyoscyamum, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hypocondriaque, 603</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hypothesis, 92, 177</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hysope, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hyver, 701</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ictus, 83, 85, 87, 89, 91f., 109f., 113, 118, 120, 162f., 248–252, 295, 297, 335, 338, 428, 430, 440–442, 515, 519, 527</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ignis, 53, 467, 476</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ignis calefaciens, 493</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ignis rotae, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ignis siccus, 506</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ignis subterraneus, 494</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">imaginatio, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">impedimentum, 65, 84, 101, 725</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">impenetrabilitas, 241, 525</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">impetus, 76, 83–85, 90, 94, 107, 134, 145–149, 151–154, 205–208, 247f., 252, 267, 296, 444, 469, 483, 527, 737f., 741</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">impulsus, 89, 92, 190, 246, 254, 262, 418f., 722, 736f., 740</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">incessus, 99</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">incidentia, 89</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">inclinatio, 51, 108f., 235</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">inclination, 232, 423</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">incrassatio, 509</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">incrementum, 206–208</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">incrementum celeritatis, 111f., 282, 352</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">incrementum velocitatis, 472</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">induction, 427</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">infinitas, 238</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">infinitum, 168f., 237, 239, 524</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">infusio, 657, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">inondation, 752, 760</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">inquies, 728</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">insipidus, 661</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">instrument, 762f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">instrumentum, 15, 751</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">instrumentum Hevelii, 10, 17, 20</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">instrumentum Tychonis, 9</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">intellectus, 524</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">irrigatio, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">isatis, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Iuppiter, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ivoire, 436</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Jacea nigra, 606</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">jardin, 699</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">juncus, 598</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">jusquiasme, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Kalender, 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Kali, 612f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Kälte, 650, 724</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">kermes, 599</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Klistier, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Konstitution, 650</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Krankheit, 655, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Kristall, 650</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Kur, 651, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lac, 480, 511, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lacca, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lacryma, 497</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lacryma juniperi, 508</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lacticinia, 653</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lactuca cicuta, 499</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">laego-sagamus Alpini, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lagena plena, 482</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lagenae vitreae, 491</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lait, 596, 677</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lait de cheuvre, 675</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lait de vache, 675</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lamina auri, 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lamina ferrea, 479</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lamina plumbea, 518</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lamina vitrea, 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lana, 513</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lana asperioris, 514</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">langues de serpent, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lanx, 162</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lapis, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lapis Arabicus, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lapis cretaceus, 508</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lapis ignis, 499</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lapis Lydius, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lapsus, 52, 162f., 206–208</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">larme, 535</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Laskopf, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">latera alvei, 521</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lateres, 502</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Leber, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lens convexa, 21</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lentiscus, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">levain, 596, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">levitas, 66, 735</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">levitas absoluta, 480</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lex motus, 133</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">libra, 66, 86, 94, 98, 162, 173f., 196f., 267, 371, 373f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">libra Parisina, 4</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">libramentum, 267, 272</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lierre terrestre, 599</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">lieu, 312</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ligne logarithmique, 323, 349, 360</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lignum, 66, 74, 88, 194</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lignum nephriticum, 652, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lignum resiniferum, 503</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lima, 508</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">limbus supremus, 479</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">limen, 100, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">linea elliptica, 186</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">linea logarithmica, 127, 264, 269, 271, 275, 305, 318</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">linea parabolica, 82, 186</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">linea tendentiae, 147–149, 151</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lingua Batava, 686</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lingua Hetrusca, 513</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lingua philosophica, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">liqueur, 533</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">liquor, 66f., 652f., 657, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">litheosphorus, 499f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lituus, 476</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Liuta, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">logarithme, 265, 316f., 331, 334, 348f., 357f., 361, 367</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">logarithmus, 20, 264, 266, 269, 275–279, 296, 303-305, 307, 328, 339-341, 352, 750f., 758</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">logica medica, 617</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">loton, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Louvre, 700–703</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">lubricum, 508</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Ludus Paracelsi, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Luft , 724</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lumen, 499</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Luna, 4, 8, 485, 499, 517</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Lunge, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lupus, 506</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lutum, 510</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Lutum herba, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">machina, 53, 117f., 220, 238, 395, 398, 731, 733, 736, 741, 746</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">machina Boyliana, 96</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">machina compressiva, 95</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">machina fundamentalis, 70, 267</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">machinae restitutio, 206</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">machine, 210–216, 232f., 353, 538f., 763</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">machinula, 723</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">madrepora, 599</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Magen, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">magnes, 43–46, 50–52, 445, 496, 715, 722f., 735–739</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">magnitudo, 437</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">magnitudo corporis, 242</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">magnitudo motus, 118</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">magnitudo Solis, 4</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mal caduc, 674</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mal de costé, 675</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">malleator, 53</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">malleus, 88f., 526</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Malva vulgaris, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Mamelucci, 687</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mandragore, 600, 608f.</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">marbre, 533f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">marguerite, 677</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">marmor, 508</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">marrube, 600</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">Mars, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mars (Eisen), 687</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">marteau, 532</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">massa, 73, 236, 371</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">masse, 351, 531</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">materia, 79, 525</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">materia aetheria, 247</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">materia liquida, 335</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">materia morbifica, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">materia pingui, 480</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">matiere, 331, 431</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">matiere arsenicale, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mechanica, 133, 137f.</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">mechanici, 504, 515</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">meche, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">medicamentorum actio, 497</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">medicina, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">medicus, 649, 651f., 655f., 658–660, 662, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">medicus vagus, 659</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">medium, 118, 466</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">medium homogeneum, 268f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">medulla, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">melancolique, 603</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">membrana, 509</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">membrum externum, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">menstruum, 654, 661, 687</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">menthe, 600</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mercure, 530, 531, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Mercurius, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mercurius, 30, 95–97, 371, 475, 495f., 497f., 507, 511, 516–522, 525, 622, 624, 629, 642, 683f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mercurius congelativus, 497</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mercurius frigidus, 519</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mercurius sublimatus, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mercurius vini, 489</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">meridian, 16–18</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">meridianus, 67, 723</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">meridies, 504</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mespilus, 683</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">metallum, 466, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">metaphysica, 468</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">metaphysicum, 137</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">meteorologica, 480</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">methodus, 168, 198, 374, 617</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">metus vacui, 470, 510f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">microscopium, 649</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">midi, 701</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">miel, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Mikroskop, 595f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">millepora, 599, 601</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Milz, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">miroir ardent, 770f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mixtio, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mixtum caeruleum, 504</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mixtum resolutum, 506</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mobile, 70, 241, 315, 319, 345, 354f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">molendinum, 190, 733</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">molendinum aquaticum, 743</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">molendinum ventaneum, 741</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">moles, 99f., 235, 336</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">moles humoris, 516</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">moly, 600</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">moly Pesariense, 598</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">momentum, 65, 82–85, 89f., 176, 208, 336</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">momentum concursus, 421</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Mond, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">montre, 292</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mos geometrico, 468</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mortier, 530f., 534</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus acceleratus, 70, 82, 472</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus aequabilis, 279</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus aquae, 483</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus chordis, 470</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus compositus, 70</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus corporum coelestium, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus gravium, 208, 470f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus localis, 468</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus Lunae, 486</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus maris, 8</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus naturalis, 205</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus per inclinatam, 480</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus perennis, 118, 148, 162f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus perpetuus, 111, 118, 137f., 722f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus projectorum, 70, 82, 134</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus punctorum, 471</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus retardatus, 70</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus rotationis, 85</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus Telluris, 6, 8</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus tremulus, 511</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus uniformis, 713, 715, 721–723</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus uniformiter acceleratus, 279, 297</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mouvement circulaire, 214, 524</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mouvement peristaltique, 687</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mouvement uniforme, 312</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mucro ferreus, 508</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">murus, 98f., 185, 196, 198</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">muscat, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">musculus, 98–100</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">muscus, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">muscus maritimus, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">musica, 53, 467</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Musik, 660</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Myrrhis canel, 600</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">myrthus, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">naphta, 500</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Nardus montana, 597</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">naris, 497f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Nase, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">naturaliste, 703</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nature, 703</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">navigium, 515</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">navis, 190, 482</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nervus opticus, 499</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nictatio, 502f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nihilum, 524</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nis mercurii, 516</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nisus, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nitrum, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nitrum sulphurum, 500</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nix, 96, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nodus, 191, 193</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">noix de galle, 599</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nosocomium, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nubecula brumalis, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nummus, 98</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nutrimentum, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nux, 506</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">obex, 79, 83, 88–90</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">obliquitas, 108</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">octogone, 702</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ocular, 16f., 21–25</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">oculus, 466, 499f., 521, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">odor, 466, 496, 506, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">odor sulphureus, 500</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">odor Zibeti, 505</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">oignon, 677f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">oleum, 480, 489f., 509, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">oleum caryophyllorum, 709</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">oleum rosmarini, 709</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">oleum salviae, 709</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">oleum thymi, 709</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">olfactus, 506</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ombelle, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">onus, 71–73, 80, 88, 99f., 108, 179</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">opera caloris, 492</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">opium, 609, 661, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">opthalmia, 502</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">opuntia, 597, 599</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">orange, 597</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">organum pneumaticum, 476</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">orge, 675, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">orichalcum, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">origo soni, 474</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ortie, 600</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">os, 512, 518</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">oscillatio, 134</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ossum, 499, 502</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ovum, 497</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ovum Bombycis, 514</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pain, 697</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pain bis, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">palma marina retiformis, 600f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">palpebra, 505</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">palus, 89, 506</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">panier, 530</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">panis, 509, 510</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pannus, 513</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Papier, 630</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">parallaxis, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">paralogismus, 143, 528</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pars bilis, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pars calidi, 494</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pars caloris, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pars ignea, 494, 496, 503</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pars infinitesima, 169</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pars solida, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pars sulphuris, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">particula elementorum, 476</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">particula humoris, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">particula ignea, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">particula ignis, 494, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">particule, 535, 540</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">particulum, 526</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pathologia, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">patiens, 725</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Patient, 651f., 656, 658f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pectus, 98</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pedes, 97</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pegma, 98</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pellicula, 505</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pellis felinae, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pendule, 156, 158, 292, 293, 423</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pendulum, 4, 6, 65f., 120, 131, 134, 153f., 160, 235, 247f., 268, 273, 294f., 327, 334, 713, 715–717, 722f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pendulum-clock, 17</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pente, 760</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">penumbra, 12, 17f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">percolatio, 494, 505f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">percussio, 70, 82, 84f., 87, 145, 336</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">perennitas motus, 737</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">peristromata, 501</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">perkolieren, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">perlocatio sanguinis, 497</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">perpendiculum, 6–8, 66</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">persil, 609, 677</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">perspicuitas, 489f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pertuis, 759f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pes, 96, 98–100, 475, 696</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pes Anglicanus, 94f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pes Parisinus, 4, 95</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pesanteur, 293, 295, 311, 424, 426, 530f., 535–537, 539f., 753</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">peste, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Pestilenz, 660</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pestis, 635, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Pferd, 654, 656f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">phaenomenon, 92, 437</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pharmacoepoea de London, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">phiala concava, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">phiala convexa, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">philosophia, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">philosophia moralis, 468</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">philosophia Pythagorea, 686</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">phlegmagogus, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">phreneticus, 501</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">physica, 465</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">physicus, 658</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pierre (Nierenstein), 677</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pila, 51, 247–250, 280, 430, 441, 732f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pila ferrea, 441</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pila lignea, 486</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pila nivis, 489</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pilum, 89</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pilus, 498, 508</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pilus caprinus, 514</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pimprenelle, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pinna, 740</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pinus, 503</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">piscis, 505</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pisum, 636</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pituita, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pix, 513</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">planeta, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">planta, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">planta pedis, 656f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">plantago latifolia incana, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">plante bulbeuse, 597f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">planum inclinatum, 109, 113, 152f., 235, 297, 371, 758</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">plastre, 534f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">plein, 290</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">plethora, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pleuresie, 602</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pleurisis, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">plomb, 532, 538, 631, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pluma, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">plumbum, 66, 247, 249, 469, 507</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">poids, 211–214, 289, 294f., 425–428, 430–436, 759</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">polus, 8, 41, 46, 51</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">polycreste, 677</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pompe, 343, 353</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pomum, 497, 683</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pondus, 4, 8, 50f., 65f., 71f., 79, 82–86, 88–90, 92–94, 97f., 100f., 108, 114, 117, 119, 123, 143, 162, 168, 171, 173–178, 180, 182f., 189f., 221, 227, 236, 238, 246f., 252, 256, 261, 273, 280, 294, 373–375, 379–381, 386f., 392, 394, 398–400, 402, 428, 430, 441, 443, 719f., 731, 733, 737–741, 744f., 757f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pondus chordae, 4</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">porosité, 533</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">porus, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">porus exiguus, 500</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">potentia, 135, 168f., 173f., 177–180, 182f., 237f., 386f., 394–396, 398–400</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">potentia aequalis, 237f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">potentia communicata, 237</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">potentia corporis, 237</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">potus, 636</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">poudre, 531, 534–536</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">poudre de Fondacaro, 603f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">poudre de pozzolane, 535</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">poulet, 697</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">poulie, 539</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">poumon, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">poutre, 424</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pressio, 8, 757f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pression, 530, 753, 755, 770</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">principium, 43, 163</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">principium mechanicum, 134</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">prisma, 380, 515</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">prisma quadratum, 515</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">prisma rectangulum, 515</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">projectio, 4</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">projectum, 76</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">proportio, 206, 208</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">proportio gravitatis, 488</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">proportio ponderum, 488</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">prune de Brignoles, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pruneau, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">prunum, 683</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pudenda, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">puliche, 491</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pulmonaria, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Puls, 649, 650</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pumex, 508, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">punaise, 677</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">puniceus (color), 501</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pupilla, 501, 504</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">purgation, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pus, 474</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pyxis, 500</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pyxis cuprea, 26</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pyxis opaca, 500</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quadrans, 10, 12–20, 23f., 27, 31, 34–37</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Quadrant, 18</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quadratrix, 161</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quadratum ponderum, 474</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quadratura, 758</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quaestio mechanica, 70</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">qualitas sensibilis, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quantitas conatus, 146</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quantitas effectus, 237, 239</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quantitas externa, 469</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quantitas ictus, 442</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quantitas interna, 469</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quantitas motus, 146, 429, 439</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quantité de matiere, 291, 293</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quantité de mouvement, 424–429, 433–436</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quatuor elementa, 476</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Rad, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">radicetta, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">radius solis, 489f., 494</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">radix, 514, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">radix montis, 475</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">radix pili, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">radix Snagroel, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">raisin, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rami, 514</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">raphanus, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rarefactio, 479, 511, 516</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rarefaction, 533</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ratio circulorum, 484</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ratio distantiae, 478</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ratio ponderis, 478</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ratio universalis, 468</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ratiocinatio, 200</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rave, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">reagens, 650, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">recipiens Magdeburgicus, 750</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">reductio celeritatis, 471</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">reflexio, 70, 89, 493, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">reflexio ciliorum, 505</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">reflexion, 770</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">refractio, 493, 709, 710</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">refractio radiorum, 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">refrigeratio, 513</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">reglisse, 676, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">regnus Matarum, 686</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">regula generalis, 181</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rein, 603</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">remedium, 617, 635, 636</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">remus, 190, 430</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">repugnance, 535, 539</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">res apothecaria, 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">res medica, 659, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">res visibilis, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resilitio, 70, 89</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resina, 509</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistance, 289, 293, 300, 319, 331, 334, 354, 540</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistance absolue, 319f., 344, 349, 351, 354, 361</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistance de l’air, 310, 344, 354</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistance du lieu, 344, 354</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistance respective, 319, 344, 349, 351, 354, 361</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistentia, 88f., 108, 124, 137, 167–169, 172, 177–180, 182–184, 186, 188, 198, 200f., 247–252, 269, 340, 362, 445, 515, 758</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistentia absoluta, 331</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistentia aeris, 4, 76, 135, 207f., 431</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistentia aquae, 76, 431</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistentia centralis, 171</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistentia corporis, 242</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistentia corporum, 208, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistentia medii, 82, 261, 281, 442</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistentia respectiva, 200</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistentia trabis, 168, 169, 173</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resolutio, 480</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">respiratio, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ressort, 295, 301, 311, 350f., 426–436, 530–532</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">restitutio, 118</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">restitutio machinae, 208</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">restitutio perfecta, 206</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">restitutio tensionis, 479</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">retardatio, 297, 299, 739</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">retardation, 301, 320, 344, 354</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">retina, 499, 501</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">retorta chymicorum, 491</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Rezept, 659</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rhubarbe, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rhus, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rigole, 759</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rigor, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rima, 492</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">riviere, 760</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rota, 76, 78–80, 117, 740–742, 744f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rota alata, 743f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rota dentata, 743f., 764</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rota figuli, 7</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rota ventanea, 743</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">roue, 210, 215, 232</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">roue antisoscele, 232</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rouleau, 538f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rouvre, 599</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">Royal Society, 10, 92, 96f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ruban, 539</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rubea major, 598</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ruber (color), 501</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rubeta, 635</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rubeus (color), 501</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Rubia major, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rue, 677f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ruptura, 124, 167f., 178, 180, 186f., 191–193, 200</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ruptura absoluta, 200</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ruptura centralis, 187f., 198, 200</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">saccarum, 510</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">saccarum arsenicum, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">saccus coriaceus, 488</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sagitta, 247, 250, 470</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sal, 96, 509</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sal fixum, 630</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sal lixiviale, 526</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sal volatile, 630</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">saliva, 494, 650, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">salle d’audience, 702</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">salle des peintures, 702</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">salsa, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sang, 603</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sanguis, 95, 475, 489, 657, 663f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sanguis arteriosus, 494, 497f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sanguis collectus, 497</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sapidum, 661</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sapo, 95</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sapo venetus, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">saponaria, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sapor, 466, 654, 663f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">saucisse, 697</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Sauerwasser, 652</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">saut, 759f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">savon dur blanc, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">savon noir, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">saxum bitumine, 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">scabies cuti, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">scala, 100</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">scellery, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">schedula mortalitatis, 653</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Schlaf, 660</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Schmecken, 651</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Schröpfen, 654, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Schwein, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Schweiß, 650</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">scientia mechanica, 133</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Scilla maritima, 598</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">scintilla, 503, 506</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sciure, 540</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sclopetum, 250, 696</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">scobs stanni, 508</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">scorbutus, 687</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">scyphus, 479</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">scyphus inversus, 487</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">scyphus vitreus, 495, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">secale luxurians, 610</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sectio, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sectio venae, 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">securis, 89</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">seiche, 600</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sel, 534f., 631, 676–678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sel d’étain, 600</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sel de vitriol, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sel saturne, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sel volatil, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">semiparabola, 184</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">sené, 677f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sepia, 600</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">seplasiarius, 635</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">serpens, 506, 636</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">serpentaria virginiana, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">serrabilitas, 512</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sextans, 12, 20</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">signum infiniti, 108</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sipho, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">smaragd, 626f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Sol, 4–6, 495, 525</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">solanum lethale, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">soleil, 533</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">solvens, 650, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">solvieren, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">somnus, 501</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">son, 301, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sonus, 466, 664, 714</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sonus chordae, 473</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sorbum, 683</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sou, 697</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">soufre, 675, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spagyrist, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spatium, 336, 438</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spatium percurrendum, 303</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spatium percursum, 148, 153, 227, 264, 269, 275, 282, 296, 362</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spatula, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">species cicindelarum, 505</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spectaculum, 66</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Speichel, 650</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sphaera, 528</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sphaera activitatis, 50</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spira, 715, 731, 733</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spirabilitas, 507</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spiralis, 81</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spiritus, 620, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spiritus impenetrabilis, 469</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spiritus penetrabilis, 469</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spiritus vini, 517, 630, 710, 723</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spiritus vitrioli, 475</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spongia, 513</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sputus, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">squille, 597</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">statera, 168, 198–201</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">statique, 425</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">stella, 6, 466, 504, 525</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">stella fixa, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">stenomarga, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sternutatio, 504</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">stomachus, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">stramonium, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">strepitus, 636</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Struthium, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">suber, 50, 66</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">substitutio, 137</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">succus lapisdiscentis, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">succus pancreaticus, 652, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">succus uliginosus, 505</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sucre candi, 675</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sudes, 89</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sudeur, 685</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sudor, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sudor marmoris, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">suif, 677</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">suilla, 636</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sulphur, 490, 495, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">summa virium, 175</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Summac, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">superficies interna, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">syringa, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">syrinx, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">systole, 499</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tabula, 185, 189</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tabulatum, 73</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tactus, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Tarantel, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tarantula, 653</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tarditas, 111</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tartarus, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Tartre Coralin, 594</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tartre de vin, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">telescopium, 10f., 16, 18–25, 27, 35f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tellus, 46</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Temperament, 658, 660, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">templum Salomonis, 685</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">temps, 312, 320</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">temps employé, 313</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tempus, 82, 84, 101, 296, 725</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tempus horroris, 493</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tempus matutinum, 500</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tempus percursum, 362</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tempus vibrationis, 479</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tenacitas, 371</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tenaculum, 14</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tendo, 98–100</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tensio, 512</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tensio diaphragmatis, 476</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">terra, 51, 99, 485, 723</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">terra constricta, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">terra samia, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">terre, 530–534, 536, 540</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">terre alexipharmaque, 605</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">terre de Baira, 603</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">terre de Bayra, 603</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">terre Lemnie, 605</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">testa, 502</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">testiculus, 505</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">textura, 636</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">therapeutica, 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">thermometrum, 516f., 650</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Tiegel, 626f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Tierkrankheit, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tigillum, 73</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tignum, 73, 74</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">timor, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tinctura, 513</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tintinnabulum, 636</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tinture de soufre, 675</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tisane, 676–678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">toile, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">topasius, 627</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tophus, 602, 605</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tornus, 104</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tourbillance, 536</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tourbillon, 536</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">trabs, 168f., 171f., 178f., 185f., 188, 198, 200, 248, 424, 515</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tractio, 511, 758</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tragus, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">transfusio sanguinis, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Transfusion, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">trefle, 675</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">trempe, 532f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">triticum, 511</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tritus, 512f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">trochlea, 77, 79, 123, 235, 251f., 256, 267, 494, 714, 721</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tuba, 476</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tuber, 635</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tubularia, 599</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tubus, 94, 96, 98, 751, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tubus Boylii, 95</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tudes, 89</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tutia, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tuyau, 762f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tympanum, 713f., 743–745</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ulcus, 474f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ulna, 173</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">umbilicus Veneris, 597</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">uncia, 96f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">uncia Anglicana, 94f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">uncia Parisina, 95</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">unda, 127</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">undulatio, 300</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">uniformitas incrementi vel diminutionis, 239</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Urin, 649f., 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">urine, 631, 676f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ustrina, 511</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">uvea (membrana), 502f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vacuum, 417, 419, 525</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vaisseau, 431, 536, 539, 541, 762f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vapor, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">variatio magnetica, 8</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vas, 50, 53, 94, 96</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vas corrosum, 657</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vas pneumaticum, 476</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vase, 540</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vectis, 70–73, 79, 88, 100, 171, 267, 380, 388, 391f., 396, 398f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vegetus, 501</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vela navium, 476</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">velocitas, 8, 107, 146, 235, 443, 719</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">velocitas acquisita, 472</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">velocitas aquae, 483</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">velocitas prima, 472</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">velum, 487</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">venae arteriolae, 502</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">venae capillares, 497</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">venae tensae, 475</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">venenum, 474, 516, 608, 635, 636</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vent, 536, 540f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ventus, 120, 190, 335, 476, 740–746</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Venus, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">verre, 535, 540, 762, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">versoria, 52</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vertebra, 99</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vertex camini, 489</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vesica, 98, 636, 652</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vesica obstructa, 474</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">viande, 770</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vibratio, 87, 94, 155, 482</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vibration, 156</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vide, 288, 530, 535</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">villus, 498</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vin, 674f., 677f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vinaigre, 676, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vinum, 489, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vipera, 635</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">virga, 53</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">virgula, 482</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">virtus vegetativa, 506</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis, 65, 70, 79f., 84f., 90, 98, 101, 108, 113, 168, 174, 176f., 189, 192–194, 205f., 208, 222, 224, 227–229, 246–252, 261, 263, 269, 273, 275, 282, 295, 306, 328, 334f., 352, 361, 430, 441f., 735, 737, 740</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">vis absoluta ponderis, 221</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis accelerata, 223</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis accelerationis, 118</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis acquisita, 224, 229</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis applicata, 89</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis attractiva, 51</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis caloris, 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis composita, 88</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis conans, 189</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis corporis, 437</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis elastica, 90, 95, 719f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis elaterii, 242, 429, 442f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis elateris, 91</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis electrica, 473, 520</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis explosionis, 491</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis extrinseca, 224</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis frictis, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis gravis, 118</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis gravitatis, 111, 238</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis imaginationis, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis impressa, 251</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis machinae, 116f., 222f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis mortua, 119, 162</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis motrix, 88, 109</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis movens, 256</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis oneris, 73</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis percussionis, 162</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis ponderis, 114, 116f., 122, 218, 227, 738</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis restituens, 731</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis restitutionis, 251f.</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis restitutiva, 90–92</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis rumpendi, 174</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis sagittae, 479</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis simplex, 113, 117f., 224, 229</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis Solis, 494</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis sustentatrix, 71–73</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis tensionis, 471</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis vectis compositi, 123</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis viva, 162</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">viscera interna, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">viscositas, 513</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">viscum, 513</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">viscus, 509</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">visus, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vitesse, 226, 288, 292f., 295, 302, 311, 313, 319, 332f., 345, 350f., 355, 423–428, 431f., 434–436</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">vitesse absolue, 423</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vitesse respective, 423f., 430, 433–436</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vitesse uniforme, 345</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vitrarius, 52</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vitriolum hungaricum, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vitrum, 52, 525, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vitrum sigillatum, 505</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">volant, 292, 295</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vortex, 120</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vuide, 290, 524</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vulnus, 497</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Wärme, 650</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">warme Luft, 724</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Wasser, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">zona, 66</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">zona pneumatica, 487</hi>
+
+      </item>
+    </list>
+  </div></body>
+  </text>
+</TEI>

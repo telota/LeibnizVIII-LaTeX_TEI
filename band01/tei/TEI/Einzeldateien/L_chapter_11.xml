@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-09" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch11" n="11"><pb type="VIII_1" n="102"/><head>11.
+COMME LES PILOTES PRENNENT LES HAUTEURS SUR MER</head> <head>[Sommer 1673]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Notiz: LH XXXVIII Bl. 22. 1 Bl. 8<hi rendition="#sup">o</hi>. 3/4 S. Auf die obere Hälfte verteilt 7 Zeichnungen. Im oberen Viertel nicht von Leibniz’ Hand folgende Notiz, die sich vorher auf dem Blatt befunden haben muss: 72 + 5 (100 + 77) ad rd ut 72 ad tang rad. Im unteren Drittel quergeschrieben Überlegungen zu mathematischen Reihen, die in Reihe VII veröffentlicht werden. Rückseite leer.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 1557</hi></p></item><item><label><hi rendition="#i #smaller">E</hi></label>
+<p><hi rendition="#smaller"><ref corresp="#bib_00243"/><hi rendition="#k">Gerland</hi> 1906, S. 208.</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch11.p5"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Für die Datierung sprechen inhaltliche Gründe, die sich aus der Methode ergeben, wie Seeleute die Höhe von Himmelskörpern über dem Meer bestimmen. Davon ist insbesondere in der von Leibniz ausführlich referierten Schrift Morins <hi rendition="#i">Scientia longitudinum</hi> die Rede. Wie aus N. 10 hervorgeht, hat Leibniz den Titel im Sommer 1673 gelesen. Wir betrachten das vorliegende Stück als eine Notiz zu dieser Lektüre und orientieren uns für die Datierung an N. 10. Diese wird zudem durch Überlegungen zu mathematischen Reihen im unteren Teil des Blattes gestützt. Ähnliche Überlegungen finden sich in <hi rendition="#i">LSB</hi> VII, 4 N. 15 und 16, die ebenfalls zu dieser Zeit entstanden sind.</hi></p></div><div type="text"><p xml:id="Ch11.p6" rendition="#c"><pb type="L"/><fw type="folNum">[22 r<hi rendition="#sup">o</hi>]</fw> Comme les pilotes prennent les hauteurs sur mer.</p><figure rendition="#inline-margin-left" xml:id="Ch11.fig1_1">
+        <graphic url="../images/38_22r3.svg" width="251.4996pt" xml:id="Ch11.g1"/>
+        
+        <head xml:id="Ch11.fig1_2" style="; text-align:center"><hi rendition="#i">[Fig. 1]</hi></head>
+      </figure><p xml:id="Ch11.p7">Primum male sumunt lineam horizontalem, aquam aspiciunt à fleur d’eau, sed ipsa primum altitudo navis errorem facit. Deinde quod longe importantius, usus instrumenti quod vocant l’arcbaleste<index indexName="Sachverzeichnis"><term>arcbaleste</term></index>, est corruptissimus. Deberent inspicere ex centro <hi rendition="#i">a</hi> cum per extremam spiciant ut illi inspiciant <hi rendition="#i">db</hi>, <hi rendition="#i">ec</hi> separatim, at ipsi centrum ponunt in <app type="Bfootnote"><lem type="main">media rectae</lem><note type="lemma-abbrev">media</note><rdg wit="#L" n="1"> arcus </rdg><rdg wit="#L" n="2"> rectae  <hi rendition="#i">L</hi></rdg></app> <hi rendition="#i">ed</hi>.</p><pb type="VIII_1" n="103"/><p xml:id="Ch11.p8">Methodum habeo perfecte observandi in navi, quantum ab homine possibile</p><figure rendition="#inline-margin-left" xml:id="Ch11.fig2_1">
+        <graphic rendition="#c" url="../images/38_22r1.svg" width="86.724pt" xml:id="Ch11.g2"/>
+        <head xml:id="Ch11.fig2_2" style="; text-align:center"><hi rendition="#i">[Fig. 2]</hi></head>
+        <graphic rendition="#c" url="../images/38_22r2.svg" width="130.086pt" xml:id="Ch11.g3"/>
+        <head xml:id="Ch11.fig2_3" style="; text-align:center"><hi rendition="#i">[Fig. 3]</hi></head>
+      </figure><p xml:id="Ch11.p9">est. <lb/>Ope Instrumenti Thevenotiani <app type="Cfootnote"><lem type="main"/><note type="lemma-abbrev">Thevenotiani</note><note type="editorial"><bibl corresp="#bib_00135"><hi rendition="#k">M. Thévenot</hi></bibl>, <bibl corresp="#bib_00135"><hi rendition="#i">Machine nouvelle</hi>, <hi rendition="#i">JS</hi>, 15. November 1666, S. 439–443.</bibl></note></app> haberi potest linea horizontalis, inde forma quadam Camerae obscurae<index indexName="Sachverzeichnis"><term>camera obscura</term></index> portabilis adhibita, chartaque inolita eousque mutetur situs, dum stella quaesita in certo appareat puncto chartae. Ubi ibi apparuit tacto quodam Elaterio machinae partibus stabilis quidam situs detur, quo facto habebitur angulus quaesitus. Hoc modo non opus est inspicere per dioptram<index indexName="Sachverzeichnis"><term>dioptra</term></index>, quo casu quaerere difficile. At ipsam dioptram<index indexName="Sachverzeichnis"><term>dioptra</term></index> dirigere in stellam, non inspiciendo per dioptram<index indexName="Sachverzeichnis"><term>dioptra</term></index> videtur adhuc difficilius sed hoc invento emendatur.</p><figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch11.p10_1"><graphic url="../images/38_22r456.svg" width="216.81pt" xml:id="Ch11.p10.g1"/><head><hi rendition="#i">[Fig. 4]</hi></head></figure><figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch11.p10_2"><graphic url="../images/38_22r7.svg" width="216.81pt" xml:id="Ch11.p10.g2"/><head><hi rendition="#i">[Fig. 5]</hi></head></figure></div></div></body>
+  </text>
+</TEI>

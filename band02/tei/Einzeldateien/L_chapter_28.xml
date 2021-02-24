@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch28" n="28"><head>28.
+RÈGLE POUR CALCULER LA FORCE D’UNE MACHINE</head>
+<pb type="VIII_2" n="209"/><head>[zweite Hälfte 1674 – Anfang 1675]</head><div type="contents"><p xml:id="Ch28.p1" rendition="#noindent"><hi rendition="#smaller">Die folgenden sieben Unterstücke bilden inhaltlich eine Einheit.
+Leibniz sucht dort nach einer mathematischen Beschreibung der Kräfte in einem rotierenden Rad.
+Ausgangspunkt der Untersuchung ist die diagrammatische Darstellung eines Rades mit angedeuteter Drehung (siehe [<hi rendition="#i">Fig. 1</hi>] in N. 28<hi rendition="#sub">1</hi>),
+auf die im Gesamtstück N. 28 mehrfach Bezug genommen wird.
+Die relative Chronologie der einzelnen Unterstücke ergibt sich aus folgenden Überlegungen:</hi></p><p xml:id="Ch28.p2"><hi rendition="#smaller">Beide frühesten Texte (N. 28<hi rendition="#sub">1</hi> und N. 28<hi rendition="#sub">2</hi>) sind auf demselben Träger (LH XXXV 10, 9 Bl. 3 v<hi rendition="#sup">o</hi>) überliefert:
+N. 28<hi rendition="#sub">1</hi> findet sich in der oberen Blatthälfte und ist von Schreiberhand; N. 28<hi rendition="#sub">2</hi> ist von Leibniz’ Hand.
+Die Anordnung beider Texte auf dem Blatt sowie die Kennzeichnung von N. 28<hi rendition="#sub">2</hi> als <hi rendition="#i">mieux conceu</hi> sind eindeutige Hinweise auf deren Entstehungsabfolge.</hi></p><p xml:id="Ch28.p3"><hi rendition="#smaller">Bei den Texten N. 28<hi rendition="#sub">3</hi> und N. 28<hi rendition="#sub">4</hi> kann man aufgrund des identischen Schreibduktus eine zeitgleiche Entstehung annehmen.
+Diese Annahme wird durch die (fragmentarischen) Wasserzeichen unterstützt, die in beiden Textträgern (LH XXXV 10, 9 Bl. 1 und Bl. 2) anzutreffen sind.
+N. 28<hi rendition="#sub">3</hi> gibt das Ende von N. 28<hi rendition="#sub">1</hi> wieder, um einen Ausdruck für am Rad befestigte Gewichte ergänzt.
+N. 28<hi rendition="#sub">4</hi> ist eine Wiedergabe von N. 28<hi rendition="#sub">2</hi> (ohne den letzten Absatz).
+Ein Schreibfehler am Anfang von N. 28<hi rendition="#sub">4</hi> zeigt, dass Leibniz zuerst N. 28<hi rendition="#sub">1</hi> zu kopieren begann,
+dann aber N. 28<hi rendition="#sub">2</hi> abschrieb.
+Beide Reinschriften dürften demnach zu einem Zeitpunkt entstanden sein, als sowohl N. 28<hi rendition="#sub">1</hi> wie auch N. 28<hi rendition="#sub">2</hi> bereits vorlagen.</hi></p><p xml:id="Ch28.p4"><hi rendition="#smaller">Der Text N. 28<hi rendition="#sub">5</hi>, der auf demselben Träger (LH XXXV 10, 9 Bl. 3 r<hi rendition="#sup">o</hi>)
+überliefert ist wie N. 28<hi rendition="#sub">1</hi> und N. 28<hi rendition="#sub">2</hi>,
+beruht auf einer erweiterten Fassung der Zeichnung [<hi rendition="#i">Fig. 1</hi>] aus N. 28<hi rendition="#sub">1</hi>.
+Demnach ist zu vermuten, dass N. 28<hi rendition="#sub">5</hi> nach N. 28<hi rendition="#sub">1</hi> und N. 28<hi rendition="#sub">2</hi> entstanden ist.
+Da in N. 28<hi rendition="#sub">5</hi> zudem eine gedankliche Weiterentwicklung gegenüber N. 28<hi rendition="#sub">3</hi> und N. 28<hi rendition="#sub">4</hi> erfolgt,
+dürfte N. 28<hi rendition="#sub">5</hi> später verfasst worden sein.</hi></p><p xml:id="Ch28.p5"><hi rendition="#smaller">Der Text N. 28<hi rendition="#sub">6</hi> (LH XXXV 10, 9 Bl. 4)
+knüpft ebenfalls an die Zeichnung [<hi rendition="#i">Fig.1</hi>] in N. 28<hi rendition="#sub">1</hi> an und kennzeichnet sie als <hi rendition="#i">figura</hi> <formula xml:id="Ch28.p5.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi mathvariant="normal">ℵ</m:mi></m:math></formula>.
+Die gleiche Kennzeichnung findet sich auch in N. 28<hi rendition="#sub">1</hi>, fehlt dagegen in allen Texten dazwischen,
+weshalb sie wahrscheinlich erst während der Entstehung von N. 28<hi rendition="#sub">6</hi> und nach der Anfertigung von N. 28<hi rendition="#sub">5</hi> eingefügt wurde.</hi></p><p xml:id="Ch28.p6"><hi rendition="#smaller">Im Text N. 28<hi rendition="#sub">7</hi> (LH XXXVIII Bl. 25)
+werden Ergebnisse aus den Überlegungen dargestellt,
+die in den übrigen sechs Unterstücken ihren Niederschlag gefunden haben.
+Somit liegt es nahe, bei N. 28<hi rendition="#sub">7</hi> eine gemeinsame Entstehungszeit anzunehmen wie bei den Texten N. 28<hi rendition="#sub">1</hi> bis N. 28<hi rendition="#sub">6</hi>.
+Dabei dürfte N. 28<hi rendition="#sub">7</hi> aber als letzter Text in der Reihe entstanden sein.</hi></p><p xml:id="Ch28.p7"><hi rendition="#smaller">Die absolute Datierung des Gesamtstücks N. 28 beruht auf folgenden Betrachtungen:
+(1) In N. 28<hi rendition="#sub">5</hi> und N. 28<hi rendition="#sub">6</hi> kommen in algebraischen Ausdrücken kombinierte Vorzeichen vor,
+die Leibniz nur in der zweiten Hälfte 1674 und am Anfang 1675 verwendet hat (siehe <hi rendition="#i">LSB</hi> VII, 5, S. XXXII f.).
+Insbesondere kommen in N. 28<hi rendition="#sub">5</hi> komplexe kombinierte Vorzeichen vor,
+die Leibniz spätestens Ende Dezember 1674 aufgegeben hat (siehe die Datierungsgründe in N. 50).
+Die in N. 28<hi rendition="#sub">6</hi> vorkommenden einfachen Formen der kombinierten Vorzeichen wurden hingegen auch in den ersten Monaten 1675 verwendet.
+(2) Die in den Textträgern von N. 28 anzutreffenden Wasserzeichen lassen eine gemeinsame Entstehung der Texte vermuten.
+Somit dürfte N. 28 insgesamt in einem Zeitraum verfasst worden sein, welcher die zweite Hälfte 1674 und den Anfang 1675 einschließt.</hi></p><p xml:id="Ch28.p8"><hi rendition="#smaller">Für den Text N. 28<hi rendition="#sub">1</hi> ist eine – bislang unbekannte – Vorlage von Leibniz’ Hand anzunehmen,
+die auch zu einem früheren Zeitpunkt entstanden sein könnte.</hi></p></div><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_281.xml" xpointer="Ch28.S1" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_282.xml" xpointer="Ch28.S2" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_283.xml" xpointer="Ch28.S3" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_284.xml" xpointer="Ch28.S4" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_285.xml" xpointer="Ch28.S5" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_286.xml" xpointer="Ch28.S6" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_287.xml" xpointer="Ch28.S7" parse="xml"/></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-09" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch34" n="34"><pb type="VIII_1" n="241"/><head>34.
+DE REFRACTIONE OPE SUPERFICIEI SPHAERICAE</head> <head>[Ende 1676]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Notiz: LH XXXVII 2 Bl. 8. 1 Bl. 6 x 12 cm. 1 S., 11 Zeilen. Rechter und unterer Seitenrand mit Verlust der rechten unteren Ecke beschnitten. Rückseite leer.</hi></p></item><item><label><hi rendition="#i #smaller">Kein Eintrag in KK 1 oder Cc 2.</hi></label>
+<p/></item></list></p></div><div type="contents"><p xml:id="Ch34.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Leibniz hat Johann Hudde<index indexName="Namensregister"><term><hi rendition="#g #smaller">Hudde</hi> <hi rendition="#smaller">(Huddenius), Jan 1628–1704</hi></term></index> im November 1676 auf dem Weg von Paris<index indexName="Ortsregister"><term><hi rendition="#smaller">Paris (Parisii)</hi></term></index> nach Hannover<index indexName="Ortsregister"><term><hi rendition="#smaller">Hannover</hi></term></index> besucht. Es ist anzunehmen, dass er bei dieser Gelegenheit die Dissertation, von der in unserem Stück die Rede ist, gesehen hat. Für die Datierung gehen wir davon aus, dass sich Leibniz kurz danach eine Notiz über den Inhalt der Dissertation angefertigt hat.</hi></p></div><div type="text"><p xml:id="Ch34.p5"><pb type="L"/><fw type="folNum">[8 r<hi rendition="#sup">o</hi>]</fw> Hugenius<index indexName="Namensregister"><term><hi rendition="#g">Huygens</hi> (Hugenius, Vgenius, Hugens, Huguens), Christiaan 1629–1695</term></index> invenit modum quo <hi rendition="#i">radii</hi> <hi rendition="#i">lucis</hi><index indexName="Sachverzeichnis"><term>lux</term></index> <hi rendition="#i">ad punctum aliquod tendentes ope superficiei sphaericae ad datum aliud punctum omnes accurate cogi possint,</hi> Schoten.<index indexName="Namensregister"><term><hi rendition="#g">Schooten</hi> (Schoten), Frans van 1615–1660</term></index> ad <hi rendition="#i">Geom.</hi> Cartes.<index indexName="Namensregister"><term><hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René 1596–1650</term></index> lit. OO. pag. 270. <app type="Cfootnote"><lem type="main"/><note type="lemma-abbrev">pag. 270.</note><note type="editorial"><hi rendition="#k">R. Descartes,</hi> <bibl corresp="#bib_00036"><hi rendition="#i">Geometria</hi>, Teil 1, Frankfurt 1659, S. 270.</bibl></note></app></p><p xml:id="Ch34.p6">Vidi et Manuscriptam diss. Huddenii<index indexName="Namensregister"><term><hi rendition="#g">Hudde</hi> (Huddenius), Jan 1628–1704</term></index> lingua Belgica conscriptam, ubi modum ostendit <app type="Bfootnote"><lem type="main">ope superficiei sphaericae</lem><rdg wit="#L" cause="addition"><add>ope superficiei sphaericae</add>  <note type="editorial"><hi rendition="#i">erg.  L</hi></note></rdg></app> quo omnes radii ad punctum aliquod tendentes refringi possunt ad datum aliud punctum, vel modum quo ex dato puncto venientes ita refringi possunt ac si ex alio dato puncto venirent. Fatetur tamen non esse adeo magni usus in praxi.</p></div></div></body>
+  </text>
+</TEI>

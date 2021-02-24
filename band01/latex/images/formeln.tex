@@ -1,0 +1,515 @@
+
+        
+        \documentclass[fontsize=11pt,twoside,DIV10,BCOR0mm,smallheadings,pointednumbers,openany]{scrbook}
+        \usepackage{times}
+        \usepackage{ledmac}
+        \usepackage{scrpage2}
+        \usepackage{chngpage}
+        %  \usepackage[latin1]{inputenc}
+        \usepackage{tocloft}
+        \usepackage{stdclsdv}
+        \usepackage{graphicx}
+         \usepackage{floatflt}
+         \usepackage{picins}
+          \usepackage{wrapfig}
+          \usepackage{amsmath}
+          \usepackage{amssymb}
+        \usepackage{marvosym}
+          \usepackage{cancel}
+         % \usepackage{fancyhdr}
+        \usepackage{array}
+        %\usepackage{letterspace}
+        \usepackage{soul}
+        \usepackage{pifont}
+        \usepackage{fancybox}
+      %  \usepackage{tikz}
+    %  \usepackage{pstricks}
+      \usepackage{ipa}
+%\usepackage{pst-node}
+        \noendnotes
+        
+        %pagelayout
+        \setlength{\paperwidth}{190mm}
+        \setlength{\paperheight}{248mm}
+        \typearea[current]{current}
+        \areaset[0mm]{135mm}{180mm}
+        
+        %header
+        \pagestyle{scrheadings}
+        \clearscrheadings
+        \ohead{\pagemark}
+        \renewcommand{\partmarkformat}{}
+        \renewcommand{\chaptermarkformat}{}
+        \chead{Formeln in: Leibniz Reihe VIII}
+     %   \ihead{N.\thechapter}
+     %   \automark[chapter]{part}
+     %   \setkomafont{pagehead}{\normalfont\small\scshape}
+        \setkomafont{pagenumber}{\normalfont\normalsize}
+        \setheadsepline{0.4pt}
+        
+        %%firstpages
+        %partfirstpage
+        \renewcommand*{\partpagestyle}{empty}
+        \renewcommand*{\partformat}{}
+        \setkomafont{part}{\normalfont\scshape}
+        \renewcommand*{\partheadstartvskip}{\null}
+        
+        %chapterfirstpage
+        \renewcommand*{\chapterpagestyle}{scrheadings}
+        \renewcommand*{\chapterheadstartvskip}{\vspace*{-10mm}}
+        \setkomafont{chapter}{\normalfont\scshape}
+        \renewcommand{\raggedsection}{}
+        \renewcommand*{\chapterheadendvskip}{\vspace*{0mm}}
+        %\def\@makechapterhead#1{%}
+        
+        %tradition
+        \setlength{\tabcolsep}{0mm}
+        
+        %%main text
+        %font and paragraph
+        \parindent=7.5mm
+        
+        %linenumbers
+        \lineation{page}
+        \linenummargin{outer}
+        \setcounter{firstlinenum}{5}
+        \setcounter{linenumincrement}{5}
+        
+        %footnotes
+        %(margin-)texts by GWL
+        \setlength{\skip\footins}{8mm}
+        \renewcommand{\footnoterule}{\noindent\rule{18.0mm}{0.4pt}\vspace*{3.0mm}}
+        \setkomafont{footnote}{\normalfont\normalsize}
+        %footnote format
+        \let\marginal=\footnote
+        
+        %critical apparatus
+        %Afootnotes, variants by GWL
+        \setlength{\skip\Afootins}{3mm}
+        \renewcommand{\Afootnoterule}{\rule{0mm}{0pt}\vspace*{1.0mm}}
+        \footparagraph{A}
+        \makeatletter
+        \newcommand{\nobrak}{}
+        \renewcommand*{\Afootfmt}[3]{%
+        \indent
+        {\notenumfont\printlines#1|}\strut\enspace
+        {\select@lemmafont#1|#2}\nobrak\enskip#3\strut\par}
+        \makeatother
+        \renewcommand{\interparanoteglue}{7.5mm plus1.9mm minus1.9mm}
+        
+        %Bfootnotes, comments by editors
+        \setlength{\skip\Bfootins}{0mm}
+        \renewcommand{\Bfootnoterule}{\rule{135mm}{0.4pt}\vspace*{1.0mm}}
+        \footparagraph{B}
+        \makeatletter
+        \newcommand{\dpoint}{:}
+        \renewcommand*{\Bfootfmt}[3]{%
+        \indent
+        {\notenumfont\printlines#1|}\strut\enspace
+        {\select@lemmafont#1|#2}\dpoint\enskip#3\strut\par}
+        \makeatother
+        \renewcommand{\interparanoteglue}{7.5mm plus1.9mm minus1.9mm}
+        
+    %kreise um buchstaben    
+     \def\tcircled#1{%
+	\leavevmode\hbox{\setbox0=\hbox{#1}\relax
+	\dimen0=\the\wd0\dimen1=\the\ht0
+	\ifdim\dimen0>\dimen1\dimen2=\dimen0\else\dimen2=\dimen1\fi
+	\divide\dimen0 by 2\divide\dimen1 by 2\advance\dimen2 by 5pt
+	\put(\strip@pt\dimen0, \strip@pt\dimen1){\circle{\strip@pt\dimen2}}
+	\box0}%
+	}
+\def\tcircledI#1{{%
+	\psset{unit=1pt}
+	\setbox0=\hbox{#1}\relax
+	\dimen0=\the\wd0\dimen1=\the\ht0
+	\divide\dimen0 by 2\divide\dimen1 by 2
+	\ifdim\dimen0>\dimen1\dimen2=\dimen0\else\dimen2=\dimen1\fi
+	\advance\dimen2 by +5pt
+	\rput(\dimen0, \dimen1){\pscircle{\dimen2}}
+	\box0%
+}}
+\def\tcircleII#1{%
+	\ensuremath{\mathbin{\settowidth{\dimen7}{\mbox{$\bigcirc$}}%
+              \makebox[0pt][l]{$\bigcirc$}\makebox[\dimen7]{#1}}}}
+
+\def\tcircledIII#1{\circlenode{@dummy}{#1}}%   
+        \begin{document}
+        \pagenumbering{arabic}
+        \beginnumbering   
+      
+
+       		\pstart
+		\begin{flushleft}
+100043.png\linebreak
+
+100050.gif	$29\frac{1}{2}$\linebreak
+
+100051.gif	$29\frac{1}{2}$\linebreak
+
+100053.gif	$29\frac{1}{2}$\linebreak
+
+100061.gif	$29\frac{1}{2}$\linebreak
+
+100062.gif	animiertes gif\linebreak
+
+100072.gif	$29\frac{1}{2}$\linebreak
+
+100072.png\linebreak
+
+100078.png\linebreak
+
+100080.png\linebreak
+
+100084.gif	animiertes gif\linebreak
+
+100099.gif	animiertes gif\linebreak
+
+100109.png\linebreak
+
+100110.png\linebreak
+
+100129.png	$\begin{array}{lcccc} in\:rotis &a.&b.&c.&d. \\numeri&1&4&6&9\end{array}$\linebreak
+
+100149.gif	$\frac{12}{1440} est | \frac{1}{120}$\linebreak
+
+100158.gif	$29\frac{1}{2}$\linebreak
+
+100159.gif	$29\frac{1}{2}$\linebreak
+
+100160.gif	$29\frac{1}{2}$\linebreak
+
+100164.gif	Sonderzeichen, eventuell $\bcancel{O}$\linebreak
+
+100174.gif	$29\frac{1}{2}$\linebreak
+
+100174.png	$1\frac{1}{2}=^{lis}$\linebreak
+
+100190.png\linebreak
+
+100197.png\linebreak
+
+100201.png	$\begin{array}{ccccccc} &8&&&&&\\\cancel{3}&6&0&&f&&5\\&\cancel{7}&2&&&&\end{array}$ Formel mit Text, was passiert mit dem Text\linebreak
+
+oder	$\begin{array}{l} \hspace{5.5pt}8\\\cancel{3}60\hspace{5.5pt}f\hspace{5.5pt}5\\\hspace{5.5pt}\cancel{7}2\end{array}$ Formel mit Text, was passiert mit dem Text\linebreak
+
+100205.gif	animiertes gif\linebreak
+
+100208.png	$\frac{1}{60}$\linebreak
+
+100214.gif	$29\frac{1}{2}$\linebreak
+
+100214.png\linebreak
+
+100216.png\linebreak
+
+100229.png	$\begin{array}{r} 24\\7\\\overline{168}\end{array}$\linebreak
+
+100258.gif	$29\frac{1}{2}$\linebreak
+
+100258.png	$1\frac{1}{2}$\linebreak
+
+100280.gif\linebreak
+
+100292.png	$\begin{array}{ccccccc} &3&&|&&&\\\cancel{2}&\cancel{1}&6&|&00&f&6\\&\cancel{3}&\cancel{6}&|&00&&\end{array}$\linebreak
+
+oder $\begin{array}{lll} \hspace{5.5pt}3&|&\\\cancel{2}\cancel{1}6&|&00\hspace{5.5pt}f\hspace{5.5pt}6\\\hspace{5.5pt}\cancel{3}\cancel{6}&|&00\end{array}$\linebreak
+
+100293.png	$\begin{array}{l} 600\\6\\\overline{3600}\\\hspace{2mm}6\\\rule{25pt}{0.5pt}\\\hspace{4mm}00\end{array}$ Formel mit Text\linebreak
+
+100294.png	$\begin{array}{l} 5400\\\hspace{5.5pt}4\\\overline{21600}\end{array}$\linebreak
+
+100295.png	$\begin{array}{l} 3600\\\hspace{5.5pt}3\\\overline{10800}\end{array}$\linebreak
+
+100328.png\linebreak
+
+100380.png\linebreak
+
+100415.gif\linebreak
+
+100421.gif	$29\frac{1}{2}$\linebreak
+
+100555.png	$\begin{array}{l} \hspace{5.5pt}600\\\hspace{5.5pt}6\\\overline{3600}\end{array}$\linebreak
+
+100556.png	$\begin{array}{l} \hspace{11pt}36000\\\hspace{11pt}36\\\hspace{5.5pt}\underline{\overline{216000}}\\108\\\overline{1296000}\end{array}$\linebreak
+
+100557.png	$\begin{array}{l} \hspace{5.5pt}600\\\hspace{5.5pt}6\\\overline{3600}\end{array}$\linebreak
+
+\emph{Pneumatik 37,3 107-112}
+\linebreak
+	$\begin{array}{rcccl}115&-&88&-&5\\23&-&88&-&5\end{array}$\linebreak$\begin{array}{ccl}1&&\\\cancel{2}9&&\\\cancel{8}\cancel{8}&f&3\frac{19}{23}\\\cancel{2}\cancel{3}&&\end{array}$\linebreak
+	$\begin{cases}\frac{88}{16}\\\\\frac{27}{16}\end{cases}$
+\linebreak
+$\begin{array}{rcl} \cancel{4}3&&\\\cancel{1}\cancel{1}\cancel{9}&f&7\frac{3}{16}\\\cancel{1}\cancel{6}\end{array}$	
+\newline
+\newline
+\emph{Pneumatik 35,14,2 91-101}	
+\\91v\\
+$\begin{array}{ccc}\cancel{2}&&\\\cancel{3}\cancel{4}\cancel{8}\cancel{1}&f&870\\\cancel{4}\cancel{4}&&\end{array}$\newline
+
+$\begin{array}{c|c|c}12\frac{50}{365}&\frac{10}{73}&\frac{1}{7}\end{array}$
+\newline\newline
+$\frac{85}{7}^\smallfrown\frac{85}{7}\frac{7225}{49} f 147$
+\newline\newline
+$\begin{array}{cc|c}2\frac{1}{2}&\frac{25}{102}&\frac{1}{4}\end{array}$\newline\newline
+$\sqcap cd\gamma - c\gamma^2 \smallsmile cd \sqcap d\gamma - c\gamma^2 \smallsmile d$\newline\newline
+$dy - y^2 \smallsmile d$\newline\newline
+$vis (G)(H) \sqcap vis\hspace{5.5pt}GH \smallfrown \frac{GC}{(G)C}$\newline\newline
+$\sqcap\frac{\gamma\smallfrown\frac{vg}{((G))C}+\frac{vg}{((G))C+\gamma}}{\frac{vg}{((G))C}}\sqcap\gamma((G))C\smallfrown\frac{1}{((G))C}+\frac{1}{((G))C+\gamma}$
+\newline
+\rotatebox{180}{$\propto$}
+\newline
+37,3 107-112\newline
+$\begin{cases}\frac{88}{16}\\
+\\
+\frac{27}{16}
+\end{cases}$
+\newline
+GeoOptik\newline
+$\overbrace{\frac{ZE\cdot EI}{qp}}^{\displaystyle E0\cdot CZ}\overbrace{ZE - E0}^{\displaystyle \sqcap Z0 EI}$\\
+$\overbrace{}\overbrace{}$\\
+T 28 calc 2\\
+
+\begin{tabular}{c}
+\renewcommand{\arraystretch}{0.1}
+$E0\cdot CZ \sqcap Z0 EI$\\
+\rotatebox{270}{\Bigg\{}\rotatebox{270}{\Bigg\{}\\
+\end{tabular}\\
+$\frac{ZE\cdot EI}{qp}$$E0 \cdot CZ$\\
+FB posita aequal.$\left\{
+\begin{tabular}{c}
+\raisebox{1.5ex}{$\frac{7}{25}$}\\\raisebox{1.5ex}{$\frac{9}{41}$}\\\raisebox{1.5ex}{$\frac{31}{481}$}\\\raisebox{1.5ex}{$\frac{49}{1201}$}\\\raisebox{1.5ex}{$\frac{81}{3281}$}
+\end{tabular}
+\right\}$ erit praedicti axis lineola minor quam $\left\{
+\begin{tabular}{c}
+\raisebox{1.5ex}{$\frac{2}{11}$}\\\raisebox{1.5ex}{$\frac{1}{9}$}\\\raisebox{1.5ex}{$\frac{1}{109}$}\\\raisebox{1.5ex}{$\frac{1}{273}$}\\\raisebox{1.5ex}{$\frac{1}{745}$}
+\end{tabular}
+\right\}$ ac semidiameter foci minor quam $\left\{
+\begin{tabular}{c}
+\raisebox{1.5ex}{$\frac{1}{37}$}\\\raisebox{1.5ex}{$\frac{1}{79}$}\\\raisebox{1.5ex}{$\frac{1}{3151}$}\\\raisebox{1.5ex}{$\frac{1}{12435}$}\\\raisebox{1.5ex}{$\frac{1}{56125}$}
+\end{tabular}
+\right\}$semidiametri ND\\
+%neuer versuch mit arraystretch
+\renewcommand{\arraystretch}{2.0}
+FB posita aequal.$\left\{
+\begin{tabular}{c}
+$\frac{7}{25}$\\$\frac{9}{41}$\\$\frac{31}{481}$\\$\frac{49}{1201}$\\$\frac{81}{3281}$
+\end{tabular}
+\right\}$ erit praedicti axis lineola minor quam $\left\{
+\begin{tabular}{c}
+$\frac{2}{11}$\\$\frac{1}{9}$\\$\frac{1}{109}$\\$\frac{1}{273}$\\$\frac{1}{745}$
+\end{tabular}
+\right\}$ ac semidiameter foci minor quam $\left\{
+\begin{tabular}{c}
+$\frac{1}{37}$\\$\frac{1}{79}$\\$\frac{1}{3151}$\\$\frac{1}{12435}$\\$\frac{1}{56125}$
+\end{tabular}
+\right\}$semidiametri ND\\
+
+
+%Beginn letzter Version. Nur Trennregeln müssen noch angepasst werden
+\renewcommand{\arraystretch}{2.3}
+
+\parbox{1.5cm}{Cum FB sumatur aequalis}$\left\{
+\begin{tabular}{c}
+$\displaystyle\frac{3}{5}$\\$\displaystyle\frac{5}{13}$\\$\displaystyle\frac{7}{25}$\\$\displaystyle\frac{9}{41}$\\$\displaystyle\frac{31}{481}$\\$\displaystyle\frac{49}{1201}$
+\end{tabular}
+\right\}$
+\parbox{2cm}{intra longitudinem minorem quam}
+$\left\{
+\begin{tabular}{c}
+$\displaystyle\frac{1}{4}$\\$\displaystyle\frac{1}{10}$\\$\displaystyle\frac{1}{20}$\\$\displaystyle\frac{1}{33}$\\$\displaystyle\frac{1}{398}$\\$\displaystyle\frac{1}{994}$
+\end{tabular}
+\right\}$
+\parbox{2cm}{eritque semidiameter foci minor quam}
+$\left\{
+\begin{tabular}{c}
+$\displaystyle\frac{1}{18}$\\$\displaystyle\frac{1}{78}$\\$\displaystyle\frac{1}{209}$\\$\displaystyle\frac{1}{438}$\\$\displaystyle\frac{1}{17642}$\\$\displaystyle\frac{1}{69615}$
+\end{tabular}
+\right\}$semidiametri ND\\
+%Ende letzter Version
+$BN ^{\rotatebox{180}{$\propto$}} 1 ; BF ^{\rotatebox{180}{$\propto$}} x ; NI ^{\rotatebox{180}{$\propto$}} z ; AL ^{\rotatebox{180}{$\propto$}} y ; AB ^{\rotatebox{180}{$\propto$}} BI$\\
+
+$\begin{array}{cccccccc}
+\displaystyle1.&\displaystyle \frac{429}{231} &+& \displaystyle\frac{4}{5} &-& \displaystyle\frac{3}{5} &-& \displaystyle\frac{271}{5,231}\\
+\displaystyle2.&\displaystyle \frac{429}{231} &+& \displaystyle\frac{12}{13} &-& \displaystyle\frac{5}{13} &-& \displaystyle\frac{277}{13,231}\\
+\displaystyle3.&\displaystyle \frac{429}{231} &+& \displaystyle\frac{24}{25} &-& \displaystyle\frac{7}{25} &-& \displaystyle\frac{278}{25,231}\\
+\displaystyle4.&\displaystyle \frac{429}{231} &+& \displaystyle\frac{40}{41} &-& \displaystyle\frac{9}{41} &-& \displaystyle\frac{279}{41,231}\\
+\displaystyle5.&\displaystyle \frac{429}{231} &+& \displaystyle\frac{480}{481} &-& \displaystyle\frac{31}{481} &-& \displaystyle\frac{279}{481,231}\\
+\displaystyle6.&\displaystyle \frac{429}{231} &+& \displaystyle\frac{1200}{1201} &-& \displaystyle\frac{49}{1201} &-& \displaystyle\frac{271}{1201,231}
+\end{array}\left\{\begin{array}{c}
+\displaystyle\frac{816}{15345}\\
+\displaystyle\frac{1385}{108537}\\
+\displaystyle\frac{1946}{406725}\\
+\displaystyle\frac{2511}{1099989}\\
+\displaystyle\frac{8649}{152587149}\\
+\displaystyle\frac{1361}{951707229}
+\end{array}\right\}$\parbox{1.5cm}{quae minor est}$
+\left\{\begin{array}{c}
+\displaystyle\frac{1}{8}\\
+\displaystyle\frac{1}{78}\\
+\displaystyle\frac{1}{209}\\
+\displaystyle\frac{1}{438}\\
+\displaystyle\frac{1}{17642}\\
+\displaystyle\frac{1}{69615}
+\end{array}\right\}
+$\\
+
+
+x posit$\left\{
+\begin{array}{c}
+^{\rotatebox{180}{$\propto$}}\displaystyle\frac{3}{5}\\
+^{\rotatebox{180}{$\propto$}}\displaystyle\frac{5}{13}\\
+^{\rotatebox{180}{$\propto$}}\displaystyle\frac{7}{25}\\
+^{\rotatebox{180}{$\propto$}}\displaystyle\frac{9}{41}\\
+^{\rotatebox{180}{$\propto$}}\displaystyle\frac{31}{481}\\
+^{\rotatebox{180}{$\propto$}}\displaystyle\frac{49}{1201}
+\end{array}\right\}$\parbox{2cm}{tendant ad diametrum intra longitudinem}$\left\{\begin{array}{ccccc}
+\displaystyle\frac{429}{231}&-&\displaystyle\frac{1}{5,}\displaystyle\frac{873}{231}&^{\rotatebox{180}{$\propto$}}&\displaystyle\frac{}{5,}\displaystyle\frac{272}{231}\\
+\displaystyle\frac{429}{231}&-&\displaystyle\frac{5}{13,}\displaystyle\frac{300}{231}&^{\rotatebox{180}{$\propto$}}&\displaystyle\frac{}{13,}\displaystyle\frac{277}{231}\\
+\displaystyle\frac{429}{231}&-&\displaystyle\frac{10}{25,}\displaystyle\frac{447}{231}&^{\rotatebox{180}{$\propto$}}&\displaystyle\frac{}{25,}\displaystyle\frac{278}{231}\\
+\displaystyle\frac{429}{231}&-&\displaystyle\frac{17}{41,}\displaystyle\frac{310}{231}&^{\rotatebox{180}{$\propto$}}&\displaystyle\frac{}{41,}\displaystyle\frac{279}{231}\\
+\displaystyle\frac{429}{231}&-&\displaystyle\frac{206}{481,}\displaystyle\frac{070}{231}&^{\rotatebox{180}{$\propto$}}&\displaystyle\frac{}{481,}\displaystyle\frac{279}{231}\\
+\displaystyle\frac{429}{231}&-&\displaystyle\frac{514}{1201,}\displaystyle\frac{950}{231}&^{\rotatebox{180}{$\propto$}}&\displaystyle\frac{}{1201,}\displaystyle\frac{279}{231}\\
+\end{array}\right\}$\parbox{2cm}{quae longitudo minor est}$
+\left\{\begin{array}{c}
+\displaystyle\frac{1}{4}\\
+\displaystyle\frac{1}{10}\\
+\displaystyle\frac{1}{20}\\
+\displaystyle\frac{1}{33}\\
+\displaystyle\frac{1}{398}\\
+\displaystyle\frac{1}{994}
+\end{array}\right\}
+$\\
+
+\parbox{1.5cm}x posit$\left\{
+\begin{array}{c}
+^{\rotatebox{180}{$\propto$}}\displaystyle\frac{3}{5}\\
+^{\rotatebox{180}{$\propto$}}\displaystyle\frac{5}{13}\\
+^{\rotatebox{180}{$\propto$}}\displaystyle\frac{7}{25}\\
+^{\rotatebox{180}{$\propto$}}\displaystyle\frac{9}{41}\\
+^{\rotatebox{180}{$\propto$}}\displaystyle\frac{31}{481}\\
+^{\rotatebox{180}{$\propto$}}\displaystyle\frac{49}{1201}
+\end{array}\right\}$\parbox{2cm}{tendant ad diametrum intra longitudinem}$\left\{\begin{array}{rll}
+\displaystyle\frac{429}{231}&-\displaystyle\frac{1}{5,}\displaystyle\frac{873}{231}&^{\rotatebox{180}{$\propto$}}\displaystyle\frac{}{5,}\displaystyle\frac{272}{231}\\
+\displaystyle\frac{429}{231}&-\displaystyle\frac{5}{13,}\displaystyle\frac{300}{231}&^{\rotatebox{180}{$\propto$}}\displaystyle\frac{}{13,}\displaystyle\frac{277}{231}\\
+\displaystyle\frac{429}{231}&-\displaystyle\frac{10}{25,}\displaystyle\frac{447}{231}&^{\rotatebox{180}{$\propto$}}\displaystyle\frac{}{25,}\displaystyle\frac{278}{231}\\
+\displaystyle\frac{429}{231}&-\displaystyle\frac{17}{41,}\displaystyle\frac{310}{231}&^{\rotatebox{180}{$\propto$}}\displaystyle\frac{}{41,}\displaystyle\frac{279}{231}\\
+\displaystyle\frac{429}{231}&-\displaystyle\frac{206}{481,}\displaystyle\frac{070}{231}&^{\rotatebox{180}{$\propto$}}\displaystyle\frac{}{481,}\displaystyle\frac{279}{231}\\
+\displaystyle\frac{429}{231}&-\displaystyle\frac{514}{1201,}\displaystyle\frac{950}{231}&^{\rotatebox{180}{$\propto$}}\displaystyle\frac{}{1201,}\displaystyle\frac{279}{231}\\
+\end{array}\right\}$\parbox{1.5cm}{quae longitudo minor est}$
+\left\{\begin{array}{c}
+\displaystyle\frac{1}{4}\\
+\displaystyle\frac{1}{10}\\
+\displaystyle\frac{1}{20}\\
+\displaystyle\frac{1}{33}\\
+\displaystyle\frac{1}{398}\\
+\displaystyle\frac{1}{994}
+\end{array}\right\}
+$\\
+
+
+
+
+
+$\begin{array}{ll}
+\displaystyle x ^{\rotatebox{180}{$\propto$}} 0,&\text{erit }\displaystyle z ^{\rotatebox{180}{$\propto$}} \frac{429}{231}\text{, et erit omnium longissima}\\
+\displaystyle x ^{\rotatebox{180}{$\propto$}} \frac{3}{5},&\text{erit }\displaystyle z ^{\rotatebox{180}{$\propto$}}\text{ paulo amplius quam }\displaystyle\frac{1}{5,}\frac{873}{231},\\
+\displaystyle x ^{\rotatebox{180}{$\propto$}} \frac{5}{13},&\text{erit }\displaystyle z ^{\rotatebox{180}{$\propto$}}\text{ paulo amplius quam }\displaystyle\frac{5}{13,}\frac{300}{231},\\
+\displaystyle x ^{\rotatebox{180}{$\propto$}} \frac{7}{25},&\text{erit }\displaystyle z ^{\rotatebox{180}{$\propto$}}\text{ paulo amplius quam }\displaystyle\frac{10}{25,}\frac{447}{231},\\
+\displaystyle x ^{\rotatebox{180}{$\propto$}} \frac{9}{41},&\text{erit }\displaystyle z ^{\rotatebox{180}{$\propto$}}\text{ paulo amplius quam }\displaystyle\frac{17}{41,}\frac{310}{231},\\
+\displaystyle x ^{\rotatebox{180}{$\propto$}} \frac{31}{481},&\text{erit }\displaystyle z ^{\rotatebox{180}{$\propto$}}\text{ paulo amplius quam }\displaystyle\frac{20}{481,}\frac{6070}{231},\\
+\displaystyle x ^{\rotatebox{180}{$\propto$}} \frac{49}{1201},&\text{erit }\displaystyle z ^{\rotatebox{180}{$\propto$}}\text{ paulo amplius quam }\displaystyle\frac{514}{1201,}\frac{950}{231},\\
+\end{array}$\\
+$\displaystyle \sqrt{\frac{400}{169}zz-xx}-\sqrt{1-xx}$\\
+$\displaystyle z^{\rotatebox{180}{$\propto$}}\sqrt{\frac{yy}{xx}-x}-\sqrt{1-xx}$\\
+$\displaystyle \frac{400}{169}\hspace{5.5pt}xxzz\hspace{5.5pt}^{\rotatebox{180}{$\propto$}}\hspace{5.5pt}yy$\\
+$\displaystyle NI\hspace{5.5pt}^{\rotatebox{180}{$\propto$}}\hspace{5.5pt}Z\hspace{5.5pt}^{\rotatebox{180}{$\propto$}}\hspace{5.5pt}\sqrt{\frac{yy}{xx}-xx}-\sqrt{1-xx}$\\
+
+
+
+%--- circle with a letter
+%\newcommand\kreis[1]{\ensuremath{\mathbin{\settowidth{\dimen14}{\mbox{$ \bigcirc$}}%
+%\makebox[0pt][l]{$\bigcirc$}\makebox[\dimen14]{#1}}}}
+%...
+%\kreis{2ax} macht einen Kreis um das «2ax»\\
+
+
+
+
+%\tcircled{1}\quad \tcircled{16}\quad \tcircled{1999}\quad \tcircled{999 999}
+%\tcircledI{1}\quad \tcircledI{16}\quad \tcircledI{1999}\quad \tcircledI{999 999}
+
+
+%\tcircled{x}
+%\frame{
+%\frametitle{bla}
+%\blindtext
+%\pause
+%\begin{tikzpicture}[overlay]
+%\draw (1,3) circle (1cm); %koordinaten anpassen nach bedarf
+%\end{tikzpicture}
+%}
+\vspace{1cm}
+$\displaystyle RS\sqcap\beta+\beta\frac{c^3}{c, + \beta,,\genfrac{}{}{0pt}{1}{3}{\cdotp}}+\beta\frac{c^3}{c,+\beta+\beta\frac{c^3}{c,+\beta,,\genfrac{}{}{0pt}{1}{3}{\cdotp}}}\genfrac{}{}{0pt}{0}{3}{\cdotp}+\beta\frac{c^3}{c,+\beta+\beta\frac{c^3}{c,+\beta,,\genfrac{}{}{0pt}{1}{3}{\cdotp}}+\frac{c^3}{c,+\beta+\beta\frac{c^3}{c,+\beta,,\genfrac{}{}{0pt}{1}{3}{\cdotp}}}}$
+\vspace{1cm}
+$\displaystyle \sqrt{4ax-2a\beta+2a\sqrt{2x^2-2\beta x}}\sqcap\frac{a^2}{n}$\\
+$\displaystyle x^2-\beta x+\frac{a^6}{8n^4}\sqcap0-\frac{8a^3}{n^2}\cdotp + \frac{4a^3\beta}{8n^2}+\frac{4\beta^2}{8}$\\
+$\displaystyle x^2-\beta x -\frac{8a^3}{n^2}\cdotp\left\{\begin{array}{ll}\displaystyle+\beta^2&\sqcap\\\displaystyle+\frac{16a^3\beta}{n^2}&\\\displaystyle\frac{\displaystyle+\frac{64a^6}{n^4}}{4}&\end{array}\right.\left\{\begin{array}{ll}\displaystyle\beta^2&\displaystyle-\frac{a^6}{8n^4}\\\displaystyle\frac{16a^3\beta}{n^2}&\displaystyle-\frac{a^3\beta}{2n^2}\\\displaystyle\frac{\displaystyle+\frac{64a^6}{n^4}}{4}&-2\beta^2\end{array}\right.$\\
+%Verbindung von Zeichen
+%\def\leibdashv{+\atop\dashv}
+%$\leibdashv$
+%$+\hspace{-13pt}\dashv$\\\vspace{5cm}
+%$\vspace{19pt}+\hspace{-9pt}\urcorner$\\
+%$\stackrel{+}{-}$\\
+%$\pm$\\
+%\diatop[$\dagger$|$\hspace{-4pt}\urcorner$]\\
+%\diatop[$+$|$\hspace{-4pt}-$]\\
+%\diatop[$\hspace{-4pt}\lrcorner$|$\ding{61}$]\\\vspace{2cm}
+%Neuer Ansatz, Zusammensetzung mit pipe, minus und corner\\
+\def\leibdashvv{\diatop[$\vspace{10pt}-$|$|$]}
+
+%\diatop[$\leibdashvv$|$\hspace{-4pt}\urcorner$]$\urcorner$$\lrcorner$$\vspace{4pt}\lrcorner$\\%$\leibdashv$\\
+\def\leibdashv{\diatop[$\leibdashvv$|$\hspace{-5.15pt}\dashv$]}
+%$\leibdashv$\\
+%\def\leibdashvvv{\diatop[$-$|$|$]}
+%$\rotatebox{180}{\leibdashvvv}$\\
+%\def\leibvdash{\diatop[$\leibdashvvv$|$\hspace{5.15pt}\vdash$]}
+\def\leibvdash{\raisebox{10.5pt}{\scalebox{1}[-1]{$\leibdashv$}}}
+%$\leibvdash$
+%nachdem jetzt das Symbol konstruiert ist, kann ich mit den Formeln weitermachen\\
+$\displaystyle \leibdashv x \leibvdash \frac{\beta^2}{2} \sqcap \sqrt{ \llcorner \frac{1}{4} - 2 \lrcorner \beta^2,, + \llcorner 4 - \frac{1}{2}a \lrcorner \frac{a^3\beta}{n^2},, + \llcorner8 - \frac{1}{8}\lrcorner \frac{a^6}{n^4}} \frac{4a^3}{n^2}$\\
+%Hier noch ein Versuch zur Drei auf dem Punkt
+$\genfrac{}{}{0pt}{}{3}{\cdotp}$\\
+$\displaystyle RS \sqcap \beta + \beta \frac{c^3}{c,+ \beta,,\genfrac{}{}{0pt}{}{3}{\cdotp}}+\beta \frac{c^3}{c, + \beta + \beta \frac{c^3}{c, + \beta,,\genfrac{}{}{0pt}{}{3}{\cdotp}},,\genfrac{}{}{0pt}{}{3}{\cdotp}} + \beta \frac{c^3}{c, + \beta + \beta \frac{c^3}{c, + \beta,,\genfrac{}{}{0pt}{}{3}{\cdotp}}+\frac{c^3}{c, + \beta + \beta \frac{c^3}{c, +\beta ,,\genfrac{}{}{0pt}{}{3}{\cdotp}}},,,}$\\
+$\ovalbox{2ay}+2a\beta \sqcap z^2 + 2z \raisebox{5pt}{$\sqrt{}$} 2ay + \ovalbox{2ay}$%alternativ koennte auch \surd für das Wurzelzeichen verwendet werden
+\\
+$\displaystyle \leibdashv x \leibvdash \frac{\beta^2}{2} \sqcap\sqrt{- \frac{\beta^2}{4}+\frac{a^6}{8n^4}} \frac{a^3}{2n^2}$\\
+$\displaystyle \sqcap \frac{\gamma \cap \frac{vg}{((G))C}+\frac{vg}{((G))C+\gamma}}{\frac{vg}{((G))C}} \sqcap \gamma((G))C\cap\frac{1}{((G))C}+\frac{1}{((G))C+\gamma}$\\
+$\displaystyle \cup ((G))C+1\cup ((G))C+\gamma+1\cup((G))C+\gamma+\gamma ((G))C\cap\frac{1}{((G))C}+\frac{1}{((G))C+\gamma}$\\
+$\displaystyle \gamma((G))C\cap\frac{1}{((G))C}+\frac{1}{((G))C+\gamma},,+\gamma((G))C,\cap \frac{1}{((G))C+\gamma+\gamma((G))C,\frac{1}{GC}+\frac{1}{((G))C+\gamma}} $\\
+$dy-y^2\cup d$\\
+$\Box \llcorner w^2y-y^3-1\lrcorner \sqcap 4y^3$\\
+$\raisebox{0.8pt}{$\urcorner$} \hspace{-6.2pt}|$\\
+$\displaystyle \frac{\Psi}{\Theta}\sqcap \begin{array}{c}\displaystyle \frac{1}{\surd LE}\\\hline \hline \displaystyle \frac{1}{\surd LG}\end{array}\sqcap \surd\frac{LG}{LE}$\\
+$\displaystyle LQ \sqcap \beta + \beta \begin{array}{c}\displaystyle \frac{a^3\delta}{BG^3}\\\hline \hline \displaystyle  \frac{a^3\delta}{BL^3}\end{array}\sqcap + \frac{BL^3\beta}{BG^3}$\\
+$\displaystyle BL \sqcap c. LG \sqcap \beta. LQ \sqcap \beta + \beta \frac{c^3}{c+\beta,\boxed{3}}$\\
+$\displaystyle QR \sqcap \beta + \beta \frac{c^3}{c,+\beta,,\genfrac{}{}{0pt}{}{3}{\cdotp}}+\beta \frac{c^3}{c,+\beta+\beta\frac{c^3}{c+\beta,\genfrac{}{}{0pt}{}{3}{\cdotp}},,\genfrac{}{}{0pt}{}{3}{\cdotp}}$\\
+$\displaystyle \ovalbox{$8a^2x^2$} \hspace{-26pt}\raisebox{-3pt}{,,} \hspace{23pt}\ovalbox{$-8a^2\beta x$} \hspace{-26pt}\raisebox{-5pt}{,} \hspace{23pt}\sqcap \frac{a^8}{n^4}-\frac{8a^5}{n^2}x+4\frac{a^5\beta,}{n^2}+\ovalbox{16} \hspace{-14pt}\raisebox{-3pt}{,,} \hspace{11pt}\hspace{-14pt}\raisebox{-13pt}{8} \hspace{11pt}a^2x^2-\ovalbox{16} \hspace{-11pt}\raisebox{-3pt}{,} \hspace{11pt}\hspace{-14pt}\raisebox{-13pt}{8} \hspace{11pt}a^2\beta x +4a^2\beta^2$\\
+$\displaystyle z^4- 8ax\hspace{3pt}z^2+4a\beta ..\left\{\begin{array}{ll}\displaystyle+64a^2x^2&\sqcap\\\displaystyle-64a^2\beta x&\\\displaystyle \frac{+16a^2\beta^2}{4}&\end{array}\right.\begin{array}{l}\displaystyle+8a^2x^2\\\displaystyle-8a^2\beta x\\\displaystyle \ovalbox{$+4a^2\beta^2\hspace{-35pt}\raisebox{-13pt}{$-4a^2\beta^2$}$}\end{array}$\\
+$\ovalbox{$16a^2x^2-16a^2\beta x$}-8axz^2+4a^2\beta^2+4a\beta z^2+z\hspace{3pt}\ovalbox{$16a^2x^2-16a^2\beta x$}$\\
+$4z^22ax - 4z^2\ovalbox{2}a\beta \sqcap z^y\ovalbox{$-4z^2a\beta$}+4a^2\beta^2$\\
+$\ovalbox{$2ax$}\sqcap z^2+2z\sqrt{2ax - 2a\beta}+\ovalbox{2ax}-2a\beta$\\
+$\begin{array}{c|c}400,&000\\\hline b \cdots&\end{array}$\\
+\begin{edtabularr}Follis\hspace{8pt} pl. 10 \Pfund&lign. 8 lb f. 18 \Pfund \hspace{4pt}&cavitas explicati\\
+capit Aquae 1 \Pfund&16 lb f. 17 \Pfund \hspace{2pt}\edvertline{2pc}\hspace{2pt}\edvertline{2pc}&6 (2) + 23 (19)
+\end{edtabularr}
+$30\hspace{-3pt}\raisebox{9pt}{,}$\\
+$\vspace{1cm}36\hspace{-3pt}\raisebox{9pt}{,}$\\
+\end{flushleft}
+\pend
+	
+	\endnumbering
+        \end{document}
+        \endinput
+
+    

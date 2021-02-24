@@ -1,0 +1,1401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="index" xml:id="Chx1_1">
+      <pb type="VIII_2" n="775"/><head>PERSONEN</head>
+      
+      
+      <p xml:id="Chx1_2"><hi rendition="#smaller">Kaiser werden unter dem Stichwort Kaiser mit nachfolgendem Namen,
+Päpste unter dem Stichwort Papst mit nachfolgendem Namen aufgeführt.
+Andere Regenten werden unter dem Namen des von ihnen regierten Staates gelistet.
+Bei diesen Personengruppen sind die Jahreszahlen Regierungszeiten, bei allen anderen Lebensdaten.
+Bei Autoren ist zusätzlich das Schriftenverzeichnis heranzuziehen.
+Es wird nach Seiten zitiert.</hi></p>
+    
+    
+    <list>
+      <item>
+        <hi rendition="#g #smaller">Acar</hi> <hi rendition="#smaller">(Acart), 674</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Aguilon</hi> <hi rendition="#smaller">(Aguillon, Aguilonius), François de 1661–1707, 490, 493</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Aldrovandi</hi><hi rendition="#smaller">, Ulisse 1522–1605, 599, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Alhazen</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">siehe</hi> <hi rendition="#smaller">Ibn al-Haiṯam</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Alliot</hi><hi rendition="#smaller">, Jean-Baptiste, 680, 681</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Alliot</hi><hi rendition="#smaller">, Pierre, gest. zwischen 1680–1697, 680, 681</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Aman</hi><hi rendition="#smaller">, 678</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Angeli</hi><hi rendition="#smaller">, Stefano degli (Stephanus ab Angelis) 1623–1697, 103</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Anisson</hi><hi rendition="#smaller">, Laurent, erwähnt 1670, 3</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Antiate</hi><hi rendition="#smaller">, Timauro</hi> <hi rendition="#i #smaller">siehe</hi> <hi rendition="#smaller">Dati, Carlo Roberto</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Archimedes</hi><hi rendition="#smaller">, 287–212 v. Chr., 3, 134, 267, 403</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Aristoteles</hi><hi rendition="#smaller">, 384–322 v. Chr., 76, 78, 80, 100, 120, 257, 268, 272, 324, 344, 354, 466–468, 481, 534, 537</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">ar-Razi</hi> <hi rendition="#smaller">(al Rasi), Muhammad ibn Zakariya um 864–925, 601</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Asklepios</hi> <hi rendition="#smaller">(Aesculapius), Gott der Heilkunde, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Averroës</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">siehe</hi> <hi rendition="#smaller">Ibn Roschd</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Avicenna</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">siehe</hi> <hi rendition="#smaller">Ibn Sīnā</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bacon</hi><hi rendition="#smaller">, Francis 1561–1626, 660, 661</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Baldi</hi> <hi rendition="#smaller">(Baldus), Bernardino 1553–1617, 78</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Baliani</hi><hi rendition="#smaller">, Giovanni Battista 1582–1666, 60</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bartholin</hi> <hi rendition="#smaller">(Bartholinus), Erasmus 1625–1698, 132, 641</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bartholin</hi> <hi rendition="#smaller">(Bartholinus), Thomas 1616–1680, 655, 680</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bartsch</hi><hi rendition="#smaller">, Jakob 1600–1633, 131</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bauhin</hi> <hi rendition="#smaller">(Bauhinus), Caspar 1560–1624, 572, 610–612</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bauhin</hi> <hi rendition="#smaller">(Bauhinus), Johann 1541–1612, 610</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Beaugrand</hi><hi rendition="#smaller">, Jean de 1595–1640, 125, 126, 401</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Beaumont</hi><hi rendition="#smaller">, Vincent Ragot de 1624–1714, 703</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Beaune</hi><hi rendition="#smaller">, Florimond 1601–1652, 709</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bellanger</hi><hi rendition="#smaller">, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bellini</hi><hi rendition="#smaller">, Lorenzo 1643–1703, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bellonius</hi><hi rendition="#smaller">, Pierre 1517–1564, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bernini</hi><hi rendition="#smaller">, Gian Lorenzo 1598–1680, 700</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Billich</hi><hi rendition="#smaller">, Anton Günther 1598–1640, 646</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Billy</hi><hi rendition="#smaller">, Jacques de 1602–1679, 60</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bils</hi><hi rendition="#smaller">, Louis de 1624–1670, 652</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bleau</hi><hi rendition="#smaller">, David(?), 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Blondel</hi> <hi rendition="#smaller">(Blondellus), François 1618–1686, 124, 126, 132</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Boccone</hi><hi rendition="#smaller">, Paolo 1633–1704, 593f., 596–602, 606–608</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bodaeus van Stapel</hi><hi rendition="#smaller">, Johannes 1602–1636, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bonfioli</hi> <hi rendition="#smaller">(Bonfiglioli), Silvestro gest. 1696, 606</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Borelli</hi> <hi rendition="#smaller">(Borellus), Giovanni Alfonso 1608–1679, 119, 162, 252, 528</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Borri</hi><hi rendition="#smaller">, Giuseppe Francesco 1627–1695, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bosc</hi><hi rendition="#smaller">, Pierre du 1623–1692, 617</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Bourdelot</hi><hi rendition="#smaller">, Pierre Michon 1610–1685, 680</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Boxhorn</hi> <hi rendition="#smaller">(Boxhornius), Marcus Zuerius van, 1612(?)–1653, 691</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Boyle</hi> <hi rendition="#smaller">(Boylius, Boyl), Robert 1627–1691, 67, 95–97, 607, 619, 651, 661, 685–688, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Brahe</hi><hi rendition="#smaller">, Tycho 1546–1601, 9f., 12, 15, 18, 21, 61, 130</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Brayne</hi><hi rendition="#smaller">, Jean, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Briggs</hi><hi rendition="#smaller">, William 1642–1704, 687</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Brouncker</hi> <hi rendition="#smaller">(Brounker, Brunckerus), William 1620–1684, 97, 685</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Brunquell</hi><hi rendition="#smaller">, Johann Heinrich 1656–1710, 644</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Burattini</hi><hi rendition="#smaller">, Tito Livio 1617–1681, 131</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Cabeo</hi><hi rendition="#smaller">, Niccolò 1586–1650, 42, 47</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Cabot</hi><hi rendition="#smaller">, Vincent 1560–1620, 617</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Cesalpino</hi> <hi rendition="#smaller">(Caesalpinus), Andrea 1519–1603, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Camilli</hi><hi rendition="#smaller">, Annibal geb. 1498, 609, 612</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Camilli</hi><hi rendition="#smaller">, Charles, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Campanella</hi><hi rendition="#smaller">, Tommaso 1568–1639, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Campensis</hi><hi rendition="#smaller">, Claudius, Wirkjahre 1556–1562, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Cantzler</hi><hi rendition="#smaller">, Richard, 10</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Cardano</hi> <hi rendition="#smaller">(Cardanus), Girolamo 1501–1576, 477</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Casati</hi><hi rendition="#smaller">, Curzio um 1600, 131</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Casaubon</hi><hi rendition="#smaller">, Méric 1599–1671, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Cassini</hi><hi rendition="#smaller">, Giovanni Domenico 1625–1712, 131</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Cazreus</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">siehe</hi> <hi rendition="#smaller">Le Cazre, Pierre</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Chapelain</hi><hi rendition="#smaller">, Jean 1595–1674, 699</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Charas</hi><hi rendition="#smaller">, Moyse 1619–1698, 653</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Charpentier</hi><hi rendition="#smaller">, Francois 1620–1702, 699</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Chiaramonti</hi><hi rendition="#smaller">, Scipione 1565–1652, 130, 603, 646</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Claudini</hi><hi rendition="#smaller">, Giulio Cesare um 1550–1618, 648</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Clérambault</hi><hi rendition="#smaller">, Philippe 1620–1665, 680</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Clusius</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">siehe</hi> <hi rendition="#smaller">L’Ecluse, Charles de</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Colbert</hi><hi rendition="#smaller">, Jean-Baptiste 1619–1683, 129, 699–701, 703</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Collins</hi> <hi rendition="#smaller">(Collinius), John 1625–1683, 102</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Commelijn</hi><hi rendition="#smaller">, Jan 1629–1692, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Concius</hi><hi rendition="#smaller">, Andreas 1628–1682, 132</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Conring</hi><hi rendition="#smaller">, Hermann 1606–1681, 646</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Cornelio</hi><hi rendition="#smaller">, Tommaso 1614–1686, 517</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Croll</hi> <hi rendition="#smaller">(Crollius), Oswald 1560–1609, 130</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Cureau de la Chambre</hi><hi rendition="#smaller">, Marin 1594–1669, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">D’Alême</hi> <hi rendition="#smaller">(Dalême, Dalesme, d’Alesme), André 1725, 294</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Dati</hi><hi rendition="#smaller">, Carlo Roberto 1619–1676, 102, 602</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Davison</hi><hi rendition="#smaller">, William 1593–1669, 127, 132</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">De la Rouviere</hi><hi rendition="#smaller">, 669</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">De le Boë</hi> <hi rendition="#smaller">(Sylvius), Frans 1614–1672, 640, 644, 680</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Della Porta</hi><hi rendition="#smaller">, Giovanni Battista 1535–1615, 130, 606</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Demokrit</hi> <hi rendition="#smaller">(Democritos) von Abdera, um 460–um 370 v. Chr., 120, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Desargues</hi> <hi rendition="#smaller">(Des Argues), Girard (Gérard, Gaspard) 1591–1661, 526</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Descartes</hi> <hi rendition="#smaller">(Cartesius, des Cartes), René 1596–1650, 63, 120, 129, 134, 160, 320, 425, 454, 466, 523–525, 545, 555, 564, 573, 584, 594, 611, 661, 682</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">De Vicq</hi><hi rendition="#smaller">, François 1646–1707, 601</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Digby</hi> <hi rendition="#smaller">(Digbaeus), Kenelm 1603–1665, 492</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Divini</hi> <hi rendition="#smaller">(Divinus), Eustachio 1610–1685, 492</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Dobrzensky</hi><hi rendition="#smaller">, Jacob Johann Wenceslas 1623–1697, 132</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Dorfelden</hi><hi rendition="#smaller">, Maria Eva von geb. 1600, 665</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Drebbel</hi> <hi rendition="#smaller">(Drebelius), Cornelis 1572–1633, 618</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Du Chesne</hi> <hi rendition="#smaller">(Quercetanus), Joseph 1544–1609, 132</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Du Moulin</hi><hi rendition="#smaller">, Pierre, der Jüngere 1601–1684, 663</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Du Vernette</hi><hi rendition="#smaller">, 667</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Eisenwirdt</hi><hi rendition="#smaller">, 718</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Elzevir</hi> <hi rendition="#smaller">(Elsevir), Daniel 1626–1680, 612, 642, 644</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">England: Karl II.</hi><hi rendition="#smaller">, König von, 1660–1685, 37, 74, 130, 688</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Eschinardi</hi><hi rendition="#smaller">, Francesco 1623–1703, 650</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Ettmüller</hi><hi rendition="#smaller">, Michael 1644–1683, 640</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Euklid</hi> <hi rendition="#smaller">(Euclides), 287–212 v. Chr., 63, 65</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Fabri de Peiresc</hi> <hi rendition="#smaller">(Peirescius), Nicolas-Claude 1580–1637, 594</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Fabri</hi><hi rendition="#smaller">, Honoré 1607–1688, 59, 153, 465, 471, 473, 476, 481, 485, 492, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Fachs</hi><hi rendition="#smaller">, Modestin gest. 1575, 617</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Farner</hi><hi rendition="#smaller">, Christoph, 644</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Fermat</hi> <hi rendition="#smaller">(Fermatius), Pierre de 1601–1665, 60</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Ferme</hi> <hi rendition="#smaller">(Firmus), Pariser Medailleur, 132</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Figluzzo</hi><hi rendition="#smaller">, Andrea, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Fludd</hi><hi rendition="#smaller">, Robert 1574–1637, 132</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Frankreich: Ludwig XIV.</hi><hi rendition="#smaller">, König von, 1643–1715, 699–703</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Frère Ange</hi><hi rendition="#smaller">, capucin, duc de Joyeuse(?) 1599–1608, 677f.</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Frisius</hi><hi rendition="#smaller">, Andreas(?), 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Gale</hi> <hi rendition="#smaller">(Galaeus), Theophilus 1628–1678, 686</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Galen</hi> <hi rendition="#smaller">(Galenos), Claudius um 129–216, 61, 649</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Galilei</hi> <hi rendition="#smaller">(Galilaeus, Galileus), Galileo 1564–1642, 3f., 6f., 60f., 63, 111, 119f., 124f., 134, 141f., 153, 162, 167, 169, 171, 176–180, 182, 184f., 189, 196, 252, 257, 267, 280, 282f., 297, 308–310, 313, 320f. 344, 354, 366, 383, 446, 476, 478, 513–515, 524, 713</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Galinée</hi><hi rendition="#smaller">, Abbé de 1678, 631</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Garillon</hi><hi rendition="#smaller">, 674</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Gassendi</hi> <hi rendition="#smaller">(Gassendus), Pierre 1592–1655, 3–6, 60, 120, 594</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Gellibrand</hi> <hi rendition="#smaller">(Gellibrandus), Henry 1597–1636, 8</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Ghetaldi</hi> <hi rendition="#smaller">(Getaldus), Marino 1566–1626, 97</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Gilbert</hi><hi rendition="#smaller">, William 1544–1603, 47</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Giraldini</hi><hi rendition="#smaller">, Pier Francesco fl. 1626, 602f.</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Godbid</hi><hi rendition="#smaller">, William, fl. 1656–1677, 65</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Gottwald</hi><hi rendition="#smaller">, Christoph 1636–1700, 644</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Graaf</hi> <hi rendition="#smaller">(Graeff), Reinier de 1641–1673, 606</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Grandami</hi> <hi rendition="#smaller">(Grandamicus), Jacques 1588–1672, 723</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Gravel</hi><hi rendition="#smaller">, Jacques Argentan de, 1679, 679</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Gravel</hi><hi rendition="#smaller">, Robert de, 679</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Gravesande</hi><hi rendition="#smaller">, Cornelius, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Greatrakes</hi> <hi rendition="#smaller">(Greatrick), Valentine 1629–1683, 685</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Greaves</hi><hi rendition="#smaller">, John 1602–1652, 131</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Grevin</hi><hi rendition="#smaller">, Jacques 1538–1570, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Grollier de Servières</hi><hi rendition="#smaller">, Nicolas 1596–1689, 128</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Grotius</hi><hi rendition="#smaller">, Hugo 1583–1654, 691</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Guastaferri</hi><hi rendition="#smaller">, Fabrizio, 520</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Guevara</hi> <hi rendition="#smaller">Giovanni di 1581–1641, 78</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Guisony</hi><hi rendition="#smaller">, Pierre 17. Jhd., 593</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Halton</hi><hi rendition="#smaller">, Charles, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Hammond</hi> <hi rendition="#smaller">(Hammondus), Henry 1605–1660, 686</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Hartmann</hi> <hi rendition="#smaller">(Hartmannus), Johannes 1568–1631, 640</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Hedraeus</hi><hi rendition="#smaller">, Bengt 1608–1659, 12, 15, 21</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Heinsius</hi><hi rendition="#smaller">, Daniel 1580–1655, 691</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Herman</hi><hi rendition="#smaller">, Jean, 606</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Heurnius</hi><hi rendition="#smaller">, Justus 1587–1652, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Hevelius</hi><hi rendition="#smaller">, Johannes 1611–1687, 9f., 12–21, 36</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Highmore</hi><hi rendition="#smaller">, Nathanael 1613–1685, 600</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Hippokrates</hi> <hi rendition="#smaller">von Kos, um 460–um 370 v. Chr., 641, 656, 663, 662</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Hooke</hi><hi rendition="#smaller">, Robert 1635–1703, 9–15, 18–21, 36, 128, 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Howard</hi><hi rendition="#smaller">, Charles 1536–1624, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Hudde</hi><hi rendition="#smaller">, Johan 1628–1704, 128</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Hugo</hi><hi rendition="#smaller">, Hermann 1588–1639, 691</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Huisseau</hi><hi rendition="#smaller">, Isaac de 1628–1670, 599</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Hugens, Huguens, Ugenius), Christiaan 1629–1695, 32, 60, 69f., 72, 92, 96, 104, 111, 127, 129, 131, 134, 160, 294, 412, 414, 446, 523, 528, 722, 729, 730</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Ibn al-Haitam</hi><hi rendition="#smaller">, al-Hasan (Alhazen), um 965–1040, 126</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Ibn Roschd</hi> <hi rendition="#smaller">(Averroes), 1126–1198, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Ibn Sina</hi> <hi rendition="#smaller">(Avicenna), um 980–1037, 606</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Ignatius von Loyola</hi> <hi rendition="#smaller">1491–1556, 466</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Imperato</hi><hi rendition="#smaller">, Ferrante 1550–1631, 599, 601, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Janse</hi><hi rendition="#smaller">, Volckert, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Janssonius</hi><hi rendition="#smaller">, Johannes 1588–1664, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Jesson</hi><hi rendition="#smaller">, 681</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Jungius</hi><hi rendition="#smaller">, Joachim 1587–1657, 132</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Kaiser: Ferdinand III.</hi><hi rendition="#smaller">, 1637–1657, 130</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Kaiser: Tiberius</hi><hi rendition="#smaller">, 14–37, 502</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Karczag-Ujszállási</hi> <hi rendition="#smaller">(Carceus), Martinus, 644</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Kebes</hi> <hi rendition="#smaller">(Cebes, Zebes) von Theben, 5./4. Jh. v. Chr., 67</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Kepler</hi> <hi rendition="#smaller">(Keplerus), Johannes 1571–1630, 6, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Kerckring</hi><hi rendition="#smaller">, Theodor 1640–1693, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Kircher</hi> <hi rendition="#smaller">(Kircherus), Athanasius 1602–1680, 42f. 47, 52, 129, 162, 715</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Kolumbus</hi> <hi rendition="#smaller">(Columbus), Christoph 1451–1506, 384</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Lalouvère</hi> <hi rendition="#smaller">(La Loubère, Lalovera), Antoine de 1600–1664, 60, 101</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Lana de Terzi</hi><hi rendition="#smaller">, Francesco 1631–1687, 128, 714</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Lasser</hi> <hi rendition="#smaller">(Lassart), Hermann Andreas, um 1675, 718</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Le Brun</hi><hi rendition="#smaller">, Charles 1619–1690, 700f., 703</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Le Cazre</hi> <hi rendition="#smaller">(Cazreus), Pierre 1589–1664, 4, 60, 125, 141, 321, 344, 354</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">L’Ecluse</hi> <hi rendition="#smaller">(Clusius), Charles de 1526–1609, 597, 600, 604, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Leibniz</hi><hi rendition="#smaller">, Gottfried Wilhelm 1646–1716, 718</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">L’Emery</hi><hi rendition="#smaller">, Nicolas 1645–1715, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Lèotaud</hi><hi rendition="#smaller">, Vincent 1596–1672, 41</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Le Vau</hi><hi rendition="#smaller">, Louis 1612–1670, 699, 701</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Libavius</hi><hi rendition="#smaller">, Andreas 1550–1616, 617</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Liceti</hi> <hi rendition="#smaller">(Licetus), Fortunio 1577–1657, 4</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Line</hi> <hi rendition="#smaller">(Linus), Francis 1595–1675, 257</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">L’Obel</hi> <hi rendition="#smaller">(Lobelius), Matthias de 1538–1618, 598</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Lower</hi><hi rendition="#smaller">, Richard 1631–1691, 664</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Ludwig</hi><hi rendition="#smaller">, Daniel 1625–1680, 658</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Mabre-Cramoisy</hi><hi rendition="#smaller">, Sébastien, 1669–1678, 59</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Mademoiselle Bafort oder Vafor</hi><hi rendition="#smaller">, 676</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Mademoiselle de La Haye</hi><hi rendition="#smaller">, 675</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Mademoiselle de Luzancourt</hi><hi rendition="#smaller">, 675</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Maetz</hi><hi rendition="#smaller">, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Magiotti</hi><hi rendition="#smaller">, Raffaello 1597–1656, 517f.</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Marchetti</hi> <hi rendition="#smaller">(de Marchettis), Alessandro 1633–1714, 124, 594</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Marci</hi><hi rendition="#smaller">, Jan Marek (Marcus) 1595–1667, 132, 649</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Margrave</hi><hi rendition="#smaller">, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme de Chazeuil um 1620–1684, 92, 118, 129, 162, 422f. 425, 429f. 441, 667, 771</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Martin</hi><hi rendition="#smaller">, John gest. 1680, 9</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Masthei</hi><hi rendition="#smaller">, Matheo, 700f.</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Matthaeus</hi> <hi rendition="#smaller">Parisiensis um 1200–1259, 5</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">May</hi><hi rendition="#smaller">, Philip von, fl. 1665–1670, 653</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Mayer</hi><hi rendition="#smaller">, Cornelius, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Medici</hi><hi rendition="#smaller">, Leopoldo de’ 1617–1675, 465</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Medicus</hi><hi rendition="#smaller">, Johann (Barbier in Mainz) 17. Jh., 666</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Meibom</hi><hi rendition="#smaller">, Heinrich, der Jüngere 1638–1700, 658</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Mellan</hi><hi rendition="#smaller">, Claude 1598–1688, 132</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Memmin</hi><hi rendition="#smaller">, 669, 688</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Mercator</hi><hi rendition="#smaller">, Nicolaus 1620–1687, 132, 303, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Mersenne</hi> <hi rendition="#smaller">(Mersennus), Marin 1588–1648, 476, 490</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Mesuë</hi> <hi rendition="#smaller">Joannis, von Damascus, 8./9. Jd n. Chr., 644</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Meyer</hi><hi rendition="#smaller">, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Michelini</hi><hi rendition="#smaller">, Famiano 1604–1665, 521</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Mithridates</hi><hi rendition="#smaller">, 581</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Monantheuil</hi> <hi rendition="#smaller">(Monantholius), Henri 1536–1606, 78</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Monconys</hi> <hi rendition="#smaller">(Monconisius), Balthasar de 1611–1665, 74, 123, 273, 716, 722</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Montalbano</hi><hi rendition="#smaller">, Ovidio 1601–1671, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Montmor</hi> <hi rendition="#smaller">(Mommor, Monmorius), Henri Louis Habert de 1599–1679, 3, 451</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Moray</hi><hi rendition="#smaller">, Robert 1608–1673, 32</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Moses</hi> <hi rendition="#smaller">(Moyse), 686</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Motbill</hi><hi rendition="#smaller">, 669</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Mousnerius</hi><hi rendition="#smaller">, Petrus, 468, 520</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Mouton</hi><hi rendition="#smaller">, Gabriel 1618–1694, 131</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Muntinus</hi><hi rendition="#smaller">, Gotthard, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Naudé</hi> <hi rendition="#smaller">(Naudaeus), Gabriel 1600-1653, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Neuré</hi> <hi rendition="#smaller">(Neuraeus), Laurent Mesme gest. 1677, 3</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Niceron</hi><hi rendition="#smaller">, Jean-François 1613–1646, 129</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Nitschke</hi><hi rendition="#smaller">, Eliasz 1644–1711, 642</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Nuiz</hi><hi rendition="#smaller">, Joachim Jean, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Nuñez</hi> <hi rendition="#smaller">(Nonius), Pedro 1502–1578, 10, 21, 130</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Nylandt</hi> <hi rendition="#smaller">(Nulandius), Franz Wilhelm von, 17. Jh., 523, 528f.</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Nys</hi><hi rendition="#smaller">, Isaac Jean, 601</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Oldenburg</hi> <hi rendition="#smaller">(Grubendol), Heinrich 1618–1677, 19, 196, 596, 606, 687</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Oppenheim</hi><hi rendition="#smaller">, Salomon 1640–1697, 666</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Orléans</hi><hi rendition="#smaller">, Philipp, Herzog von 1640–1701, 701</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Österreich</hi><hi rendition="#smaller">, Karl Joseph von 1649–1664, 665</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Ozanam</hi> <hi rendition="#smaller">(Osanna), Jacques 1640–1717, 196</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Paisen</hi> <hi rendition="#smaller">(Paisenius), Matthias 1643–1670, 642</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Palladio</hi><hi rendition="#smaller">, Andrea di Piero della Gondola 1508–1580, 129</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Palmer</hi><hi rendition="#smaller">, 644</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Pantelius</hi><hi rendition="#smaller">, Petrus, um 1670, 644</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Papin</hi><hi rendition="#smaller">, Denis 1647–1714, 771</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Pappos</hi> <hi rendition="#smaller">(Pappus) von Alexandrien, um 300, 69</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Pardies</hi><hi rendition="#smaller">, Ignace Gaston 1636–1673, 59, 59–61, 122, 128, 131, 446</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Pascal</hi> <hi rendition="#smaller">(Pascalius), Blaise 1623–1662, 8</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Pechlin</hi><hi rendition="#smaller">, Johann Nicolas 1644–1706, 606</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Peiresc</hi> <hi rendition="#smaller">(Peirescius)</hi> <hi rendition="#i #smaller">siehe</hi> <hi rendition="#smaller">Fabri de Peiresc, Nicolas-Claude</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Peirinsius</hi><hi rendition="#smaller">, Alexander Calignonus, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Perrault</hi><hi rendition="#smaller">, Charles 1628–1703, 699, 700</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Perrault</hi> <hi rendition="#smaller">(Perraltus), Claude 1613–1688, 268, 272, 343, 353, 530, 699–703</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Peurbach</hi><hi rendition="#smaller">, Georg von 1423–1461, 126, 131</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Pfalz-Simmern: Ruprecht</hi><hi rendition="#smaller">, Pfalzgraf (princeps Robertus) 1619–1682, 687</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Pies</hi> <hi rendition="#smaller">(Piso), Willem 1611–1678, 601</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Pinzellone</hi><hi rendition="#smaller">, Rocco, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Pisani</hi><hi rendition="#smaller">, Ottavio 1575–nach 1637, 131</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Pitt</hi><hi rendition="#smaller">, Moses, fl. 1654-1696, 65</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Platon</hi><hi rendition="#smaller">, 427-347 v. Chr., 653</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Plinius</hi> <hi rendition="#smaller">Secundus Maior, Gaius 23–79, 506</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Pockocke</hi> <hi rendition="#smaller">(Pokokius), Edward 1604–1691, 686</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Pona</hi><hi rendition="#smaller">, Giovanni 1565–1630, 598</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Ptolemäus</hi><hi rendition="#smaller">, Claudius um 100–165, 653</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Rabel</hi> <hi rendition="#smaller">(Rabelius), 17. Jh., 687</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Rapine</hi><hi rendition="#smaller">, Florimond 1579–1646, 617</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Redi</hi><hi rendition="#smaller">, Francesco 1626–1697, 602</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Regiomontanus</hi><hi rendition="#smaller">, Johannes 1436–1476, 126</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Regnauld</hi> <hi rendition="#smaller">(Regnaldus), François 1626(?)–1689, 123, 273</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Rheticus</hi><hi rendition="#smaller">, Georg Joachim 1514–1576, 126</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Riccioli</hi><hi rendition="#smaller">, Giambattista 1598–1671, 695</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Rivière</hi> <hi rendition="#smaller">(Riverus), Lazare 1589–1655, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Roannez</hi> <hi rendition="#smaller">(Roanez), Artus Gouffier de 1627–1699, 631, 752, 759, 762</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Robertus</hi><hi rendition="#smaller">, princeps</hi> <hi rendition="#i #smaller">siehe</hi> <hi rendition="#smaller">Pfalz-Simmern: Ruprecht, Pfalzgraf</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Roberval</hi> <hi rendition="#smaller">(Robervallius), Gilles Personne de 1602–1675, 123, 131</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Roeters</hi><hi rendition="#smaller">, Justus, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Rohault</hi><hi rendition="#smaller">, Jacques 1620–1675, 125, 131</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Rømer</hi> <hi rendition="#smaller">(Romerus), Ole 1644–1710, 124, 764</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Ryff</hi> <hi rendition="#smaller">(Rivius), Walther Hermann um 1500–1548, 126</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Sachs von Löwenheim</hi><hi rendition="#smaller">, Philipp Jacob 1627–1672, 648</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Saint-Vincent</hi><hi rendition="#smaller">, Grégoire de (Gregorius a Sancto Vincentio) 1584–1667, 276, 279, 303, 307, 316</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Sampson</hi><hi rendition="#smaller">, Henry 1629(?)-1700, 641</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Sanguien</hi><hi rendition="#smaller">, 667</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Santorio</hi><hi rendition="#smaller">, Santorio 1561–1636, 650, 660</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Savary d’Arbagnon</hi><hi rendition="#smaller">, 602</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Scaliger</hi><hi rendition="#smaller">, Joseph Juste 1540–1609, 600</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Scaliger</hi><hi rendition="#smaller">, Julius Caesar 1484–1558, 493</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Scheiner</hi><hi rendition="#smaller">, Christoph 1573–1650, 129</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Schenck</hi><hi rendition="#smaller">, Matthias 1517–1571, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Schickard</hi> <hi rendition="#smaller">(Schickardus), Wilhelm 1592–1635, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Scholz</hi><hi rendition="#smaller">, Lorenz 1552–1599, 656</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Schott</hi> <hi rendition="#smaller">(Schottus), Kaspar 1608–1666, 118</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Schrader</hi><hi rendition="#smaller">, Friedrich (1657–1704), 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Schrader</hi><hi rendition="#smaller">, Justus, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Schütz von Holzhausen</hi><hi rendition="#smaller">, Anna Christin 1630–1689, 665</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Schwenter</hi><hi rendition="#smaller">, Daniel 1585–1636, 131, 481</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Schyrl</hi> <hi rendition="#smaller">(Schyrlaeus de Rheita), Anton Maria 1597–1660, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Sennert</hi><hi rendition="#smaller">, Daniel 1572–1637, 493, 497</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Serapion</hi> <hi rendition="#smaller">der Jüngere, 601</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Servenhuisen</hi><hi rendition="#smaller">, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">‘s-Gravesande</hi><hi rendition="#smaller">, Cornelius 1631–1691, 606</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Siegen</hi><hi rendition="#smaller">, Ludwig von 1609–1680, 129</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Sladus</hi><hi rendition="#smaller">, Matthaeus 1569–1628, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Soranzo</hi><hi rendition="#smaller">, Lazzaro, vor 1572–1602, 661</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Stensen</hi> <hi rendition="#smaller">(Steno), Niels 1638–1686, 599f., 648, 652, 654, 664</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Strada</hi><hi rendition="#smaller">, Famiano 1572–1649, 691</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Strayti</hi><hi rendition="#smaller">, Alexandre, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Stubbe</hi><hi rendition="#smaller">, Henry 1632–1676, 646</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Swammerdam</hi><hi rendition="#smaller">, Jan 1637–1680, 594, 596, 600, 602, 611f.</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Syen</hi><hi rendition="#smaller">, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Sylvius</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">siehe</hi> <hi rendition="#smaller">De le Boë, Frans</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Tacke</hi> <hi rendition="#smaller">(Tachenius), Otto 1610–1680, 606, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Tacquet</hi><hi rendition="#smaller">, Andreé 1612–1660, 257</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Tavernier</hi><hi rendition="#smaller">, Jean Baptiste 1605–1689, 770</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Theophrast</hi><hi rendition="#smaller">, um 371–287 v. Chr., 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Thévenot</hi><hi rendition="#smaller">, Melchisédec 1620–1692, 128, 130</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Thoelde</hi><hi rendition="#smaller">, Johann 1565–1614, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Torricelli</hi> <hi rendition="#smaller">(Torricellius), Evangelista 1608–1647, 95, 102, 343, 353, 483f.</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Travagini</hi><hi rendition="#smaller">, Francesco gest. nach 1667, 451</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Trew</hi><hi rendition="#smaller">, Abdias 1597–1669, 654</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Tulpius</hi><hi rendition="#smaller">, Nicolaus Petreus 1593–1674, 601, 605</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Valesius</hi><hi rendition="#smaller">, Jacobus, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Vandenbrug</hi><hi rendition="#smaller">, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Van der Linden</hi> <hi rendition="#smaller">(Lindanus), Johannes (Jan) Antonides 1609–1664, 640, 646</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Van Dyck</hi><hi rendition="#smaller">, Levyn, 523</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Van Helmont</hi><hi rendition="#smaller">, Franciscus Mercurius 1618–1698, 128(?)</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Van Helmont</hi><hi rendition="#smaller">, Jan Baptista 1579–1644, 128(?), 608, 619, 642f., 680</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Van Hulse</hi> <hi rendition="#smaller">(Hulsius), Levinus 1546–1606, 130</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Van Leeuwenhoek</hi><hi rendition="#smaller">, Antoni 1632–1723, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Van Waesbergen</hi><hi rendition="#smaller">, Jan 1661–1681, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Varenius</hi><hi rendition="#smaller">, Bernhardus 1622–1650, 126</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Vernier</hi><hi rendition="#smaller">, Pierre 1580–1637, 16, 21</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Verret</hi><hi rendition="#smaller">, 687</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Vestri</hi><hi rendition="#smaller">, Andrea, 597</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Viète</hi> <hi rendition="#smaller">(Vieta), François 1540–1603, 126</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Vitruvius Pollio</hi><hi rendition="#smaller">, Marcus um 70-10 v. Chr., 268, 343, 353, 538, 699</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Vives</hi><hi rendition="#smaller">, Juan Luis 1492–1540, 661</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Vivien</hi><hi rendition="#smaller">, François, 16</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Vossius</hi> <hi rendition="#smaller">(Voss), Isaac 1618–1689, 686, 716, 722</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Wallis</hi> <hi rendition="#smaller">(Wallisius), John 1616–1703, 15, 59, 65, 67–70, 72f., 89, 92, 98, 101–104, 107f., 125f., 303</hi>
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Weigel</hi><hi rendition="#smaller">, Erhard 1625–1699, 131</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Willis</hi><hi rendition="#smaller">, Thomas 1621–1675, 606, 687</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Witelo</hi> <hi rendition="#smaller">(Vitellio), um 1237–um 1280/90, 710</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Wormius</hi><hi rendition="#smaller">, Olaus (1588–1654), 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Würz</hi> <hi rendition="#smaller">(Wurtz, Wurzius), Paul von 1612–1676, 124</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Wren</hi> <hi rendition="#smaller">(Wrennus), Christopher 1632–1723, 12, 30, 92, 104f., 655</hi>
+
+      </item>
+      <item>
+        <hi rendition="#g #smaller">Xenophon</hi> <hi rendition="#smaller">um 430–354 v. Chr., 699</hi>
+
+      </item>
+    </list>
+  </div></body>
+  </text>
+</TEI>

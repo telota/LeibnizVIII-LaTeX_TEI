@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch65" n="65"><pb type="VIII_2" n="631"/><head>65.
+AUS EINEM GESPRÄCH MIT ARTUS DE ROANNEZ</head>
+<head>31. Dezember 1675</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Aufzeichnung:
+LH XXXVII 3 Bl. 89.
+Zettel (etwa 20 x 6 cm), unregelmäßig beschnitten.
+12 Z. auf Bl. 89 r<hi rendition="#sup">o</hi>, 2 Z. auf Bl. 89 v<hi rendition="#sup">o</hi>.
+Ursprünglich dürfte der Zettel Teil des Textträgers von N. 97<hi rendition="#sub">4</hi>
+gewesen sein.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 1179</hi></p></item></list></p></div><div type="text"><p xml:id="Ch65.p4" rendition="#noindent"><pb type="L"/><fw type="folNum">[89 r<hi rendition="#sup">o</hi>]</fw>
+J’ay parlé aujourdhuy (ultimo anni 1675) à Mons. le duc de Roanez<index indexName="Namensregister"><term><hi rendition="#g">de Roannez</hi>, Artus Gouffier 1627-1699</term></index> en presence de Mons. de S. Martin, de ma <app type="Bfootnote"><lem type="main">pensée de dessaler</lem><note type="lemma-abbrev">pensée de</note><rdg wit="#L" n="1"> faire </rdg><rdg wit="#L" n="2"> dessaler <hi rendition="#i">L</hi></rdg></app> l’eau de mer, sans feu. Car ayant <app type="Bfootnote"><lem type="main">avoué, que</lem><note type="lemma-abbrev">avoué,</note><rdg wit="#L" n="1"> qu’on </rdg><rdg wit="#L" n="2"> que  <hi rendition="#i">L</hi></rdg></app> la distillation<index indexName="Sachverzeichnis"><term>distillation</term></index> ne sert de rien, à cause qu’on peut remplir d’eau la place qui seroit necessaire pour les charbons; je luy dis que j’avois un moyen <app type="Bfootnote"><lem type="main">de dessaler</lem><note type="lemma-abbrev">de</note><rdg wit="#L" n="1"> faire </rdg><rdg wit="#L" n="2"> dessaler  <hi rendition="#i">L</hi></rdg></app> l’eau sans feu, en la pressant et <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[l’obligeant]</corr></lem><rdg wit="#L"><orig>l’obligant</orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> de passer par quelque chose, comme pierre, sable, plomb. Il me dit qu’il trouvoit cela fort considerable, d’autant qu’il sçavoit que l’eau passoit même par le fer; <app type="Bfootnote"><lem type="main">et qu’un</lem><note type="lemma-abbrev">et</note><rdg wit="#L" n="1"> qu’une </rdg><rdg wit="#L" n="2"> qu’un <hi rendition="#i">L</hi></rdg></app> millier pesant sur piston de demy pouce de diametre a fait pisser l’eau par le fer de deux lignes de largeur. Il me dit de n’en pas parler, afin qu’on le pût essayer.</p><p xml:id="Ch65.p5">Mons. de Galinée<index indexName="Namensregister"><term><hi rendition="#g">Galinée</hi>, Abbé de 1678</term></index> a porté une pierre blanche de Bretagne<index indexName="Ortsregister"><term>Bretagne</term></index>, à travers de la quelle les choses distillées<index indexName="Sachverzeichnis"><term>distiller</term></index> perdent le goust<index indexName="Sachverzeichnis"><term>goût</term></index>. L’urine<index indexName="Sachverzeichnis"><term>urine</term></index> même. Mais il faut tousjours. Il y a une difficulté icy: comment oster la salûre au <index indexName="Sachverzeichnis"><term>plomb</term></index>plomb? Car il y restera du <index indexName="Sachverzeichnis"><term>sel</term></index>sel, il en seroit tout changé. Je croy qu’en le remettant dans <app type="Bfootnote"><lem type="main">l’eau et l’y</lem><note type="lemma-abbrev">l’eau et</note><rdg wit="#L" n="1"> luy </rdg><rdg wit="#L" n="2"> l’y  <hi rendition="#i">L</hi></rdg></app> remuant, le sel se dissoudroit et sortiroit.
+<pb type="L"/><fw type="folNum">[89 v<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch65.p6">On pourroit faire passer l’eau à travers de la poudre de plomb au lieu de sable, et quand l’eau ne voudroit plus passer, ny le plomb retenir du sel d’avantage on le pourroit fondre, et pulveriser derechef.</p></div></div></body>
+  </text>
+</TEI>

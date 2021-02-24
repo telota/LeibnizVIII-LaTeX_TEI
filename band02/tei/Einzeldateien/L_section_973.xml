@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="section" xml:id="Ch97.S3" n="973"><pb type="VIII_2" n="759"/><head>97<hi rendition="#sub">3</hi>.
+BARRAGES DES EAUX COURANTES 2</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi>
+<list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Aufzeichnung: LH XXXVIII Bl. 24.
+1 Bl. 4<hi rendition="#sup">o</hi>.
+1 S. auf Bl. 24 r<hi rendition="#sup">o</hi>. Bl. 24 v<hi rendition="#sup">o</hi> leer.
+Papierränder beschädigt, ohne Textverlust.
+Haupttext und Marginalien sind durch die Zeichnung [<hi rendition="#i">Fig. 1</hi>] voneinander getrennt.</hi></p><p><hi rendition="#smaller">C<pb type="VIII_2" n="761"/>c 2, Nr. 1133 B</hi></p></item></list></p></div><div type="text"><p xml:id="Ch97.S3.p2" rendition="#noindent"><pb type="L"/><fw type="folNum">[24 r<hi rendition="#sup">o</hi>]</fw>
+Il y <pb type="VIII_2" n="761"/>a 3 pouces de saut<index indexName="Sachverzeichnis"><term>saut</term></index> à tous ces endroits, <formula xml:id="Ch97.S3.p2.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula>, <formula xml:id="Ch97.S3.p2.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula>, <formula xml:id="Ch97.S3.p2.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula>,
+distance à peu pres d’un quart de lieue, ou de 7 ou 800 toises;
+elle <pb type="VIII_2" n="761"/>a 4 pieds de haut aux moindres endroits; sçauuoir <pb type="VIII_2" n="760"/>deux choses:<note type="Afootnote" place="margin" resp="#L"><note type="lemma-abbrev"><hi rendition="#i">Neben der Zeichnung:</hi></note>Bouchons <note type="Afootnote-sub" n="[a]">Bouchons <note type="editorial"><hi rendition="#i">erg. L</hi></note> </note>
+14 toises de large sur deux d’ouuerture ou <formula xml:id="Ch97.S3.p2.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:msup><m:mstyle displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mstyle><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow></m:msup></m:math></formula> <note type="Afootnote-sub" n="[b]">ou <formula xml:id="Ch97.S3.p2.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:msup><m:mstyle displaystyle="true"><m:mfrac><m:mn mathsize="80%">1</m:mn><m:mn mathsize="80%">8</m:mn></m:mfrac></m:mstyle><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow></m:msup></m:math></formula> <note type="editorial"><hi rendition="#i">erg. L</hi></note> </note>
+on trouue cela commode dans l’experience pour juger de la <note type="Afootnote-sub" n="[c]">la | pente<index indexName="Sachverzeichnis"><term>pente</term></index> par la <note type="editorial"><hi rendition="#i">gestr.</hi></note> | vitesse, <hi rendition="#i">L</hi> </note>
+vitesse, il faut <note type="Afootnote-sub" n="[d]">faut [<hi rendition="#i">Text bricht ab.</hi>]</note></note><!--  \hack{\newline\indent} 
+     \hackfor{\par}--></p><p xml:id="Ch97.S3.p3">1. en ostant une digue<index indexName="Sachverzeichnis"><term>digue</term></index> ou barre<index indexName="Sachverzeichnis"><term>barre</term></index> comme
+<app type="Bfootnote"><lem type="main">cela,<note type="Afootnote" place="margin" resp="#L"><note type="lemma-abbrev"><hi rendition="#i">Neben der Zeichnung:</hi></note>Cela sert pour diminuer l’inondation<index indexName="Sachverzeichnis"><term>inondation</term></index> des rivieres,<index indexName="Sachverzeichnis"><term>riviere</term></index>
+en ostant des barres<index indexName="Sachverzeichnis"><term>barre</term></index>.</note>
+[où] (+ pertuis<index indexName="Sachverzeichnis"><term>pertuis</term></index> c’est le trou +) l’eau baisser<pb type="VIII_2" n="761"/>a</lem><note type="lemma-abbrev">cela,</note><rdg wit="#L"><note type="editorial">|</note> ou <note type="editorial"><hi rendition="#i">ändert Hrsg.</hi> |</note> </rdg><rdg wit="#L" n="1"> pertuis; </rdg><rdg wit="#L" n="2"> (+ pertuis c’est le trou +) <app><rdg wit="#L" n="a">sçauoir
+</rdg><rdg wit="#L" n="b">l’eau baissera <hi rendition="#i">L</hi></rdg></app></rdg></app>
+(<?tex-source \phantom{)}?>+ dans un 4<hi rendition="#sup">t</hi> de lieue:
+nous adjoutant trois pouces de
+<app type="Bfootnote"><lem type="main">pente dans ce quart de lieue <?tex-source \phantom{(}?>+)
+sçauuoir</lem><note type="lemma-abbrev">pente</note><rdg wit="#L" n="1"> dans tout ce corps </rdg><rdg wit="#L" n="2"> dans <seg type="apparat-ellipsis"/> lieue <?tex-source \phantom{(}?>+) <app><rdg wit="#L" n="a">Il vient une crue d’eau qui </rdg><rdg wit="#L" n="b">sçauuoir <hi rendition="#i">L</hi></rdg></app></rdg></app>
+combien elle baisser<pb type="VIII_2" n="761"/>a au pied de l<pb type="VIII_2" n="761"/>a superieure.
+C’est à dire en ostant l<pb type="VIII_2" n="761"/>a digue<index indexName="Sachverzeichnis"><term>digue</term></index> <formula xml:id="Ch97.S3.p3.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>N</m:mi><m:mo>,</m:mo></m:mrow></m:math></formula>
+combien l’eau baisser<pb type="VIII_2" n="761"/>a au dessous de l<pb type="VIII_2" n="761"/>a<note type="Afootnote" place="margin" resp="#L"><note type="lemma-abbrev"><hi rendition="#i">Neben der Zeichnung:</hi></note>Le vent d’un double de vistesse, fera un effect quadruple, et l’eau de même. <note type="Afootnote-sub" n="[a]">même. <hi rendition="#i">(1)</hi> L’eau qui tombe <hi rendition="#i">(2)</hi> La même eau qui tombe <hi rendition="#i">L</hi></note>
+La même eau qui tombe de deux pieds de haut, cela augmente la vistesse seulement, et non pas la matiere.
+Ergo vires erunt ut cubi potius.</note>
+<app type="Bfootnote"><lem type="main">digue<index indexName="Sachverzeichnis"><term>digue</term></index> <formula xml:id="Ch97.S3.p3.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>M</m:mi></m:math></formula>.
+Quand</lem><note type="lemma-abbrev">digue <formula xml:id="Ch97.S3.p3.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>M</m:mi></m:math></formula>.</note><rdg wit="#L" n="1"> Combien la 2<hi rendition="#sup">de</hi>, la 3<hi rendition="#sup">me</hi> </rdg><rdg wit="#L" n="2"> 2. deux b
+</rdg><rdg wit="#L" n="3"> Quand <hi rendition="#i">L</hi></rdg></app>
+on oste les barres<index indexName="Sachverzeichnis"><term>barre</term></index> <formula xml:id="Ch97.S3.p3.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>M</m:mi><m:mo>.</m:mo></m:mrow></m:math></formula> <formula xml:id="Ch97.S3.p3.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>N</m:mi><m:mo>.</m:mo></m:mrow></m:math></formula>
+l’eau baisser<pb type="VIII_2" n="761"/>a davantage à <formula xml:id="Ch97.S3.p3.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>L</m:mi></m:math></formula>, qu’elle n’avoit fait à <formula xml:id="Ch97.S3.p3.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>M</m:mi></m:math></formula>, ostant <formula xml:id="Ch97.S3.p3.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>N</m:mi></m:math></formula> seulement,
+et on demande la proportion, jusqu’en ostant toute celle d’en haut.<!--  \hack{\newline\indent} 
+     \hackfor{\par}--></p><p xml:id="Ch97.S3.p4">2. d’une crue d’eau, qui augmente l<pb type="VIII_2" n="761"/>a riviere<index indexName="Sachverzeichnis"><term>riviere</term></index> de 4 pieds de haut
+(+ les sauts<index indexName="Sachverzeichnis"><term>saut</term></index> alors deviennent beaucoup plus grands, +)<note type="Afootnote" place="margin" resp="#L"><note type="lemma-abbrev"><hi rendition="#i">Neben der Zeichnung:</hi></note>Experiences<index indexName="Sachverzeichnis"><term>experience</term></index> à faire:
+une eau de telle pente, et de telle epaisseur, à une telle vitesse, il faut pour cela un canal.</note>
+on demande toutes les barres<index indexName="Sachverzeichnis"><term>barre</term></index> estant ostées
+combien l’enflure en seroit elle
+<app type="Bfootnote"><lem type="main">moindre. Il y <pb type="VIII_2" n="761"/>a peu de pente et par consequent l’eau</lem><note type="lemma-abbrev">moindre.</note><rdg wit="#L" n="1"> L’eau </rdg><rdg wit="#L" n="2"> Il y <seg type="apparat-ellipsis"/> l’eau <hi rendition="#i">L</hi></rdg></app>
+v<pb type="VIII_2" n="761"/>a lentement dans une telle riviere<index indexName="Sachverzeichnis"><term>riviere</term></index>,
+où il y <pb type="VIII_2" n="761"/>a le même saut.<index indexName="Sachverzeichnis"><term>saut</term></index>
+Quand il vient une crue d’eau de 4
+<app type="Bfootnote"><lem type="main">pieds la pente</lem><note type="lemma-abbrev">pieds</note><rdg wit="#L" n="1"> d’eau </rdg><rdg wit="#L" n="2"> la pente <hi rendition="#i">L</hi></rdg></app>
+devient plus grande de 4 pieds, et l’epaisseur aussi et par consequent la vistesse par 2 raisons.</p><figure rendition="#own-line_centered" xml:id="Ch97.S3.p5">
+          <graphic rendition="#c" url="../images/LH038_24r-d.svg" width="143.0946pt" xml:id="Ch97.S3.p5.g1"/>
+        <head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head></figure></div></div></body>
+  </text>
+</TEI>

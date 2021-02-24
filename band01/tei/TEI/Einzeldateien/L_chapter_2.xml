@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-09" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch2" n="2"><pb type="VIII_1" n="23"/><head>2.
+DE LONGITUDINIBUS INVENIENDIS</head> <head>[Ende 1668 – Anfang 1669]</head><div type="contents"><p xml:id="Ch2.p1"><hi rendition="#smaller">Bei den folgenden Stücken handelt es sich um ein Textcorpus, das Leibniz nachträglich strukturiert hat. In der ursprünglichen Fassung wurden die Überlegungen zum Problem der Längengradbestimmung sukzessive auf 16 Seiten im Folioformat niedergeschrieben. Diese hat Leibniz später auf Bl. 46 r<hi rendition="#sup">o</hi> mit dem Zusatz <hi rendition="#i">Intra finem anni 1668 et initium 1669</hi> versehen, worauf unsere Datierung beruht. Ebenfalls nachträglich wurden die stückkonstituierenden Überschriften <hi rendition="#i">Longit. 1</hi>, <hi rendition="#i">Longit. 2</hi> usw. hinzugefügt. Bl. 74 v<hi rendition="#sup">o</hi> enthält den Entwurf zu einem <hi rendition="#i">Instrumentum longitudinum</hi>, auf den in <hi rendition="#i">Longit. 2</hi> Bezug genommen wird. Wir ordnen die Beschreibung dieses Instruments zur Längengradbestimmung als eigenständiges Stück unmittelbar vor <hi rendition="#i">Longit. 2</hi> ein.</hi></p></div><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_21.xml" xpointer="Ch2.S1" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_22.xml" xpointer="Ch2.S2" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_23.xml" xpointer="Ch2.S3" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_24.xml" xpointer="Ch2.S4" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_25.xml" xpointer="Ch2.S5" parse="xml"/></div></body>
+  </text>
+</TEI>

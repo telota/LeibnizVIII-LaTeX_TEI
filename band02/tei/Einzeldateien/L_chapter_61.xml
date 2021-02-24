@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch61" n="61"><pb type="VIII_2" n="617"/><head>61.
+BÜCHERLISTE</head>
+<head>[Herbst 1672 – Anfang 1673]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Notiz: XXXV 12, 1 Bl. 328-329.
+1 Bog. 2<hi rendition="#sup">o</hi>.
+6 Z. auf Bl. 328 r<hi rendition="#sup">o</hi>.
+Der Bog. überliefert zudem die erste Hälfte von <hi rendition="#i">LSB</hi> VII, 3 N. 8.
+Wasserzeichen auf Bl. 328.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 529</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch61.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Die Datierung von <hi rendition="#i">LSB</hi> VII, 3 N. 8 wird auch für das vorliegende, auf demselben Bogen überlieferte Stück N. 61 übernommen.
+Das Wasserzeichen im Textträger ist für die Zeitspanne vom Sommer 1672 bis zum Frühling 1673 belegt.</hi></p></div><div type="text"><p xml:id="Ch61.p5" rendition="#noindent #hangindent"><pb type="L"/><fw type="folNum">[328 r<hi rendition="#sup">o</hi>]</fw>
+<app type="Cfootnote"><lem type="main">Libavius<index indexName="Namensregister"><term><hi rendition="#g">Libavius</hi>, Andreas 1550-1616</term></index>
+<hi rendition="#i">Alchem.</hi> lib. 1. c. 14. p. 27.</lem><note type="lemma-abbrev">Libavius <seg type="apparat-ellipsis"/> p. 27</note><note type="editorial"><bibl corresp="#bib_01126"><hi rendition="#k">A. Libavius</hi>, <hi rendition="#i">Alchemia</hi>, Frankfurt a.M. 1597, S. 26-28.</bibl></note></app>
+repraesentat
+<app type="Cfootnote"><lem type="main">ex And. Fachsio<index indexName="Namensregister"><term><hi rendition="#g">Fachs</hi>, Modestin ??-1575</term></index></lem><note type="lemma-abbrev">ex And. Fachsio</note><note type="editorial"><bibl corresp="#bib_00045"><hi rendition="#k">M. Fachs</hi>, <hi rendition="#i">Probierbüchlein</hi>, Leipzig 1595, S. 6. Die Bezeichnung des Autors als <hi rendition="#i">And. Fachsius</hi> ist erklärbar durch Verwechslung mit Andreas Libavius.</bibl></note></app>
+ea quae calorem<index indexName="Sachverzeichnis"><term>calor</term></index> reddunt irregularem.</p><p xml:id="Ch61.p6" rendition="#noindent">Florimond <app type="Cfootnote"><lem type="main">Rapine.<index indexName="Namensregister"><term><hi rendition="#g">Rapine</hi>, Florimond 1579-1646</term></index> 1614. 1651.</lem><note type="lemma-abbrev">Rapine. 1614. 1651</note><note type="editorial"><bibl corresp="#bib_00085"><hi rendition="#k">F. Rapine</hi>, <hi rendition="#i">Recueil de tout ce qui s’est fait en l’assemblée générale des estats tenus à Paris en l’an 1614</hi>, Paris 1651.</bibl></note></app></p><p xml:id="Ch61.p7" rendition="#noindent">Vincent <app type="Cfootnote"><lem type="main">Cabot.<index indexName="Namensregister"><term><hi rendition="#g">Cabot</hi>, Vincent 1560-1620</term></index>
+26 lib. Pierre du Bosc.<index indexName="Namensregister"><term><hi rendition="#g">Bosc</hi>, Pierre du 1623-1692</term></index> 1630.</lem><note type="lemma-abbrev">Cabot <seg type="apparat-ellipsis"/> 1630</note><note type="editorial"><bibl corresp="#bib_00018"><hi rendition="#k">V. Cabot</hi>, <hi rendition="#i">Les Politiques</hi>, par Pierre Bosc marchand libraire,
+Toulouse 1630. Der Text ist eigentlich in 28 Bücher unterteilt.</bibl></note></app></p><p xml:id="Ch61.p8" rendition="#noindent"><app type="Cfootnote"><lem type="main"><hi rendition="#i">De inventione Remediorum</hi><index indexName="Sachverzeichnis"><term>remedium</term></index></lem><note type="lemma-abbrev"><hi rendition="#i">De inventione Remediorum</hi></note><note type="editorial"><bibl corresp="#bib_00090"><hi rendition="#k">S. Santorio</hi>, <hi rendition="#i">De remediorum inventione</hi>, Genf 1631.</bibl></note></app>
+et <app type="Cfootnote"><lem type="main"><hi rendition="#i">methodus</hi><index indexName="Sachverzeichnis"><term>methodus</term></index> etc.</lem><note type="lemma-abbrev"><hi rendition="#i">methodus</hi> etc.</note><note type="editorial"><bibl corresp="#bib_00089"><hi rendition="#k">S. Santorio</hi>, <hi rendition="#i">Methodus vitandorum errorum omnium qui in arte medica contingunt</hi>, Venedig 1603. Neuausgabe: Venedig 1630.<bibl corresp="#bib_01127"/></bibl></note></app>
+Logica Medica<index indexName="Sachverzeichnis"><term>logica medica</term></index>.</p></div></div></body>
+  </text>
+</TEI>

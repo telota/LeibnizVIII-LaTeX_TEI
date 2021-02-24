@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch13" n="13"><pb type="VIII_2" n="141"/><head>13.
+ANSTREICHUNGEN UND ANMERKUNGEN IN PIERRE LE CAZRE, PHYSICA DEMONSTRATIO</head>
+<head>[September 1672 – März 1673]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">LiH</hi></label>
+<p><hi rendition="#smaller">Anstreichungen und Anmerkungen in
+<hi rendition="#k">P. Le Cazre</hi>,<ref corresp="#bib_01022"/> <hi rendition="#i">Physica demonstratio qua ratio, mensura, modus ac potentia accelerationis motus in naturali descensu gravium determinantur</hi>, Paris 1645:
+<hi rendition="#k">Hannover</hi>, GWLB, Leibn. Marg. 126. Textverlust durch Beschneidung der Ränder.</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch13.p3"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Hinweise auf die Thematik der <hi rendition="#i">Physica demonstratio</hi> finden sich in N. 1, N. 7 und N. 10, Anspielungen in N. 34<hi rendition="#sub">4</hi> und N. 36. Leibniz’ Randbemerkungen dürften somit in einem Zeitraum vom Sommer 1672 bis zum Ende 1675 entstanden sein.
+Die inhaltliche Verwandschaft mit den Stücken N. 14 und N. 15 legt allerdings eine gemeinsame Datierung auf September 1672 bis März 1673 nahe.</hi></p></div><div type="text"><p xml:id="Ch13.p4" rendition="#noindent">[p. 8]
+<hi rendition="#i">Si acceleratio<index indexName="Sachverzeichnis"><term><hi rendition="#i">acceleratio</hi></term></index> motus</hi>
+(inquit)
+<hi rendition="#i">in descensu<index indexName="Sachverzeichnis"><term><hi rendition="#i">descensus</hi></term></index> grauium<index indexName="Sachverzeichnis"><term><hi rendition="#i">grave</hi></term></index>,
+aequalibus spatiis aequalia sumeret velocitatis incrementa, essent sine dubio velocitates <note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">An</hi> velocitates <hi rendition="#i">angeschlossen:</hi> sub finem emensi spatii acquisitae</note>
+inter se vt emensa spatia. At quotiescumque velocitates
+inter se sunt vt emensa spatia, debent necessario ea spatia, aut eodem, aut aequali tempore
+percurri.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">An</hi> percurri <hi rendition="#i">angeschlossen:</hi>
+Negatur. Neque enim velocitates sub motus finem acquisitae, <note type="Afootnote-sub" n="[a]">acquisitae, <hi rendition="#i">(1)</hi> restari <hi rendition="#i">(2)</hi> spatiis <hi rendition="#i">L</hi></note>
+spatiis proportionales faciunt tempus aequale sed velocitates quibus tota spatia percursa sunt.
+Est ergo verissimum ratiocinationi Galilaei<index indexName="Namensregister"><term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term></index> inesse paralogismum.
+Quanquam Cazraeus<index indexName="Namensregister"><term><hi rendition="#g">Le Cazre</hi> (Cazreus), Pierre 1589-1664</term></index> non videatur eum satis retexisse.</note>
+Si igitur velocitas acquisita per totam AC, eam rationem habeat ad velocitatem acquisitam per AB, quam spatium AC, ad spatium AB,</hi></p><pb type="VIII_2" n="142"/><figure rendition="#inline-margin-left" xml:id="Ch13.fig1_1">
+        
+        <graphic rendition="#c" url="../images/cazreus1645-d1.svg" style="trim:  1mm 1mm -13mm 2mm; clip: true" width="65.043pt" xml:id="Ch13.g1"/>
+        
+        <head xml:id="Ch13.fig1_2" rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head>
+      </figure><p xml:id="Ch13.p5" rendition="#noindent"><hi rendition="#i">necesse est vt spatium totum AC, eodem, aut aequali tempore decurratur,
+quo spatium AB absoluitur. Impossibile est autem vt corpus graue descendens per AC, eodem aut aequali tempore percurrat totam AC,
+quo percurrit partem eius AB, nisi motus fiat in instanti.
+Tam impossibile est igitur, vt velocitates in descensu<index indexName="Sachverzeichnis"><term><hi rendition="#i">descensus</hi></term></index>
+grauium<index indexName="Sachverzeichnis"><term><hi rendition="#i">grave</hi></term></index> inter se sint vt emensa spatia,
+(ac proinde vt etiam aequalibus spatiis crescant aequaliter) quam impossibile est motum illum fieri <app type="Cfootnote"><lem type="main">in instanti.</lem><note type="lemma-abbrev"><hi rendition="#i">in instanti</hi></note><note type="editorial"><bibl corresp="#bib_00050"><hi rendition="#k">G. Galilei</hi>, <hi rendition="#i">Discorsi</hi>, Leiden 1638, S. 164f. (<bibl corresp="#bib_00048"><hi rendition="#i">GO</hi> VIII, S. 203f).
+Das Zitat ist eine lateinische Zusammenfassung von Galileis Argument.</bibl></bibl></note></app></hi></p><p xml:id="Ch13.p6" rendition="#noindent">[p. 11]
+[<hi rendition="#i">Gedruckte Marginalie zu Fig. 2</hi>]
+Experientia qua Galilaeus<index indexName="Namensregister"><term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term></index>
+suum Postulatum confirmare nititur.<note type="Afootnote" place="margin" resp="#L"><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt-->[<hi rendition="#i">Fig. 2</hi>]</note><hi rendition="#i">Zum Diagramm:</hi>
+<hi rendition="#i">K.H.D.</hi> debent esse in eadem recta horizonti parallela.</note></p><figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch13.p7">
+        <graphic url="../images/cazreus1645-d2.svg" width="238.491pt" xml:id="Ch13.p7.g1"/>
+        
+        <head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]</head>
+      </figure><p xml:id="Ch13.p8" rendition="#noindent">[p. 12]
+<seg type="apparat-ellipsis"/> neque per diuersos arcus ad eam
+aequaliter accedunt.
+Nempe filo pedum <pb type="VIII_2" n="143"/>quatuor cum dimidio suspensus globus, ad lineam horizontalem,
+tribus infra centrum pedibus descriptam, propius quam duobus digitis nunquam accessit.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Unterstrichen:</hi>
+filo pedum <seg type="apparat-ellipsis"/> nunquam accessit.</note>
+At centro nouem tantum digitis supra lineam horizontalem accepto,
+filoque duorum pedum constituto, iam globus ad lineam horizontalem,
+vno digito quam antea propius accessit.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand markiert:</hi>
+Nempe filo pedum <seg type="apparat-ellipsis"/> antea propius accessit.</note>
+Vbi vero centrum septem infra lineam horizontalem digitis assumptum est, vix ad quatuor a linea horizontali digitos globus ascendit.</p><p xml:id="Ch13.p9" rendition="#noindent">[p. 13]
+Globus enim per aërem semper toto suo pondere deorsum nititur, et eatenus solum eius descensus interturbatur, quatenus a recto et<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand:</hi>
+Imo res eodem redit.</note>
+perpendiculari cursu, ad circularem cogitur atque adducitur.</p><p xml:id="Ch13.p10" rendition="#noindent">[p. 18]
+Aio igitur, ita esse a natura constitutum, vt globus<index indexName="Sachverzeichnis"><term>globus</term></index> quilibet, cuiuscumque materiae, ex vnius diametri altitudine cadens, duplum sui ponderis<index indexName="Sachverzeichnis"><term>pondus</term></index>, hoc est, praeter pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> quod sine impetu in aequilibrio retineret, aliud sibi aequale attollat; et ex altitudine duarum diametrorum, triplum; ex tribus diametris, quadruplum; et ita deinceps: adeo vt ex quauis altitudine cadens, semper (vltra aequilibrium) toties proprium pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> multiplicatum attollat, quot in tota vnde cadit altitudine diametri continentur.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Markierter Absatz.</hi></note></p><p xml:id="Ch13.p11" rendition="#noindent">[<hi rendition="#i">Neben diesem Absatz folgende gedruckte Marginalie:</hi>]</p><p xml:id="Ch13.p12">Experientia<index indexName="Sachverzeichnis"><term>experientia</term></index> noua, et admiratione digna, modum, mensuram, ac rationem accelerationis<index indexName="Sachverzeichnis"><term>acceleratio</term></index> motus in naturali grauium descensu euidenter exprimens.</p><p xml:id="Ch13.p13" rendition="#noindent">[p. 37]
+Aïo vero aequalibus temporibus, spatia decurri maiora semper ac maiora in ratione dupla. Diuiso enim spatio <hi rendition="#i">AB</hi>, per quod supponitur fieri descensus, in partes quotcumque aequales, in <formula xml:id="Ch13.p13.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula>, <formula xml:id="Ch13.p13.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>, <formula xml:id="Ch13.p13.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula>, <formula xml:id="Ch13.p13.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>F</m:mi></m:math></formula>, etc. iam ostensum est partem secundam <formula xml:id="Ch13.p13.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula>, et primae partis dimidiam partem inferiorem <formula xml:id="Ch13.p13.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>N</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:math></formula>, aequali tempore percurri, et ob eam quidem causam, quod vt pars <formula xml:id="Ch13.p13.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula> dupla est partis <formula xml:id="Ch13.p13.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>N</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:math></formula>, ita velocitas quoque per totam <formula xml:id="Ch13.p13.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula>, dupla sit velocitatis per totam
+<formula xml:id="Ch13.p13.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>N</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:math></formula>.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">An</hi> totam <hi rendition="#i">NC anschließend:</hi>
+Hic incipit Paralogismus,<note type="Afootnote-sub" n="[a]">Paralogismus, <hi rendition="#i">(1)</hi> aequales <hi rendition="#i">(2)</hi> duplae <hi rendition="#i">L</hi>
+ </note><index indexName="Sachverzeichnis"><term>paralogimus</term></index> duplae sunt anal<formula xml:id="Ch13.p13.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>ogiae<formula xml:id="Ch13.p13.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>,</m:mo><m:mo stretchy="false">⟩</m:mo></m:mrow></m:math></formula><note type="Afootnote-sub" n="[b]">duplae sunt anal<formula xml:id="Ch13.p13.m27"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>ogiae,<formula xml:id="Ch13.p13.m28"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula> <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+ </note> singul<formula xml:id="Ch13.p13.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>a<formula xml:id="Ch13.p13.m14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula> singulis, sed non aggregata ag<formula xml:id="Ch13.p13.m15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>gre<formula xml:id="Ch13.p13.m16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula>gatis, quae sunt in quadrupla ratione, seu in duplicata alti<formula xml:id="Ch13.p13.m17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>tu<formula xml:id="Ch13.p13.m18"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula>dinum. Et facile intel<formula xml:id="Ch13.p13.m19"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>ligi<formula xml:id="Ch13.p13.m20"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula> potest, quod de <hi rendition="#g">duplo</hi> dicit<formula xml:id="Ch13.p13.m21"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>ur<formula xml:id="Ch13.p13.m22"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula> esse falsum, nam si semper<note type="Afootnote-sub" n="[c]">semper <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+ </note> trisecuis<formula xml:id="Ch13.p13.m23"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>set<formula xml:id="Ch13.p13.m24"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula> eodem<note type="Afootnote-sub" n="[d]">eodem <hi rendition="#i">(1)</hi> rationandi <hi rendition="#i">(2)</hi> ratiocinandi <hi rendition="#i">L</hi></note> ratiocinandi modo produxis<formula xml:id="Ch13.p13.m25"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>set<formula xml:id="Ch13.p13.m26"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula> <hi rendition="#g">triplum</hi>.</note>
+At simili ratione etiam efficitur, velocitatem per totam <formula xml:id="Ch13.p13.m29"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mi>F</m:mi></m:mrow></m:math></formula>, duplam esse velocitatis eius, quae habetur per totam <formula xml:id="Ch13.p13.m30"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula>, sicut tota <formula xml:id="Ch13.p13.m31"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mi>F</m:mi></m:mrow></m:math></formula>, dupla est ipsius <formula xml:id="Ch13.p13.m32"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula>: aequali igitur etiam tempore <formula xml:id="Ch13.p13.m33"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula>, et <formula xml:id="Ch13.p13.m34"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mi>F</m:mi></m:mrow></m:math></formula>, decurruntur: eademque omnino ratio est ipsarum <formula xml:id="Ch13.p13.m35"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mi>F</m:mi></m:mrow></m:math></formula>, et <formula xml:id="Ch13.p13.m36"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>K</m:mi></m:mrow></m:math></formula>, caeterarumque omnium se pariter in ratione dupla superantium, vt <pb type="VIII_2" n="144"/>satis manifestum est: spatia igitur aequalibus temporibus emensa, et velocitates iisdem temporibus aequalibus acquisitae, semper augentur in continua ratione dupla.</p><figure rendition="#own-line_centered" xml:id="Ch13.p14">
+        <graphic rendition="#c" url="../images/cazreus1645-d3.svg" width="34.6896pt" xml:id="Ch13.p14.g1"/>
+      <head rendition="#c">[<hi rendition="#i">Fig. 3</hi>]</head></figure></div></div></body>
+  </text>
+</TEI>

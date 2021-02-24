@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch6" n="6"><pb type="VIII_2" n="52"/><head>6.
+AUS UND ZU ATHANASIUS KIRCHER, MAGNES</head>
+<head>[Februar – September 1676]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Auszüge mit Bemerkungen aus einem verschollenen Manuskript von R. Descartes, nach <ref corresp="#bib_01060"/>A. <hi rendition="#k">Kircher</hi>, <hi rendition="#i">Magnes</hi>, Rom 1641:
+LH IV 1, 4b Bl. 9-10. 1 Bog. 2<hi rendition="#sup">o</hi>.
+Insgesamt 17 Z. am unteren Ende von Bl. 10 r<hi rendition="#sup">o</hi> und von Bl. 10 v<hi rendition="#sup">o</hi>. Der übrige Text auf Bl. 9-10 gehört zu N. 58.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 1322 D (tlw.)</hi></p></item><item><label><hi rendition="#i #smaller">E</hi></label>
+<p><hi rendition="#smaller"><ref corresp="#bib_00120"/>R. <hi rendition="#k">Descartes</hi>, <hi rendition="#i">Œuvres</hi>, hrsg. von <hi rendition="#k">C. Adam</hi> und <hi rendition="#k">P. Tannery</hi>, Bd. XI, Paris 1909, S. 635-639.</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch6.p5"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Das vorliegende Stück befindet sich auf einem Textträger von N. 58
+und dürfte daher zeitnah entstanden sein.
+Die Datierung von N. 58 – Februar bis September 1676 – wird demgemäß auch für das vorliegende Stück übernommen.</hi></p></div><div type="text"><p xml:id="Ch6.p6" rendition="#noindent"><pb type="L"/><fw type="folNum">[10 r<hi rendition="#sup">o</hi>]</fw> Excerpta ex P. Kircheri<index indexName="Namensregister"><term><hi rendition="#g">Kircher</hi>, Athanasius 1602-1680</term></index> <hi rendition="#i">De Magnete</hi><ref corresp="#bib_01060"/> ut quod <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">is</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app><index indexName="Sachverzeichnis"><term>magnes</term></index> ait pag. 7. cristallum<index indexName="Sachverzeichnis"><term>cristallus</term></index> combustum tantum ponderis<index indexName="Sachverzeichnis"><term>magnes</term></index> cinerum<index indexName="Sachverzeichnis"><term>cinis</term></index> dare, quantum erat prius<app type="Cfootnote"><lem type="main"/><note type="lemma-abbrev">prius</note><note type="editorial"><hi rendition="#k">A. Kircher</hi>, <hi rendition="#i">Magnes</hi>,<bibl corresp="#bib_01060"> Rom 1641, S. 7.</bibl></note></app>.
+Pag. 14. Quaenam chalybem<index indexName="Sachverzeichnis"><term>chalybs</term></index> <app type="Cfootnote"><lem type="main">durent.</lem><note type="lemma-abbrev">durent</note><note type="editorial"><bibl corresp="#bib_01060">a.a.O., S. 14.</bibl></note></app>
+De venis terrae. <app type="Cfootnote"><lem type="main">Pag. 45.50</lem><note type="editorial"><bibl corresp="#bib_01060">a.a.O., S. 45-50 u.a.</bibl></note></app> Quod polus borealis hic plus ferri<index indexName="Sachverzeichnis"><term>ferrum</term></index> trahat, quia juvatur a terra, alio <app type="Cfootnote"><lem type="main">magnete.</lem><note type="lemma-abbrev">magnete</note><note type="editorial"><bibl corresp="#bib_01060">a.a.O., S. 158.</bibl></note></app>
+Vitrarii<index indexName="Sachverzeichnis"><term>vitrarius</term></index> liquorem vitri<index indexName="Sachverzeichnis"><term>vitrum</term></index> a terrestreitate purgant injecto magnete, qui eam attrahit et post cum ea igne <app type="Cfootnote"><lem type="main">absumitur;</lem><note type="lemma-abbrev">absumitur</note><note type="editorial"><bibl corresp="#bib_01060">a.a.O., S. 113, bzw</bibl>. <bibl corresp="#bib_01114_missing"><hi rendition="#k">A. Kircher</hi>, <hi rendition="#i">Magnes</hi>, Köln 1643, S. 110.</bibl></note></app> ferrum vel magnes debilior a potentiore ferrum subducit.
+Cujus rationem male reddit P. Kircher; ea autem est, quod <app type="Cfootnote"><lem type="main">etc.</lem><note type="editorial"><bibl corresp="#bib_01060"><hi rendition="#k">A. Kircher</hi>, <hi rendition="#i">Magnes</hi>, Rom 1641, S. 150.</bibl></note></app>
+(+ plura non ascripta +)
+Magnes cujus anguli detrahuntur si <app type="Bfootnote"><lem type="main">detrahantur vis <app type="Cfootnote"><lem type="main">augetur.</lem><note type="lemma-abbrev">augetur</note><note type="editorial"><bibl corresp="#bib_01060">a.a.O., S. 136.</bibl></note></app></lem><note type="lemma-abbrev">detrahantur</note><rdg wit="#L" n="1"> anguli vis </rdg><rdg wit="#L" n="2"> a vi movetur </rdg><rdg wit="#L" n="3"> a </rdg><rdg wit="#L" n="4"> vis augetur <hi rendition="#i">L</hi></rdg></app></p><p xml:id="Ch6.p7">Ferrum candens attrahitur a <app type="Cfootnote"><lem type="main">magnete.</lem><note type="lemma-abbrev">magnete</note><note type="editorial"><bibl corresp="#bib_01060">a.a.O., S. 157.</bibl></note></app>
+177 Magnes ingens vix trahens aciculam<index indexName="Sachverzeichnis"><term>acicula</term></index> sibi conjunctam movet versoriam<index indexName="Sachverzeichnis"><term>versoria</term></index> <app type="Bfootnote"><lem type="main">ad</lem><rdg wit="#L" n="1"> unam partem </rdg><rdg wit="#L" n="2"> [unum] pedem <hi rendition="#i">L</hi></rdg></app> <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[unum]</corr></lem><rdg wit="#L"><orig>unam </orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> pedem, quod minores longe fortiores non <app type="Cfootnote"><lem type="main">faciunt.</lem><note type="lemma-abbrev">faciunt</note><note type="editorial"><bibl corresp="#bib_01060">a.a.O., S. 177.</bibl></note></app></p><p xml:id="Ch6.p8">617 Modum excitandi venti describit lapsu<index indexName="Sachverzeichnis"><term>lapsus</term></index> aquae<index indexName="Sachverzeichnis"><term>aqua</term></index> per longum canalem<index indexName="Sachverzeichnis"><term>canalis</term></index> supra latiorem quam infra, in aliquod vas clausum, in quo ait aerem<index indexName="Sachverzeichnis"><term>aer</term></index> ipso lapsu sic agitari et reproduci aqua scilicet per foramen in inferiore vasis parte, elabente aere vero ex vaporibus aquae <pb type="VIII_2" n="53"/>generato et flante per foramen in parte vasis<index indexName="Sachverzeichnis"><term>vas</term></index> superiore, ut viderit malleatores<index indexName="Sachverzeichnis"><term>malleator</term></index> ferrum<index indexName="Sachverzeichnis"><term>ferrum</term></index> in virgas<index indexName="Sachverzeichnis"><term>virga</term></index> ducentes ad ignem<index indexName="Sachverzeichnis"><term>ignis</term></index> continuo sufflandum ea machina<index indexName="Sachverzeichnis"><term>machina</term></index> uti. Hinc rationem reddit, cur ventus ex quibusdam cavernis<index indexName="Sachverzeichnis"><term>caverna</term></index> perpetuo exeat et <app type="Cfootnote"><lem type="main">recte.</lem><note type="lemma-abbrev">recte</note><note type="editorial"><bibl corresp="#bib_01060">a.a.O., S. 615-618.</bibl></note></app>
+<pb type="L"/><fw type="folNum">[10 v<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch6.p9">Electrica frictu<index indexName="Sachverzeichnis"><term>frictus</term></index> calefacta trahunt, igni admota non trahunt, quippe ut trahant debet aliquid egredi
+quod <app type="Cfootnote"><lem type="main">redeat.</lem><note type="lemma-abbrev">redeat</note><note type="editorial"><bibl corresp="#bib_01060">a.a.O., S. 618f.</bibl></note></app>
+Ait in magno coenaculo<index indexName="Sachverzeichnis"><term>coenaculum</term></index> rotundo et alibi se observasse voces ab una parte ad aliam transferri etiam musica<index indexName="Sachverzeichnis"><term>musica</term></index> obstrepente ita ut quod ex una parte summisse dicitur aure<index indexName="Sachverzeichnis"><term>auris</term></index> apposita muro diametraliter opposito possit audiri, non autem in aliis locis. Cujus rationem ait, quod aer<index indexName="Sachverzeichnis"><term>aer</term></index> utrinque motus in semicirculo ibi <app type="Cfootnote"><lem type="main">concurrat.</lem><note type="lemma-abbrev">concurrat</note><note type="editorial"><bibl corresp="#bib_01060">a.a.O., S. 863.</bibl></note></app>
+Recte.</p></div></div></body>
+  </text>
+</TEI>

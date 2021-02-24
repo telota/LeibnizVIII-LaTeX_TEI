@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch17" n="17"><pb type="VIII_2" n="156"/><head>17.
+SUR LES PETITES OSCILLATIONS DES PENDULES</head>
+<head>[Oktober 1674 – Frühjahr 1675]</head><div type="contents"><p xml:id="Ch17.p1" rendition="#noindent"><hi rendition="#smaller">In den folgenden zwei Texten diskutiert Leibniz das Problem, wie von der Schwingungszahl zweier oder mehrerer Pendel auf deren Länge geschlossen werden kann. Die Stücke N. 17<hi rendition="#sub">1</hi> und N. 17<hi rendition="#sub">2</hi> geben dafür Regeln an, die für unterschiedliche Ausgangsbedingungen gelten. Ein vergleichbares Problem behandelt auch N. 16.
+Dass darin mit denselben Rechenbeispielen operiert wird, spricht für eine gemeinsame Entstehungszeit. Dieser Befund kann sich zudem auf übereinstimmende Wasserzeichen stützen, die für das Frühjahr 1675 belegt sind.
+Zusammen mit N. 16
+ist ein in <ref corresp="#bib_00115"/><hi rendition="#i">LSB</hi> VII, 5 N. 9 erschienenes Stück überliefert, das auf Oktober 1674 datiert wird.</hi></p></div><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_171.xml" xpointer="Ch17.S1" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_172.xml" xpointer="Ch17.S2" parse="xml"/></div></body>
+  </text>
+</TEI>

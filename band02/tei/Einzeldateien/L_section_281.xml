@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="section" xml:id="Ch28.S1" n="281"><head>28<hi rendition="#sub">1</hi>.
+RÈGLE POUR CALCULER LA FORCE D’UNE MACHINE 1</head><div type="ueberlieferung"><pb type="VIII_2" n="210"/><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">l</hi></label>
+<p><hi rendition="#smaller">Reinschrift von Schreiberhand einer unbekannten Vorlage: LH XXXV 10, 9 Bl. 3-4. 1 Bog. 2<hi rendition="#sup">o</hi>. <formula xml:id="Ch28.S1.p2.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:math></formula> S. auf Bl. 3 v<hi rendition="#sup">o</hi>. Der Bogen überliefert ferner N. 28<hi rendition="#sub">2</hi>, N. 28<hi rendition="#sub">5</hi>, N. 28<hi rendition="#sub">6</hi> und N. 5.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 1190 D</hi></p></item></list></p></div><div type="text"><p xml:id="Ch28.S1.p4" rendition="#noindent"><pb type="L"/><fw type="folNum">[3 v<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch28.S1.p5" rendition="#c">Regle pour calculer la force d’une machine,<index indexName="Sachverzeichnis"><term>machine</term></index><index indexName="Sachverzeichnis"><term>force</term></index><lb/>dont voicy la figure</p><p xml:id="Ch28.S1.p6" rendition="#noindent">Soit la roue<index indexName="Sachverzeichnis"><term>roue</term></index> <hi rendition="#i">ABCD</hi> mobile à l’entour du centre <hi rendition="#i">L</hi>. Supposons qu’elle change sa situation perpendiculaire en inclinée, dans un angle donné à l’Horison <hi rendition="#i">DB</hi>. Sçavoir dans l’angle <hi rendition="#i">ELB</hi> en sorte que <hi rendition="#i">A</hi> soit transporté en <hi rendition="#i">E</hi>, et <hi rendition="#i">B</hi> en <hi rendition="#i">F</hi>, et <hi rendition="#i">C</hi> en <hi rendition="#i">G</hi>, et <hi rendition="#i">D</hi> en <hi rendition="#i">H</hi>.<!--  \hack{\\ \indent} 
+     \hackfor{\par}--></p><p xml:id="Ch28.S1.p7">Dans les Rayons <hi rendition="#i">LH</hi>, et <hi rendition="#i">LG</hi> soyent prises les droites egales entre elles, <hi rendition="#i">LI</hi> et <hi rendition="#i">LK</hi> moindres que les Rayons, mais dans une certaine raison connue, ou donnée.</p><figure rendition="#own-line_centered" xml:id="Ch28.S1.p8">
+          <graphic rendition="#c" url="../images/lh0351009_003v-d1.svg" style="trim:  0mm -3mm -2mm 0mm; clip: true" width="268.8444pt" xml:id="Ch28.S1.p8.g1"/>
+          
+          
+          <head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head>
+        </figure><p xml:id="Ch28.S1.p9">Supposons à present 4 poids egaux entre eux, appuyez ou suspendus dans les points <hi rendition="#i">E. F. K.</hi> <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[<hi rendition="#i">I.</hi>]</corr></lem><rdg wit="#L"><!--Special case of Bfootnote, please check (and maybe correct).--><hi rendition="#i">L.</hi> <note type="editorial"><hi rendition="#i">l ändert Hrsg.</hi></note></rdg></app><!--  \hack{\\ \indent} 
+     \hackfor{\par}--></p><p xml:id="Ch28.S1.p10">Enfin soit donné la force absolue auec laquelle d’un tel poids<index indexName="Sachverzeichnis"><term>poids</term></index>.</p><p xml:id="Ch28.S1.p11">J’appelle la force absolue auec laquelle il agit librement; sçavoir auec laquelle un poids agit sur un plan parallele à l’horison, qui le soutient.</p><p xml:id="Ch28.S1.p12">Cela posé, le calcul se fera ainsy.</p><p xml:id="Ch28.S1.p13">Du point <hi rendition="#i">E</hi> menez la perpendiculaire <hi rendition="#i">EM</hi>, sur le diametre <hi rendition="#i">AC</hi>, perpendiculaire à <pb type="VIII_2" n="211"/>l’horison <hi rendition="#i">DB</hi>, laquelle sera le sinus droit de l’Angle <hi rendition="#i">ALE</hi>.</p><p xml:id="Ch28.S1.p14">Appellons
+<table>
+              
+                <row>
+                  <cell>le sinus droit</cell>
+                  <cell style="; text-align:center"><hi rendition="#i">EM</hi>,</cell>
+                  <cell><hi rendition="#i">y</hi></cell>
+                </row>
+                <row>
+                  <cell>le Rayon</cell>
+                  <cell style="; text-align:center"><hi rendition="#i">AL</hi>,</cell>
+                  <cell><hi rendition="#i">a</hi></cell>
+                </row>
+                <row>
+                  <cell>le Rayon</cell>
+                  <cell style="; text-align:center"><hi rendition="#i">LI</hi>, ou <hi rendition="#i">LK</hi>,</cell>
+                  <cell><hi rendition="#i">b</hi></cell>
+                </row>
+                <row>
+                  <cell cols="2">la force absolue du poids,</cell>
+                  <cell><hi rendition="#i">g</hi></cell>
+                </row>
+              
+            </table></p><p xml:id="Ch28.S1.p15" rendition="#noindent">et <hi rendition="#g">la force de la machine</hi><index indexName="Sachverzeichnis"><term>machine</term></index> sera <formula xml:id="Ch28.S1.p15.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo>⁢</m:mo><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>g</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>g</m:mi><m:mo>⁢</m:mo><m:msqrt><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mrow><m:mo>-</m:mo><m:mrow><m:mi>g</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>y</m:mi></m:mrow><m:mo>-</m:mo><m:mrow><m:mi>g</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi><m:mo>⁢</m:mo><m:msqrt><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:mstyle></m:math></formula>, ou <formula xml:id="Ch28.S1.p15.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:msqrt><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>,</m:mo><m:mo>⌢</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac></m:mstyle><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo>⌢</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mi>g</m:mi><m:mi>a</m:mi></m:mfrac></m:mstyle></m:mrow></m:math></formula>.</p><p xml:id="Ch28.S1.p16">C’est à dire, prennez la somme de <hi rendition="#i">ME</hi> et <hi rendition="#i">ML</hi>; et la multipliez par <formula xml:id="Ch28.S1.p16.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac></m:mstyle><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:math></formula>; et le produit, par <formula xml:id="Ch28.S1.p16.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mi>g</m:mi><m:mi>a</m:mi></m:mfrac></m:mstyle></m:math></formula>. Ce qui en proviendra, sera la force de la machine,<index indexName="Sachverzeichnis"><term>force</term></index> en quelque situation qu’elle puisse estre.</p></div></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch87" n="87"><pb type="VIII_2" n="722"/><head>87.
+QUOMODO PENDULI MOTUS MAGNETE EFFICI POSSIT</head>
+<head>[2. Hälfte 1672]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Aufzeichnung: LH XXXV 15, 6 Bl. 60. 1 Bl. 8<hi rendition="#sup">o</hi>, ungleichmäßig beschnitten. 2 S.</hi></p><p><hi rendition="#smaller">KK 1, Nr. 194 D</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch87.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Im vorliegenden Stück N. 87 sucht Leibniz nach einer Lösung für die Stabilisierung des Gangs von Pendeluhren,
+indem er die Anwendung von Magneten in Erwägung zieht.
+Mit der eingangs angedeuteten Methode Isaac Vossius’ setzt er sich auch in der Aufzeichnung N. 84 auseinander.
+Der Hinweis auf die Längengradbestimmung im zweiten Teil von N. 87 dürfte sich auf das Stück <ref corresp="#bib_01072"/><hi rendition="#i">LSB</hi> VIII, 1 N. 6<hi rendition="#sub">2</hi> beziehen,
+welches editorisch auf die zweite Hälfte 1672 datiert wurde.
+N. 87 könnte somit zeitnah entstanden sein.</hi></p></div><div type="text"><p xml:id="Ch87.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[60 r<hi rendition="#sup">o</hi>]</fw> Den Motum penduli zu continuiren siehe was Vossius<index indexName="Namensregister"><term><hi rendition="#g">Vossius</hi>, Isaac (1618-1689)</term></index> vorschlägt apud<app type="Cfootnote"><lem type="main"> Monconys</lem><note type="lemma-abbrev">Monconys</note><note type="editorial"><hi rendition="#k">B. de Monconys,</hi> <bibl corresp="#bib_00134"><hi rendition="#i">Journal des voyages</hi>, Teil II, Paris 1666, S. 154.</bibl></note></app> pag. 154. <hi rendition="#i">Voyage des pays bas</hi>.<index indexName="Namensregister"><term><hi rendition="#g">Monconys</hi>, Balthasar de (1611-1665)</term></index> Hugenius<index indexName="Namensregister"><term><hi rendition="#g">Huygens</hi>, Christiaan (1629-1695)</term></index> mus eine andre manier haben, so mir noch nicht bewust. Fortasse optime per magnetem<index indexName="Sachverzeichnis"><term>magnes</term></index>, si nimirum penduli<index indexName="Sachverzeichnis"><term>pendulum</term></index> inferior pars esset acus magneti<index indexName="Sachverzeichnis"><term>acus magnetica</term></index> affricta, sed contrario quam qui suppositus est polo. Haec a polo repulsa redelaberetur gravitate<index indexName="Sachverzeichnis"><term>gravitas naturalis</term></index> naturali, et praeterveheret impetu in alteram partem, redux rursus impelleretur, et ita porro. Modo scilicet proportio ea sit, ut impetu labentem non possit, quiescentem aut progredientem possit vincere <app type="Bfootnote"><lem type="main">magnes<index indexName="Sachverzeichnis"><term>magnes</term></index>.
+An fortasse aptius ita magnes</lem><note type="lemma-abbrev">magnes.</note><rdg wit="#L" n="1"> Sed idem <app><rdg wit="#L" n="a">si ta </rdg><rdg wit="#L" n="b">aptius si tam fortis </rdg></app></rdg><rdg wit="#L" n="2"> An <seg type="apparat-ellipsis"/> magnes <hi rendition="#i">L</hi></rdg></app> sine ullo pendulo<index indexName="Sachverzeichnis"><term>pendulum</term></index> et perpetuum simul et uniformem efficere motum<index indexName="Sachverzeichnis"><term>motus perpetuus</term></index><index indexName="Sachverzeichnis"><term>motus uniformis</term></index> potest. <app type="Bfootnote"><lem type="main">Finge</lem><note type="lemma-abbrev">potest.</note><rdg wit="#L" n="1"> Esto </rdg><rdg wit="#L" n="2"> Finge <hi rendition="#i">L</hi></rdg></app> magnetem<index indexName="Sachverzeichnis"><term>magnes</term></index> ita fortiter repellere acum, ut totam circumagat, atque ita denuo repellere <app type="Bfootnote"><lem type="main">possit. Si unus magnes</lem><note type="lemma-abbrev">possit.</note><rdg wit="#L" n="1"> Si hoc procederet </rdg><rdg wit="#L" n="2"> Si unus magnes <hi rendition="#i">L</hi></rdg></app> non satis fortis esset applicandus esset alter similiter, traderentur sibi plures per manus. Quilibet admitteret, quia <app type="Bfootnote"><lem type="main">ab</lem><note type="lemma-abbrev">quia</note><rdg wit="#L" n="1"> ob </rdg><rdg wit="#L" n="2"> ab <hi rendition="#i">L</hi></rdg></app> obliquo et a tergo, et ab alio magnete<index indexName="Sachverzeichnis"><term>magnes</term></index> impulsam<index indexName="Sachverzeichnis"><term>impulsus</term></index> repelleret ubi sibi e directo venit. Erunt ergo omnes periodi uniformes. Etsi non forte partes periodorum finge quolibet minuto secundo periodum absolvi, applicetur logistica decimalis, ut dixi. Sed hoc artificio, ut non sit opus magnetibus<index indexName="Sachverzeichnis"><term>magnes</term></index> aliquando movere omnes omnino <app type="Bfootnote"><lem type="main">gyros;</lem><rdg wit="#L" n="1"> sed ta </rdg><rdg wit="#L" n="2"> quod <hi rendition="#i">L</hi></rdg></app> quod alioquin fieret nonnunquam concurrentibus aliquando <app type="Bfootnote"><lem type="main">revolutionibus. Verum</lem><note type="lemma-abbrev">revolutionibus.</note><rdg wit="#L" n="1"> Sed </rdg><rdg wit="#L" n="2"> Verum <hi rendition="#i">L</hi></rdg></app> ut gyrus propior aperiat tantum aliquid quo alter se sponte moveat. Haec <pb type="VIII_2" n="723"/>machinula<index indexName="Sachverzeichnis"><term>machinula</term></index> esset pure magnetica independens a gravitate<index indexName="Sachverzeichnis"><term>gravitas</term></index> et Elatere<index indexName="Sachverzeichnis"><term>elater</term></index>, atque ita fortasse omnium quae cogitari possunt ad horologia<index indexName="Sachverzeichnis"><term>horologium</term></index> aptissima, aeri excludendo includendus magnes<index indexName="Sachverzeichnis"><term>magnes</term></index> vitro sigillato, cujus fortasse lateribus includatur aqua, aut spiritu vini<index indexName="Sachverzeichnis"><term>spiritus vini</term></index> excludendae tanto rectius aeri. Et conservandis viribus magnetum<index indexName="Sachverzeichnis"><term>magnes</term></index>. Possunt et plures acus esse in eodem circulo, eadem quae magnetum<index indexName="Sachverzeichnis"><term>magnes</term></index> est distania. Res certa est: modo hoc unum obtineatur magnetes<index indexName="Sachverzeichnis"><term>magnes</term></index> fortius repellere <pb type="L"/><fw type="folNum">[60 v<hi rendition="#sup">o</hi>]</fw> et attrahere in axe continuato, quam in linea aliqua obliqua. Quod mihi rationi consentaneum videtur, si quod maxime.
+Quaerenda:<!--  \hack{\newline\indent} 
+     \hackfor{\par}--></p><p xml:id="Ch87.p6">1) motus perp.<index indexName="Sachverzeichnis"><term>motus perpetuus</term></index><!--  \hack{\newline\indent} 
+     \hackfor{\par}--></p><p xml:id="Ch87.p7">2) motus uniformis,<index indexName="Sachverzeichnis"><term>motus uniformis</term></index>
+ope penduli,<index indexName="Sachverzeichnis"><term>pendulum</term></index>
+Elateris,<index indexName="Sachverzeichnis"><term>elaterium</term></index>
+magnetis;<index indexName="Sachverzeichnis"><term>magnes</term></index>
+omnium si possibile praestare ea de quibus alibi,
+ut nimis celeriter motum aut nimis tarde tanto magis excitetur aut retardetur ab applicato.<!--  \hack{\newline\indent} 
+     \hackfor{\par}--></p><p xml:id="Ch87.p8">3) motus
+perpetuo respiciens datam plagam, seu quiddam absolute immobile ex dato centro,
+hoc fiet meridiano<index indexName="Sachverzeichnis"><term>meridianus</term></index> universali
+<app type="Bfootnote"><lem type="main">Grandamici<index indexName="Namensregister"><term><hi rendition="#g">Grandami</hi>(Grandamicus), Jacques 1588-1672</term></index><app type="Cfootnote"><lem type="main">.</lem><note type="lemma-abbrev">Grandamici</note><note type="editorial"><hi rendition="#k">J. Grandami</hi>, <bibl corresp="#bib_00292"><hi rendition="#i">Nova demonstratio immobilitatis terrae</hi>, La Flèche 1645, S. 66.</bibl></note></app>
+<!--  \hack{\newline\indent} 
+     \hackfor{\par}--><hi rendition="#g">Primi</hi></lem><note type="lemma-abbrev">Grandamici.</note><rdg wit="#L" n="1"> Dum posteri </rdg><rdg wit="#L" n="2"> <hi rendition="#g">Primi</hi> <hi rendition="#i">L</hi></rdg></app><hi rendition="#g"> </hi>maximus usus ad levandos hominum
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">labores in terra.<index indexName="Sachverzeichnis"><term>terra</term></index></add></lem><note type="lemma-abbrev">in terra</note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app><!--  \hack{\newline\indent} 
+     \hackfor{\par}--></p><p xml:id="Ch87.p9"><hi rendition="#g">Postremi</hi> ad perfecte inveniendas longitudines sine ope coeli, et dirigendos hominum
+<app type="Bfootnote"><lem type="main">labores in mari.</lem><note type="lemma-abbrev">labores</note><rdg wit="#L" n="1"> in terra </rdg><rdg wit="#L" n="2"> in mari. <hi rendition="#i">L</hi></rdg></app><!--  \hack{\newline\indent} 
+     \hackfor{\par}--></p><p xml:id="Ch87.p10">Medius ad dirigenda hominum judicia ubique. Primum dat modum: secundum dat tempus; tertium dat locum. Quibus tribus omnis mechanica continetur. In machinamento postremo magnetico potest polus amicus relinqui illaboratus, ne quid hic agat retinendo. Si circulus magnetum cum circulo acuum sit in eodem plano, seu concentricus firmatus: nulla mutatio machinae sequetur quaecunque sit navis jactatio, quia gravitatis<index indexName="Sachverzeichnis"><term>gravitas</term></index> tantule variatae per momentaneam rei pendulae jactatae obliquitatem nullam habet sensibilem proportionem ad vim repulsivam <app type="Bfootnote"><lem type="main">magnetis. Sed</lem><note type="lemma-abbrev">magnetis.</note><rdg wit="#L" n="1"> Et si </rdg><rdg wit="#L" n="2"> Sed <hi rendition="#i">L</hi></rdg></app> observandum tamen an non tractu temporis fieri possit mutatio sensibilis, et tunc adhibenda est aequatio. Tum an non crebris reactionibus desinat inimicitia, aut mutuo destruatur et quanto tempore possunt et nonnunquam reparari.</p><p xml:id="Ch87.p11"><app type="Cfootnote"><lem type="main">Cum contactus virtualis sit insensibilis affrictus credibile est acum postremo deventuram unicam.
+Quid si ergo talis applicatio ut ab inimico repulsa simul ab amico attrahatur sed qui non satis fortis ad retinendum.
+Quia plures repellentes, vel etiam quia interim et alius attrahit aliam.
+NB.</lem><note type="lemma-abbrev">Cum <seg type="apparat-ellipsis"/> NB</note><note type="editorial">Auf dem linken Rand von Bl. 60 v<hi rendition="#sup">o</hi>, quer zum übrigen Text.</note></app></p></div></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch16" n="16"><pb type="VIII_2" n="155"/><head>16.
+DE PENDULORUM LONGITUDINIBUS</head>
+<head>[Oktober 1674 – Frühjahr 1675]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Notiz: LH XXXV 12, 2 Bl. 62. 1 Bl. 4<hi rendition="#sup">o</hi>. <formula xml:id="Ch16.p2.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:math></formula> S. auf Bl. 62 r<hi rendition="#sup">o</hi>. In der unteren Hälfte von Bl. 62 r<hi rendition="#sup">o</hi> Rechnungen, die in <hi rendition="#i">LSB</hi> VII, 3 N. 38<hi rendition="#sub">16</hi> ediert sind; Bl. 62 v<hi rendition="#sup">o</hi> überliefert das Stück <hi rendition="#i">LSB</hi> VII, 5 N. 9. Ein Wasserzeichen, beschnitten. Papier durch Erhaltungsmaßnahmen stabilisiert.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 543 (tlw.)</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch16.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Die Datierung des Stückes folgt derjenigen, die für <ref corresp="#bib_115_missing"><!--The bibliography entry "115" seems to be missing.--></ref><hi rendition="#i">LSB</hi> VII, 5 N. 9 geliefert wird, und der dort geäußerten Vermutung, dass Leibniz zuerst die mathematischen Aufzeichnungen auf der Rückseite von Bl. 62 verfasst habe. Das vorliegende Stück könnte daher gleichfalls im Oktober 1674 oder in den folgenden Monaten entstanden sein, wie das Wasserzeichen nahelegt.</hi></p></div><div type="text"><p xml:id="Ch16.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[62 r<hi rendition="#sup">o</hi>]</fw> Pendulorum longitudines duplicatam habent rationem temporum, quibus minimae vibrationes<index indexName="Sachverzeichnis"><term>vibratio</term></index> perficiuntur.</p><figure rendition="#own-line_centered" xml:id="Ch16.p6">
+        <graphic url="../images/62-1.svg" width="260.172pt" xml:id="Ch16.p6.g1"/>
+        
+        <head>[<hi rendition="#i">Fig. 1</hi>]</head>
+      </figure><figure rendition="#own-line_centered" xml:id="Ch16.p7">
+        <graphic url="../images/62-2.svg" width="203.8014pt" xml:id="Ch16.p7.g1"/>
+        
+        <head>[<hi rendition="#i">Fig. 2</hi>]</head>
+      </figure><figure rendition="#own-line_centered" xml:id="Ch16.p8">
+        <graphic url="../images/62_3.svg" width="78.0516pt" xml:id="Ch16.p8.g1"/>
+        
+        <head>[<note type="editorial"><hi rendition="#i">Fig. 3, gestr.</hi></note>]</head>
+      </figure><p xml:id="Ch16.p9" rendition="#noindent">[<hi rendition="#i">Rechnungsfragmente ohne Textbezug:</hi>]</p><table>
+          
+            <row>
+              <cell style="; text-align:center">1500</cell>
+            </row>
+            <row>
+              <cell style="; text-align:center">1000</cell>
+            </row>
+          
+        </table><table>
+          
+            <row>
+              <cell style="; text-align:center">999</cell>
+              <cell style="; text-align:center">333</cell>
+            </row>
+          
+        </table></div></div></body>
+  </text>
+</TEI>

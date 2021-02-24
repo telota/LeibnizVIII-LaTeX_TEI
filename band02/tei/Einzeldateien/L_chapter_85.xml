@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch85" n="85"><pb type="VIII_2" n="718"/><head>85.
+DE HOROLOGIO ELASTICO</head>
+<head>[2. Hälfte 1672]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Aufzeichnung: LH XXXV 15, 6 Bl. 62.
+1 Bl. 4<hi rendition="#sup">o</hi>, beschnitten.
+2 S. Textfolge: Bl. 62 r<hi rendition="#sup">o</hi>, rechte Sp.; Bl. 62 v<hi rendition="#sup">o</hi>, ganzseitig; Bl. 62 r<hi rendition="#sup">o</hi>, linke Sp.
+In der Mitte von Bl. 62 r<hi rendition="#sup">o</hi> quer zum Text eine Mitteilung Hermann Andreas Lassers<index indexName="Namensregister"><term><hi rendition="#g #smaller">Lasser</hi> <hi rendition="#smaller">(Lassart), Hermann Andreas, um 1675</hi></term></index> an Leibniz:
+„Ich schicke hierbeij das begerte buch,
+wie auch Etliche von den Philosophischen Zettulein,
+möchte wünschen daß sie der Hr Dr. folgendß zeichnen könte,
+damitt der Hr Eisenwirdt<index indexName="Namensregister"><term><hi rendition="#g #smaller">Eisenwirdt</hi><hi rendition="#smaller">, ????</hi></term></index> Etwas zu thun bekompt.
+Eß ist bald geschehen.
+Neueß hab diesmahl nichtß.
+Wann der Hr Dr.<index indexName="Namensregister"><term><hi rendition="#g #smaller">Leibniz</hi><hi rendition="#smaller">, Gottfried Wilhelm 1646-1716</hi></term></index> das Corpus juris nicht mehr brauchet,
+möchte ichß gern haben.”</hi></p><p><hi rendition="#smaller">KK 1, Nr. 185, Nr. 194 A</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch85.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Im vorliegenden Stück N. 85 entwickelt Leibniz unter dem Begriff eines <hi rendition="#i">Horologium mera vi elastica</hi>
+Überlegungen zur Stabilisierung des Ganges einer Uhr.
+Der ähnliche Gedanke eines <hi rendition="#i">Horologium elasticum</hi>,
+dessen Ganggenauigkeit nicht von der Rollbewegung eines Schiffes gestört wird,
+ist im Stück <ref corresp="#bib_01072"/><hi rendition="#i">LSB</hi> VIII, 1 N. 6<hi rendition="#sub">2</hi> anzutreffen,
+welches editorisch auf die zweite Hälfte 1672 datiert wurde.
+Diese Datierung lässt sich aufgrund der inhaltlichen Verwandtschaft auch für N. 85 übernehmen.</hi></p></div><div type="text"><p><pb type="L"/><fw type="folNum">[62 r<hi rendition="#sup">o</hi>]</fw></p><table>
+            
+              <row>
+                <cell/>
+                <cell/>
+                <cell>1. minut.</cell>
+                <cell>1. schritt</cell>
+                <cell>30. minut.</cell>
+              </row>
+              <row>
+                <cell>                 60. minuten</cell>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+              <row>
+                <cell/>
+                <cell/>
+                <cell>2.    —</cell>
+                <cell>1. schritt</cell>
+                <cell/>
+              </row>
+              <row>
+                <cell>                 1. minut.</cell>
+                <cell>2. schritt</cell>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+              <row>
+                <cell>                 1. minut. </cell>
+                <cell>1. schritt</cell>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+            
+          </table><p xml:id="Ch85.p6" rendition="#noindent">Includens absolvit circulum in 1 minut. inclusum in 2. minuta. Ergo wenn zwey gezeichnete puncte in beyden zugleich aus lauffen, komt der geschwindere rumb, wann der langsamere halb. Ergo weil der langsame die andere helfte absolvirt komt der geschwinde wieder einmahl rumb und erholen einander wieder
+in loco priore post 2. revolutiones. Ergo si augeatur utriusque celeritas<index indexName="Sachverzeichnis"><term>celeritas</term></index> omnia manebunt similia, <app type="Bfootnote"><lem type="main">minuto proportione</lem><note type="lemma-abbrev">similia,</note><rdg wit="#L" n="1"> aucto propo </rdg><rdg wit="#L" n="2"> minuto proportione <hi rendition="#i">L</hi></rdg></app> temporis intervallo, v.g. si una revolutio fiat minuto 2<hi rendition="#sup">do</hi>, erit assecutio 2. minutis secundis. Ponatur revolutio augeri, ut fiat dimidio minuto secundo, erit assecutio integro. Sed quomodo efficiemus <pb type="L"/><fw type="folNum">[62 v<hi rendition="#sup">o</hi>]</fw> ut eadem maneat assecutio aucta licet celeritate<index indexName="Sachverzeichnis"><term>celeritas</term></index>? Id non aliter fieri potest quam si magis augeatur celeritas<index indexName="Sachverzeichnis"><term>celeritas</term></index> tardioris quam celerioris. Erit hoc factu difficillimum, imo et computatu. De quo alias cogitandum. Si celeritates<index indexName="Sachverzeichnis"><term>celeritas</term></index> augerentur proportione arith<pb type="VIII_2" n="719" break="no"/>metica res esset effecta. Pone celerius conficere uno minuto 60 gran. tardius uno minuto 30 gran. augeatur celeritas<index indexName="Sachverzeichnis"><term>celeritas</term></index> ita ut utrique addatur 1. gran. erit assecutio semper aequivelox. Sed qua arte qua machina hoc efficietur. Hic exerceant se Analytici, qui sibi videntur ope Analyticae suae quidvis efficere posse solvantque <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">aut ad impossibile reducant</add></lem><note type="lemma-abbrev">aut <seg type="apparat-ellipsis"/> reducant<!--  \hack{\textit{erg.}\textit{ L}} 
+     \hackfor{\textit{erg. L}}--></note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>. Mihi hoc problema, machinam efficere in qua duo inaequalis velocitatis<index indexName="Sachverzeichnis"><term>velocitas</term></index> ita sibi applicata sint, ut quantum uni accedit velocitatis<index indexName="Sachverzeichnis"><term>velocitas</term></index> adimiturque progressione arithmetica, tantundem alteri quoque addatur adimaturque, id est ut assecutiones sint semper aequiveloces.</p><p xml:id="Ch85.p7">Caeterum unica et solida ratio rei assequendae haec videtur esse, ut quanto magis intenditur celeritas<index indexName="Sachverzeichnis"><term>celeritas</term></index>, vel oneretur, vel potentia contrahatur, vel onus elongetur. Pone gyros aliquos aucta celeritate<index indexName="Sachverzeichnis"><term>celeritas</term></index> revolvi, et ita pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> magis elongari, pone contra eosdem tarditate contrahi, quod non videtur difficile machinatu. Forte satius potentia celeritatem<index indexName="Sachverzeichnis"><term>celeritas</term></index> minui, quam pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> augeri. Quia pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> rem reducit ad principium gravitatis<index indexName="Sachverzeichnis"><term>gravitas</term></index>, quod gravitationem non fert. Potius ergo aucta tarditate augeatur magnitudo circuli <app type="Bfootnote"><lem type="main">quo</lem><note type="lemma-abbrev">circuli</note><rdg wit="#L" n="1"> quem </rdg><rdg wit="#L" n="2"> in </rdg><rdg wit="#L" n="3"> quo <hi rendition="#i">L</hi></rdg></app> agit elater<index indexName="Sachverzeichnis"><term>elater</term></index>, ita enim augebitur effectus celeritas<index indexName="Sachverzeichnis"><term>celeritas</term></index>. Item potest fortasse construi horologium<index indexName="Sachverzeichnis"><term>horologium</term></index> mera vi Elastica<index indexName="Sachverzeichnis"><term>vis elastica</term></index>, quod componatur ex multis arculis, seu tensiunculis se restituentibus, ita ut possint una hora forte fieri tales ultra 36000 displosiunculae. Quaelibet displosiuncula sive celer sive tarda (nisi forte sunt aequidiuturnae) fiet ita parvo tempore, ut differentia sit imperceptibilis, et vix possit errari nisi in Centesima millesima horae parte. Res ita geri potest, ut quilibet arculus se extendens liberet et alium ubi semel ad summum pervenit, imo paulo ante totam extensionem fili, ne contractio aeris rem turbet. <app type="Bfootnote"><lem type="main">Interea</lem><note type="lemma-abbrev">turbet.</note><rdg wit="#L" n="1"> Idem </rdg><rdg wit="#L" n="2"> Interea <hi rendition="#i">L</hi> </rdg></app> ab altero latere retendantur ob vim<index indexName="Sachverzeichnis"><term>vis elastica</term></index> elasticam <app type="Bfootnote"><lem type="main">aliam</lem><note type="lemma-abbrev">elasticam</note><rdg wit="#L" n="1"> ibi majorem </rdg><rdg wit="#L" n="2"> aliam <hi rendition="#i">L</hi> </rdg></app> applicatam. Forte et effici inde potest m.p. possent omnes isti arculi esse in uno circulo, et retendantur in arcus<index indexName="Sachverzeichnis"><term>arcus</term></index> ex lineis rectis, circulo compresso. <app type="Bfootnote"><lem type="main">Numerentur</lem><note type="lemma-abbrev">compresso.</note><rdg wit="#L" n="1"> Talis </rdg><rdg wit="#L" n="2"> Numerentur <hi rendition="#i">L</hi> </rdg></app> displosiones in promoto quodam instrumento accurate subdiviso, saltem pro uno minuto primo. Separatim alio circulo notentur <app type="Bfootnote"><lem type="main">minuta, alio horae.</lem><note type="lemma-abbrev">notentur</note><rdg wit="#L" n="1"> horae, alio </rdg><rdg wit="#L" n="2"> minuta, alio horae. <hi rendition="#i">L</hi></rdg></app> <pb type="L"/><fw type="folNum">[62 r<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch85.p8">Ecce tandem rationem novam et ingeniosam ut justo tardius motum Elasticum<index indexName="Sachverzeichnis"><term>elasticum</term></index> levetur vel acceleretur, justo celerius tardetur. Nimirum: moveatur ab Elastico<index indexName="Sachverzeichnis"><term>elasticum</term></index> rota, haec movet alias, usque ad rotam, cui annexum aliquid quod primam vi elastica<index indexName="Sachverzeichnis"><term>vis elastica</term></index> in arctum <app type="Bfootnote"><lem type="main">contrahere potest.</lem><note type="lemma-abbrev">contrahere</note><rdg wit="#L" n="1"> , saltem radium ejus </rdg><rdg wit="#L" n="2"> potest. <hi rendition="#i">L</hi></rdg></app> Ergo si rota prima movetur justo tardius, ultima proportionaliter movebitur (potest enim fieri quantacunque ultimae celeritas<index indexName="Sachverzeichnis"><term>celeritas</term></index> propter magnitudinem, si alteri <pb type="VIII_2" n="720"/>eccentricae concentrica radio longiore.) tardius, ita ut remittat de rotae primae retentaculo, ac proinde eam relinquat se vi Elastica<index indexName="Sachverzeichnis"><term>vis elastica</term></index> sua facere tanto longiorem et ita motum extremi, ac proinde caeterarum rotarum celeriorem. Sin prima movetur celerius, ultima fortius attrahet retentaculum, et ita faciet prima in arctatiorem seu breviorem ac proinde motum in peripheria ejus tardiorem. Ita omnia gerentur mero Elatere<index indexName="Sachverzeichnis"><term>elater</term></index>. Et duraturam machinae exactitudinem quamdiu restituendi se vis in rota prima non languescet notabiliter. Loco vis<index indexName="Sachverzeichnis"><term>vis elastica</term></index> Elasticae hic posset pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> movendum esse rotae compressiones<index indexName="Sachverzeichnis"><term>compressio</term></index>. Nam alioquin vis Elastica<index indexName="Sachverzeichnis"><term>vis elastica</term></index> rotae primae imminuta non reaget satis, nec manebit in aequilibrio<index indexName="Sachverzeichnis"><term>aequilibrium</term></index> cum vi rotae ultimae, quanquam non opus sit aequilibrio<index indexName="Sachverzeichnis"><term>aequilibrium</term></index> nisi ut rota prima tardius incedente, proportionaliter dilatet. Proportionem reperire difficile erit.</p></div></div></body>
+  </text>
+</TEI>

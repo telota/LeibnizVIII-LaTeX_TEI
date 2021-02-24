@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch49" n="49"><pb type="VIII_2" n="421"/><head>49.
+DE MOTUS LINEA POST CONCURSUM</head>
+<head>[Sommer 1673]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi>
+<list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Aufzeichnung: LH XXXVII 4 Bl. 34. Papierstreifen (23 x 6 cm), unregelmäßig beschnitten. 8 Z. auf Bl. 34 r<hi rendition="#sup">o</hi> und 1 Z. auf Bl. 34 v<hi rendition="#sup">o</hi>. Ein Wasserzeichen.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 482</hi></p></item></list></p></div><div type="contents">
+          <p><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi> Das Wasserzeichen im Textträger des vorliegenden Stücks ist für den Sommer 1673 nachgewiesen.</hi></p>
+        </div><div type="text"><p xml:id="Ch49.p3" rendition="#noindent"><pb type="L"/><fw type="folNum">[34 r<hi rendition="#sup">o</hi>]</fw> Experimentum notabile quo definiri possit, omniane in curvis peragantur per tangentes. Supponamus corpus aliquod linea quadam curva ferri, ut parabolica <hi rendition="#i">ab</hi> aliudque in linea recta ei concurrere, quaeritur post momentum concursus<index indexName="Sachverzeichnis"><term>momentum concursus</term></index>, quaenam futura sit linea motus. Ducatur tangens <hi rendition="#i">bd</hi> crediderit aliquis, cum directio curvae, in puncto <hi rendition="#i">b</hi> sit in tangente <hi rendition="#i">db</hi> aliaque accedat directio in recta <hi rendition="#i">cb</hi> motum esse compositum ex his duabus directionibus. Sed hoc falsum est. Idem enim eveniret, si id verum esset, ac<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Links am Rand</hi>: Imo non est absurdum.</note> si corpus <hi rendition="#i">a</hi> in linea recta <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[<hi rendition="#i">db</hi>]</corr></lem><rdg wit="#L"><orig><hi rendition="#i">bc</hi> </orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> moveretur, quod est absurdum. Igitur sic potius cogitandum est, motum esse compositum <app type="Bfootnote"><lem type="main">ex</lem><note type="lemma-abbrev">compositum</note><rdg wit="#L" n="1"> in </rdg><rdg wit="#L" n="2"> ex <hi rendition="#i">L</hi></rdg></app> curvilineo illo et rectilineo, <app type="Bfootnote"><lem type="main">aut potius</lem><note type="lemma-abbrev">rectilineo,</note><rdg wit="#L" n="1"> quasi s </rdg><rdg wit="#L" n="2"> aut potius <hi rendition="#i">L</hi></rdg></app> ex tribus illis (pluribusve) directionibus, duabus nimirum (pluribusve) curvam constituentibus <pb type="L"/><fw type="folNum">[34 v<hi rendition="#sup">o</hi>]</fw> et nova rectilinea accedente unde novum curvae genus vel forte prioris curvae nova species.</p><figure rendition="#own-line_centered" xml:id="Ch49.p4">
+        <graphic rendition="#c" url="../images/lh374_34rkonvertiert.svg" style="trim:  0mm 0mm 0mm 0mm; clip: true" width="156.1032pt" xml:id="Ch49.p4.g1"/>
+        
+        <head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head>
+      </figure></div></div></body>
+  </text>
+</TEI>

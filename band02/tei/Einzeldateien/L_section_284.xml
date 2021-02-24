@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="section" xml:id="Ch28.S4" n="284"><head>28<hi rendition="#sub">4</hi>.
+RÈGLE POUR CALCULER LA FORCE D’UNE MACHINE 4</head><div type="ueberlieferung"><pb type="VIII_2" n="215"/><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Reinschrift mit Verbesserungen: LH XXXV 10, 9 Bl. 1. 1 Bl. 4<hi rendition="#sup">o</hi>. 1 S. auf Bl. 1 r<hi rendition="#sup">o</hi>. Bl. 1 v<hi rendition="#sup">o</hi> leer. Unvollständige Abschrift von N. 28<hi rendition="#sub">2</hi>.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 1190 A</hi></p></item></list></p></div><div type="text"><p xml:id="Ch28.S4.p4" rendition="#noindent"><pb type="L"/><fw type="folNum">[1 r<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch28.S4.p5" rendition="#c">Regle pour calculer la force d’une Machine,<index indexName="Sachverzeichnis"><term>machine</term></index><index indexName="Sachverzeichnis"><term>force</term></index><lb/>dont voicy la figure</p><p xml:id="Ch28.S4.p6" rendition="#noindent">Soit la roue<index indexName="Sachverzeichnis"><term>roue</term></index> <hi rendition="#i">ABCD</hi> mobile à l’entour du <app type="Bfootnote"><lem type="main">centre <hi rendition="#i">L</hi>,</lem><note type="lemma-abbrev">centre <hi rendition="#i">L</hi></note><rdg wit="#L" n="1"> . Supposons qu’elle est </rdg><rdg wit="#L" n="2"> , entrecoupée <hi rendition="#i">L</hi></rdg></app> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">entrecoupée à angles droits de deux</add></lem><note type="lemma-abbrev">à angles droits</note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> Diametres<index indexName="Sachverzeichnis"><term>diametre</term></index> solides <hi rendition="#i">AC</hi>, et <hi rendition="#i">DB</hi>; les quels seront transferez par le mouuement<index indexName="Sachverzeichnis"><term>mouvement</term></index> à l’entour du centre, de la situation perpendiculaire ou <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">horizontale, <hi rendition="#i">ABCD</hi>, à l’inclinée</add></lem><note type="lemma-abbrev"><hi rendition="#i">ABCD</hi>,</note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> <hi rendition="#i">EFGH</hi> dans un <hi rendition="#g">angle donné</hi> <hi rendition="#i">ALE</hi>. Conceuuons la dite roue chargée dans les points, <hi rendition="#i">E</hi>, <hi rendition="#i">F</hi>, <hi rendition="#i">K</hi>, <hi rendition="#i">I</hi>, de quatre poids égaux entre eux.</p><figure rendition="#own-line_centered" xml:id="Ch28.S4.p7">
+          <graphic rendition="#c" url="../images/lh0351009_001r-d1.svg" style="trim:  0mm 0mm 0mm 0mm; clip: true" width="216.81pt" xml:id="Ch28.S4.p7.g1"/>
+          
+          <head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head>
+        </figure><p xml:id="Ch28.S4.p8">Soit <hi rendition="#g">donnée</hi> la longueur de <hi rendition="#i">AC</hi>, diametre<index indexName="Sachverzeichnis"><term>diametre</term></index> de la Roue, item la longueur des droites <hi rendition="#i">ELK</hi>, ou <hi rendition="#i">FLI</hi> égales entre elles.<!--  \hack{\\
+\indent} 
+     \hackfor{\par}--></p><p xml:id="Ch28.S4.p9">Et enfin <hi rendition="#g">la force absolue</hi><index indexName="Sachverzeichnis"><term>force absolue</term></index> d’un de ces poids, c’est à dire avec la quelle il agit librèment, ou sur un plan parallele à l’horison, s’il en
+estoit soutenu.<!--  \hack{\\
+\indent} 
+     \hackfor{\par}--></p><pb type="VIII_2" n="216"/><p xml:id="Ch28.S4.p10">On demande la <app type="Bfootnote"><lem type="main">force<index indexName="Sachverzeichnis"><term>force</term></index> de la machine<index indexName="Sachverzeichnis"><term>machine</term></index>, qu’elle auroit dans</lem><note type="lemma-abbrev">force</note><rdg wit="#L" n="1"> absolue de la machine<index indexName="Sachverzeichnis"><term>machine</term></index>, dans </rdg><rdg wit="#L" n="2"> de la machine<index indexName="Sachverzeichnis"><term>machine</term></index>, qu’elle auroit dans <hi rendition="#i">L</hi></rdg></app> l’Estat <hi rendition="#i">EFGH</hi>, si elle y commenceroit le mouuement<index indexName="Sachverzeichnis"><term>mouvement</term></index>; car il faut adjouter cette condition à fin de ne pas embarasser le calcul de la force simple<index indexName="Sachverzeichnis"><term>force simple</term></index>, par celuy de la force gagnée<index indexName="Sachverzeichnis"><term>force gagnée</term></index>
+par l’acceleration<index indexName="Sachverzeichnis"><term>acceleration</term></index>, <app type="Bfootnote"><lem type="main">dont le calcul<index indexName="Sachverzeichnis"><term>calcul</term></index> se doit</lem><note type="lemma-abbrev">dont</note><rdg wit="#L" n="1"> il faut </rdg><rdg wit="#L" n="2"> le calcul se
+doit  <hi rendition="#i">L</hi></rdg></app> faire à part.</p><p xml:id="Ch28.S4.p11">Des points, <hi rendition="#i">E.F</hi> menez les perpendiculaires <hi rendition="#i">EM</hi>, <hi rendition="#i">FN</hi>, sur le diametre<index indexName="Sachverzeichnis"><term>diametre</term></index> vertical <hi rendition="#i">AC</hi>, les quelles seront <hi rendition="#g">données</hi>, par ce que les Angles <hi rendition="#i">ALE</hi>, <hi rendition="#i">CLF</hi> sont donnés, dont elles sont les
+sinus droits.</p><p xml:id="Ch28.S4.p12"><hi rendition="#g">Cela estant posé, je dis que la force absolue<index indexName="Sachverzeichnis"><term>force absolue</term></index> d’un des poids susdits est à la force<index indexName="Sachverzeichnis"><term>force</term></index> de la machine, comme le rect</hi><hi rendition="#g">angle <hi rendition="#i">ELK</hi> (: ou compris soubs <hi rendition="#i">EL</hi>, <hi rendition="#i">LK</hi> :) est au rectangle compris soubs <hi rendition="#i">HI</hi> et <hi rendition="#i">MN</hi>.</hi></p><p xml:id="Ch28.S4.p13">Theoreme assez beau, et d’un tres grand usage pour le calcul des mouuements<index indexName="Sachverzeichnis"><term>mouvement</term></index> circulaires.</p><p xml:id="Ch28.S4.p14">Pour donner cette raison en nombres, il faut se servir des lettres de l’Analyse<index indexName="Sachverzeichnis"><term>analyse</term></index>, qui signifient des nombres indefinis,</p><p xml:id="Ch28.S4.p15">Soit
+<table>
+              
+                <row>
+                  <cell>le sinus droit <hi rendition="#i">EM</hi> appellé,</cell>
+                  <cell><hi rendition="#i">y</hi></cell>
+                </row>
+                <row>
+                  <cell>le Rayon <hi rendition="#i">AL</hi></cell>
+                  <cell><hi rendition="#i">a</hi></cell>
+                </row>
+                <row>
+                  <cell>le petit Rayon <hi rendition="#i">LI</hi></cell>
+                  <cell><hi rendition="#i">b</hi></cell>
+                </row>
+              
+            </table></p><p xml:id="Ch28.S4.p16" rendition="#noindent">et la force absolue<index indexName="Sachverzeichnis"><term>force absolue</term></index> d’un des poids
+sera à la force de la Machine<index indexName="Sachverzeichnis"><term>machine</term></index>,
+comme est 1, ou l’unité, à <formula xml:id="Ch28.S4.p16.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>y</m:mi><m:mo>+</m:mo><m:msqrt><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt><m:mo>,</m:mo><m:mo>⌢</m:mo><m:mi>a</m:mi><m:mo>-</m:mo><m:mi>b</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:mstyle></m:math></formula>
+ou comme 1,
+à <formula xml:id="Ch28.S4.p16.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow><m:mo>-</m:mo><m:mrow><m:mi>y</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:msqrt><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mrow><m:mo>-</m:mo><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:msqrt><m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>-</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:mstyle></m:math></formula>.</p></div></div></body>
+  </text>
+</TEI>

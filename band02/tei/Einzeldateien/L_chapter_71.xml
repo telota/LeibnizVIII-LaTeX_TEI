@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch71" n="71"><pb type="VIII_2" n="665"/><head>71.
+NOTIZEN ZU VERSCHIEDENEN KRANKHEITEN UND KUREN</head>
+<head>[Mitte 1671 – Anfang 1672 (?)]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Aufzeichnung:
+LH III 5 Bl. 55.
+1 Bl. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 55 r<hi rendition="#sup">o</hi>.
+Bl. 55 v<hi rendition="#sup">o</hi> leer.
+Geringfügiger Textverlust durch Papierbeschädigung am Falz und am Rand.
+Schwer erkennbares Wasserzeichen.</hi></p><p><hi rendition="#smaller">KK1, Nr. 977</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch71.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Im vorliegenden Stück verweist Leibniz auf <ref corresp="#bib_00008"/>D. Beckhers Abhandlung <hi rendition="#i">De cultrivoro prussiaco</hi>.
+Messerschlucker werden auch in N. 70 sowie in den dort zitierten Ausgaben der <hi rendition="#i">Miscellanea curiosa physico-medica</hi><ref corresp="#bib_00001"/> erwähnt, darunter auch der preußische; siehe insbesondere <hi rendition="#i">Miscellanea curiosa</hi>, 1 (1671), S. 406: Observatio CCLII.
+Da weitere Anhaltspunkte für eine genauere chronologische Einordnung fehlen, wird die Datierung von N. 70 hier übernommen.</hi></p></div><div type="text"><p xml:id="Ch71.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[55 r<hi rendition="#sup">o</hi>]</fw>
+In hizigen Kranckheiten hat man vor diesen den trunck verbothen erat haeresis priorum temporum. Hodie contrarium admissum est. Man giebt dem patienten genug zu trincken contra medicorum sententiam, <app type="Bfootnote"><lem type="main">doch nicht starck gebraucke. Einer von Einzing</lem><note type="lemma-abbrev">doch</note><rdg wit="#L" n="1"> nur von lin </rdg><rdg wit="#L" n="2"> nicht starck gebraucke. <app><rdg wit="#L" n="a">Der junge Einz </rdg><rdg wit="#L" n="b">Einer von Einzing <hi rendition="#i">L</hi></rdg></app></rdg></app> war todt kranck, begehrte von seinen Medicis daß er nur eine sach durffe den durst <app type="Bfootnote"><lem type="main">leschen. D. Spina u. andere</lem><note type="lemma-abbrev">leschen.</note><rdg wit="#L" n="1"> Es </rdg><rdg wit="#L" n="2"> Sie </rdg><rdg wit="#L" n="3"> D. Spina u. andere <hi rendition="#i">L</hi></rdg></app> schlugens ihm ab. Seine <app type="Cfootnote"><lem type="main">Banst</lem><note type="editorial">Banz, Frauenzimmer. Siehe <bibl corresp="#bib_01167"><hi rendition="#k">J. Müller</hi>, <hi rendition="#i">Rheinisches Wörterbuch</hi>, Bonn 1928, Bd. 1, Sp. 449.</bibl></note></app>
+die fr. von Boineburg<index indexName="Namensregister"><term><hi rendition="#g">Schütz von Holzhausen</hi>, Anna Christin geb. (1630-1689)</term></index> Mutter<index indexName="Namensregister"><term><hi rendition="#g">Dorfelden</hi>, Maria Eva von (1600-??)</term></index>, gab ihm heimlich einen Krug schwalbacher, (es war zu Schwalbach<index indexName="Ortsregister"><term>Schwalbach</term></index>) den tranck er auf einen trunck aus. Legte sich hin und schlieff, welches er viele nachte nicht gethan, den ganzen tag fest, stund auff und war frisch und gesund. Des kaysers bruder Carl Joseph<index indexName="Namensregister"><term><hi rendition="#g">Österreich</hi>, Karl Jospeh von (1649-1664)</term></index> soll verwahrloßt worden seyn, daß man ihm nichts in der hize zu trincken geben, hat verschmachten müßen. Es ist eine vanität daz man sagt, man gieße auff einen hizigen stein. Der magen verdauet nicht durch hize, sondern gewiße schärffe. Trincken ist guth in hizigen kranckheiten, und <app type="Bfootnote"><lem type="main">sonsten wieder</lem><note type="lemma-abbrev">sonsten</note><rdg wit="#L" n="1"> contra </rdg><rdg wit="#L" n="2"> wieder <hi rendition="#i">L</hi></rdg></app> die Galle, diluit sanguinem, und führet die galle durch den Urin weg. Aber sonsten wenn man sich sehr erhizet, durch eüserliche hize muß man nicht darauf trincken. <app type="Bfootnote"><lem type="main">Kein</lem><note type="lemma-abbrev">trincken.</note><rdg wit="#L" n="1"> Denn </rdg><rdg wit="#L" n="2"> Kein <hi rendition="#i">L</hi></rdg></app> thier ist als ein hund, welches sich nicht über trincket. Der hund säufft nicht sondern lecket nur. Macht die zunge hohl, wie ein löffel daß er damit faßet.</p><pb type="VIII_2" n="666"/><p xml:id="Ch71.p6">Zu Maynz<index indexName="Ortsregister"><term>Mainz</term></index> hatte eine magd <app type="Bfootnote"><lem type="main">ein</lem><note type="lemma-abbrev">magd</note><rdg wit="#L" n="1"> bey n </rdg><rdg wit="#L" n="2"> ein <hi rendition="#i">L</hi></rdg></app> meßer eingeschlucket, war ein klein rund meßergen etwas spizig, sie kam zur frau Canzler Tasterin<index indexName="Namensregister"><term><hi rendition="#g"/>,</term></index> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">in Maynz,<index indexName="Ortsregister"><term>Mainz</term></index></add></lem><note type="lemma-abbrev">in Maynz</note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> daß <app type="Bfootnote"><lem type="main">mensch sagte</lem><note type="lemma-abbrev">mensch</note><rdg wit="#L" n="1"> stelet </rdg><rdg wit="#L" n="2"> sagte <hi rendition="#i">L</hi></rdg></app> niemand was es war, stellete sich wilt, und <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">man</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> meinte sie wurde von sinnen kommen. Endtlich fand sich ein dicker kneutel in der lincken seite, die frau Canzler Tasterin<index indexName="Namensregister"><term><hi rendition="#g"/>,</term></index> riethe man solte pechpflaster auflegen, daz ziehen köndte, <hi rendition="#g">denn daz pechpflaster ziehet gewaltig</hi>, dieses zog daz meßer so gewaltig, daß es endtlich als man das pflaster abriß mit der spize herfur zu gucken began, und man <app type="Bfootnote"><lem type="main">fuhlete daz etwas</lem><note type="lemma-abbrev">man</note><rdg wit="#L" n="1"> die spize als e </rdg><rdg wit="#L" n="2"> fuhlete daz etwas <hi rendition="#i">L</hi></rdg></app> hartes und wie eisen, darinn were. Das mensch hatte unterdeßen weil das pechpflaster draufgewesen sehr getobet. <app type="Bfootnote"><lem type="main">Meister Johann medicus<index indexName="Namensregister"><term><hi rendition="#g">Medicus</hi>, Johann (Barbier in Mainz; 17. Jahrhundert)</term></index></lem><note type="lemma-abbrev">Meister</note><rdg wit="#L" n="1"> hans </rdg><rdg wit="#L" n="2"> Johann medicus <hi rendition="#i">L</hi></rdg></app> der Barbier zu Meynz, ward geruffen, der brachte die spize mehr und mehr herfur, und zog endtlich das meßer mit gewalt heraus. Es roch nach verdauter speise, und waren so gar stückgen fleisch dran, er hat das meßer noch.
+Nota Historia <app type="Cfootnote"><lem type="main">Cultrivori Borussii<index indexName="Ortsregister"><term>Preußen</term></index></lem><note type="lemma-abbrev">Cultrivori</note><note type="editorial"><bibl corresp="#bib_00008"><hi rendition="#k">D. Beckher</hi>, <hi rendition="#i">De cultrivoro prussiaco observatio et curatio singularis</hi>, Leiden 1638 (Erstausgabe: Königsberg 1638).</bibl></note></app>.
+Dort schnitt man das meßer heraus. Hier war es selbst heraus gangen. Die ganze frag ist, wie es aus dem Sack, oder Canal, der aus Schlund, röhre, magen, kleinen und großen gedarme, als in einem stück bestehet, heraus kommen können. Es muß die natur in ihrer höchsten noth kleine falten oder näthe, die sonst zu öfnen, wie auch in der geburth geschieht, und solche als denn wieder schließen. Es kam hernach heraus, daz das mensch wohl gewußt, daz sie ein meßer geschluckt, und es dem juden doctor Salomon<index indexName="Namensregister"><term><hi rendition="#g">Oppenheim</hi>, Salomon (1640-1697)</term></index> zu Francfurt<index indexName="Ortsregister"><term>Frankfurt/Main</term></index> gesagt, welcher ihr oel gegeben, umb zu heilen, wenn es eine wunde in magen gemacht.</p></div></div></body>
+  </text>
+</TEI>

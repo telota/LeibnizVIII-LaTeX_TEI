@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-09" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch6" n="6"><pb type="VIII_1" n="65"/><head>6.
+DE LONGITUDINUM DETERMINATIONE</head> <head>[2. Hälfte 1672]</head><div type="contents"><p xml:id="Ch6.p1"><hi rendition="#smaller">Bei den folgenden beiden Stücken handelt es sich um die Wiederaufnahme des Problems der Längengradbestimmung in Paris. Die Überlegungen sind als Konzept LH XXXV 15, 6 Bl. 64–65 und als Abschrift von Schreiberhand LH XXXV 15, 6 Bl. 66–73 überliefert. Bl. LH XXXV, 15, 6 Bl. 66 stimmt im Wesentlichen mit den ersten zwei Dritteln des Textbefundes von LH XXXV 15, 6 Bl. 64 r<hi rendition="#sup">o</hi> und weiteren fünf Zeilen in der Mitte von LH XXXV, 15, 6 Bl. 65 v<hi rendition="#sup">o</hi> überein. Die dazwischen liegenden und das Gros des Konzepts ausmachenden Textteile sind in der Abschrift nicht überliefert, so dass von der Existenz einer dritten Version auszugehen ist, die als Vorlage für den Schreiber diente und im Nachlass bislang nicht aufgefunden wurde. Obwohl sie dasselbe Problem behandeln und zum Teil wörtlich übereinstimmen, weisen die beiden Texte signifikante inhaltliche Differenzen auf. Sie werden daher im Folgenden separat wiedergegeben. Die Datierung erfolgt aufgrund des Wasserzeichens, das sich bei einer Reihe von Texten zur Pneumatik findet, die zwischen August und Dezember 1672 entstanden sind.</hi></p></div><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_61.xml" xpointer="Ch6.S1" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_62.xml" xpointer="Ch6.S2" parse="xml"/></div></body>
+  </text>
+</TEI>

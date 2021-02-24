@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-09" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="index" xml:id="Chx4_1">
+    <head rendition="#smaller">ORTSREGISTER</head>
+<!--  \hack{} -->    
+    
+    <pb type="VIII_1" n="671"/><p xml:id="Chx4_2"><hi rendition="#smaller">Dieses Verzeichnis listet alle von Leibniz genannten Ortsnamen in ihrer deutschen Version auf.
+Es wird nach Seiten zitiert. Kursive Seitenzahlen verweisen auf den Apparat-Teil.</hi></p>
+<!--  \hack{\addchap*{\hfillORTSVERZEICHNIS\hfill}} -->    
+  
+    
+    <list>
+      <item>
+        <hi rendition="#smaller">Deutschland (Germania, Duitsland), 603</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Adria (mer hadriatique), 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Afrika (Africa), 14</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Aleppo, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Amazonas (fluv. origliana), 45</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Amerika (America), 45, 270</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Amsterdam, 153, 245, 600, 622, 623, 626</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Arabien (Arabia), 14, 47</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Ärmelkanal (Britannische mar), 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Athen (Athenes), 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Augsburg (Augusta Vindelicorum), 196</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Auvergne (Arvernia), 336</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Böhmen (Bohemia), 267</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Bologna (Bononia), 273</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Brasilien (Brasilia), 45</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">China (Chine), 621</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Clermont, 290</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Curaçao (Curacao), 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Dänemark (Dania), 9</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Danzig (Dantzig), 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Deutschland (Germania, Duitsland), 14, 201, 325, 338, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Dijon, 541</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Donau, 585</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Dordrecht, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">England (Anglia), 4, 5, 14, 17, 18, 326, 553, 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Enkhuizen (Enckhuyßen), 625</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Europa, 625</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Florenz (Fiorenze, Florentia), 9, 277, 600</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Frankreich (Gallia, Francia), 14, 46, 201, 276, 279, 326, 336</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Gottorp, 14</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Grönland (Groenlandia), 601</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Guinea, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Hannover, 241</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Holland (Hollandia), 16, 261, 601, 604, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Hudsonbay (Hudsonsbay), 10</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Indien (India), 44, 118, 601</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Irland (Yrland), 618</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Italien, 618</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Jamaika (Jamaica), 11</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Japan, 622</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Kalifornien (California), 45</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Kap Finisterre (Cap finisterrae), 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Karpaten (Mons Carpathius), 263, 266</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Kaspisches Meer (Mer Caspie), 500</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Köln (Colonia), 45</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Königsberg (Koninksbergen), 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Kopenhagen (Hafnia), 100</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Lissabon (Ulyssipolis), 45</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">London (Londinum), 4, 10, 104, 105, 602</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Lyon (Lugdunum), 200, 238, 271</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Magdeburg (Magdeburgum), 326</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Mainz (Maynz), 270</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Mannheim (Manhem), 585</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Marseille (Massilia), 47</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Moskau (Moscovie), 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Newcastle (Nieu-Kaesteel), 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Nijmegen (Nieumegue), 585</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Nordholland (Nort Holland), 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Nordmeer (Oceanus septentrionales), 45</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Norwegen (Norwegae, Norwège, Noorwegen),</hi> <hi rendition="#i #smaller">264</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">Norwegen (Norwegae, Norwège, Noorwegen), 264, 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Österreich (Austria), 590</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Ostia, 617</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Ostsee (Mer Balthique), 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Oxford (Oxonium), 16</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Paris (Parisii), 4, 36, 93, 98, 99, 232, 235, 237, 241, 288,
+290</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Pincio, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Puy de Dôme (Mons Averniae, Puy de domme),</hi> <hi rendition="#i #smaller">325</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">Puy de Dôme (Mons Averniae, Puy de domme), 325, 336</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Quedlinburg (Quedlinburgum), 264</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Quito (Quitum), 45</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Regensburg (Ratisbona), 258</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Rhône (Rhone), 585</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Rhein (Rhin), 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Riga, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Rom (Roma), 45, 201, 600, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Rotterdam, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Schwarzes Meer (pont Euxin), 500</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Schweden (Suecia), 338</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Seveckenberg (Zeunickenberg), 264</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Stockholm, 289, 290, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Texel, 628</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Vienne sur le Rhône, 584, 585</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Westfalen (Westphalie), 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Windsor, 14</hi>
+
+      </item>
+    </list>
+  </div></body>
+  </text>
+</TEI>

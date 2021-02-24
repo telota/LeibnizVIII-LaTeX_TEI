@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-09" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch30" n="30"><pb type="VIII_1" n="233"/><head>30.
+ZU J. DUBREUIL, LA PERSPECTIVE PRACTIQUE</head> <head>[Frühjahr 1673 – November 1676]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">LiH</hi></label>
+<p><hi rendition="#smaller">Marginalien sowie eine Unterstreichung in <hi rendition="#k">J. Dubreuil</hi>, <ref corresp="#bib_00164"/><hi rendition="#i">La perspective practique</hi>, Paris 1642. Der Titel enthält darüber hinaus zahlreiche An- und Unterstreichungen, die nicht von Leibniz stammen.</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch30.p3"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Aleaumes<index indexName="Namensregister"><term><hi rendition="#g #smaller">Aleaume</hi> <hi rendition="#smaller">(Alleaume), Jacques 1562–1627</hi></term></index> Schrift <ref corresp="#bib_00003"/><hi rendition="#i">La perspective speculative et pratique</hi> und Dubreuils<index indexName="Namensregister"><term><hi rendition="#g #smaller">Dubreuil,</hi> <hi rendition="#smaller">Jean 1602–1670</hi></term></index> Titel <ref corresp="#bib_00164"/><hi rendition="#i">La perspective practique</hi> sind in Leibniz’ Handexemplar zusammengebunden, so dass wir die Datierung aus N. 29 übernehmen.</hi></p></div><div type="text"><p xml:id="Ch30.p4">[p. 8] <seg type="apparat-ellipsis"/> et si les objets estoient produits à l’infiny, ils s’approcheroient tousiours plus pres de ce rayon centrical T, iusques à ce qu’ils sembleroient ne faire qu’vn poinct qui seroit à l’infiny comme doiuent estre tous les poincts de veuë.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht:</hi> qui seroit à l’infiny comme doiuent estre tous les poincts de veuë.</note></p><p xml:id="Ch30.p5">[p. 36] En la seconde partie vous aurez la methode de faire voir en Perspectiue<index indexName="Sachverzeichnis"><term>perspective</term></index> vne Maison parfaite, où l’on verra le Logis acheué et accomply; et par mesme moyen tous les Departemens de chaque Estage, depuis la Charpenterie iusqu’à la Caue; et le seul<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz korrigiert</hi> et le seul <hi rendition="#i">in</hi> en la seule</note> espace qu’occuperoit le Plan Geometral.</p><p xml:id="Ch30.p6">[p. 51] Vous efleuerez du premier angle vne perpendiculaire, selon la deuxieme<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz korrigiert</hi> deuxieme <hi rendition="#i">in</hi> premiere</note> pratique, qui portera les mesures que vous voudrez donner aux objets, <seg type="apparat-ellipsis"/>.</p><p xml:id="Ch30.p7">[p. 82] En cette Figure chaque quarré à 9. Pans<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz korrigiert</hi> Pans <hi rendition="#i">in</hi>: Pacés</note> ou quarreaux, de chaque costé, lequel estant doublé en donne 18. pour tout le Creux; <seg type="apparat-ellipsis"/>.</p><p xml:id="Ch30.p8">[p. 93] <seg type="apparat-ellipsis"/> De là on peut connoistre que si la porte a 3. pieds de large, comme ont celles–cy; elle aura aussi 3. pieds pour son diametre<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz korrigiert</hi> diametre <hi rendition="#i">in</hi> demydiametre</note> AC, <seg type="apparat-ellipsis"/>.</p><pb type="VIII_1" n="234"/><p xml:id="Ch30.p9">Toutes les Ouuertures se sont par les mesmes reigles, comme l’on void encore les Portes K, et L. La Porte K, monstre son dehors, et la porte L, monstre son dedans<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz korrigiert</hi> dehors, et la porte L, monstre son dedans <hi rendition="#i">in</hi> dedans, et la porte L, monstre son dehors</note>; <seg type="apparat-ellipsis"/>.</p><p xml:id="Ch30.p10">[p. 111] <seg type="apparat-ellipsis"/> il faudra prendre garde où les<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz ergänzt</hi>: lignes</note> BD, ou BE, seront coupées, <seg type="apparat-ellipsis"/>.</p><p xml:id="Ch30.p11">[p. 117] <seg type="apparat-ellipsis"/> il<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz ergänzt</hi>: le</note> faut trouuer en dedans, ou dehors le rayon AG, ou BG: <seg type="apparat-ellipsis"/>.</p><p xml:id="Ch30.p12">[p. 137] <seg type="apparat-ellipsis"/> ainsi qu’elle fait la ligne DE<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz korrigiert</hi> DE <hi rendition="#i">in</hi>: BE</note>, au poinct F, <seg type="apparat-ellipsis"/>.</p></div></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-09" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="undef" xml:id="Chx5">
+     <pb type="VIII_1" n="673"/><head rendition="#smaller">HANDSCHRIFTENVERZEICHNIS</head> 
+<!--  \hack{ } -->    
+      <p xml:id="Chx5.p1" rendition="#c"><hi rendition="#smaller">FUNDSTELLEN</hi></p>
+    
+    
+      <p xml:id="Chx5.p2"><hi rendition="#smaller">Verzeichnet sind hier die im vorliegenden Band edierten Hand- und Druckschriften,
+geordnet nach Fundort und Signaturen.<lb/>
+<hi rendition="#k">Hannover</hi> <hi rendition="#i">Gottfried Wilhelm Leibniz Bibliothek</hi><lb/></hi></p>
+    
+    
+      
+      <table>
+        <row>
+          <cell><hi rendition="#smaller">LH IV</hi></cell>
+          <cell><hi rendition="#smaller">8, 22</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 72–73</hi></cell>
+          <cell><hi rendition="#smaller">N. 1</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">1, 12</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 12</hi></cell>
+          <cell><hi rendition="#smaller">N. 28</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">3A, 8</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 27</hi></cell>
+          <cell><hi rendition="#smaller">N. 64</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">3A, 16</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 19–20</hi></cell>
+          <cell><hi rendition="#smaller">N. 52</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">5, 2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 5–6</hi></cell>
+          <cell><hi rendition="#smaller">N. 53</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">5, 2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 7–9</hi></cell>
+          <cell><hi rendition="#smaller">N. 54</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">12, 1</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 327</hi></cell>
+          <cell><hi rendition="#smaller">N. 67</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">12, 2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 156</hi></cell>
+          <cell><hi rendition="#smaller">N. 9</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">14, 2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 91–101</hi></cell>
+          <cell><hi rendition="#smaller">N. 36</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">14, 2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 129–134</hi></cell>
+          <cell><hi rendition="#smaller">N. 37</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">15, 1</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 14+17</hi></cell>
+          <cell><hi rendition="#smaller">N. 38</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">15, 6</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 20</hi></cell>
+          <cell><hi rendition="#smaller">N. 7</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">15, 6</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 21</hi></cell>
+          <cell><hi rendition="#smaller">N. 8</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">15, 6</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 24</hi></cell>
+          <cell><hi rendition="#smaller">N. 10</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">15, 6</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 46+74</hi></cell>
+          <cell><hi rendition="#smaller">N. 2</hi><hi rendition="#smaller #sub">1</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">15, 6</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 47–48</hi></cell>
+          <cell><hi rendition="#smaller">N. 2</hi><hi rendition="#smaller #sub">3</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">15, 6</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 49–50</hi></cell>
+          <cell><hi rendition="#smaller">N. 2</hi><hi rendition="#smaller #sub">4</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">15, 6</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 51–52</hi></cell>
+          <cell><hi rendition="#smaller">N. 2</hi><hi rendition="#smaller #sub">5</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">15, 6</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 54–55+63</hi></cell>
+          <cell><hi rendition="#smaller">N. 3</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">15, 6</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 56</hi></cell>
+          <cell><hi rendition="#smaller">N. 5</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">15, 6</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 57</hi></cell>
+          <cell><hi rendition="#smaller">N. 4</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">15, 6</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 64–65</hi></cell>
+          <cell><hi rendition="#smaller">N. 6</hi><hi rendition="#smaller #sub">1</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">15, 6</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 66–73</hi></cell>
+          <cell><hi rendition="#smaller">N. 6</hi><hi rendition="#smaller #sub">2</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+          <cell><hi rendition="#smaller">15, 6</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 74</hi></cell>
+          <cell><hi rendition="#smaller">N. 2</hi><hi rendition="#smaller #sub">2</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 1</hi></cell>
+          <cell><hi rendition="#smaller">N. 15</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 1</hi></cell>
+          <cell><hi rendition="#smaller">N. 18</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 2</hi></cell>
+          <cell><hi rendition="#smaller">N. 16</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 6</hi></cell>
+          <cell><hi rendition="#smaller">N. 24</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 7</hi></cell>
+          <cell><hi rendition="#smaller">N. 23</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 8</hi></cell>
+          <cell><hi rendition="#smaller">N. 34</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 9</hi></cell>
+          <cell><hi rendition="#smaller">N. 32</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 10</hi></cell>
+          <cell><hi rendition="#smaller">N. 35</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 11</hi></cell>
+          <cell><hi rendition="#smaller">N. 20</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 13</hi></cell>
+          <cell><hi rendition="#smaller">N. 31</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 16</hi></cell>
+          <cell><hi rendition="#smaller">N. 14</hi><hi rendition="#smaller #sub">1</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 17–18</hi></cell>
+          <cell><hi rendition="#smaller">N. 14</hi><hi rendition="#smaller #sub">2</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 83–91</hi></cell>
+          <cell><hi rendition="#smaller">N. 19</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 97</hi></cell>
+          <cell><hi rendition="#smaller">N. 21</hi><hi rendition="#smaller #sub">1</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 99–100</hi></cell>
+          <cell><hi rendition="#smaller">N. 21</hi><hi rendition="#smaller #sub">2</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">2</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 101</hi></cell>
+          <cell><hi rendition="#smaller">N. 22</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 90</hi></cell>
+          <cell><hi rendition="#smaller">N. 44</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 91–96</hi></cell>
+          <cell><hi rendition="#smaller">N. 39</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 96</hi></cell>
+          <cell><hi rendition="#smaller">N. 63</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 97–98</hi></cell>
+          <cell><hi rendition="#smaller">N. 40</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 99–104</hi></cell>
+          <cell><hi rendition="#smaller">N. 41</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 105–106</hi></cell>
+          <cell><hi rendition="#smaller">N. 45</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 107–112</hi></cell>
+          <cell><hi rendition="#smaller">N. 46</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 113–114</hi></cell>
+          <cell><hi rendition="#smaller">N. 43</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 128</hi></cell>
+          <cell><hi rendition="#smaller">N. 48</hi><hi rendition="#smaller #sub">5</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 129–131</hi></cell>
+          <cell><hi rendition="#smaller">N. 48</hi><hi rendition="#smaller #sub">4</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 132–134</hi></cell>
+          <cell><hi rendition="#smaller">N. 48</hi><hi rendition="#smaller #sub">3</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 135</hi></cell>
+          <cell><hi rendition="#smaller">N. 48</hi><hi rendition="#smaller #sub">2</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 136–143</hi></cell>
+          <cell><hi rendition="#smaller">N. 50</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 144–145</hi></cell>
+          <cell><hi rendition="#smaller">N. 51</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 146–147</hi></cell>
+          <cell><hi rendition="#smaller">N. 49</hi><hi rendition="#smaller #sub">1</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 148–149</hi></cell>
+          <cell><hi rendition="#smaller">N. 49</hi><hi rendition="#smaller #sub">2</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">3</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 150–151</hi></cell>
+          <cell><hi rendition="#smaller">N. 48</hi><hi rendition="#smaller #sub">1</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+          <cell><hi rendition="#smaller">4</hi></cell>
+          <cell><hi rendition="#smaller">Bl. 71</hi></cell>
+          <cell><hi rendition="#smaller">N. 42</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 17–18</hi></cell>
+          <cell><hi rendition="#smaller">N. 13</hi><hi rendition="#smaller #sub">5</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 19–20</hi></cell>
+          <cell><hi rendition="#smaller">N. 13</hi><hi rendition="#smaller #sub">1</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 19–20</hi></cell>
+          <cell><hi rendition="#smaller">N. 13</hi><hi rendition="#smaller #sub">3</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 20</hi></cell>
+          <cell><hi rendition="#smaller">N. 13</hi><hi rendition="#smaller #sub">2</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 21</hi></cell>
+          <cell><hi rendition="#smaller">N. 13</hi><hi rendition="#smaller #sub">4</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 22</hi></cell>
+          <cell><hi rendition="#smaller">N. 11</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 87</hi></cell>
+          <cell><hi rendition="#smaller">N. 66</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 139</hi></cell>
+          <cell><hi rendition="#smaller">N. 68</hi><hi rendition="#smaller #sub">1</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 138</hi></cell>
+          <cell><hi rendition="#smaller">N. 68</hi><hi rendition="#smaller #sub">2</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 144</hi></cell>
+          <cell><hi rendition="#smaller">N. 55</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 158–161</hi></cell>
+          <cell><hi rendition="#smaller">N. 70</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 172</hi></cell>
+          <cell><hi rendition="#smaller">N. 71</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 188</hi></cell>
+          <cell><hi rendition="#smaller">N. 69</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 197</hi></cell>
+          <cell><hi rendition="#smaller">N. 56</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 198–199</hi></cell>
+          <cell><hi rendition="#smaller">N. 60</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 200</hi></cell>
+          <cell><hi rendition="#smaller">N. 61</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 201</hi></cell>
+          <cell><hi rendition="#smaller">N. 57</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 202</hi></cell>
+          <cell><hi rendition="#smaller">N. 59</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+          <cell/>
+          <cell><hi rendition="#smaller">Bl. 226–227</hi></cell>
+          <cell><hi rendition="#smaller">N. 65</hi></cell>
+        </row>
+        <row>
+          <cell cols="3"><hi rendition="#smaller"/><hi rendition="#k #smaller">Gerland</hi> <hi rendition="#smaller">1906</hi></cell>
+          <cell><hi rendition="#smaller">N. 58</hi></cell>
+        </row>
+        <row>
+          <cell cols="3"><hi rendition="#smaller">Leibn. Marg. 0</hi></cell>
+          <cell><hi rendition="#smaller">N. 26</hi></cell>
+        </row>
+        <row>
+          <cell cols="3"><hi rendition="#smaller">Leibn. Marg. 94</hi></cell>
+          <cell><hi rendition="#smaller">N. 33</hi></cell>
+        </row>
+        <row>
+          <cell cols="3"><hi rendition="#smaller">Leibn. Marg. 105</hi></cell>
+          <cell><hi rendition="#smaller">N. 47</hi></cell>
+        </row>
+        <row>
+          <cell cols="3"><hi rendition="#smaller">Leibn. Marg. 163</hi></cell>
+          <cell><hi rendition="#smaller">N. 17</hi></cell>
+        </row>
+        <row>
+          <cell cols="3"><hi rendition="#smaller">Leibn. Marg. 175</hi></cell>
+          <cell><hi rendition="#smaller">N. 27</hi></cell>
+        </row>
+        <row>
+          <cell cols="3"><hi rendition="#smaller">N – A 7073</hi></cell>
+          <cell><hi rendition="#smaller">N. 62</hi></cell>
+        </row>
+        <row>
+          <cell cols="3"><hi rendition="#smaller">Nm – A 251</hi></cell>
+          <cell><hi rendition="#smaller">N. 25</hi></cell>
+        </row>
+        <row>
+          <cell cols="3"><hi rendition="#smaller">Nm – A 428</hi></cell>
+          <cell><hi rendition="#smaller">N. 12</hi></cell>
+        </row>
+        <row>
+          <cell cols="3"><hi rendition="#smaller">Nm – A 7036</hi></cell>
+          <cell><hi rendition="#smaller">N. 29</hi></cell>
+        </row>
+        <row>
+          <cell cols="3"><hi rendition="#smaller">Nm – A 7036</hi></cell>
+          <cell><hi rendition="#smaller">N. 30</hi></cell>
+        </row>
+      </table>
+    
+    
+      <pb type="VIII_1" n="675"/><p xml:id="Chx5.p3" rendition="#noindent"><hi rendition="#smaller">Die letzten fünf Zeilen enthalten die Signaturen von Titeln mit Leibniz-Marginalien, die nicht durch die Signatur Leibn. Marg. als solche ausgewiesen sind.<lb/></hi></p>
+    
+    
+      <p xml:id="Chx5.p4" rendition="#c"><hi rendition="#smaller">ERWÄHNTE LEIBNIZ-HANDSCHRIFTEN</hi></p>
+    
+<!--  \hackfor{\par} -->    
+      <p xml:id="Chx5.p5"><hi rendition="#smaller">Dieses Verzeichnis umfaßt die in den Überlieferungen und Erläuterungen erwähnten, nicht edierten Handschriften. Es ist nach Cc 2-Nummern und Handschriftensignaturen geordnet und verweist auf die Nummern des vorliegenden Bandes.<!--  \hack{\\} 
+     \hackfor{\par}--></hi></p>
+    
+    
+      <table>
+        
+          <row>
+            <cell><hi rendition="#smaller">Cc 2, Nr.</hi></cell>
+            <cell><hi rendition="#smaller">LH, Nr.</hi></cell>
+            <cell/>
+            <cell><hi rendition="#smaller">N.</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">823</hi></cell>
+            <cell><hi rendition="#smaller">XXXV 5,2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 1</hi></cell>
+            <cell><hi rendition="#smaller">53</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">823</hi></cell>
+            <cell><hi rendition="#smaller">XXXV 5,2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 1</hi></cell>
+            <cell><hi rendition="#smaller">54</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">836</hi></cell>
+            <cell><hi rendition="#smaller">XXXVII 5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 57</hi></cell>
+            <cell><hi rendition="#smaller">67</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">836</hi></cell>
+            <cell><hi rendition="#smaller">XXXVII 5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 58–59</hi></cell>
+            <cell><hi rendition="#smaller">67</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">836</hi></cell>
+            <cell><hi rendition="#smaller">XXXVII 5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 92–93</hi></cell>
+            <cell><hi rendition="#smaller">67</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">k.E.</hi></cell>
+            <cell><hi rendition="#smaller">XXXVIII</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 104</hi></cell>
+            <cell><hi rendition="#smaller">70</hi></cell>
+          </row>
+        
+      </table>
+    
+    
+    
+      <pb type="VIII_1" n="676"/><p xml:id="Chx5.p7" rendition="#c"><hi rendition="#smaller">KONKORDANZEN</hi></p>
+    
+<!--  \hackfor{\par} -->    
+      <p xml:id="Chx5.p8"><hi rendition="#smaller">Verzeichnet sind hier die Nummern der im <hi rendition="#i">Kritischen Katalog 1</hi> bzw. <hi rendition="#i">Catalogue critique 2</hi> erfassten Stücke mit Angabe der ihnen entsprechenden Stücke des vorliegenden Bandes. Zu den Stücken der Nummern 14, 19, 20, 23, 31, 32, 34, 35, 65 und 66 gibt es weder im KK 1 noch im Cc 2 einen Eintrag. Der Zusatz tlw. hinter einer der Katalognummern bedeutet, dass sich auf dem entsprechenden Textträger mehrere Stücke befinden. Für die Marginalien (N. 12, 17, 25, 26, 27, 29, 30, 33, 47 und 62) ist diese Zuordnung gegenstandslos.<!--  \hack{\\[1.0ex]} 
+     \hackfor{\par}--></hi></p>
+    
+    
+      <p xml:id="Chx5.p9"><hi rendition="#smaller #c">KK 1-KONKORDANZ</hi></p>
+    
+    
+      <table>
+        
+          <row>
+            <cell><hi rendition="#smaller">193 A</hi></cell>
+            <cell><hi rendition="#smaller">N. 2</hi><hi rendition="#smaller #sub">1</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">193 B</hi></cell>
+            <cell><hi rendition="#smaller">N. 2</hi><hi rendition="#smaller #sub">2</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">193 C</hi></cell>
+            <cell><hi rendition="#smaller">N. 2</hi><hi rendition="#smaller #sub">3</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">193 D</hi></cell>
+            <cell><hi rendition="#smaller">N. 2</hi><hi rendition="#smaller #sub">4</hi><!--  \hackfor{\\} --></cell>
+          </row>
+          <row>
+            <cell><!--  \hack{\end{tabular}
+\columnbreak\begin{tabular}{ll}} -->
+<hi rendition="#smaller">193 E</hi></cell>
+            <cell><hi rendition="#smaller">N. 2</hi><hi rendition="#smaller #sub">5</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">193 F, G, H</hi></cell>
+            <cell><hi rendition="#smaller">N. 3</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">193 J</hi></cell>
+            <cell><hi rendition="#smaller">N. 4</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">193 K</hi></cell>
+            <cell><hi rendition="#smaller">N. 5</hi><!--  \hackfor{\\} --></cell>
+          </row>
+          <row>
+            <cell><!--  \hack{\end{tabular}
+\columnbreak\begin{tabular}{ll}} -->
+<hi rendition="#smaller">725</hi><hi rendition="#smaller #sup">a,b</hi></cell>
+            <cell><hi rendition="#smaller">N. 59</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">971</hi><hi rendition="#smaller #sup">b</hi></cell>
+            <cell><hi rendition="#smaller">N. 56</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">973 A</hi></cell>
+            <cell><hi rendition="#smaller">N. 18</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">973 B</hi></cell>
+            <cell><hi rendition="#smaller">N. 15</hi></cell>
+          </row>
+          <row>
+            <cell><!--  \hack{\end{tabular}
+\columnbreak\begin{tabular}{ll}} -->
+<hi rendition="#smaller">973 C</hi></cell>
+            <cell><hi rendition="#smaller">N. 16</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">974</hi><hi rendition="#smaller #sup">a</hi></cell>
+            <cell><hi rendition="#smaller">N. 57</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">1163</hi></cell>
+            <cell><hi rendition="#smaller">N. 61</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">1164</hi></cell>
+            <cell><hi rendition="#smaller">N. 60</hi></cell>
+          </row>
+        
+      </table>
+<!--  \hackfor{\par} -->    
+    
+      <p xml:id="Chx5.p11"><hi rendition="#smaller #c">CC 2-KONKORDANZ</hi></p>
+    
+    
+      <table>
+        
+          <row>
+            <cell><hi rendition="#smaller">28</hi></cell>
+            <cell><hi rendition="#smaller">N. 42</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">282</hi></cell>
+            <cell><hi rendition="#smaller">N. 64</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">344</hi></cell>
+            <cell><hi rendition="#smaller">N. 1</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">474 A, B</hi></cell>
+            <cell><hi rendition="#smaller">N. 36</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">475</hi></cell>
+            <cell><hi rendition="#smaller">N. 37</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">476</hi></cell>
+            <cell><hi rendition="#smaller">N. 13</hi><hi rendition="#smaller #sub">5</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">477 tlw.</hi></cell>
+            <cell><hi rendition="#smaller">N. 13</hi><hi rendition="#smaller #sub">1</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">477 tlw.</hi></cell>
+            <cell><hi rendition="#smaller">N. 13</hi><hi rendition="#smaller #sub">2</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">477 tlw.</hi></cell>
+            <cell><hi rendition="#smaller">N. 13</hi><hi rendition="#smaller #sub">3</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">478</hi></cell>
+            <cell><hi rendition="#smaller">N. 13</hi><hi rendition="#smaller #sub">4</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">479</hi></cell>
+            <cell><hi rendition="#smaller">N. 45</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">483</hi></cell>
+            <cell><hi rendition="#smaller">N. 44</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">484 A</hi></cell>
+            <cell><hi rendition="#smaller">N. 6</hi><hi rendition="#smaller #sub">1</hi><!--  \hackfor{\\} --></cell>
+          </row>
+          <row>
+            <cell><!--  \hack{\end{tabular}
+\columnbreak\begin{tabular}{ll}} -->
+<hi rendition="#smaller">484 B</hi></cell>
+            <cell><hi rendition="#smaller">N. 6</hi><hi rendition="#smaller #sub">2</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">486 A tlw.</hi></cell>
+            <cell><hi rendition="#smaller">N. 39</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">486 A tlw.</hi></cell>
+            <cell><hi rendition="#smaller">N. 63</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">486 B</hi></cell>
+            <cell><hi rendition="#smaller">N. 46</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">486 C</hi></cell>
+            <cell><hi rendition="#smaller">N. 40</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">486 D</hi></cell>
+            <cell><hi rendition="#smaller">N. 41</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">487</hi></cell>
+            <cell><hi rendition="#smaller">N. 43</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">491 A tlw.</hi></cell>
+            <cell><hi rendition="#smaller">N. 48</hi><hi rendition="#smaller #sub">4</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">491 A tlw.</hi></cell>
+            <cell><hi rendition="#smaller">N. 48</hi><hi rendition="#smaller #sub">5</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">491 B</hi></cell>
+            <cell><hi rendition="#smaller">N. 48</hi><hi rendition="#smaller #sub">1</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">491 C</hi></cell>
+            <cell><hi rendition="#smaller">N. 50</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">491 D</hi></cell>
+            <cell><hi rendition="#smaller">N. 51</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">491 E</hi></cell>
+            <cell><hi rendition="#smaller">N. 49</hi><hi rendition="#smaller #sub">1</hi><!--  \hackfor{\\} --></cell>
+          </row>
+          <row>
+            <cell><!--  \hack{\end{tabular}
+\columnbreak\begin{tabular}{ll}} -->
+<hi rendition="#smaller">491 F</hi></cell>
+            <cell><hi rendition="#smaller">N. 49</hi><hi rendition="#smaller #sub">2</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">491 G tlw.</hi></cell>
+            <cell><hi rendition="#smaller">N. 48</hi><hi rendition="#smaller #sub">2</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">491 G tlw.</hi></cell>
+            <cell><hi rendition="#smaller">N. 48</hi><hi rendition="#smaller #sub">3</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">492 A</hi></cell>
+            <cell><hi rendition="#smaller">N. 21</hi><hi rendition="#smaller #sub">1</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">492 B</hi></cell>
+            <cell><hi rendition="#smaller">N. 21</hi><hi rendition="#smaller #sub">2</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">493</hi></cell>
+            <cell><hi rendition="#smaller">N. 22</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">494 A, B</hi></cell>
+            <cell><hi rendition="#smaller">N. 38</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">507</hi></cell>
+            <cell><hi rendition="#smaller">N. 10</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">632 tlw.</hi></cell>
+            <cell><hi rendition="#smaller">N. 9</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">718</hi></cell>
+            <cell><hi rendition="#smaller">N. 52</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">822</hi></cell>
+            <cell><hi rendition="#smaller">N. 53</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">825, 826</hi></cell>
+            <cell><hi rendition="#smaller">N. 54</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">936</hi></cell>
+            <cell><hi rendition="#smaller">N. 28</hi><!--  \hackfor{\\} --></cell>
+          </row>
+          <row>
+            <cell><!--  \hack{\end{tabular}
+\columnbreak\begin{tabular}{ll}} -->
+<hi rendition="#smaller">949</hi></cell>
+            <cell><hi rendition="#smaller">N. 55</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">966 A, B</hi></cell>
+            <cell><hi rendition="#smaller">N. 68</hi><hi rendition="#smaller #sub">1</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">966 C</hi></cell>
+            <cell><hi rendition="#smaller">N. 68</hi><hi rendition="#smaller #sub">2</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">1188</hi></cell>
+            <cell><hi rendition="#smaller">N. 71</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">1551</hi></cell>
+            <cell><hi rendition="#smaller">N. 67</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">1554</hi></cell>
+            <cell><hi rendition="#smaller">N. 69</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">1556 A, B</hi></cell>
+            <cell><hi rendition="#smaller">N. 7</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">1556 C</hi></cell>
+            <cell><hi rendition="#smaller">N. 8</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">1557</hi></cell>
+            <cell><hi rendition="#smaller">N. 11</hi></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">1558 A, B</hi></cell>
+            <cell><hi rendition="#smaller">N. 70</hi></cell>
+          </row>
+        
+      </table>
+<!--  \hackfor{\par} -->    
+    
+      <p xml:id="Chx5.p13" rendition="#noindent"><hi rendition="#smaller">Die Entsprechung von Stücknummern und KK- bzw. Cc-Nummern ist in der Überlieferung des jeweiligen Stückes vermerkt.<lb/></hi></p>
+    
+  </div></body>
+  </text>
+</TEI>

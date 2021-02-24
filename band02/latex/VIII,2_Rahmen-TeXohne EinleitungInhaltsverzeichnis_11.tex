@@ -1,0 +1,2924 @@
+%Stand 15-01-2015: VIII,2_Rahmen-TeX_8-0 mit den neuen PlusMinusZeichen von Paolo Rubini.
+%Stand 25-09-2013 (_Rahmen-TeX_4) nach Totalabsturz
+
+%%Frame-file for Leibniz-Edition, series VIII, vol 2
+%%
+%%changes: 2012.08.09-10 SWS: (re!)setting fontsize to 10pts, tw=(DIV-3)pw/DIV gives DIV 10.4, structuring package-list at begin, deleting doubly loaded packages,
+%%adding negative limits to footins Afootins, setting hyperfootnotes=false, adding \pgrk
+%%changes 2012.08.15 SWS: headsep=5mm, Zeilenabstand
+%%changes 2012.09.06- SWS: baselinestretch=1.1, textheight=178mm, \skip\Afootins=10mm+/-3mm, vmarginratio=2:3
+%%changes 2012.10.01, SWS: vmarginratio=10:21 causes textheight=188mm, set to tmargin=21mm, bmargin=47mm
+%%optimisation of \count\footins, (A,B)footins, footfudgefiddle for minimal dist. text to apparatus at 1000, (1050, 1050), 500; 2012.11.09, again 2013.01.08
+%%overlength of pages with \chapter, esp. firstchapter, re-adjusting parameters to 1000, (1300, 1300), 1000; 2013.01.08
+%%Umstellung auf ABC-system: GWL's marginals as Afootnotes, text genesis as Bfootnotes, editor's comments as Cfootnotes;
+%%parameters adjusted to: \skip\Afootins 8mm+/-3mm, \skip\Bfootins 5mm+/-2mm, ABCfootins=1050, footfudgefiddle=1000; Feb 2013
+%%newcommands biblio, biblioplus, for Cnotes indicating quotations; newcommand GWLypsilon; 16 Apr 2013
+%%hyperref-package auskommentiert, \href-commands auskommentiert; \textbar correct; 22 Apr 2013
+%%changes in Afootnotes, Bfootnotes; 23 Apr 2013
+%%modification \ledsetnormaparstuff for sufficient separation of Afootnotes, keine weiteren Versuche Abstand Afootnotes to Bfootnotes zu reduzieren; 16 Mai 2013
+%%
+%%
+%%
+%%
+%%
+%Dokumentklasse ist KOMA-Script Klasse Scrbook
+\documentclass[fontsize=10pt,twoside,DIV=calc,BCOR0mm,headings=small,numbers=enddot,headinclude=false,footinclude=true,
+openany]{scrbook}
+
+
+%Zeilennummerierung, mehrere Serien an Fussnoten (footnotes, Xfootnotes or critical notes), Zeilennrr in Xfootnotes
+\usepackage[noeledmac] {ledmac}
+
+%%Font
+\fontfamily{cmr}
+
+%general Seitenlayout
+\usepackage{scrpage2}
+\usepackage{chngpage}
+\usepackage{stdclsdv}
+\usepackage{infwarerr} %indicates errors
+\usepackage{etex}
+
+%languages, inputencoding
+\usepackage[ngerman,german,polutonikogreek,french,dutch,english,danish,portuguese,spanish,italian,latin]{babel}
+%\usepackage[LGR,T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{soulutf8}
+\usepackage{autofe}
+
+%special layout/s
+\usepackage{letterspace}
+\usepackage{units} %unitfrac etc fuer Brueche innerhalb Textzeile
+
+%tables, calculations
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multirow} %HS 28.10.14
+%figures
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{picinpar}
+\usepackage{rotating}
+
+
+%creating subparts
+\usepackage[explicit]{titlesec}
+%\usepackage{tocloft}
+\usepackage{lipsum}
+\usepackage{fmtcount}
+
+%table of contents
+\usepackage{tocloft}
+
+\usepackage{tocvsec2}
+% \usepackage[pageref]{ut-backref} %nicht in MikTex enthalten; angepasste Version CH;
+
+%links, internal and external
+%\usepackage[hyperfootnotes=false]{hyperref}
+
+%% BEGIN K. Zeitz: 29.12.2015
+%\usepackage{nohyperref}
+%\usepackage[pageref,verbose]{backref}
+%\renewcommand*{\backref}[1]{}
+%\renewcommand*{\backrefalt}[4]{%
+%    \ifcase #1 (Not cited.)%
+%    \or        {\it S. ~#2}%
+%    \else     {\it S. ~#2}%
+%    \fi}
+%\renewcommand*{\backreftwosep}{\backrefsep}
+%\renewcommand*{\backreflastsep}{\backrefsep}
+% END K. Zeitz: 29.12.2015
+
+%Indices
+\usepackage{makeidx}
+\usepackage{multind}
+\usepackage{multicol}
+
+
+%%Bögen über und unter Zeichen setzen (overarc und underarc) - H.S. 03-06-2014
+%\usepackage{arcs}
+%\parindent 0pt
+
+
+
+%%Special Characters and Symbols
+% There are a number of symbols (e.g., \Square) that are defined by      %
+% multiple packages.  In order to typeset all the variants in this       %
+% document, we have to give glyph a unique name.  To do that, we define  %
+% \savesymbol{XXX}, which renames a symbol from \XXX to \origXXX, and    %
+% \restoresymbols{yyy}{XXX}, which renames \origXXX back to \XXX and     %
+% defines a new command, \yyyXXX, which corresponds to the most recently %
+% loaded version of \XXX.                                                %
+% Save a symbol that we know is going to get redefined.
+\def\savesymbol#1{%
+  \expandafter\let\expandafter\origsym\expandafter=\csname#1\endcsname
+  \expandafter\let\csname orig#1\endcsname=\origsym
+  \expandafter\let\csname#1\endcsname=\relax
+}
+% Restore a previously saved symbol, and rename the current one.
+\def\restoresymbol#1#2{%
+  \expandafter\let\expandafter\newsym\expandafter=\csname#2\endcsname
+  \expandafter\global\expandafter\let\csname#1#2\endcsname=\newsym
+  \expandafter\let\expandafter\origsym\expandafter=\csname orig#2\endcsname
+  \expandafter\global\expandafter\let\csname#2\endcsname=\origsym
+}
+\usepackage{textcomp}
+\usepackage{wasysym}
+\usepackage{marvosym}
+\usepackage{upgreek}
+  \savesymbol{bigtriangleup} \savesymbol{bigtriangledown}
+\usepackage{stmaryrd}
+  \restoresymbol{ST}{bigtriangleup} \restoresymbol{ST}{bigtriangledown}
+\usepackage{ipa}
+\let\eth\relax
+\usepackage{amssymb}
+  \savesymbol{iint}\savesymbol{iiint}
+\usepackage{amsmath}
+  \restoresymbol{AMS}{iint} 
+  \restoresymbol{AMS}{iiint}
+
+
+%\usepackage{showidx}
+\let\Sun\relax
+\let\Mercury\relax
+\let\Venus\relax
+\let\Earth\relax
+\let\Mars\relax
+\let\Jupiter\relax
+\let\Saturn\relax
+\let\Uranus\relax
+\let\Neptune\relax
+\let\Pluto\relax
+\let\leftmoon\relax
+\let\rightmoon\relax
+\let\fullmoon\relax
+\let\newmoon\relax
+\let\Aries\relax
+\let\Taurus\relax
+\let\Gemini\relax
+\let\Leo\relax
+\let\Libra\relax
+\let\Scorpio\relax
+\let\diameter\relax
+\let\urcorner\relax %\urcorner from AMS Delimiters
+\let\ulcorner\relax
+\usepackage{mathabx}%schnoepf muss noch installiert werden wg. oright
+\usepackage{MnSymbol}
+%  \restoresymbol{MnSymbol}{urcorner}
+%  \restoresymbol{MnSymbol}{ulcorner}
+
+%Greek
+\newcommand{\pgrk}[1]{%
+   \selectlanguage{polutonikogreek}#1\selectlanguage{latin}}
+
+%Hebrew
+\usepackage{cjhebrew}
+\newcommand{\hebr}[1]{\smash{\cjRL{#1}}}
+
+%Rechnungen, packages for math-Umgebung
+\usepackage{ulem} % doppelte Unterstreichung
+\usepackage{tikz} % Formeln einkreisen
+\usepackage{fancybox}
+\usepackage{cancel} %Streichen von Ziffern
+\usepackage{phonetic}%2Punkte unter Buchstaben \td{} %neu 22-01-2015 aus RahmenTeX von SWS übernommen: HS
+
+%self defined commands for math signs unique by GWL
+%\def\leibdashvv{\diatop[$\vspace{8pt}-$|$|$]}
+
+% Obsolete Definitionen
+%\def\leibdashv{\diatop[$\leibdashvv$|$\hspace{-5.15pt}\dashv$]} %fuer plusminus
+%\def\leibvdash{\protect\raisebox{7pt}{\protect\scalebox{1}[-1]{$\leibdashv$}}} %fuer minusplus
+
+\usepackage{setspace}
+
+% K.Zeitz: Beginn neue Definitionen
+% Absatzformate
+\newenvironment{Ueberlieferung}{	\begin{ledgroupsized}[r]{120mm}\footnotesize\pstart  
+	\noindent\textbf{\"{U}berlieferung:} \pend\end{ledgroupsized}
+	\begin{ledgroupsized}[r]{114mm}\footnotesize \pstart \parindent -6mm\makebox[6mm][l]}
+{\pend\normalsize\end{ledgroupsized}}
+
+\newenvironment{Datierungsgruende}{\vspace*{5mm}\begin{ledgroup}\footnotesize
+	\pstart\noindent\footnotesize\textbf{Datierungsgr\"{u}nde}: }
+{\normalsize\pend\end{ledgroup}}
+
+\newcommand{\pstartfirst}{\vspace*{8mm}\pstart\normalsize\noindent}
+
+\newenvironment{Geometrico}{%
+	\pstart 
+	\parindent -7.5mm
+	\hsize 362pt}
+{\pend}
+
+
+% Zeichen
+\makeatletter 
+
+
+
+
+% PR: PlusMinus (Couturat): 1.a (+-)
+\newcommand*\PsMs{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.55\@tempdima,height=1.02\@tempdimb]{images/PsMs.pdf}
+}
+\DeclareRobustCommand\pPsMs{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\PsMs}\!$
+}
+
+
+% PR: MinusPlus (Couturat): 1.b (-+)
+\newcommand*\MsPs{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.55\@tempdima,height=1.02\@tempdimb]{images/MsPs.pdf}
+}
+\DeclareRobustCommand\pMsPs{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\MsPs}\!$
+}
+
+
+% PR: PlusPlusMinus (Couturat): 2.a.a (+(+-))
+\newcommand*\PsPsMs{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=1.0\@tempdima,height=1.02\@tempdimb]{images/PsPsMs.pdf}
+}
+\DeclareRobustCommand\pPsPsMs{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\PsPsMs}\!$
+}
+
+
+% PR: PlusMinusPlus (Couturat): 2.a.b (+(-+))
+\newcommand*\PsMsPs{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=1.0\@tempdima,height=1.02\@tempdimb]{images/PsMsPs.pdf}
+}
+\DeclareRobustCommand\pPsMsPs{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\PsMsPs}\!$
+}
+
+
+% PR: MinusPlusMinus (Couturat): 2.b.a (-(+-))
+\newcommand*\MsPsMs{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=1.0\@tempdima,height=1.02\@tempdimb]{images/MsPsMs.pdf}
+}
+\DeclareRobustCommand\pMsPsMs{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\MsPsMs}\!$
+}
+
+
+% PR: MinusMinusPlus (Couturat): 2.b.b (-(-+))
+\newcommand*\MsMsPs{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=1.0\@tempdima,height=1.02\@tempdimb]{images/MsMsPs.pdf}
+}
+\DeclareRobustCommand\pMsMsPs{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\MsMsPs}\!$
+}
+
+
+% PR: MinusPlusPlus (Couturat): aus der Reihe (-(++))
+\newcommand*\MsPsPs{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=1.5\@tempdima,height=1.02\@tempdimb]{images/MsPsPs.pdf}
+}
+\DeclareRobustCommand\pMsPsPs{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\MsPsPs}\!$
+}
+
+
+%%%%%%%%%%%%%%%%
+
+
+%       FÜR HERRN BAYUK (VIII.3)
+% PR: MinusMinusPlus (erweitert): pmA (-(-+))
+\newcommand*\pmA{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmA.pdf}
+}
+\DeclareRobustCommand\ppmA{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmA}\!$
+}
+
+
+%       FÜR HERRN BAYUK (VIII.3)
+% PR: MinusPlusMinus (erweitert): pmB (-(+-))
+\newcommand*\pmB{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmB.pdf}
+}
+\DeclareRobustCommand\ppmB{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmB}\!$
+}
+
+
+%%%%%%%%%%%%%%%%%
+
+%       Überflüssig
+% PR: MinusPlus (erweitert): pmC (-+)
+% \newcommand*\pmC{%
+%    	\settowidth{\@tempdima}{$m$}% 
+%    	\settoheight{\@tempdimb}{$b$}% 
+% 	\protect\includegraphics[width=0.5\@tempdima,height=0.8\@tempdimb]{images/pmC.png}
+% }
+
+
+% PR: MinusPlusPlus (erweitert): pmD (-(++))
+\newcommand*\pmD{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmD.pdf}
+}
+\DeclareRobustCommand\ppmD{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmD}\!$
+}
+
+
+% PR: PlusPlusMinus (erweitert): pmE (+(+-))
+\newcommand*\pmE{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=1.0\@tempdima,height=1.02\@tempdimb]{images/pmE.pdf}
+}
+\DeclareRobustCommand\ppmE{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\pmE}\!$
+}
+
+
+%       Überflüssig
+% PR: PlusPlusMinus (erweitert): pmF (+(+-))
+% \newcommand*\pmF{%
+%    	\settowidth{\@tempdima}{$m$}% 
+%    	\settoheight{\@tempdimb}{$b$}% 
+% 	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmF.pdf}
+% }
+% \DeclareRobustCommand\ppmF{%
+% 	\settoheight{\@tempdimb}{$b$}% 
+% 	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmF}\!$
+% }
+
+
+% PR: PlusPlusMinus (erweitert): pmG (+(+-))
+\newcommand*\pmG{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmG.pdf}
+}
+\DeclareRobustCommand\ppmG{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmG}\!$
+}
+
+
+% PR: PlusMinusPlus (erweitert): pmH (+(-+))
+\newcommand*\pmH{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmH.pdf}
+}
+\DeclareRobustCommand\ppmH{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmH}\!$
+}
+
+
+% PR: Plusminus (neu): pm (+-)
+\newcommand*\leibdashv{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pm.pdf}
+}
+\DeclareRobustCommand\pleibdashv{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\leibdashv}\!$
+}
+
+
+% PR: Minusplus (neu): mp (-+)
+\newcommand*\leibvdash{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/mp.pdf}
+}
+\DeclareRobustCommand\pleibvdash{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\leibvdash}\!$
+}
+
+% Neue Befehle für komplexe kombinierte Vorzeichen (PR, 04.04.2016)
+
+
+
+% PR: MinusPlusPlus (erweitert): pmDD (-(++))
+\newcommand*\pmDD{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmDD.pdf}
+}
+\DeclareRobustCommand\ppmDD{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmDD}\!$
+}
+
+
+
+% PR: PlusPlusMinus (erweitert): pmGG (+(+-))
+\newcommand*\pmGG{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmGG.pdf}
+}
+\DeclareRobustCommand\ppmGG{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmGG}\!$
+}
+
+
+
+% PR: PlusMinusPlus (erweitert): pmHH (+(-+))
+\newcommand*\pmHH{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmHH.pdf}
+}
+\DeclareRobustCommand\ppmHH{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmHH}\!$
+}
+
+%%%%%%%%%%%%%%%%
+
+
+% Plusminus (neu)	PR: Überholt
+% \newcommand*\leibdashv{%
+%   	\settowidth{\@tempdima}{$m$}% 
+%   	\settoheight{\@tempdimb}{$b$}% 
+%	\protect\includegraphics[width=0.9\@tempdima,height=1\@tempdimb]{images/plusminus.png}\,
+% }
+
+% Minusplus (neu)	PR: Überholt
+% \newcommand*\leibvdash{%
+%   	\settowidth{\@tempdima}{$m$}% 
+%   	\settoheight{\@tempdimb}{$b$}% 
+%	\protect\includegraphics[width=0.9\@tempdima,height=1\@tempdimb]{images/minusplus.png}\,
+% }
+
+
+
+
+
+% Groesser
+\newcommand*\ggroesser{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.55\@tempdima,height=1.3\@tempdimb]{images/groesser.png}
+}
+\DeclareRobustCommand\groesser{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.55\@tempdimb}[0pt][8pt]{\ggroesser}\!$
+}
+
+% Kleiner
+\newcommand*\kkleiner{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.55\@tempdima,height=1.3\@tempdimb]{images/kleiner.png}
+}
+\DeclareRobustCommand\kleiner{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.55\@tempdimb}[0pt][8pt]{\kkleiner}\!$
+}
+
+% Alchemistisches Zeichen Doppelsigma
+%\newcommand*\dsig{%
+   	%\settowidth{\@tempdima}{$v$}% 
+   	%\settoheight{\@tempdimb}{$v$}% 
+	%\protect\includegraphics[width=1.6\@tempdima,height=1.1\@tempdimb]{images/dsig.pdf}
+\newcommand*\dsig{%
+   	\settowidth{\@tempdima}{$v$}% 
+   	\settoheight{\@tempdimb}{$v$}% 
+	\protect\includegraphics[width=1.7\@tempdima,height=1.15\@tempdimb]{images/dsig.png}
+}
+
+
+% Der Befehl \crossedcircle{x} erzeugt einen Kreis, der unten links zweimal durchgestrichen ist.
+
+% Das Argument x erscheint innerhalb des Kreises.
+
+% Achtung: Das funktioniert nur mit einem Argument, das aus einem einzigen Zeichen, z.B. 2 oder a, besteht.
+
+\newcommand*\@crossedcircle{%
+
+\settowidth{\@tempdima}{$2$}%
+
+\settoheight{\@tempdimb}{$2$}%
+
+\protect\includegraphics[width=2.4\@tempdima,height=2.2\@tempdimb]{images/circle.pdf}
+
+}
+
+\newcommand{\crossedcircle}[1]{\raisebox{-1.8mm}{\@crossedcircle}\hspace{-1.2em}#1\;\,}
+
+\makeatother 
+
+% K.Zeitz: Ende neue Definitionen
+
+
+\def\largerthan{$\raisebox{0.8pt}{$\urcorner$} \hspace{-5.5pt}|\hspace{3pt}$} %fuer groesser als
+\newcommand{\GWLypsilon}{\raisebox{2pt}{\text{\tiny{o}}}\hspace{-1pt}\upsilon}
+
+ 
+% Seitenlayout
+\usepackage{marginnote}
+\usepackage[paperwidth=190mm, paperheight=246mm, textwidth=135mm, textheight=178mm,
+  hmarginratio=2:3, tmargin=21mm, bmargin=47mm, twoside, includehead, headsep=5mm]{geometry}
+\flushbottom
+
+%Kolumnentitel: linke Druckseite zentriert Part-Titel, rechte Seite aktuelle chapter oder section
+\automark[chapter]{part}
+\newmarks\numbermark
+\renewcommand*{\chaptermark}[1]{%
+  \marks\numbermark{\chaptermarkformat}%
+  \markright{#1}%
+}      
+\makeatletter% 
+  \renewcommand*{\sectionmark}[1]{%
+  \begingroup
+  \@temptokena\expandafter{\sectionmarkformat}%
+  \marks\numbermark{\the\@temptokena}%
+  \endgroup
+  \markright{#1}%
+  }
+\makeatother
+        
+\clearscrheadfoot
+\ohead[\pagemark]{\pagemark}
+\ihead[{\botmarks\numbermark}]{\botmarks\numbermark}
+\chead[\headmark]{\headmark}   
+%CH: Keine Partnummern in den automatischen Kolumnentiteln
+\renewcommand*{\partmarkformat}{}
+%Formatierug der Kapitelnummer im header
+\renewcommand*{\chaptermarkformat}{N.\ \arabic{chapter}}
+%Formatierung der Sectionnummer im header
+\newcommand{\notsotiny}{\fontsize{7pt}{8pt}\selectfont}
+\renewcommand*{\sectionmarkformat}{% 
+  N.\ \arabic{chapter}\raisebox{-0.5ex}{\notsotiny\arabic{section}}}
+\setkomafont{pagehead}{\normalfont\small}
+%\setkomafont{pagehead}{\notsotiny}
+\setkomafont{pagenumber}{\normalfont\normalsize}
+\setheadsepline{0.4pt}
+\pagestyle{scrheadings}
+
+
+%erste Seiten
+%erste Seite eines neuen Teils
+\renewcommand*{\partpagestyle}{empty}
+\renewcommand*{\partformat}{}
+\setkomafont{part}{\normalfont\MakeUppercase}
+%\renewcommand*{\partheadstartvskip}{\vspace*{-9.5ex}}
+\renewcommand*{\partheadstartvskip}{\vspace*{-6ex}}
+%CH: Part-Ueberschriften auf der neuen leeren Seite linksbuendig ausgeben
+\renewcommand*{\raggedpart}{\raggedright}
+ 
+%erste Seite eines neuen Kapitels
+%Punkt immer hinter Kapitelnummer und weitere Formatspezifikationen
+\renewcommand{\thechapter}{\arabic{chapter}.}
+\renewcommand*{\chapterformat}{%
+  \chapappifchapterprefix{\ }\thechapter\enskip}
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+%schnoepf2001\setkomafont{chapter}{\normalfont\normalsize\uppercase}
+\setkomafont{chapter}{\normalfont\normalsize}
+%\addtokomafont{chapter}{\scshape}
+
+\renewcommand*{\chapterheadendvskip}{\vspace*{0mm}}
+
+%erste Seite des ersten Kapitels im Part (keine Kolumnenzeile)
+\newpagestyle{firstchapter}{(0pt,0pt){}{}{}(0pt,0pt)}{{}{}{}}
+
+% section-Formatierung: Schriftgroesse, Nummerierung mit tiefgestellten Zahlen
+% und weitere Formatspezifikationen
+%schnoepf2001\setkomafont{section}{\normalfont\normalsize\uppercase}
+\setkomafont{section}{\normalfont\normalsize}
+%\addtokomafont{section}{\scshape}
+\renewcommand{\thesection}{\arabic{chapter}\protect\raisebox{-0.5ex}{\notsotiny\arabic{section}}\autodot}
+\renewcommand*{\othersectionlevelsformat}[1]{%
+  \csname the#1\endcsname\enskip}
+
+
+%Haupttext
+%Zeilendurchschuss
+\renewcommand{\baselinestretch}{1.1}
+%Absatzueinrckung
+\parindent=7.5mm
+%Seitenumbruch
+\frenchspacing     
+%\clubpenalty=9999 % keine Schusterjungen
+%\widowpenalty=9999 % keine Hurenkinder
+\tolerance=1750 % Zeilenumbruch-Toleranz (ca. 500--3000)
+%headerelemente
+\newcommand{\link}[1]{\ref{#1}}
+\renewcommand{\title}[2][]{\cite{#1}\textit{#2}}
+
+%Zeilenzaehler
+\lineation{page}
+\linenummargin{outer}
+\setcounter{firstlinenum}{5}
+\setcounter{linenumincrement}{5}
+%5 rechtsbuendig
+\makeatletter
+  \renewcommand{\rightlinenum}{\ifbypage@\ifnum\line@num<10\kern.5em\fi\else 
+  \ifnum\line@num<10\kern1em\else\ifnum\line@num<100 \kern.5em\fi\fi\fi\kern.5em\numlabfont\the\line@num 
+  \ifnum\subline@num>0:\the\subline@num\fi} 
+\makeatother
+
+\renewcommand{\footfudgefiddle}{71}
+%Afootnotes = Marginalien written by GWL
+\footnormal{A}
+\setlength{\skip\Afootins}{8mm plus 3mm minus 3mm} %amount of whitespace between text and footnotes
+\renewcommand{\Afootnoterule}{\noindent\rule{18mm}{0.4pt}\vspace*{3.0mm}}
+\newcommand{\Afootnotefontsetup}{\normalsize}
+\makeatletter
+  \renewcommand{\ledsetnormalparstuff}{%
+    \normal@pars
+    \parindent \z@ \parfillskip \z@ \@plus 1fil \vspace{1pt}}
+\makeatother
+\makeatletter
+\renewcommand*{\Afootfmt}[3]{%
+	\normalsize
+	\setstretch{1.3}
+	\ledsetnormalparstuff
+	\mbox{{\notenumfont\printlines#1|}\enspace
+	{\select@lemmafont#1|#2}}\enskip#3\strut\par%
+}
+\makeatother
+\count\Afootins=1500
+
+%Kritische Apparate
+%Bfootnotes = Varianten, Textgenese
+\setlength{\skip\Bfootins}{5mm plus 2mm minus 2mm}
+\renewcommand{\Bfootnoterule}{\rule{0mm}{0pt}\vspace*{1mm}}
+\footparagraph{B}
+\interparanoteglue{7.5mm plus1.9mm minus1.9mm}
+\makeatletter
+  \renewcommand*{\Bfootfmt}[3]{%
+  \noindent
+  \mbox{{\notenumfont\printlines#1|}\enspace
+  {\select@lemmafont#1|#2}}\enskip#3\strut\par}
+\makeatother
+\count\Bfootins=1500
+%
+%Cfootnotes, Kommentare der Editoren
+\setlength{\skip\Cfootins}{1mm plus 0mm} %KZeitz
+\renewcommand{\Cfootnoterule}{\rule{\textwidth}{0.4pt}\vspace*{1mm}} 
+\footparagraph{C}
+\interparanoteglue{7.5mm plus 1.9mm minus 1.9mm}
+\makeatletter
+  \renewcommand*{\Cfootfmt}[3]{%
+  \noindent
+  \mbox{{\notenumfont\printlines#1|}\enspace
+  {\select@lemmafont#1|#2}:}\enskip#3\strut\par}
+\makeatother
+\count\Cfootins=1500
+%commands for bibliographical data in Cfootnotes
+\newcommand{\biblio}[3]{\textsc{#1}, \textit{#2}, S. #3.}
+\newcommand{\biblioplus}[5]{\textsc{#1}, \textit{#2}, S. #3, (\textit{#4}, S. #5).}
+%\newcommand{\biblionote}[2]{\Cfootnote{\textsc{#1}, \textit{#2},\ }} requires \edtext, impractical
+%more space for crit apparatus
+\renewcommand{\footfudgefiddle}{500}
+
+% Ausgabe einer Zeilenreferenz mit 'f', sofern sich die Fussnote auf genau zwei 
+% aufeinanderfolgende Zeilen bezieht.
+% K. Zeitz: Zusätzliche Ergänzung: Möglichkeit, die Zeilenreferenz in der Fußnote mit Hilfe des unten
+% definierten Befehls \killnumber ganz zu unterdrücken.
+\makeatletter
+\def\printlines#1|#2|#3|#4|#5|#6|#7|{%					
+	\begingroup
+		\setprintlines{#1}{#2}{#3}{#4}{#5}{#6}%
+			\ifnum #1=#4
+				\ifnum #2<#5
+					\newcount\endlinenumber
+					\endlinenumber = #5
+					\advance\endlinenumber by -1
+					\ifnum #2<\endlinenumber 
+						#2\endashchar#5\else #2f\fullstop
+					\fi       
+				\fi 
+				\ifnum#2=-1 % K. Zeitz: Neu
+					\symplinenum  \hspace*{-1.4em} % K. Zeitz: Neu 
+				\else % K. Zeitz: Neu
+					\ifnum #2=#5 #2 \fi
+				\fi % K. Zeitz: Neu
+			\fi
+			\ifnum #1<#4							
+			\ifl@d@pnum 
+				#2\endashchar S\fullstop\ #4\fullstop
+			\fi
+			#5
+		\fi
+	\endgroup%
+}
+\makeatother
+
+% K.Zeitz: Unterdrückung der Referenz auf die Zeilennummer in Fußnoten.
+% Dazu den nachfolgend definierten Befehl \killnumber wie folgt einfügen:
+%		\edtext{...}{\lemma{...}\killnumber\Afootnote{...}}
+% Analog für \Bfootnote und \Cfootnote
+\newcommand{\killnumber}{\linenum{|-1|||-1||}} 
+ 
+%Ueberschriften, Inhaltsverzeichnis, Indizes
+%titlepages set by hand / publisher
+%Inhaltsverzeichnis
+%Name des Inhaltsverzeichnisses      
+\addto\captionslatin{%
+\def\contentsname{}}
+%\maxtocdepth{section}
+%\maxtocdepth{part}
+
+
+% Ein durch \edlabel{LH-Nummer_n} … \edlabel{LH-Nummer_n+1} bestimmter Referenzbereich lässt sich mit dem Befehl \refpassage{LH-Nummer_n}{LH-Nummer_n+1} innerhalb von footnotes als Querverweis (Seite.Zeile-Seite.Zeile) anführen. H.S.%
+
+\newcommand{\refpassage}[2]{%
+ \xpageref{#1}\fullstop\xlineref{#1}%
+ \ifnum\xpageref{#1}=\xpageref{#2}
+  \ifnum\xlineref{#1}=\xlineref{#2}
+  \else
+   \endashchar\xlineref{#2}%
+  \fi
+ \else
+  \endashchar\xpageref{#2}\fullstop\xlineref{#2}%
+ \fi
+}
+
+
+
+%%Textausrichtung bei fester Spaltenbreite %H.S.
+%\usepackage{tabularx}
+%\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % linksbündig mit Breitenangabe
+%\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % zentriert mit Breitenangabe
+%\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % rechtsbündig mit Breitenangabe
+%
+%
+
+
+%Aufnahme der Chapter- und Sectiontitel ins Inhaltsverzeichnis unterdruecken
+\newcommand*\OrigChapter[2][]{}
+\let\OrigChapter\chapter
+\renewcommand*{\chapter}[2][]{%
+  \settocdepth{part}\OrigChapter[#1]{#2}%
+  \settocdepth{section}%
+  }
+\newcommand*\OrigSection[2][]{}
+  \let\OrigSection\section
+\renewcommand*{\section}[2][]{%
+  \settocdepth{part}\OrigSection[#1]{#2} %
+  \settocdepth{section}%
+  }
+
+%Aufnahme der parts ins Inhaltsverzeichnis verhindern
+%\newcommand*\OrigPart[2][]{}
+ % \let\OrigPart\apart
+%\renewcommand*{\apart}[2][]{%
+ % \settocdepth{apart}\OrigPart[#1]{#2} %
+ % \settocdepth{section}%
+  %}
+%\makeatletter
+%\let\settocdepth\relax
+%\newcommand{\settocdepth}[-1]{%
+  %\addtocontents{toc}{\protect\setcounter{tocdepth}{#1}}}
+%\makeatother
+%Format des Inhaltsverzeichnisses
+\tocloftpagestyle{empty}
+%Kopfzeile
+\makeatletter
+  \renewcommand{\cftmarktoc}{%
+%  \@mkboth{\scshape Inhaltsssverzeichnis}{\scshape Inhaltsverzeichnis}}
+  \@mkboth{\scriptsize\uppercase{Inhaltsverzeichnis}}{\scriptsize\uppercase{Inhaltsverzeichnis}}}
+  \renewcommand*{\l@part}{\@dottedtocline{-1}{0mm}{0mm}}
+ % \renewcommand*{\l@chapter}{\@dottedtocline{0}{2mm}{6mm}}
+  \renewcommand*{\l@chapter}{\@dottedtocline{0}{2mm}{6mm}}
+ %   \setlength{\cftsecnumwidth}{35mm}
+  \renewcommand*{\l@section}{\@dottedtocline{1}{8mm}{7mm}}
+  \renewcommand{\@pnumwidth}{9mm}
+\renewcommand{\@tocrmarg}{9.5mm}
+  \renewcommand{\@dotsep}{4.5}
+\makeatother
+
+
+
+%Bibliografie
+%Keine Ueberschrift fuer die Bibliografie
+\addto\captionslatin{\def\bibname{\ \vspace{1.6ex}}}
+
+% Werke in der Bibliographie werden mit '1., 2.' durchnummeriert
+%\cite-Befehl gibt nichts aus
+\makeatletter
+  \renewcommand{\@biblabel}[1]{#1.}
+  \renewcommand*{\@cite}[2]{{#1\if@tempswa , #2\fi}}
+\makeatother
+        
+%\cite-Befehl gibt nichts aus
+\makeatletter
+  \def\@citex[#1]#2{\leavevmode
+  \let\@citea\@empty
+  \@cite{\@for\@citeb:=#2\do
+  {\@citea\def\@citea{,\penalty\@m\ }%
+  \edef\@citeb{\expandafter\@firstofone\@citeb\@empty}%
+  \if@filesw\immediate\write\@auxout{\string\citation{\@citeb}}\fi
+  }}{#1}}
+\makeatother
+       
+%Indices
+\makeindex{Namensregister}
+\makeindex{Sachverzeichnis}
+\makeindex{Ortsregister}
+%Index zweispaltig, mit 'Praeambel'
+\makeatletter
+
+ % \renewcommand{\see}[2]{{\em s.\/a.\/} #1}
+   \renewcommand{\see}[2]{\newline{\em s.\/a.\/} #1}
+  \renewcommand\printindex[2]{
+  \clearpage{\pagestyle{empty}\cleardoublepage}
+  \setchapterpreamble{\index@preamble}
+  \addchap*{}
+  \thispagestyle{empty}
+  \clearscrheadings
+  \chead{\sc{#2}}
+  \ohead[\pagemark]{\pagemark}
+  \begin{multicols}{2}\setlength{\columnseprule}{0.4pt}
+  \footnotesize\raggedright
+  \@input{#1.ind}
+  \end{multicols}}
+  \renewcommand*\@idxitem{\par\hangindent 11\p@}
+ % \renewcommand*\subitem{\@idxitem \hspace*{11\p@}}
+  \renewcommand*\subitem{\@idxitem \par\hangindent 22\p@ \hspace*{11\p@}}
+  %\renewcommand*\@idxsubitem{\@idxsubitem \hspace*{11\p@}}
+\makeatother
+
+
+\newcommand\efrac[2]{\genfrac{}{}{0pt}{}{#1}{#2}} %KZeitz \efrac produziert einen Bruch ohne Bruchstrich
+
+%neuer Vorspann
+\begin{document}
+
+
+
+
+%Titelseite
+        \begin{titlepage}
+        \begin{center}
+        \pagenumbering{Roman}
+        {\huge GOTTFRIED WILHELM}\\
+        \vspace{5.5mm}
+        {\Huge \textbf{LEIBNIZ}}\\
+        \vspace{10mm}
+        {\Large SÄMTLICHE}\\
+        \vspace{2mm}
+         {\Large SCHRIFTEN UND BRIEFE}\\
+        \vspace{22mm}
+        {\large HERAUSGEGEBEN}\\
+        \vspace{1mm}
+        {\large VON DER}\\
+        \vspace{6.5mm}
+        {\Large BERLIN-BRANDENBURGISCHEN}\\
+        \vspace{2mm}{\Large AKADEMIE DER WISSENSCHAFTEN}\\
+        \vspace{2mm}
+        {\Large UND DER}\\
+        \vspace{2mm}
+        {\Large AKADEMIE DER WISSENSCHAFTEN}\\
+        \vspace{2mm}
+        {\Large IN GÖTTINGEN}\\
+        \vspace{22mm}
+        {\Large ACHTE REIHE}\\
+        \vspace{5.5mm}
+        {\large NATURWISSENSCHAFTLICHE, MEDIZINISCHE}\\ 
+        \vspace{1mm}
+        {\large UND TECHNISCHE SCHRIFTEN}\\
+        \vspace{5.5mm}
+        {\Large ZWEITER BAND}
+        %       Korrekturvorlage\\
+%        \vspace*{6mm}
+%        \large{Dies ist eine Korrekturvorlage. Umfang und Bearbeitungszustand der Texte entsprechen nicht dem fertigen Band.}\\ %KZeitz
+        \end{center}
+        \end{titlepage}
+        
+%Titelseite_Ende
+
+\pagenumbering{Roman}
+\setcounter{page}{5}
+%\beginnumbering
+
+%CH \part und \addpart* geaendert, damit Ueberschrift keine Nummer und nicht ins Inhaltsverzeichnis
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addpart[\large\uppercase{Inhaltsverzeichnis}]{\large\protect\textso{INHALTSVERZEICHNIS}}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+%\vspace*{3ex}
+   \tableofcontents
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{Vorwort}]{\large\protect\textso{VORWORT}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\markleft{\scriptsize\uppercase{Vorwort}}
+   %\input{gesamttex/edit/VorwortVIII2.tex}
+
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{Einleitung}]{\large\protect\textso{EINLEITUNG}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\markleft{\scriptsize\uppercase{Einleitung}}
+    %\input{gesamttex/edit/EinleitungVIII2.tex}
+
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{Zur Text- und Variantengestaltung}]{\large\protect\textso{ZUR TEXT- UND VARIANTENGESTALTUNG}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\markleft{\scriptsize\uppercase{Zur Text- und Variantengestaltung}}
+    %\input{gesamttex/edit/Textgestaltung.tex}
+
+
+\pagenumbering{arabic}
+\beginnumbering
+
+
+
+% A S T R O N O M I C A
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}	
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{I. Astronomica}]{\large\protect\textso{I. ASTRONOMICA}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{I. Astronomica}}
+
+\chapter[\scriptsize\uppercase{Aus und zu Pierre Gassendi, Opera omnia}]{\uppercase{Aus und zu Pierre Gassendi, Opera omnia}
+\newline\lbrack Sommer 1672 \textendash\ Fr\"{u}hjahr 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu Pierre Gassendi, Opera omnia \lbrack Sommer 1672 \textendash\ Fr\"{u}hjahr 1673\rbrack}
+\vspace{8mm}
+	\input{gesamttex/edit/LH035_14_02_110r+109v+111r.tex}
+
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+\chapter[\scriptsize\uppercase{Aus und zu Robert Hooke, Animadversions on Johannes Hevelius}]{\uppercase{Aus und zu Robert Hooke, Animadversions on the first part of the Machina coelestis of Johannes Hevelius}
+\newline\lbrack Frühjahr \textendash\ Dezember 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu Robert Hooke, Animadversions on the first part of the Machina coelestis of Johannes Hevelius \lbrack Frühjahr \textendash\ Dezember  1675\rbrack}
+\vspace{8mm}
+   
+    \input{gesamttex/edit/LH035_15_06_010r.tex}
+    \input{gesamttex/edit/LH035_15_06_010v.tex}
+    \input{gesamttex/edit/LH035_15_06_011r.tex}
+    \input{gesamttex/edit/LH035_15_06_011v.tex}
+    \input{gesamttex/edit/LH035_15_06_012r.tex}
+    \input{gesamttex/edit/LH035_15_06_012v.tex}
+    \input{gesamttex/edit/LH035_15_06_013r.tex}
+    \input{gesamttex/edit/LH035_15_06_013v.tex}
+    \input{gesamttex/edit/LH035_15_06_014r.tex}
+    \input{gesamttex/edit/LH035_15_06_014v.tex}
+    %\input{gesamttex/edit/LH035_15_06_015r.tex}
+    \input{gesamttex/edit/LH035_15_06_015rpicinpar.tex}
+    \input{gesamttex/edit/LH035_15_06_015v.tex}
+    \input{gesamttex/edit/LH035_15_06_016r.tex}
+    \input{gesamttex/edit/LH035_15_06_016v.tex}
+
+
+
+
+% M A G N E T I C A
+%Inputs von Magnetica auf dem Stand vom 16.07.15
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{II. Magnetica}]{\large\protect\textso{II. Magnetica}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{II. Magnetica}}
+
+
+
+\chapter[\scriptsize\uppercase{Anstreichungen und Anmerkungen in Léotaud, Magnetologia}]{\uppercase{Anstreichungen und Anmerkungen in Vincent Léotaud, Magnetologia}
+\newline\lbrack Früh\-jahr\ \textendash\ Herbst 1672\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Anstreichungen und Anmerkungen in Vincent Léotaud, Magnetologia \lbrack Früh\-jahr\ \textendash\ Herbst 1672\rbrack}
+\vspace{8mm}			
+     \input{gesamttex/edit/Leotaud1668.tex}
+
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+
+\chapter[\scriptsize\uppercase{Notizen über den Magnetismus}]{\uppercase{Notizen über den Magnetismus}
+\newline\lbrack 2. H\"{a}lfte 1672\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Notizen über den Magnetismus \lbrack 2. H\"{a}lfte 1672\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_03_016r.tex}
+%    \input{gesamttex/edit/LH037_03_016v.tex} leer
+
+
+\chapter[\scriptsize\uppercase{De magnetis sphaera}]{\uppercase{De magnetis sphaera}
+\newline\lbrack zweite Hälfte 1674\ \textendash\ Anfang 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De magnetis sphaera \lbrack zweite Hälfte 1674\ \textendash\ Anfang 1675\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_10_09_003r_1.tex}
+
+
+\chapter[\scriptsize\uppercase{Aus und zu Athanasius Kircher, Magnes}]{\uppercase{Aus und zu Athanasius Kircher, Magnes}
+\newline\lbrack Februar\ \textendash\ September 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu Athanasius Kircher, Magnes \lbrack Februar\ \textendash\ September 1676\rbrack}
+\vspace{8mm}			
+    \input{gesamttex/edit/LH004_01_04B_010ruv_2.tex}
+%%%% PR: Die Datierungsgründe sind in der Stück-Datei noch anzupassen (gemäß neuer obiger Datierung der Anatomica)
+
+
+
+
+
+
+
+
+%%%   I I I . A .  M E C H A N I C A 
+
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{III. MECHANICA}]{\large\protect\textso{III. Mechanica}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{III. Mechanica}}
+
+
+
+
+
+
+
+% III.A. Mechanica - Allgemein  %%%%%%%%%%%%
+%
+%
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+%\addtocontents{toc}{\vspace{5mm}}
+%\addpart[\large\uppercase{III.A. Allgemein}]{\large\protect\textso{III.A. Allgemein}}
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+%
+%\renewcommand{\chapterpagestyle}{firstchapter}
+%\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+%
+%\markleft{\scriptsize\uppercase{III.A. Allgemein}}
+%
+%\chapter[\scriptsize\uppercase{Aus und zu I. G. Pardies, La Statique}]{\uppercase{Aus und zu Ignace Gaston Pardies, La Statique ou la science des forces mouvantes}
+%\newline\lbrack Mai 1673\rbrack}
+%\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu Ignace Gaston Pardies, La Statique ou la science des forces mouvantes \lbrack Mai 1673\rbrack}
+%\vspace{8mm}
+%      \input{gesamttex/edit/LH035_14_02_128v.tex}
+%      \input{gesamttex/edit/LH035_14_02_127r.tex}
+%
+%
+%
+%\renewcommand*{\chapterpagestyle}{scrheadings}
+%\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+%
+%
+%
+%\chapter[\scriptsize\uppercase{De vitandis erroribus geometricis in re mechanica}]{\uppercase{De vitandis erroribus geometricis in re mechanica}
+%\newline Dezember 1674}
+%\addcontentsline{toc}{chapter}{\thechapter\enskip De vitandis erroribus geometricis in re mechanica Dezember 1674}
+%\vspace{8mm}
+%   \input{gesamttex/edit/LH037_05_215r.tex}
+%
+%
+%
+%
+%% W1 = WALLIS 1 (PR)
+%\chapter[\scriptsize\uppercase{Auszüge aus John Wallis, Mechanica sive De motu}]{\uppercase{Auszüge aus John Wallis, Mechanica sive De motu}
+%\newline \lbrack Ende 1674 \textendash\ Anfang 1675\rbrack}
+%\addcontentsline{toc}{chapter}{\thechapter\enskip Auszüge aus John Wallis, Mechanica sive De motu \lbrack Ende 1674 \textendash\ Anfang 1675\rbrack}
+%\vspace{8mm}
+%    \input{gesamttex/edit/WALLIS_1.tex}
+%
+%
+%
+%% W2 = WALLIS 2 (PR)
+%\chapter[\scriptsize\uppercase{Excerpta ex Wallisio cogitatis obiter occurrentibus aucta}]{\uppercase{Excerpta ex Wallisio cogitatis obiter occurrentibus aucta}
+%\newline \lbrack Ende 1674 \textendash\ Januar 1675\rbrack}
+%\addcontentsline{toc}{chapter}{\thechapter\enskip Excerpta ex Wallisio cogitatis obiter occurrentibus aucta \lbrack Ende 1674 \textendash\ Januar 1675\rbrack}
+%\vspace{8mm}
+%    \input{gesamttex/edit/WALLIS_2.tex}
+%    
+%
+%
+%
+%
+%\chapter[\scriptsize\uppercase{Geometria amoenior}]{\uppercase{Geometria amoenior}
+%\newline April 1675}
+%\addcontentsline{toc}{chapter}{\thechapter\enskip Geometria amoenior April 1675}
+%\vspace{8mm}
+%   \input{gesamttex/edit/LH035_08_30_151r.tex}
+%   \input{gesamttex/edit/LH035_08_30_151v.tex}
+%
+%    
+%        
+%\chapter[\scriptsize\uppercase{De arcanis motus et mechanica ad puram geometriam reducenda}]{\uppercase{De arcanis motus et mechanica ad puram geometriam reducenda}
+%\newline\lbrack März\ \textendash\ September 1676\rbrack}
+%\addcontentsline{toc}{chapter}{\thechapter\enskip De arcanis motus et mechanica ad puram geometriam reducenda \lbrack März\ \textendash\ September 1676\rbrack}
+%\vspace{8mm}
+%    \input{gesamttex/edit/LH035_13_03_081r.tex}
+%    \input{gesamttex/edit/LH035_13_03_081v.tex}
+%%%%% HS: Die Datierungsgründe sind in der Stück-Datei noch anzupassen (gemäß neuer obiger Datierung der Anatomica)
+%                
+                        
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{III.A. Allgemein}]{\large\protect\textso{III.A. Allgemein}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{III.A. Allgemein}}
+
+
+
+% N.~7
+\chapter[\scriptsize\uppercase{Aus und zu I. G. Pardies, La Statique}]{\uppercase{Aus und zu Ignace Gaston Pardies, La Statique ou la science des forces mouvantes}
+\newline\lbrack Mai 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu Ignace Gaston Pardies, La Statique ou la science des forces mouvantes \lbrack Mai 1673\rbrack}
+\vspace{8mm}
+      \input{gesamttex/edit/LH035_14_02_128v.tex}
+      \input{gesamttex/edit/LH035_14_02_127r.tex}
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+
+% N.~8 (ex 9)
+% W1 = WALLIS 1 (PR)
+\chapter[\scriptsize\uppercase{Aus und zu John Wallis, Mechanica sive De motu}]{\uppercase{Aus und zu John Wallis, Mechanica sive De motu}
+\newline \lbrack letzte Monate 1674 \textendash\ erste Monate 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu John Wallis, Mechanica sive De motu \lbrack letzte Monate 1674 \textendash\ erste Monate 1675\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/WALLIS_1.tex}
+
+
+
+% N.~9 (ex 10)
+% W2 = WALLIS 2 (PR)
+\chapter[\scriptsize\uppercase{Excerpta ex Wallisio cogitatis obiter occurrentibus aucta}]{\uppercase{Excerpta ex Wallisio cogitatis obiter occurrentibus aucta}
+\newline \lbrack letzte Monate 1674\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Excerpta ex Wallisio cogitatis obiter occurrentibus aucta \lbrack letzte Monate 1674\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/WALLIS_2.tex}
+
+
+
+% N.~10 (ex 8)
+\chapter[\scriptsize\uppercase{De vitandis erroribus geometricis in re mechanica}]{\uppercase{De vitandis erroribus geometricis in re mechanica}
+\newline Dezember 1674}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De vitandis erroribus geometricis in re mechanica Dezember 1674}
+\vspace{8mm}
+   \input{gesamttex/edit/LH037_05_215r.tex}
+
+
+
+% N.~11
+\chapter[\scriptsize\uppercase{Geometria amoenior}]{\uppercase{Geometria amoenior}
+\newline April 1675}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Geometria amoenior April 1675}
+\vspace{8mm}
+   \input{gesamttex/edit/LH035_08_30_151r.tex}
+   \input{gesamttex/edit/LH035_08_30_151v.tex}
+
+    
+
+% N.~12
+\chapter[\scriptsize\uppercase{De arcanis motus et mechanica ad puram geometriam reducenda}]{\uppercase{De arcanis motus et mechanica ad puram geometriam reducenda}
+\newline\lbrack Februar\ \textendash\ September 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De arcanis motus et mechanica ad puram geometriam reducenda \lbrack Februar\ \textendash\ September 1676\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_13_03_081r.tex}
+    \input{gesamttex/edit/LH035_13_03_081v.tex}
+
+
+
+
+% III.B. Mechanica - Bewegung  %%%%%%%%%%%%
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{III.B. Bewegung}]{\large\protect\textso{III.B. Bewegung}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+ \renewcommand{\chapterpagestyle}{firstchapter}
+ \renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{III.B. Bewegung}}
+
+
+
+% N.~13 (ex 18)
+\chapter[\scriptsize\uppercase{Le Cazre, Physica demonstratio}]{\uppercase{Anstreichungen und Anmerkungen in Pierre Le Cazre, Physica demonstratio}
+\newline\lbrack September 1672 \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Anstreichungen und Anmerkungen in Pierre Le Cazre, Physica demonstratio \lbrack September 1672 \textendash\ März 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/Cazraeus1645.tex}
+
+ \renewcommand*{\chapterpagestyle}{scrheadings}
+ \renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+
+% N.~14 (ex 13)
+\chapter[\scriptsize\uppercase{De acceleratione}]{\uppercase{De acceleratione}
+\newline\lbrack September 1672 \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De acceleratione \lbrack September 1672 \textendash\ März 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_130r.tex}
+%    \input{gesamttex/edit/LH037_05_130v.tex} %leer
+
+
+
+% N.~15 (ex 14)
+\chapter[\scriptsize\uppercase{De motu gravium naturali}]{\uppercase{De motu gravium naturali}
+\newline\lbrack September 1672 \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De motu gravium naturali \lbrack September 1672 \textendash\ März 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_128r.tex}
+    \input{gesamttex/edit/LH037_05_128v.tex}
+    \input{gesamttex/edit/LH037_05_129r.tex}
+%    \input{gesamttex/edit/LH037_05_129v.tex} in 129r
+
+
+
+% N.~16 (ex 15)
+\chapter[\scriptsize\uppercase{De pendulorum longitudinibus}]{\uppercase{De pendulorum longitudinibus}
+\newline\lbrack Oktober 1674 \textendash\ Frühjahr 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De pendulorum longitudinibus \lbrack Oktober 1674 \textendash\ Frühjahr 1675\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_12_02_062r.tex}
+%    \input{gesamttex/edit/LH035_12_02_062v.tex} %v-text in R.VII
+
+
+
+% N.~17 (ex 16)
+\chapter[\scriptsize\uppercase{Sur les petites oscillations des pendules}]{\uppercase{Sur les petites oscillations des pendules}
+\newline\lbrack Oktober 1674 \textendash\ Frühjahr 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Sur les petites oscillations des pendules \lbrack Oktober 1674 \textendash\ Frühjahr 1675\rbrack 
+%\newline \href{http://leibnizviii.bbaw.de/Leibniz_Reihe_8/Sur\%2Bles\%2Bpetites\%2Boscillations\%2Bdes\%2Bpendules.\%2BDeuxci\%2526egrave\%253Bme\%2Bessai/LH037\%252C05_056v/index.html}{056v}
+%\href{http://leibnizviii.bbaw.de/pdf/Sur\%2Bles\%2Bpetites\%2Boscillations\%2Bdes\%2Bpendules.\%2BDeuxci\%2526egrave\%253Bme\%2Bessai/LH037\%252C05_056v/LH037,05_056+va-00135.jpg}{Folio}
+}
+%\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_056_intro.tex}
+
+% N.~17_1 (ex 16_1)
+\vspace{12mm}
+\section[\scriptsize\uppercase{Sur les petites oscillations des pendules 1}]{\uppercase{Sur les petites oscillations des pendules 1}}
+\addcontentsline{toc}{section}{\thesection\enskip Sur les petites oscillations des pendules 1}
+\vspace{4mm}
+    \input{gesamttex/edit/LH037_05_056r.tex}
+\vspace{4mm}
+
+% N.~17_2 (ex 16_2)
+\section[\scriptsize\uppercase{Sur les petites oscillations des pendules 2}]{\uppercase{Sur les petites oscillations des pendules 2}}
+\addcontentsline{toc}{section}{\thesection\enskip Sur les petites oscillations des pendules 2}
+\vspace{4mm}
+    \input{gesamttex/edit/LH037_05_056v.tex}
+
+
+
+% N.~18 (ex 17)
+\chapter[\scriptsize\uppercase{De motu et effectu}]{\uppercase{De motu et effectu}
+\newline\lbrack April 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De motu et effectu \lbrack April 1675\rbrack}
+\vspace{8mm}
+	 \input{gesamttex/edit/LH035_13_03_035v.tex}
+%035r leer
+
+
+
+
+% III.C. Mechanica - Festigkeit  %%%%%%%%%%%%
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{III.C. Festigkeit}]{\large\protect\textso{III.C. Festigkeit}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{III.C. Festigkeit}}
+
+
+
+% F/1 (PR)
+\chapter[\scriptsize\uppercase{De quibusdam circa resistentiam}]{\uppercase{De quibusdam circa resistentiam quae a Galilaeo dicuntur}
+\newline \lbrack September 1672 \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De quibusdam circa resistentiam quae a Galilaeo dicuntur \lbrack September 1672 \textendash\ März 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_201.tex}
+%    \input{gesamttex/edit/LH037_05_201r.tex}
+%    \input{gesamttex/edit/LH037_05_201v.tex}
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+
+
+% F/2 (PR)
+\chapter[\scriptsize\uppercase{Resistentia trabis eadem est}]{\uppercase{Resistentia trabis eadem est}
+\newline \lbrack September 1672 \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Resistentia trabis eadem est \lbrack September 1672 \textendash\ März 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_204v.tex}
+
+
+
+
+
+% F/3 (PR)
+\chapter[\scriptsize\uppercase{Paralogismus Galilaeanus}]{\uppercase{Paralogismus Galilaeanus de resistentia trabis}
+\newline \lbrack September 1672 \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Paralogismus Galilaeanus de resistentia trabis \lbrack September 1672 \textendash\ März 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_202-203.tex}
+
+
+
+
+% F/4 (PR)
+\chapter[\scriptsize\uppercase{De trabis resistentia uniformi}]{\uppercase{De trabis resistentia uniformi}
+\newline \lbrack September 1672 \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De trabis resistentia uniformi \lbrack September 1672 \textendash\ März 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_209.tex}
+
+
+
+
+% F/5 (PR) %% Alternative Überschrift: DE TRABIS RUPTURA CENTRALI
+\chapter[\scriptsize\uppercase{De centro divulsionis}]{\uppercase{De centro divulsionis}
+\newline \lbrack September 1672 \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De centro divulsionis \lbrack September 1672 \textendash\ März 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_210.tex}
+%    \input{gesamttex/edit/LH037_05_210r.tex}
+
+
+
+
+% F/ (PR)
+% \chapter[\scriptsize\uppercase{Ut trabs rumpatur centraliter [??F/]}]{\uppercase{Ut trabs rumpatur centraliter [??F/]}
+% \newline \lbrack Herbst 1672 \textendash\ Frühjahr 1673\rbrack}
+% \addcontentsline{toc}{chapter}{\thechapter\enskip Ut trabs rumpatur centraliter [??F/] \lbrack Herbst 1672 \textendash\ Frühjahr 1673\rbrack}
+% \vspace{8mm}
+%    \input{gesamttex/edit/LH037_05_210v.tex}
+
+
+
+
+% F/6 (PR)
+\chapter[\scriptsize\uppercase{De distractione 1}]{\uppercase{De distractione 1}
+\newline \lbrack September 1672 \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De distractione 1 \lbrack September 1672 \textendash\ März 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_211v.tex}
+
+
+
+
+% F/7 (PR)
+\chapter[\scriptsize\uppercase{De distractione 2}]{\uppercase{De distractione 2}
+\newline \lbrack September 1672 \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De distractione 2 \lbrack September 1672 \textendash\ März 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_208v+207r.tex}
+
+
+
+
+% F/8 (PR)
+\chapter[\scriptsize\uppercase{De resistentia tabulae ligneae}]{\uppercase{De resistentia tabulae ligneae}
+\newline \lbrack Januar(?) \textendash\ März 1673 \rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De resistentia tabulae ligneae \lbrack Januar(?) \textendash\ März 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_04_051-052.tex}
+
+    
+
+
+
+
+
+% III.D. Mechanica - Kraft  %%%%%%%%%%%%
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{III.D. Kraft}]{\large\protect\textso{III.D. Kraft}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{III.D. Kraft}}
+
+
+
+
+\chapter[\scriptsize\uppercase{De vi corporum per motum naturalem continuatum acquisita}]{\uppercase{De vi corporum per motum naturalem continuatum acquisita ratiocinatio}
+\newline\lbrack Anfang 1674\ \textendash\ Anfang 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De vi corporum per motum naturalem continuatum acquisita ratiocinatio \lbrack Anfang 1674\ \textendash\ Anfang 1675\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_120r.tex}
+%    \input{gesamttex/edit/LH037_05_120v.tex} %in 120r
+
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+
+
+\chapter[\scriptsize\uppercase{R\`{e}gle pour calculer la force d'une machine}]{\uppercase{R\`{e}gle pour calculer la force d'une machine}
+\newline\lbrack zweite Hälfte 1674\ \textendash\ Anfang 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip R\`{e}gle pour calculer la force d'une machine \lbrack zweite Hälfte 1674\ \textendash\ Anfang 1675\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_10_09_001-4_intro.tex}
+
+\newpage
+%\vspace{8mm}
+\section[\scriptsize\uppercase{R\`{e}gle pour calculer la force d'une machine 1}]{\uppercase{R\`{e}gle pour calculer la force d'une machine 1}}
+\addcontentsline{toc}{section}{\thesection\enskip R\`{e}gle pour calculer la force d'une machine 1}
+\vspace{4mm}
+    \input{gesamttex/edit/LH035_10_09_003v_1.tex}
+
+\newpage
+%\vspace{12mm}
+\section[\scriptsize\uppercase{R\`{e}gle pour calculer la force d'une machine 2}]{\uppercase{R\`{e}gle pour calculer la force d'une machine 2}}
+\addcontentsline{toc}{section}{\thesection\enskip R\`{e}gle pour calculer la force d'une machine 2}
+\vspace{4mm}
+    \input{gesamttex/edit/LH035_10_09_003v_2.tex}
+
+\newpage
+%\vspace{12mm}
+\section[\scriptsize\uppercase{R\`{e}gle pour calculer la force d'une machine 3}]{\uppercase{R\`{e}gle pour calculer la force d'une machine 3}}%
+\addcontentsline{toc}{section}{\thesection\enskip R\`{e}gle pour calculer la force d'une machine 3}
+\vspace{4mm}
+    \input{gesamttex/edit/LH035_10_09_002r.tex}
+
+\newpage
+%\vspace{12mm}
+\section[\scriptsize\uppercase{R\`{e}gle pour calculer la force d'une machine 4}]{\uppercase{R\`{e}gle pour calculer la force d'une machine 4}}%
+\addcontentsline{toc}{section}{\thesection\enskip R\`{e}gle pour calculer la force d'une machine 4}
+\vspace{4mm}
+    \input{gesamttex/edit/LH035_10_09_001r.tex}
+
+\newpage
+%\vspace{12mm}
+\section[\scriptsize\uppercase{Regula de vi ponderis}]{\uppercase{Regula de vi ponderis}}%
+\addcontentsline{toc}{section}{\thesection\enskip Regula de vi ponderis}
+\vspace{4mm}
+    \input{gesamttex/edit/LH035_10_09_003r_2.tex}
+    
+
+\newpage
+%\vspace{12mm}
+\section[\scriptsize\uppercase{De determinandis machinae viribus}]{\uppercase{De determinandis machinae viribus per accelerationem acquisitis}}%
+\addcontentsline{toc}{section}{\thesection\enskip De determinandis machinae viribus per accelerationem acquisitis}
+\vspace{4mm}
+    \input{gesamttex/edit/LH035_10_09_004r.tex}
+    \input{gesamttex/edit/LH035_10_09_004v.tex}
+
+
+\newpage
+\section[\scriptsize\uppercase{Th\'{e}or\`{e}me sur la force d'une machine}]{\uppercase{Th\'{e}or\`{e}me sur la force d'une machine}
+}
+\addcontentsline{toc}{section}{\thesection\enskip Th\'{e}or\`{e}me sur la force d'une machine}
+\vspace{4mm}
+    \input{gesamttex/edit/LH038_025r.tex}
+%    \input{gesamttex/edit/LH038_025v.tex} %25v in 25r
+
+
+%\renewcommand*{\chapterpagestyle}{scrheadings}
+%\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+%
+%
+
+%\chapter[\scriptsize\uppercase{Th\'{e}or\`{e}me sur la force d'une machine}]{\uppercase{Th\'{e}or\`{e}me sur la force d'une machine}
+%\newline\lbrack Juli 1674 \textendash\ Januar 1675\rbrack}
+%\addcontentsline{toc}{chapter}{\thechapter\enskip Th\'{e}or\`{e}me sur la force d'une machine \lbrack Juli 1674\ \textendash\ Januar 1675\rbrack}
+%\markleft{\scriptsize\uppercase{II.A Mechanica. Allgemein}}
+%\vspace{8mm}
+%    \input{gesamttex/edit/LH038_025r.tex}
+%%    \input{gesamttex/edit/LH038_025v.tex} %25v in 25r
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+
+ \chapter[\scriptsize\uppercase{Axioma de potentia et effectu}]{\uppercase{Axioma de potentia et effectu}
+ \newline\lbrack Februar \textendash\ September 1676\rbrack}
+ \addcontentsline{toc}{chapter}{\thechapter\enskip Axioma de potentia et effectu \lbrack Februar \textendash\ September 1676\rbrack}
+ \vspace{8mm}
+    \input{gesamttex/edit/LH037,04_061r-062r.tex}
+%%%% HS: Die Datierungsgründe sind in der Stück-Datei noch anzupassen (gemäß neuer obiger Datierung der Anatomica)
+
+
+
+
+
+% III.E. Mechanica - Reibung  %%%%%%%%%%%%
+
+
+% PR, 13. März 2014:
+% NB: Die Input-Befehle, die sich nicht auf die NICHT mitgelieferten Stücke R/6 und R/7 beziehen, sind in diesem Ausschnitt entschärft. 
+
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{III.E. Reibung}]{\large\protect\textso{III.E. Reibung}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{III.E. Reibung}}
+
+% R/1
+\chapter[\scriptsize\uppercase{De detrimento motus ab attritu}]{\uppercase{De detrimento motus ab attritu}
+\newline\lbrack Anfang \textendash\ Fr\"{u}hjahr 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De detrimento motus ab attritu \lbrack Anfang \textendash\ Fr\"{u}hjahr 1675\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_004r.tex}
+    \input{gesamttex/edit/LH037_05_004v.tex}
+    \input{gesamttex/edit/LH037_05_005r.tex}
+    \input{gesamttex/edit/LH037_05_005v.tex}
+    \input{gesamttex/edit/LH037_05_008.tex}
+    \input{gesamttex/edit/LH037_05_009r.tex}
+    \input{gesamttex/edit/LH037_05_009v.tex}
+
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+% R/2
+\chapter[\scriptsize\uppercase{De detrimento motus. Frottement}]{\uppercase{De detrimento motus. Frottement}
+\newline\lbrack April 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De detrimento motus. Frottement \lbrack April 1675\rbrack}
+\vspace{8mm}
+     \input{gesamttex/edit/LH037_05_012_intro.tex}
+
+% R/2.1
+\vspace{12mm}
+\section[\scriptsize\uppercase{Auszug aus John Wallis, Mechanica sive De motu}]{\uppercase{Auszug aus John Wallis, Mechanica sive De motu}}
+% \newline\lbrack April 1675\rbrack
+\addcontentsline{toc}{section}{\thesection\enskip Auszug aus John Wallis, Mechanica sive De motu} % \lbrack April 1675\rbrack
+\vspace{4mm}
+   \input{gesamttex/edit/LH037_05_012r_1.tex}
+
+% R/2.2
+\vspace{12mm}
+\section[\scriptsize\uppercase{De detrimento motus. Frottement}]{\uppercase{De detrimento motus. Frottement}}
+% \newline April 1675
+\addcontentsline{toc}{section}{\thesection\enskip De detrimento motus. Frottement }% April 1675
+\vspace{4mm}
+    \input{gesamttex/edit/LH037_05_012r_2.tex}
+    \input{gesamttex/edit/LH037_05_012v_1.tex}
+
+% R2.3
+\vspace{12mm}
+\section[\scriptsize\uppercase{Dissertation g\'{e}om\'{e}trique du frottement}]{\uppercase{Dissertation g\'{e}om\'{e}trique du frottement}}
+% \newline\lbrack April 1675\rbrack
+\addcontentsline{toc}{section}{\thesection\enskip Dissertation g\'{e}om\'{e}trique du frottement} % \lbrack April 1675\rbrack
+\vspace{4mm}
+    \input{gesamttex/edit/LH037_05_012v_2.tex}
+
+
+
+% R/3
+\chapter[\scriptsize\uppercase{De detrimento motus. Pars secunda}]{\uppercase{De detrimento motus. Pars secunda}
+\newline April 1675}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De detrimento motus. Pars secunda   April 1675}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_010r.tex}
+    \input{gesamttex/edit/LH037_05_010v.tex}
+    \input{gesamttex/edit/LH037_05_011r.tex}
+    \input{gesamttex/edit/LH037_05_011v.tex}
+    \input{gesamttex/edit/LH037_05_006r.tex}
+    \input{gesamttex/edit/LH037_05_006v.tex}
+
+
+
+% R/4
+\chapter[\scriptsize\uppercase{Rechnungen zur Reibung}]{\uppercase{Rechnungen zur Reibung}
+\newline\lbrack April 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Rechnungen zur Reibung \lbrack April 1675\rbrack}
+\vspace{8mm}
+     \input{gesamttex/edit/LH037_05_007r.tex}
+
+
+
+% R/5
+\chapter[\scriptsize\uppercase{De la retardation du mouvement par le frottement}]{\uppercase{De la retardation du mouvement par le frottement}
+\newline Mai 1675}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De la retardation du mouvement par le frottement   Mai 1675}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_09_11_005-013_intro.tex}
+
+
+
+% R/5.1
+\vspace{12mm}
+\section[\scriptsize\uppercase{Retardation du mouvement par le frottement. Erste Fassung}]{\uppercase{De la retardation du mouvement par le frottement. Erste Fassung}}
+% \newline Mai 1675
+\addcontentsline{toc}{section}{\thesection\enskip De la retardation du mouvement par le frottement. Erste Fassung} % Mai 1675
+\vspace{4mm}
+    \input{gesamttex/edit/LH035_09_11_005r.tex}
+    \input{gesamttex/edit/LH035_09_11_005v.tex}
+    \input{gesamttex/edit/LH035_09_11_006r.tex}
+    \input{gesamttex/edit/LH035_09_11_006v.tex}
+    \input{gesamttex/edit/LH035_09_11_007r.tex}
+    \input{gesamttex/edit/LH035_09_11_007v.tex}
+    \input{gesamttex/edit/LH035_09_11_008r.tex}
+    \input{gesamttex/edit/LH035_09_11_008v_1.tex}
+
+
+% R/5.2
+\vspace{12mm}
+\section[\scriptsize\uppercase{Retardation du mouvement par le frottement. Zweite Fassung}]{\uppercase{De la retardation du mouvement par le frottement. Zweite Fassung}}
+% \newline Mai 1675
+\addcontentsline{toc}{section}{\thesection\enskip De la retardation du mouvement par le frottement. Zweite Fassung }% Mai 1675
+\vspace{4mm}
+    \input{gesamttex/edit/LH035_09_11_008v_2.tex}
+    \input{gesamttex/edit/LH035_09_11_009r.tex}
+    \input{gesamttex/edit/LH035_09_11_009v.tex}
+    \input{gesamttex/edit/LH035_09_11_010r_1.tex}
+    
+
+
+% R/5.3
+\vspace{12mm}
+\section[\scriptsize\uppercase{Alt\'{e}ration uniforme du mouvement par le frottement}]{\uppercase{D\'{e}monstrations g\'{e}om\'{e}triques de l'alt\'{e}ration uniforme du mouvement par le frottement}}
+% \newline Mai 1675
+\addcontentsline{toc}{section}{\thesection\enskip D\'{e}monstrations g\'{e}om\'{e}triques de l'alt\'{e}ration uniforme du mouvement par le frottement} % Mai 1675
+\vspace{4mm}
+    \input{gesamttex/edit/LH035_09_11_010r_2.tex}
+    \input{gesamttex/edit/LH035_09_11_010v.tex}
+    \input{gesamttex/edit/LH035_09_11_011r.tex}
+    \input{gesamttex/edit/LH035_09_11_011v.tex}
+    \input{gesamttex/edit/LH035_09_11_012r.tex}
+    \input{gesamttex/edit/LH035_09_11_012v_1.tex}
+
+% R/5.4
+\vspace{12mm}
+\section[\scriptsize\uppercase{D\'{e}monstrations m\'{e}caniques, du frottement}]{\uppercase{Essai de quelques d\'{e}monstrations m\'{e}caniques, du frottement}}
+% \newline Mai 1675
+\addcontentsline{toc}{section}{\thesection\enskip Essai de quelques d\'{e}monstrations m\'{e}caniques, du frottement} % Mai 1675
+\vspace{4mm}
+    \input{gesamttex/edit/LH035_09_11_012v_2.tex}
+    \input{gesamttex/edit/LH035_09_11_013r_1.tex} % NB: Umfasst auch 013v !!!
+%    \input{gesamttex/edit/LH035_09_11_013v.tex} % NB: INPUT GETILGT 
+
+% R/5.5
+\vspace{12mm}
+\section[\scriptsize\uppercase{Quelques propositions fondamentales qui traitent du frottement}]{\uppercase{D\'{e}monstrations g\'{e}om\'{e}triques de quelques propositions fondamentales qui traitent du frottement}}
+% \newline Mai 1675
+\addcontentsline{toc}{section}{\thesection\enskip D\'{e}monstrations g\'{e}om\'{e}triques de quelques propositions fondamentales qui traitent du frottement} % Mai 1675
+\vspace{4mm}
+    \input{gesamttex/edit/LH035_09_11_013r_2.tex}
+
+% R/6
+\chapter[\scriptsize\uppercase{De resistentia absoluta et respectiva in frictione}]{\uppercase{De resistentia absoluta et respectiva in frictione}
+\newline\lbrack Mitte 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De resistentia absoluta et respectiva in frictione \lbrack Mitte 1675\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_13_03_261r.tex}
+    \input{gesamttex/edit/LH035_13_03_261v.tex}
+    \input{gesamttex/edit/LH035_13_03_262r.tex}
+    \input{gesamttex/edit/LH035_13_03_262v.tex}
+    \input{gesamttex/edit/LH035_14_02_125.tex}
+    \input{gesamttex/edit/LH035_14_02_126r.tex}
+
+% R/7
+\chapter[\scriptsize\uppercase{Du frottement. Essais g\'{e}om\'{e}triques}]{\uppercase{Du frottement. Essais g\'{e}om\'{e}triques en fait de m\'{e}canique}
+\newline\lbrack Ende 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Du frottement. Essais g\'{e}om\'{e}triques en fait de m\'{e}canique \lbrack Ende 1675\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_09_11_001-004_intro.tex}
+
+% R/7.1
+\vspace{12mm}
+\section[\scriptsize\uppercase{Du frottement. Essais g\'{e}om\'{e}triques. Erste Fassung}]{\uppercase{Du frottement. Essais g\'{e}om\'{e}triques en fait de m\'{e}canique. Erste Fassung}}
+% \newline\lbrack Ende 1675\rbrack
+\addcontentsline{toc}{section}{\thesection\enskip Du frottement. Essais g\'{e}om\'{e}triques en fait de m\'{e}canique. Erste Fassung} % \lbrack Ende 1675\rbrack
+\vspace{4mm}
+    \input{gesamttex/edit/LH035_09_11_001r.tex}
+    \input{gesamttex/edit/LH035_09_11_001v.tex}
+    \input{gesamttex/edit/LH035_09_11_002r.tex}
+    \input{gesamttex/edit/LH035_09_11_002v.tex}
+
+% R/7.2
+\vspace{12mm}
+\section[\scriptsize\uppercase{Du frottement. Essais g\'{e}om\'{e}triques. Zweite Fassung}]{\uppercase{Du frottement. Essais g\'{e}om\'{e}triques en fait de m\'{e}canique. Zweite Fassung (mit 
+späterem Zusatz [nach Januar 1678])}}
+% \newline Winter 1675
+\addcontentsline{toc}{section}{\thesection\enskip Du frottement. Essais g\'{e}om\'{e}triques en fait de m\'{e}canique. Zweite Fassung (mit 
+späterem Zusatz [nach Januar 1678])}% Winter 1675
+\vspace{4mm}
+    \input{gesamttex/edit/LH035_09_11_003r.tex}
+    \input{gesamttex/edit/LH035_09_11_003v.tex}
+    \input{gesamttex/edit/LH035_09_11_004r.tex}
+
+
+
+
+% R/8
+\chapter[\scriptsize\uppercase{Sur le retardement uniforme}]{\uppercase{Sur le retardement uniforme}
+\newline\lbrack Ende 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Sur le retardement uniforme \lbrack Ende 1675\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_127r.tex}
+    \input{gesamttex/edit/LH037_05_127v.tex}
+
+
+
+% R/9
+\chapter[\scriptsize\uppercase{Du frottement. Un r\'{e}sum\'{e}}]{\uppercase{Du frottement. Un r\'{e}sum\'{e}}
+\newline\lbrack Ende 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Du frottement. Un r\'{e}sum\'{e} \lbrack Ende 1675\rbrack}
+\vspace{8mm}
+     \input{gesamttex/edit/LH037_05_142r.tex}
+
+
+
+
+% III.F. Mechanica - Spezielle Probleme  %%%%%%%%%%%%
+
+% vormals: Verschiedenes
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{III.F. Spezielle Probleme}]{\large\protect\textso{III.F. Spezielle Probleme}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{III.F. Spezielle Probleme}}
+
+
+\chapter[\scriptsize\uppercase{De gravitatis duplicis concursu}]{\uppercase{De gravitatis duplicis concursu}
+\newline\lbrack Mitte 1668 \textendash\ März 1672?\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De gravitatis duplicis concursu \lbrack Mitte 1668 \textendash\ März 1672?\rbrack 
+%\newline \href{http://leibnizviii.bbaw.de/Leibniz_Reihe_8/Scientia\%2Bde\%2Bprogressionibus/LH035\%252C13\%252C02c_144r/index.html}{144r}
+%\href{http://leibnizviii.bbaw.de/pdf/Scientia\%2Bde\%2Bprogressionibus/LH035\%252C13\%252C02c_144r/LH035,13!02c_144r.png}{Folio}
+}
+\vspace{8mm}
+     \input{gesamttex/edit/LH035_14_02_51r.tex}
+
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+
+\chapter[\scriptsize\uppercase{Scientia de progressionibus}]{\uppercase{Scientia de progressionibus}
+\newline\lbrack Fr\"{u}hjahr 1672 \textendash\  Anfang 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Scientia de progressionibus \lbrack Fr\"{u}hjahr 1672 \textendash\  Anfang 1673\rbrack} 
+%\newline \href{http://leibnizviii.bbaw.de/Leibniz_Reihe_8/Scientia\%2Bde\%2Bprogressionibus/LH035\%252C13\%252C02c_144r/index.html}{144r}
+%\href{http://leibnizviii.bbaw.de/pdf/Scientia\%2Bde\%2Bprogressionibus/LH035\%252C13\%252C02c_144r/LH035,13!02c_144r.png}{Folio}}
+\vspace{8mm}
+     \input{gesamttex/edit/LH035_13_02c_144r.tex}
+
+
+
+\chapter[\scriptsize\uppercase{De centro gravitatis}]{\uppercase{De centro gravitatis}
+\newline\lbrack September 1672 \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De centro gravitatis \lbrack September 1672 \textendash\ März 1673\rbrack}
+% vormaliger Titel: De aequilibrio corporis cylindrici
+\vspace{8mm}
+  \input{gesamttex/edit/LH037_05_135-136.tex}
+%    \input{gesamttex/edit/LH037_05_135r.tex}
+%    \input{gesamttex/edit/LH037_05_135v.tex}
+%    \input{gesamttex/edit/LH037_05_136r.tex}
+%    \input{gesamttex/edit/LH037_05_136v.tex}
+
+
+\chapter[\scriptsize\uppercase{Demonstratio de trabis aequilibrio brachiis inaequalibus}]{\uppercase{Demonstratio de trabis aequilibrio brachiis inaequalibus}
+\newline \lbrack September 1672 \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Demonstratio de trabis aequilibrio brachiis inaequalibus \lbrack September 1672 \textendash\ März 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_04_49rv.tex}
+
+
+
+\chapter[\scriptsize\uppercase{De guttarum cohaesione}]{\uppercase{De guttarum cohaesione}
+\newline\lbrack September 1672  \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De guttarum cohaesione \lbrack September 1672 \textendash\ März 1673\rbrack}
+\vspace{8mm}
+   \input{gesamttex/edit/LH037_04_050v_text1.tex}
+
+
+
+\chapter[\scriptsize\uppercase{I. G. Pardies, La Statique}]{\uppercase{Anstreichungen und Anmerkungen in Ignace Gaston Pardies, La Statique ou la science des forces mouvantes}
+\newline\lbrack Mai 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Anstreichungen und Anmerkungen in Ignace Gaston Pardies, La Statique ou la science des forces mouvantes \lbrack Mai 1673\rbrack}
+\vspace{8mm}
+     \input{gesamttex/edit/Pardies1673.tex}
+
+
+
+\chapter[\scriptsize\uppercase{De vectibus conjugatis}]{\uppercase{De vectibus conjugatis}
+\newline[zweite Hälfte 1674]}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De vectibus conjugatis [zweite Hälfte 1674]}
+\vspace{4mm}
+	\input{gesamttex/edit/LH037_03_77-80_intro.tex}
+
+%\newpage
+\vspace{8mm}
+\section[\scriptsize\uppercase{De vectibus conjugatis 1}]{\uppercase{De vectibus conjugatis 1}}%
+\addcontentsline{toc}{section}{\thesection\enskip De vectibus conjugatis 1}
+\vspace{4mm}
+       \input{gesamttex/edit/LH037_03_080r.tex}
+       \input{gesamttex/edit/LH037_03_080v.tex}
+       
+
+%\vspace{5mm}
+\newpage
+\section[\scriptsize\uppercase{De vectibus conjugatis 2}]{\uppercase{De vectibus conjugatis 2}}%
+\addcontentsline{toc}{section}{\thesection\enskip De vectibus conjugatis 2}
+\vspace{8mm}
+%    \input{gesamttex/edit/LH037_03_077v.tex} %leer
+	 \input{gesamttex/edit/LH037_03_078v.tex}
+       \input{gesamttex/edit/LH037_03_078r.tex}
+
+%\vspace{8mm}
+\newpage
+\section[\scriptsize\uppercase{De vectibus conjugatis 3}]{\uppercase{De vectibus conjugatis 3}}%
+\addcontentsline{toc}{section}{\thesection\enskip De vectibus conjugatis 3}
+\vspace{8mm}
+      \input{gesamttex/edit/LH037_03_077r.tex}
+
+\newpage
+%\vspace{4mm}
+\section[\scriptsize\uppercase{De vectibus conjugatis 4}]{\uppercase{De vectibus conjugatis 4}}%
+\addcontentsline{toc}{section}{\thesection\enskip De vectibus conjugatis 4}
+\vspace{8mm}
+       \input{gesamttex/edit/LH037_03_079r.tex}
+%    \input{gesamttex/edit/LH037_03_079v.tex}%leer
+      
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+\chapter[\scriptsize\uppercase{Beaugrand, Geostatice}]{\uppercase{Anstreichungen und Anmerkungen in Jean de Beaugrand, Geostatice}
+\newline\lbrack Dezember 1674\ \textendash\ April 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Anstreichungen und Anmerkungen in Jean de Beaugrand, Geostatice \lbrack Dezember 1674\ \textendash\ April 1675\rbrack}
+\vspace{8mm}
+   \input{gesamttex/edit/Beaugrand1636.tex}
+
+
+
+
+% III.G. Mechanica - Stoß  %%%%%%%%%%%%
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{III.G. Stoss}]{\large\protect\textso{III.G. Stoss}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{III.G. Stoss}}
+
+\chapter[\scriptsize\uppercase{I. G. Pardies, Discours du mouvement local}]{\uppercase{Anstreichungen und Anmerkungen in Ignace Gaston Pardies, Discours du mouvement local}
+\newline\lbrack Frühjahr 1672 \textendash\ Mai 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Anstreichungen und Anmerkungen in Ignace Gaston Pardies, Discours du mouvement local \lbrack Frühjahr 1672 \textendash\ Mai 1673\rbrack}
+\vspace{8mm}
+     \input{gesamttex/edit/Pardies1670.tex}
+
+
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+
+\chapter[\scriptsize\uppercase{Problemata de concursu corporum}]{\uppercase{Problemata de concursu corporum}
+\newline\lbrack Juni 1672 \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Problemata de concursu corporum \lbrack Juni 1672 \textendash\ März 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_03_162r.tex}
+%    \input{gesamttex/edit/LH037_03_162v.tex} leer
+%    \input{gesamttex/edit/LH037_03_163r.tex} leer
+    \input{gesamttex/edit/LH037_03_163v.tex}
+
+
+
+
+\chapter[\scriptsize\uppercase{De motus linea post concursum}]{\uppercase{De motus linea post concursum}
+\newline\lbrack Sommer 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De motus linea post concursum \lbrack Sommer 1673\rbrack 
+%\newline \href{http://leibnizviii.bbaw.de/Leibniz_Reihe_8/Experimentum\%2Bnotabile\%2Bquo\%2Bdefiniri\%2Bpossit\%252C\%2Bomniane\%2Bin\%2Bcurvis\%2Bperagantur\%2Bper\%2Btangentes/LH037\%252C04_034r/index.html}{034r}
+%\href{http://leibnizviii.bbaw.de/pdf/Experimentum\%2Bnotabile\%2Bquo\%2Bdefiniri\%2Bpossit\%252C\%2Bomniane\%2Bin\%2Bcurvis\%2Bperagantur\%2Bper\%2Btangentes/LH037\%252C04_034r/LH037,04_034r1.png}{Folio}
+}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_04_034r.tex}
+%    \input{gesamttex/edit/LH037_04_034v.tex} %in34r
+
+
+
+
+
+%\chapter[\scriptsize\uppercase{Exzerpte aus Mariottes De choc du corps}]{\uppercase{Exzerpte aus Mariottes De choc du corps}
+%\newline\lbrack XXX \textendash\ XXX\rbrack}
+%\addcontentsline{toc}{chapter}{\thechapter\enskip Exzerpte aus Mariottes De choc du corps \lbrack XXX \textendash\ XXX\rbrack}
+%\vspace{8mm}
+%    \input{gesamttex/edit/LH035_14_02_112r.tex}
+%    \input{gesamttex/edit/LH035_14_02_112v.tex}
+%    \input{gesamttex/edit/LH035_14_02_113r.tex}
+%    \input{gesamttex/edit/LH035_14_02_113v.tex}
+%    \input{gesamttex/edit/LH035_14_02_114r.tex}
+%    \input{gesamttex/edit/LH035_14_02_114v.tex}
+%    \input{gesamttex/edit/LH035_14_02_115r.tex}
+%    \input{gesamttex/edit/LH035_14_02_115v.tex}
+
+% M = MARIOTTE (PR)
+\chapter[\scriptsize\uppercase{Excerpta ex libro Du choc des corps}]{\uppercase{Excerpta ex libro Du choc des corps}
+\newline \lbrack letzte Monate 1674\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Excerpta ex libro Du choc des corps \lbrack letzte Monate 1674\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/MARIOTTE.tex}
+    
+    
+
+\chapter[\scriptsize\uppercase{De cohaesione}]{\uppercase{De cohaesione}
+\newline April 1675}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De cohaesione April 1675}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_139r.tex}
+%    \input{gesamttex/edit/LH037_05_139v.tex} % leer
+% Bereits bei Frau Zeitz
+
+
+
+
+\chapter[\scriptsize\uppercase{De ictuum quantitate }]{\uppercase{De ictuum quantitate}
+\newline Mai 1675}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De ictuum quantitate Mai 1675}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_126r.tex}
+%    \input{gesamttex/edit/LH037_05_126v.tex} %leer
+
+
+
+
+
+% M E T E O R O L O G I C A
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{IV. Meteorologica}]{\large\protect\textso{IV. Meteorologica}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{IV. Meteorologica}}
+
+\chapter[\scriptsize\uppercase{Aus und zu Francesco Travagini, Physica disquisitio}]{\uppercase{Aus und zu Francesco Travagini, Physica disquisitio}
+\newline\lbrack Anfang 1674 \textendash\ Anfang 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu Francesco Travagini, Physica disquisitio \lbrack Anfang 1674 \textendash\ Anfang 1675\rbrack} 
+%\newline \href{http://leibnizviii.bbaw.de/Leibniz_Reihe_8/Aus\%2Bund\%2Bzu\%2BF.\%2BTravagini\%252C\%2BDisquisitio\%2Bphysica/LH035\%252C14\%252C02_053r/index.html}{053r}
+%\href{http://leibnizviii.bbaw.de/pdf/Aus\%2Bund\%2Bzu\%2BF.\%2BTravagini\%252C\%2BDisquisitio\%2Bphysica/LH035\%252C14\%252C02_053r/LH035,14!02_053+ra-07593.png}{Folio}}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_14_02_053r.tex}
+
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+ 
+ 
+ \chapter[\scriptsize\uppercase{Ex Manuscripto Cartesii. Problemata}]{\uppercase{Ex Manuscripto Cartesii. Problemata}
+\newline\lbrack Februar \textendash\ September 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Ex Manuscripto Cartesii. Problemata \lbrack Februar \textendash\ September 1676\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH004_01_04B_013u14.tex}
+
+
+ 
+ 
+
+ 
+
+
+
+% P H Y S I C A
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{V. Physica}]{\large\protect\textso{V. Physica}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+%\renewcommand{\chapterpagestyle}{firstchapter}
+%\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{V. Physica}}
+
+
+
+\chapter[\scriptsize\uppercase{Aus und zu Honoré Fabri, Physica}]{\uppercase{Aus und zu Honoré Fabri, Physica}
+\newline\lbrack Herbst 1670 \textendash\ Frühjahr 1672\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu Honoré Fabri, Physica \lbrack Herbst 1670 \textendash\ Frühjahr 1672\rbrack}
+\vspace{8mm}
+
+    \input{gesamttex/edit/LH035_14_02_138-158}
+
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+
+\chapter[\scriptsize\uppercase{Aus und zu Franz Wilhelm Nylandt, Elementa physica}]{\uppercase{Aus und zu Franz Wilhelm Nylandt, Elementa physica}
+\newline\lbrack Ende 1675 \textendash\ Anfang 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu Franz Wilhelm Nylandt, Elementa physica \lbrack Ende 1675 \textendash\ Anfang 1676\rbrack}
+\vspace{8mm}			
+  \input{gesamttex/edit/LH035_14_02_103r.tex} %103r + 103v
+
+
+
+\chapter[\scriptsize\uppercase{Aus und zu einem Manuskript Claude Perraults}]{\uppercase{Aus und zu einem Manuskript Claude Perraults}
+\newline\lbrack Mai\textendash Juli 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu einem Manuskript Claude Perraults \lbrack Mai\textendash Juli 1676\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LBr719a_3-4.tex}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% A N A T O M I C A
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{VI. Anatomica}]{\large\protect\textso{VI. Anatomica}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{VI. Anatomica}}
+
+\chapter[\scriptsize\uppercase{Anatomica quaedam ex Manuscripto Cartesii}]{\uppercase{Anatomica quaedam ex Manuscripto Cartesii}
+\newline\lbrack Februar \textendash\ September 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Anatomica quaedam ex Manuscripto Cartesii \lbrack Februar \textendash\ September 1676\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH004_01_04B_003r.tex}
+    \input{gesamttex/edit/LH004_01_04B_003v.tex}
+    \input{gesamttex/edit/LH004_01_04B_004r.tex}
+    \input{gesamttex/edit/LH004_01_04B_004v.tex}
+    \input{gesamttex/edit/LH004_01_04B_005r.tex}
+    \input{gesamttex/edit/LH004_01_04B_005v.tex}
+    \input{gesamttex/edit/LH004_01_04B_006r.tex}
+    \input{gesamttex/edit/LH004_01_04B_006v.tex}
+    \input{gesamttex/edit/LH004_01_04B_007r.tex}
+    \input{gesamttex/edit/LH004_01_04B_007v.tex}
+    \input{gesamttex/edit/LH004_01_04B_008r.tex}
+    \input{gesamttex/edit/LH004_01_04B_008v.tex}
+    \input{gesamttex/edit/LH004_01_04B_009r.tex}
+    \input{gesamttex/edit/LH004_01_04B_009v.tex}
+    \input{gesamttex/edit/LH004_01_04B_010r.tex}
+    \input{gesamttex/edit/LH004_01_04B_010v.tex}
+    \input{gesamttex/edit/LH004_01_04B_011r.tex}
+    \input{gesamttex/edit/LH004_01_04B_011v.tex}
+    \input{gesamttex/edit/LH004_01_04B_012r.tex}
+
+
+% B O T A N I C A
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{VII. Botanica}]{\large\protect\textso{VII. Botanica}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{VII. Botanica}}
+
+%\renewcommand*{\chapterpagestyle}{scrheadings}
+%\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+\chapter[\scriptsize\uppercase{Extraits de lettres de Mons. Boccone}]{\uppercase{Extraits de lettres de Mons. Boccone}
+\newline\lbrack Februar \textendash\ September 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Extraits de lettres de Mons. Boccone \lbrack Februar \textendash\ September 1676\rbrack}
+\vspace{8mm}
+	\input{gesamttex/edit/LH035_14_02_104r.tex} % 104r=104r+104v
+	\input{gesamttex/edit/LH035_14_02_108v.tex}
+	\input{gesamttex/edit/LH035_14_02_108r.tex}
+%    \input{gesamttex/edit/LH035_14_02_105r.tex}
+%    \input{gesamttex/edit/LH035_14_02_106v.tex} 
+%    \input{gesamttex/edit/LH035_14_02_107r.tex}
+%%%% HS: Die Datierungsgründe sind in der Stück-Datei noch anzupassen (gemäß neuer obiger Datierung der Anatomica)
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+\chapter[\scriptsize\uppercase{Notizen zur Botanik}]{\uppercase{Notizen zur Botanik}
+\newline\lbrack Februar \textendash\ September 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Notizen zur Botanik \lbrack Februar \textendash\ September 1676\rbrack}
+\vspace{8mm}
+	\input{gesamttex/edit/LH035_14_02_105r.tex}
+	\input{gesamttex/edit/LH035_14_02_106v.tex} 
+	\input{gesamttex/edit/LH035_14_02_107r.tex}
+%%%% HS: Die Datierungsgründe sind in der Stück-Datei noch anzupassen (gemäß neuer obiger Datierung der Anatomica)
+
+
+
+
+
+
+% C H Y M I C A
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+%\addtocontents{toc}{\vspace{5mm}}
+\addtocontents{toc}{\protect\newpage}
+\addpart[\large\uppercase{VIII. Chymica}]{\large\protect\textso{VIII. Chymica}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{VIII. Chymica}}
+
+
+
+% Frühere Überschrift: Index librorum diversorum
+\chapter[\scriptsize\uppercase{Bücherliste}]{\uppercase{Bücherliste}
+\newline\lbrack Herbst 1672 \textendash\ Anfang 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Bücherliste \lbrack Herbst 1672 \textendash\ Anfang 1673\rbrack}
+\vspace{8mm}			
+    \input{gesamttex/edit/LH035_12_01_328r.tex}
+
+
+
+
+\newpage
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+
+
+\chapter[\scriptsize\uppercase{Athanor seu Fornax Philosophorum}]{\uppercase{Athanor seu Fornax Philosophorum}
+\newline\lbrack Februar \textendash\ Herbst 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Athanor seu Fornax Philosophorum \lbrack Februar \textendash\ Herbst 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_03_084r.tex}
+    \input{gesamttex/edit/LH037_03_084v.tex}
+    \input{gesamttex/edit/LH037_03_085r.tex}
+
+
+
+\chapter[\scriptsize\uppercase{Ars conficiendi omnis generis gemmas}]{\uppercase{Ars conficiendi omnis generis gemmas}
+\newline\lbrack September 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Ars conficiendi omnis generis gemmas \lbrack September 1675\rbrack}
+\vspace{8mm}
+\input{gesamttex/edit/LH037_06_004v.tex}
+
+
+
+\chapter[\scriptsize\uppercase{Modus coagulandi et tingendi Mercurium}]{\uppercase{Modus coagulandi et tingendi Mercurium}
+\newline September 1675}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Modus coagulandi et tingendi Mercurium September 1675}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_06_003r.tex}
+
+
+
+%% AUS DEN MEDICA VERSETZT !!!
+\chapter[\scriptsize\uppercase{Aus einem Gespräch mit Artus de Roannez}]{\uppercase{Aus einem Gespräch mit Artus de Roannez}
+\newline 31. Dezember 1675}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus einem Gespräch mit Artus de Roannez 31. Dezember 1675}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_03_089r.tex}% umfasst auch Bl. 89v
+%    \input{gesamttex/edit/LH037_03_089v.tex}
+
+
+
+%% Frühere Überschrift: Notes sur des sujets divers
+%\chapter[\scriptsize\uppercase{Notizen zu unterschiedlichen Gegenständen}]{\uppercase{Notizen zu unterschiedlichen Gegenständen}
+%\newline\lbrack Oktober \textendash\ Dezember 1676\rbrack}
+%\addcontentsline{toc}{chapter}{\thechapter\enskip Notizen zu unterschiedlichen Gegenständen \lbrack Oktober \textendash\ Dezember 1676\rbrack}
+%\vspace{8mm}
+%    \input{gesamttex/edit/LH035_12_02_150r.tex}
+
+
+
+
+
+
+% M E D I C A
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{IX. Medica}]{\large\protect\textso{IX. Medica}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{IX. Medica}}
+
+
+
+
+\chapter[\scriptsize\uppercase{Aus Athanasius Kircher, Magneticum naturae regnum}]{\uppercase{Aus Athanasius Kircher, Magneticum naturae regnum}
+\newline\lbrack Mitte 1668\ \textendash\ Ende 1671\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus Athanasius Kircher, Magneticum naturae regnum \lbrack Mitte 1668\ \textendash\ Ende 1671\rbrack}
+\vspace{8mm}			
+     \input{gesamttex/edit/StAGoettingen_MSL12_19.tex}
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+
+
+\chapter[\scriptsize\uppercase{In Franciscus de le Boe, Idea praxeos medicae}]{\uppercase{Anstreichungen und Anmerkungen in Franciscus de le Boe, Idea praxeos medicae}
+\newline\lbrack März 1671 \textendash\ Anfang 1672 (?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Anstreichungen und Anmerkungen in Franciscus de le Boe, Idea praxeos medicae \lbrack März 1671 \textendash\ Anfang 1672 (?)\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/Boe1671.tex}
+
+
+
+
+\chapter[\scriptsize\uppercase{Aus und zu medizinischen Schriften}]{\uppercase{Aus und zu medizinischen Schriften}
+\newline\lbrack Frühjahr \textendash\ Ende 1671 (?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu medizinischen Schriften \lbrack Frühjahr \textendash\ Ende 1671 (?)\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH003_05_067r.tex}
+    \input{gesamttex/edit/LH003_05_068r.tex}
+
+
+
+% Frühere Überschrift: >Ausz\"{u}ge und Kommentare zu einigen Autoren medizinischer Titel<
+\chapter[\scriptsize\uppercase{De medicina perficienda
+}]{\uppercase{De medicina perficienda
+}
+\newline\lbrack Mitte 1671\ \textendash\ Anfang 1672\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De medicina perficienda
+ \lbrack Mitte 1671\ \textendash\ Anfang 1672\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH003_01_03_009v.tex}
+%    \input{gesamttex/edit/LH003_01_03_009r.tex} in 9v
+
+
+
+
+\chapter[\scriptsize\uppercase{Directiones ad rem medicam pertinentes}]{\uppercase{Directiones ad rem medicam pertinentes}
+\newline\lbrack Mitte 1671\ \textendash\ Anfang 1672\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Directiones ad rem medicam pertinentes \lbrack Mitte 1671\ \textendash\ Anfang 1672\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH003_01_03_001r.tex}
+    \input{gesamttex/edit/LH003_01_03_001v.tex}
+    \input{gesamttex/edit/LH003_01_03_002r.tex}
+    \input{gesamttex/edit/LH003_01_03_002v.tex}
+    \input{gesamttex/edit/LH003_01_03_003r.tex}
+    \input{gesamttex/edit/LH003_01_03_003v.tex}
+    \input{gesamttex/edit/LH003_01_03_004r.tex}
+    \input{gesamttex/edit/LH003_01_03_004v.tex}
+    \input{gesamttex/edit/LH003_01_03_005r.tex}
+    \input{gesamttex/edit/LH003_01_03_005v.tex}
+    \input{gesamttex/edit/LH003_01_03_006r.tex}
+    \input{gesamttex/edit/LH003_01_03_006v.tex}
+    \input{gesamttex/edit/LH003_01_03_007r.tex}
+    \input{gesamttex/edit/LH003_01_03_007v.tex}
+    \input{gesamttex/edit/LH003_01_03_008r.tex}
+    \input{gesamttex/edit/LH003_01_03_008v.tex}
+
+
+
+
+
+
+\chapter[\scriptsize\uppercase{Notizen zu verschiedenen Krankheiten und Kuren}]{\uppercase{Notizen zu verschiedenen Krankheiten und Kuren}
+\newline\lbrack Mitte 1671\ \textendash\ Anfang 1672 (?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Notizen zu verschiedenen
+Krankheiten und Kuren \lbrack Mitte 1671\ \textendash\ Anfang 1672 (?)\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH003_05_055r.tex}
+
+
+
+
+
+\chapter[\scriptsize\uppercase{Aus einem Gespräch mit Edme Mariotte}]{\uppercase{Aus einem Gespräch mit Edme Mariotte}
+\newline\lbrack zweite Hälfte 1674 \textendash\ Anfang 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus einem Gespräch mit Edme Mariotte \lbrack zweite Hälfte 1674 \textendash\ Anfang 1675\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH003_5_089r.tex}
+
+
+
+\chapter[\scriptsize\uppercase{Essence styptique}]{\uppercase{Essence styptique}
+\newline\lbrack September 1674 \textendash\ Oktober 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Essence styptique \lbrack September 1674 \textendash\ Oktober 1676\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH003_05_086r.tex}
+    \input{gesamttex/edit/LH003_05_086v.tex}
+    \input{gesamttex/edit/LH003_05_087r.tex}
+
+
+
+
+\chapter[\scriptsize\uppercase{Aus und zu einem Manuskript von Acar}]{\uppercase{Aus und zu einem Manuskript von Acar über medizinische Geheimnisse}
+\newline\lbrack1675  \textendash\ erste Hälfte 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu einem Manuskript von Acar über medizinische Geheimnisse
+ \lbrack1675  \textendash\ erste Hälfte 1676\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH003_04_08a_001r.tex}
+
+
+
+
+\chapter[\scriptsize\uppercase{Aus Gesprächen mit Gravel und Alliot}]{\uppercase{Aus Gesprächen mit Jacques de Gravel und Jean-Baptiste Alliot}
+\newline 25. Januar 1676}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus Gesprächen mit Jacques Gravel und Jean-Baptiste Alliot 25.~Januar 1676}
+\vspace{8mm}
+    \input{gesamttex/edit/LH003_05_056r.tex}
+
+
+
+
+\chapter[\scriptsize\uppercase{Remedia et vires medicamentorum}]{\uppercase{Remedia et vires medicamentorum}
+\newline 24. Februar 1676}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Remedia et vires medicamentorum 24. Februar 1676}
+\vspace{8mm}
+    \input{gesamttex/edit/LH003_04_03a_001r_text1.tex}
+
+
+
+
+\chapter[\scriptsize\uppercase{Aus einem Gespräch mit Robert Boyle}]{\uppercase{Aus einem Gespräch mit Robert Boyle}
+\newline\lbrack zweite Hälfte Oktober 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus einem Gespräch mit Robert Boyle \lbrack zweite Hälfte Oktober 1676\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH041_02_009r.tex}
+
+
+
+
+
+% M I S C E L L A N E A
+
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{X. Miscellanea}]{\large\protect\textso{X. Miscellanea}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{X. Miscellanea}}
+
+
+\chapter[\scriptsize\uppercase{Onomasticon rerum militarium}]{\uppercase{Onomasticon rerum militarium}
+\newline\lbrack Anfang 1674 \textendash\ Anfang 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Onomasticon rerum militarium \lbrack Anfang 1674 \textendash\ Anfang 1675\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH036_130r.tex}
+    \input{gesamttex/edit/LH036_131r.tex}
+
+
+\newpage
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+\chapter[\scriptsize\uppercase{Scripta brevia feminae sine manibus}]{\uppercase{Scripta brevia feminae sine manibus}
+\newline%
+März 1674}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Scripta brevia feminae sine manibus
+März 1674}
+\vspace{8mm}
+    \input{gesamttex/edit/LH042_01_021r.tex}
+
+
+
+
+
+\chapter[\scriptsize\uppercase{Rechnungen zur Einkaufsliste}]{\uppercase{Rechnungen zur Einkaufsliste}
+\newline \lbrack letzte Monate 1674\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Rechnungen zur Einkaufsliste \lbrack letzte Monate 1674\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/Einkaufsliste.tex}
+
+
+
+\chapter[\scriptsize\uppercase{Aus einem Gespr\"{a}ch mit Claude Perrault}]{\uppercase{Aus einem Gespr\"{a}ch mit Claude Perrault}
+\newline 22. Januar \lbrack 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus einem Gespr\"{a}ch mit Claude Perrault 22. Januar \lbrack 1676\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/RK56900_235.tex} % PR: Enthält auch S. 236
+
+
+
+
+
+% N A C H T R Ä G E
+
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{XI. NACHTR\"{A}GE}]{\large\protect\textso{XI. NACHTR\"{A}GE}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{XI. NACHTR\"{A}GE}}
+
+
+
+%Nachträge  -  O p t i c a %%%%%%%%%%%%
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{XI.A. Optica}]{\large\protect\textso{XI.A. Optica}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{XI.A. Optica}}
+
+
+\chapter[\scriptsize\uppercase{De refractione}]{\uppercase{De refractione}
+\newline\lbrack 24. Februar 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De refractione \lbrack 24. Februar 1676\rbrack}
+\vspace{8mm}			
+    \input{gesamttex/edit/LH003_04_03a_001r_text2.tex}% PR: enthält jetzt auch Bl. 1v.
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+
+
+
+%Nachträge  -  T e c h n i c a %%%%%%%%%%%%5
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{XI.B. Technica}]{\large\protect\textso{XI.B. Technica}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+\markleft{\scriptsize\uppercase{XI.B. Technica}}
+
+
+\chapter[\scriptsize\uppercase{De variis rationibus procurandi motum uniformem}]{\uppercase{De variis rationibus procurandi motum uniformem}
+\newline\lbrack Fr\"{u}hjahr \textendash\ Sommer 1671\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De variis rationibus procurandi motum uniformem \lbrack Fr\"{u}hjahr \textendash\ Sommer 1671\rbrack 
+%\newline \href{http://leibnizviii.bbaw.de/Leibniz_Reihe_8/De\%2Bpraestando\%2Bmotu\%2Buniformi\%2Bpendulo/LH035\%252C15\%252C06_059r/index.html}{059r}
+%\href{http://leibnizviii.bbaw.de/pdf/De\%2Bpraestando\%2Bmotu\%2Buniformi\%2Bpendulo/LH035\%252C15\%252C06_059r/LH035,15!06_059+ra-11068.jpg}{Folio}
+}
+\vspace{8mm}
+       \input{gesamttex/edit/LH035_15_06_059r.tex}
+%      \input{gesamttex/edit/LH035_15_06_059v.tex} %v-text in r
+
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+\chapter[\scriptsize\uppercase{Chronologia. Efficere horologia accurata}]{\uppercase{Chronologia. Efficere horologia accurata}
+\newline\lbrack 2. H\"{a}lfte 1672\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Chronologia. Efficere horologia accurata \lbrack 2. H\"{a}lfte 1672\rbrack 
+%\newline \href{http://leibnizviii.bbaw.de/Leibniz_Reihe_8/Chronologia.\%2BEfficere\%2Bhorologia\%2Baccurata/LH035\%252C15\%252C06_058r/index.html}{058r}
+%\href{http://leibnizviii.bbaw.de/pdf/Chronologia.\%2BEfficere\%2Bhorologia\%2Baccurata/LH035\%252C15\%252C06_058r/LH035,15!06_058+ra-11065.jpg}{Folio}
+}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_15_06_058r.tex}
+
+
+\chapter[\scriptsize\uppercase{De horologio elastico}]{\uppercase{De horologio elastico}
+\newline\lbrack 2. H\"{a}lfte 1672\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De horologio elastico \lbrack 2. H\"{a}lfte 1672\rbrack 
+%\newline \href{http://leibnizviii.bbaw.de/Leibniz_Reihe_8/De\%2Bhorologio\%2Belastico/LH035\%252C15\%252C06_062r/index.html}{062r}
+%\href{http://leibnizviii.bbaw.de/pdf/De\%2Bhorologio\%2Belastico/LH035\%252C15\%252C06_062r/LH035,15!06_062+ra-11077.jpg}{Folio}
+}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_15_06_062r.tex}
+%    \input{gesamttex/edit/LH035_15_06_062v.tex} %v-text in 62r
+
+
+\chapter[\scriptsize\uppercase{De ratione efficiendi motus uniformes duorum mobilium}]{\uppercase{De ratione efficiendi motus uniformes duorum mobilium}
+\newline\lbrack 2. H\"{a}lfte 1672\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De ratione efficiendi motus uniformes duorum mobilium \lbrack 2. H\"{a}lfte 1672\rbrack 
+%\newline \href{http://leibnizviii.bbaw.de/Leibniz_Reihe_8/De\%2Bratione\%2Befficiendi\%2Bmotus\%2Buniformes\%2Bduorum\%2Bmobilium/LH035\%252C15\%252C06_061r/index.html}{061r}
+%\href{http://leibnizviii.bbaw.de/pdf/De\%2Bratione\%2Befficiendi\%2Bmotus\%2Buniformes\%2Bduorum\%2Bmobilium/LH035\%252C15\%252C06_061r/LH035,15!06_061+ra-11074.jpg}{Folio}
+}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_15_06_061r.tex}
+
+
+
+\chapter[\scriptsize\uppercase{Quomodo penduli motus magnete effici possit}]{\uppercase{Quomodo penduli motus magnete effici possit}
+\newline\lbrack 2. H\"{a}lfte 1672\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Quomodo penduli motus magnete effici possit \lbrack 2. H\"{a}lfte 1672\rbrack 
+%\newline \href{http://leibnizviii.bbaw.de/Leibniz_Reihe_8/Quomodo\%2Bmotus\%2Bpenduli\%2Bmagnete\%2Beffici\%2Bpossit/LH035\%252C15\%252C06_060r/index.html}{060r} 
+%\href{http://leibnizviii.bbaw.de/pdf/Quomodo\%2Bmotus\%2Bpenduli\%2Bmagnete\%2Beffici\%2Bpossit/LH035\%252C15\%252C06_060r/LH035,15!06_060+ra-11071.jpg}{Folio}
+%\href{http://leibnizviii.bbaw.de/Leibniz_Reihe_8/Quomodo\%2Bmotus\%2Bpenduli\%2Bmagnete\%2Beffici\%2Bpossit/LH035\%252C15\%252C06_060v/index.html}{060v}
+%\href{http://leibnizviii.bbaw.de/pdf/Quomodo\%2Bmotus\%2Bpenduli\%2Bmagnete\%2Beffici\%2Bpossit/LH035\%252C15\%252C06_060v/LH035,15!06_060+va-11073.jpg}{Folio}
+}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_15_06_060r.tex}
+%    \input{gesamttex/edit/LH035_15_06_060v.tex} %60v in 60r
+
+
+
+
+\chapter[\scriptsize\uppercase{Mittel, einen warmen Wind zu machen}]{\uppercase{Mittel, einen warmen Wind zu machen}
+\newline \lbrack September 1672 \textendash\ März 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Mittel, einen warmen Wind zu machen \lbrack September 1672 \textendash\ März 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_04_050v_text2.tex}
+
+
+
+
+\chapter[\scriptsize\uppercase{De horologio absoluto}]{\uppercase{De horologio absoluto sive de motu aequabili pure mechanico Demonstratio geometrica}
+\newline\lbrack Ende 1672 \textendash\ Anfang 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De horologio absoluto sive de motu aequabili pure mechanico Demonstratio geometrica \lbrack Ende 1672 \textendash\ Anfang 1673\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_11_13_009r.tex}
+%    \input{gesamttex/edit/LH035_11_13_009v.tex} in 9r
+
+
+
+\chapter[\scriptsize\uppercase{De horologiis communibus}]{\uppercase{De horologiis communibus}
+\newline\lbrack April \textendash\ Mai 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De horologiis communibus \lbrack April \textendash\ Mai 1673\rbrack 
+%\newline \href{http://leibnizviii.bbaw.de/Leibniz_Reihe_8/De\%2Bhorologiis\%2Bcommunibus/LH038_171r/index.html}{171r}
+%\href{http://leibnizviii.bbaw.de/pdf/De\%2Bhorologiis\%2Bcommunibus/LH038_171r/LH038,_171+ra-07261.jpg}{Folio}
+}
+\vspace{8mm}
+     \input{gesamttex/edit/LH038_171r.tex}
+
+
+
+\chapter[\scriptsize\uppercase{De horologiis pendulis, non tam aequalibus quam creduntur}]{\uppercase{De horologiis pendulis, non tam aequalibus quam creduntur}
+\newline\lbrack April \textendash\ Mai 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De horologiis pendulis, non tam aequalibus quam creduntur \lbrack April \textendash\ Mai 1673\rbrack 
+%\newline \href{http://leibnizviii.bbaw.de/Leibniz_Reihe_8/De\%2Bhorologiis\%2Bpendulis\%252C\%2Bnon\%2Btam\%2Baequalibus\%2Bquam\%2Bcreduntur/LH038_170r/index.html}{170r}
+%\href{http://leibnizviii.bbaw.de/pdf/De\%2Bhorologiis\%2Bpendulis\%252C\%2Bnon\%2Btam\%2Baequalibus\%2Bquam\%2Bcreduntur/LH038_170r/LH038,_170+ra-07258.jpg}{Folio}
+}
+\vspace{8mm}
+    \input{gesamttex/edit/LH038_170r.tex}
+%    \input{gesamttex/edit/LH038_170v.tex} %170v-text in 170r
+
+
+
+\chapter[\scriptsize\uppercase{De motu perpetuo 1}]{\uppercase{De motu perpetuo 1}
+\newline 1674 und Mai 1678}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De motu perpetuo 1 1674 und Mai 1678}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_057r.tex}
+%    \input{gesamttex/edit/LH037_05_057v.tex} % in 57r
+
+
+
+\chapter[\scriptsize\uppercase{De motu perpetuo 2}]{\uppercase{De motu perpetuo 2}
+\newline\lbrack1674\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De motu perpetuo 2 \lbrack1674\rbrack}
+\vspace{8mm}
+%    \input{gesamttex/edit/LH037_05_058r.tex} % in 59v
+%    \input{gesamttex/edit/LH037_05_058v.tex} % in 59v
+%    \input{gesamttex/edit/LH037_05_059r.tex} % leer
+    \input{gesamttex/edit/LH037_05_059v.tex}
+
+
+
+
+
+\chapter[\scriptsize\uppercase{Horologium ventaneum}]{\uppercase{Horologium ventaneum}
+\newline\lbrack Anfang 1674 \textendash\ Anfang 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Horologium ventaneum \lbrack Anfang 1674 \textendash\ Anfang 1675\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037,05_092r-093r.tex}
+
+
+\chapter[\scriptsize\uppercase{Technische Zeichnungen}]{\uppercase{Technische Zeichnungen}
+\newline\lbrack Dezember 1674\ \textendash\ April 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Technische Zeichnungen
+ \lbrack Dezember 1674\ \textendash\ April 1675\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_02_01_273.tex}
+
+
+\chapter[\scriptsize\uppercase{Calculus logarithmicus memorabilis}]{\uppercase{Calculus logarithmicus memorabilis}
+\newline 1675 und Mai 1678}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Calculus logarithmicus memorabilis 1675 und Mai 1678}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_05_23_14r.tex} % 14r und 14v
+
+
+
+
+
+\chapter[\scriptsize\uppercase{Sur les eaux courantes}]{\uppercase{Sur les eaux courantes}
+\newline \lbrack Ende November \textendash\ Ende Dezember 1675\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Sur les eaux courantes \lbrack Ende November \textendash\ Ende Dezember 1675\rbrack}
+\vspace{8mm}
+   \input{gesamttex/edit/LH037_03_086r_intro.tex}
+
+\vspace{8mm}
+%\newpage
+\section[\scriptsize\uppercase{La vitesse des eaux courantes}]{\uppercase{La vitesse des eaux courantes}}%
+\addcontentsline{toc}{section}{\thesection\enskip La vitesse des eaux courantes}
+\vspace{4mm}
+       \input{gesamttex/edit/LH037_03_086r.tex}
+%    \input{gesamttex/edit/LH037_03_086v.tex} % in 86r
+
+%\end{document}
+%\newpage
+\vspace{8mm}
+\section[\scriptsize\uppercase{Barrages des eaux courantes 1}]{\uppercase{Barrages des eaux courantes 1}}
+\addcontentsline{toc}{section}{\thesection\enskip Barrages des eaux courantes 1}
+\vspace{4mm}
+    \input{gesamttex/edit/LH037_03_087r.tex}
+
+%\newpage
+\vspace{8mm}
+\section[\scriptsize\uppercase{Barrages des eaux courantes 2}]{\uppercase{Barrages des eaux courantes 2}}%
+\addcontentsline{toc}{section}{\thesection\enskip Barrages des eaux courantes 2}
+\vspace{4mm}
+    \input{gesamttex/edit/LH038_024r.tex}
+%    \input{gesamttex/edit/LH038_024v.tex} % leere Seite
+
+%\newpage
+\vspace{8mm}
+\section[\scriptsize\uppercase{Savoir la rapidité de l'eau}]{\uppercase{Savoir la rapidité de l'eau}}%
+\addcontentsline{toc}{section}{\thesection\enskip Savoir la rapidité de l'eau}
+\vspace{4mm}
+    \input{gesamttex/edit/LH037_03_088r.tex}
+
+
+
+\chapter[\scriptsize\uppercase{Aus und zu einem Manuskript Ole R{\O}mers}]{\uppercase{Aus und zu einem Manuskript Ole R{\O}mers}
+\newline Dezember 1675}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu einem Manuskript Ole R{\o}mers  Dezember 1675}
+\vspace{8mm}
+    \input{gesamttex/edit/LH037_05_216r.tex}
+    \input{gesamttex/edit/LH037_05_216v.tex}
+    
+    % Frühere Überschrift: Notes sur des sujets divers
+\chapter[\scriptsize\uppercase{Notizen zu unterschiedlichen Gegenständen}]{\uppercase{Notizen zu unterschiedlichen Gegenständen}
+\newline\lbrack Oktober \textendash\ Dezember 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Notizen zu unterschiedlichen Gegenständen \lbrack Oktober \textendash\ Dezember 1676\rbrack}
+\vspace{8mm}
+    \input{gesamttex/edit/LH035_12_02_150r.tex}
+
+
+
+
+
+
+\newpage
+
+
+
+
+
+%\endnumbering
+
+
+
+%  V E R Z E I C H N I S S E
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{Verzeichnisse}]{\large\protect\textso{VERZEICHNISSE}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\renewcommand*{\chapterpagestyle}{empty}
+ 	
+ 				    			    
+% PERSONENVERZEICHNIS
+%\clearscrheadfoot
+%\chead{\headmark}
+%\automark[personen]{personen}
+%\ohead[\pagemark]{\pagemark}
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+\small
+\setindexpreamble{\vspace{-1.8em}\begin{center}\uppercase{\normalsize Personen}\end{center}\vskip0.5ex%
+Kaiser werden unter dem Stichwort Kaiser mit nachfolgendem Namen, 
+P\"{a}pste unter dem Stichwort Papst mit nachfolgendem Namen aufgef\"{u}hrt. 
+Andere Regenten werden unter dem Namen des von ihnen regierten Staates gelistet. 
+Bei diesen Personengruppen sind die Jahreszahlen Regierungszeiten, bei allen anderen Lebensdaten. 
+Bei Autoren ist zus\"{a}tzlich das Schriftenverzeichnis heranzuziehen. 
+Es wird nach Seiten zitiert.\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Personen}
+\markleft{\scriptsize\uppercase{Verzeichnisse}}
+\printindex{Namensregister}{\small personen}
+
+
+
+% SChRIFTENVERZEICHNIS
+
+\setcounter{page}{781}
+\clearscrheadfoot
+\chead{\sc{schriften}}
+\ohead[\pagemark]{\pagemark}
+\begin{multicols}{2}[\footnotesize\addchap*{\hfill SCHRIFTEN\hfill}
+\addcontentsline{toc}{chapter}{\enskip Schriften}
+\vspace{15pt}
+Das Schriftenverzeichnis enth\"{a}lt die Literatur der Leibnizzeit und die in den Erl\"{a}uterungen 
+benutzte Literatur. Es wird nach Seiten zitiert.\\]
+\setlength{\columnseprule}{0.4pt}					
+\renewcommand*{\chapter}{\OrigChapter}
+%\bibliographystyle{alphadin}
+\bibliographystyle{leibniz8bib}
+\footnotesize
+\bibliography{l8-2bib}{}
+%\bibliography{l8-2bib}{}
+\end{multicols}    
+\newpage
+\setcounter{page}{797}
+% SACHVERZEICHNIS
+\setindexpreamble{\vspace{-1.8em}\begin{center}\uppercase{\normalsize SACHEN}\end{center}\vskip0.5ex%
+Eintr\"{a}ge in dieses Verzeichnis erfolgen in der jeweils von Leibniz verwendeten Sprache. 
+Die Reihenfolge der Eintr\"{a}ge ist rein alphabetisch bestimmt, 
+eine systematische Gliederung findet nicht statt. 
+Es wird nach Seiten zitiert.\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Sachen}
+\printindex{Sachverzeichnis}{sachen} 
+
+\setcounter{page}{817}
+% ORTSVERZEICHNIS
+\setindexpreamble{\vspace{-1.8em}\begin{center}\uppercase{\normalsize Orte}\end{center}\vskip0.5ex%
+Dieses Verzeichnis listet alle von Leibniz genannten Ortsnamen in ihrer deutschen Version auf. 
+Es wird nach Seiten zitiert.\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Orte}
+\printindex{Ortsregister}{orte}  
+
+       
+       
+% FUNDSTELLENVERZEICHNIS
+\clearscrheadfoot
+\chead{\sc{fundstellen}}
+\ohead[\pagemark]{\pagemark}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\setindexpreamble{\vskip4ex%
+% ???? 
+\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Fundstellen}
+    \input{gesamttex/edit/Handschriften.tex}
+       
+
+% KONKORDANZEN
+\clearscrheadfoot
+\chead{\sc{konkordanzen}}
+\ohead[\pagemark]{\pagemark}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\setindexpreamble{\vskip4ex%
+% ???? 
+\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Konkordanzen}
+    \input{gesamttex/edit/Konkordanzen.tex}
+       
+
+% SIGLENVERZEICHNIS
+\clearscrheadfoot
+\chead{\sc{siglen, abkürzungen, zeichen}}
+\ohead[\pagemark]{\pagemark}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\setindexpreamble{\vskip4ex%
+\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Siglen, Abkürzungen, Zeichen}
+    \input{gesamttex/edit/Siglen.tex}
+
+
+% BERICHTIGUNGEN
+\clearscrheadfoot
+\chead{\sc{berichtigungen}}
+\ohead[\pagemark]{\pagemark}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\setindexpreamble{\vskip4ex%
+\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Berichtigungen und Ergänzungen}
+    \input{gesamttex/edit/Berichtigungen.tex}
+
+
+
+
+% ENDE DER VERZEICHNISSE
+
+\endnumbering
+\end{document}
+\endinput
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch36" n="36"><head>36.
+DU FROTTEMENT. ESSAIS GÉOMÉTRIQUES EN FAIT DE MÉCANIQUE</head>
+<pb type="VIII_2" n="342"/><head>[Ende 1675]</head><div type="contents"><p xml:id="Ch36.p1" rendition="#noindent"><hi rendition="#smaller">Bei den folgenden Stücken N. 36<hi rendition="#sub">1</hi> und 36<hi rendition="#sub">2</hi> handelt es sich um zwei verschiedene Bearbeitungen eines Textes,
+welcher die Resultate der vorhergehenden Untersuchungen über das mechanische Phänomen der Reibung darstellen soll.
+Der Zusammenhang der zwei Stücke ist eindeutig:
+Der erste Teil von N. 36<hi rendition="#sub">2</hi> ist eine leicht veränderte Abschrift des ersten Teils von N. 36<hi rendition="#sub">1</hi>.
+Die einleitenden Überlegungen zur praktischen Bedeutung einer Berechnung der Reibung knüpfen dort vornehmlich an N. 32 an;
+die Aufstellung der Theoreme über die gleichmäßige Verzögerung eines sich in einem widerstehenden Medium bewegenden Körpers geht indessen unmittelbar auf N. 34 zurück.
+Der zweite sowie der dritte Teil von N. 36<hi rendition="#sub">1</hi> entfallen in N. 36<hi rendition="#sub">2</hi>
+(der zweite Teil von N. 36<hi rendition="#sub">1</hi> ist allerdings die unmittelbare Vorlage von N. 37).
+Das Stück N. 36<hi rendition="#sub">2</hi> trägt Leibniz’ eigenhändigen Vermerk <hi rendition="#i">Hyeme 1675</hi> und weist dasselbe Wasserzeichen wie N. 36<hi rendition="#sub">1</hi> auf.
+Daher wird N. 36 insgesamt auf das Ende 1675 datiert.<!--  \hack{\newline\indent} 
+     \hackfor{\par}--></hi></p><p xml:id="Ch36.p2"><hi rendition="#smaller">Der zweite Teil von N. 36<hi rendition="#sub">2</hi> muss allerdings nach dem Pariser Aufenthalt entstanden sein.
+Leibniz bemerkt dort nämlich, dass die bewegende Kraft eines Körpers nicht nach dessen bloßer Geschwindigkeit einzuschätzen sei,
+sondern nach dem Quadrat seiner Geschwindigkeit (S. <ref corresp="L_section_362.xml#_35_09_11_004r_vis-1"/>).
+Eine solche Bemerkung kann erst nach Januar 1678 verfasst worden sein
+(siehe <ref corresp="#bib_01056"/><hi rendition="#k">G.W. Leibniz</hi>, <hi rendition="#i">La réforme de la dynamique: De corporum concursu (1678) et autres textes inédits</hi>, hrsg. von <hi rendition="#k">M. Fichant</hi>, Paris 1994).<!--  \hack{\newline\indent} 
+     \hackfor{\par}--></hi></p><p xml:id="Ch36.p3"><hi rendition="#smaller">In seinem 1689 in den <ref corresp="#bib_01023_missing"><!--The bibliography entry "01023" seems to be missing.--></ref><hi rendition="#i">Acta eruditorum</hi> (Januarheft, S. 38-47) veröffentlichten
+<ref corresp="#bib_01024"/>„Schediasma de resistentia medii et motu projectorum gravium in medio resistente” erwähnt Leibniz,
+er habe während seines Aufenthaltes in Paris<index indexName="Ortsregister"><term><hi rendition="#smaller">Paris</hi></term></index> der königlichen Akademie der Wissenschaften ähnliche Überlegungen mitgeteilt
+(<ref corresp="#bib_01025_missing"><!--The bibliography entry "01025" seems to be missing.--></ref><hi rendition="#i">LMG</hi> VI, S. 136).
+Und in einer handschriftlichen Vorlage zum „Schediasma”,
+welche die Überschrift <ref corresp="#bib_01026_missing"><!--The bibliography entry "01026" seems to be missing.--></ref><hi rendition="#i">De resistentia medii absoluta</hi> trägt,
+vermerkt er:
+<hi rendition="#i">Haec jam pleraque habentur in scheda mea Parisiis<index indexName="Ortsregister"><term><hi rendition="#i #smaller">Paris</hi></term></index> scripta 1675 et Academiae Regiae communicata.</hi>
+(LH XXXV 9, 5 Bl. 26 r<hi rendition="#sup">o</hi>)
+Die Vermutung liegt nahe, dass es sich bei den Stücken N. 36<hi rendition="#sub">1</hi> und 36<hi rendition="#sub">2</hi> um die von Leibniz erwähnte <hi rendition="#i">scheda</hi> handelt oder um Vorlagen dazu.
+Es gilt allerdings zu bemerken,
+dass sich ein ausdrücklicher Hinweis auf Leibniz’ Mitteilung
+weder in <ref corresp="#bib_00295"/><hi rendition="#k">B. de Fontenelle</hi>, <hi rendition="#i">Histoire de l’Académie Royale des Sciences</hi>, Paris 1733,
+noch in <ref corresp="#bib_01027"/><hi rendition="#k">J.B. du Hamel</hi>, <hi rendition="#i">Regiae Scientiarum Academiae Historia</hi>, 2. Ausgabe, Paris 1721,
+finden lässt.
+Siehe hierzu <ref corresp="#bib_01028"/><hi rendition="#k">E.J. Aiton</hi>, „Leibniz on Motion in a Resisting Medium”, <hi rendition="#i">Archive for History of Exact Sciences</hi> 9 (1972), S. 285, Anm. 9.</hi></p></div><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_361.xml" xpointer="Ch36.S1" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_362.xml" xpointer="Ch36.S2" parse="xml"/></div></body>
+  </text>
+</TEI>

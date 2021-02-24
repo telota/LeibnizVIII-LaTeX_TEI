@@ -1,0 +1,3850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-09" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="index" xml:id="Chx3_1">
+    <pb type="VIII_1" n="655"/><head rendition="#smaller">SACHVERZEICHNIS</head>
+<!--  \hack{
+} 
+     \hackfor{
+\printindex{Sachverzeichnis}{SACHVERZEICHNIS}
+}-->    
+    
+    <p xml:id="Chx3_2"><hi rendition="#smaller">Einträge in dieses Verzeichnis erfolgen in der jeweils von Leibniz verwendeten Sprache.
+Die Reihenfolge der Einträge ist rein alphabetisch bestimmt,
+eine systematische Gliederung findet nicht statt.
+Es wird nach Seiten zitiert. Kursive Seitenzahlen verweisen auf den Apparat-Teil.</hi></p>
+<!--  \hack{\addchap*{\hfillSACHVERZEICHNIS\hfill}} -->    
+  
+    
+    <list>
+      <item>
+        <hi rendition="#smaller">batteau, 584, 585</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cauda cometae, 202</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">celeritas,</hi> <hi rendition="#i #smaller">530</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">meridianus, 44</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">telescopium, 141</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vuide,</hi> <hi rendition="#i #smaller">493</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">abeel, 620</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acceleratio,</hi> <hi rendition="#i #smaller">261</hi><hi rendition="#smaller">, 283, 284, 506–508, 521, 522,</hi>
+<hi rendition="#i #smaller">522</hi><hi rendition="#smaller">, 535, 538, 539</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acetum, 13, 281, 284</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">achter–kasteel, 622</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">achterschip, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">achtersteven, 609, 626</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">achterzeil, 606</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">acus, 10, 31, 36, 38, 44, 53, 70, 71, 251,</hi>
+<lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">aiguille aimantée</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">inclinatoria,</hi> <hi rendition="#i #smaller">71</hi><hi rendition="#smaller">, 72</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">magnetica, 107,</hi> <hi rendition="#i #smaller">107</hi><hi rendition="#smaller">, 113,</hi> <hi rendition="#i #smaller">113–115</hi><hi rendition="#smaller">,</hi>
+<hi rendition="#i #smaller">119</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">121</hi><hi rendition="#smaller">, 123,</hi> <hi rendition="#i #smaller">123–125</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">inclinatoria, 68, 70, 71, 116</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">magnetica, 10, 57, 62, 70, 72, 108, 112–115, 117, 121,
+123–125, 188, 200, 251</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">nautica, 115</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Admiral, 627</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aeolipilae, 35, 335</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aequator, 26, 44, 47, 70, 75, 78, 82,</hi> <hi rendition="#i #smaller">82</hi><hi rendition="#smaller">, 83, 84, 89,
+91, 92, 107, 189, 250, 262</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aequilibrium, 34, 70, 259, 299, 308,</hi> <hi rendition="#i #smaller">308</hi><hi rendition="#smaller">, 311, 342,
+367, 377,</hi> <hi rendition="#i #smaller">377</hi><hi rendition="#smaller">, 391, 392, 396, 565, 566</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aether,</hi> <hi rendition="#i #smaller">263</hi><hi rendition="#smaller">, 270, 299, 311, 342,</hi> <hi rendition="#i #smaller">346</hi><hi rendition="#smaller">,</hi>
+<hi rendition="#i #smaller">462</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">aiguille aimantée, 93–95,</hi> <lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">acus</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">altitudo sideris, 66, 77</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">amalgama, 301</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">amour des particules, 492</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">anatomica, 4, 11</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ancre, 621</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Andromeda, 200</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">angle</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">d’incidence, 236, 580,</hi> <lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">angolo di incidenza,</hi>
+<lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">angulus incidentiae</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">de réflexion, 580,</hi> <lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">angulus reflexionis</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">angolo</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">di incidenza, 148,</hi> <lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">angle d’incidence,</hi>
+<lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">angulus incidentiae</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">di rifrazione, 148,</hi> <lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">angulus refractionis</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">angulus</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">directionis, 57</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">flexionis, 57</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">directionis, 57–59</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">flexionis, 57–59</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">incidentiae, 141, 144, 145, 180, 183–186, 190,</hi>
+<lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">angle d’incidence,</hi>
+<lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">angolo di incidenza</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">inclinationis, 195, 197</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">reflexionis, 183, 185, 186,</hi>
+<lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">angle de réflexion</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">refractionis, 141, 144, 193, 197, 207,</hi>
+<lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">angolo di rifrazione</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">visorius, 187, 188</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">anima sensibilis, 265</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">animal, 251, 254, 255, 264</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Anker, 608, 611, 614, 621, 625, 630, 631</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">anker–stokken, 621</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Ankerstock, 631</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">antipodes, 265, 499</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">antlia, 305,</hi> <hi rendition="#i #smaller">305</hi><hi rendition="#smaller">, 306, 307,</hi> <hi rendition="#i #smaller">307–309</hi><hi rendition="#smaller">,
+310, 311, 321, 325,</hi> <hi rendition="#i #smaller">331</hi><hi rendition="#smaller">, 335, 337, 342, 351,</hi>
+<hi rendition="#i #smaller">351</hi><hi rendition="#smaller">, 352,</hi> <hi rendition="#i #smaller">572</hi><hi rendition="#smaller">
+</hi>
+        <list>
+          <item>
+            <hi rendition="#smaller">pneumatica,</hi> <hi rendition="#i #smaller">292</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">294</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">pneumatica, 291, 303</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">aphelium, 267</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">apogaeum, 267–269, 272</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aqua distillata, 285</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">arc en ciel, 580</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">arcbaleste, 102</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">arcus, 81, 203, 516</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">argentum, 286, 301,</hi> <hi rendition="#i #smaller">301</hi><hi rendition="#smaller">
+</hi>
+        <list>
+          <item>
+            <hi rendition="#smaller">vivum, 252, 279, 281</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Aries, 268, 269</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ars Musaica, 17</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">astrum, 263, 266, 272</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">atmosphère,</hi> <hi rendition="#i #smaller">441</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">463</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">atmosphère, 439–442, 453, 454, 458, 461, 462, 467, 486,
+490, 492, 498–501</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">atmosphaera, 200, 264, 297,</hi> <hi rendition="#i #smaller">297</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">299</hi><hi rendition="#smaller">, 300,
+326,</hi> <hi rendition="#i #smaller">353</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">382</hi><hi rendition="#smaller">, 384,</hi> <hi rendition="#i #smaller">389</hi><hi rendition="#smaller">,
+394, 396,</hi> <hi rendition="#i #smaller">408</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">atomus, 142</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">attractio,</hi> <hi rendition="#i #smaller">305</hi><hi rendition="#smaller">, 327, 388</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">aurum, 252, 271, 273, 286, 301, 560, 590</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">potabile, 14</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">automatum, 507</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">axis</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">mundi, 97</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">opticus, 133, 135, 137, 141–143</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">speculi, 191</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">bâtiment des vaisseaux, 612</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bâtiment des vaisseaux, 612, 616</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">balistica, 590</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">baromètre,</hi> <hi rendition="#i #smaller">429</hi><hi rendition="#smaller">, 465,</hi> <hi rendition="#i #smaller">465</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">baromètre,</hi> <lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">barometrum u. baroscopium</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">barometrum, 277, 296,</hi> <hi rendition="#i #smaller">308</hi><hi rendition="#smaller">, 336, 338, 339, 364,</hi>
+<hi rendition="#i #smaller">364</hi><hi rendition="#smaller">, 380,</hi> <hi rendition="#i #smaller">381</hi><hi rendition="#smaller">, 384,</hi> <hi rendition="#i #smaller">384</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">baroscopium, 319,</hi> <hi rendition="#i #smaller">324</hi><hi rendition="#smaller">, 325, 337, 339,</hi> <hi rendition="#i #smaller">340</hi><hi rendition="#smaller">,
+344, 351,</hi> <hi rendition="#i #smaller">353</hi><hi rendition="#smaller">, 359, 361, 372, 395,</hi>
+<hi rendition="#i #smaller">395</hi><hi rendition="#smaller">, 396,</hi> <hi rendition="#i #smaller">399</hi><hi rendition="#smaller">, 403,</hi>
+<lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">barométre u. barometrum</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">Torricellianum,</hi> <hi rendition="#i #smaller">353</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">382</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">Torricellianum, 326, 352, 381</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Bastaerd-Pijn, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">batteau, 584</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Besan, 606, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">binnenwerk, 610, 615, 618</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">blaasbalg, 602</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Blei, 628</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Blitz, 8</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Boegspriet, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">bois, 615–617, 621</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">de Biscaye, 617</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">de cyprès, 619</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">meridianal, 617</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">septentrional, 617</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">bomen kappen, 621</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Boot, 627</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">botanica, 4, 11</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Bramstenge, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Brasilien–hout, 616</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">breemshout, 616</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">caeruleum, 17</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">calor, 266, 279, 280, 283,</hi> <hi rendition="#i #smaller">299</hi><hi rendition="#smaller">, 300, 343,</hi> <hi rendition="#i #smaller">343</hi><hi rendition="#smaller">,
+344, 384,</hi> <hi rendition="#i #smaller">384</hi><hi rendition="#smaller">, 590</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">camera obscura, 103, 139, 140, 273</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Campesche hout, 616</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">camphre, 623</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Cancer, 199, 268</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Cannabis sativa, 11</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Capricornus, 199, 200, 202, 268, 269</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Carniol, 19</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">catena, 559</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">catoptrica, 135</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cauda cometae, 201, 202, 270</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">celeritas, 24, 27–29, 31, 40, 44, 45, 47, 62,</hi> <hi rendition="#i #smaller">107</hi><hi rendition="#smaller">,
+108, 110,</hi> <hi rendition="#i #smaller">121</hi><hi rendition="#smaller">, 126, 127, 176, 180–184, 507,
+509,</hi> <hi rendition="#i #smaller">529</hi><hi rendition="#smaller">, 530, 531</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">centre de gravité, 289,</hi> <lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">centrum gravitatis</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">centrum</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">verticitatis, 58</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">gravitatis, 623, 624,</hi> <lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">centre de gravité</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">verticitatis, 58, 59</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">chêne, 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chaleur, 579</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">choc, 439,</hi> <hi rendition="#i #smaller">439</hi><hi rendition="#smaller">, 480,</hi> <hi rendition="#i #smaller">489</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">chronometrum, 278</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chylus, 12</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">chymica, 4, 13</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cinnabaris, 301</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cipres, 620</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">circulatio</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">terrae, 332</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">universalis, 311, 321, 342</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">circulus parallelus,</hi> <hi rendition="#i #smaller">44</hi><hi rendition="#smaller">, 47, 70, 73,</hi> <hi rendition="#i #smaller">75</hi><hi rendition="#smaller">,
+82, 83, 89, 91,</hi> <hi rendition="#i #smaller">107</hi><hi rendition="#smaller">, 108,</hi> <hi rendition="#i #smaller">108</hi><hi rendition="#smaller">, 109,
+117,</hi> <hi rendition="#i #smaller">117</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">clepsydra, 335, 573,</hi> <hi rendition="#i #smaller">573</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">575</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">cochlea, 281, 315, 318, 348, 588</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">color, 195, 251, 252, 263,</hi> <lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">couleur</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">iridis , 195</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">cometa, 200–203, 263, 265, 269–271</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">crinitus, 200</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">compas</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">d’optique, 231</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">perspectif, 232</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">compressio,</hi> <hi rendition="#i #smaller">316</hi><hi rendition="#smaller">, 332, 363, 373,</hi> <hi rendition="#i #smaller">373, 374</hi><hi rendition="#smaller">, 377,
+397, 399, 401, 402,</hi> <hi rendition="#i #smaller">402</hi><hi rendition="#smaller">, 403–406,</hi>
+<hi rendition="#i #smaller">406</hi><hi rendition="#smaller">, 407,</hi> <hi rendition="#i #smaller">407</hi><hi rendition="#smaller">, 408–410,</hi>
+<hi rendition="#i #smaller">412</hi><hi rendition="#smaller">, 513,</hi> <hi rendition="#i #smaller">528</hi><hi rendition="#smaller">, 529,</hi> <hi rendition="#i #smaller">529</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">conatus, 70, 171, 175,</hi> <hi rendition="#i #smaller">175</hi><hi rendition="#smaller">, 176, 178,</hi> <hi rendition="#i #smaller">178</hi><hi rendition="#smaller">,
+179, 201, 342, 355, 362,</hi> <hi rendition="#i #smaller">374</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">377</hi><hi rendition="#smaller">,
+378,</hi> <hi rendition="#i #smaller">378</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">380</hi><hi rendition="#smaller">, 469, 529,</hi>
+<hi rendition="#i #smaller">529</hi><hi rendition="#smaller">
+</hi>
+        <list>
+          <item>
+            <hi rendition="#smaller">simplex, 174,</hi> <hi rendition="#i #smaller">175</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">naturae, 333</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">congruence des particules, 492</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">conspicillum, 164</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">corps,</hi> <hi rendition="#i #smaller">433</hi><hi rendition="#smaller">, 443, 444, 446, 448, 450,</hi> <hi rendition="#i #smaller">450</hi><hi rendition="#smaller">,
+451, 452,</hi> <hi rendition="#i #smaller">452</hi><hi rendition="#smaller">, 454</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">polis,</hi> <hi rendition="#i #smaller">473</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">purgé, 469</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">sensible, 476, 496</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">solide,</hi> <hi rendition="#i #smaller">453</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">472</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">485</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">fluide, 470</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">purgé, 468, 472, 473, 478</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">sensible, 426, 438, 444, 454, 459, 473, 490–492, 495, 501</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">solide, 449, 451, 453, 454, 467, 470, 473, 474, 476, 496</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">corpus</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">elasticum,</hi> <hi rendition="#i #smaller">378</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">410</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">elasticum, 372, 377, 378, 410</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">sensibile, 292</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">solidum, 315, 363</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">cortex Peruvianum, 16</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">couleur, 580,</hi> <lb/><hi rendition="#i #smaller">s.a.</hi> <hi rendition="#smaller">color</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">couper les arbres, 616</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">crosterzeil, 623</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cucurbita, 253–255</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">cuprum, 13, 286</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">declinaison du soleil, 93, 95</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">declinatio, 24,</hi> <hi rendition="#i #smaller">25</hi><hi rendition="#smaller">, 28, 29, 36, 37, 40, 42, 43, 53, 57,
+72,</hi> <hi rendition="#i #smaller">72</hi><hi rendition="#smaller">, 86, 113, 114, 118,</hi> <hi rendition="#i #smaller">118</hi><hi rendition="#smaller">, 119,</hi>
+<hi rendition="#i #smaller">119</hi><hi rendition="#smaller">, 123, 124,</hi> <hi rendition="#i #smaller">124, 125</hi><hi rendition="#smaller">, 126</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">Australis, 10</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">Borealis, 10</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">solaris, 67</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">dennehout, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">dens, 577</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">densitas, 566</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">detrimentum, 508</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">deux placques, 420, 421, 433, 440,</hi> <hi rendition="#i #smaller">453</hi><hi rendition="#smaller">, 466, 467,</hi>
+<hi rendition="#i #smaller">467</hi><hi rendition="#smaller">, 473, 477–480, 489, 493</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Diamant, 10</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">diaphoreticum, 16</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">diarrhoea, 17</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">dioptra, 103</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">dioptrica, 132, 134, 135, 162</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">eau purgée, 414</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ebbenhout, 616</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">échelle, 223, 224</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">échelle</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">de front, 226</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">de front, 224</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">échelle</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">fuyante, 226</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">fuyante, 223</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">eclipsis, 239, 268, 272</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">effectus,</hi> <hi rendition="#i #smaller">377</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">effluvium corporum, 18</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">effort, 469, 470</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Eiche, 19</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Eichenholz, 623</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Eichenschiff, 623</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">eik, 615, 617, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">eikehout, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">eipen hout, 617</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Eisen, 614</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Eisennagel, 614</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">elasticum, 365,</hi> <hi rendition="#i #smaller">365</hi><hi rendition="#smaller">, 372</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">elater,</hi> <hi rendition="#i #smaller">125</hi><hi rendition="#smaller">, 171, 181,</hi> <hi rendition="#i #smaller">181</hi><hi rendition="#smaller">, 182, 184, 258,
+279, 298,</hi> <hi rendition="#i #smaller">299</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">340</hi><hi rendition="#smaller">, 364, 385, 391,
+565</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">elaterium, 278,</hi> <hi rendition="#i #smaller">296</hi><hi rendition="#smaller">, 297, 298,</hi> <hi rendition="#i #smaller">299</hi><hi rendition="#smaller">, 300,</hi>
+<hi rendition="#i #smaller">305</hi><hi rendition="#smaller">, 306, 309, 316–318,</hi> <hi rendition="#i #smaller">319</hi><hi rendition="#smaller">, 320,
+333, 339,</hi> <hi rendition="#i #smaller">341</hi><hi rendition="#smaller">, 342–344,</hi> <hi rendition="#i #smaller">346</hi><hi rendition="#smaller">, 351,
+355, 359–361, 364, 366,</hi> <hi rendition="#i #smaller">366</hi><hi rendition="#smaller">, 368, 369,</hi>
+<hi rendition="#i #smaller">369, 370</hi><hi rendition="#smaller">, 371, 372, 375,</hi> <hi rendition="#i #smaller">375, 376</hi><hi rendition="#smaller">,
+382, 391, 392, 403, 506, 507,</hi> <hi rendition="#i #smaller">511</hi><hi rendition="#smaller">,</hi>
+<hi rendition="#i #smaller">514</hi><hi rendition="#smaller">, 516, 521,</hi> <hi rendition="#i #smaller">521</hi><hi rendition="#smaller">, 531, 565, 576</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">aeris,</hi> <hi rendition="#i #smaller">392</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">aeris, 507, 532</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">elementum, 332</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">elementum Cartesianum, 293</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">elevatio</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">poli, 74,</hi> <hi rendition="#i #smaller">107</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">poli, 28, 44, 46, 70, 79, 81, 82, 84, 89, 116</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">stellae, 400</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">els, 617, 620</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">embolus,</hi> <hi rendition="#i #smaller">305</hi><hi rendition="#smaller">, 306,</hi> <hi rendition="#i #smaller">308</hi><hi rendition="#smaller">, 310, 315–317,
+321, 322, 325,</hi> <hi rendition="#i #smaller">331</hi><hi rendition="#smaller">, 334, 342, 344, 348,
+351, 352, 356,</hi> <hi rendition="#i #smaller">356</hi><hi rendition="#smaller">, 359, 360, 391,</hi>
+<hi rendition="#i #smaller">391</hi><hi rendition="#smaller">, 403, 528, 532,</hi> <hi rendition="#i #smaller">572</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">Engelshout, 617</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ephemeris, 79, 80, 82, 84, 89, 90</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">epistomium, 253–255, 257, 258,</hi> <hi rendition="#i #smaller">308</hi><hi rendition="#smaller">, 309, 314, 329,</hi>
+<hi rendition="#i #smaller">331</hi><hi rendition="#smaller">, 356, 371, 372, 388, 390, 392, 402,
+406–408</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">espace vide, 484</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">expérience de Torricelli, 461, 493</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">experimentum</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">Magdeburgicum, 245,</hi> <hi rendition="#i #smaller">389</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">Torricellianum,</hi> <hi rendition="#i #smaller">343</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">Hugenianum, 312</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">pneumaticum, 291, 324</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">Torricellianum, 289, 301, 306, 307, 309, 320, 329</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">experimentum Torricellianum, 357</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">explosio, 18</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Fenuki, 622</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fer, 434, 468, 469,</hi> <hi rendition="#i #smaller">488</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">fermentatio, 590</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ferrum, 10, 13, 251, 280, 286, 560</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">figurae aequiresistentes, 7</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Flagge, 627</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">flamma, 9, 18</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">vitalis animalium, 18</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Flamme, 13</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">flexibilitas lignorum, 8</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Flotte, 627</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fluide, 478, 480, 483</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">subtil,</hi> <hi rendition="#i #smaller">495</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">subtil, 494, 496</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">fockesteng, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Fockmast, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">focus, 132, 135, 145, 162–165, 191–196, 198, 287</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fok, 606, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">frigor, 279</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">frigus, 282, 283,</hi> <hi rendition="#i #smaller">295</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">299</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">343</hi><hi rendition="#smaller">, 344,
+384</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">froideur, 579</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fuga vacui, 282, 310, 326, 333, 334, 337, 340, 342,</hi>
+<hi rendition="#i #smaller">572</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">funependulum,</hi> <hi rendition="#i #smaller">65</hi><hi rendition="#smaller">, 77</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">funiculus, 309, 320, 326, 329, 330,</hi> <hi rendition="#i #smaller">331</hi><hi rendition="#smaller">, 332,</hi>
+<hi rendition="#i #smaller">340</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">345, 346</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">353</hi><hi rendition="#smaller">,
+355, 356,</hi> <hi rendition="#i #smaller">356</hi><hi rendition="#smaller">, 357, 388, 390,</hi> <hi rendition="#i #smaller">402</hi><hi rendition="#smaller">,
+403</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fuoco, 147</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">fusum, 516,</hi> <hi rendition="#i #smaller">516</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">Gallus Indicus, 12</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Geiken, 605</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">geolid lap, 630</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">geometrica, 5</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">glandula, 12</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">globulus, 60</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">globus</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">artificialis, 116, 117</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">artificialis, 81, 116</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">sulphureus, 264</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">gort–zacken, 614</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gradus, 373</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gradus celeritatis, 530</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gravitas, 25, 39, 60, 71, 250, 262, 296,</hi> <hi rendition="#i #smaller">296</hi><hi rendition="#smaller">, 297, 298,</hi>
+<hi rendition="#i #smaller">299</hi><hi rendition="#smaller">, 300,</hi> <hi rendition="#i #smaller">300</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">305</hi><hi rendition="#smaller">, 306,
+312, 315,</hi> <hi rendition="#i #smaller">318</hi><hi rendition="#smaller">, 319,</hi> <hi rendition="#i #smaller">320</hi><hi rendition="#smaller">, 321,</hi>
+<hi rendition="#i #smaller">330</hi><hi rendition="#smaller">, 339, 342, 345,</hi> <hi rendition="#i #smaller">346</hi><hi rendition="#smaller">, 348, 349,
+351,</hi> <hi rendition="#i #smaller">353</hi><hi rendition="#smaller">, 370, 371, 380, 382, 391, 396,
+567, 568,</hi> <hi rendition="#i #smaller">572</hi><hi rendition="#smaller">, 588</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">aeris,</hi> <hi rendition="#i #smaller">298</hi><hi rendition="#smaller">, 300,</hi> <hi rendition="#i #smaller">303</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">324</hi><hi rendition="#smaller">, 332,
+336,</hi> <hi rendition="#i #smaller">336</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">342</hi><hi rendition="#smaller">, 381,</hi> <hi rendition="#i #smaller">383</hi><hi rendition="#smaller">,
+403</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">individualis, 383</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">massae,</hi> <hi rendition="#i #smaller">329</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">aeris, 255, 257, 296, 297, 300, 321, 326, 333, 338, 340,
+343, 352, 364, 381, 385, 388</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">individualis, 380, 381, 383, 384</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">specifica, 381–385</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">grenehout, 615, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Großmast, 612, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">groote steng, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Grootzeil, 605</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">gubernaculum, 58</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Gunters Linea, 4</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Haartz yzer, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Hafen, 627, 628</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Hans Musiker staal, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">haring, 622</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">harings–fangers, 622</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">haut mal, 16</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hauteur du pole, 93</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Hebel, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Helle–baert staal, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hennep, 604, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hepar, 12, 16</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hirudo, 281</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Hochadmiral, 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Holz, 611, 623, 628–631</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">homunculus, 270</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hoogduytsche Berghout, 616</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">horloge, 95, 96</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">horologium, 24, 28, 31, 32, 38, 45, 46, 54, 60,</hi> <hi rendition="#i #smaller">65, 66</hi><hi rendition="#smaller">,</hi>
+<hi rendition="#i #smaller">74, 75</hi><hi rendition="#smaller">, 77, 79, 80, 82–85, 91, 92, 97,
+199, 200, 251, 256, 257, 278, 516, 565, 573, 576</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">elasticum, 85</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">pendulum, 66</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">annuum, 8</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">arenarium, 590</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">pendulum, 8, 61, 67, 78</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">sciathericum, 97</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">horror vacui, 335</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hout, 602, 615–621,</hi> <hi rendition="#i #smaller">622</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">houte nagels, 618</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hydrargyrus, 169, 278, 279,</hi> <hi rendition="#i #smaller">379</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">hydrographia, 28, 120</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hydrops, 15, 16</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hydrostatica, 9, 317, 369, 372, 567</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">hygrometrum, 278, 363, 384</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ichthyocolla, 19</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ictus, 62, 71, 312, 401</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Iersch hout, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ignis,</hi> <hi rendition="#i #smaller">343</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">ijzer, 604, 607, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">impedimentum, 391</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">impetus, 269, 318, 530</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">impressus, 271</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">inclinatio, 44, 46,</hi> <hi rendition="#i #smaller">53</hi><hi rendition="#smaller">, 62, 63, 71, 72, 107,</hi>
+<hi rendition="#i #smaller">107</hi><hi rendition="#smaller">, 108,</hi> <hi rendition="#i #smaller">112</hi><hi rendition="#smaller">, 113, 116, 117,</hi>
+<hi rendition="#i #smaller">117</hi><hi rendition="#smaller">, 125, 195, 207, 400, 401,</hi> <hi rendition="#i #smaller">401</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">incrementum</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">virium,</hi> <hi rendition="#i #smaller">509</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">celeritatis, 522</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">virium, 506, 507, 510, 511</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">instrument pour niveller, 579, 580</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">instrumentum</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">catadioptricum, 6</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">inclinationum, 322, 399, 402</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">passuum, 121</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">sumendi angulum, 5</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">iris, 208</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">isoptrica, 132, 134</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Jacht, 604, 605</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Jovis, 90, 188, 200, 203, 205, 273–276</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Jupiter, 104, 262, 264, 273, 274</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Käse, 17</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ketting pomp, 614</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Kiel, 602, 607, 612, 613, 625, 626</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">kiel, 609, 613, 618, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">king’s evil, 15</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Kitt, 17</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Klaue, 630, 631</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">klauw, 631</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Klaverblat staal, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Kochsgereitschaft, 611</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">koers, 625</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">kolen, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">kolzem, 609, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Kompass, 31, 32</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">koopvaardijschip, 627</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Krötnstein, 12</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Kriegsschiff, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">krijt, 628</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">kromhout, 615, 616</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">laminae politae, 292,</hi> <hi rendition="#i #smaller">292</hi><hi rendition="#smaller">, 296–298,</hi> <hi rendition="#i #smaller">303</hi><hi rendition="#smaller">, 304,</hi>
+<hi rendition="#i #smaller">304, 305</hi><hi rendition="#smaller">, 306,</hi> <hi rendition="#i #smaller">309, 310</hi><hi rendition="#smaller">, 311,</hi>
+<hi rendition="#i #smaller">313</hi><hi rendition="#smaller">, 314, 315, 340</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lapis</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">bononiensis, 251</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">Butleri, 15</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">vesicae, 15</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Lärchenholz, 628</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">larix, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">latitude, 95,</hi> <hi rendition="#i #smaller">95</hi><hi rendition="#smaller">, 96</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">latitudo, 25, 28, 37, 38, 40, 44–46, 67,</hi> <hi rendition="#i #smaller">67</hi><hi rendition="#smaller">, 68,</hi>
+<hi rendition="#i #smaller">68</hi><hi rendition="#smaller">, 71, 72,</hi> <hi rendition="#i #smaller">72</hi><hi rendition="#smaller">, 74,</hi> <hi rendition="#i #smaller">75</hi><hi rendition="#smaller">,
+78–81,</hi> <hi rendition="#i #smaller">82</hi><hi rendition="#smaller">, 84–87, 89, 97,</hi> <hi rendition="#i #smaller">107</hi><hi rendition="#smaller">, 112,</hi>
+<hi rendition="#i #smaller">112</hi><hi rendition="#smaller">, 116,</hi> <hi rendition="#i #smaller">119</hi><hi rendition="#smaller">, 125</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Leder, 19</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lens, 133, 135, 138–141,</hi> <hi rendition="#i #smaller">141</hi><hi rendition="#smaller">, 142, 144–146, 162,
+194–198, 204, 279, 281</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">circularis, 162</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">objectiva, 197</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">ocularis, 195, 198</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">pandocha, 135</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">sphaerica, 137, 198</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">levitas, 250</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">corporum, 18</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">lex</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">refractionis,</hi> <hi rendition="#i #smaller">170</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">radiis, 207</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">refractionis, 168, 173, 207</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">libra, 268, 269</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">limax, 281</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">linde, 617, 620</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lindehout, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">linea</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">navigationis, 58, 59,</hi> <hi rendition="#i #smaller">59</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">aequinoctialis, 70</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">directionis, 58</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">navigationis, 59</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">lingula magnetica, 251</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">liqueur, 433, 443, 444, 447,</hi> <hi rendition="#i #smaller">447</hi><hi rendition="#smaller">, 448, 450, 453,</hi>
+<hi rendition="#i #smaller">453</hi><hi rendition="#smaller">, 454,</hi> <hi rendition="#i #smaller">454</hi><hi rendition="#smaller">, 455, 456, 459</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">purgée, 419,</hi> <hi rendition="#i #smaller">447</hi><hi rendition="#smaller">, 463</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">purgée, 430, 463, 467, 496</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">purgée, 420, 423, 426, 432–434, 438, 439, 441, 442,
+446, 447, 453, 454, 458, 461, 463, 464, 468, 469, 487,
+489, 492–494, 498</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">liquor, 369,</hi> <hi rendition="#i #smaller">369</hi><hi rendition="#smaller">, 370,</hi> <hi rendition="#i #smaller">370</hi><hi rendition="#smaller">, 371,</hi> <hi rendition="#i #smaller">371</hi><hi rendition="#smaller">,
+372, 389, 391,</hi> <hi rendition="#i #smaller">391</hi><hi rendition="#smaller">, 392, 396, 400, 530</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">purgatus, 295,</hi> <hi rendition="#i #smaller">305</hi><hi rendition="#smaller">, 315, 362</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">purgatus, 296, 300, 315</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">locus sideris, 79, 80</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">logarithmus,</hi> <hi rendition="#i #smaller">4</hi><hi rendition="#smaller">, 5</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">longitude, 95,</hi> <hi rendition="#i #smaller">95</hi><hi rendition="#smaller">, 96</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">longitudo, 24, 25, 28, 30, 33, 34, 37–40, 44–48, 55, 58,
+60, 61, 65, 67,</hi> <hi rendition="#i #smaller">67</hi><hi rendition="#smaller">, 68,</hi> <hi rendition="#i #smaller">68</hi><hi rendition="#smaller">, 72, 74,</hi>
+<hi rendition="#i #smaller">75</hi><hi rendition="#smaller">, 77–83,</hi> <hi rendition="#i #smaller">83</hi><hi rendition="#smaller">, 84–86, 90–92, 99,
+112, 119, 120, 124, 125</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">loxodromia, 43, 44, 49, 51</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Luicksche kolen, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lumen, 136, 170, 171, 173, 175, 191, 251, 263, 264, 279, 293</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">solaris, 193</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">lumière, 236, 237</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">luna,</hi> <hi rendition="#i #smaller">60</hi><hi rendition="#smaller">, 66,</hi> <hi rendition="#i #smaller">66</hi><hi rendition="#smaller">, 77, 79, 84, 86–91, 204,
+250, 251, 263, 265,</hi> <hi rendition="#i #smaller">265</hi><hi rendition="#smaller">, 266–273</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lux, 133, 135, 138,</hi> <hi rendition="#i #smaller">175</hi><hi rendition="#smaller">, 241, 251, 252, 263, 264, 269,
+351</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Ly-Zeils, 605</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">lympha alba, 12</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">màt, 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">maan, 621</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">machina</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">limenereutica,</hi> <hi rendition="#i #smaller">120</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">progressionum, 588</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">arithmetica, 121, 289</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">hydrographica, 125</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">Morlandi, 5</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">progressionum, 587, 589</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">magnes,</hi> <hi rendition="#i #smaller">25</hi><hi rendition="#smaller">, 27–29, 31, 36, 37,</hi> <hi rendition="#i #smaller">37</hi><hi rendition="#smaller">, 38–40,
+43, 44,</hi> <hi rendition="#i #smaller">44</hi><hi rendition="#smaller">, 47, 48,</hi> <hi rendition="#i #smaller">48</hi><hi rendition="#smaller">, 49,</hi>
+<hi rendition="#i #smaller">49</hi><hi rendition="#smaller">, 50, 51,</hi> <hi rendition="#i #smaller">51</hi><hi rendition="#smaller">, 52–54, 57–59,</hi>
+<hi rendition="#i #smaller">59</hi><hi rendition="#smaller">, 60, 69, 70,</hi> <hi rendition="#i #smaller">70</hi><hi rendition="#smaller">, 71, 108, 118,</hi>
+<hi rendition="#i #smaller">118</hi><hi rendition="#smaller">, 119,</hi> <hi rendition="#i #smaller">119</hi><hi rendition="#smaller">, 121, 250, 293, 318,</hi>
+<hi rendition="#i #smaller">351</hi><hi rendition="#smaller">, 560</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">magnetica, 10</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">terrella, 10,</hi> <hi rendition="#i #smaller">70</hi><hi rendition="#smaller">
+</hi>
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">mappa lunae, 7</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Marbel, 18</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Mars, 203, 263, 273–276</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">marszeil, 605, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">massa, 280,</hi> <hi rendition="#i #smaller">299</hi><hi rendition="#smaller">, 319,</hi> <hi rendition="#i #smaller">319</hi><hi rendition="#smaller">, 320–322, 330,</hi>
+<hi rendition="#i #smaller">332</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">339</hi><hi rendition="#smaller">, 343, 344,</hi> <hi rendition="#i #smaller">346</hi><hi rendition="#smaller">,</hi>
+<hi rendition="#i #smaller">353</hi><hi rendition="#smaller">, 355, 382,</hi> <hi rendition="#i #smaller">382</hi><hi rendition="#smaller">, 383, 389,</hi>
+<hi rendition="#i #smaller">392</hi><hi rendition="#smaller">
+</hi>
+        <list>
+          <item>
+            <hi rendition="#smaller">aeris, 506</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Mast, 604, 605, 612, 624</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mast, 603, 611, 625</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mastboom, 621</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">materia, 321</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">Cartesiana,</hi> <hi rendition="#i #smaller">291</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">subtilis,</hi> <hi rendition="#i #smaller">291</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">tenuis, 329</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">subtilis, 311, 315, 326, 342</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">tenuis, 329, 330</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">matière</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">fluide,</hi> <hi rendition="#i #smaller">494</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">subtile, 419,</hi> <hi rendition="#i #smaller">424</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">447</hi><hi rendition="#smaller">, 453,</hi>
+<hi rendition="#i #smaller">485</hi><hi rendition="#smaller">
+</hi>
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">matière</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">subtile, 448, 453</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">fluide, 450</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">fluide etherienne, 493</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">subtile, 414, 447–451, 484, 489, 497</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">mechanica, 7, 348</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">medica, 4, 15</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">menstruum stanni, 13</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mensura terrae, 10</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mer, 93, 95</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mercure, 417, 418, 421,</hi> <hi rendition="#i #smaller">422</hi><hi rendition="#smaller">, 429, 433,</hi> <hi rendition="#i #smaller">440</hi><hi rendition="#smaller">,
+448, 450, 455, 457,</hi> <hi rendition="#i #smaller">465</hi><hi rendition="#smaller">, 467, 472, 483, 484,</hi>
+<hi rendition="#i #smaller">484</hi><hi rendition="#smaller">, 485, 487, 488,</hi> <hi rendition="#i #smaller">488</hi><hi rendition="#smaller">
+</hi>
+        <list>
+          <item>
+            <hi rendition="#smaller">purgé, 421,</hi> <hi rendition="#i #smaller">422</hi><hi rendition="#smaller">, 429, 433,</hi> <hi rendition="#i #smaller">465</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">purgé, 430, 463</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">purgé, 433, 440, 441, 457, 467, 477, 488</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Mercurius, 13, 16, 204, 274, 276</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mercurius, 63,</hi> <hi rendition="#i #smaller">169</hi><hi rendition="#smaller">, 279,</hi> <hi rendition="#i #smaller">279</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">293</hi><hi rendition="#smaller">,
+294–296, 301,</hi> <hi rendition="#i #smaller">301</hi><hi rendition="#smaller">, 302, 303,</hi> <hi rendition="#i #smaller">303</hi><hi rendition="#smaller">,
+304, 306–308,</hi> <hi rendition="#i #smaller">308</hi><hi rendition="#smaller">, 309,</hi> <hi rendition="#i #smaller">309</hi><hi rendition="#smaller">,
+310, 311, 315, 316,</hi> <hi rendition="#i #smaller">316</hi><hi rendition="#smaller">, 317, 318,</hi>
+<hi rendition="#i #smaller">318</hi><hi rendition="#smaller">, 319,</hi> <hi rendition="#i #smaller">319</hi><hi rendition="#smaller">, 320–322, 324–326,</hi>
+<hi rendition="#i #smaller">326</hi><hi rendition="#smaller">, 329,</hi> <hi rendition="#i #smaller">329</hi><hi rendition="#smaller">, 330, 332, 336, 337,
+339–341, 344,</hi> <hi rendition="#i #smaller">346</hi><hi rendition="#smaller">, 351,</hi> <hi rendition="#i #smaller">353</hi><hi rendition="#smaller">,
+354–358,</hi> <hi rendition="#i #smaller">358</hi><hi rendition="#smaller">, 359, 360, 364, 369, 371–373,
+379, 381, 383, 385, 388,</hi> <hi rendition="#i #smaller">388</hi><hi rendition="#smaller">, 389,</hi>
+<hi rendition="#i #smaller">389</hi><hi rendition="#smaller">, 390, 392,</hi> <hi rendition="#i #smaller">392</hi><hi rendition="#smaller">, 393,</hi>
+<hi rendition="#i #smaller">393</hi><hi rendition="#smaller">, 394, 395,</hi> <hi rendition="#i #smaller">395</hi><hi rendition="#smaller">, 396–399,</hi>
+<hi rendition="#i #smaller">399</hi><hi rendition="#smaller">, 400,</hi> <hi rendition="#i #smaller">400</hi><hi rendition="#smaller">, 402–404, 406–408,
+565, 577, 590</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">169</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">purgatus, 295, 306,</hi> <hi rendition="#i #smaller">307</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">purgatus, 295, 302, 311, 315, 320</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">mercurius purgatus, 355, 359</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">meridianus, 36, 43, 44, 49, 52, 53, 68, 72, 73,</hi> <hi rendition="#i #smaller">74</hi><hi rendition="#smaller">,
+79–84, 86, 92, 100, 107,</hi> <hi rendition="#i #smaller">107</hi><hi rendition="#smaller">, 108,</hi>
+<hi rendition="#i #smaller">108</hi><hi rendition="#smaller">, 109,</hi> <hi rendition="#i #smaller">112</hi><hi rendition="#smaller">, 117,</hi> <hi rendition="#i #smaller">119</hi><hi rendition="#smaller">,
+265, 267, 272</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Metallnagel, 628</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">metallum, 301</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">meteorologica, 4, 9</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">microscopium, 6, 138, 140, 141, 144, 146, 153, 154, 162, 164,
+166, 196, 197</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">minera, 301</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">miroir, 580</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">mispelhout, 620</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">molendinum, 589</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">momentum, 378</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Mond, 621</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">monde, 459, 472</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">montre, 94</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">moon, 104</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">motus</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">uniformiter acceleratus,</hi> <hi rendition="#i #smaller">534</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">aequabilis, 529</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">momentaneus, 73</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">perennis, 48, 559</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">perpetuus, 47, 554</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">quasi-perpetuus, 589</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">reflexus, 190</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">solis, 276</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">terrae, 276</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">uniformiter acceleratus, 534</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">universalis, 333</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">mouvement</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">de l’air, 484</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">naturel, 480</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">uniforme, 470, 471, 473</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">mundus, 202, 246, 265, 321, 335, 402</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">musca, 281</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">musculi artificiales, 12</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">musica, 4, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">myops, 153, 162, 188</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Nagel, 628, 630</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nature du corps, 497</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">navire, 95,</hi> <hi rendition="#i #smaller">95</hi><hi rendition="#smaller">, 96</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">navis, 24–29, 31, 34, 36–40, 42, 44, 46, 47, 49–52, 55–60,</hi>
+<hi rendition="#i #smaller">60</hi><hi rendition="#smaller">, 66, 67,</hi> <hi rendition="#i #smaller">67</hi><hi rendition="#smaller">, 68,</hi> <hi rendition="#i #smaller">70</hi><hi rendition="#smaller">, 72,
+74,</hi> <hi rendition="#i #smaller">75</hi><hi rendition="#smaller">, 77–82, 84–86, 89, 97,</hi> <hi rendition="#i #smaller">107</hi><hi rendition="#smaller">,
+108,</hi> <hi rendition="#i #smaller">108</hi><hi rendition="#smaller">, 109,</hi> <hi rendition="#i #smaller">109</hi><hi rendition="#smaller">, 110, 112–114,
+116–121,</hi> <hi rendition="#i #smaller">121</hi><hi rendition="#smaller">, 122, 123,</hi> <hi rendition="#i #smaller">123</hi><hi rendition="#smaller">,
+125–127, 601, 603, 619, 628</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">Melitensis, 603</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">Roterodamensis, 603</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Neurenburger staal, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Nieuw–kasteelsche kolen, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nisus,</hi> <hi rendition="#i #smaller">174</hi><hi rendition="#smaller">, 175</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">nitrum, 286</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">notehout, 620</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">numeri quadrati, 5</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">objectivum, 138–140, 142, 144, 145, 195, 196, 198</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">observatio maritima, 5</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ocular, 140, 141,</hi> <hi rendition="#i #smaller">141</hi><hi rendition="#smaller">, 142,</hi> <hi rendition="#i #smaller">143</hi><hi rendition="#smaller">, 145</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">oculus, 188, 191, 194, 196, 198, 199, 263</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">oeil, 211, 222</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">olm hout, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ongedierte, 614, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">onus, 319</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">oorlogsschip, 627, 628</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">opium, 14, 15</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">optica, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Orgel–gront–ijzer, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Orion, 200</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">oscillatio, 273</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pantometrum, 36</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Papier, 547</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">papilio, 281</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">parallaxis, 86, 87, 91, 100, 101, 132, 134, 269, 270, 272</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">paroptrica, 135</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">partes</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">salinae, 16</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">sulphureae, 16</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">passio</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">hypochondriaca, 15</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">hysterica, 15</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Pendel, 582</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Pendeluhr, 581, 582</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pendule, 95</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pendulum, 24, 40, 62,</hi> <hi rendition="#i #smaller">62</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">67</hi><hi rendition="#smaller">, 71, 85, 90, 191,
+262, 278,</hi> <hi rendition="#i #smaller">278</hi><hi rendition="#smaller">, 359, 395, 560, 565, 576,</hi>
+<hi rendition="#i #smaller">577</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">perigaeum, 267, 268, 272</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">perihelium, 267</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">perspecilla, 590</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">perspective, 231–233, 580</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">perspicilla, 135</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pesanteur, 461, 483</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">de l’air, 467, 541</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Pfeffer, 11</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">philosophia experimentalis, 338</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pignon, 632</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pijn, 620</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pijnboom, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pila, 277, 278, 280,</hi> <hi rendition="#i #smaller">282</hi><hi rendition="#smaller">, 283, 284, 531</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">piombo, 148</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">piscis, 282</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">planeta, 79, 80, 188, 266, 271, 273, 276</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">plumbum, 198, 286, 301, 554–556, 560, 590</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pneumatica, 9</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">podagra, 16</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">poids, 462, 467, 468, 480, 491, 499,</hi> <hi rendition="#i #smaller">499</hi><hi rendition="#smaller">, 501, 502</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">de l’air, 439</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">pokhout, 617, 620</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pole, 104</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">polus, 26, 28, 31, 37, 46, 49, 50, 52, 53, 57, 58, 69, 70, 72,
+79–81,</hi> <hi rendition="#i #smaller">81</hi><hi rendition="#smaller">, 84, 86, 89, 107,</hi> <hi rendition="#i #smaller">107</hi><hi rendition="#smaller">,</hi>
+<hi rendition="#i #smaller">114</hi><hi rendition="#smaller">, 250, 251, 265, 267</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">antarcticus, 70</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">antarcticus, 70</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">arcticus, 69, 70</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">australis, 251</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">magnetis, 10</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">pomp, 614</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pompe, 432, 434, 456, 468</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ponderabilitas flammae, 18</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pondus, 269, 314–316,</hi> <hi rendition="#i #smaller">316</hi><hi rendition="#smaller">, 317,</hi> <hi rendition="#i #smaller">317</hi><hi rendition="#smaller">, 318,</hi>
+<hi rendition="#i #smaller">319</hi><hi rendition="#smaller">, 320, 366,</hi> <hi rendition="#i #smaller">366, 367</hi><hi rendition="#smaller">, 369,</hi>
+<hi rendition="#i #smaller">369</hi><hi rendition="#smaller">, 370, 372, 375,</hi> <hi rendition="#i #smaller">376</hi><hi rendition="#smaller">, 377, 378,
+382, 388, 392, 396,</hi> <hi rendition="#i #smaller">397</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">401</hi><hi rendition="#smaller">, 408,
+410, 411, 507, 508, 589</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">aeris,</hi> <hi rendition="#i #smaller">346</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">392</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">aeris, 279, 321, 337, 392, 542</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">pont volant, 584, 585</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Porphyr, 18</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">potentia</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">contendens,</hi> <hi rendition="#i #smaller">374</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">376</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">intendens,</hi> <hi rendition="#i #smaller">374</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">urgens,</hi> <hi rendition="#i #smaller">374</hi><hi rendition="#smaller">
+</hi>
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">praedictio cometarum, 7</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">praedictio tempestatum, 7</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pressio</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">aeris,</hi> <hi rendition="#i #smaller">279</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">305</hi><hi rendition="#smaller">, 306,</hi> <hi rendition="#i #smaller">306</hi><hi rendition="#smaller">, 307,</hi>
+<hi rendition="#i #smaller">310</hi><hi rendition="#smaller">, 313,</hi> <hi rendition="#i #smaller">320</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">331</hi><hi rendition="#smaller">,</hi>
+<hi rendition="#i #smaller">346</hi><hi rendition="#smaller">, 399</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">aeris, 278, 279, 281, 295, 298, 300, 306, 309, 316, 342,
+344, 351, 386, 390, 396, 402</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">aetheris, 567</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">aquae, 566</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">pression de l’air, 419, 441, 458, 486,</hi> <hi rendition="#i #smaller">486</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">principium staticum, 567</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pulvis</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">chalybeus, 10</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">plumbeus, 590</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">pyrii, 12</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">pyrius, 8, 13, 589, 590</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">punctum</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">mathematicum, 154, 164</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">mechanicum, 154, 160, 163–166</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">reflexionis, 191</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">ustorium, 192</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">pupilla, 188, 196, 263</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Pynas-Schiff, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pyramide visuelle, 228</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">pyxis, 72, 108,</hi> <hi rendition="#i #smaller">108</hi><hi rendition="#smaller">, 113, 118, 123, 124,</hi> <hi rendition="#i #smaller">124</hi><hi rendition="#smaller">,
+125,</hi> <hi rendition="#i #smaller">125</hi><hi rendition="#smaller">
+</hi>
+        <list>
+          <item>
+            <hi rendition="#smaller">inclinatoria,</hi> <hi rendition="#i #smaller">117</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">inclinatoria, 116, 117</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">magnetica, 72</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">nautica, 36, 39, 107, 115, 123</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">quadrans, 5</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quartana, 16</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">quercus, 615, 617</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">réflexion, 236, 480</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">réfraction, 236, 449, 495</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rad, 603</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">radius, 169, 187, 189–192, 195, 197, 198, 206, 207</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">lucis,</hi> <hi rendition="#i #smaller">168</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">lucis, 173</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">reflexus, 190</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">refractus, 173, 194, 196, 197, 199</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">rayon, 580</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Rechenstab, 4</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">recht–hout, 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Recipiens</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">Magdeburgicum, 292,</hi> <hi rendition="#i #smaller">296</hi><hi rendition="#smaller">, 399</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">Gerickii, 590</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">Magdeburgicum, 248, 291, 292, 326, 327, 342, 344, 351, 389</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">ree–zeils schepen, 622</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">reflexio, 182–184,</hi> <hi rendition="#i #smaller">184</hi><hi rendition="#smaller">, 191, 193, 198, 240, 263</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">refractio,</hi> <hi rendition="#i #smaller">66</hi><hi rendition="#smaller">, 67, 71, 73, 78, 97, 100,</hi> <hi rendition="#i #smaller">138</hi><hi rendition="#smaller">,
+141,</hi> <hi rendition="#i #smaller">150</hi><hi rendition="#smaller">, 152, 170, 171, 176, 179–183,</hi>
+<hi rendition="#i #smaller">183</hi><hi rendition="#smaller">, 184, 193, 195, 196, 240, 266, 267,
+269, 270, 363</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Regenwasser, 623</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">regula loxodromica, 43</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">resistentia</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">lignorum, 8</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">materiae, 330</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">ressort, 483, 491, 496</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">retina, 187</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rien, 490,</hi> <hi rendition="#i #smaller">490</hi><hi rendition="#smaller">, 492</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">riflesso, 147</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rifrazione, 148</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Rinde, 19</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">roer, 602, 607, 625, 626</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">rota,</hi> <hi rendition="#i #smaller">27</hi><hi rendition="#smaller">, 30,</hi> <hi rendition="#i #smaller">30</hi><hi rendition="#smaller">, 31, 33–38, 47, 55, 56,</hi>
+<hi rendition="#i #smaller">107</hi><hi rendition="#smaller">, 108, 110,</hi> <hi rendition="#i #smaller">110</hi><hi rendition="#smaller">, 121,</hi>
+<hi rendition="#i #smaller">121</hi><hi rendition="#smaller">, 122,</hi> <hi rendition="#i #smaller">122</hi><hi rendition="#smaller">, 123, 125,</hi>
+<hi rendition="#i #smaller">125</hi><hi rendition="#smaller">, 127,</hi> <hi rendition="#i #smaller">573</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">576</hi><hi rendition="#smaller">, 577,
+603</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">dentata, 557, 590</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Ruder, 625, 626</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">ruder–man, 625</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sackrendaen–hout, 616</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sal, 282, 286, 383</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">armoniacum, 286</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">nitri, 286</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">tartaris volatile, 14</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">sanguificatio, 12</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sanguis, 343</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Saturnus, 204, 273, 274, 276</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">fulminans, 13</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Schaf, 12</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">schans–kleed, 614</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">scheepsbouw, 617, 619–621</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">scheepsnagel, 618</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Schiff, 61, 604–607, 609, 611–614, 623–631</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">englisches, 611</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">genuesisch, 627</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">japanisch, 622</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">tweegekielt, 601</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">venezianisch, 627</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Schiff-Bewegung, 604, 626</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Schiffbau, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Schiffsinstruktion, 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Schiffsordnung, 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">schip, 602–607, 609, 611, 613, 614,</hi> <hi rendition="#i #smaller">614</hi><hi rendition="#smaller">, 617, 618,
+620–623, 625–627, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">schip–voortgang, 603, 606, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Schotze kolen, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sclopetum, 266, 297, 300, 335, 339, 389</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sectio conica, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">seep, 614</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Segel, 604–607, 611, 613, 626, 627, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sensus</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">frigoris,</hi> <hi rendition="#i #smaller">343</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">caloris, 343</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">sidus, 46, 67, 68, 72–74,</hi> <hi rendition="#i #smaller">75</hi><hi rendition="#smaller">, 78–82,</hi> <hi rendition="#i #smaller">82</hi><hi rendition="#smaller">, 84,
+90, 92</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sipho, 249, 298, 302,</hi> <hi rendition="#i #smaller">303</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">305</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">309</hi><hi rendition="#smaller">,
+310, 325, 335,</hi> <hi rendition="#i #smaller">337</hi><hi rendition="#smaller">, 342,</hi> <hi rendition="#i #smaller">344</hi><hi rendition="#smaller">, 349,
+352, 369,</hi> <hi rendition="#i #smaller">572</hi><hi rendition="#smaller">, 573, 575, 576</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">siphon, 419, 432, 454, 458, 468, 489, 563–565</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">smeer, 614</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Soda, 14</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sol, 24, 25, 28, 29, 45–48, 60, 66,</hi> <hi rendition="#i #smaller">66</hi><hi rendition="#smaller">, 68, 72, 73,
+77, 79, 84, 89, 90, 97, 124, 125, 250, 251, 262–276</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">soleil, 580</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Sonnenuhr, 581, 582</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sonus, 193, 251, 256,</hi> <hi rendition="#i #smaller">256</hi><hi rendition="#smaller">, 257, 258, 266, 281, 288</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sound, 570</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Spaans ijzer, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spatium</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">percursum,</hi> <hi rendition="#i #smaller">515</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">aethereum, 271</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">infinite parvum, 514, 517, 522, 532</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">percursum, 534</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">spatium vacuum,</hi> <hi rendition="#i #smaller">358</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">specchio, 148</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">specillum, 153, 154, 161, 166</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">circulare, 153</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">speculum, 6, 135, 138, 140, 191–193, 198, 206</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">concavum, 137, 138, 186, 281, 287</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">convexum, 137</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">cylindricum, 191</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">parabolicum, 138, 192, 193</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">planum, 190</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">ustorium, 192</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">Villettae, 590</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">sphaera</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">fixarum, 88</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">aeris, 257, 267</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">fixarum, 88, 89</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">luminosa, 263, 264</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Spiegel, 7</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spil, 603, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spira, 507</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">spiritus, 343</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">vini, 310</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">salis tartari, 14</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">vini, 12, 14, 259, 277, 284, 287, 310, 312, 349, 363, 560</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">vitrioli, 284</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">Sprachrohr, 553</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Springkhornlein, 251</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">staal, 607, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Staatsschiff, 627</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Stagsegel, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Stahl, 18</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">stannum, 286,</hi> <hi rendition="#i #smaller">301</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">star, 104</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">statera, 567, 568</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">status naturalis, 283, 408,</hi> <hi rendition="#i #smaller">412</hi><hi rendition="#smaller">, 517, 529,</hi>
+<hi rendition="#i #smaller">529</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">stella, 24, 40, 44, 45, 48, 60,</hi> <hi rendition="#i #smaller">60</hi><hi rendition="#smaller">, 68, 73, 78, 82, 86,
+90, 116, 188, 195, 201, 203, 266</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">fixa,</hi> <hi rendition="#i #smaller">7</hi><hi rendition="#smaller">, 83,</hi> <hi rendition="#i #smaller">83</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">cadentia, 9</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">fixa, 66, 67, 77–80, 82–86, 88–90, 263, 266, 267, 271</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">nova, 263</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">steng, 627</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Steuer, 605, 625, 626</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">steven, 606, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Stockholmer ijzer, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">stuur, 607</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">sucus duplex, 11</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tabula loxodromica, 43, 47</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tabulae</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">politae, 314,</hi> <hi rendition="#i #smaller">572</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">Astronomicae, 100</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">politae, 314, 315, 334, 349</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">tachygraphia, 548</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tachytypia, 548</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">talk, 614</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Tammepijn, 618</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tangens, 5</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Taurus, 202</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tectum, 62</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Teer, 614</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">telescopium, 7, 90, 140, 153, 154, 161, 162, 164, 166, 188, 194,
+197, 200, 203, 204, 263, 271, 273</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tellus, 7,</hi> <hi rendition="#i #smaller">75</hi><hi rendition="#smaller">, 80, 86, 250, 251, 263, 265</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tensio, 60, 61, 326, 327,</hi> <hi rendition="#i #smaller">328</hi><hi rendition="#smaller">, 329, 330,</hi> <hi rendition="#i #smaller">330</hi><hi rendition="#smaller">,
+331,</hi> <hi rendition="#i #smaller">331</hi><hi rendition="#smaller">, 332,</hi> <hi rendition="#i #smaller">332</hi><hi rendition="#smaller">, 355, 357,</hi>
+<hi rendition="#i #smaller">357</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">374</hi><hi rendition="#smaller">, 377, 389–391,</hi>
+<hi rendition="#i #smaller">391</hi><hi rendition="#smaller">, 393, 401, 402,</hi> <hi rendition="#i #smaller">402</hi><hi rendition="#smaller">, 403,</hi>
+<hi rendition="#i #smaller">403</hi><hi rendition="#smaller">, 404,</hi> <hi rendition="#i #smaller">404</hi><hi rendition="#smaller">, 405,</hi> <hi rendition="#i #smaller">406</hi><hi rendition="#smaller">,
+408</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">terpentijn, 619</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Terpentin, 19</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">terra,</hi> <hi rendition="#i #smaller">75</hi><hi rendition="#smaller">, 202, 251, 253, 263–265,</hi> <hi rendition="#i #smaller">265</hi><hi rendition="#smaller">,
+266–276</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">terre, 93, 426,</hi> <hi rendition="#i #smaller">462</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">Texel-Wasser, 623</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">theoria planetarum, 7</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Thermomètre de Florence, 579</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Thermometer, 13</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Thermometrum</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">Drebelii, 590</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">Fluddi, 590</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">Iohannidae, 590</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">thermometrum, 259, 260, 277, 279, 280, 285–287, 300, 363, 384</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tinctura corallii, 13</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">top-mast, 624</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">top–vlag, 627</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tortoise, 19</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Trinity–house, 10</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">trochlea,</hi> <hi rendition="#i #smaller">122</hi><hi rendition="#smaller">, 556–558, 565, 568, 587–590, 597</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tropicus, 199, 250, 265</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Tubus</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">Torricellianus, 292, 295,</hi> <hi rendition="#i #smaller">304</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">308</hi><hi rendition="#smaller">,</hi>
+<hi rendition="#i #smaller">312</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">318</hi><hi rendition="#smaller">, 321, 325,</hi>
+<hi rendition="#i #smaller">328, 329</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">353</hi><hi rendition="#smaller">, 372, 385</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">Morlandi, 257</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">Torricellianus, 294, 309–311, 316, 319, 320, 324–326,
+341, 344, 383, 388, 392, 395</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">tubus</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">Catadioptricus, 135</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">coriaceus, 603</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">opticus, 137, 138, 269</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">tuyau de Torricelli, 448,</hi> <hi rendition="#i #smaller">484</hi><hi rendition="#smaller">, 487</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">tympanum, 557,</hi> <hi rendition="#i #smaller">557</hi><hi rendition="#smaller">, 558,</hi> <hi rendition="#i #smaller">558</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">typographia, 547</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Uhr, 583</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">universum,</hi> <hi rendition="#i #smaller">332</hi><hi rendition="#smaller">, 342, 371</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">uterus, 12</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vacuum</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">sensibilis,</hi> <hi rendition="#i #smaller">310</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">Torricellianum,</hi> <hi rendition="#i #smaller">379</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">Boylianum, 18</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">Torricellianum, 279, 280</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">vaisseau, 602, 612, 615–617, 619, 621</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">de charge, 615</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">de guerre, 615</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">valvae, 569</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vasa lactea, 12</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vectis, 565, 567, 569</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">velum, 601, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">venaesectio, 15</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Venus, 188, 202, 204, 264, 274–276</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vermine, 623</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vernix Chinensium, 17</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">verre, 211</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vertex, 59</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vesica piscis, 282</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vibratio penduli, 278,</hi> <hi rendition="#i #smaller">576</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">Viceadmiral, 627, 628</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vide, 420, 421, 427, 430,</hi> <hi rendition="#i #smaller">430</hi><hi rendition="#smaller">, 432, 433,</hi> <hi rendition="#i #smaller">437</hi><hi rendition="#smaller">,
+438–440,</hi> <hi rendition="#i #smaller">442</hi><hi rendition="#smaller">, 443, 446, 447, 454, 456, 458,
+462, 466–468, 480,</hi> <hi rendition="#i #smaller">489</hi><hi rendition="#smaller">, 490,</hi> <hi rendition="#i #smaller">497</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">vif argent, 289, 290, 499, 580</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vijgeboom, 617</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vijgeboomhout, 617</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Virgo, 267</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">virtus electrica, 264</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">compressionis, 389</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">elastica, 51,</hi> <hi rendition="#i #smaller">318</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">370</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">374</hi><hi rendition="#smaller">,</hi>
+<hi rendition="#i #smaller">376, 377</hi><hi rendition="#smaller">
+</hi>
+          </item>
+          <item>
+            <hi rendition="#smaller">aeris compressi, 408, 514, 521, 528, 529</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">caloris, 300</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">compressionis, 511</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">elastica, 171, 279, 296–298, 326, 339, 369, 371, 375, 377,
+529, 565, 569</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">elaterii, 319, 515, 517, 522</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">hominis, 603</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">impressa, 261</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">impulsiva, 261</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">intrinseca, 555, 560</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">mechanica, 568</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">ponderis, 412</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">restituens, 530</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">vis attractiva, 10</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis cathartica, 16</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vis emetica, 16</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">viscum, 618</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vitesse,</hi> <hi rendition="#i #smaller">436</hi><hi rendition="#smaller">, 449, 470, 477,</hi> <hi rendition="#i #smaller">500</hi><hi rendition="#smaller">
+</hi>
+      </item>
+      <item>
+        <hi rendition="#smaller">vitri oleum, 6</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vitrum, 197, 399</hi>
+
+        <list>
+          <item>
+            <hi rendition="#smaller">convexum, 271</hi>
+
+          </item>
+          <item>
+            <hi rendition="#smaller">objectivum, 197, 198</hi>
+
+          </item>
+        </list>
+      </item>
+      <item>
+        <hi rendition="#smaller">vlag, 627, 628</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vlagge spil, 605</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vlaggetje, 627</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">voile, 602</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Voor Bramzeils steng, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">voormast, 613</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">voorsteven, 609</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Vorsegel, 604–606</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vorsteven, 602</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vurehout, 615, 619, 623</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vuren, 615</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">vuuren schip, 623</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Waeterboomen, 620</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Wechselräder, 552</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Wellbaum, 547</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Wetterglocke, 9</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Wolle, 12</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Y-water, 623</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Ysschuiten, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Zantloper staal, 608</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">zeil, 603–606, 614, 629</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Zeil–doeck, 604</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Zirnenboom, 621</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">zodiacus, 79, 84, 89, 91</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">zodiaque, 93, 95</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">zoete water, 620</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">zoutwater, 618, 620</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">zwarte doorn, 620</hi>
+
+      </item>
+      <item>
+        <hi rendition="#smaller">Zweetsche staal, 608</hi>
+
+      </item>
+    </list>
+  </div></body>
+  </text>
+</TEI>

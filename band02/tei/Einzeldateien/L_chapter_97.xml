@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch97" n="97"><pb type="VIII_2" n="752"/><head>97.
+SUR LES EAUX COURANTES</head>
+<head>[Ende November – Ende Dezember 1675]</head><div type="contents"><p xml:id="Ch97.p1" rendition="#noindent"><hi rendition="#smaller">Die folgenden vier Stücke,
+die vom mechanischen Verhalten strömender Gewässer handeln,
+sind vermutlich alle nach Gesprächen mit Artus de Roannez
+<index indexName="Namensregister"><term><hi rendition="#g #smaller">Roanez</hi><hi rendition="#smaller">, Artus Gouffier de 1627-1696</hi></term></index>in Paris entstanden.
+In N. 97<hi rendition="#sub">1</hi> vermerkt Leibniz selbst als Gesprächsdatum den 25. November 1675.
+Auch in N. 97<hi rendition="#sub">2</hi> und N. 97<hi rendition="#sub">4</hi> wird auf Roannez ausdrücklich hingewiesen.
+N. 97<hi rendition="#sub">4</hi> bildete zudem ursprünglich ein einziges Blatt zusammen mit dem von Leibniz auf den 31. Dezember 1675 datierten Stück N. 65, in dem ebenfalls über ein Gespräch mit Roannez
+<index indexName="Namensregister"><term><hi rendition="#g #smaller">Roanez</hi><hi rendition="#smaller">, Artus Gouffier de 1627-1696</hi></term></index>berichtet wird.
+Aufgrund der einheitlichen Thematik ist für sämtliche vier Stücke ein gemeinsamer Entstehungszeitraum von Ende November bis Ende Dezember 1675 anzunehmen.
+Die in den Textträgern von N. 97<hi rendition="#sub">1</hi>, N. 97<hi rendition="#sub">2</hi> und N. 97<hi rendition="#sub">4</hi> vorliegenden Wasserzeichen unterstützen diese Annahme.
+Der Textträger von N. 97<hi rendition="#sub">3</hi> weist hingegen kein Wasserzeichen auf.</hi></p></div><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_971.xml" xpointer="Ch97.S1" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_972.xml" xpointer="Ch97.S2" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_973.xml" xpointer="Ch97.S3" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_974.xml" xpointer="Ch97.S4" parse="xml"/></div></body>
+  </text>
+</TEI>

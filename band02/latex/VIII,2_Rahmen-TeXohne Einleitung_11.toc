@@ -1,0 +1,1015 @@
+
+\select@language {latin}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {Inhaltsverzeichnis}}{V}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {Vorwort}}{IX}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {Einleitung}}{XI}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {Zur Text- und Variantengestaltung}}{XIII}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {I. Astronomica}}{1}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {1.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu Pierre Gassendi, Opera omnia}}{3}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{1.\hskip .5em\relax Aus und zu Pierre Gassendi, Opera omnia [Sommer 1672 \textendash \ Fr\"{u}hjahr 1673]}{3}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {2.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu Robert Hooke, Animadversions on Johannes Hevelius}}{9}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{2.\hskip .5em\relax Aus und zu Robert Hooke, Animadversions on the first part of the Machina coelestis of Johannes Hevelius [Fr\IeC {\"u}hjahr \textendash \ Dezember 1675]}{9}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {II. Magnetica}}{39}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {3.}\relax \fontsize {7}{8}\selectfont \uppercase {Anstreichungen und Anmerkungen in L\IeC {\'e}otaud, Magnetologia}}{41}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{3.\hskip .5em\relax Anstreichungen und Anmerkungen in Vincent L\IeC {\'e}otaud, Magnetologia [Fr\IeC {\"u}h\discretionary {-}{}{}jahr\ \textendash \ Herbst 1672]}{41}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {4.}\relax \fontsize {7}{8}\selectfont \uppercase {Notizen \IeC {\"u}ber den Magnetismus}}{48}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{4.\hskip .5em\relax Notizen \IeC {\"u}ber den Magnetismus [2. H\"{a}lfte 1672]}{48}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {5.}\relax \fontsize {7}{8}\selectfont \uppercase {De magnetis sphaera}}{50}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{5.\hskip .5em\relax De magnetis sphaera [zweite H\IeC {\"a}lfte 1674\ \textendash \ Anfang 1675]}{50}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {6.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu Athanasius Kircher, Magnes}}{52}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{6.\hskip .5em\relax Aus und zu Athanasius Kircher, Magnes [Februar\ \textendash \ September 1676]}{52}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {III. MECHANICA}}{55}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {III.A. Allgemein}}{57}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {7.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu I. G. Pardies, La Statique}}{59}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{7.\hskip .5em\relax Aus und zu Ignace Gaston Pardies, La Statique ou la science des forces mouvantes [Mai 1673]}{59}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {8.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu John Wallis, Mechanica sive De motu}}{64}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{8.\hskip .5em\relax Aus und zu John Wallis, Mechanica sive De motu [letzte Monate 1674 \textendash \ erste Monate 1675]}{64}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {9.}\relax \fontsize {7}{8}\selectfont \uppercase {Excerpta ex Wallisio cogitatis obiter occurrentibus aucta}}{111}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{9.\hskip .5em\relax Excerpta ex Wallisio cogitatis obiter occurrentibus aucta [letzte Monate 1674]}{111}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {10.}\relax \fontsize {7}{8}\selectfont \uppercase {De vitandis erroribus geometricis in re mechanica}}{128}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{10.\hskip .5em\relax De vitandis erroribus geometricis in re mechanica Dezember 1674}{128}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {11.}\relax \fontsize {7}{8}\selectfont \uppercase {Geometria amoenior}}{132}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{11.\hskip .5em\relax Geometria amoenior April 1675}{132}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {12.}\relax \fontsize {7}{8}\selectfont \uppercase {De arcanis motus et mechanica ad puram geometriam reducenda}}{139}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{12.\hskip .5em\relax De arcanis motus et mechanica ad puram geometriam reducenda [Februar\ \textendash \ September 1676]}{139}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {III.B. Bewegung}}{145}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {13.}\relax \fontsize {7}{8}\selectfont \uppercase {Le Cazre, Physica demonstratio}}{147}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{13.\hskip .5em\relax Anstreichungen und Anmerkungen in Pierre Le Cazre, Physica demonstratio [September 1672 \textendash \ M\IeC {\"a}rz 1673]}{147}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {14.}\relax \fontsize {7}{8}\selectfont \uppercase {De acceleratione}}{151}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{14.\hskip .5em\relax De acceleratione [September 1672 \textendash \ M\IeC {\"a}rz 1673]}{151}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {15.}\relax \fontsize {7}{8}\selectfont \uppercase {De motu gravium naturali}}{153}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{15.\hskip .5em\relax De motu gravium naturali [September 1672 \textendash \ M\IeC {\"a}rz 1673]}{153}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {16.}\relax \fontsize {7}{8}\selectfont \uppercase {De pendulorum longitudinibus}}{161}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{16.\hskip .5em\relax De pendulorum longitudinibus [Oktober 1674 \textendash \ Fr\IeC {\"u}hjahr 1675]}{161}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {17.}\relax \fontsize {7}{8}\selectfont \uppercase {Sur les petites oscillations des pendules}}{162}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{17.\hskip .5em\relax Sur les petites oscillations des pendules [Oktober 1674 \textendash \ Fr\IeC {\"u}hjahr 1675]}{162}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {17\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {Sur les petites oscillations des pendules 1}}{162}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{17\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax Sur les petites oscillations des pendules 1}{162}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {17\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {Sur les petites oscillations des pendules 2}}{164}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{17\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax Sur les petites oscillations des pendules 2}{164}
+\select@language {latin}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {18.}\relax \fontsize {7}{8}\selectfont \uppercase {De motu et effectu}}{166}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{18.\hskip .5em\relax De motu et effectu [April 1675]}{166}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {III.C. Festigkeit}}{171}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {19.}\relax \fontsize {7}{8}\selectfont \uppercase {De quibusdam circa resistentiam}}{173}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{19.\hskip .5em\relax De quibusdam circa resistentiam quae a Galilaeo dicuntur [September 1672 \textendash \ M\IeC {\"a}rz 1673]}{173}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {20.}\relax \fontsize {7}{8}\selectfont \uppercase {Resistentia trabis eadem est}}{180}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{20.\hskip .5em\relax Resistentia trabis eadem est [September 1672 \textendash \ M\IeC {\"a}rz 1673]}{180}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {21.}\relax \fontsize {7}{8}\selectfont \uppercase {Paralogismus Galilaeanus}}{183}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{21.\hskip .5em\relax Paralogismus Galilaeanus de resistentia trabis [September 1672 \textendash \ M\IeC {\"a}rz 1673]}{183}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {22.}\relax \fontsize {7}{8}\selectfont \uppercase {De trabis resistentia uniformi}}{189}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{22.\hskip .5em\relax De trabis resistentia uniformi [September 1672 \textendash \ M\IeC {\"a}rz 1673]}{189}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {23.}\relax \fontsize {7}{8}\selectfont \uppercase {De centro divulsionis}}{192}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{23.\hskip .5em\relax De centro divulsionis [September 1672 \textendash \ M\IeC {\"a}rz 1673]}{192}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {24.}\relax \fontsize {7}{8}\selectfont \uppercase {De distractione 1}}{196}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{24.\hskip .5em\relax De distractione 1 [September 1672 \textendash \ M\IeC {\"a}rz 1673]}{196}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {25.}\relax \fontsize {7}{8}\selectfont \uppercase {De distractione 2}}{198}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{25.\hskip .5em\relax De distractione 2 [September 1672 \textendash \ M\IeC {\"a}rz 1673]}{198}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {26.}\relax \fontsize {7}{8}\selectfont \uppercase {De resistentia tabulae ligneae}}{204}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{26.\hskip .5em\relax De resistentia tabulae ligneae [Januar(?) \textendash \ M\IeC {\"a}rz 1673]}{204}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {III.D. Kraft}}{213}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {27.}\relax \fontsize {7}{8}\selectfont \uppercase {De vi corporum per motum naturalem continuatum acquisita}}{215}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{27.\hskip .5em\relax De vi corporum per motum naturalem continuatum acquisita ratiocinatio [Anfang 1674\ \textendash \ Anfang 1675]}{215}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {28.}\relax \fontsize {7}{8}\selectfont \uppercase {R\`{e}gle pour calculer la force d'une machine}}{219}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{28.\hskip .5em\relax R\`{e}gle pour calculer la force d'une machine [zweite H\IeC {\"a}lfte 1674\ \textendash \ Anfang 1675]}{219}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {R\`{e}gle pour calculer la force d'une machine 1}}{220}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax R\`{e}gle pour calculer la force d'une machine 1}{220}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {R\`{e}gle pour calculer la force d'une machine 2}}{222}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax R\`{e}gle pour calculer la force d'une machine 2}{222}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.}\relax \fontsize {7}{8}\selectfont \uppercase {R\`{e}gle pour calculer la force d'une machine 3}}{224}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.\hskip .5em\relax R\`{e}gle pour calculer la force d'une machine 3}{224}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.}\relax \fontsize {7}{8}\selectfont \uppercase {R\`{e}gle pour calculer la force d'une machine 4}}{225}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.\hskip .5em\relax R\`{e}gle pour calculer la force d'une machine 4}{225}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 5}.}\relax \fontsize {7}{8}\selectfont \uppercase {Regula de vi ponderis}}{227}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 5}.\hskip .5em\relax Regula de vi ponderis}{227}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 6}.}\relax \fontsize {7}{8}\selectfont \uppercase {De determinandis machinae viribus}}{232}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 6}.\hskip .5em\relax De determinandis machinae viribus per accelerationem acquisitis}{232}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 7}.}\relax \fontsize {7}{8}\selectfont \uppercase {Th\'{e}or\`{e}me sur la force d'une machine}}{242}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 7}.\hskip .5em\relax Th\'{e}or\`{e}me sur la force d'une machine}{242}
+\select@language {latin}
+\select@language {french}
+\select@language {french}
+\select@language {latin}
+\select@language {latin}
+\select@language {latin}
+\select@language {french}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {29.}\relax \fontsize {7}{8}\selectfont \uppercase {Axioma de potentia et effectu}}{245}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{29.\hskip .5em\relax Axioma de potentia et effectu [Februar \textendash \ September 1676]}{245}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {III.E. Reibung}}{255}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {30.}\relax \fontsize {7}{8}\selectfont \uppercase {De detrimento motus ab attritu}}{257}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{30.\hskip .5em\relax De detrimento motus ab attritu [Anfang \textendash \ Fr\"{u}hjahr 1675]}{257}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {31.}\relax \fontsize {7}{8}\selectfont \uppercase {De detrimento motus. Frottement}}{274}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{31.\hskip .5em\relax De detrimento motus. Frottement [April 1675]}{274}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {31\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {Auszug aus John Wallis, Mechanica sive De motu}}{274}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{31\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax Auszug aus John Wallis, Mechanica sive De motu}{274}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {31\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {De detrimento motus. Frottement}}{275}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{31\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax De detrimento motus. Frottement }{275}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {31\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.}\relax \fontsize {7}{8}\selectfont \uppercase {Dissertation g\'{e}om\'{e}trique du frottement}}{279}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{31\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.\hskip .5em\relax Dissertation g\'{e}om\'{e}trique du frottement}{279}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {32.}\relax \fontsize {7}{8}\selectfont \uppercase {De detrimento motus. Pars secunda}}{281}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{32.\hskip .5em\relax De detrimento motus. Pars secunda April 1675}{281}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {33.}\relax \fontsize {7}{8}\selectfont \uppercase {Rechnungen zur Reibung}}{301}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{33.\hskip .5em\relax Rechnungen zur Reibung [April 1675]}{301}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {34.}\relax \fontsize {7}{8}\selectfont \uppercase {De la retardation du mouvement par le frottement}}{303}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{34.\hskip .5em\relax De la retardation du mouvement par le frottement Mai 1675}{303}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {34\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {Retardation du mouvement par le frottement. Erste Fassung}}{303}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{34\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax De la retardation du mouvement par le frottement. Erste Fassung}{303}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {34\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {Retardation du mouvement par le frottement. Zweite Fassung}}{317}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{34\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax De la retardation du mouvement par le frottement. Zweite Fassung }{317}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {34\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.}\relax \fontsize {7}{8}\selectfont \uppercase {Alt\'{e}ration uniforme du mouvement par le frottement}}{325}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{34\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.\hskip .5em\relax D\'{e}monstrations g\'{e}om\'{e}triques de l'alt\'{e}ration uniforme du mouvement par le frottement}{325}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {34\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.}\relax \fontsize {7}{8}\selectfont \uppercase {D\'{e}monstrations m\'{e}caniques, du frottement}}{338}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{34\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.\hskip .5em\relax Essai de quelques d\'{e}monstrations m\'{e}caniques, du frottement}{338}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {34\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 5}.}\relax \fontsize {7}{8}\selectfont \uppercase {Quelques propositions fondamentales qui traitent du frottement}}{343}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{34\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 5}.\hskip .5em\relax D\'{e}monstrations g\'{e}om\'{e}triques de quelques propositions fondamentales qui traitent du frottement}{343}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {35.}\relax \fontsize {7}{8}\selectfont \uppercase {De resistentia absoluta et respectiva in frictione}}{344}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{35.\hskip .5em\relax De resistentia absoluta et respectiva in frictione [Mitte 1675]}{344}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {36.}\relax \fontsize {7}{8}\selectfont \uppercase {Du frottement. Essais g\'{e}om\'{e}triques}}{363}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{36.\hskip .5em\relax Du frottement. Essais g\'{e}om\'{e}triques en fait de m\'{e}canique [Ende 1675]}{363}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {36\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {Du frottement. Essais g\'{e}om\'{e}triques. Erste Fassung}}{364}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{36\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax Du frottement. Essais g\'{e}om\'{e}triques en fait de m\'{e}canique. Erste Fassung}{364}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {36\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {Du frottement. Essais g\'{e}om\'{e}triques. Zweite Fassung}}{377}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{36\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax Du frottement. Essais g\'{e}om\'{e}triques en fait de m\'{e}canique. Zweite Fassung (mit sp\IeC {\"a}terem Zusatz [nach Januar 1678])}{377}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {37.}\relax \fontsize {7}{8}\selectfont \uppercase {Sur le retardement uniforme}}{390}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{37.\hskip .5em\relax Sur le retardement uniforme [Ende 1675]}{390}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {38.}\relax \fontsize {7}{8}\selectfont \uppercase {Du frottement. Un r\'{e}sum\'{e}}}{392}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{38.\hskip .5em\relax Du frottement. Un r\'{e}sum\'{e} [Ende 1675]}{392}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {III.F. Spezielle Probleme}}{395}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {39.}\relax \fontsize {7}{8}\selectfont \uppercase {De gravitatis duplicis concursu}}{397}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{39.\hskip .5em\relax De gravitatis duplicis concursu [Mitte 1668 \textendash \ M\IeC {\"a}rz 1672?]}{397}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {40.}\relax \fontsize {7}{8}\selectfont \uppercase {Scientia de progressionibus}}{398}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{40.\hskip .5em\relax Scientia de progressionibus [Fr\"{u}hjahr 1672 \textendash \ Anfang 1673]}{398}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {41.}\relax \fontsize {7}{8}\selectfont \uppercase {De centro gravitatis}}{399}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{41.\hskip .5em\relax De centro gravitatis [September 1672 \textendash \ M\IeC {\"a}rz 1673]}{399}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {42.}\relax \fontsize {7}{8}\selectfont \uppercase {Demonstratio de trabis aequilibrio brachiis inaequalibus}}{404}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{42.\hskip .5em\relax Demonstratio de trabis aequilibrio brachiis inaequalibus [September 1672 \textendash \ M\IeC {\"a}rz 1673]}{404}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {43.}\relax \fontsize {7}{8}\selectfont \uppercase {De guttarum cohaesione}}{410}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{43.\hskip .5em\relax De guttarum cohaesione [September 1672 \textendash \ M\IeC {\"a}rz 1673]}{410}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {44.}\relax \fontsize {7}{8}\selectfont \uppercase {I. G. Pardies, La Statique}}{412}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{44.\hskip .5em\relax Anstreichungen und Anmerkungen in Ignace Gaston Pardies, La Statique ou la science des forces mouvantes [Mai 1673]}{412}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {45.}\relax \fontsize {7}{8}\selectfont \uppercase {De vectibus conjugatis}}{413}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{45.\hskip .5em\relax De vectibus conjugatis [zweite H\IeC {\"a}lfte 1674]}{413}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {45\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {De vectibus conjugatis 1}}{413}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{45\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax De vectibus conjugatis 1}{413}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {45\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {De vectibus conjugatis 2}}{419}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{45\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax De vectibus conjugatis 2}{419}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {45\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.}\relax \fontsize {7}{8}\selectfont \uppercase {De vectibus conjugatis 3}}{425}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{45\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.\hskip .5em\relax De vectibus conjugatis 3}{425}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {45\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.}\relax \fontsize {7}{8}\selectfont \uppercase {De vectibus conjugatis 4}}{427}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{45\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.\hskip .5em\relax De vectibus conjugatis 4}{427}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {46.}\relax \fontsize {7}{8}\selectfont \uppercase {Beaugrand, Geostatice}}{429}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{46.\hskip .5em\relax Anstreichungen und Anmerkungen in Jean de Beaugrand, Geostatice [Dezember 1674\ \textendash \ April 1675]}{429}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {III.G. Stoss}}{433}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {47.}\relax \fontsize {7}{8}\selectfont \uppercase {I. G. Pardies, Discours du mouvement local}}{435}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{47.\hskip .5em\relax Anstreichungen und Anmerkungen in Ignace Gaston Pardies, Discours du mouvement local [Fr\IeC {\"u}hjahr 1672 \textendash \ Mai 1673]}{435}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {48.}\relax \fontsize {7}{8}\selectfont \uppercase {Problemata de concursu corporum}}{445}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{48.\hskip .5em\relax Problemata de concursu corporum [Juni 1672 \textendash \ M\IeC {\"a}rz 1673]}{445}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {49.}\relax \fontsize {7}{8}\selectfont \uppercase {De motus linea post concursum}}{449}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{49.\hskip .5em\relax De motus linea post concursum [Sommer 1673]}{449}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {50.}\relax \fontsize {7}{8}\selectfont \uppercase {Excerpta ex libro Du choc des corps}}{450}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{50.\hskip .5em\relax Excerpta ex libro Du choc des corps [letzte Monate 1674]}{450}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {51.}\relax \fontsize {7}{8}\selectfont \uppercase {De cohaesione}}{474}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{51.\hskip .5em\relax De cohaesione April 1675}{474}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {52.}\relax \fontsize {7}{8}\selectfont \uppercase {De ictuum quantitate }}{476}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{52.\hskip .5em\relax De ictuum quantitate Mai 1675}{476}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {IV. Meteorologica}}{481}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {53.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu Francesco Travagini, Physica disquisitio}}{483}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{53.\hskip .5em\relax Aus und zu Francesco Travagini, Physica disquisitio [Anfang 1674 \textendash \ Anfang 1675]}{483}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {54.}\relax \fontsize {7}{8}\selectfont \uppercase {Ex Manuscripto Cartesii. Problemata}}{486}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{54.\hskip .5em\relax Ex Manuscripto Cartesii. Problemata [Februar \textendash \ September 1676]}{486}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {V. Physica}}{495}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {55.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu Honor\IeC {\'e} Fabri, Physica}}{497}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{55.\hskip .5em\relax Aus und zu Honor\IeC {\'e} Fabri, Physica [Herbst 1670 \textendash \ Fr\IeC {\"u}hjahr 1672]}{497}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {56.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu Franz Wilhelm Nylandt, Elementa physica}}{557}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{56.\hskip .5em\relax Aus und zu Franz Wilhelm Nylandt, Elementa physica [Ende 1675 \textendash \ Anfang 1676]}{557}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {57.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu einem Manuskript Claude Perraults}}{565}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{57.\hskip .5em\relax Aus und zu einem Manuskript Claude Perraults [Mai\textendash Juli 1676]}{565}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {VI. Anatomica}}{577}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {58.}\relax \fontsize {7}{8}\selectfont \uppercase {Anatomica quaedam ex Manuscripto Cartesii}}{579}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{58.\hskip .5em\relax Anatomica quaedam ex Manuscripto Cartesii [Februar \textendash \ September 1676]}{579}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {VII. Botanica}}{625}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {59.}\relax \fontsize {7}{8}\selectfont \uppercase {Extraits de lettres de Mons. Boccone}}{627}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{59.\hskip .5em\relax Extraits de lettres de Mons. Boccone [Februar \textendash \ September 1676]}{627}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {60.}\relax \fontsize {7}{8}\selectfont \uppercase {Notizen zur Botanik}}{640}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{60.\hskip .5em\relax Notizen zur Botanik [Februar \textendash \ September 1676]}{640}
+\newpage 
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {VIII. Chymica}}{649}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {61.}\relax \fontsize {7}{8}\selectfont \uppercase {B\IeC {\"u}cherliste}}{651}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{61.\hskip .5em\relax B\IeC {\"u}cherliste [Herbst 1672 \textendash \ Anfang 1673]}{651}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {62.}\relax \fontsize {7}{8}\selectfont \uppercase {Athanor seu Fornax Philosophorum}}{652}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{62.\hskip .5em\relax Athanor seu Fornax Philosophorum [Februar \textendash \ Herbst 1673]}{652}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {63.}\relax \fontsize {7}{8}\selectfont \uppercase {Ars conficiendi omnis generis gemmas}}{661}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{63.\hskip .5em\relax Ars conficiendi omnis generis gemmas [September 1675]}{661}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {64.}\relax \fontsize {7}{8}\selectfont \uppercase {Modus coagulandi et tingendi Mercurium}}{664}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{64.\hskip .5em\relax Modus coagulandi et tingendi Mercurium September 1675}{664}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {65.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus einem Gespr\IeC {\"a}ch mit Artus de Roannez}}{666}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{65.\hskip .5em\relax Aus einem Gespr\IeC {\"a}ch mit Artus de Roannez 31. Dezember 1675}{666}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {IX. Medica}}{667}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {66.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus Athanasius Kircher, Magneticum naturae regnum}}{669}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{66.\hskip .5em\relax Aus Athanasius Kircher, Magneticum naturae regnum [Mitte 1668\ \textendash \ Ende 1671]}{669}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {67.}\relax \fontsize {7}{8}\selectfont \uppercase {In Franciscus de le Boe, Idea praxeos medicae}}{671}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{67.\hskip .5em\relax Anstreichungen und Anmerkungen in Franciscus de le Boe, Idea praxeos medicae [M\IeC {\"a}rz 1671 \textendash \ Anfang 1672 (?)]}{671}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {68.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu medizinischen Schriften}}{674}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{68.\hskip .5em\relax Aus und zu medizinischen Schriften [Fr\IeC {\"u}hjahr \textendash \ Ende 1671 (?)]}{674}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {69.}\relax \fontsize {7}{8}\selectfont \uppercase {De medicina perficienda }}{680}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{69.\hskip .5em\relax De medicina perficienda [Mitte 1671\ \textendash \ Anfang 1672]}{680}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {70.}\relax \fontsize {7}{8}\selectfont \uppercase {Directiones ad rem medicam pertinentes}}{683}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{70.\hskip .5em\relax Directiones ad rem medicam pertinentes [Mitte 1671\ \textendash \ Anfang 1672]}{683}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\contentsline {chapter}{\numberline {71.}\relax \fontsize {7}{8}\selectfont \uppercase {Notizen zu verschiedenen Krankheiten und Kuren}}{699}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{71.\hskip .5em\relax Notizen zu verschiedenen Krankheiten und Kuren [Mitte 1671\ \textendash \ Anfang 1672]}{699}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {72.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus einem Gespr\IeC {\"a}ch mit Edme Mariotte}}{701}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{72.\hskip .5em\relax Aus einem Gespr\IeC {\"a}ch mit Edme Mariotte [zweite H\IeC {\"a}lfte 1674 \textendash \ Anfang 1675]}{701}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {73.}\relax \fontsize {7}{8}\selectfont \uppercase {Essence styptique}}{703}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{73.\hskip .5em\relax Essence styptique [September 1674 \textendash \ Oktober 1676]}{703}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {74.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu einem Manuskript von Acar}}{708}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{74.\hskip .5em\relax Aus und zu einem Manuskript von Acar \IeC {\"u}ber medizinische Geheimnisse [1675 \textendash \ erste H\IeC {\"a}lfte 1676]}{708}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {75.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus Gespr\IeC {\"a}chen mit Gravel und Alliot}}{713}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{75.\hskip .5em\relax Aus Gespr\IeC {\"a}chen mit Jacques Gravel und Jean-Baptiste Alliot 25.~Januar 1676}{713}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {76.}\relax \fontsize {7}{8}\selectfont \uppercase {Remedia et vires medicamentorum}}{716}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{76.\hskip .5em\relax Remedia et vires medicamentorum 24. Februar 1676}{716}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {77.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus einem Gespr\IeC {\"a}ch mit Robert Boyle}}{719}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{77.\hskip .5em\relax Aus einem Gespr\IeC {\"a}ch mit Robert Boyle [zweite H\IeC {\"a}lfte Oktober 1676]}{719}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {X. Miscellanea}}{723}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {78.}\relax \fontsize {7}{8}\selectfont \uppercase {Onomasticon rerum militarium}}{725}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{78.\hskip .5em\relax Onomasticon rerum militarium [Anfang 1674 \textendash \ Anfang 1675]}{725}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {79.}\relax \fontsize {7}{8}\selectfont \uppercase {Scripta brevia feminae sine manibus}}{730}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{79.\hskip .5em\relax Scripta brevia feminae sine manibus M\IeC {\"a}rz 1674}{730}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {80.}\relax \fontsize {7}{8}\selectfont \uppercase {Rechnungen zur Einkaufsliste}}{731}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{80.\hskip .5em\relax Rechnungen zur Einkaufsliste [letzte Monate 1674]}{731}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {81.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus einem Gespr\"{a}ch mit Claude Perrault}}{733}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{81.\hskip .5em\relax Aus einem Gespr\"{a}ch mit Claude Perrault 22. Januar [1676]}{733}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {XI. NACHTR\"{A}GE}}{739}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {XI.A. Optica}}{741}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {82.}\relax \fontsize {7}{8}\selectfont \uppercase {De refractione}}{743}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{82.\hskip .5em\relax De refractione [24. Februar 1676]}{743}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {XI.B. Technica}}{745}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {83.}\relax \fontsize {7}{8}\selectfont \uppercase {De variis rationibus procurandi motum uniformem}}{747}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{83.\hskip .5em\relax De variis rationibus procurandi motum uniformem [Fr\"{u}hjahr \textendash \ Sommer 1671]}{747}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {84.}\relax \fontsize {7}{8}\selectfont \uppercase {Chronologia. Efficere horologia accurata}}{750}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{84.\hskip .5em\relax Chronologia. Efficere horologia accurata [2. H\"{a}lfte 1672]}{750}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {85.}\relax \fontsize {7}{8}\selectfont \uppercase {De horologio elastico}}{752}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{85.\hskip .5em\relax De horologio elastico [2. H\"{a}lfte 1672]}{752}
+\select@language {latin}
+\select@language {ngerman}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {86.}\relax \fontsize {7}{8}\selectfont \uppercase {De ratione efficiendi motus uniformes duorum mobilium}}{755}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{86.\hskip .5em\relax De ratione efficiendi motus uniformes duorum mobilium [2. H\"{a}lfte 1672]}{755}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {87.}\relax \fontsize {7}{8}\selectfont \uppercase {Quomodo penduli motus magnete effici possit}}{756}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{87.\hskip .5em\relax Quomodo penduli motus magnete effici possit [2. H\"{a}lfte 1672]}{756}
+\select@language {ngerman}
+\select@language {latin}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {88.}\relax \fontsize {7}{8}\selectfont \uppercase {Mittel, einen warmen Wind zu machen}}{758}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{88.\hskip .5em\relax Mittel, einen warmen Wind zu machen [September 1672 \textendash \ M\IeC {\"a}rz 1673]}{758}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {89.}\relax \fontsize {7}{8}\selectfont \uppercase {De horologio absoluto}}{759}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{89.\hskip .5em\relax De horologio absoluto sive de motu aequabili pure mechanico Demonstratio geometrica [Ende 1672 \textendash \ Anfang 1673]}{759}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {90.}\relax \fontsize {7}{8}\selectfont \uppercase {De horologiis communibus}}{762}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{90.\hskip .5em\relax De horologiis communibus [April \textendash \ Mai 1673]}{762}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {91.}\relax \fontsize {7}{8}\selectfont \uppercase {De horologiis pendulis, non tam aequalibus quam creduntur}}{763}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{91.\hskip .5em\relax De horologiis pendulis, non tam aequalibus quam creduntur [April \textendash \ Mai 1673]}{763}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {92.}\relax \fontsize {7}{8}\selectfont \uppercase {De motu perpetuo 1}}{765}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{92.\hskip .5em\relax De motu perpetuo 1 1674 und Mai 1678}{765}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {93.}\relax \fontsize {7}{8}\selectfont \uppercase {De motu perpetuo 2}}{769}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{93.\hskip .5em\relax De motu perpetuo 2 [1674]}{769}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {94.}\relax \fontsize {7}{8}\selectfont \uppercase {Horologium ventaneum}}{775}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{94.\hskip .5em\relax Horologium ventaneum [Anfang 1674 \textendash \ Anfang 1675]}{775}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {95.}\relax \fontsize {7}{8}\selectfont \uppercase {Technische Zeichnungen}}{783}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{95.\hskip .5em\relax Technische Zeichnungen [Dezember 1674\ \textendash \ April 1675]}{783}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {96.}\relax \fontsize {7}{8}\selectfont \uppercase {Calculus logarithmicus memorabilis}}{786}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{96.\hskip .5em\relax Calculus logarithmicus memorabilis 1675 und Mai 1678}{786}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {97.}\relax \fontsize {7}{8}\selectfont \uppercase {Sur les eaux courantes}}{788}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{97.\hskip .5em\relax Sur les eaux courantes [Ende November \textendash \ Ende Dezember 1675]}{788}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {97\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {La vitesse des eaux courantes}}{788}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{97\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax La vitesse des eaux courantes}{788}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {97\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {Barrages des eaux courantes 1}}{795}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{97\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax Barrages des eaux courantes 1}{795}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {97\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.}\relax \fontsize {7}{8}\selectfont \uppercase {Barrages des eaux courantes 2}}{795}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{97\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.\hskip .5em\relax Barrages des eaux courantes 2}{795}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {97\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.}\relax \fontsize {7}{8}\selectfont \uppercase {Savoir la rapidit\IeC {\'e} de l'eau}}{798}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{97\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.\hskip .5em\relax Savoir la rapidit\IeC {\'e} de l'eau}{798}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {98.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu einem Manuskript Ole R{\O }mers}}{800}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{98.\hskip .5em\relax Aus und zu einem Manuskript Ole R{\o }mers Dezember 1675}{800}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {99.}\relax \fontsize {7}{8}\selectfont \uppercase {Notizen zu unterschiedlichen Gegenst\IeC {\"a}nden}}{806}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{99.\hskip .5em\relax Notizen zu unterschiedlichen Gegenst\IeC {\"a}nden [Oktober \textendash \ Dezember 1676]}{806}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {Verzeichnisse}}{809}
+\contentsline {chapter}{\hskip .5em\relax Personen}{811}
+\contentsline {chapter}{\hskip .5em\relax Schriften}{817}
+\contentsline {chapter}{\hskip .5em\relax Sachen}{817}
+\contentsline {chapter}{\hskip .5em\relax Orte}{838}
+\contentsline {chapter}{\hskip .5em\relax Fundstellen}{841}
+\contentsline {chapter}{\hskip .5em\relax Konkordanzen}{845}
+\contentsline {chapter}{\hskip .5em\relax Siglen, Abk\IeC {\"u}rzungen, Zeichen}{847}
+\contentsline {chapter}{\hskip .5em\relax Berichtigungen}{853}

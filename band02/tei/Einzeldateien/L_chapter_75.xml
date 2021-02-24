@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch75" n="75"><pb type="VIII_2" n="679"/><head>75.
+AUS GESPRÄCHEN MIT JACQUES DE GRAVEL UND JEAN-BAPTISTE ALLIOT</head>
+<head>25. Januar 1676</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Aufzeichnung:
+LH III 5 Bl. 56.
+1 Bl. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 56 r<hi rendition="#sup">o</hi>.
+Bl. 56 v<hi rendition="#sup">o</hi> leer.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 1271</hi></p></item></list></p></div><div type="text"><p xml:id="Ch75.p4" rendition="#noindent"><pb type="L"/><fw type="folNum">[56 r<hi rendition="#sup">o</hi>]</fw> 25 janvier 1676</p><p xml:id="Ch75.p5" rendition="#noindent">Estant venu
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">un matin</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+chez Mons. l’Abbé de Gravel,<index indexName="Namensregister"><term><hi rendition="#g">Gravel</hi>, Jacques Argentan de, 1679</term></index>
+pour aller avec luy à <app type="Bfootnote"><lem type="main">St. Germain,<index indexName="Ortsregister"><term>Paris, Saint-Germain</term></index>
+il me dit qu’il</lem><note type="lemma-abbrev">St. Germain, il</note><rdg wit="#L" n="1"> venoit de </rdg><rdg wit="#L" n="2"> me dit qu’il <hi rendition="#i">L</hi></rdg></app>
+venoit de faire une operation de chirurgie sur luy même; contre la goutte, par precaution. Je luy demanda ce que c’estoit. Il me dit que son frere<index indexName="Namensregister"><term><hi rendition="#g">Gravel</hi>, Robert de</term></index> avoit appris en Allemagne<index indexName="Ortsregister"><term>Deutschland</term></index>, que lorsqu’on commence d’estre attaqué de la goutte, ou qu’on l’apprehende, il faut toutes les nouvelles lunes, le plus près du veritable temps de la nouvelle ☽, qu’on peut faire des incisions ou scarifications sur le pouce du pied ou on commence à ressentir ou apprehender le
+<app type="Bfootnote"><lem type="main">mal au dessus.</lem><note type="lemma-abbrev">mal</note><rdg wit="#L" n="1"> , un peu au dessus, un peu </rdg><rdg wit="#L" n="2"> au dessus. Son <hi rendition="#i">L</hi></rdg></app>
+Son frere commença à en avoir deux acces icy, <app type="Bfootnote"><lem type="main">il y a quelques temps,</lem><note type="lemma-abbrev">il y a quelques</note><rdg wit="#L" n="1"> mois </rdg><rdg wit="#L" n="2"> temps, <hi rendition="#i">L</hi></rdg></app>
+il s’en servit; le mal ne revient plus. Luy y a deja ressenti quelques fois des douleurs de goutte bien plus violents encor que son frere<index indexName="Namensregister"><term><hi rendition="#g">Gravel</hi>, Robert de</term></index>, la dessus il s’est servi de
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[ce]</corr></lem><rdg wit="#L"><orig>se</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+même remede, et le mal n’est plus revenu depuis. Il n’y a rien de si raisonnable. Car c’est la plus basse, et la derniere partie du corps, où les humeurs les plus grossiers et le plus gluants ou tartareux se rendent peu à a peu, et enfin s’en durcissent; ou enflent au moins la partie. C’est pourquoy il faut leur donner vent. Cela sert à y remuer le sang, et à luy donner de l’air. Il faut apres l’incision appliquer la ventouse, la mode
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">de ventouser</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+des Allemands avec les petites pointes qu’ils donnent est bien plus commode. Pour moy je me souuiens d’avoir entendu la même chose en Allemagne; comme un remede assuré contre la goutte, quand elle seroit même confirmée.</p><p xml:id="Ch75.p6">Il y a une espéce de Maladie à
+<app type="Bfootnote"><lem type="main">Paris, dont</lem><note type="lemma-abbrev">Paris</note><rdg wit="#L" n="1"> que </rdg><rdg wit="#L" n="2"> dont <hi rendition="#i">L</hi></rdg></app><index indexName="Ortsregister"><term>Paris, Saint-Germain</term></index>
+les femmes se plaignent
+<app type="Bfootnote"><lem type="main">ordinairement, et qu’elles appellent</lem><note type="lemma-abbrev">ordinairement,</note><rdg wit="#L" n="1"> qu’on </rdg><rdg wit="#L" n="2"> et qu’ <app><rdg wit="#L" n="a">ils appel </rdg><rdg wit="#L" n="b">elles appellent <hi rendition="#i">L</hi></rdg></app></rdg></app>
+<app type="Cfootnote"><lem type="main">vapeurs.</lem><note type="lemma-abbrev">vapeurs</note><note type="editorial">Über „Dämpfe” als Krankheitsursachen siehe <hi rendition="#k">M. Laxenare</hi> und <hi rendition="#k">A. Chanson</hi>, „Les vapeurs: Aperçu historique”,
+<hi rendition="#i">Annales Médico-psychologiques</hi> 146 (1988), S. 637-644.<bibl corresp="#bib_01177"/></note></app>
+Ce sont comme des éblouissements, et surprises et foiblesses subites qui les prennent et s’en vont tout à coup et reviennent par intervalles. Et comme cela les eblouit, comme si quelque nuée epaisse venoit à leur obscurcir la veue et l’esprit, elles appellent cecy des
+<app type="Bfootnote"><lem type="main">vapeurs. Or il est bien manifeste que cecy ne scauroient estre des vapeurs.</lem><note type="lemma-abbrev">vapeurs.</note><rdg wit="#L" n="1"> Or cela n’est qu’une disposition à la syncope </rdg><rdg wit="#L" n="2"> Or <seg type="apparat-ellipsis"/> vapeurs. <hi rendition="#i">L</hi></rdg></app>
+La comparaison de la teste pour un alembic est fort mal fondée; il n’y a point de passages pour la distillation et dans la teste même pour une vapeur il faudroit des places vuides, où la vapeur se pût <app type="Bfootnote"><lem type="main">rassembler.
+<index indexName="Namensregister"><term><hi rendition="#g">Alliot</hi>, Jean-Baptiste ??-??</term></index> Or Mons. Alliot le jeune</lem><note type="lemma-abbrev">rassembler.</note><rdg wit="#L" n="1"> Il y a quelqu </rdg><rdg wit="#L" n="2">
+Or <seg type="apparat-ellipsis"/> jeune, <hi rendition="#i">L</hi></rdg></app>, m’a conté que son pere<index indexName="Namensregister"><term><hi rendition="#g">Alliot</hi>, Pierre, gest. zwischen 1680-1697</term></index> et luy avec Mons. Bourdelot<index indexName="Namensregister"><term><hi rendition="#g">Bourdelot</hi>, Pierre Michon 1610-1685</term></index> et autres ont assisté à l’ouuerture du corps de Mons. le Marechal de Clerambault<index indexName="Namensregister"><term><hi rendition="#g">Clérambault</hi>, Philippe, 1620-1665</term></index>, on y trouua dans un des passages du
+<app type="Bfootnote"><lem type="main">sang du</lem><note type="lemma-abbrev">sang</note><rdg wit="#L" n="1"> dans l </rdg><rdg wit="#L" n="2"> du <hi rendition="#i">L</hi></rdg></app>
+coeur au poulmon ou coûtre (et car je ne m’en souviens pas bien) un gros morceau de chair spongieux comme une langue de carpe, qui avoit bouché le passage du sang. Car il est probable, que le sang
+<app type="Bfootnote"><lem type="main">rencontrant ces bouchons</lem><note type="lemma-abbrev">rencontrant</note><rdg wit="#L" n="1"> ses ouvertures </rdg><rdg wit="#L" n="2"> ces bouchons <hi rendition="#i">L</hi></rdg></app>
+se reflechit en luy même, et par une espece de revulsion se retire en arrière de toutes les extremitez, vers le coeur. Cela doit faire un affaiblissement
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[subit],</corr></lem><rdg wit="#L"><orig>subite</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+mais qui cesse incontinent. C’est une disposition à la <pb type="VIII_2" n="680"/>syncope, lorsque le sang ne peut plus passer autant qu’il faut pour la vie, on meurt. Ces obstructions causent dans les femmes des desordres dans le bas
+<app type="Bfootnote"><lem type="main">ventre, ou matrice</lem><note type="lemma-abbrev">ventre,</note><rdg wit="#L" n="1"> ou le sang </rdg><rdg wit="#L" n="2"> ou matrice <hi rendition="#i">L</hi></rdg></app>
+comme si on bouchoit viste un alembic pour empecher l’esprit qui veut sortir, tout creveroit. Or les medecins fondent leur indication ridiculement sur le nom de vapeur. Il faut, disent-ils, les condenser, donc il donnent des limonades et autres acides, les quels avancent le mal, parce qu’ils servent à augmenter la coagulation qui est dans le sang. Et on l’a essayé, car ayant pris ce morceau qui s’estoit trouué, chez Mons. de Clerambault<index indexName="Namensregister"><term><hi rendition="#g">Clérambault</hi>, Philippe 1620-1665</term></index> et on a taché de le dissoudre dans le vinaigre, mais cela n’a servi qu’à l’endurcir. Par apres on la fort bien dissolu dans un alcali, comme lessive. Donc il faut des
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[alcalis]</corr></lem><rdg wit="#L"><orig>alcali</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+pour le dissoudre, et afin, qu’ils penetrent jusque dans le sang, il faut des
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[alcalis]</corr></lem><rdg wit="#L"><orig>alcali</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+bien <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[volatiles]</corr></lem><rdg wit="#L"><orig>volatile</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+<app type="Bfootnote"><!--Special case of Bfootnote, please check (and maybe correct).--><lem type="main"><corr resp="#ed">et [penetrants],</corr><app type="Bfootnote"><lem type="main"><add resp="#L">penetrant</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app></lem><note type="lemma-abbrev">[penetrants]</note><rdg wit="#L"><orig>penetrant</orig><note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> comme l’esprit d’urine, ou salmoniac.
+Mons. <app type="Cfootnote"><lem type="main">Alliot le pere</lem><note type="editorial"><hi rendition="#k">P. Alliot</hi>, <hi rendition="#i">Epistola de nuntio profligati sine ferro et igne carcinomatis missus</hi>, Paris 1664.</note></app>
+<app type="Bfootnote"><lem type="main">a fait</lem><note type="lemma-abbrev">a</note><rdg wit="#L" n="1"> soûtenu </rdg><rdg wit="#L" n="2"> fait <hi rendition="#i">L</hi></rdg></app>
+un écrit, De Cancro sine igne et ferro (per alcalia) curato. Sylvius<index indexName="Namensregister"><term><hi rendition="#g">Sylvius</hi>, Franz de la Boë 1614-1672</term></index> luy écrit là dessus une lettre fort honneste, et luy dit qu’il falloit, qu’ils eussent eu le même maistre (Helmont<index indexName="Namensregister"><term><hi rendition="#g">Helmont</hi>, Johann Baptist van 1579-1644</term></index> apres la nature) pour avoir des sentiments si conformes.
+Bartholin<index indexName="Namensregister"><term><hi rendition="#g">Bartholin</hi> (Bartholinus), Thomas 1616-1680</term></index> in catalogo autorum de son <hi rendition="#i">Anatomia reformata</hi>,
+<app type="Cfootnote"><lem type="main">derniere edition,</lem><note type="lemma-abbrev">derniere edition</note><note type="editorial"><bibl corresp="#bib_01178"><hi rendition="#k">T. Bartholin</hi>, <hi rendition="#i">Anatomia reformata</hi>, Leiden und Rotterdam 1669.</bibl></note></app> <app type="Bfootnote"><lem type="main">cite aussi</lem><note type="lemma-abbrev">cite</note><rdg wit="#L" n="1"> le dit </rdg><rdg wit="#L" n="2"> aussi <hi rendition="#i">L</hi></rdg></app>
+Petrum Alliot.<index indexName="Namensregister"><term><hi rendition="#g">Alliot</hi>, Pierre, gest. zwischen 1680-1697</term></index>
+Le jeune Alliot<index indexName="Namensregister"><term><hi rendition="#g">Alliot</hi>, Jean-Baptiste ??-??</term></index> a soûtenu une these; quod natura vitalem exerceat Chymiam. Mons. Alliot le pere<index indexName="Namensregister"><term><hi rendition="#g">Alliot</hi>, Pierre, gest. zwischen 1680-1697</term></index> a crû que Vesicula fellis cum chylo in intestino tenui facit effervescentiam, avant que d’avoir entendu que Mons Alliot<index indexName="Namensregister"><term><hi rendition="#g">Alliot</hi>, Jean-Baptiste ??-??</term></index> enseigne la même
+<app type="Bfootnote"><lem type="main">chose. C’est vesiculae felleae liquor, qui</lem><note type="lemma-abbrev">chose.</note><rdg wit="#L" n="1"> Ce qu’o </rdg><rdg wit="#L" n="2"> C’est <seg type="apparat-ellipsis"/> qui <hi rendition="#i">L</hi></rdg></app>
+entretient la fluidité <pb type="VIII_2" n="681"/>et le mouvement dans le sang, par son alcali. Et ce qu’on attribue vulgairement au defaut de la chaleur naturelle, ne vient que du defaut de cette liqueur. Ils engendrent des pierres dans cette vesicule qui diminuent la quantité necessaire du fiel. Amarum et acidum reagentia faciunt tertium salsum, quod est urinosum illud sal. Unde fermentatione opus est
+<app type="Bfootnote"><lem type="main">ad alcali</lem><note type="lemma-abbrev">ad</note><rdg wit="#L" n="1"> spiritum </rdg><rdg wit="#L" n="2"> alcali <hi rendition="#i">L</hi></rdg></app> ex urina recuperandum
+(+ mihi videtur Amarum et Acidum facere
+<app type="Bfootnote"><lem type="main">salsum; proprie et</lem><note type="lemma-abbrev">salsum;</note><rdg wit="#L" n="1"> salsum et </rdg><rdg wit="#L" n="2"> proprie et <hi rendition="#i">L</hi></rdg></app>
+gustu talia; seu ex salso non ipsa plane sed nonnihil dissimilia per putrefactionem restitui, sed alias substantias; quibus nomina invenienda +).
+Un nommé Jesson<index indexName="Namensregister"><term><hi rendition="#g">Jesson</hi>, ???? ??-??</term></index> chirurgien ou apothiquaire, que je rencontra chez Mons. Alliot<index indexName="Namensregister"><term><hi rendition="#g">Alliot</hi>, Jean-Baptiste ??-??</term></index> le
+<app type="Bfootnote"><lem type="main">jeune, me</lem><rdg wit="#L" cause="deletion">jeune, <note type="editorial">|</note> <del><add>en</add></del> <note type="editorial"><hi rendition="#i">erg. u. gestr.</hi> |</note> me <hi rendition="#i">L</hi></rdg></app>
+dit, qu’il avoit trouvé par le raisonnement un moyen de distiller l’esprit d’urine
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">en un instant</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> sans aucune fermentation, en abregeant cette fermentation par l’injection de certaines choses (+ alcalis qui mangent l’acide apparemment afin qu’il quitte l’alcali volatile de l’urine +) apres avoir evaporé l’urine ad consistentiam mellis.</p><p xml:id="Ch75.p7">Rien de meilleur contre le rheume
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">schnupfen</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+que de se tenir longtemps droit, sans incliner sa teste.</p></div></div></body>
+  </text>
+</TEI>

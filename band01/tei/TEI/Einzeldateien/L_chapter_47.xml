@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-09" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch47" n="47"><head>47.
+ZU LETTRE À M. CHOUET</head> <pb type="VIII_1" n="414"/><head>[Frühjahr 1673]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">LiH</hi></label>
+<p><hi rendition="#smaller">Marginalien und Unterstreichungen im <ref corresp="#bib_00163"/><hi rendition="#i">Brief Huets an Chouet</hi> vom März 1673: Leibn. Marg. 105.</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch47.p3"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Der Brief trägt das Datum März 1673</hi></p></div><div type="text"><p xml:id="Ch47.p4">[p. 6] <seg type="apparat-ellipsis"/> Car, comme celuy-cy ne commence à jouër, que quand l’eau de sa jambe exterieure a plus de hauteur (son poids estant alors plus grand, l’emporte par dessus l’autre) il arriva de même dans cette experience de l’eau purgée<index indexName="Sachverzeichnis"><term>eau purgée</term></index>, qu’une petite bulle, qui se forma au bas du col de la phiole, par exemple en A, ne fit que monter le long du col de la phiole, jusques à ce qu’elle fust parvenuë à la hauteur d’un pouce au dessus du niveau de l’eau du verre; comme à la ligne BB, laquelle étoit un peu au dessus du lieu où l’air, resté dans le recipient, pouvoit soûtenir l’eau. La colomne AC et la colomne BD avoient jusques là combattu par leur poids, [p. 7] comme font toutes les liqueurs; car elles étoient également pressées en haut par toute la force de la matiere subtile<index indexName="Sachverzeichnis"><term>matière</term><index><term>subtile</term></index></index> qui étoit, d’un costé<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: d’un costé</note> dans la bulle, et de l’autre<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: de l’autre.<lb/><hi rendition="#i">Am Rand auf beide vorausgehenden Unterstreichungen bezogen</hi>: inaequales sunt</note> dans le recipient; mais comme il ne faut conter la hauteur de la colomne BD que depuis B, puis que ce qui étoit plus bas étoit soutenu par l’air, la colomne AC<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand</hi>: imo c’est le même avec <hi rendition="#i">ABC</hi></note> étoit toûjours la plus haute; et il faut croire qu’elle l’emportoit par son poids, le matras pourtant ne se vuidoit pas encore pour cela,<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand</hi>: non capio</note> parce qu’il ne pouvoit venir que de l’eau du costé de BD, et la bulle cependant montoit, comme font tous les corps plus legers que l’eau.</p><figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch47.p5">
+        <graphic url="../images/huet.svg" width="130.086pt" xml:id="Ch47.p5.g1"/>
+        
+        <head><hi rendition="#i">[Fig. 1]</hi> <note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Zur Zeichnung</hi>: Statim ab initio quando bulla est in <hi rendition="#i">A</hi> major erit pressio ab <hi rendition="#i">A</hi> versus <hi rendition="#i">C</hi> quam a <hi rendition="#i">B</hi> versus <hi rendition="#i">D</hi>, nam illic est materiae subtilis in recipiente et bulla, hic ejus e recipiente tantum. Statim ergo deberet elevare columnam <hi rendition="#i">AB</hi>.</note></head>
+      </figure><p xml:id="Ch47.p6"><app type="Bfootnote"><lem type="main"/><note type="lemma-abbrev">est</note><rdg wit="#L" n="1"> aeris in reci </rdg><rdg wit="#L" n="2"> materiae subtilis in recipiente  <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote"><lem type="main"/><note type="lemma-abbrev">hic</note><rdg wit="#L" n="1"> in bulla </rdg><rdg wit="#L" n="2"> ejus e recipiente  <hi rendition="#i">L</hi></rdg></app></p></div></div></body>
+  </text>
+</TEI>

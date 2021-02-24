@@ -1,0 +1,1476 @@
+%Dokumentklasse ist die KOMA-Script Klasse Scrbook
+\documentclass[fontsize=11pt,twoside,DIV10,BCOR0mm,smallheadings,pointednumbers,headinclude=false,
+openany]{scrbook}
+%\usepackage{times}
+%Zeilennummerierung, mehrere Serien von Fussnoten, Anknpfung der Fussnoten
+%Kzeitzherausgenommen\usepackage{ledmac}
+\usepackage[noeledmac] {ledmac}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% There are a number of symbols (e.g., \Square) that are defined by      %
+% multiple packages.  In order to typeset all the variants in this       %
+% document, we have to give glyph a unique name.  To do that, we define  %
+% \savesymbol{XXX}, which renames a symbol from \XXX to \origXXX, and    %
+% \restoresymbols{yyy}{XXX}, which renames \origXXX back to \XXX and     %
+% defines a new command, \yyyXXX, which corresponds to the most recently %
+% loaded version of \XXX.                                                %
+%                                                                        %
+
+% Save a symbol that we know is going to get redefined.
+\def\savesymbol#1{%
+  \expandafter\let\expandafter\origsym\expandafter=\csname#1\endcsname
+  \expandafter\let\csname orig#1\endcsname=\origsym
+  \expandafter\let\csname#1\endcsname=\relax
+}
+
+% Restore a previously saved symbol, and rename the current one.
+\def\restoresymbol#1#2{%
+  \expandafter\let\expandafter\newsym\expandafter=\csname#2\endcsname
+  \expandafter\global\expandafter\let\csname#1#2\endcsname=\newsym
+  \expandafter\let\expandafter\origsym\expandafter=\csname orig#2\endcsname
+  \expandafter\global\expandafter\let\csname#2\endcsname=\origsym
+}
+
+%                                                                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Seitenlayout, Kolumnentitel etc.
+\usepackage{scrpage2} 
+\usepackage{chngpage}
+\usepackage{tocloft}
+\usepackage{stdclsdv}
+\usepackage{graphicx}
+\usepackage[ngerman,german, polutonikogreek,french,dutch,english,danish,portuguese,spanish,italian,latin]{babel}
+%\usepackage[LGR,T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{autofe}
+\usepackage{array}	
+\usepackage{letterspace}
+\usepackage{soulutf8}
+\usepackage{infwarerr}
+\usepackage{wrapfig}
+\usepackage{textcomp}
+\usepackage{wasysym}
+\usepackage{etex}
+\usepackage{tocvsec2}
+\usepackage{multicol}
+\usepackage{longtable}
+%herausgenommenKZeitz\usepackage[pageref]{ut-backref} %nicht in MikTex enthalten; angepasste Version CH; 
+\usepackage{makeidx}
+\usepackage{multind}
+\usepackage{cancel}
+\usepackage{marvosym}%schnoepf
+\usepackage{upgreek}%schnoepf
+ \savesymbol{bigtriangleup} \savesymbol{bigtriangledown}
+\usepackage{stmaryrd}%schnoepf
+\restoresymbol{ST}{bigtriangleup} \restoresymbol{ST}{bigtriangledown}
+\usepackage{ipa}%schnoepf
+\let\eth\relax
+\usepackage{amssymb}%schnoepf
+\savesymbol{iint}\savesymbol{iiint}
+\usepackage{amsmath}
+\restoresymbol{AMS}{iint} 
+\restoresymbol{AMS}{iiint}
+\usepackage{fancybox}
+%\let\Sun\relax
+%\let\Mercury\relax
+%\let\Venus\relax
+%\let\Earth\relax
+%\let\Mars\relax
+%\let\Jupiter\relax
+%\let\Saturn\relax
+%\let\Uranus\relax
+%\let\Neptune\relax
+%\let\Pluto\relax
+%\let\leftmoon\relax
+%\let\rightmoon\relax
+%\let\fullmoon\relax
+%\let\newmoon\relax
+%\let\Aries\relax
+%\let\Taurus\relax
+%\let\Gemini\relax
+%\let\Leo\relax
+%\let\Libra\relax
+%\let\Scorpio\relax
+%\let\diameter\relax
+%\usepackage{mathabx}%schnoepf muss noch installiert werden wg. oright
+
+%Greek
+\newcommand{\pgrk}[1]{%
+   \selectlanguage{polutonikogreek}#1\selectlanguage{latin}}
+
+\fontfamily{cmr}
+\noendnotes
+
+         
+% Seitenlayout neu 30.07.2008 Bianca
+\usepackage[paperwidth=190mm, paperheight=248mm, textwidth=135mm, textheight=181mm,
+  hmarginratio=2:3, tmargin=19mm, bmargin=48mm, twoside, includehead, headsep=2mm]{geometry}
+\flushbottom
+  
+%Kolumnentitel: linke Druckseite zentriert Part-Titel, rechte Seite aktuelle chapter oder section
+\automark[chapter]{part}
+\newmarks\numbermark
+\renewcommand*{\chaptermark}[1]{%
+  \marks\numbermark{\chaptermarkformat}%
+  \markright{#1}%
+}        
+\makeatletter% 
+  \renewcommand*{\sectionmark}[1]{%
+  \begingroup
+  \@temptokena\expandafter{\sectionmarkformat}%
+  \marks\numbermark{\the\@temptokena}%
+  \endgroup
+  \markright{#1}%
+  }
+\makeatother
+        
+\clearscrheadfoot
+\ohead[\pagemark]{\pagemark}
+\ihead[{\botmarks\numbermark}]{\botmarks\numbermark}
+\chead[\headmark]{\headmark}  
+  %  \chead[]{\headmark}   
+%CH: Keine Partnummern in den automatischen Kolumnentiteln
+\renewcommand*{\partmarkformat}{}
+%Formatierug der Kapitelnummer im header
+\renewcommand*{\chaptermarkformat}{N. \arabic{chapter}}
+%Formatierung der Sectionnummer im header
+\newcommand{\notsotiny}{\fontsize{7pt}{8pt}\selectfont}
+\renewcommand*{\sectionmarkformat}{% 
+  N. \arabic{chapter}\raisebox{-0.5ex}{\notsotiny\arabic{section}}}
+\setkomafont{pagehead}{\normalfont\small}
+%\setkomafont{pagehead}{\notsotiny}
+\setkomafont{pagenumber}{\normalfont\normalsize}
+\setheadsepline{0.4pt}
+\pagestyle{scrheadings}
+
+
+%erste Seiten
+%erste Seite eines neuen Teils
+\renewcommand*{\partpagestyle}{empty}
+\renewcommand*{\partformat}{}
+\setkomafont{part}{\normalfont\MakeUppercase}
+%\renewcommand*{\partheadstartvskip}{\vspace*{-9.5ex}}
+\renewcommand*{\partheadstartvskip}{\vspace*{-6ex}}
+%CH: Part-Ueberschriften auf der neuen leeren Seite linksbuendig ausgeben
+\renewcommand*{\raggedpart}{\raggedright}
+        
+%erste Seite eines neuen Kapitels
+%Punkt immer hinter Kapitelnummer und weitere Formatspezifikationen
+\renewcommand{\thechapter}{\arabic{chapter}.}
+\renewcommand*{\chapterformat}{%
+  \chapappifchapterprefix{\ }\thechapter\enskip}
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+%schnoepf2001\setkomafont{chapter}{\normalfont\normalsize\uppercase}
+\setkomafont{chapter}{\normalfont\normalsize}
+%\addtokomafont{chapter}{\scshape}
+
+\renewcommand*{\chapterheadendvskip}{\vspace*{0mm}}
+
+%erste Seite des ersten Kapitels im Part (keine Kolumnenzeile)
+\newpagestyle{firstchapter}{(0pt,0pt){}{}{}(0pt,0pt)}{{}{}{}}   
+
+% section-Formatierung: Schriftgroesse, Nummerierung mit tiefgestellten Zahlen
+% und weitere Formatspezifikationen
+%schnoepf2001\setkomafont{section}{\normalfont\normalsize\uppercase}
+\setkomafont{section}{\normalfont\normalsize}
+%\addtokomafont{section}{\scshape}
+\renewcommand{\thesection}{\arabic{chapter}\protect\raisebox{-0.5ex}{\notsotiny\arabic{section}}\autodot}
+\renewcommand*{\othersectionlevelsformat}[1]{%
+  \csname the#1\endcsname\enskip}
+
+
+%Haupttext
+%font und Absatzueinrckung
+\parindent=7.5mm
+%Seitenumbruch
+\frenchspacing     
+\clubpenalty=10000 % keine Schusterjungen
+\widowpenalty=10000 % keine Hurenkinder
+\tolerance=1750 % Zeilenumbruch-Toleranz (ca. 500--3000)
+%headerelemente
+\newcommand{\link}[1]{\ref{#1}}
+\renewcommand{\title}[2][]{\cite{#1}\textit{#2}}
+
+%Zeilenzaehler
+\lineation{page}
+\linenummargin{outer}
+\setcounter{firstlinenum}{5}
+\setcounter{linenumincrement}{5}
+%5 rechtsbuendig
+\makeatletter
+  \renewcommand{\rightlinenum}{\ifbypage@\ifnum\line@num<10\kern.5em\fi\else 
+  \ifnum\line@num<10\kern1em\else\ifnum\line@num<100 \kern.5em\fi\fi\fi\kern.5em\numlabfont\the\line@num 
+  \ifnum\subline@num>0:\the\subline@num\fi} 
+\makeatother
+
+%Fussnoten = Marginalien von GWL
+\setlength{\skip\footins}{8mm}
+\renewcommand{\footnoterule}{\protect\noindent\rule{18.0mm}{0.4pt}\vspace*{3.0mm}}
+\setkomafont{footnote}{\normalfont\normalsize}
+\deffootnote[2em]{0em}{0em}{\textsuperscript{\thefootnotemark}}
+\makeatletter
+  \@addtoreset{footnote}{section}
+\makeatother
+\count\footins=1500
+  
+
+%Kritischer Apparat
+%A-Fussnoten = Varianten, Textgenese
+\setlength{\skip\Afootins}{10mm plus3mm}
+\renewcommand{\Afootnoterule}{\rule{0mm}{0pt}\vspace*{1.0mm}}
+\footparagraph{A}
+\interparanoteglue{7.5mm plus1.9mm minus1.9mm}
+\renewcommand{\rbracket}{}
+\makeatletter
+  \renewcommand*{\Afootfmt}[3]{%
+  \noindent
+  \mbox{{\notenumfont\printlines#1|}\enspace
+  {\select@lemmafont#1|#2}}\enskip#3\strut\par}
+  \makeatother
+\count\Afootins=1800
+%B-Funssoten, Kommentare der Editoren
+\setlength{\skip\Bfootins}{0mm}
+\renewcommand{\Bfootnoterule}{\rule{135mm}{0.4pt}\vspace*{1.0mm}}
+\footparagraph{B}
+\interparanoteglue{7.5mm plus1.9mm minus1.9mm}
+\makeatletter
+  \newcommand{\dpoint}{:}
+  \renewcommand*{\Bfootfmt}[3]{%
+  \noindent
+  \mbox{{\notenumfont\printlines#1|}\enspace
+  {\select@lemmafont#1|#2}\dpoint}\enskip#3\strut\par}
+\makeatother
+\count\Bfootins=1800
+%more space for crit apparatus
+\renewcommand{\footfudgefiddle}{80}
+ 
+%Ausgabe einer Zeilenreferenz mit 'f', sofern sich die Funote auf genau zwei aufeinanderfolgende Zeilen bezieht
+\makeatletter
+  \def\printlines#1|#2|#3|#4|#5|#6|#7|{%					
+  \begingroup
+  \setprintlines{#1}{#2}{#3}{#4}{#5}{#6}%
+  \ifnum #1=#4
+  \ifnum #2<#5
+  \newcount\endlinenumber
+  \endlinenumber = #5
+  \advance\endlinenumber by -1
+  \ifnum #2<\endlinenumber #2\endashchar#5\else #2f\fullstop \fi       % This line is new
+  \fi
+  \ifnum #2=#5 #2 \fi
+  \fi
+  \ifnum #1<#4							
+  \ifl@d@pnum #2\endashchar S\fullstop\ #4\fullstop\fi
+   #5
+  \fi
+  \endgroup}
+\makeatother
+
+%Unterdruecken einer Zeilenreferenz
+%\makeatletter
+%  \def\printlines#1|#2|#3|#4|#5|#6|#7|{%
+%  \begingroup
+%  \setprintlines{#1}{#2}{#3}{#4}{#5}{#6}%
+%  \ifnum#2=-1 \ledplinenumfalse \fi       % This line is new
+%  \ifl@d@pnum #1\fullstop\fi
+%  \ifledplinenum \linenumrep{#2}\else \symplinenum\fi
+%  \ifl@d@ssub \fullstop \sublinenumrep{#3}\fi
+%  \ifl@d@dash \endashchar\fi
+%  \ifl@d@pnum #4\fullstop\fi
+%  \ifl@d@elin \linenumrep{#5}\fi
+%  \ifl@d@esl \ifl@d@elin \fullstop\fi \sublinenumrep{#6}\fi
+%  \endgroup}
+%\makeatother
+%\newcommand{\killnumber}{\linenum{|-1|||-1||}}
+
+ 
+%Ueberschriften, Inhaltsverzeichnis, Indizes
+%title set by hand / publisher
+%Inhaltsverzeichnis
+%Name des Inhaltsverzeichnisses      
+\addto\captionslatin{%
+\def\contentsname{}}
+%\maxtocdepth{section}
+%\maxtocdepth{part}
+        
+%Aufnahme der Chapter- und Sectiontitel ins Inhaltsverzeichnis unterdruecken
+\newcommand*\OrigChapter[2][]{}
+\let\OrigChapter\chapter
+\renewcommand*{\chapter}[2][]{%
+  \settocdepth{part}\OrigChapter[#1]{#2}%
+  \settocdepth{section}%
+  }
+\newcommand*\OrigSection[2][]{}
+  \let\OrigSection\section
+\renewcommand*{\section}[2][]{%
+  \settocdepth{part}\OrigSection[#1]{#2} %
+  \settocdepth{section}%
+  }
+
+%Aufnahme der parts ins Inhaltsverzeichnis verhindern
+%\newcommand*\OrigPart[2][]{}
+ % \let\OrigPart\apart
+%\renewcommand*{\apart}[2][]{%
+ % \settocdepth{apart}\OrigPart[#1]{#2} %
+ % \settocdepth{section}%
+  %}
+%\makeatletter
+%\let\settocdepth\relax
+%\newcommand{\settocdepth}[-1]{%
+  %\addtocontents{toc}{\protect\setcounter{tocdepth}{#1}}}
+%\makeatother
+%Format des Inhaltsverzeichnisses
+\tocloftpagestyle{empty}
+%Kopfzeile
+\makeatletter
+  \renewcommand{\cftmarktoc}{%
+%  \@mkboth{\scshape Inhaltsssverzeichnis}{\scshape Inhaltsverzeichnis}}
+  \@mkboth{\scriptsize\uppercase{Inhaltsverzeichnis}}{\scriptsize\uppercase{Inhaltsverzeichnis}}}
+  \renewcommand*{\l@part}{\@dottedtocline{-1}{0mm}{0mm}}
+ % \renewcommand*{\l@chapter}{\@dottedtocline{0}{2mm}{6mm}}
+  \renewcommand*{\l@chapter}{\@dottedtocline{0}{2mm}{6mm}}
+ %   \setlength{\cftsecnumwidth}{35mm}
+  \renewcommand*{\l@section}{\@dottedtocline{1}{8mm}{7mm}}
+  \renewcommand{\@pnumwidth}{9mm}
+\renewcommand{\@tocrmarg}{9.5mm}
+  \renewcommand{\@dotsep}{4.5}
+\makeatother
+ 
+
+         
+%Bibliografie
+%Keine Ueberschirft fuer die Bibliografie
+\addto\captionslatin{\def\bibname{\ \vspace{1.6ex}}}
+     
+% Werke in der Bibliographie werden mit '1., 2.' durchnummeriert
+%\cite-Befehl gibt nichts aus
+\makeatletter
+  \renewcommand{\@biblabel}[1]{#1.}
+  \renewcommand*{\@cite}[2]{{#1\if@tempswa , #2\fi}}
+ %Neue Befehle eingefuegt, weil auf Server nicht vorhanden
+%  \newcommand{\AfterBibliographyPreamble}{\g@addto@macro\bib@before@hook}
+%\newcommand{\AtEndBibliography}{\g@addto@macro\bib@after@hook}
+\makeatother
+        
+%\cite-Befehl gibt nichts aus
+\makeatletter
+  \def\@citex[#1]#2{\leavevmode
+  \let\@citea\@empty
+  \@cite{\@for\@citeb:=#2\do
+  {\@citea\def\@citea{,\penalty\@m\ }%
+  \edef\@citeb{\expandafter\@firstofone\@citeb\@empty}%
+  \if@filesw\immediate\write\@auxout{\string\citation{\@citeb}}\fi
+  }}{#1}}
+\makeatother
+  
+  %in der bbl-Datei vor den ersten bibliografie-Eintrag folgenden Befehl ergänzen:\vspace{-0.64cm}
+%brf-Datei mit dem Perl-Skript MakeBackref von www.potse.nl/software/pbackref/MakeBackref vor finaler Zusammenstellung bearbeiten       
+
+  
+%Indices
+\makeindex{Namensregister}
+\makeindex{Sachverzeichnis}
+\makeindex{Ortsregister}
+%Index zweispaltig, mit 'Praeambel'
+\makeatletter
+  \renewcommand{\see}[2]{\newline{\em s.\/a.\/} #1}
+  \renewcommand\printindex[2]{
+  \clearpage{\pagestyle{empty}\cleardoublepage}
+  \setchapterpreamble{\index@preamble}
+  \addchap*{\hfill #2\hfill}
+  \thispagestyle{empty}
+  \clearscrheadings
+  \chead{\scriptsize\uppercase{#2}}
+  \ohead[\pagemark]{\pagemark}
+  \begin{multicols}{2}\setlength{\columnseprule}{0.4pt}
+  \footnotesize\raggedright
+  \@input{#1.ind}
+  \end{multicols}}
+  \renewcommand*\@idxitem{\par\hangindent 11\p@}
+    \renewcommand*\subitem{\@idxitem \par\hangindent 22\p@ \hspace*{11\p@}}
+\makeatother
+                
+%neuer Vorspann
+\begin{document}
+
+\pagenumbering{Roman}
+\setcounter{page}{5}
+%\beginnumbering
+%CH \part und \addpart* geaendert, damit Ueberschrift keine Nummer und nicht ins Inhaltsverzeichnis
+\clearpage{\pagestyle{empty}\cleardoublepage}
+%test
+%\addcontentsline{toc}{part}{\large\uppercase{Inhaltsverzeichnis}}
+%testende
+%\addpart[\scriptsize\uppercase{Inhaltsverzeichnis}]{\large\protect\textso{INHALTSVERZEICHNIS}}
+\addpart[\large\uppercase{Inhaltsverzeichnis}]{\large\protect\textso{INHALTSVERZEICHNIS}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+   \tableofcontents
+        
+%CH \part in \addpart geaendert, damit Ueberschrift keine Nummer bekommt
+\clearpage{\pagestyle{empty}\cleardoublepage}
+%\addtocontents{\vspace{5mm}}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{Vorwort}]{\large\protect\textso{VORWORT}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\markleft{\scriptsize\uppercase{Vorwort}}
+   \input{gesamttex/Vorwort.tex}
+
+%CH \part in \addpart geaendert, damit Ueberschrift keine Nummer bekommt
+\clearpage{\pagestyle{empty}\cleardoublepage}
+%\addtocontents{\vspace{5mm}}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{Einleitung}]{\large\protect\textso{EINLEITUNG}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\markleft{\scriptsize\uppercase{Einleitung}}
+   \input{gesamttex/Einleitung.tex}
+
+\pagenumbering{arabic}
+\beginnumbering
+
+%CH \part in \addpart geaendert, damit Ueberschrift keine Nummer
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{I. Observata philosophica}]{\large\protect\textso{I. OBSERVATA PHILOSOPHICA}}
+\clearpage{\pagestyle{empty}\cleardoublepage}            
+\renewcommand*{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+%\thispagestyle{firstchapter}
+\chapter[\scriptsize\uppercase{Observata Philosophica in itinere Anglicano 1673}]{\uppercase{Observata philosophica in itinere Anglicano sub initium anni 1673}\newline\lbrack M\"arz 1673\rbrack}%
+  \addcontentsline{toc}{chapter}{\hspace{5.5pt}\thechapter\enskip Observata philosophica in itinere Anglicano sub initium anni 1673\\\protect\rule[0cm]{2pt}{0pt}\lbrack M\"arz 1673\rbrack}%
+  % \addcontentsline{toc}{chapter}{\hspace{5.5pt}\thechapter\enskip Observata philosophica in itinere Anglicano sub initium anni 1673%
+% \newline\protect\rule[0mm]{2pt}{0pt}
+\markleft{\scriptsize\uppercase{I. Observata philosophica}}
+  \vspace{8mm}        	 
+    \input{gesamttex/9_2_072r.tex}%Stork ok    
+    \input{gesamttex/8_1_073v.tex}%Stork ok
+    \input{gesamttex/8_2_072v.tex}
+    \input{gesamttex/9_1_073r.tex}
+        
+%CH \part in \addpart ge�ndert, damit die �berschrift keine Nummer bekommt	
+\clearpage{\pagestyle{empty}\cleardoublepage}	
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{II. Nautica}]{\large\protect\textso{II. NAUTICA}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+  \chapter[\scriptsize\uppercase{De longitudinibus inveniendis}]{\uppercase{De longitudinibus inveniendis} \newline\lbrack Ende 1668 \textendash\ Anfang 1669\rbrack}%
+  \addcontentsline{toc}{chapter}{\hspace{5.5pt}\thechapter\enskip De longitudinibus inveniendis \lbrack Ende 1668 \textendash\ Anfang 1669\rbrack}
+\markleft{\scriptsize\uppercase{II. Nautica}}
+  \vspace{8mm}
+  \footnotesize  	        			
+   \input{gesamttex/112_1_046-052.tex}%Stork ok
+  \vspace{10mm}
+  \normalsize
+        			
+        			        			
+\section[\scriptsize\uppercase{De longitudinibus inveniendis 1}]{\uppercase{De longitudinibus inveniendis 1}}%
+  \addcontentsline{toc}{section}{\thesection\enskip De longitudinibus inveniendis 1}
+  \vspace{4mm}  
+    \input{gesamttex/111_4_046r.tex}%Stork ok
+    \input{gesamttex/111_3_046v.tex}%Stork ok
+    \input{gesamttex/111_2_074r.tex}%Stork ok
+    \input{gesamttex/111_1_074v.tex}%Stork ok
+			      
+\newpage		        
+\section[\scriptsize\uppercase{Instrumentum longitudinum}]{\uppercase{Instrumentum longitudinum}}
+  \addcontentsline{toc}{section}{\thesection\enskip Instrumentum longitudinum}
+  \vspace{4mm}
+    \input{gesamttex/99_1_074v.tex}%Stork ok
+
+\newpage
+\section[\scriptsize\uppercase{De longitudinibus inveniendis 2}]{\uppercase{De longitudinibus inveniendis 2}}
+  \addcontentsline{toc}{section}{\thesection\enskip De longitudinibus inveniendis 2}
+  \vspace{4mm}
+    \input{gesamttex/110_4_047r.tex}%Stork ok 
+    \input{gesamttex/110_3_047v.tex}%Stork ok   
+    \input{gesamttex/110_2_048r.tex}%Stork ok 
+    \input{gesamttex/110_1_048v.tex}%Stork ok
+         					     					
+\newpage		
+\section[\scriptsize\uppercase{De longitudinibus inveniendis 3}]{\uppercase{De longitudinibus inveniendis 3}}
+  \addcontentsline{toc}{section}{\thesection\enskip De longitudinibus inveniendis 3}
+  \vspace{4mm}
+    \input{gesamttex/109_4_049r.tex}%Stork ok 
+    \input{gesamttex/109_3_049v.tex}%Stork ok
+    \input{gesamttex/109_2_050r.tex}%Stork ok
+    \input{gesamttex/109_1_050v.tex}%Stork ok
+
+         			
+\newpage		
+\section[\scriptsize\uppercase{De longitudinibus inveniendis 4}]{\uppercase{De longitudinibus inveniendis 4}}      
+  \addcontentsline{toc}{section}{\thesection\enskip De longitudinibus inveniendis 4}
+  \vspace{4mm}
+    \input{gesamttex/108_4_051r.tex}%Stork ok 
+    \input{gesamttex/108_3_051v.tex}%Stork ok 
+    \input{gesamttex/108_2_052r.tex}%Stork ok 
+    \input{gesamttex/108_1_052v.tex}%Stork ok 
+    
+\renewcommand*{\chapterpagestyle}{scrheadings}     	
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}	
+         					
+\chapter[\scriptsize\uppercase{Computatio linearum navigationum}]{\uppercase{Computatio linearum navigationum} \newline\lbrack 1669\rbrack}
+  \addcontentsline{toc}{chapter}{\hspace{5.5pt}\thechapter\enskip Computatio linearum navigationum \lbrack 1669\rbrack}
+  \vspace{8mm}
+    \input{gesamttex/115_3_054r.tex}%schnoepf ok
+    \input{gesamttex/115_2_055r.tex}%schnoepf ok
+    \input{gesamttex/115_1_063v.tex}%schnoepf ok
+         	
+\chapter[\scriptsize\uppercase{Cogitationes diversae circa navigationem}]{\uppercase{Cogitationes diversae circa navigationem} \newline\lbrack Anfang 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\hspace{5.5pt}\thechapter\enskip Cogitationes diversae circa navigationem \lbrack Anfang 1672\rbrack}
+  \vspace{8mm}
+    \input{gesamttex/118_2_057r.tex}%schnoepf ok
+    \input{gesamttex/118_1_057v.tex}%schnoepf ok		
+         			
+\chapter[\scriptsize\uppercase{Machina ad navigationem efficiendam}]{\uppercase{Machina ad navigationem efficiendam} \newline\lbrack Anfang 1672\rbrack}         															
+  \addcontentsline{toc}{chapter}{\hspace{5.5pt}\thechapter\enskip Machina ad navigationem efficiendam \lbrack Anfang 1672\rbrack}
+  \vspace{8mm}
+    \input{gesamttex/91_1_056r.tex}%schnoepf ok
+						  
+\chapter[\scriptsize\uppercase{De longitudinum determinatione}]{\uppercase{De longitudinum determinatione} \newline\lbrack 2. H\"alfte 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\hspace{5.5pt}\thechapter\enskip De longitudinum determinatione \lbrack 2. H\"alfte 1672\rbrack}						
+  \vspace{8mm}
+  \footnotesize
+    \input{gesamttex/107_1_064-073.tex}%schnoepf ok
+  \normalsize
+  \vspace{10mm}
+						
+\section[\scriptsize\uppercase{De longitudinum determinatione. Scheda prima}]{\uppercase{De longitudinum determinatione. Scheda prima}}
+  \addcontentsline{toc}{section}{\thesection\enskip De longitudinum determinatione. Scheda prima}
+  \vspace{4mm}
+    \input{gesamttex/54_4_064r.tex}%schnoepf ok
+    \input{gesamttex/54_3_064v.tex}%schnoepf ok					
+    \input{gesamttex/54_2_065r.tex}%schnoepf ok
+    \input{gesamttex/54_1_065v.tex}%schnoepf ok
+				
+\newpage								
+\section[\scriptsize\uppercase{De longitudinum determinatione. Scheda secunda}]{\uppercase{De longitudinum determinatione. Scheda secunda}}
+  \addcontentsline{toc}{section}{\thesection\enskip De longitudinum determinatione. Scheda secunda}   						
+  \vspace{4mm}
+    \input{gesamttex/52_15_066r.tex}%schnoepf ok
+    \input{gesamttex/52_14_066v.tex}%schnoepf ok
+    \input{gesamttex/52_13_067r.tex}%schnoepf ok
+    \input{gesamttex/52_12_067v.tex}%schnoepf ok
+    \input{gesamttex/52_11_068r.tex}%schnoepf ok
+    \input{gesamttex/52_10_068v.tex}%schnoepf ok
+    \input{gesamttex/52_9_069r.tex}%schnoepf ok
+    \input{gesamttex/52_8_069v.tex}%schnoepf ok
+    \input{gesamttex/52_7_070r.tex}%schnoepf ok	
+    \input{gesamttex/52_6_070v.tex}%schnoepf ok	
+    \input{gesamttex/52_5_071r.tex}%schnoepf ok	
+    \input{gesamttex/52_4_071v.tex}%schnoepf ok	
+    \input{gesamttex/52_3_072r.tex}%schnoepf ok	
+    \input{gesamttex/52_2_072v.tex}%schnoepf ok	
+    \input{gesamttex/52_1_073r.tex}%schnoepf ok	
+
+\selectlanguage{french}	
+\chapter[\scriptsize\uppercase{M\'ethode et inventions de La Montre}]{\uppercase{M\'ethode et inventions de La Montre} \newline\lbrack 2. H\"alfte 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\hspace{5.5pt}\thechapter\enskip M\'ethode et inventions de La Montre \lbrack 2. H\"alfte 1672\rbrack}
+  \vspace{8mm}				
+  \selectlanguage{latin}
+    \input{gesamttex/92_1_020r.tex}%Stork ok	
+							
+\selectlanguage{french}		
+\chapter[\scriptsize\uppercase{R\'eflexions de la d\'etermination des lieux sur la mer}]{\uppercase{R\'eflexions de la d\'etermination des lieux sur la mer} \newline\lbrack 2. H\"alfte 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\hspace{5.5pt}\thechapter\enskip R\'eflexions de la d\'etermination des lieux sur la mer \lbrack 2. H\"alfte 1672\rbrack}
+  \vspace{8mm}
+  \selectlanguage{latin}
+    \input{gesamttex/53_1_021r.tex}%Stork ok
+					
+\chapter[\scriptsize\uppercase{Aus Bernhard Varenius, Geographia generalis}]{\uppercase{Aus Bernhard Varenius, Geographia generalis} \newline\lbrack Fr{\"u}hjahr 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\hspace{5.5pt}\thechapter\enskip Aus Bernhard Varenius, Geographia generalis \lbrack Fr{\"u}hjahr 1673\rbrack}
+  \vspace{8mm}
+    \input{gesamttex/122_1_156v.tex}%Stork ok
+				
+\chapter[\scriptsize\uppercase{Zu Jean-Baptiste Morin, Longitudinum terrestrium scientia}]{\uppercase{Zu Jean-Baptiste Morin, Longitudinum terrestrium scientia} \newline\lbrack Sommer 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Zu Jean-Baptiste Morin, Longitudinum terrestrium scientia \lbrack Sommer\\\protect\rule[0cm]{2pt}{0pt}1673\rbrack}
+  \vspace{8mm}
+    \input{gesamttex/123_1_024r.tex}%Stork ok
+				
+\selectlanguage{french}	
+\chapter[\scriptsize\uppercase{Comme les pilotes prennent les hauteurs sur mer}]{\uppercase{Comme les pilotes prennent les hauteurs sur mer} \newline\lbrack Sommer 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Comme les pilotes prennent les hauteurs sur mer \lbrack Sommer 1673\rbrack}
+  \vspace{8mm}
+  \selectlanguage{latin}
+    \input{gesamttex/116_1_022r.tex}%Stork ok
+					
+\chapter[\scriptsize\uppercase{Zu Henry Philippes, The Sea-man\textquoteright s Kalender}]{\uppercase{Zu Henry Philippes, The Sea-man\textquoteright s Kalender} \newline\lbrack Mai 1676\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Zu Henry Philippes, The Sea-man\textquoteright s Kalender \lbrack Mai 1676\rbrack}
+  \vspace{8mm}
+  \selectlanguage{latin}
+    \input{gesamttex/17_1_103.tex}%Stork ok
+													
+\chapter[\scriptsize\uppercase{Problemata hydrographica}]{\uppercase{Problemata hydrographica} \newline\lbrack 2. H\"alfte 1676\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Problemata hydrographica \lbrack 2. H\"alfte 1676\rbrack}
+  \vspace{8mm}
+  \footnotesize
+    \input{gesamttex/85_1_017r.tex}%Stork ok
+  \normalsize
+  \vspace{10mm}
+											
+\section[\scriptsize\uppercase{Inventio meridianorum inclinationum magneticarum}]{\uppercase{Inventio meridianorum supposita veritate inclinationum magneticarum}}
+  \addcontentsline{toc}{section}{\thesection\enskip Inventio meridianorum supposita veritate inclinationum\\\protect\rule[0cm]{3.5pt}{0pt}magneticarum \label{11.1}}
+  \vspace{4mm}
+    \input{gesamttex/98_1_020r.tex}%Stork ok	
+    \input{gesamttex/98_2_019v.tex}%Stork ok
+							
+\newpage								
+\section[\scriptsize\uppercase{Machinamentum ad flexionem navis determinandam}]{\uppercase{Machinamentum ad flexionem navis determinandam}}
+  \addcontentsline{toc}{section}{\thesection\enskip Machinamentum ad flexionem navis determinandam}
+  \vspace{4mm}
+    \input{gesamttex/90_1_020v.tex}%Stork ok
+						
+\newpage
+\section[\scriptsize\uppercase{De navigatione ope pyxidis nauticae}]{\uppercase{De navigatione ope pyxidis nauticae}}
+  \vspace{4mm}
+  \addcontentsline{toc}{section}{\thesection\enskip De navigatione ope pyxidis nauticae}
+    \input{gesamttex/104_3_019r.tex}%Stork ok							
+    \input{gesamttex/104_1_020v.tex}%Stork ok
+    \input{gesamttex/104_2_019v.tex}%Stork ok
+
+\newpage						
+\section[\scriptsize\uppercase{Problemata hydrographica nova}]{\uppercase{Problemata hydrographica nova}}
+  \addcontentsline{toc}{section}{\thesection\enskip Problemata hydrographica nova}
+  \vspace{4mm}
+    \input{gesamttex/84_2_021r.tex}						
+    \input{gesamttex/84_1_021v.tex}
+	
+\newpage
+\section[\scriptsize\uppercase{Propositio machinae hydrographicae}]{\uppercase{Propositio machinae hydrographicae}}
+  \addcontentsline{toc}{section}{\thesection\enskip Propositio machinae hydrographicae}							
+  \vspace{4mm}
+    \input{gesamttex/82_4_017r.tex}%schnoepf ok
+    \input{gesamttex/82_3_017v.tex}%schnoepf ok
+    \input{gesamttex/82_2_018r.tex}%schnoepf ok
+    \input{gesamttex/82_1_018v.tex}%schnoepf ok
+
+		
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{III. Optica}]{\large\protect\textso{III. OPTICA}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+\chapter[\scriptsize\uppercase{Notitia opticae promotae}]{\uppercase{Notitia opticae promotae} \newline\lbrack 1671 (?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Notitia opticae promotae \lbrack 1671 (?)\rbrack}
+\vspace{8mm}
+\markleft{\scriptsize\uppercase{III. Optica}}
+\footnotesize
+    \input{gesamttex/51_1_016-018.tex}%schnoepf ok						
+\normalsize
+\vspace{10mm}
+					  	
+\section[\scriptsize\uppercase{Notitia opticae promotae. Scheda}]{\uppercase{Notitia opticae promotae. Scheda}}
+  \addcontentsline{toc}{section}{\thesection\enskip Notitia opticae promotae. Scheda}
+  \vspace{4mm}
+    \input{gesamttex/75_1_016r.tex}%schnoepf ok	
+    \input{gesamttex/75_2_016v.tex}%schnoepf ok	
+      				
+\newpage		
+\section[\scriptsize\uppercase{Notitia opticae promotae. Editio}]{\uppercase{Notitia opticae promotae. Editio}}
+  \addcontentsline{toc}{section}{\thesection\enskip Notitia opticae promotae. Editio}
+  \vspace{4mm}
+    \input{gesamttex/76_4_017r.tex}%schnoepf ok	
+    \input{gesamttex/76_3_017v.tex}%schnoepf ok	
+    \input{gesamttex/76_2_018r.tex}%schnoepf ok	
+    \input{gesamttex/76_1_018v.tex}%schnoepf ok	
+
+\renewcommand*{\chapterpagestyle}{scrheadings}     	
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}	
+
+\selectlanguage{ngerman}
+\chapter[\scriptsize\uppercase{Aus einer fremden Schrift, Autor unbekannt}]{\uppercase{Aus einer fremden Schrift, Autor unbekannt} \newline\lbrack 2. H\"alfte 1671\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Aus einer fremden Schrift, Autor unbekannt \lbrack 2. H\"alfte 1671\rbrack}
+  \vspace{8mm}
+  \selectlanguage{latin}
+    \input{gesamttex/121_1_001v.tex}%schnoepf ok	
+
+\chapter[\scriptsize\uppercase{Aus und zu Francesco Lana, Prodromo overo saggio}]{\uppercase{Aus und zu Francesco Lana, Prodromo overo saggio di alcune inventioni nuove} \newline\lbrack 2. H\"alfte 1671\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu Francesco Lana, Prodromo overo saggio di alcune\\\protect\rule[0cm]{2pt}{0pt}inventioni nuove \lbrack 2. H\"alfte 1671\rbrack}
+  \vspace{8mm}
+    \input{gesamttex/120_2_002r.tex}%schnoepf ok	
+    \input{gesamttex/120_1_002v.tex}%schnoepf ok	
+      	
+\chapter[\scriptsize\uppercase{Zu Bonaventura Cavalieri, Lo specchio ustorio}]{\uppercase{Zu Bonaventura Cavalieri, Lo specchio ustorio} \newline\lbrack 1671 (?)\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Zu Bonaventura Cavalieri, Lo specchio ustorio \lbrack 1671 (?)\rbrack}
+  \vspace{8mm}
+    \input{gesamttex/21_5_22.tex}%schnoepf ok
+    \input{gesamttex/21_4_47.tex}%schnoepf ok
+    \input{gesamttex/21_3_53.tex}%schnoepf ok
+    \input{gesamttex/21_2_63.tex}%schnoepf ok
+    \input{gesamttex/21_1_75.tex}%schnoepf ok
+
+\chapter[\scriptsize\uppercase{Problemata optica nova reperta}]{\uppercase{Problemata optica nova reperta} \newline\lbrack 2. H\"alfte 1671\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Problemata optica nova reperta \lbrack 2. H\"alfte 1671\rbrack}
+  \vspace{8mm}
+      \input{gesamttex/83_1_001r.tex}%schnoepf ok	
+
+\selectlanguage{ngerman}	
+\chapter[\scriptsize\uppercase{Zu Johann Hudde, Specilla circularia}]{\uppercase{Zu Johann Hudde, Specilla circularia} \newline\lbrack Fr{\"u}hjahr \textendash\ Herbst 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Zu Johann Hudde, Specilla circularia \lbrack Fr{\"u}hjahr \textendash\ Herbst 1672\rbrack}
+  \vspace{8mm}
+    \input{gesamttex/50_18_083r.tex}%schnoepf ok
+    \input{gesamttex/50_17_083v.tex}%schnoepf ok
+    \input{gesamttex/50_16_084r.tex}%schnoepf ok
+    \input{gesamttex/50_15_084v.tex}%schnoepf ok
+    \input{gesamttex/50_6_085r.tex}%schnoepf ok
+    \input{gesamttex/50_5_085v.tex}%schnoepf ok
+    \input{gesamttex/50_4_086r.tex}%schnoepf ok
+    \input{gesamttex/50_3_086v.tex}%schnoepf ok	
+    \input{gesamttex/50_14_087r.tex}%schnoepf ok	
+    \input{gesamttex/50_7_087v.tex}%schnoepf ok	
+    \input{gesamttex/50_13_088r.tex}%schnoepf ok	
+    \input{gesamttex/50_12_088v.tex}%schnoepf ok	
+    \input{gesamttex/50_2_089r.tex}%schnoepf ok	
+    \input{gesamttex/50_11_089v.tex}%schnoepf ok	
+    \input{gesamttex/50_10_090r.tex}%schnoepf ok	
+    \input{gesamttex/50_9_090v.tex}%schnoepf ok	
+    \input{gesamttex/50_1_091r.tex}%schnoepf ok	
+    \input{gesamttex/50_8_091v.tex}%schnoepf ok	
+
+\selectlanguage{latin}
+\chapter[\scriptsize\uppercase{Aus Ren\'e Descartes, Dioptrice}]{\uppercase{Aus Ren\'e Descartes, Dioptrice} \newline\lbrack Fr{\"u}hjahr \textendash\ Herbst 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Aus Ren\'e Descartes, Dioptrice \lbrack Fr{\"u}hjahr 1673\rbrack}
+  \vspace{8mm}
+    \input{gesamttex/119_1_011r.tex}%schnoepf ok	
+								
+\chapter[\scriptsize\uppercase{Demonstratio nova legum refractionis}]{\uppercase{Demonstratio nova legum refractionis quae in lumine observantur} \newline\lbrack Fr{\"u}h"jahr \textendash\ Herbst 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Demonstratio nova legum refractionis quae in lumine observantur \\\protect\rule[0cm]{2pt}{0pt}\lbrack Fr{\"u}h"jahr \textendash\ Herbst 1673\rbrack}
+  \vspace{8mm}
+  \footnotesize      				
+    \input{gesamttex/71_1_097-100.tex}%schnoepf ok
+  \normalsize
+  \vspace{10mm}
+      					
+\section[\scriptsize\uppercase{Demonstratio nova legum refractionis. Scheda prima}]{\uppercase{Demonstratio nova legum refractionis quae in lumine observantur. Scheda prima}}
+  \addcontentsline{toc}{section}{\thesection\enskip Demonstratio nova legum refractionis quae in lumine observantur. \\\protect\rule[0cm]{3.5pt}{0pt}Scheda prima}
+  \vspace{4mm}
+    \input{gesamttex/49_1_097r.tex}%schnoepf ok	
+    \input{gesamttex/102_1_097v.tex}%schnoepf ok	
+      					
+\newpage
+\section[\scriptsize\uppercase{Demonstratio nova legum refractionis. Scheda secunda}]{\uppercase{Demonstratio nova legum refractionis quae in lumine observantur. Scheda secunda}}
+  \addcontentsline{toc}{section}{\thesection\enskip Demonstratio nova legum refractionis quae in lumine observantur. \\\protect\rule[0cm]{3.5pt}{0pt}Scheda secunda}
+  \vspace{4mm}
+    \input{gesamttex/48_1_099r.tex}%schnoepf ok	
+    \input{gesamttex/101_2_099v.tex}%schnoepf ok	
+    \input{gesamttex/101_1_100r.tex}%schnoepf ok
+
+\chapter[\scriptsize\uppercase{De Cartesii doctrina de refractione}]{\uppercase{De Cartesii doctrina de refractione} \newline\lbrack Fr{\"u}hjahr \textendash\ Herbst 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip De Cartesii doctrina de refractione \lbrack Fr{\"u}hjahr \textendash\ Herbst 1673\rbrack} 
+  \vspace{8mm}
+    \input{gesamttex/47_1_101r.tex}%schnoepf ok	
+      					
+\chapter[\scriptsize\uppercase{Optica}]{\uppercase{Optica} \newline\lbrack Fr{\"u}hjahr \textendash\ Herbst 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Optica \lbrack Fr{\"u}hjahr \textendash\ Herbst 1673\rbrack}
+  \vspace{8mm}
+    \input{gesamttex/88_1_007r.tex}%schnoepf ok	
+
+\chapter[\scriptsize\uppercase{Ratio aequalitatis angulorum reflexionis et incidentiae}]{\uppercase{Ratio aequalitatis angulorum reflexionis et incidentiae} \newline\lbrack Fr{\"u}hjahr \textendash\ Herbst 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Ratio aequalitatis angulorum reflexionis et incidentiae \lbrack Fr{\"u}hjahr \textendash\ \\\protect\rule[0cm]{2pt}{0pt}Herbst 1673\rbrack}
+  \vspace{8mm}
+    \input{gesamttex/80_1_006r.tex}%schnoepf ok	
+             
+\selectlanguage{ngerman}
+\chapter[\scriptsize\uppercase{Zu Honor\'e Fabri, Synopsis optica}]{\uppercase{Zu Honor\'e Fabri, Synopsis optica} \newline\lbrack Anfang 1673 (?)\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Zu Honor\'e Fabri, Synopsis optica \lbrack Anfang 1673 (?)\rbrack}
+  \vspace{8mm}
+\selectlanguage{latin}
+    \input{gesamttex/14_63_0.tex}%schnoepf ok	
+    \input{gesamttex/14_62_5.tex}%schnoepf ok	
+    \input{gesamttex/14_3_8.tex}%schnoepf ok	
+    \input{gesamttex/14_61_13.tex}%schnoepf ok	
+    \input{gesamttex/14_60_21.tex}%schnoepf ok	
+    \input{gesamttex/14_59_23.tex}%schnoepf ok	
+    \input{gesamttex/13_1_25.tex}%schnoepf ok	
+    \input{gesamttex/14_58_35.tex}%schnoepf ok	
+    \input{gesamttex/14_57_39.tex}%schnoepf ok	
+    \input{gesamttex/14_56_40.tex}%schnoepf ok	
+    \input{gesamttex/14_55_41.tex}%schnoepf ok	
+    \input{gesamttex/14_54_47.tex}%schnoepf ok	
+    \input{gesamttex/14_53_49.tex}%schnoepf ok	
+    \input{gesamttex/14_52_60.tex}%schnoepf ok	
+    \input{gesamttex/14_51_62.tex}%schnoepf ok	
+    \input{gesamttex/14_50_65.tex}%schnoepf ok	
+    \input{gesamttex/14_49_69.tex}%schnoepf ok	
+    \input{gesamttex/14_48_72.tex}%schnoepf ok	
+    \input{gesamttex/14_47_73.tex}%schnoepf ok	
+    \input{gesamttex/14_46_85.tex}%schnoepf ok	
+    \input{gesamttex/14_45_87.tex}%schnoepf ok	
+    \input{gesamttex/14_44_88.tex}%schnoepf ok	
+    \input{gesamttex/14_43_97.tex}%schnoepf ok	
+    \input{gesamttex/14_42_98.tex}%schnoepf ok	
+    \input{gesamttex/14_41_99.tex}%schnoepf ok		
+    \input{gesamttex/14_40_102.tex}%schnoepf ok	
+    \input{gesamttex/14_39_107.tex}%schnoepf ok	
+    \input{gesamttex/14_38_120.tex}%schnoepf ok				
+    \input{gesamttex/14_37_122.tex}%schnoepf ok	        				
+    \input{gesamttex/14_36_124.tex}%schnoepf ok	
+    \input{gesamttex/14_35_131.tex}%schnoepf ok	
+    \input{gesamttex/14_34_133.tex}%schnoepf ok	
+    \input{gesamttex/14_33_134.tex}%schnoepf ok	
+    \input{gesamttex/14_32_135.tex}%schnoepf ok	
+    \input{gesamttex/14_31_138.tex}%schnoepf ok	
+    \input{gesamttex/14_30_141.tex}%schnoepf ok	
+    \input{gesamttex/14_29_153.tex}%schnoepf ok	
+    \input{gesamttex/14_28_154.tex}%schnoepf ok	
+    \input{gesamttex/14_27_155.tex}%schnoepf ok	
+    \input{gesamttex/14_26_157.tex}%schnoepf ok	
+    \input{gesamttex/14_25_158.tex}%schnoepf ok	
+    \input{gesamttex/14_24_159.tex}%schnoepf ok	
+    \input{gesamttex/14_23_161.tex}%schnoepf ok	
+    \input{gesamttex/14_22_164.tex}%schnoepf ok	
+    \input{gesamttex/14_21_167.tex}%schnoepf ok	
+    \input{gesamttex/14_20_174.tex}%schnoepf ok	
+    \input{gesamttex/14_19_175.tex}%schnoepf ok	
+    \input{gesamttex/14_18_180.tex}%schnoepf ok	
+    \input{gesamttex/14_2_181.tex}%schnoepf ok	
+    \input{gesamttex/14_17_182.tex}%schnoepf ok	
+    \input{gesamttex/14_16_184.tex}%schnoepf ok	
+    \input{gesamttex/14_15_186.tex}%schnoepf ok	
+    \input{gesamttex/14_14_187.tex}%schnoepf ok	
+    \input{gesamttex/14_13_188.tex}%schnoepf ok	
+    \input{gesamttex/14_12_189.tex}%schnoepf ok	
+    \input{gesamttex/14_11_190.tex}%schnoepf ok	
+    \input{gesamttex/14_10_192.tex}%schnoepf ok	
+    \input{gesamttex/14_9_208.tex}%schnoepf ok	
+    \input{gesamttex/14_8_228.tex}%schnoepf ok	
+    \input{gesamttex/14_7_229.tex}%schnoepf ok	
+    \input{gesamttex/14_6_230.tex}%schnoepf ok	
+    \input{gesamttex/14_1_231.tex}%schnoepf ok	
+    \input{gesamttex/14_5_240.tex}%schnoepf ok	
+    \input{gesamttex/14_4_245.tex}%schnoepf ok			    
+	%<ARTICLE_ORDER="Fabri_0; Fabri_5; Fabri_8; Fabri_13; Fabri_21; Fabri_23; Fabri_25; Fabri_35; Fabri_39; Fabri_40; Fabri_41; Fabri_47; Fabri_49; Fabri_60; Fabri_62; Fabri_65; Fabri_69; Fabri_72; Fabri_73; Fabri_85; Fabri_87; Fabri_88; Fabri_97; Fabri_98; Fabri_99; Fabri_102; Fabri_107; Fabri_120; Fabri_122; Fabri_124; Fabri_131; Fabri_133; Fabri_134; Fabri_135; Fabri_138; Fabri_141; Fabri_153; Fabri_154; Fabri_155; Fabri_157; Fabri_158; Fabri_159; Fabri_161; Fabri_164; Fabri_167; Fabri_174; Fabri_175; Fabri_180; Fabri_181; Fabri_182; Fabri_184; Fabri_186; Fabri_187; Fabri_188; Fabri_189; Fabri_190; Fabri_192; Fabri_208; Fabri_228; Fabri_229; Fabri_230; Fabri_231; Fabri_240; Fabri_245">
+
+\selectlanguage{ngerman}
+\chapter[\scriptsize\uppercase{Zu Isaac Barrow, Lectiones opticae}]{\uppercase{Zu Isaac Barrow, Lectiones opticae} \newline\lbrack M\"arz \textendash\ April 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Zu Isaac Barrow, Lectiones opticae \lbrack M\"arz \textendash\ April 1673\rbrack}
+  \vspace{8mm}
+  \selectlanguage{latin}
+    \input{gesamttex/72_10_13.tex}%schnoepf ok	
+    \input{gesamttex/72_9_17.tex}%schnoepf ok	
+    \input{gesamttex/72_8_21.tex}%schnoepf ok	
+    \input{gesamttex/72_7_26.tex}%schnoepf ok	
+    \input{gesamttex/72_6_27.tex}%schnoepf ok	
+    \input{gesamttex/72_5_37.tex}%schnoepf ok	
+    \input{gesamttex/72_4_39.tex}%schnoepf ok	
+    \input{gesamttex/72_3_48.tex}%schnoepf ok	
+    \input{gesamttex/72_2_85.tex}%schnoepf ok	
+    %\input{gesamttex/72_1_T8.tex}%schnoepf ok	     
+      		
+\selectlanguage{french}
+\chapter[\scriptsize\uppercase{Zu Girard Desargues, La perspective}]{\uppercase{Zu Girard Desargues, Mani\`{e}re universelle pour pratiquer la perspective} \newline\lbrack Fr{\"u}hjahr 1673 \textendash\ November 1676\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Zu Girard Desargues, Mani\`{e}re universelle pour pratiquer la perspec-\\\protect\rule[0cm]{2pt}{0pt}tive \lbrack Fr{\"u}hjahr 1673 \textendash\ November 1676\rbrack}
+  \vspace{8mm}
+  \selectlanguage{latin}
+    \input{gesamttex/16_17_Tall.tex}
+    %\input{gesamttex/16_1_vakat.tex}%schnoepf ok
+    %\input{gesamttex/16_16_37.tex}%schnoepf ok
+    %\input{gesamttex/16_15_45.tex}%schnoepf ok	
+    %\input{gesamttex/16_14_55.tex}%schnoepf ok
+    %\input{gesamttex/16_13_T4.tex}%schnoepf ok	
+    %\input{gesamttex/16_12_T6.tex}%schnoepf ok	
+    %\input{gesamttex/16_11_T9.tex}%schnoepf ok	
+    %\input{gesamttex/16_10_T12.tex}%schnoepf ok	
+    %\input{gesamttex/16_9_T14.tex}%schnoepf ok	
+    %\input{gesamttex/16_8_T18.tex}%schnoepf ok	
+    %\input{gesamttex/16_7_T20.tex}%schnoepf ok	
+    %\input{gesamttex/16_6_T21.tex}%schnoepf ok	
+    %\input{gesamttex/16_5_T22.tex}%schnoepf ok	
+    %\input{gesamttex/16_4_T26.tex}%schnoepf ok	
+    %\input{gesamttex/15_1_86.tex}%schnoepf ok	
+    %\input{gesamttex/16_3_T28.tex}%schnoepf ok	
+    %\input{gesamttex/16_2_T29.tex}%schnoepf ok	
+       
+        			        			
+\selectlanguage{french}
+\chapter[\scriptsize\uppercase{Note sur l'optique de Desargues}]{\uppercase{Note sur l'optique de Desargues} \newline\lbrack Fr{\"u}hjahr 1673 \textendash\ November 1676\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Note sur l'optique de Desargues \lbrack Fr{\"u}hjahr 1673 \textendash\ November 1676\rbrack}
+  \vspace{8mm}
+  \selectlanguage{latin}
+    \input{gesamttex/89_1_012r.tex}%schnoepf ok	
+        	
+\selectlanguage{french}
+\chapter[\scriptsize\uppercase{Zu J. Aleaume, La perspective speculative et pratique}]{\uppercase{Zu J. Aleaume, La perspective speculative et pratique} \newline\lbrack Fr{\"u}hjahr 1673 \textendash\ November 1676\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Zu J. Aleaume, La perspective speculative et pratique \lbrack Fr{\"u}hjahr 1673 \\\protect\rule[0cm]{2pt}{0pt}\textendash\ November 1676\rbrack}
+  \vspace{8mm}
+  \selectlanguage{latin}
+    \input{gesamttex/12_11_4.tex}%schnoepf ok	
+    \input{gesamttex/12_10_7.tex}%schnoepf ok	
+    \input{gesamttex/12_9_10.tex}%schnoepf ok	
+    \input{gesamttex/12_8_15.tex}%schnoepf ok	
+    \input{gesamttex/12_7_71.tex}%schnoepf ok	
+    \input{gesamttex/12_6_73.tex}%schnoepf ok	
+    \input{gesamttex/12_5_77.tex}%schnoepf ok	
+    \input{gesamttex/12_4_78.tex}%schnoepf ok	
+    \input{gesamttex/12_3_99.tex}%schnoepf ok	
+    \input{gesamttex/12_2_155.tex}%schnoepf ok	
+    \input{gesamttex/12_1_156.tex}%schnoepf ok	      
+        		
+\selectlanguage{french}
+\chapter[\scriptsize\uppercase{Zu J. Dubreuil, La perspective practique}]{\uppercase{Zu J. Dubreuil, La perspective practique} \newline\lbrack Fr{\"u}hjahr 1673 \textendash\ November 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Zu J. Dubreuil, La perspective practique \lbrack Fr{\"u}hjahr 1673 \textendash\ November \\\protect\rule[0cm]{2pt}{0pt}1676\rbrack}
+\vspace{8mm}
+\selectlanguage{latin}
+    \input{gesamttex/11_8_8.tex}%schnoepf ok	
+    \input{gesamttex/11_7_36.tex}%schnoepf ok	
+    \input{gesamttex/11_6_51.tex}%schnoepf ok	
+    \input{gesamttex/11_5_82.tex}%schnoepf ok	
+    \input{gesamttex/11_4_93.tex}%schnoepf ok	
+    \input{gesamttex/11_3_111.tex}%schnoepf ok	
+    \input{gesamttex/11_2_117.tex}%schnoepf ok	
+    \input{gesamttex/11_1_137.tex}%schnoepf ok	
+               
+\selectlanguage{french}
+\chapter[\scriptsize\uppercase{Sur la r\'efraction des couleurs diff\'erentes}]{\uppercase{Sur la r\'efraction des couleurs diff\'erentes} \newline\lbrack Mitte 1673 \textendash\ Ende 1676\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Sur la r\'efraction des couleurs diff\'erentes \lbrack Mitte 1673 \textendash\ Ende 1676\rbrack}
+  \selectlanguage{latin}
+  \vspace{8mm}
+    \input{gesamttex/79_2_013r.tex}%schnoepf ok	
+    \input{gesamttex/79_1_013v.tex}%schnoepf ok		       		
+							        			
+\chapter[\scriptsize\uppercase{Optici phaenomeni explicatio}]{\uppercase{Optici phaenomeni explicatio} \newline\lbrack nach 1674\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Optici phaenomeni explicatio \lbrack nach 1674\rbrack}
+  \vspace{8mm}
+    \input{gesamttex/87_2_009r.tex}%schnoepf ok		
+    \input{gesamttex/87_1_009v.tex}%schnoepf ok
+
+\chapter[\scriptsize\uppercase{Zu James Gregory, Optica promota}]{\uppercase{Zu James Gregory, Optica promota}\newline\lbrack 1676 (?)\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Zu James Gregory, Optica promota \lbrack 1676 (?)\rbrack}
+  \selectlanguage{latin}
+  \vspace{8mm}
+    \input{gesamttex/20_1_6.tex}%schnoepf ok	 
+								
+\chapter[\scriptsize\uppercase{De refractione ope superficiei sphaericae}]{\uppercase{De refractione ope superficiei sphaericae} \newline\lbrack Ende 1676\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip De refractione ope superficiei sphaericae \lbrack Ende 1676\rbrack}               	
+  \vspace{8mm}
+    \input{gesamttex/103_1_008r.tex}%schnoepf ok	 
+						
+\chapter[\scriptsize\uppercase{Hugenius et Huddenius de refractione}]{\uppercase{Hugenius et Huddenius de refractione} \newline\lbrack Ende 1676\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Hugenius et Huddenius de refractione \lbrack Ende 1676\rbrack}
+  \vspace{8mm}
+    \input{gesamttex/100_1_010r.tex}%schnoepf ok	 
+        	
+\clearpage{\pagestyle{empty}\cleardoublepage}\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{IV. Pneumatica}]{\large\protect\textso{IV. PNEUMATICA}}
+\clearpage{\pagestyle{empty}\cleardoublepage}		
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+        		
+\chapter[\scriptsize\uppercase{Aus Otto von Guericke, Experimenta nova}]{\uppercase{Aus Otto von Guericke, Experimenta nova} \newline\lbrack Sommer 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Aus Otto von Guericke, Experimenta nova \lbrack Sommer 1672\rbrack}
+  \markleft{\scriptsize\uppercase{IV. Pneumatica}}
+  \vspace{8mm}			
+    \input{gesamttex/45_7_095v.tex}	 %schnoepf1
+    \input{gesamttex/45_3_099v.tex}	 %schnoepf1
+    \input{gesamttex/45_8_094r.tex}	%schnoepf1
+    \input{gesamttex/45_5_097v.tex}	%schnoepf1
+    \input{gesamttex/45_6_096r.tex}	%schnoepf1
+    \input{gesamttex/45_4_098r.tex}	%schnoepf1
+    \input{gesamttex/45_1_101v.tex}	%schnoepf1
+    \input{gesamttex/45_2_100r.tex}	%schnoepf1
+    \input{gesamttex/45_9_093v.tex}	 %schnoepf1
+    \input{gesamttex/45_10_092r.tex}	%schnoepf1
+    \input{gesamttex/45_11_091v.tex}	%schnoepf1
+      						
+\renewcommand*{\chapterpagestyle}{scrheadings}     	
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}	
+
+\chapter[\scriptsize\uppercase{Aus Saggi di naturali esperienze}]{\uppercase{Aus Saggi di naturali esperienze} \newline\lbrack 2. H\"alfte 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Aus Saggi di naturali esperienze \lbrack 2. H\"alfte 1672\rbrack}
+  \vspace{8mm}					
+    \input{gesamttex/44_1_134v.tex}	 %schnoepf1
+    \input{gesamttex/44_5_129r.tex}	%schnoepf1
+    \input{gesamttex/44_2_133v.tex}	%schnoepf1
+    \input{gesamttex/44_3_132r.tex}	%schnoepf1
+    \input{gesamttex/44_4_131v.tex}	%schnoepf1	
+					  	
+\selectlanguage{french}
+\chapter[\scriptsize\uppercase{Aus Blaise Pascal, Traitez de l'\'equilibre des liqueurs}]{\uppercase{Aus Blaise Pascal, Traitez de l'\'equilibre des liqueurs} \newline\lbrack 2. H\"alfte 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Aus Blaise Pascal, Traitez de l'\'equilibre des liqueurs \lbrack 2. H\"alfte 1672\rbrack}
+  \vspace{8mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/97_2_014r.tex}	%schnoepf1	
+    \input{gesamttex/97_1_017r.tex}  	%schnoepf1	 					 	
+								
+\chapter[\scriptsize\uppercase{Experimenta novissima pneumatica illustris Hugenii}]{\uppercase{Experimenta novissima pneumatica illustris Hugenii} \newline\lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Experimenta novissima pneumatica illustris Hugenii \lbrack 25. Juli \textendash\ \\\protect\rule[0cm]{2pt}{0pt}12. Dezember 1672\rbrack}
+  \vspace{8mm}	
+    \input{gesamttex/42_11_091r.tex}%schnoepf1
+    \input{gesamttex/42_10_091v.tex}%schnoepf1
+    \input{gesamttex/42_9_092r.tex}%schnoepf1
+    \input{gesamttex/42_8_092v.tex}%schnoepf1	
+    \input{gesamttex/42_7_093r.tex}%schnoepf1
+    \input{gesamttex/42_6_093v.tex}	%schnoepf1deletion auskommentiert
+    \input{gesamttex/42_5_094r.tex}%schnoepf1	
+    \input{gesamttex/42_4_094v.tex}%schnoepf1	
+    \input{gesamttex/42_3_095r.tex}%schnoepf1	
+    \input{gesamttex/42_2_095v.tex}%schnoepf1		
+    \input{gesamttex/42_1_096v.tex}%schnoepf1		
+
+\chapter[\scriptsize\uppercase{Experimenta pneumatica circa vacuum}]{\uppercase{Experimenta pneumatica circa vacuum} \newline\lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Experimenta pneumatica circa vacuum \lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \vspace{8mm}					
+    \input{gesamttex/41_4_097r.tex}%schnoepf1	
+    \input{gesamttex/41_3_097v.tex}%schnoepf1
+%Zeitz auskommentiert,da Datei jetzt leer, Inhalt in 41_3_097v.tex kopiert    \input{gesamttex/41_2_098r.tex}%schnoepf1	
+%Zeitz auskommentiert,da Datei jetzt leer, Inhalt in 41_3_097v.tex kopiert       \input{gesamttex/41_1_098v.tex}%schnoepf1! Package soul Error: Eventuell wg. 2 bildern in einem Absatz in der wrapfig-Umgebung.
+									
+\chapter[\scriptsize\uppercase{De variis experimentis pneumaticis}]{\uppercase{De variis experimentis pneumaticis} \newline\lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip De variis experimentis pneumaticis \lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \vspace{8mm}	
+    \input{gesamttex/40_12_099r.tex}%schnoepf1						
+    \input{gesamttex/40_11_099v.tex}%schnoepf1
+    \input{gesamttex/40_10_100r.tex}%schnoepf1
+    \input{gesamttex/40_9_100v.tex}%schnoepf1
+    \input{gesamttex/40_8_101r.tex}%schnoepf1
+    \input{gesamttex/40_7_101v.tex}%schnoepf1
+    \input{gesamttex/40_6_102r.tex}%schnoepf1
+    \input{gesamttex/40_5_102v.tex}%schnoepf1
+    \input{gesamttex/40_4_103r.tex}%schnoepf1
+    \input{gesamttex/40_3_103v.tex}%schnoepf1
+    \input{gesamttex/40_1_104r.tex}%schnoepf1
+    \input{gesamttex/40_2_104v.tex}%schnoepf1
+									
+\chapter[\scriptsize\uppercase{Experimenta in vacuo facienda}]{\uppercase{Experimenta in vacuo facienda} \newline\lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Experimenta in vacuo facienda \lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \vspace{8mm}	
+    \input{gesamttex/34_1_071r.tex}%schnoepf1					
+    \input{gesamttex/34_2_071v.tex}%schnoepf1
+									
+\chapter[\scriptsize\uppercase{Experimenta de corporibus elasticis}]{\uppercase{Experimenta de corporibus elasticis} \newline\lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Experimenta de corporibus elasticis \lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \vspace{8mm}					
+    \input{gesamttex/37_4_113r.tex}%schnoepf1
+    \input{gesamttex/37_3_113v.tex}%schnoepf1
+    \input{gesamttex/37_2_114r.tex}%schnoepf1
+    \input{gesamttex/37_1_114v.tex}%schnoepf1
+									
+\chapter[\scriptsize\uppercase{Definitiones circa vim elasticam}]{\uppercase{Definitiones circa vim elasticam} \newline\lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Definitiones circa vim elasticam \lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \vspace{8mm}					
+    \input{gesamttex/43_2_090r.tex}%schnoepf1
+    \input{gesamttex/43_1_090v.tex}%schnoepf1
+								
+\chapter[\scriptsize\uppercase{De barometri variatione}]{\uppercase{De barometri variatione} \newline\lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip De barometri variatione \lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \vspace{8mm}					
+    \input{gesamttex/39_4_105r.tex}%schnoepf1
+    \input{gesamttex/39_3_105v.tex}%schnoepf1
+    \input{gesamttex/39_2_106r.tex}%schnoepf1
+    \input{gesamttex/39_1_106v.tex}%schnoepf1
+
+\chapter[\scriptsize\uppercase{Propositio experimentorum novorum}]{\uppercase{Propositio experimentorum novorum} \newline\lbrack Herbst 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Propositio experimentorum novorum \lbrack Herbst 1672\rbrack}
+  \vspace{8mm}
+    \input{gesamttex/38_12_107r.tex}%schnoepf1
+    \input{gesamttex/38_1_107v.tex}%schnoepf1
+    \input{gesamttex/38_11_108r.tex}%schnoepf1
+    \input{gesamttex/38_10_108v.tex}%schnoepf1
+    \input{gesamttex/38_9_109r.tex}%schnoepf1
+    \input{gesamttex/38_8_109v.tex}%schnoepf1
+%Zeitz auskommentiert, da leer    \input{gesamttex/38_7_110r.tex}%schnoepf1
+    \input{gesamttex/38_6_110v.tex}%schnoepf1
+    \input{gesamttex/38_5_111r.tex}%schnoepf1
+    \input{gesamttex/38_4_111v.tex}%schnoepf1
+    \input{gesamttex/38_3_112r.tex}%schnoepf1
+   \input{gesamttex/38_2_112v.tex}%schnoepf1															
+													
+\chapter[\scriptsize\uppercase{Zu Lettre \`{a} M. Chouet}]{\uppercase{Zu Lettre \`{a} M. Chouet} \newline\lbrack Fr\"uhjahr 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Zu Lettre \`{a} M. Chouet \lbrack Fr\"uhjahr 1673\rbrack}
+  \vspace{8mm}					
+   \input{gesamttex/19_1_6.tex}%schnoepf1	
+																					
+\selectlanguage{french}									
+\chapter[\scriptsize\uppercase{Sur les ph\'enom\`{e}nes de l'attachement des corps dans le vide}]{\uppercase{Sur les ph\'enom\`{e}nes de l'attachement des corps dans le vide} \newline\lbrack Fr\"uhjahr 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Sur les ph\'enom\`{e}nes de l'attachement des corps dans le vide \\\protect\rule[0cm]{2pt}{0pt}\lbrack Fr\"uhjahr 1673\rbrack}
+  \vspace{8mm}
+  \footnotesize
+  \pstart 					
+   \selectlanguage{ngerman}
+    \input{gesamttex/96_1_150alle.tex}%schnoepf1		
+  \pend
+  \vspace{10mm}
+  \normalsize
+									
+\selectlanguage{french}									
+\section[\scriptsize\uppercase{Cons\'equence de l'hypoth\`{e}se g\'en\'erale}]{\uppercase{Cons\'equence de l'hypoth\`{e}se g\'en\'erale publi\'ee il y a quelque temps, pour expliquer le ph\'enom\`{e}ne de l'at- tachement dans le vide, ou dans une place dont l'air a \'et\'e tir\'e}}
+  \addcontentsline{toc}{section}{\thesection\enskip Cons\'equence de l'hypoth\`{e}se g\'en\'erale publi\'ee il y a quelque temps, \\\protect\rule[0cm]{3.5pt}{0pt}pour expliquer le ph\'enom\`{e}ne de l'attachement dans le vide, ou \\\protect\rule[0cm]{3.5pt}{0pt}dans une place dont l'air a \'et\'e tir\'e}
+  \vspace{4mm}
+  \selectlanguage{latin}
+    \input{gesamttex/7_1_150r.tex}%schnoepf1	
+    \input{gesamttex/7_4_150v.tex}%schnoepf1		
+    \input{gesamttex/7_3_151r.tex}%schnoepf1 Afootnotes zu footnotes
+    \input{gesamttex/7_2_151v.tex}%schnoepf1 					
+  \pend
+
+\newpage
+\selectlanguage{french}									
+\section[\scriptsize\uppercase{Exp\'eriences, \`{a} faire en cette mati\`{e}re}]{\uppercase{Exp\'eriences, \`{a} faire en cette mati\`{e}re}}
+  \addcontentsline{toc}{section}{\thesection\enskip Exp\'eriences, \`{a} faire en cette mati\`{e}re}
+  \vspace{4mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/2_1_135r.tex}%schnoepf1	
+    \input{gesamttex/27_1_135v.tex}%schnoepf1
+							
+\newpage
+\selectlanguage{french}									
+\section[\scriptsize\uppercase{Objections \`{a} l'application de l'hypoth\`{e}se g\'en\'erale}]{\uppercase{Objections \`{a} l'application de l'hypoth\`{e}se g\'en\'erale aux ph\'enom\`{e}nes de l'attachement des corps dans le vide}}
+  \addcontentsline{toc}{section}{\thesection\enskip Objections \`{a} l'application de l'hypoth\`{e}se g\'en\'erale aux ph\'enom\`{e}nes \\\protect\rule[0cm]{3.5pt}{0pt}de l'attachement des corps dans le vide}
+  \vspace{4mm}
+  \selectlanguage{latin}
+    \input{gesamttex/32_1_132r.tex}%schnoepf1
+    \input{gesamttex/33_3_132v.tex}%schnoepf1
+    \input{gesamttex/33_2_133r.tex}%schnoepf1
+    \input{gesamttex/33_1_133v.tex}%schnoepf1
+    \input{gesamttex/33_5_134r.tex}%schnoepf1
+    \input{gesamttex/33_4_134v.tex}%schnoepf1
+							
+\newpage
+\selectlanguage{french}									
+\section[\scriptsize\uppercase{Cons\'equences des ph\'enom\`{e}nes pneumatiques}]{\uppercase{Cons\'equences des ph\'enom\`{e}nes pneumatiques}}
+  \addcontentsline{toc}{section}{\thesection\enskip Cons\'equences des ph\'enom\`{e}nes pneumatiques}
+  \vspace{4mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/36_6_129r.tex}%schnoepf1
+    \input{gesamttex/36_5_129v.tex}%schnoepf1
+    \input{gesamttex/36_3_130r.tex}%schnoepf1
+    \input{gesamttex/36_1_130v.tex}%schnoepf1		
+    \input{gesamttex/36_2_131r.tex}%schnoepf1
+    \input{gesamttex/36_4_131v.tex}%schnoepf1			
+			
+\newpage
+\selectlanguage{french}									
+\section[\scriptsize\uppercase{De l'union des corps purg\'es d'air; qui se trouvent joints}]{\uppercase{De l'union des corps purg\'es d'air; qui se trouvent joints par une pression diff\'erente de celle de l'atmosph\`{e}re}}
+  \addcontentsline{toc}{section}{\thesection\enskip De l'union des corps purg\'es d'air; qui se trouvent joints par une \\\protect\rule[0cm]{3.5pt}{0pt}pression diff\'erente de celle de l'atmosph\`{e}re}
+  \vspace{4mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/28_2_128r.tex}%schnoepf1					
+    \input{gesamttex/28_1_128v.tex}%schnoepf1	
+									
+\selectlanguage{french}									
+\chapter[\scriptsize\uppercase{Sur l'hypoth\`{e}se \'eth\'erienne}]{\uppercase{Sur l'hypoth\`{e}se \'eth\'erienne} \newline\lbrack Fr\"uhjahr 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Sur l'hypoth\`{e}se \'eth\'erienne \lbrack Fr\"uhjahr 1673\rbrack}			
+  \selectlanguage{latin}
+  \vspace{8mm}
+  \footnotesize
+  \pstart 					
+  \selectlanguage{latin}
+    \input{gesamttex/95_1_146alle.tex}%schnoepf1	
+  \pend
+  \vspace{10mm}
+  \normalsize
+      				
+\selectlanguage{french}									
+\section[\scriptsize\uppercase{Sur l'hypoth\`{e}se \'eth\'erienne. Premier essai}]{\uppercase{Sur l'hypoth\`{e}se \'eth\'erienne. Premier essai}}
+  \addcontentsline{toc}{section}{\thesection\enskip Sur l'hypoth\`{e}se \'eth\'erienne. Premier essai}
+  \vspace{4mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/1_1_146r.tex}%schnoepf1
+    \input{gesamttex/30_1_146v.tex}%schnoepf1		
+
+\newpage									
+\selectlanguage{french}									
+\section[\scriptsize\uppercase{Sur l'hypoth\`{e}se \'eth\'erienne. Deuxi\`{e}me essai}]{\uppercase{Sur l'hypoth\`{e}se \'eth\'erienne. Deuxi\`{e}me essai}}
+  \addcontentsline{toc}{section}{\thesection\enskip Sur l'hypoth\`{e}se \'eth\'erienne. Deuxi\`{e}me essai}
+  \vspace{4mm}					
+    \input{gesamttex/6_1_148r.tex}%schnoepf1
+    \input{gesamttex/6_2_148v.tex}%schnoepf1	
+    \input{gesamttex/6_3_149r.tex}%schnoepf1		
+
+\selectlanguage{french}									
+\chapter[\scriptsize\uppercase{Recherche de la raison de ces ph\'enom\`{e}nes}]{\uppercase{Recherche de la raison de ces ph\'enom\`{e}nes avec des exp\'eriences projett\'ees pour s'en \'eclaircir d'avan- tage; et une hypoth\`{e}se nouvelle} \newline\lbrack Fr\"uhjahr 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Recherche de la raison de ces ph\'enom\`{e}nes avec des exp\'eriences \\\protect\rule[0cm]{2pt}{0pt}projett\'ees pour s'en \'eclaircir d'avantage; et une hypoth\`{e}se nouvelle \\\protect\rule[0cm]{2pt}{0pt}\lbrack Fr\"uhjahr 1673\rbrack}
+  \vspace{8mm}
+  \selectlanguage{latin}
+    \input{gesamttex/31_16_136r.tex}%schnoepf1
+    \input{gesamttex/31_6_136v.tex}%schnoepf1
+    \input{gesamttex/31_5_137r.tex}%schnoepf1
+    \input{gesamttex/31_15_137v.tex}%schnoepf1
+    \input{gesamttex/31_3_138r.tex}%schnoepf1
+    \input{gesamttex/31_14_138v.tex}%schnoepf1
+   \input{gesamttex/31_4_139r.tex}%schnoepf1
+    \input{gesamttex/31_13_139v.tex}%schnoepf1
+  %\pstart
+%@@@140r besteht praktisch ausschliesslich aus einem riesigen Textblock mit zwei sehr komplexen Ebenen. 
+%Die Datei kann nicht automatisch transformiert werden @@@
+ % \pend
+    \input{gesamttex/31_11_140v.tex}%schnoepf1inkl 140r						
+    \input{gesamttex/31_10_141r.tex}%schnoepf1
+    \input{gesamttex/31_9_141v.tex}%schnoepf1
+    \input{gesamttex/31_1_142r.tex}%schnoepf1
+    \input{gesamttex/31_8_142v.tex}%schnoepf1
+    \input{gesamttex/31_7_143r.tex}%schnoepf1
+    \input{gesamttex/31_2_143v.tex}%schnoepf1
+
+\selectlanguage{french}									
+\chapter[\scriptsize\uppercase{D'un th\'eor\`{e}me paradoxe}]{\uppercase{D'un th\'eor\`{e}me paradoxe} \newline\lbrack Fr\"uhjahr 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip D'un th\'eor\`{e}me paradoxe \lbrack Fr\"uhjahr 1673\rbrack}
+  \vspace{8mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/35_4_144r.tex}%schnoepf1
+    \input{gesamttex/35_3_144v.tex}%schnoepf1
+    \input{gesamttex/35_2_145r.tex}%schnoepf1
+    \input{gesamttex/35_1_145v.tex}%schnoepf1
+  % fehlt in 28_1_145v.tex   s. Fehlerdokument 11.7.
+					
+\chapter[\scriptsize\uppercase{De siphone}]{\uppercase{De siphone} \newline\lbrack August \textendash\ September 1674\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip De siphone \lbrack August \textendash\ September 1674\rbrack}
+  \vspace{8mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/46_1_019r.tex}%schnoepf1
+	
+\chapter[\scriptsize\uppercase{Schediasma de calculo elastico}]{\uppercase{Schediasma de calculo elastico} \newline Dezember 1674}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Schediasma de calculo elastico Dezember 1674}
+  \vspace{8mm}					
+  \selectlanguage{latin}   
+    \input{gesamttex/25_2_006r.tex}%schnoepf1
+    \input{gesamttex/25_1_006v.tex}%schnoepf1
+    \input{gesamttex/25_4_005r.tex}%schnoepf1
+    \input{gesamttex/25_3_005v.tex}%schnoepf1
+
+\chapter[\scriptsize\uppercase{Calculus elasticus}]{\uppercase{Calculus elasticus} \newline Dezember 1674}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Calculus elasticus Dezember 1674}
+  \vspace{8mm}					
+  \selectlanguage{latin}        		 				      				
+    \input{gesamttex/24_3_007r.tex}						
+    \input{gesamttex/24_1_007v.tex}						
+    \input{gesamttex/24_2_008r.tex}	
+  \pend
+				
+
+\selectlanguage{french}
+\chapter[\scriptsize\uppercase{Sur l'exp\'erience et l'appareil de Foucher}]{\uppercase{Sur l'exp\'erience et l'appareil de Foucher pour l'\'evaluation du poids de l'air rar\'efi\'e} \newline April 1675}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Sur l'exp\'erience et l'appareil de Foucher pour l'\'evaluation du poids de \\\protect\rule[0cm]{2pt}{0pt}l'air rar\'efi\'e April 1675}
+  \vspace{8mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/58_1_144r.tex}
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}	
+  \addtocontents{toc}{\vspace{5mm}}
+  \addpart[\large\uppercase{V. Technica}]{\large\protect\textso{V. TECHNICA}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+  \renewcommand{\chapterpagestyle}{firstchapter}
+  \renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+						
+\selectlanguage{ngerman}
+\chapter[\scriptsize\uppercase{\"Uber Drucken und Setzen}]{\uppercase{\"Uber Drucken und Setzen} \newline\lbrack 1671 (?)\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip \"Uber Drucken und Setzen \lbrack 1671 (?)\rbrack}
+  \vspace{8mm}	
+  \markleft{\scriptsize\uppercase{V. Technica}}				
+  \selectlanguage{latin}
+    \input{gesamttex/22_1_197r.tex}	
+									
+\renewcommand*{\chapterpagestyle}{scrheadings}     	
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}	
+
+\selectlanguage{ngerman}
+\chapter[\scriptsize\uppercase{Wechselr\"ader}]{\uppercase{Wechselr\"ader} \newline\lbrack 1671 (?)\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Wechselr\"ader \lbrack 1671 (?)\rbrack}
+  \vspace{8mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/66_1_201r.tex}
+									
+\selectlanguage{ngerman}
+\chapter[\scriptsize\uppercase{\"Uber Morlands Sprachrohr}]{\uppercase{\"Uber Morlands Sprachrohr} \newline 1671}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip \"Uber Morlands Sprachrohr 1671}
+  \vspace{8mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/64_1_Sprachrohr.tex}
+     			
+\chapter[\scriptsize\uppercase{Perpetuum mobile}]{\uppercase{Perpetuum mobile} \newline 14. Juni 1671}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Perpetuum mobile 14. Juni 1671}
+  \vspace{8mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/55_2_202r.tex}								
+    \input{gesamttex/55_1_202v.tex}
+										
+\chapter[\scriptsize\uppercase{Machina pneumatica}]{\uppercase{Machina pneumatica} \newline\lbrack 2. H\"alfte 1671 \textendash\ Anfang 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Machina pneumatica \lbrack 2. H\"alfte 1671 \textendash\ Anfang 1672\rbrack}
+  \vspace{8mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/69_3_198r.tex}
+    \input{gesamttex/69_2_198v.tex}		
+    \input{gesamttex/69_1_199r.tex}	
+									
+\chapter[\scriptsize\uppercase{Machina hydrostatica}]{\uppercase{Machina hydrostatica} \newline\lbrack 2. H\"alfte 1671 \textendash\ Anfang 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Machina hydrostatica \lbrack 2. H\"alfte 1671 \textendash\ Anfang 1672\rbrack}
+  \vspace{8mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/68_2_200r.tex}	
+   \input{gesamttex/68_1_200v.tex}	
+									
+\selectlanguage{ngerman}
+\chapter[\scriptsize\uppercase{Zu Samuel Morland, Tuba stentoro-phonica}]{\uppercase{Zu Samuel Morland, Tuba stentoro-phonica} \newline\lbrack 1. H\"alfte 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Zu Samuel Morland, Tuba stentoro-phonica \lbrack 1. H\"alfte 1672\rbrack}
+  \vspace{8mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/18_3_1.tex}
+    \input{gesamttex/18_2_03.tex}
+    \input{gesamttex/18_1_11.tex}	
+									
+\chapter[\scriptsize\uppercase{Clepsydra uniformiter fluens}]{\uppercase{Clepsydra uniformiter fluens} \newline\lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Clepsydra uniformiter fluens \lbrack 25. Juli \textendash\ 12. Dezember 1672\rbrack}
+  \vspace{8mm}		      					
+    \input{gesamttex/63_2_096r.tex}	
+    \input{gesamttex/63_1_096v.tex}
+									 
+\selectlanguage{french}
+\chapter[\scriptsize\uppercase{Notes concernant l'instrument pour niveller}]{\uppercase{Notes concernant l'instrument pour niveller, un thermom\`{e}tre \`{a} boule et des exp\'eriences optiques de Mariotte} \newline\lbrack Fr\"uhjahr \textendash\ Sommer 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Notes concernant l'instrument pour niveller, un thermom\`{e}tre \`{a} boule \\\protect\rule[0cm]{2pt}{0pt}et des exp\'eriences optiques de Mariotte \lbrack Fr\"uhjahr \textendash\ Sommer 1673\rbrack}
+  \vspace{8mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/70_1_027r.tex}	
+									
+\selectlanguage{ngerman}
+\chapter[\scriptsize\uppercase{\"Uber die Synchronisation von Pendel- und Sonnenuhr}]{\uppercase{\"Uber die Synchronisation von Pendel- und Sonnenuhr} \newline\lbrack 26. Juli 1673\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip \"Uber die Synchronisation von Pendel- und Sonnenuhr \lbrack 26. Juli 1673\rbrack}
+  \vspace{8mm}
+  \selectlanguage{latin}
+    \input{gesamttex/65_3_226r.tex}	
+    \input{gesamttex/65_2_226v.tex}	
+    \input{gesamttex/65_1_227r.tex}		
+									
+\chapter[\scriptsize\uppercase{Pont volant}]{\uppercase{Pont volant} \newline\lbrack Sommer 1673 \textendash\ Herbst 1676\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Pont volant \lbrack Sommer 1673 \textendash\ Herbst 1676\rbrack}
+  \vspace{8mm}	
+    \input{gesamttex/86_2_087r.tex}		
+									
+\chapter[\scriptsize\uppercase{Machina progressionum}]{\uppercase{Machina progressionum} \newline\lbrack 1674 \textendash\ Ende 1676\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Machina progressionum \lbrack 1674 \textendash\ Ende 1676\rbrack}
+  \vspace{8mm}		
+    \input{gesamttex/73_1_327r.tex}
+    \input{gesamttex/73_1_327v.tex}
+
+\selectlanguage{french}
+\chapter[\scriptsize\uppercase{D\'etermination de la profondeur de l'eau}]{\uppercase{D\'etermination de la profondeur de l'eau}\newline Mai 1675}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip D\'etermination de la profondeur de l'eau Mai 1675}      									
+     \input{gesamttex/94_1_138alle.tex}
+      					
+\selectlanguage{french}									
+\section[\scriptsize\uppercase{D\'etermination de la profondeur de l'eau. Premier essai}]{\uppercase{D\'etermination de la profondeur de l'eau. Premier essai}}
+  \addcontentsline{toc}{section}{\thesection\enskip D\'etermination de la profondeur de l'eau. Premier essai}
+  \vspace{4mm}					
+  \selectlanguage{latin}      		
+    \input{gesamttex/5_1_139r.tex}
+    \input{gesamttex/93_1_139v.tex}
+
+\newpage									
+\selectlanguage{french}									
+\section[\scriptsize\uppercase{D\'etermination de la profondeur de l'eau. Deuxi\`{e}me essai}]{\uppercase{D\'etermination de la profondeur de l'eau. Deuxi\`{e}me essai}}
+  \addcontentsline{toc}{section}{\thesection\enskip D\'etermination de la profondeur de l'eau. Deuxi\`{e}me  essai}
+  \vspace{4mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/3_1_138r.tex}
+									
+\selectlanguage{ngerman}										
+\chapter[\scriptsize\uppercase{Tragbares Zuginstrument}]{\uppercase{Tragbares Zuginstrument} \newline\lbrack Herbst 1675 \textendash\ Herbst 1676\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Tragbares Zuginstrument \lbrack Herbst 1675 \textendash\ Herbst 1676\rbrack}
+  \vspace{8mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/56_1_188r.tex}
+									
+\chapter[\scriptsize\uppercase{Aus Nicolaes Witsen, Scheeps-Bouw}]{\uppercase{Aus Nicolaes Witsen, Aeloude en hedendaegsche Scheeps-Bouw en Bestier} \newline\lbrack Herbst 1675 \textendash\ Herbst 1676\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Aus Nicolaes Witsen, Aeloude en hedendaegsche Scheeps-Bouw en \\\protect\rule[0cm]{2pt}{0pt}Bestier \lbrack 1675 \textendash\ 1676\rbrack}
+  \vspace{8mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/10_8_158r.tex}
+   \input{gesamttex/10_1_158v.tex}
+    \input{gesamttex/10_7_159g.tex}
+   \input{gesamttex/10_3_161r.tex}
+    \input{gesamttex/10_2_161v.tex}
+    \input{gesamttex/10_5_160r.tex}
+    \input{gesamttex/10_4_160v.tex}
+
+\selectlanguage{french}										
+\chapter[\scriptsize\uppercase{Trouver les pignons}]{\uppercase{Trouver les pignons} \newline\lbrack Fr\"uhjahr 1676\rbrack}
+  \addcontentsline{toc}{chapter}{\thechapter\enskip Trouver les pignons \lbrack Fr\"uhjahr 1676\rbrack}
+  \vspace{8mm}					
+  \selectlanguage{latin}
+    \input{gesamttex/57_2_172r.tex}
+%dieses Dokument existiert laut Article_order und auch laut Inhaltsverzeichnis eigentlich nicht
+% 	\input{gesamttex/57_1_172v.tex}
+									
+%Verzeichnisse
+\clearpage{\pagestyle{empty}\cleardoublepage}
+ % \addtocontents{toc}{\vspace{5mm}}
+ \addtocontents{toc}{\clearpage}
+ \addpart[\large\uppercase{Verzeichnisse}]{\protect\textso{VERZEICHNISSE}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\renewcommand*{\chapterpagestyle}{empty}
+ 				    
+\small
+\clearscrheadfoot
+\chead{\scriptsize\uppercase{Personenverzeichnis}}
+\ohead[\pagemark]{\pagemark}
+\addcontentsline{toc}{chapter}{\enskip Namenregister}
+\setindexpreamble{\vskip4ex%
+Kaiser werden unter dem Stichwort Kaiser mit nachfolgendem Namen, 
+P\"{a}pste unter dem Stichwort Papst mit nachfolgendem Namen aufgef\"{u}hrt. 
+Andere Regenten werden unter dem Namen des von ihnen regierten Staates gelistet. 
+Bei diesen Personengruppen sind die Jahreszahlen Regierungszeiten, bei allen anderen Lebensdaten. 
+Bei Autoren ist zus\"{a}tzlich das Schriftenverzeichnis heranzuziehen. 
+Es wird nach Seiten zitiert. Kursive Seitenzahlen verweisen auf den Apparat-Teil.\vskip4ex}
+%\markleft{\scriptsize\uppercase{Verzeichnisse}}
+\renewcommand*{\chapter}{\OrigChapter}
+%\printindex{Namensregister}{PERSONENVERZEICHNIS}
+
+\clearscrheadfoot
+\chead{\scriptsize\uppercase{Schriftenverzeichnis}}
+\ohead[\pagemark]{\pagemark}
+\addcontentsline{toc}{chapter}{\enskip Schriftenverzeichnis}
+\setbibpreamble{\vspace{-1.3cm}
+\begin{center} SCHRIFTENVERZEICHNIS \end{center}\par\vspace{0.4cm}
+Das Schriftenverzeichnis enth\"{a}lt die Literatur der Leibnizzeit und die in den 
+Erl\"{a}uterungen benutzte Literatur. Es wird nach Seiten zitiert. 
+Kursive Seitenzahlen verweisen auf den Apparat-Teil.\par \bigskip}			
+%\AfterBibliographyPreamble{\begin{multicols}{2}}
+%\AtEndBibliography{\end{multicols} }	   	               
+%\footnotesize\addchap*{\hfill SCHRIFTENVERZEICHNIS\hfill}
+\setlength{\columnseprule}{0.4pt}					
+\renewcommand*{\chapter}{\OrigChapter}
+%\bibliographystyle{leibniz8bib}
+%\footnotesize
+%\bibliography{l8bib}{}
+
+   		 
+\clearscrheadfoot
+\chead{\scriptsize\uppercase{Sachverzeichnis}}
+\ohead[\pagemark]{\pagemark}
+\addcontentsline{toc}{chapter}{\enskip Sachverzeichnis}
+\setindexpreamble{\vskip4ex%
+Eintr\"{a}ge in dieses Verzeichnis erfolgen in der jeweils von Leibniz verwendeten Sprache. 
+Die Reihenfolge der Eintr\"{a}ge ist rein alphabetisch bestimmt, 
+eine systematische Gliederung findet nicht statt. 
+Es wird nach Seiten zitiert. Kursive Seitenzahlen verweisen auf den Apparat-Teil. \vskip4ex}
+%\printindex{SachverzeichnisOK}{SACHVERZEICHNIS} 
+   				
+\clearscrheadfoot
+\chead{\scriptsize\uppercase{Ortsverzeichnis}}
+\ohead[\pagemark]{\pagemark}
+\addcontentsline{toc}{chapter}{\enskip Ortsregister}
+\setindexpreamble{\vskip4ex%
+Dieses Verzeichnis listet alle von Leibniz genannten Ortsnamen in ihrer deutschen Version auf. 
+Es wird nach Seiten zitiert. Kursive Seitenzahlen verweisen auf den Apparat-Teil.\vskip4ex}
+%\printindex{Ortsregister}{ORTSVERZEICHNIS}
+
+\clearscrheadfoot
+\chead{\scriptsize\uppercase{Handschriftenverzeichnis}}
+\ohead[\pagemark]{\pagemark}      	               
+\addchap*{\hfill HANDSCHRIFTENVERZEICHNIS\hfill}
+\addcontentsline{toc}{chapter}{\enskip Handschriftenverzeichnis}
+   %\input{gesamttex/Handschriften.tex}
+
+\clearscrheadfoot
+\chead{\scriptsize\uppercase{Siglen, Abk\"{u}rzungen, Zeichen}}
+\ohead[\pagemark]{\pagemark}      	               
+\addchap*{\hfill SIGLEN, ABK\"{U}RZUNGEN, ZEICHEN\hfill}
+\addcontentsline{toc}{chapter}{\enskip Siglen, Abk\"{u}rzungen, Zeichen}
+   %\input{gesamttex/Siglen.tex}
+
+\endnumbering
+\end{document}
+\endinput
+
+    

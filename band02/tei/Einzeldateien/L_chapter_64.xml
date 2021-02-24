@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch64" n="64"><pb type="VIII_2" n="629"/><head>64.
+MODUS COAGULANDI ET TINGENDI MERCURIUM</head>
+<head>September 1675</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Aufzeichnung: LH XXXVII 6 Bl. 3-4.
+1 Bog. 2<hi rendition="#sup">o</hi>. Etwa <formula xml:id="Ch64.p2.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>4</m:mn><m:mo>/</m:mo><m:mn>5</m:mn></m:mrow></m:math></formula> S. auf Bl. 3 r<hi rendition="#sup">o</hi>.
+Bl. 3 v<hi rendition="#sup">o</hi> und 4 r<hi rendition="#sup">o</hi> leer.
+Die letzten 11 Z. auf Bl. 3 r<hi rendition="#sup">o</hi> sowie Bl. 4 v<hi rendition="#sup">o</hi> überliefern N. 63.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 1054 (tlw.)</hi></p></item></list></p></div><div type="text"><p xml:id="Ch64.p4" rendition="#noindent"><pb type="L"/><fw type="folNum">[3 r<hi rendition="#sup">o</hi>]</fw>
+Sept. 1675<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Daneben, am Rand:</hi> (1)</note><lb/>Modus coagulandi et tingendi Mercurium<index indexName="Sachverzeichnis"><term>mercurius</term></index> vulgi in aureum colorem.
+Dissolve per 3. aut 6 horas in aqua pluviali<index indexName="Sachverzeichnis"><term>aqua pluvialis</term></index> <!--  \hack{$\oright$\textsuperscript{li}} 
+     \hackfor{\includegraphics[width=0.02\textwidth]{images/vitriol2}\textsuperscript{li}}--><graphic xml:id="Ch64.p4.g1" url="../images/vitriol2.svg" width="8.6724pt"/><hi rendition="#sup">li</hi> hungarici<index indexName="Sachverzeichnis"><term>vitriolum hungaricum</term></index> lib. II.
+Filtretur dissolutio, et in vas ferreum infundatur, in qua coque igne carbonum ☿<hi rendition="#sup">rii</hi><index indexName="Sachverzeichnis"><term>mercurius</term></index> libram semis; donec maxima ex parte videatur congelatus, movendo semper et<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand:</hi> verum</note>
+agitando strenue cum spatula<index indexName="Sachverzeichnis"><term>spatula</term></index> ferrea (ut scilicet ☿<hi rendition="#sup">ius</hi><index indexName="Sachverzeichnis"><term>mercurius</term></index> melius imbibat <graphic xml:id="Ch64.p4.g2" url="../images/sym-sulph.svg" width="8.6724pt"/><index indexName="Sachverzeichnis"><term>sulphur</term></index> acidum <!--  \hack{$\oright$\textsuperscript{li}} 
+     \hackfor{\includegraphics[width=0.02\textwidth]{images/vitriol2}\textsuperscript{li}}--><graphic xml:id="Ch64.p4.g3" url="../images/vitriol2.svg" width="8.6724pt"/><hi rendition="#sup">li</hi><index indexName="Sachverzeichnis"><term>acidum vitrioli</term></index> quod est coagulativum ☿<hi rendition="#sup">ii</hi><index indexName="Sachverzeichnis"><term>mercurius</term></index> quemadmodum quoque omnes res acidae exempli gratia acetum<index indexName="Sachverzeichnis"><term>acetum</term></index> distillatum cum sale communi, aqua ferrea<index indexName="Sachverzeichnis"><term>aqua ferrea</term></index> etc.) tunc a Mercurio<index indexName="Sachverzeichnis"><term>mercurius</term></index> per inclinationem separa, et mercurium<index indexName="Sachverzeichnis"><term>mercurius</term></index> per corium Cervinum exprime ut incoagulatus transeat, et separetur a coagulato qui in corio remanebit, et incoagulatum ☿<hi rendition="#sup">ium</hi><index indexName="Sachverzeichnis"><term>mercurius</term></index> iterum coque in praedicta aqua et exprime et excoque donec totus coaguletur. Ex eo autem coagulato antequam indurescat forma parvos globulos, ac in crucibulum fortissimum immitte radicis<index indexName="Sachverzeichnis"><term>radix</term></index> Curcumae<index indexName="Sachverzeichnis"><term>curcuma</term></index> et Tutiae<index indexName="Sachverzeichnis"><term>tutia</term></index> simul pulverisatae et commissae ad crassitiem medii digiti stratum unum, cui impone globulorum stratum alium, rursusque de pulvere et de globulis stratum super stratum, donec repleatur crucibulum, cui operculum adde aut alterum crucibulum os contra os, luto probe munitum atque junctum quod in aere aperto ac solis radiis libere exicca, per
+<app type="Bfootnote"><lem type="main">tres aut</lem><note type="lemma-abbrev">tres</note><rdg wit="#L" n="1"> ac </rdg><rdg wit="#L" n="2"> aut <hi rendition="#i">L</hi></rdg></app>
+plures dies exiccato adde ignem rotae<index indexName="Sachverzeichnis"><term>ignis rotae</term></index> hoc est
+<app type="Bfootnote"><lem type="main">circumcirca, quem</lem><note type="lemma-abbrev">circumcirca,</note><rdg wit="#L" n="1"> et </rdg><rdg wit="#L" n="2"> quem <hi rendition="#i">L</hi></rdg></app>
+gradatim auge, et per duas aut tres horas sub finem sic intende, ut toto tempore crucibulum inferius candeat, postea sine ut sua sponte frigescant, et aperto crucibulo reperies tinctum Mercurium<index indexName="Sachverzeichnis"><term>mercurius</term></index>, cui si cum curcuma<index indexName="Sachverzeichnis"><term>curcuma</term></index> et Tutia<index indexName="Sachverzeichnis"><term>tutia</term></index> paulum saponis veneti<index indexName="Sachverzeichnis"><term>sapo venetus</term></index> adjicias, frater quidam roseae crucis dixit, quod fiet malleabilis ac liquefiet, ut inde vasa possint conflari. Amen. Nota quod de curcuma duplum Tutiae<index indexName="Sachverzeichnis"><term>tutia</term></index> aut triplum est adhibendum, et credo quod sextuplum non nocebit.</p><pb type="VIII_2" n="630"/><p xml:id="Ch64.p5"><hi rendition="#g">Papier</hi><index indexName="Sachverzeichnis"><term>Papier</term></index> <hi rendition="#g">zu zurichten daß man</hi> mit allerhand metall darauff schreiben und zeichnen kan.</p><p xml:id="Ch64.p6">℞. Crura ovina erstlich gekocht, hernach gebrandt und zu pulver
+<app type="Bfootnote"><lem type="main">gestossen oder</lem><note type="lemma-abbrev">gestossen</note><rdg wit="#L" n="1"> und </rdg><rdg wit="#L" n="2"> oder <hi rendition="#i">L</hi></rdg></app>
+geschabet; mit diesem pulver das papier<index indexName="Sachverzeichnis"><term>Papier</term></index> trocken angerieben.</p><p xml:id="Ch64.p7">Oder das papier<index indexName="Sachverzeichnis"><term>Papier</term></index> angefeüchtet, und das pulver mit milch oder hausen blassen<index indexName="Sachverzeichnis"><term>hausenblasen</term></index> auff einem reibestein zart gerieben, und also das papier<index indexName="Sachverzeichnis"><term>Papier</term></index> wenn es halb trocken damit uberstrichen
+(+ daz metall soll seine farbe darauff lassen +).</p><p xml:id="Ch64.p8"><hi rendition="#g">Salis volatilis</hi><index indexName="Sachverzeichnis"><term>sal volatile</term></index> processus.
+℞. Subsidentiam ab aqua vitae<index indexName="Sachverzeichnis"><term>aqua vitae</term></index>
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">ex vino</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+extractam exiccetur in umbra[,] post contundatur grosso modo et indatur retortae lutatae.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand:</hi> verum</note>
+Cui addatur rostrum quatuor pedibus longum, et rostro aptetur recipiens, tunc omnibus bene obturatis adhibeatur ignis per gradus, ita ut quatuor diebus perficiatur operatio: nota igne aperto et frigidissimo loco ac tempore fiat.
+Rectificatur cum sale fixo<index indexName="Sachverzeichnis"><term>sal fixum</term></index> amalgama<index indexName="Sachverzeichnis"><term>amalgama</term></index>
+miscendo<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand:</hi> NB</note>
+et in arena sublimando, tunc demum
+ex spiritu vini<index indexName="Sachverzeichnis"><term>spiritus vini</term></index> sublimando.
+Medico cuidam egregio lucrosus hic processus.</p></div></div></body>
+  </text>
+</TEI>

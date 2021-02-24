@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="part" xml:id="Ptx2"><head style="; font-size:120%" rendition="#g">VORWORT</head><div type="text"><pb type="VIII_2" n="XII"/><p xml:id="Ptx2.p1" rendition="#noindent">Die Reihe VIII der Leibniz-Edition ist ein durch das Akademienprogramm gefördertes Langzeitvorhaben der Berlin-Brandenburgischen Akademie der Wissenschaften. Nach Erkenntnissen der von 2013 bis 2014 durchgeführten Nachkatalogisierung wird die Reihe der naturwissenschaftlichen, medizinischen und technischen Schriften in einem Umfang von zwölf Bänden erscheinen (2 Bde mit Schriften aus der Mainzer und Pariser Zeit zu allen drei Teilen der Reihe, 6 Bde Naturwissenschaft, 2 Bde Medizin, 2 Bde Technik).<!--  \hack{\newline\indent} 
+     \hackfor{\par}--></p><p xml:id="Ptx2.p2">Gedankt sei den öffentlichen Geldgebern für die Finanzierung des Vorhabens, dem Bundesministerium für Bildung und Forschung sowie der Senatsverwaltung für Wirtschaft, Technologie und Forschung des Landes Berlin. Arbeitsgrundlage für die Berliner Leibniz-Edition sind die Digitalisate der in Reihe VIII zu edierenden Handschriften. Sie sind dank der umfassenden Finanzierung seitens der Deutschen Forschungsgemeinschaft in hochauflösender Qualität angefertigt worden und werden freundlicherweise von der Gottfried Wilhelm Leibniz Bibliothek zur Verfügung gestellt. Dank der großzügigen Finanzierung sowohl durch die Alfried Krupp von Bohlen und Halbach-Stiftung als auch durch die Stiftung der Versicherungsgruppe Hannover sind die Digitalisate online zugänglich (http://ritter.bbaw.de).</p><p xml:id="Ptx2.p3">Der Niedersächsischen Landesbibliothek ist des Weiteren für ihre Unterstützung zu danken, insbesondere in Person ihrer Mitarbeiterin Anja Fleck, die für die Berliner Arbeitsstelle Reproduktionen anfertigen ließ sowie die Autopsie von Handschriften vornahm. Durch die Leibniz-Forschungsstelle Hannover hat die Arbeit an VIII,2 vielfach Unterstützung erfahren: Siegmund Probst verdanken wir zahlreiche wertvolle Hinweise auf Handschriften und auf von Leibniz benutzte Literatur sowie zu Fragen der Datierung und der mathematischen Notation; bei Charlotte Wahl bedanken wir uns für die Scans von Leibnitiana, die sie uns aus dem Stadtarchiv Göttingen beschaffte; Achim Trunk teilte dankenswerterweise Erkenntnisse mit uns, die er über die komplexen kombinierten Vorzeichen, die Leibniz in der zweiten Hälfte 1674 verwendete, gewonnen hatte. Die Arbeiten am Band haben auf unterschiedliche Weise auch durch die Arbeitsstellen in Potsdam und Münster Unterstützung erfahren. Des Weiteren danken wir Annie Bitbol-Hespériès für <pb type="VIII_2" n="XIII"/>alternative Lesarten von Stellen in Descartes’ Manuskripten und Kees Verduin
+für seine Nachforschungen zu dem von Leibniz verwendeten und von Christiaan Huygens stammenden Exemplar der <hi rendition="#i">Mechanica</hi> von John Wallis. Martin Frank danken wir für seine bibliographische Recherche zu Literatur, die Leibniz zitiert.</p><p xml:id="Ptx2.p4">Die setzerischen Herausforderungen bei der Fertigstellung des vorliegenden Bandes hat Katharina Zeitz gemeistert. Ihrem unermüdlichen Einsatz durch alle Phasen der Manuskriptgestaltung und -erstellung ist es zu verdanken, dass zahlreiche Probleme des Layouts und der Zeichendarstellung in LaTeX gelöst werden konnten. Für die gute Zusammenarbeit danken wir Gertrud Grünkorn und Maik Bierwirth vom De Gruyter Verlag.</p><p xml:id="Ptx2.p5">Berlin, im Juli 2016                                                        Harald Siebert</p></div></div></body>
+  </text>
+</TEI>

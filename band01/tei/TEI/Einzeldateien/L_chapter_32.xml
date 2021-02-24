@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-09" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch32" n="32"><pb type="VIII_1" n="238"/><head>32.
+OPTICI PHAENOMENI EXPLICATIO</head> <head>[nach 1674]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Konzept: LH XXXVII 2 Bl. 9. 1 Bl. 19 x 7 cm. 2 S. An drei Rändern beschnitten, unterer Rand unregelmäßig abgerissen. Die Zeichnungen befinden sich in der oberen Hälfte von Bl. 9 r<hi rendition="#sup">o</hi> und teilen den Text optisch im Verhältnis 1:3.</hi></p></item><item><label><hi rendition="#i #smaller">Kein Eintrag in KK 1 oder Cc 2.</hi></label>
+<p/></item></list></p></div><div type="contents"><p xml:id="Ch32.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Leibniz bezieht sich in diesem Stück auf den <ref corresp="#bib_00124"/><hi rendition="#i">Cursus seu mundus mathematicus</hi> von Dechales, der 1674 in Lyon<index indexName="Ortsregister"><term><hi rendition="#smaller">Lyon (Lugdunum)</hi></term></index> erschienen ist. Wir gehen von dem Erscheinungsdatum dieses Titels als dem wahrscheinlichsten Entstehungszeitraum unseres Stücks aus.</hi></p></div><div type="text"><p xml:id="Ch32.p5" rendition="#c"><pb type="L"/><fw type="folNum">[9 r<hi rendition="#sup">o</hi>]</fw> Optici phaenomeni explicatio</p><p xml:id="Ch32.p6">Si plures circuli aequales ex diversis centris describantur, quo majores erunt, eo minus discrepabunt ab unica figura circulari quia quo erunt radii eorum majores distantia centrorum, eo plures habebunt <app type="Bfootnote"><lem type="main">circuli</lem><rdg wit="#L" cause="addition"><add>circuli</add>  <note type="editorial"><hi rendition="#i">erg.  L</hi></note></rdg></app> partes communes.</p><table>
+          
+            <row>
+              <cell style="; text-align:center"><graphic url="../images/37_2_9r-1.svg" width="86.724pt" xml:id="Ch32.p7.g1"/></cell>
+              <cell style="; text-align:center"/>
+              <cell style="; text-align:center"><graphic url="../images/37_2_9r-2.svg" width="86.724pt" xml:id="Ch32.p7.g2"/></cell>
+            </row>
+            <row>
+              <cell style="; text-align:center"><hi rendition="#i">[Fig. 1]</hi></cell>
+              <cell/>
+              <cell style="; text-align:center"><hi rendition="#i">[Fig. 2]</hi></cell>
+            </row>
+          
+        </table><p xml:id="Ch32.p8">Itaque tandem ita augeri poterunt circuli, ut sensibiliter desinant in unum praesertim, si non tres tantum adhibeantur, sed plures.</p><p xml:id="Ch32.p9">Hinc fit ut radius solaris per foramen quodcunque transmissus quo in majore a foramine distantia plano ad ipsum radium recto excipiatur, eo magis ad circulum accedat. Quod experientia clarissimum est, sed ratio non aeque obvia pendet autem ex posita paulo ante propositione Geometrica. Cum enim radius solaris per rimulas, vel hiatus inter arborum folia transmissus in circulum efformatur, id <pb type="VIII_1" n="239"/>fit quia ipse sol circularis est,
+<pb type="L"/><fw type="folNum">[9 v<hi rendition="#sup">o</hi>]</fw> et intelligi possunt singula foraminis puncta, vertices totidem conorum lucidorum, quorum bases circulares sunt in plano, hae bases, seu hi circuli lucidi, eo majores sunt, quo magis abest planum excipiens a foramine, ac proinde eo magis omnes simul in circulum unum degenerare videntur.</p><p xml:id="Ch32.p10">Haec est ratiocinatio Claudii Chalesii<index indexName="Namensregister"><term><hi rendition="#g">Dechales</hi> (Chalesius), Claude François Milliet 1621–1678</term></index> quae mihi admodum ingeniosa <app type="Bfootnote"><lem type="main">videtur. Videatur</lem><note type="lemma-abbrev">videtur.</note><rdg wit="#L" n="1"> Unde deducet etiam </rdg><rdg wit="#L" n="2"> Videatur  <hi rendition="#i">L</hi></rdg></app> ejus <hi rendition="#i">Opticae</hi> lib. 3. lemmate post prop. 14. item ipsa propositio 17.<app type="Cfootnote"><lem type="main"/><note type="lemma-abbrev">propositio 17.</note><note type="editorial"><hi rendition="#k">C. F. M. Dechales,</hi> <bibl corresp="#bib_00124"><hi rendition="#i">Cursus seu mundus mathematicus</hi>, Lyon 1674, S. 453.</bibl></note></app> Unde notat si figura foraminis mutetur, vel etiam opacum aliquid in foramine suspendatur, non ideo mutat figuram solis. Idem contingit, si duo foramina sint sibi valde vicina. Semper autem supponendum est distantiam excipientis superficiei esse notabilem idem ostendit postea, etiam de figura non rotunda, ut si pars solis a corpore opaco, ut nube, horizonte, luna (in Eclipsi<index indexName="Sachverzeichnis"><term>eclipsis</term></index>) intercipiatur. Unde ingeniose porro deducit, cur pauciores sint digiti <app type="Bfootnote"><lem type="main">eclipsati</lem><rdg wit="#L" cause="addition"><add>eclipsati</add>  <note type="editorial"><hi rendition="#i">erg.  L</hi></note></rdg></app> in solis radio per foramen excepto, quam in coelo, et maculae minores appareant, quam revera sunt, scilicet, quia non rotantur penumbrae, sed coincidentia tantum umbrarum.</p></div></div></body>
+  </text>
+</TEI>

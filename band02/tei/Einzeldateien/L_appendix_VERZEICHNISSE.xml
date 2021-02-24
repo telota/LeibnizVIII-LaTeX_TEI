@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="appendix" xml:id="Ptx25">
+    <head style="; font-size:120%" rendition="#g">VERZEICHNISSE</head>
+    
+    
+    
+<!--  \hackfor{\addchap*{PERSONEN}} -->    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_index_PERSONEN.xml" xpointer="Chx1_1" parse="xml"/>
+    
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_bibliography_SCHRIFTEN.xml" xpointer="Chx3" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_index_SACHEN.xml" xpointer="Chx4_1" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_index_ORTE.xml" xpointer="Chx6_1" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_undef_FUNDSTELLEN.xml" xpointer="Chx8" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_undef_KONKORDANZEN.xml" xpointer="Chx9" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_undef_SIGLEN_ABK_RZUNGEN_ZEICHEN.xml" xpointer="Chx10" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_corrigenda_BERICHTIGUNGEN_UND_ERG_NZUNGEN.xml" xpointer="Chx11" parse="xml"/></div></body>
+  </text>
+</TEI>

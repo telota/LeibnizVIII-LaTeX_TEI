@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch90" n="90"><pb type="VIII_2" n="728"/><head>90.
+DE HOROLOGIIS COMMUNIBUS</head>
+<head>[April – Mai 1673]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Aufzeichnung: LH XXXVIII Bl. 170-171.
+1 Bog. 4<hi rendition="#sup">o</hi>, beschnitten.
+<formula xml:id="Ch90.p2.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>3</m:mn></m:mrow></m:math></formula> S. auf Bl. 171 r<hi rendition="#sup">o</hi>.
+Bl. 171 v<hi rendition="#sup">o</hi> leer.
+Bl. 170 überliefert N. 91.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 00</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch90.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Das vorliegende Stück N. 90 ist auf demselben Textträger überliefert wie das auf die Monate April bis Mai 1673 datierbare Stück N. 91.
+Beide Aufzeichnungen handeln zudem von der Ganggenauigkeit von Pendeluhren.
+Aus diesen beiden Gründen wird die Datierung von N. 91 auch für N. 90 vorgeschlagen.</hi></p></div><div type="text"><p xml:id="Ch90.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[171 r<hi rendition="#sup">o</hi>]</fw>
+In Horologio<index indexName="Sachverzeichnis"><term>horologium</term></index> communi,
+pars quae Germanis vocatur inquies<index indexName="Sachverzeichnis"><term>inquies</term></index> impetum rotae moratur,
+dum simul
+<app type="Bfootnote"><lem type="main">contrariis dentibus</lem><note type="lemma-abbrev">contrariis</note><rdg wit="#L" n="1"> parte </rdg><rdg wit="#L" n="2"> dentibus <hi rendition="#i">L</hi></rdg></app>
+illiditur;
+sed quia impetus concepti pars magna perditur ea ratione;
+cogitavi an non satius sit, rotam vi sua elateriolum<index indexName="Sachverzeichnis"><term>elaterium</term></index> tendere,
+atque ita ubi ipsum ad certum perduxit terminum,
+fracta vi sua impeditum
+<app type="Bfootnote"><lem type="main">teneri, maxima vis</lem><note type="lemma-abbrev">teneri,</note><rdg wit="#L" n="1"> magna vis </rdg><rdg wit="#L" n="2"> maxima vis <hi rendition="#i">L</hi></rdg></app>
+parte hoc modo conservata.
+Et posset hoc Elastrum esse additum ipsi illi inquieti,
+cujus dum extrema in diversa pelluntur,
+posset tendi Elastrum in medio, ad certum usque terminum.
+Sed pendulum staticum vel Elasticum mox reversum liberabit hoc Elaterium,
+et ab eo ictum accipiet.
+Quo peracto rota quoque horologii Elateriolum inquietis denuo
+<app type="Bfootnote"><lem type="main">tendet.<!--  \hack{
+\newline\indent\hspace{-2mm}Pendulum} --></lem><rdg wit="#L" n="1"> In </rdg><rdg wit="#L" n="2"> Pendulum <hi rendition="#i">L</hi></rdg></app><!--  \hackfor{\parPendulum} --></p><p xml:id="Ch90.p6">Pendulum
+staticum affigi solet libramento,
+at Elasticum <app type="Bfootnote"><lem type="main">tenet arborem</lem><note type="lemma-abbrev">tenet</note><rdg wit="#L" n="1"> arb </rdg><rdg wit="#L" n="2"> in medio </rdg><rdg wit="#L" n="3"> arborem <hi rendition="#i">L</hi></rdg></app> rotae serratae.</p></div></div></body>
+  </text>
+</TEI>

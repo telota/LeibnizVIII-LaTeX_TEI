@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch76" n="76"><pb type="VIII_2" n="682"/><head>76.
+REMEDIA ET VIRES MEDICAMENTORUM</head>
+<head>24. Februar 1676</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L<hi rendition="#sup">1</hi></hi></label>
+<p><hi rendition="#smaller">Auszüge mit Bemerkungen aus einem verschollenen Manuskript von René Descartes:
+LH III 4, 3a Bl. 1.
+1 Bl. 2<hi rendition="#sup">o</hi>. <formula xml:id="Ch76.p2.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>3</m:mn><m:mo>/</m:mo><m:mn>4</m:mn></m:mrow></m:math></formula> S. auf Bl. 1 r<hi rendition="#sup">o</hi>
+(unsere Druckvorlage).
+Das untere Viertel von Bl. 1 r<hi rendition="#sup">o</hi> sowie Bl. 1 v<hi rendition="#sup">o</hi> überliefern N. 82.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 1323 A (tlw.)</hi></p></item><item><label><hi rendition="#i #smaller">L<hi rendition="#sup">2</hi></hi></label>
+<p><hi rendition="#smaller">Abschrift von <hi rendition="#i">L<hi rendition="#sup">1</hi></hi> mit Auslassungen und Verbesserungen:
+LH III 5 Bl. 49.
+1 Bl. 4<hi rendition="#sup">o</hi>. 1 <formula xml:id="Ch76.p4.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>2</m:mn><m:mo>/</m:mo><m:mn>3</m:mn></m:mrow></m:math></formula> S.
+Ränder beschnitten.
+Spuren eines Wasserzeichens.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 1323 B</hi></p></item><item><label><hi rendition="#i #smaller">E<hi rendition="#sup">1</hi></hi></label>
+<p><hi rendition="#smaller"><ref corresp="#bib_01121"/><hi rendition="#k">R. Descartes</hi>, <hi rendition="#i">Œuvres inédites</hi>, hrsg. von <hi rendition="#k">L.A. Foucher de Careil</hi>, Bd. II, Paris 1860, S. 210-213 (mit französischer Übersetzung; nur <hi rendition="#i">L<hi rendition="#sup">1</hi></hi>).</hi></p></item><item><label><hi rendition="#i #smaller">E<hi rendition="#sup">2</hi></hi></label>
+<p><hi rendition="#smaller"><ref corresp="#bib_00120"/><hi rendition="#k">R. Descartes</hi>, <hi rendition="#i">Œuvres</hi>, hrsg. von <hi rendition="#k">C. Adam</hi> und <hi rendition="#k">P. Tannery</hi>, Bd. XI, Paris 1909, S. 641-644 (<hi rendition="#i">L<hi rendition="#sup">1</hi></hi> und <hi rendition="#i">L<hi rendition="#sup">2</hi></hi>).</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch76.p8"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+<hi rendition="#i">L<hi rendition="#sup">1</hi></hi> ist von Leibniz datiert.
+<hi rendition="#i">L<hi rendition="#sup">2</hi></hi> ist nicht datiert:
+als Abschrift von <hi rendition="#i">L<hi rendition="#sup">1</hi></hi> muss <hi rendition="#i">L<hi rendition="#sup">2</hi></hi> aber zu einem späteren Zeitpunkt angefertigt worden sein.
+Die schwer erkennbaren Spuren des Wasserzeichens im Träger von <hi rendition="#i">L<hi rendition="#sup">2</hi></hi> ermöglichen keine weitere zeitliche Eingrenzung.</hi></p></div><div type="text"><pb type="L"/><fw type="folNum">[1 r<hi rendition="#sup">o</hi>]<app type="Bfootnote"><lem type="main">Descripsi 24 Febr. 1676.</lem><note type="lemma-abbrev">Descripsi <seg type="apparat-ellipsis"/> 1676.</note><note type="editorial"><hi rendition="#i">nicht in L<hi rendition="#sup">2</hi></hi></note></app><app type="Bfootnote"><lem type="main">Excerptum ex Autograφo Cartesii<index indexName="Namensregister"><term><hi rendition="#g">Descartes</hi>, René 1596-1650</term></index></lem><!--Special case of Bfootnote, please check (and maybe correct).--><rdg wit="#L1">Excerptum <seg type="apparat-ellipsis"/> Cartesii <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg><rdg wit="#L2"> Excerptum ex Cartesii Autographo de Purgantibus, et aliis <hi rendition="#i">L<hi rendition="#sup">2</hi> am Rand</hi></rdg></app></fw><head xml:id="Ch76.p10" rendition="#c"><hi rendition="#g">Remedia,</hi><anchor xml:id="remedia1"/><app type="Bfootnote" from="#remedia1" to="#remedia2"><lem type="main"/><note type="editorial"><hi rendition="#g">Remedia</hi> <seg type="apparat-ellipsis"/> transire. <hi rendition="#i">nicht in L<hi rendition="#sup">2</hi></hi></note></app> <hi rendition="#g">et vires Medicamentorum</hi></head><p xml:id="Ch76.p11" rendition="#noindent">Lac in visceribus coagulatum; et vinum, et aqua frigida, nimis calentibus hausta <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L1">inter venena numerantur</add></lem><note type="editorial"><hi rendition="#i">erg. L<hi rendition="#sup">1</hi></hi></note></app>. Unde patet, facile etiam maxime communia alimenta in noxiam vim transire.<anchor xml:id="remedia2"/></p><p xml:id="Ch76.p12">Crediderim
+<app type="Bfootnote"><lem type="main">ventriculi cutem esse laxam et porosam, et per quam serosus humor e toto corpore in eum illabitur.</lem><note type="lemma-abbrev">ventriculi <seg type="apparat-ellipsis"/> illabitur</note><rdg wit="#L2"><hi rendition="#i">unterstrichen in L<hi rendition="#sup">2</hi></hi></rdg></app>
+Hoc patet ex eo quod famelicis
+<app type="Bfootnote"><lem type="main">cibum videntibus</lem><note type="lemma-abbrev">cibum</note><rdg wit="#L1" n="1"> videntes </rdg><rdg wit="#L1" n="2"> videntibus <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg></app>
+humor iste usque in palatum redundet, istis nempe meatibus imaginationis vi laxatis. Quia scilicet humor iste ad digerendos cibos est utilis, ut foenum<index indexName="Sachverzeichnis"><term>foenum</term></index> si aqua aspersum recondatur,
+<app type="Bfootnote"><lem type="main">incalescet et putrefiet.</lem><!--Special case of Bfootnote, please check (and maybe correct).--><rdg wit="#L1">incalescet et putrefiet <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg><rdg wit="#L2"> incalescit et putrefit <hi rendition="#i">L<hi rendition="#sup">2</hi></hi></rdg></app></p><p xml:id="Ch76.p13"><app type="Bfootnote"><lem type="main">Hinc et facile reddi ratio poterit multorum astringentium</lem><rdg wit="#L2">Hinc <seg type="apparat-ellipsis"/> astringentium <hi rendition="#i">unterstrichen in L<hi rendition="#sup">2</hi></hi></rdg></app>
+ut <!--  \hack{\edtext{vertdegris,}{{\lemma{}\Afootnote{\textit{Über} vertdegris: \Denarius}}{\lemma{vertdegris,}\Bfootnote{\textit{L\textsuperscript{1}}\quadviride aeris, item \textit{L\textsuperscript{2}}\hspace{-3.5mm}}}}} 
+     \hackfor{\edtext{}{\lemma{}\Afootnote{\textit{Über} vertdegris: \Denarius}}\edtext{vertdegris,}{\lemma{vertdegris,}\Bfootnote{\textit{L\textsuperscript{1}}\quadviride aeris, item \textit{L\textsuperscript{2}}\hspace{-3.5mm}}}}--><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Über</hi> vertdegris: ₰</note><app type="Bfootnote"><lem type="main">vertdegris,</lem><!--Special case of Bfootnote, please check (and maybe correct).--><rdg wit="#L1"><hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg><rdg wit="#L2"> viride aeris, item <hi rendition="#i">L<hi rendition="#sup">2</hi></hi></rdg></app>
+acerbi omnes fructus, <app type="Bfootnote"><lem type="main">sorba,<index indexName="Sachverzeichnis"><term>sorbum</term></index></lem><note type="lemma-abbrev">sorba,</note><!--Special case of Bfootnote, please check (and maybe correct).--><rdg wit="#L1"><hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg><rdg wit="#L2"> ut sorba <hi rendition="#i">L<hi rendition="#sup">2</hi></hi></rdg></app>
+mespili,<index indexName="Sachverzeichnis"><term>mespilus</term></index> etc.
+<app type="Bfootnote"><lem type="main">Certum</lem><!--Special case of Bfootnote, please check (and maybe correct).--><rdg wit="#L1">Certum <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg><rdg wit="#L2"> quos certum <hi rendition="#i">L<hi rendition="#sup">2</hi></hi></rdg></app>
+est meatus istos occludere, contra vero
+<app type="Bfootnote"><lem type="main">☿. ♁.<index indexName="Sachverzeichnis"><term>antimonium</term></index>
+<app type="Bfootnote"><lem type="main">quae frigida, atque</lem><note type="lemma-abbrev">quae</note><rdg wit="#L1" n="1"> figi, atque </rdg><rdg wit="#L1" n="2"> frigida, atque <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg></app>
+humida ut pruna,<index indexName="Sachverzeichnis"><term>prunum</term></index>
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[cassiam],<index indexName="Sachverzeichnis"><term>cassia</term></index></corr></lem><rdg wit="#L1"><orig>cassia</orig> <note type="editorial"><hi rendition="#i">L<hi rendition="#sup">1</hi> ändert Hrsg.</hi></note></rdg></app>
+poma,<index indexName="Sachverzeichnis"><term>pomum</term></index></lem><!--Special case of Bfootnote, please check (and maybe correct).--><rdg wit="#L1">☿. ♁. <seg type="apparat-ellipsis"/> poma, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg><rdg wit="#L2"> Mercurium et Antimonium, item quae frigida simul et humida sunt, ut pruna, poma, cassiam <hi rendition="#i">L<hi rendition="#sup">2</hi></hi></rdg></app>
+etc. illos laxare; ideoque esse
+<app type="Bfootnote"><lem type="main">purgantia</lem><rdg wit="#L2">purgantia <hi rendition="#i">unterstrichen in L<hi rendition="#sup">2</hi></hi></rdg></app>.
+<pb type="VIII_2" n="683"/>Possunt vero alia esse purgantia vel astringentia, alias ob causas; sed hanc puto
+<app type="Bfootnote"><lem type="main">praecipuam, quae</lem><!--Special case of Bfootnote, please check (and maybe correct).--><rdg wit="#L1"><hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg><rdg wit="#L2"> esse praecipuam. Quae <hi rendition="#i">L<hi rendition="#sup">2</hi></hi></rdg></app>
+enim cito corrumpuntur in ventriculo, ut cibi
+<app type="Bfootnote"><lem type="main">delicatiores solitis etc.</lem><!--Special case of Bfootnote, please check (and maybe correct).--><rdg wit="#L1">delicatiores solitis etc. <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg><rdg wit="#L2"> solitis delicatiores <hi rendition="#i">L<hi rendition="#sup">2</hi></hi></rdg></app>
+fructus horarii, etc. faeces quidem molles reddunt, sed non ideo purgant ex reliquo corpore,
+<app type="Bfootnote"><lem type="main">item quae astringunt, sed tantum ex accidenti</lem><note type="editorial">, item <seg type="apparat-ellipsis"/> accidenti <hi rendition="#i">nicht in L<hi rendition="#sup">2</hi></hi></note></app>.</p><p xml:id="Ch76.p14">Notandum <app type="Bfootnote"><lem type="main">astringentia fere omnia juvare concoctionem</lem><rdg wit="#L2">astringentia <seg type="apparat-ellipsis"/> concoctionem <hi rendition="#i">unterstrichen in L<hi rendition="#sup">2</hi></hi></rdg></app>. <app type="Bfootnote"><lem type="main">Quo minus enim est humoris serosi in stomacho</lem><!--Special case of Bfootnote, please check (and maybe correct).--><rdg wit="#L1">est humoris serosi in stomacho, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg><rdg wit="#L2"> humoris serosi in ventriculo est, <hi rendition="#i">L<hi rendition="#sup">2</hi></hi></rdg></app>, eo magis calor accenditur. Unde fit, ut quaedam astringentia post cibum sumta laxent ventriculum ex accidenti, quoniam accelerant concoctionem, ut Cydoniacum<index indexName="Sachverzeichnis"><term>cydoniacum</term></index>.</p><p xml:id="Ch76.p15"><app type="Bfootnote"><lem type="main">Ventriculus premit cibos intus conclusos,</lem><rdg wit="#L2">Ventriculus <seg type="apparat-ellipsis"/> conclusos <hi rendition="#i">unterstrichen in L<hi rendition="#sup">2</hi></hi></rdg></app>
+et se ad eorum quantitatem accommodat.
+Hinc famelici videntes cibum vi imaginationis stomachum comprimunt, antequam cibus eo ingressus, unde aquae ad os ascendunt.
+<app type="Bfootnote"><lem type="main">Purgantia vero fortasse quaedam sunt, quae obstant ne comprimatur,</lem><rdg wit="#L2">Purgantia <seg type="apparat-ellipsis"/> comprimatur <hi rendition="#i">unterstrichen in L<hi rendition="#sup">2</hi></hi></rdg></app>
+ut <app type="Bfootnote"><lem type="main">☿<index indexName="Sachverzeichnis"><term>mercurius</term></index> qui forte</lem><!--Special case of Bfootnote, please check (and maybe correct).--><rdg wit="#L1">☿ qui forte <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg><rdg wit="#L2"> Mercurius, qui fortasse <hi rendition="#i">L<hi rendition="#sup">2</hi></hi></rdg></app>
+resolvit ejus nervos quod esset periculosissimum.</p><p xml:id="Ch76.p16"><app type="Bfootnote"><lem type="main">Virgae<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Über</hi> Virgae: ₰</note>
+aureae totius plantae pulvis drachmae pondere potus, item semen genistae
+calculum<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Über</hi> calculum: ₰</note>
+in vesicis renibusque comminuit</lem><note type="editorial">Virgae <seg type="apparat-ellipsis"/> comminuit. <hi rendition="#i">nicht in L<hi rendition="#sup">2</hi></hi></note></app>.</p><p xml:id="Ch76.p17">Purgant quaedam molliendo faeces ut malva, alia lubricando intestina, ut butyrum alia comprimendo faeces, ut cydonia post pastum, alia
+<app type="Bfootnote"><lem type="main">abstergendo</lem><!--Special case of Bfootnote, please check (and maybe correct).--><rdg wit="#L1"><hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg><rdg wit="#L2"> abstirgendo <hi rendition="#i">L<hi rendition="#sup">2</hi></hi></rdg></app>
+intestina, ut aqua salsa, vel etiam dulcis; alia incidendo et aperiendo poros,
+ut <index indexName="Sachverzeichnis"><term>cremor tartari</term></index>cremor
+<anchor xml:id="LH003_04_03a_001"/><app type="Bfootnote" from="#LH003_04_03a_001" to="#LH003_04_03a_002"><lem type="main"/><!--Special case of Bfootnote, please check (and maybe correct).--><rdg wit="#L1 #ed"><graphic xml:id="Ch76.p17.g1" url="../images/taros.svg" width="8.6724pt"/><hi rendition="#sup">ri</hi>, alii <note type="editorial"><hi rendition="#i">L<hi rendition="#sup">1</hi> ändert Hrsg.</hi></note></rdg><rdg wit="#L2"> tartari: alia <hi rendition="#i">L<hi rendition="#sup">2</hi></hi></rdg></app><graphic xml:id="Ch76.p17.g2" url="../images/taros.svg" width="8.6724pt"/><hi rendition="#sup">ri</hi>, [alia]<anchor xml:id="LH003_04_03a_002"/>
+nervos retentrici inservientes
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L1">resolvendo</add></lem><note type="editorial"><hi rendition="#i">erg. L<hi rendition="#sup">1</hi></hi></note></app>
+ut <app type="Bfootnote"><lem type="main">☿.<index indexName="Sachverzeichnis"><term>mercurius</term></index></lem><!--Special case of Bfootnote, please check (and maybe correct).--><rdg wit="#L1">☿. <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg><rdg wit="#L2"> Mercurius. <hi rendition="#i">L<hi rendition="#sup">2</hi></hi></rdg></app>
+Sed et mille aliis modis alia possunt
+<app type="Bfootnote"><lem type="main">purgare, <pb type="VIII_2" n="684"/>ut</lem><rdg wit="#L1">purgare <note type="editorial">|</note> . Sed et mille aliis modiis alia possunt purgare <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> , ut <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg></app>
+venarum <app type="Bfootnote"><lem type="main">orificia obturando,</lem><note type="lemma-abbrev">orificia</note><rdg wit="#L1" n="1"> obturendo, </rdg><rdg wit="#L1" n="2"> obturando, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg></app>
+coctionem impediendo, etc.
+Quin etiam sum expertus aliquando, vini Hispanici potum me purgasse, calefaciendo scilicet sanguinis massam ita ut ex eo multi vapores in ventriculum delabantur, atque instar aquae dulcis copiose faecibus misceantur. Quod mihi manifestum fuit,
+<app type="Bfootnote"><lem type="main">quoniam</lem><!--Special case of Bfootnote, please check (and maybe correct).--><rdg wit="#L1"><hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg><rdg wit="#L2"> quia <hi rendition="#i">L<hi rendition="#sup">2</hi></hi></rdg></app>
+alia vice, eodem vino mane sumto multas urinas instar mellis pellucidas et insipidas promoverit, tunc scilicet magis apertis meatibus in vesicam quam in alvum.</p><p xml:id="Ch76.p18"><hi rendition="#g">Alvi</hi><anchor xml:id="remedia3"/><app type="Bfootnote" from="#remedia3" to="#remedia4"><lem type="main"/><note type="editorial"><hi rendition="#g">Alvi</hi> <seg type="apparat-ellipsis"/> solicitaretur. <hi rendition="#i">nicht in L<hi rendition="#sup">2</hi></hi></note></app> <hi rendition="#g">egestio difficillima post menses</hi> <app type="Cfootnote"><lem type="main">[+</lem><note type="editorial">Eckige Klammer von Leibniz.</note></app> credo post menses aliquot <app type="Cfootnote"><lem type="main">+]</lem><note type="editorial">Eckige Klammer von Leibniz.</note></app> <hi rendition="#g">sic provocata</hi> 728.
+Fellis taurini recentis, butyri insulsi, hellebori nigri, extracti diacolocynthidis diagridii et croci partes aequales, in unam massam redactae, et igni ad mellis consistentiam decoctae.
+Italicae nucis<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Über</hi> Italicae nucis: welsche nuß</note>
+testae inditae, umbilico impositae sunt.
+Ligataque fuit mox ne caderet, et binae
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L1">(+ credo testae +),</add></lem><note type="lemma-abbrev">(+ credo testae +)</note><note type="editorial"><hi rendition="#i">erg. L<hi rendition="#sup">1</hi></hi></note></app>
+diebus singulis, potionibus
+<app type="Bfootnote"><lem type="main">intus absumtis</lem><note type="lemma-abbrev">intus</note><rdg wit="#L1" n="1"> assumtis </rdg><rdg wit="#L1" n="2"> absumtis <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg></app>
+(+ ₰ puto assumtis +)
+sic repleta impositae sunt
+(<?tex-source \phantom{)}?>+ binae credo testae sic repletae impositae
+<app type="Bfootnote"><lem type="main">sunt +<?tex-source \phantom{(}?>).
+Primis diebus</lem><note type="lemma-abbrev">sunt <?tex-source \phantom{(}?>+).</note><rdg wit="#L1" n="1"> Primo die </rdg><rdg wit="#L1" n="2"> Primis diebus <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg></app>
+nihil praeter fluctuationes et murmura a patiente sentiebantur; tertia die cum immensis doloribus supervenit egerendi desiderium, at
+<app type="Bfootnote"><lem type="main">induratis excrementis</lem><note type="lemma-abbrev">induratis</note><rdg wit="#L1" n="1"> intestinis </rdg><rdg wit="#L1" n="2"> excrementis <hi rendition="#i">L<hi rendition="#sup">1</hi></hi></rdg></app>
+non successit excretio, donec vituli abdomen recens, cum oleo antiquo ad ignem cribratum et calens ventriculo induceretur, digitisque felle et butyro inunctis anus solicitaretur.<anchor xml:id="remedia4"/></p></div></div></body>
+  </text>
+</TEI>

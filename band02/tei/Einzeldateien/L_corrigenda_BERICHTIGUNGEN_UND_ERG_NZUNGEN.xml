@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="corrigenda" xml:id="Chx11">
+    <pb type="VIII_2" n="817"/><head rendition="#smaller">BERICHTIGUNGEN UND ERGÄNZUNGEN</head>
+    
+    
+      <p xml:id="Chx11.p2" rendition="#noindent"><hi rendition="#smaller">Zu Band VIII, 1:</hi><lb/><hi rendition="#smaller"/></p>
+    
+    
+      
+      <table>
+        <row>
+          <cell><hi rendition="#smaller">S. VII, N. 8</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">DE</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">SUR</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. XXXVI, Z. 14</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">nachssbenannter</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">nachßbenannter</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 3, Z. 2</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">4</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">2</hi><hi rendition="#smaller #sup">o</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 3, Z. 7f.</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">Wissenschafts-Bezeichnungen</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">Wissenschaftsbezeichnungen</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 3, Z. 22</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">K. I.</hi> <hi rendition="#k #smaller">Gerhardt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">C. I.</hi> <hi rendition="#k #smaller">Gerhardt</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 5, Erl. zu Z. 7</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">Bemerkung <seg type="apparat-ellipsis"/> </hi><hi rendition="#i #smaller">BH</hi> <hi rendition="#smaller">III, S. 74.</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">Anspielung auf</hi> <ref corresp="#bib_?????_missing"><!--The bibliography entry "?????" seems to be missing.--></ref><hi rendition="#smaller"/><hi rendition="#k #smaller">J. Wallis</hi><hi rendition="#smaller">, „Epitome binae methodi tangentium”,</hi> <hi rendition="#i #smaller">PT</hi><hi rendition="#smaller">, 7 (1672), Nr. 81, S. 4010-4016, bes. S. 4014. Siehe hierzu u.a.</hi> <ref corresp="#bib_?????_missing"><!--The bibliography entry "?????" seems to be missing.--></ref><hi rendition="#smaller"/><hi rendition="#i #smaller">LSB</hi> <hi rendition="#smaller">VII, 4 N. 17, S. 360.</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 9, Z. 4, observat</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">ergänze Erl.</hi><hi rendition="#smaller"> </hi><ref corresp="#bib_?????_missing"><!--The bibliography entry "?????" seems to be missing.--></ref><hi rendition="#smaller"/><hi rendition="#k #smaller">J. Wallis</hi><hi rendition="#smaller">, „A Relation Concerning the Late Earthquake Neer Oxford; Together with Some Observations of the Sealed Weatherglass, and the Barometer”,</hi> <hi rendition="#i #smaller">PT</hi><hi rendition="#smaller">, 1 (1665-1666), Nr. 10, S. 166-171.</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 10, Z. 2, praesente</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">ergänze Erl.</hi> <hi rendition="#smaller">Vermutlich Anspielung auf den Brand des Navy Office während des ersten Aufenthalts Leibniz’ in London; vgl.</hi> <ref corresp="#bib_?????_missing"><!--The bibliography entry "?????" seems to be missing.--></ref><hi rendition="#smaller"/><hi rendition="#k #smaller">H. Oldenburg</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">The Correspondence</hi><hi rendition="#smaller">, hrsg. von A. R. Hall und M. Boas-Hall, Madison, Milwaukee und London 1695ff, Bd. IX, S. 468.</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 12, Z. 3, loquelae</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">ergänze Erl.</hi> <hi rendition="#smaller">Vgl.</hi> <ref corresp="#bib_?????_missing"><!--The bibliography entry "?????" seems to be missing.--></ref><hi rendition="#smaller"/><hi rendition="#k #smaller">J. Wallis</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Grammatica linguae Anglicanae, cui praefigitur De loquela sive sonorum formatione tractatus grammatico-physicus</hi><hi rendition="#smaller">, Oxford 1653; erwähnt in</hi> <ref corresp="#bib_?????_missing"><!--The bibliography entry "?????" seems to be missing.--></ref><hi rendition="#smaller">„A Letter of Dr. John Wallis to Robert Boyle Esq. concerning the said Doctor’s Essay of Teaching a person Dumb and Deaf”,</hi> <hi rendition="#i #smaller">PT</hi><hi rendition="#smaller">, 5 (1670), Nr. 61, S. 1087-1097: S. 1096.</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 17, Z. 12, Alterius</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">ergänze Erl.</hi><hi rendition="#smaller"> </hi><ref corresp="#bib_?????_missing"><!--The bibliography entry "?????" seems to be missing.--></ref><hi rendition="#smaller"/><hi rendition="#k #smaller">G. Dalgarno</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Ars signorum, vulgo Character universalis et lingua philosophica</hi><hi rendition="#smaller">, London 1661. Leibniz’ Marginalien hierzu sind in</hi> <ref corresp="#bib_?????_missing"><!--The bibliography entry "?????" seems to be missing.--></ref><hi rendition="#smaller"/><hi rendition="#i #smaller">LSB</hi> <hi rendition="#smaller">VI, 3 N. 12 ediert.</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 46, Z. 4</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">in preclare</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">in Magnete preclare</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 93, Z. 3</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">8</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">4</hi><hi rendition="#smaller #sup">o</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 95, Titel</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">DE</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">SUR</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 95, Z. 2</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">8</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">4</hi><hi rendition="#smaller #sup">o</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 95, Z. 9</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">[montré]</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">monté</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 95, Var. zu Z. 9</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">sreiche</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 98, Z. 2</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">4</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">2</hi><hi rendition="#smaller #sup">o</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 102, Z. 2</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">8</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">4</hi><hi rendition="#smaller #sup">o</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 116, Z. 21</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">in globo artificiali exacte</hi> <hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><hi rendition="#g #smaller">in globo artificiali exacte</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 134, Z. 3</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">8</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">4</hi><hi rendition="#smaller #sup">o</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 142, Z. 16</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><formula xml:id="Chx11.T10.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mn mathsize="80%">1</m:mn><m:mn mathsize="80%">2</m:mn></m:mfrac></m:mstyle></m:math></formula> <hi rendition="#smaller">pedis seu</hi> <formula xml:id="Chx11.T10.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mn mathsize="80%">15</m:mn><m:mn mathsize="80%">36</m:mn></m:mfrac></m:mstyle></m:math></formula><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><formula xml:id="Chx11.T10.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mn mathsize="80%">15</m:mn><m:mn mathsize="80%">36</m:mn></m:mfrac></m:mstyle></m:math></formula> <hi rendition="#smaller">pedis seu</hi> <formula xml:id="Chx11.T10.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mn mathsize="80%">1</m:mn><m:mn mathsize="80%">2</m:mn></m:mfrac></m:mstyle></m:math></formula></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 240, Marg. 1</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">alterioribus</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">altioribus</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 245, Z. 3</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">99 v</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller">, 94 r</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller">, 97 v</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller">, 96 r</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">94 r</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller">, 97 v</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller">, 96 r</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller">, 99 v</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller">,</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 248, Z. 9</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">e</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">eae</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 248, Z. 10</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">tenebant.</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">tendebant.</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 249, Z. 24 bis S. 252, Z. 11</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">versetze diesen Abschnitt auf S. 263 zwischen Z. 5 und Z. 6</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 249, Z. 27</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">unde</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">inde</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 253, Z. 19</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">[caloris],</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">cohaesionis</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 253, Var. zu Z. 19</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">streiche</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 254, Z. 19</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">fumam</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">fumum</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 255, Z. 2</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">calore,</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">colore,</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 261, Z. 26</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">gravium</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">granum</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 263, Z. 10</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">ultiores</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">altiores</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 265, Z. 4</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">subsit</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">sub tit.</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 266, Erl. zu Z. 4</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">Pereiesc</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">Peiresc</hi><hi rendition="#smaller">,</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 268, Z. 25</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">Ecliptico</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">Eclipticae</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 269, Z. 17</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">elevatur</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">elevatior</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 269, Z. 25</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">superata</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">superato</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 272, Z. 5</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">semidiam.</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">semidiam. terr. Semidiam.</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 272, Z. 20</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">at</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">ab</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 276, Z. 1</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><formula xml:id="Chx11.T10.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mn mathsize="80%">1</m:mn><m:mn mathsize="80%">6</m:mn></m:mfrac></m:mstyle></m:math></formula><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><formula xml:id="Chx11.T10.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mn mathsize="80%">1</m:mn><m:mn mathsize="80%">2</m:mn></m:mfrac></m:mstyle></m:math></formula></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 281, Z. 1</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">vellentis</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">vel lentis</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 388, Z. 20</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">sit,</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">sis,</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 388, Z. 20</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">sit,</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">sis,</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 414, Z. 2</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">im</hi> <hi rendition="#i #smaller">Brief Huets an Chouet</hi> <hi rendition="#smaller">vom März 1673:</hi> <hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><ref corresp="#bib_00163"/><hi rendition="#smaller"/><hi rendition="#k #smaller">P.-D. Huet</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Lettre touchant les experiences de l’eau purgée décrite dans le Journal des Sçavants, à M. Chouet</hi><hi rendition="#smaller">, Paris 1673:</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 429, Z. 3</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">N. 49</hi><hi rendition="#smaller #sub">3</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">N. 48</hi><hi rendition="#smaller #sub">3</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 459, Z. 10</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">hyotheses.</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">hypotheses.</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 554, Z. 12</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">nachssbenannter</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">nachßbenannter</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 560, Z. 7</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#g #smaller">annum</hi><hi rendition="#smaller">, (4) dantur</hi> <hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><hi rendition="#g #smaller">annum</hi><hi rendition="#smaller">. (4) Dantur</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 560, Z. 8</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">iique aut</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">iique autem</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 560, Z. 8</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">ut</hi> <formula xml:id="Chx11.T10.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi mathsize="80%" mathvariant="normal">☿</m:mi></m:math></formula><hi rendition="#smaller">,</hi> <graphic url="../images/vitriol.svg" width="8.6724pt" xml:id="Chx11.T10.g1"/><hi rendition="#smaller #sup">li</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">ut</hi> <formula xml:id="Chx11.T10.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi mathsize="80%" mathvariant="normal">☿</m:mi></m:math></formula><hi rendition="#smaller">,</hi> <graphic url="../images/sym-oleum2.svg" width="8.6724pt" xml:id="Chx11.T10.g2"/><hi rendition="#smaller"> </hi><graphic url="../images/vitriol.svg" width="8.6724pt" xml:id="Chx11.T10.g3"/><hi rendition="#smaller #sup">li</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 560, Z. 9</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">In</hi> <graphic url="../images/vitriol.svg" width="8.6724pt" xml:id="Chx11.T10.g4"/><hi rendition="#smaller #sup">li</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">In</hi> <graphic url="../images/sym-oleum2.svg" width="8.6724pt" xml:id="Chx11.T10.g5"/><hi rendition="#smaller"> </hi><graphic url="../images/vitriol.svg" width="8.6724pt" xml:id="Chx11.T10.g6"/><hi rendition="#smaller #sup">li</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 580, Z. 16</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">couleurs couleur,</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">couleurs,</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 581, Z. 2</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">4</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">8</hi><hi rendition="#smaller #sup">o</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 587, Z. 2</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">Bl. 87 r</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller">.</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">Bl. 87.</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 644, SV Nr. 25</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#k #smaller">Baliani, G.</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><hi rendition="#k #smaller">Baliani, G. B.</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 644, SV Nr. 25</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">fluidorum et solidorum.</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">solidorum et liquidorum.</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 647, SV Nr. 69</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">Pereiesc</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">Peiresc</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 653, SV Nr. 164</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">1664.</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">1661.</hi></cell>
+        </row>
+      </table>
+    
+    
+    
+      <pb type="VIII_2" n="819"/><p xml:id="Chx11.p3" rendition="#noindent"><hi rendition="#smaller">Zu Band VIII, 2:</hi><lb/><hi rendition="#smaller"/></p>
+    
+    
+      
+      <table>
+        <row>
+          <cell><hi rendition="#smaller">S. 126, Marg. zu Z. 8</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">ergänze Erl. zu</hi> <hi rendition="#smaller">Ellipticus Compassus forma crucis: Siehe</hi> <ref corresp="#bib_?????_missing"><!--The bibliography entry "?????" seems to be missing.--></ref><hi rendition="#smaller"/><hi rendition="#k #smaller">A. von Braunmühl</hi><hi rendition="#smaller">, „Historische Studie über die organische Erzeugung ebener Curven von den ältesten Zeiten bis zum Ende des achtzehnten Jahrhunderts”, in</hi> <hi rendition="#k #smaller">W. Dyck</hi> <hi rendition="#smaller">(Hrsg.),</hi> <hi rendition="#i #smaller">Katalog mathematischer und mathematisch-physikalischer Modelle, Apparate und Instrumente</hi><hi rendition="#smaller">, München 1892, S. 54-88, bes. S. 58 (Proklos), S. 68-70 (Frans van Schooten) und S. 70f. (Apollonius Cattus).</hi></cell>
+        </row>
+        <row>
+          <cell><hi rendition="#smaller">S. 127, Z. 17f.</hi></cell>
+          <cell style="; width:284.5pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">ergänze Erl.</hi><hi rendition="#smaller"> </hi><ref corresp="#bib_00135"/><hi rendition="#smaller"/><hi rendition="#k #smaller">M. Thévenot</hi><hi rendition="#smaller">, „Machine nouvelle pour la conduite des eaux, pour les bâtimens, pour la navigation et pour la pluspart des autres arts”,</hi> <hi rendition="#i #smaller">JS</hi><hi rendition="#smaller">, 15. November 1666, S. 439-443. Siehe</hi> <hi rendition="#i #smaller">LSB</hi> <hi rendition="#smaller">VIII, 1 N. 11, S. 103, Z. 3, Erl.</hi></cell>
+        </row>
+      </table>
+    
+  </div></body>
+  </text>
+</TEI>

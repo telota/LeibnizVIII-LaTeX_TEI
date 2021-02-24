@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="undef" xml:id="Chx9">
+    <pb type="VIII_2" n="809"/><head rendition="#smaller">KONKORDANZEN</head>
+    
+    
+    
+    
+<p xml:id="Chx9.p2"><hi rendition="#smaller">In den folgenden zwei Registern sind die im Band edierten Stücke verzeichnet
+gemäß ihrer Nummerierung im</hi> <hi rendition="#i #smaller">Kritischen Katalog 1</hi> <hi rendition="#smaller">(KK 1) bzw. im</hi> <hi rendition="#i #smaller">Catalogue critique 2</hi> <hi rendition="#smaller">(Cc 2),
+falls diese besteht.
+Zu jeder verzeichneten KK 1- bzw. Cc 2-Nummer wird angegeben,
+welchen Stücknummern sie im Band entspricht.
+Die zusätzliche Angabe „tlw.” weist gegebenenfalls darauf hin,
+dass unter der betreffenden Katalognummer mehr als nur ein Stück erfasst ist.
+Welchen Katalognummern (nach KK 1 bzw. Cc 2) die im Band edierten Stücke gegebenenfalls entsprechen,
+ist jeweils im Kopf der einzelnen Stücke vermerkt.</hi><!--  \hack{\newline\indent} 
+     \hackfor{\par}--></p>
+    
+<p xml:id="Chx9.p3_1"><hi rendition="#smaller">Die weder im KK 1 noch im Cc 2 erfassten Stücke aus dem Band
+sind unten in einem dritten Register verzeichnet.
+Zu dieser Gruppe gehören sämtliche Anstreichungen und Anmerkungen in Handexemplaren.</hi></p>
+<p xml:id="Chx9.p3_2" rendition="#c"><hi rendition="#smaller">KK 1-KONKORDANZ</hi></p>
+    
+<table>
+        <row>
+                  <cell><hi rendition="#smaller">185</hi></cell>
+                  <cell><hi rendition="#smaller">N. 85</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">194 A</hi></cell>
+                  <cell><hi rendition="#smaller">N. 85</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">194 B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 84</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">194 C</hi></cell>
+                  <cell><hi rendition="#smaller">N. 83</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">194 D</hi></cell>
+                  <cell><hi rendition="#smaller">N. 87</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">194 E</hi></cell>
+                  <cell><hi rendition="#smaller">N. 86</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">975</hi></cell>
+                  <cell><hi rendition="#smaller">N. 70</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">976</hi></cell>
+                  <cell><hi rendition="#smaller">N. 69</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">977</hi></cell>
+                  <cell><hi rendition="#smaller">N. 71</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">979</hi></cell>
+                  <cell><hi rendition="#smaller">N. 68</hi></cell>
+                </row>
+      </table>
+<p xml:id="Chx9.p4" rendition="#c"><hi rendition="#smaller">CC 2-KONKORDANZ</hi></p>
+    
+<table>
+        <row>
+                  <cell><hi rendition="#smaller">423</hi></cell>
+                  <cell><hi rendition="#smaller">N. 7</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">430</hi></cell>
+                  <cell><hi rendition="#smaller">N. 73</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">480 A–B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 48</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">482</hi></cell>
+                  <cell><hi rendition="#smaller">N. 49</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">485</hi></cell>
+                  <cell><hi rendition="#smaller">N. 4</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">502</hi></cell>
+                  <cell><hi rendition="#smaller">N. 1</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">508</hi></cell>
+                  <cell><hi rendition="#smaller">N. 78</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">509</hi></cell>
+                  <cell><hi rendition="#smaller">N. 53</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">529</hi></cell>
+                  <cell><hi rendition="#smaller">N. 61</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">541</hi></cell>
+                  <cell><hi rendition="#smaller">N. 41</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">543 tlw.</hi></cell>
+                  <cell><hi rendition="#smaller">N. 16</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">835</hi></cell>
+                  <cell><hi rendition="#smaller">N. 10</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">836</hi></cell>
+                  <cell><hi rendition="#smaller">N. 92</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">837</hi></cell>
+                  <cell><hi rendition="#smaller">N. 93</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">838</hi></cell>
+                  <cell><hi rendition="#smaller">N. 94</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">869</hi></cell>
+                  <cell><hi rendition="#smaller">N. 72</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">897 tlw.</hi></cell>
+                  <cell><hi rendition="#smaller">N. 95</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">914</hi></cell>
+                  <cell><hi rendition="#smaller">N. 89</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">921</hi></cell>
+                  <cell><hi rendition="#smaller">N. 2</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">939</hi></cell>
+                  <cell><hi rendition="#smaller">N. 11</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">941 A</hi></cell>
+                  <cell><hi rendition="#smaller">N. 8</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">941 B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 9</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">942 A-B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 50</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">943</hi></cell>
+                  <cell><hi rendition="#smaller">N. 51</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">944</hi></cell>
+                  <cell><hi rendition="#smaller">N. 31</hi><hi rendition="#smaller #sub">1</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">945 A</hi></cell>
+                  <cell><hi rendition="#smaller">N. 30</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">945 B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 31</hi><hi rendition="#smaller #sub">2</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">945 C</hi></cell>
+                  <cell><hi rendition="#smaller">N. 32</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">945 E</hi></cell>
+                  <cell><hi rendition="#smaller">N. 33</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">946</hi></cell>
+                  <cell><hi rendition="#smaller">N. 31</hi><hi rendition="#smaller #sub">3</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">947</hi></cell>
+                  <cell><hi rendition="#smaller">N. 35</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">948</hi></cell>
+                  <cell><hi rendition="#smaller">N. 38</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">964 B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 52</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">965 A–C</hi></cell>
+                  <cell><hi rendition="#smaller">N. 34</hi><hi rendition="#smaller #sub">1</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">965 D</hi></cell>
+                  <cell><hi rendition="#smaller">N. 34</hi><hi rendition="#smaller #sub">2</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">965 E</hi></cell>
+                  <cell><hi rendition="#smaller">N. 34</hi><hi rendition="#smaller #sub">3</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">965 F</hi></cell>
+                  <cell><hi rendition="#smaller">N. 34</hi><hi rendition="#smaller #sub">4</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">965 G–H</hi></cell>
+                  <cell><hi rendition="#smaller">N. 34</hi><hi rendition="#smaller #sub">1</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">965 J</hi></cell>
+                  <cell><hi rendition="#smaller">N. 34</hi><hi rendition="#smaller #sub">3</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">965 K</hi></cell>
+                  <cell><hi rendition="#smaller">N. 34</hi><hi rendition="#smaller #sub">2</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">965 L</hi></cell>
+                  <cell><hi rendition="#smaller">N. 37</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">967 A</hi></cell>
+                  <cell><hi rendition="#smaller">N. 26</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">967 B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 21</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">968 A</hi></cell>
+                  <cell><hi rendition="#smaller">N. 25</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">968 B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 23</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">968 C</hi></cell>
+                  <cell><hi rendition="#smaller">N. 24</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">968 D</hi></cell>
+                  <cell><hi rendition="#smaller">N. 22</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">969</hi></cell>
+                  <cell><hi rendition="#smaller">N. 15</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">971 A</hi></cell>
+                  <cell><hi rendition="#smaller">N. 19</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">971 B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 20</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">972</hi></cell>
+                  <cell><hi rendition="#smaller">N. 42</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">973 tlw.</hi></cell>
+                  <cell><hi rendition="#smaller">N. 43</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">973 tlw.</hi></cell>
+                  <cell><hi rendition="#smaller">N. 88</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">974</hi></cell>
+                  <cell><hi rendition="#smaller">N. 18</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">975 A</hi></cell>
+                  <cell><hi rendition="#smaller">N. 17</hi><hi rendition="#smaller #sub">1</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">975 B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 17</hi><hi rendition="#smaller #sub">2</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">976</hi></cell>
+                  <cell><hi rendition="#smaller">N. 14</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1054 tlw.</hi></cell>
+                  <cell><hi rendition="#smaller">N. 63</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1054 tlw.</hi></cell>
+                  <cell><hi rendition="#smaller">N. 64</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1133 A</hi></cell>
+                  <cell><hi rendition="#smaller">N. 97</hi><hi rendition="#smaller #sub">1</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1133 B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 97</hi><hi rendition="#smaller #sub">3</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1141</hi></cell>
+                  <cell><hi rendition="#smaller">N. 97</hi><hi rendition="#smaller #sub">4</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1142</hi></cell>
+                  <cell><hi rendition="#smaller">N. 97</hi><hi rendition="#smaller #sub">2</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1179</hi></cell>
+                  <cell><hi rendition="#smaller">N. 65</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1187</hi></cell>
+                  <cell><hi rendition="#smaller">N. 98</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1189 A</hi></cell>
+                  <cell><hi rendition="#smaller">N. 36</hi><hi rendition="#smaller #sub">1</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1189 B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 36</hi><hi rendition="#smaller #sub">2</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1189 C</hi></cell>
+                  <cell><hi rendition="#smaller">N. 36</hi><hi rendition="#smaller #sub">1</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1189 D–G</hi></cell>
+                  <cell><hi rendition="#smaller">N. 36</hi><hi rendition="#smaller #sub">2</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1190 A</hi></cell>
+                  <cell><hi rendition="#smaller">N. 28</hi><hi rendition="#smaller #sub">4</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1190 B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 28</hi><hi rendition="#smaller #sub">3</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1190 C</hi></cell>
+                  <cell><hi rendition="#smaller">N. 28</hi><hi rendition="#smaller #sub">2</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1190 D</hi></cell>
+                  <cell><hi rendition="#smaller">N. 28</hi><hi rendition="#smaller #sub">1</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1191 tlw.</hi></cell>
+                  <cell><hi rendition="#smaller">N. 5</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1191 tlw.</hi></cell>
+                  <cell><hi rendition="#smaller">N. 28</hi><hi rendition="#smaller #sub">5</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1192 A–B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 28</hi><hi rendition="#smaller #sub">6</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1192 C</hi></cell>
+                  <cell><hi rendition="#smaller">N. 28</hi><hi rendition="#smaller #sub">7</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1213 A</hi></cell>
+                  <cell><hi rendition="#smaller">N. 45</hi><hi rendition="#smaller #sub">3</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1213 B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 45</hi><hi rendition="#smaller #sub">1</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1213 C</hi></cell>
+                  <cell><hi rendition="#smaller">N. 45</hi><hi rendition="#smaller #sub">4</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1213 D</hi></cell>
+                  <cell><hi rendition="#smaller">N. 45</hi><hi rendition="#smaller #sub">2</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1271</hi></cell>
+                  <cell><hi rendition="#smaller">N. 75</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1322 A–C</hi></cell>
+                  <cell><hi rendition="#smaller">N. 58</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1322 D tlw.</hi></cell>
+                  <cell><hi rendition="#smaller">N. 6</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1322 D tlw.</hi></cell>
+                  <cell><hi rendition="#smaller">N. 58</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1322 E</hi></cell>
+                  <cell><hi rendition="#smaller">N. 58</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1323 A tlw.</hi></cell>
+                  <cell><hi rendition="#smaller">N. 76</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1323 A tlw.</hi></cell>
+                  <cell><hi rendition="#smaller">N. 82</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1323 B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 76</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1324</hi></cell>
+                  <cell><hi rendition="#smaller">N. 54</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1366 A</hi></cell>
+                  <cell><hi rendition="#smaller">N. 59</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1366 B</hi></cell>
+                  <cell><hi rendition="#smaller">N. 60</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1367</hi></cell>
+                  <cell><hi rendition="#smaller">N. 56</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1503</hi></cell>
+                  <cell><hi rendition="#smaller">N. 12</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1504</hi></cell>
+                  <cell><hi rendition="#smaller">N. 29</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1516</hi></cell>
+                  <cell><hi rendition="#smaller">N. 99</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">1563</hi></cell>
+                  <cell><hi rendition="#smaller">N. 74</hi></cell>
+                </row>
+      </table>
+    
+<pb type="VIII_2" n="810"/><p xml:id="Chx9.p6" rendition="#c"><hi rendition="#smaller">WEDER IM KK 1 NOCH IM CC 2 ERFASSTE STÜCKE</hi></p>
+    
+<table>
+        <row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">3</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">13</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">27</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">34</hi><hi rendition="#smaller #sub">5</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">39</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">40</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">44</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">46</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">47</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">55</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">57</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">62</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">66</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">67</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">77</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">79</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">80</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">81</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">90</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">91</hi></cell>
+                </row><row>
+                  <cell><hi rendition="#smaller">N.</hi></cell>
+                  <cell><hi rendition="#smaller">96</hi></cell>
+                </row>
+      </table>
+    
+<p xml:id="Chx9.p8"><hi rendition="#smaller">Davon sind N. 3, 13, 44, 46, 47 und 67 Anstreichungen und Anmerkungen in Handexemplaren.</hi></p>
+    
+    
+    
+<!--  \hackfor{\addchap*{SIGLEN, ABKÜRZUNGEN, ZEICHEN}} -->  </div></body>
+  </text>
+</TEI>

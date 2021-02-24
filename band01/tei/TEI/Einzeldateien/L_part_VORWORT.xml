@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-09" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="part" xml:id="Ptx2"><head style="; font-size:120%" rendition="#g">VORWORT</head><div type="text"><pb type="VIII_1" n="XV"/><p xml:id="Ptx2.p1_1">Habent sua fata manuscripta Leibnitiana</p><p xml:id="Ptx2.p1_2">(frei nach Terentianus Maurus)</p><p xml:id="Ptx2.p2">Am 1. August 1976 nahmen Walter S. Contro und ich die Arbeiten an der Reihe VII Mathematische Schriften der Leibniz-Edition auf. Fast genau zwanzig Jahre später, am 29. August 1996, zeitgleich mit meiner Wahl zum ordentlichen Mitglied der Berlin-Brandenburgischen Akademie der Wissenschaften (BBAW), führten der damalige Präsident der BBAW, Dieter Simon, und ich ein erstes Gespräch über die Möglichkeit, Reihe VIII Naturwissenschaftliche, medizinische, technische Schriften an der BBAW zu verwirklichen. Wir verabredeten, dass ich bis Ende 1996 einen vorläufigen Projektplan ausarbeitete. Der vorliegende erste Band der Reihe VIII gibt Anlass, dankbar in gebotener Kürze den Weg nachzuzeichnen, der von Dieter Simons Initiative zu diesem Ergebnis geführt hat.</p><p xml:id="Ptx2.p3">Von Anbeginn gehörte zu den Zielen, die deutsch-französische Zusammenarbeit wieder zu beleben, die 1901 zum Beginn der Leibniz-Edition geführt hatte. In seinem Anruf vom 16. Januar 1998 äusserte Dieter Simon mir gegenüber den Wunsch, auch Russland einzubeziehen. Eine derartige, internationale und dezentralisierte Zusammenarbeit von Editoren und Forschern an weit auseinander gelegenen Orten erforderte eine neuartige Konzeption und Organisation der wissenschaftlichen Editionsarbeit. Die technische Lösung lag in der Nutzung der Möglichkeiten des Internet. Die Handschriften mussten im Internet zugänglich gemacht werden. Die Edition wurde nicht nur im Druck, sondern auch für das Internet vorbereitet.</p><p xml:id="Ptx2.p4">Das Finden geeigneter Mitarbeiter war und blieb schwierig. Die zurückliegenden Jahre sind von zahlreichen Mitarbeiterwechseln, teilweise verursacht durch zwei Todesfälle, gekennzeichnet. Die erforderlichen finanziellen Mittel mussten eingeworben bzw. bereit gestellt werden, um die internationale Zusammenarbeit <pb type="VIII_1" n="XVI"/>zu ermöglichen und in Berlin an der BBAW eine neue Arbeitsstelle zu gründen. Am Anfang gab es weder eine personelle noch eine wissenschaftliche Infrastruktur, weder eine Handbibliothek noch Kataloge.</p><p xml:id="Ptx2.p5">Die Organisation der Arbeitsgruppen</p><p xml:id="Ptx2.p6">Die französisch-deutsche Zusammenarbeit begann am 30. September 1997 in Paris mit einem Treffen, an dem insbesondere Guy Ourisson, der damalige Vizepräsident der Académie des Sciences, und Manfred Bierwisch, der damalige Vizepräsident der BBAW, teilnahmen. Mein Ansprechpartner auf französischer Seite wurde der membre de l’Institut Claude Debru. Die französische freie Mitarbeiterin ist zur Zeit Anne-Lise Rey, Universität Lille I.</p><p xml:id="Ptx2.p7">Die russisch-deutsche Zusammenarbeit wurde in einem Kooperations-Vertrag beschlossen, der am 20. November 1998 von den Präsidenten der Russischen Akademie der Wissenschaften, Jurij Ossipov, und der BBAW, Dieter Simon, in Moskau unterzeichnet wurde. Die russischen Mitarbeiter wurden die Wissenschaftshistoriker Vladimir Kirsanov (gest. am 12. Mai 2007) am 1. Mai 2000 in Moskau, unterstützt von der Latinistin Olga Fedorova, und Alena Kuznetsova (gest. am 25. September 2005) am 1. Juni 2000 in St. Petersburg, unterstützt von der Latinistin Ekaterina Basargina. Zur Zeit gibt es Bemühungen, die Zusammenarbeit mit anderen russischen Wissenschaftshistorikern fortzusetzen.</p><p xml:id="Ptx2.p8">An der BBAW stimmten deren ordentliche Mitglieder am 16. März 2000 für die Aufnahme der Reihe VIII der Leibniz-Edition unter die Langzeitvorhaben der Akademie. Die neue Arbeitsstelle mit zunächst einer und einer drittel Beschäftigungsposition wurde zum 1. Januar 2001 eingerichtet. Editor und Arbeitsstellenleiter wurde der Physiker und Philosoph Hartmut Hecht. Die Linguistin und Philosophin Simone Rieger wurde für die Schaffung der elektronischen Arbeitsumgebung zuständig. Diese Stelle wurde später von Lutz Sattler wahrgenommen. Der langjährige Vorsitzende der Leibniz-Kommission, Jürgen Mittelstraß, hat entscheidenden Anteil daran, dass der Arbeitsstelle schließlich eine zweite volle Editorenstelle zur Verfügung gestellt wurde, die heute der Chemiker und Theologe Sebastian Stork innehat.</p><p xml:id="Ptx2.p9">Die Schaffung der Arbeitsvoraussetzungen</p><p xml:id="Ptx2.p10">Die Hermann und Elise geborene Heckmann Wentzel-Stiftung bewilligte am 28. Juni 1999 Mittel zur Ausstattung der künftigen Berliner Arbeitsstelle mit Arbeitsmaterialien. Die Digitalisierung der etwa 4500 Blatt umfassenden Leibniz-<pb type="VIII_1" n="XVII"/>Handschriften begann am 26. August 1999 in der Gottfried Wilhelm Leibniz Bibliothek in Hannover. Von Anbeginn unterstützten die Bibliotheksdirektoren Wolfgang Dittrich, später Georg Ruppelt das Unternehmen. Dafür gebührt ihnen größter Dank. Die Deutsche Forschungsgemeinschaft (DFG) bewilligte Dittrich am 28. November 2000 die Mittel zur Digitalisierung der Handschriften. Die Konzeption der Datenbank wurde von Simone Rieger und Peter Cassiers ausgearbeitet.</p><p xml:id="Ptx2.p11">Am 19. Januar 2000 bewilligte die DFG die Mittel, um über fünf Jahre mit den zwei russischen Arbeitsgruppen in Moskau und St. Petersburg einen Werkvertrag abzuschließen. Danach übernahm die BBAW diese finanzielle Verpflichtung.
+Einen hohen Betrag gewährte die Stiftung der VGH Versicherungen Landschaftliche Brandkasse Hannover am 29. August 2001. Sie wurde 1750 gegründet und sieht sich ideell in der Nachfolge von Leibniz, der nachdrücklich für die Gründung von Versicherungsgesellschaften zum Schutz des Einzelnen eingetreten war. Die bewilligten Mittel dienten u. a. zur Bezahlung des freien Mitarbeiters Peter Cassiers, der die Digitalisate bearbeitete, ins Internet stellte und die Formalismen für die Internetedition ausarbeitete. Sie waren als eingeworbene Drittmittel nicht an Haushaltsjahre gebunden und halfen bis ins Jahr 2008, freie Mitarbeiter bei der Fertigstellung des vorliegenden Bandes zu bezahlen.</p><p xml:id="Ptx2.p12">Als sehr hilfreich auch für diese Reihe der Leibniz-Edition erwies sich Martin Grötschels Gründung einer Arbeitsgruppe <hi rendition="#i">Elektronisches Publizieren</hi> (TELOTA) am 19. Dezember 2000 an der BBAW. Ein ermutigendes Zeichen der Kooperationsbereitschaft setzte der damalige stellvertretende Direktor der Herzog August Bibliothek Wolfenbüttel, Ulrich Schneider. Die ihm von der DFG bewilligten Mittel zur retrospektiven Digitalisierung frühneuzeitlicher Werke dienten ihm 2002 u. a. dazu, auf Vorschlag der Berliner Arbeitsstelle Leibniz-relevante Originalliteratur des 17. Jahrhunderts zu digitalisieren. Entsprechende von Leibniz zitierte Literatur ist in der elektronischen Edition der Reihe VIII mit den Digitalisaten des Wolfenbütteler Servers verlinkt.</p><p xml:id="Ptx2.p13">Das Arbeitsziel</p><p xml:id="Ptx2.p14">Ziel der Editionsarbeit ist es, alle überlieferten Leibniz’schen Schriften, Aufzeichnungen und Marginalien zu naturwissenschaftlichen, medizinischen und technischen Themen in Abstimmung mit den inhaltlich verwandten Schriftenreihen VI Philosophische Schriften und VII Mathematische Schriften zu veröffent<pb type="VIII_1" n="XVIII"/>lichen. Wie in diesen Schriftenreihen üblich werden die Texte chronologisch angeordnet, aber innerhalb eines Zeitraums in Themengruppen zusammengefasst.</p><p xml:id="Ptx2.p15">Die Texte werden in der Druckversion voraussichtlich acht bis neun Bände erfordern. Thematisch lassen sie sich überwiegend vier Gebieten zuordnen:
+<!--  \hack{\newcounter{vorwort}
+\begin{list}{\arabic{vorwort}.\hfill}{\usecounter{vorwort}\setlength{\labelwidth}{3mm}
+\setlength{\labelsep}{1mm}
+\setlength{\itemindent}{5mm}
+\setlength{\leftmargin}{0cm}
+\setlength{\itemsep}{-0.5ex}}
+\itemNaturwissenschaften (ca. 1500 Blatt) mit Astronomie, Botanik, Zoologie, Chemie, Geographie, Geologie, Physik;
+\itemTechnik (ca. 450 Blatt) mit Hydraulik, M\"{u}hlen, Planetarien, Schiffsbau, Rechenmaschine, Transportwesen, Zeitmessung;
+\itemMilitaria (ca. 300 Blatt) mit Artillerie, Fortifikation, Kriegsf\"{u}hrung;
+\itemMedizin und Pharmazie (ca. 1400 Blatt) mit Arzneimittelkunde, Di\"{a}tetik, Kosmetik, Medizinalwesen, Pathologie.
+\end{list}} 
+     \hackfor{\begin{enumerate}
+\itemNaturwissenschaften (ca. 1500 Blatt) mit Astronomie, Botanik, Zoologie, Chemie, Geographie, Geologie, Physik;
+\itemTechnik (ca. 450 Blatt) mit Hydraulik, M\"{u}hlen, Planetarien, Schiffsbau, Rechenmaschine, Transportwesen, Zeitmessung;
+\itemMilitaria (ca. 300 Blatt) mit Artillerie, Fortifikation, Kriegsf\"{u}hrung;
+\itemMedizin und Pharmazie (ca. 1400 Blatt) mit Arzneimittelkunde, Di\"{a}tetik, Kosmetik, Medizinalwesen, Pathologie.
+\end{enumerate}}--><list xml:id="Ch0.S0.I1" rend="numbered">
+        <item>
+          
+            <label>1.</label>
+            
+            
+          
+          
+            <p xml:id="Ch0.S0.I1.i1.p1">Naturwissenschaften (ca. 1500 Blatt) mit Astronomie, Botanik, Zoologie, Chemie, Geographie, Geologie, Physik;</p>
+          
+        </item>
+        <item>
+          
+            <label>2.</label>
+            
+            
+          
+          
+            <p xml:id="Ch0.S0.I1.i2.p1">Technik (ca. 450 Blatt) mit Hydraulik, Mühlen, Planetarien, Schiffsbau, Rechenmaschine, Transportwesen, Zeitmessung;</p>
+          
+        </item>
+        <item>
+          
+            <label>3.</label>
+            
+            
+          
+          
+            <p xml:id="Ch0.S0.I1.i3.p1">Militaria (ca. 300 Blatt) mit Artillerie, Fortifikation, Kriegsführung;</p>
+          
+        </item>
+        <item>
+          
+            <label>4.</label>
+            
+            
+          
+          
+            <p xml:id="Ch0.S0.I1.i4.p1">Medizin und Pharmazie (ca. 1400 Blatt) mit Arzneimittelkunde, Diätetik, Kosmetik, Medizinalwesen, Pathologie.</p>
+          
+        </item>
+      </list>Die Reihe VIII ist ein transdisziplinäres, innerhalb der BBAW klassenübergreifendes Editionsprojekt, das im Wesentlichen Neuland betritt: Von den betroffenen Handschriften sind bis heute nur sehr wenige bekannt.</p><p xml:id="Ptx2.p16">Allen privaten und öffentlichen Geldgebern, allen Unterstützern sei an dieser Stelle noch einmal von Herzen gedankt. Ohne sie hätte die Reihe VIII der Leibniz-Edition nicht begonnen werden können.
+Neben den bereits genannten, ist an dieser Stelle Alexandra Lewendoski, Sabine Seifert, vor allem aber Nele-Hendrikje Lehmann zu danken, die u. a. durch Transkriptionen, die Aufnahme der Marginalien, durch Wasserzeichenrecherchen, die Anfertigung von Zeichnungen und Lektorierungsarbeiten das Projekt über Jahre begleitet haben. In der Endphase hat Sabine Sellschopp einige Stücke hinsichtlich der Formalien ihrer Präsentation im Druck durchgesehen und bei der Transkription von Teilen aus N. 70 geholfen. Besonderer Dank gilt dem TELOTA-Team der BBAW unter der Leitung von Gerald Neumann, vor allem Markus Schnöpf, das eine technische Lösung zur weitgehend automatischen Transformation der XML-Daten der Internet-Edition in das Layout der Druckfassung erarbeitet hat. Markus Schnöpf war darüber hinaus an dem Schreiben des Satzprogramms in LaTeXund der manuellen Eingabe automatisch nicht konvertierbarer XML-Daten beteiligt. Die Arbeiten am Band VIII, 1 haben auf unterschiedliche Weise durch die Leibniz-Arbeitsstellen in Hannover, Münster und Potsdam Unterstützung erfahren. Dies betraf die Möglichkeit der Einsicht in Kataloge, den Austausch von Erfahrungen bei der Präsentation komplizierter Textpassagen, Wasserzeichenrecherchen oder das Überlassen von Satzhilfen. Dafür sei den betreffenden Kollegen herzlich gedankt.</p><p xml:id="Ptx2.p17">Berlin, im Frühjahr 2009  Eberhard Knobloch</p></div></div></body>
+  </text>
+</TEI>

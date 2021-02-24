@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-09" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="section" xml:id="Ch68.S2" n="682"><head>68<hi rendition="#sub">2</hi>.
+DÉTERMINATION D<pb type="VIII_1" n="595"/>E LA PROFONDEUR DE L’EAU. DEUXIÈME ESSAI</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Konzept: LH XXXVIII Bl. 138. 1 Bl. 17 x 18 cm. 1 S. Papier gleichmäßig beschnitten, Rückseite leer. Datierung in der linken oberen Ecke. Zeichnung und Nebenrechnung am linken Rand.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 966 C</hi></p></item></list></p></div><div type="text"><p xml:id="Ch68.S2.p4_1" rendition="#c"><pb type="L"/><fw type="folNum">[138 r<hi rendition="#sup">o</hi>]</fw> Maji 1675</p><p xml:id="Ch68.S2.p4_2" rendition="#c">Probleme:</p><p xml:id="Ch68.S2.p5"><hi rendition="#g">Un bâton estant fiché dans le fonds d’un fossé plein d’eau, et sortant tant soit peu hors de l’eau juger de la profondeur de l’eau ou du fossé sans tirer le bâton et sans en sçavoir la longueur, pourveu qu’on aye la liberté de le remuer.</hi></p><p xml:id="Ch68.S2.p6"><hi rendition="#g">Ou si vous voulez une sonde estant jettée</hi>  <hi rendition="#g">dans la mer et touchant fonds, juger de la profondeur de la mer, sans retirer la sonde, et sans sçavoir la longueur de la corde.</hi><app type="Bfootnote"><lem type="main"/><note type="lemma-abbrev"><hi rendition="#g">corde</hi>.</note><rdg wit="#L"><hi rendition="#i">Markierung durch Anführungszeichen am linken Rand.</hi></rdg></app></p><p xml:id="Ch68.S2.p7">Soit le bâton ou la sonde, <hi rendition="#i">AB</hi> touchant fonds au bout <hi rendition="#i">B</hi> sortant de</p><figure rendition="#inline-margin-left" xml:id="Ch68.S2.fig1">
+          <graphic url="../images/38_138r.svg" width="95.3964pt" xml:id="Ch68.S2.g1"/>
+        </figure><p xml:id="Ch68.S2.p8">l’eau <hi rendition="#i">DE</hi>, d’une partie <hi rendition="#g #i">AC</hi> <hi rendition="#g">dont la longueur nous est connue par exemple 1. pouce</hi> lorsque le baston (ou la corde) est perpendiculaire à l’horison ou au niveau de l’eau <hi rendition="#i">DE</hi>. <hi rendition="#i">A</hi> present puisque nous avons la liberté de remuer, laissons le bout <hi rendition="#i">B</hi> immobile, <app type="Bfootnote"><lem type="main">et remuons le bout <hi rendition="#i">A</hi></lem><note type="lemma-abbrev">et</note><rdg wit="#L" n="1"> trouuons le bout <hi rendition="#i">A</hi> de la </rdg><rdg wit="#L" n="2"> remuons le bout <hi rendition="#i">A</hi>  <hi rendition="#i">L</hi></rdg></app> jusqu’à ce qu’il <app type="Bfootnote"><lem type="main">entre dans</lem><note type="lemma-abbrev">qu’il</note><rdg wit="#L" n="1"> touche le </rdg><rdg wit="#L" n="2"> entre dans  <hi rendition="#i">L</hi></rdg></app> l’eau, en <hi rendition="#i">D</hi>. Car si <hi rendition="#i">AB</hi> est un bâton, il est aisé de le remuer sans le tirer du point <hi rendition="#i">B</hi>, où il est fiché dans le fonds, et <app type="Bfootnote"><lem type="main">si la ligne <hi rendition="#i">AB</hi> est</lem><note type="lemma-abbrev">et</note><rdg wit="#L" n="1"> s’il est </rdg><rdg wit="#L" n="2"> si la ligne <hi rendition="#i">AB</hi> est  <hi rendition="#i">L</hi></rdg></app> une corde, et si <hi rendition="#i">B</hi> est un plomb qui touche fonds, sa pesanteur l’y tiendra quoyqu’on remue le point <hi rendition="#i">A</hi> de la corde. Mesurons à present la distance <app type="Bfootnote"><lem type="main"><hi rendition="#i">DC</hi> entre le point <hi rendition="#i">D</hi> où le bâton entre dans l’eau à present, et le point</lem><note type="lemma-abbrev">distance</note><rdg wit="#L" n="1"> du point <hi rendition="#i">D</hi> où le bâton <app><rdg wit="#L" n="a">touche l’eau </rdg><rdg wit="#L" n="b">entre dans l’eau à present, du point </rdg></app></rdg><rdg wit="#L" n="2" cause="deletion"> <hi rendition="#i">DC</hi> <seg type="apparat-ellipsis"/> et <note type="editorial">|</note> <del>entre</del>  <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> le point  <hi rendition="#i">L</hi></rdg></app> <hi rendition="#i">C</hi> ou il entroit auparavant, ce qui est aisé, en tenant une regle d’une main, à fleur d’eau, pendant qu’on remue le bâton de l’autre: Et supposons <hi rendition="#g">par exemple la longueur de</hi> <hi rendition="#g"><hi rendition="#i">DC</hi>, 9 pouces.</hi></p><pb type="VIII_1" n="596"/><p xml:id="Ch68.S2.p9" rendition="#c"><app type="Bfootnote"><lem type="main"><hi rendition="#g">Regle:</hi></lem><rdg wit="#L"><hi rendition="#i">doppelt unterstrichen</hi></rdg></app><!--  \hackfor{\end{center}} --></p><p xml:id="Ch68.S2.p10">Multipliez le nombre des pouces de la ligne <hi rendition="#i">AC</hi> sçavoir 1. par soy même, et vous aurez 1. Multipliez aussi le nombre des pouces de la ligne <hi rendition="#i">CD</hi> sçavoir 9. par soy même, et vous aurez 81. Adjoutez ces deux produits ensemble, et vous aurez 82. Divisez cette somme par le double du nombre des pouces de la ligne <hi rendition="#i">AC</hi>, sçavoir par 2. Et le quotient qui proviendra en divisant 82. par 2. sera 41. Ostez de ce quotient le nombre des pouces de la ligne <hi rendition="#i">AC</hi>, sçavoir 1. et il vous restera 40. qui est le nombre des pouces de la ligne <hi rendition="#i">BC</hi> ou la profondeur de l’eau. La demonstration de cette regle se peut donner aisément par l’Analyse.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Beispielrechnung zur Regle</hi>:<!--  \hack{\\
+AC.~~1~pouce\\
+DC.~~9~pouces. Donc\\
+BC.~40~pouces. Car\\
+\protect\rule[0.5ex]{25mm}{0.7pt}\\
+$\protect\begin{array}{l}1\protect\big)\\1\\\overline{1} \protect\end{array}$\hspace{5mm} $\protect\begin{array}{l}9\protect\raisebox{-1.0ex}{\big)}\\9\\\overline{81} \protect\end{array}$\hspace{5mm}
+1 + 81 fait 82\hspace{5mm}
+$\protect\begin{array}{l}1\protect\raisebox{-1.0ex}{\big)}\\2\\\overline{2} \protect\end{array}$\hspace{5mm}
+$\protect\begin{array}{l}\cancel{8}\cancel{2}\\ \cancel{2}\cancel{2} \protect\end{array} \hspace{5.5pt}f\hspace{5.5pt} \protect\begin{array}{l}\\41\\41 - 1$ fait $40 \protect\end{array}$} --><formula xml:id="d2591e119946f" facs="../figurereplacements/596-1.svg"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/><?tex-source ΩAC.~~1~pouce\\ΩDC.~~9~pouces. Donc\\ΩBC.~40~pouces. Car\\Ω\protect\rule[0.5ex]{25mm}{0.7pt}\\Ω$\protect\begin{array}{l}1\protect\big)\\1\\\overline{1} \protect\end{array}$\hspace{5mm} $\protect\begin{array}{l}9\protect\raisebox{-1.0ex}{\big)}\\9\\\overline{81} \protect\end{array}$\hspace{5mm}Ω1 + 81 fait 82\hspace{5mm}Ω$\protect\begin{array}{l}1\protect\raisebox{-1.0ex}{\big)}\\2\\\overline{2} \protect\end{array}$\hspace{5mm}Ω$\protect\begin{array}{l}\cancel{8}\cancel{2}\\ \cancel{2}\cancel{2} \protect\end{array} \hspace{5.5pt}f\hspace{5.5pt} \protect\begin{array}{l}\\41\\41 - 1$ fait $40 \protect\end{array}$Ω
+?></formula>Ω</note>
+</p></div></div></body>
+  </text>
+</TEI>

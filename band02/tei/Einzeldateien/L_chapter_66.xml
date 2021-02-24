@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch66" n="66"><pb type="VIII_2" n="635"/><head>66.
+AUS ATHANASIUS KIRCHER, MAGNETICUM NATURAE REGNUM</head>
+<head>[Mitte 1668 – Ende 1671]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Auszüge aus <ref corresp="#bib_01081"/><hi rendition="#k">A. Kircher</hi>, <hi rendition="#i">Magneticum naturae regnum</hi>, Amsterdam 1667:
+<hi rendition="#k">Göttingen</hi>, Stadtarchiv, MSL Nr. 12,
+Bl. 19.
+1 Bl. 8<hi rendition="#sup">o</hi>. 1 S. auf Bl. 19 r<hi rendition="#sup">o</hi>. Bl. 19 v<hi rendition="#sup">o</hi> leer (bis auf eine fremdhändige Zahl).
+Am Fuß von Bl. 19 r<hi rendition="#sup">o</hi> eine gegenläufige fremdhändige Textzeile: <hi rendition="#i">§ 7 sicut et ult.: 1031</hi>.</hi></p><p><hi rendition="#smaller">Cc 2, Nr. 00</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch66.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Beim Textträger des vorliegenden Stücks handelt es sich sehr wahrscheinlich – wie es den Spuren fremdhändigen Textes zu entnehmen ist – um Papier für das <hi rendition="#i">Corpus juris reconcinnatum</hi> (siehe hierzu <hi rendition="#i">LSB</hi> VI, 2, S. XXI f.).
+Die Auszüge dürften daher aus der Mainzer Zeit stammen und nach Beginn der Arbeiten am <hi rendition="#i">Corpus juris reconcinnatum</hi> angefertigt worden sein.</hi></p></div><div type="text"><p xml:id="Ch66.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[19 r<hi rendition="#sup">o</hi>]</fw>
+<app type="Cfootnote"><lem type="main"><ref corresp="#bib_01081"/>Kircher. <hi rendition="#i">Magnet. Nat. Regn.</hi>
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">Sect. 2.</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+Cap. 5.</lem><note type="lemma-abbrev">Kircher <seg type="apparat-ellipsis"/> Cap. 5</note><note type="editorial"><bibl corresp="#bib_01081"><hi rendition="#k">A. Kircher</hi>, <hi rendition="#i">Magneticum naturae regnum</hi>, sectio II, cap. 5, Rom 1667.
+Leibniz zitiert die im selben Jahr in Amsterdam erschienene Ausgabe des Werkes,
+die nicht seitenidentisch mit der römischen Ausgabe ist.</bibl></note></app>
+<app type="Cfootnote"><lem type="main">p. 68. Bufo<index indexName="Sachverzeichnis"><term>bufo</term></index>
+seu Rubeta<index indexName="Sachverzeichnis"><term>rubeta</term></index> sole exiccata et tuberibus<index indexName="Sachverzeichnis"><term>tuber</term></index> applicata pestiferis,
+infectum peste<index indexName="Sachverzeichnis"><term>pestis</term></index> liberat, ut in nostro <ref corresp="#bib_01082"/><hi rendition="#i">Scrutinio physico medico de peste</hi> docuimus.</lem><note type="lemma-abbrev">p. 68 <seg type="apparat-ellipsis"/> docuimus</note><note type="editorial"><bibl corresp="#bib_01081">a.a.O., S. 68.
+Siehe zudem <bibl corresp="#bib_01082"><hi rendition="#k">A. Kircher</hi>, <hi rendition="#i">Scrutinium physico-medicum contagiosae Luis, quae pestis dicitur</hi>, Rom 1658.</bibl></bibl></note></app></p><p xml:id="Ch66.p6"><app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">Sect. 2.</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> <app type="Cfootnote"><lem type="main">p. <hi rendition="#g">70.</hi>
+<hi rendition="#i">Erphordiae<index indexName="Ortsregister"><term><hi rendition="#i">Erfurt</hi></term></index>
+in Germania<index indexName="Ortsregister"><term><hi rendition="#i">Deutschland</hi></term></index>
+seplasiarium<index indexName="Sachverzeichnis"><term><hi rendition="#i">seplasiarius</hi></term></index> quendam morsu viperae<index indexName="Sachverzeichnis"><term><hi rendition="#i">vipera</hi></term></index> ad extremum vitae discrimen</hi> adductum <hi rendition="#i">cum omnibus adhibitis antidotis<index indexName="Sachverzeichnis"><term><hi rendition="#i">antidotum</hi></term></index> nulla alia venenum<index indexName="Sachverzeichnis"><term><hi rendition="#i">venenum</hi></term></index> pellendi remedium<index indexName="Sachverzeichnis"><term><hi rendition="#i">remedium</hi></term></index> superessent, carnium<index indexName="Sachverzeichnis"><term><hi rendition="#i">caro</hi></term></index> ejusdem viperae<index indexName="Sachverzeichnis"><term><hi rendition="#i">vipera</hi></term></index>
+quae momorderat esu, perfecte sanatum vidi.</hi><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Absatzende:</hi> Non puto referre multum istud: <hi rendition="#i">quae momorderat.</hi></note></lem><note type="lemma-abbrev">p. <hi rendition="#g">70</hi> <seg type="apparat-ellipsis"/> <hi rendition="#i">vidi</hi></note><note type="editorial"><bibl corresp="#bib_01081"><hi rendition="#k">A. Kircher</hi>, <hi rendition="#i">Magneticum naturae regnum</hi>, sectio II, cap. 5, Rom 1667, S. 70.</bibl></note></app></p><pb type="VIII_2" n="636"/><p xml:id="Ch66.p7"><app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">Sect. 2.</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> <app type="Cfootnote"><lem type="main">p. <hi rendition="#g">82.</hi>
+<hi rendition="#i">Reperitur in India</hi><index indexName="Ortsregister"><term>Indien</term></index>
+virulentissimus serpens,<index indexName="Sachverzeichnis"><term>serpens</term></index>
+<hi rendition="#i">quem ego Basiliscum indicum</hi> voco;
+necat <app type="Bfootnote"><lem type="main">afflatu, sed ut</lem><note type="lemma-abbrev">afflatu,</note><rdg wit="#L" n="1"> nec </rdg><rdg wit="#L" n="2"> sed ut  <hi rendition="#i">L</hi></rdg></app>
+vitari possit natura ejus caudae velut crepundia<index indexName="Sachverzeichnis"><term>crepundia</term></index>
+annexuit, vocant campanam aut tintinnabulum<index indexName="Sachverzeichnis"><term>tintinnabulum</term></index>
+unde insurgens, strepitu monet.</lem><note type="lemma-abbrev">p. <hi rendition="#g">82</hi> <seg type="apparat-ellipsis"/> monet</note><note type="editorial"><bibl corresp="#bib_01081">a.a.O., S. 82.</bibl></note></app></p><p xml:id="Ch66.p8"><app type="Cfootnote"><lem type="main"><hi rendition="#i">P. Emanuel Luisius Romam advena</hi><index indexName="Ortsregister"><term>Rom</term></index>
+unum <hi rendition="#i">secum attulit, mirum in modum ad primum attactum perstrepens</hi>,
+est enim <hi rendition="#i">vesicaria quaedam textura<index indexName="Sachverzeichnis"><term><hi rendition="#i">textura</hi></term></index></hi></lem><note type="lemma-abbrev"><hi rendition="#i">P. Emanuel</hi> <seg type="apparat-ellipsis"/> <hi rendition="#i">textura</hi></note><note type="editorial"><bibl corresp="#bib_01081">a.a.O., S. 83.                </bibl></note></app>
+instar <app type="Cfootnote"><lem type="main">pellis diaphanae vesicae<index indexName="Sachverzeichnis"><term>vesica</term></index>
+suillae<index indexName="Sachverzeichnis"><term>suilla</term></index>
+piso<index indexName="Sachverzeichnis"><term>pisum</term></index>
+indito et agitato mirum strepitum<index indexName="Sachverzeichnis"><term>strepitus</term></index> edentis.
+Lusitanis serpens:<index indexName="Sachverzeichnis"><term>serpens</term></index>
+<hi rendition="#i">La cobra de cascavel.</hi>
+Crependia<index indexName="Sachverzeichnis"><term>crependia</term></index> praebent remedium praesentissimum
+contra multa venena,<index indexName="Sachverzeichnis"><term>venenum</term></index>
+et fuit inprimis praesentissimum remedium<index indexName="Sachverzeichnis"><term>remedium</term></index>
+contra Epilepsiam,<index indexName="Sachverzeichnis"><term>epilepsia</term></index>
+<hi rendition="#i">si vel collo affixum</hi>
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[<hi rendition="#i">portetur</hi>]</corr></lem><rdg wit="#L"><orig>potetur</orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.  nach Vorlage</hi></note></rdg></app>,
+<hi rendition="#i">vel aqua<index indexName="Sachverzeichnis"><term><hi rendition="#i">aqua</hi></term></index> cardiaca
+dilutum potu<index indexName="Sachverzeichnis"><term><hi rendition="#i">potus</hi></term></index> sumatur.</hi></lem><note type="lemma-abbrev">pellis <seg type="apparat-ellipsis"/> <hi rendition="#i">sumatur</hi></note><note type="editorial"><bibl corresp="#bib_01081">a.a.O., S. 84.</bibl></note></app></p></div></div></body>
+  </text>
+</TEI>

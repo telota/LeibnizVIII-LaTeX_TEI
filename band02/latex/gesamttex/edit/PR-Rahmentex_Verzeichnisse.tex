@@ -1,0 +1,84 @@
+%  V E R Z E I C H N I S S E
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{Verzeichnisse}]{\protect\textso{VERZEICHNISSE}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\renewcommand*{\chapterpagestyle}{empty}
+ 	
+ 				    			    
+% PERSONENVERZEICHNIS
+\small
+\setindexpreamble{\vskip4ex%
+Kaiser werden unter dem Stichwort Kaiser mit nachfolgendem Namen, 
+P\"{a}pste unter dem Stichwort Papst mit nachfolgendem Namen aufgef\"{u}hrt. 
+Andere Regenten werden unter dem Namen des von ihnen regierten Staates gelistet. 
+Bei diesen Personengruppen sind die Jahreszahlen Regierungszeiten, bei allen anderen Lebensdaten. 
+Bei Autoren ist zus\"{a}tzlich das Schriftenverzeichnis heranzuziehen. 
+Es wird nach Seiten zitiert. Kursive Seitenzahlen verweisen auf den Apparat-Teil.\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Personen}
+\markleft{\scriptsize\uppercase{Verzeichnisse}}
+\printindex{Namensregister}{PERSONEN}
+
+
+% SCRIFTENVERZEICHNIS
+\clearscrheadfoot
+\chead{\sc{Schriften}}
+\ohead[\pagemark]{\pagemark}
+\begin{multicols}{2}[\footnotesize\addchap*{\hfill SCHRIFTEN\hfill}
+\addcontentsline{toc}{chapter}{\enskip Schriften}
+\vspace{15pt}
+Das Schriftenverzeichnis enth\"{a}lt die Literatur der Leibnizzeit und die in den Erl\"{a}uterungen 
+benutzte Literatur. Es wird nach Seiten zitiert. Kursive Seitenzahlen verweisen auf den Apparat-Teil.\\]
+\setlength{\columnseprule}{0.4pt}					
+\renewcommand*{\chapter}{\OrigChapter}
+\bibliographystyle{leibniz8bib}
+\footnotesize
+\bibliography{l8bib}{}
+\end{multicols}    
+
+
+% SACHVERZEICHNIS
+\setindexpreamble{\vskip4ex%
+Eintr\"{a}ge in dieses Verzeichnis erfolgen in der jeweils von Leibniz verwendeten Sprache. 
+Die Reihenfolge der Eintr\"{a}ge ist rein alphabetisch bestimmt, 
+eine systematische Gliederung findet nicht statt. 
+Es wird nach Seiten zitiert. Kursive Seitenzahlen verweisen auf den Apparat-Teil. \vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Sachen}
+\printindex{Sachverzeichnis}{SACHEN} 
+
+
+% ORTSVERZEICHNIS
+\setindexpreamble{\vskip4ex%
+Dieses Verzeichnis listet alle von Leibniz genannten Ortsnamen in ihrer deutschen Version auf. 
+Es wird nach Seiten zitiert. Kursive Seitenzahlen verweisen auf den Apparat-Teil.\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Orte}
+\printindex{Ortsregister}{ORTE}  
+       
+
+% FUNDSTELLENVERZEICHNIS
+\clearscrheadfoot
+\chead{\sc{Fundstellen}}
+\ohead[\pagemark]{\pagemark}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\setindexpreamble{\vskip4ex%
+% ???? 
+\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Fundstellen}
+    \input{gesamttex/edit/Handschriften.tex}
+       
+
+% SIGLENVERZEICHNIS
+\clearscrheadfoot
+\chead{\sc{Siglen, Abkürzungen, Zeichen}}
+\ohead[\pagemark]{\pagemark}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\setindexpreamble{\vskip4ex%
+% ???? 
+\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Siglen, Abkürzungen, Zeichen}
+    \input{gesamttex/edit/Siglen.tex}
+
+% ENDE DER VERZEICHNISSE

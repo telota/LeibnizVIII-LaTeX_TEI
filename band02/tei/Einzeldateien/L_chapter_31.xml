@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_2_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2019-04" who="#textloop" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch31" n="31"><pb type="VIII_2" n="260"/><head>31.
+DE DETRIMENTO MOTUS. FROTTEMENT</head>
+<head>[April 1675]</head><div type="contents"><p xml:id="Ch31.p1" rendition="#noindent"><hi rendition="#smaller">Die folgenden drei Stücke bilden sowohl inhaltlich als auch hinsichtlich des Textträgers eine geschlossene Einheit. N. 31<hi rendition="#sub">1</hi> ist ein Auszug aus: <ref corresp="#bib_00301"/><ref corresp="#bib_01008"/><hi rendition="#k">John Wallis</hi>, <hi rendition="#i">Mechanica sive De motu</hi>, London 1670-1671; Thema des exzerpierten Textes ist die Verzögerung der Bewegung eines Körpers durch eine hindernde Kraft wie etwa den Widerstand des umgebenden Mediums. N. 31<hi rendition="#sub">2</hi> knüpft an Wallis’ Ansatz an und entwickelt ihn weiter; schließlich wird zur mathematischen Beschreibung der Verzögerung die logarithmische Funktion verwendet. N. 31<hi rendition="#sub">3</hi> nimmt das Ergebnis von N. 31<hi rendition="#sub">2</hi> wieder auf; der Text bleibt aber ein Bruchstück. Sämtliche drei Stücke sind ferner auf demselben Blatt verfasst worden. N. 31<hi rendition="#sub">2</hi> ist durch Leibniz’ eigenhändigen Vermerk auf April 1675 datiert. Es liegt demnach nahe, diese Datierung auch für N. 31<hi rendition="#sub">1</hi> und N. 31<hi rendition="#sub">3</hi> zu übernehmen.</hi></p></div><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_311.xml" xpointer="Ch31.S1" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_312.xml" xpointer="Ch31.S2" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_313.xml" xpointer="Ch31.S3" parse="xml"/></div></body>
+  </text>
+</TEI>

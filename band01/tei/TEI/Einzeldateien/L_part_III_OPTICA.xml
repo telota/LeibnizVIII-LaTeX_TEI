@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_1_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-09" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="part" xml:id="Ptx6"><head style="; font-size:120%" rendition="#g">III. OPTICA</head><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_14.xml" xpointer="Ch14" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_15.xml" xpointer="Ch15" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_16.xml" xpointer="Ch16" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_17.xml" xpointer="Ch17" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_18.xml" xpointer="Ch18" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_19.xml" xpointer="Ch19" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_20.xml" xpointer="Ch20" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_21.xml" xpointer="Ch21" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_22.xml" xpointer="Ch22" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_23.xml" xpointer="Ch23" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_24.xml" xpointer="Ch24" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_25.xml" xpointer="Ch25" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_26.xml" xpointer="Ch26" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_27.xml" xpointer="Ch27" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_28.xml" xpointer="Ch28" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_29.xml" xpointer="Ch29" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_30.xml" xpointer="Ch30" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_31.xml" xpointer="Ch31" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_32.xml" xpointer="Ch32" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_33.xml" xpointer="Ch33" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_34.xml" xpointer="Ch34" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_35.xml" xpointer="Ch35" parse="xml"/></div></body>
+  </text>
+</TEI>
