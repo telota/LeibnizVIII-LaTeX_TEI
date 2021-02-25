@@ -16,6 +16,8 @@ Die LaTeX-Daten bilden die Grundlage für den Druck der Reihe VIII und werden vo
 * latex: LaTeX-Datensatz zur Erstellung der PDF-Druckvorlage
 * tei: XML/TEI-Datensatz (konvertiert aus LaTeX)
 
+Die PDF-Dateien der gedruckten Edition stehen auf dem edoc-Server der BBAW zur Verfügung: [VIII, 1](https://edoc.bbaw.de/frontdoor/index/index/docId/14) und [VIII, 2](https://edoc.bbaw.de/frontdoor/index/index/docId/2585).
+
 # Lizenz
 
 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
