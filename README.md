@@ -6,8 +6,6 @@ Die LaTeX-Daten bilden die Grundlage für den Druck der Reihe VIII und werden vo
 
 # Inhalte
 
-## Reihe 8, Bände I-III
-
 Die Ordner der bereits erschienen Bände der Reihe VIII (1-3) enthalten jeweils: 
 
 * latex: LaTeX-Datensatz zur Erstellung der PDF-Druckvorlage
