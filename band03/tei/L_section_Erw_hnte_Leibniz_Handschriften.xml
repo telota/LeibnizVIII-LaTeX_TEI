@@ -1,0 +1,210 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="section" xml:id="Chx5.Sx3"><head rendition="#smaller"><hi rendition="#k">Erwähnte Leibniz-Handschriften</hi></head><head/><div type="text"><p xml:id="Chx5.Sx3.p1"><hi rendition="#smaller">Im Folgenden sind die im Band erwähnten, nicht edierten Leibniz-Handschriften
+und Marginalienexemplare verzeichnet.
+Das nach Fundort und Signatur geordnete Register verweist auf die Stücke, in denen die jeweilige Handschrift erwähnt ist.</hi></p><table>
+          
+            <row>
+              <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Basel</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Universitätsbibliothek</hi><hi rendition="#smaller"/></cell>
+              <cell><hi rendition="#smaller">L I a 19</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 205–206</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_48.xml#RK57269"/></cell>
+            </row>
+          
+          
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">L I a 19</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 211–214</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_76.xml#RK42448"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">L I a 19</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 221–222</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_77.xml#Parent_intro"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">L I a 19</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 223–224</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_77.xml#Parent_intro"/></cell>
+            </row>
+            <row>
+              <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Hannover</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">GWLB</hi><hi rendition="#smaller"/></cell>
+              <cell><hi rendition="#smaller">Leibn. Marg. 6</hi></cell>
+              <cell/>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_74.xml#RK58226"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">Leibn. Marg. 105</hi></cell>
+              <cell/>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_25.xml#_60071"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LH IV 1, 4a</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 1–16</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_74.xml#RK58226"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LH XXXV 9, 20</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 2</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_67.xml#RK41201"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LH XXXV 9, 20</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 3–4</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_67.xml#RK41201"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LH XXXV 9, 22</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 4–5</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_63.xml#RK41206"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LH XXXV 10, 7</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 13–14</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_68.xml#RK60323"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LH XXXV 10, 7</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 32–35</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_68.xml#RK60323"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LH XXXV 11, 18C</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 27–216</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_64.xml#RK60632"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LH XXXVII 3</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 125–127</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_143.xml#ddrs_03"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell/>
+              <cell/>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_147.xml#ddrs_07"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell/>
+              <cell/>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_17.xml#_60649"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell/>
+              <cell/>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_21.xml#_38538"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LH XLI 1</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 11</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_32.xml#rie"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LH XLII 5</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 39–40</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_64.xml#RK60632"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LH XLII 5</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 41</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_64.xml#RK60632"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LH XLII 5</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 42</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_64.xml#RK60632"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LBr 56</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 37–39</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_76.xml#RK42448"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LBr 68</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 139–140</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_48.xml#RK57269"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LBr 390</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 81</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_13.xml#_38541"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell/>
+              <cell/>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_322.xml#RK60301"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">LBr 425</hi></cell>
+              <cell><hi rendition="#smaller">Bl. 57–58</hi></cell>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_28.xml#_58256_0"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">Nm-A 403</hi></cell>
+              <cell/>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_48.xml#RK57269"/></cell>
+            </row>
+            <row>
+              <cell/>
+              <cell><hi rendition="#smaller">Nm-A 418</hi></cell>
+              <cell/>
+              <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_13.xml#_38541"/></cell>
+            </row>
+          
+        </table></div></div></body>
+  </text>
+</TEI>

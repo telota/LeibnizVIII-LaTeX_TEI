@@ -1,0 +1,52 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch8" n="8"><head>8
+TENTAMINUM DE CHORDARUM TENSIONE SCHEDAE</head>
+<head>Dezember 1680</head><div type="contents"><p xml:id="Ch8.p1"><anchor xml:id="_41152_0"/>
+<anchor xml:id="N.8"/><!--  \hackfor{\par} --></p><p rendition="#noindent" xml:id="Ch8.p2"><hi rendition="#smaller">Das vorliegende Gesamtstück besteht aus den Einzeltexten N. <ref corresp="L_section_81.xml#N.8.1"/> bis <ref corresp="L_section_86.xml#N.8.6"/>.
+Auf ihren inhaltlichen und chronologischen Zusammenhang weist bereits ihre Überschrift hin:
+Sämtliche Texte sind <hi rendition="#i">Tentaminum de chordarum tensione schedae</hi> benannt und von eins bis sechs nummeriert,
+wobei jede <hi rendition="#i">scheda</hi> einen Bogen umfasst.
+Die Textträger sind zudem von Leibniz selbst auf den 10. (20.) Dezember 1680 datiert;
+nur auf dem Bogen von N. <ref corresp="L_section_84.xml#N.8.4"/> hat er „Dezember 1680” als Datum vermerkt.
+Als Gesamtdatierung von N. <ref corresp="#N.8"/> wird demgemäß Dezember 1680 angegeben.</hi></p><p xml:id="Ch8.p3"><hi rendition="#smaller">Die sechs <hi rendition="#i">Schedae</hi>, in denen Leibniz mechanische Gesetze der Schwingungen gespannter elastischer Saiten zu bestimmen sucht,
+weisen enge Beziehungen zu weiteren Stücken der vorliegenden Rubrik auf, insbesondere N. <ref corresp="#N.8"/> und N. <ref corresp="L_chapter_10.xml#N.10"/>.
+Berührungspunkte bestehen zudem mit Theoremen aus
+<ref corresp="#bib_00044"/>H. <hi rendition="#k">Fabri</hi>, <hi rendition="#i">Physica</hi>,
+tract. I, lib. II: <hi rendition="#i">De compresso et tenso</hi> (Bd. I, Lyon 1669) und tract. III, lib. II: <hi rendition="#i">De sonis</hi> (Bd. II, Lyon 1670). Bemerkenswert ist in dieser Hinsicht die Anknüpfung an Fabris Abhandlung in
+N. <ref corresp="L_section_81.xml#N.8.1"/>, S. <ref corresp="L_section_81.xml#LH_35_09_15_007v_erzt-1"/>;
+N. <ref corresp="L_section_82.xml#N.8.2"/>, S. <ref corresp="L_section_82.xml#LH_35_09_15_009v_crassitiessuperflua-1"/>;
+N <ref corresp="L_section_84.xml#N.8.4"/>, S. <ref corresp="L_section_84.xml#LH_35_09_15_012v_crassitiessuperflua-1"/>;
+N. <ref corresp="L_section_86.xml#N.8.6"/>, S. <ref corresp="L_section_86.xml#LH_35_09_15_016r_crassitiessuperflua-1"/>.</hi></p></div><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_81.xml" xpointer="Ch8.S1" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_82.xml" xpointer="Ch8.S2" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_83.xml" xpointer="Ch8.S3" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_84.xml" xpointer="Ch8.S4" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_85.xml" xpointer="Ch8.S5" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_86.xml" xpointer="Ch8.S6" parse="xml"/></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,107 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch42" n="42"><head>42
+DE REGULIS CONCURSUS APUD HUGENIUM ET MARIOTTUM</head>
+<head>[März – Mai 1677]</head><div type="contents"><p xml:id="Ch42.p1"><anchor xml:id="hugenius_mariottus"/>
+<anchor xml:id="RK57267-2_60343"/>
+<anchor xml:id="RK57267-2_60343_57267-3"/><!--  \hackfor{\par} --></p><p xml:id="Ch42.p2"><hi rendition="#smaller">Die vorliegenden drei Stücke weisen eine gemeinsame Entstehungsgeschichte auf:
+N. <ref corresp="L_section_421.xml#_57267_2"/> und N. <ref corresp="L_section_423.xml#_57267_3"/>, in sehr kurzem zeitlichen Abstand bzw. unmittelbar nacheinander auf demselben Träger verfasst,
+halten, in Form von kommentierten Auszügen, die Ergebnisse von Leibnizens erster bekannter Auseinandersetzung mit den Stoßgesetzen von
+<index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens und <index indexName="Personen"><term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term></index>Mariotte
+in der Hannoveraner Zeit fest;
+N. <ref corresp="L_section_422.xml#_60343"/> ist die kurze, summarische Reinschrift eines Abschnitts der Besprechung von
+<index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens in N. <ref corresp="L_section_421.xml#_57267_2"/>.</hi></p><p xml:id="Ch42.p3"><hi rendition="#smaller">N. <ref corresp="L_section_421.xml#_57267_2"/> enthält einen fast vollständigen Auszug aus, und eine kritische Besprechung von, Huygens’ französischem Aufsatz
+<ref corresp="#bib_00529"/>„Regles du mouvement dans la rencontre des corps” (<ref corresp="#bib_00157"/><hi rendition="#i">JS</hi> vom 18. März 1669).
+Bereits in der Mainzer Zeit, wenige Monate nach Erscheinen der lateinischen Fassung von <index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens’ Aufsatz
+(<ref corresp="#bib_01067"/>„A summary account of the laws of motion”, <ref corresp="#bib_00158"/><hi rendition="#i">PT</hi> von April 1669),
+hatte Leibniz sich mit dessen Stoßlehre befasst, wovon das Stück
+„De rationibus motus” (<ref corresp="#bib_02025"/><hi rendition="#i">LSB</hi> VI, 2 N. 38<hi rendition="#sub">1</hi>) zeugt.
+N. <ref corresp="L_section_423.xml#_57267_3"/> ist <index indexName="Personen"><term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term></index>Mariottes <ref corresp="#bib_00311"/><hi rendition="#i">Traité de la percussion</hi> (Paris 1673) gewidmet.
+Leibnizens erste ausführliche Auseinandersetzung mit <index indexName="Personen"><term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term></index>Mariottes <ref corresp="#bib_00311"/>Abhandlung
+fand in der Pariser Zeit statt und schlug sich in den kommentierten Auszügen aus den letzten Monaten von 1674 nieder (<ref corresp="#bib_01292"/><hi rendition="#i">LSB</hi> VIII, 2 N. 50).</hi></p><p xml:id="Ch42.p4"><hi rendition="#smaller">Zur Datierung der kommentierten Auszüge N. <ref corresp="L_section_421.xml#_57267_2"/> und N. <ref corresp="L_section_423.xml#_57267_3"/>
+lassen sich ihre Verhältnisse mit den anderen beiden auf diesem Bogen überlieferten, von Leibniz eigenhändig datierten Stücken heranziehen.
+Auf dem Bogen finden vier Stücke Platz:
+Auf der ersten Seite (<ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref>) befindet sich hauptsächlich N. <ref corresp="L_chapter_40.xml#_57267_1"/> von März 1677 (hinzu kommt der Schlussteil von N. <ref corresp="L_section_432.xml#_57268"/>);
+auf der zweiten und dritten Seite folgen N. <ref corresp="L_section_421.xml#_57267_2"/> und N. <ref corresp="L_section_423.xml#_57267_3"/> unmittelbar und nahtlos aufeinander;
+die vierte Seite (<ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi></ref>) überliefert den Hauptteil von N. <ref corresp="L_section_432.xml#_57268"/> von Mai 1677.
+Unter Annahme einer durchgehenden Beschreibung des Bogens erscheint die Hypothese einer Entstehung der mittleren Stücke, N. <ref corresp="L_section_421.xml#_57267_2"/> und N. <ref corresp="L_section_423.xml#_57267_3"/>, zwischen den beiden übrigen (also zwischen März und Mai 1677), zunächst plausibel. Folgende zwei Umstände bekräftigen die Hypothese.</hi></p><p xml:id="Ch42.p5"><hi rendition="#smaller">Erstens bezeugt die Lage einer auf <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref> befindlichen, dennoch zu N. <ref corresp="L_section_421.xml#_57267_2"/> zugehörigen
+Berechnung eines „siebten Falls” (S. <ref corresp="L_section_421.xml#_37_05_144-145_19a"/>) die spätere Entstehung von N. <ref corresp="L_section_421.xml#_57267_2"/> relativ zu N. <ref corresp="L_chapter_40.xml#_57267_1"/>.
+Diese Rechnung wurde auf <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref>, nach Abfassung des dort befindlichen Hauptteils von N. <ref corresp="L_chapter_40.xml#_57267_1"/> (März 1677),
+am frei gebliebenen linken Seitenrand quer zur Schreibrichtung nachgetragen.
+Sie kann allerdings nicht N. <ref corresp="L_chapter_40.xml#_57267_1"/> zugeordnet werden; vielmehr ist sie als Bestandteil von N. <ref corresp="L_section_421.xml#_57267_2"/> anzusehen,
+da Leibniz in der zweiten Hälfte von N. <ref corresp="L_section_421.xml#_57267_2"/>
+die Regel aus <index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens’ <ref corresp="#bib_00529"/>Aufsatz
+algebraisch formalisiert, seine zehn Fälle auflistet und sie einzeln bewertet. Der Randtext auf <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref> entspricht tatsächlich
+<index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens’ siebtem Fall.
+Wahrscheinlich hat Leibniz diese Rechnung während der Abfassung von N. <ref corresp="L_section_421.xml#_57267_2"/> wegen Platzmangels auf der Rückseite, d.h. auf <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref>, niedergeschrieben.
+Erst danach brachte er im noch unbeschriebenen Bereich am linken Rand von <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref> den Schlussteil von N. <ref corresp="L_section_432.xml#_57268"/> (Mai 1677) unter.</hi></p><p xml:id="Ch42.p6"><hi rendition="#smaller">Zweitens gibt die Randanmerkung am oberen linken Rand von <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi></ref>
+(S. <ref corresp="L_section_432.xml#_37_05_144r-145v_8a"/>),
+mit der Leibniz das Stück N. <ref corresp="L_section_432.xml#_57268"/> auf Mai 1677 datiert,
+zugleich Aufschluss über die Entstehung von N. <ref corresp="L_section_423.xml#_57267_3"/>.
+Dort merkt er an,
+dass die „soeben erst” (also wohl in N. <ref corresp="L_section_432.xml#_57268"/>) gesicherten Erkenntnisse zum Stoß
+„in den vorangehenden Seiten” (d.h. Bl. 144 r<hi rendition="#sup">o</hi>–145 r<hi rendition="#sup">o</hi>)
+noch nicht berücksichtigt worden waren.
+Dieser Umstand bestätigt, dass Leibniz N. <ref corresp="L_section_432.xml#_57268"/> erst nach N. <ref corresp="L_section_423.xml#_57267_3"/>
+(somit auch nach N. <ref corresp="L_section_421.xml#_57267_2"/> und N. <ref corresp="L_chapter_40.xml#_57267_1"/>) abgefasst hat.</hi></p><p xml:id="Ch42.p7"><hi rendition="#smaller">Demnach müssen N. <ref corresp="L_section_421.xml#_57267_2"/> und N. <ref corresp="L_section_423.xml#_57267_3"/> zwischen N. <ref corresp="L_chapter_40.xml#_57267_1"/> und N. <ref corresp="L_section_432.xml#_57268"/>, also zwischen März und Mai 1677 entstanden sein. Einen weiteren Beleg von Leibnizens direkter Auseinandersetzung mit
+<index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens’ <ref corresp="#bib_00529"/>„Regles” zu dieser Zeit bietet das kurze Exzerpt der §§5f. des Absatzes in N. <ref corresp="L_chapter_39.xml#_57266_1"/> von März 1677
+(S. <ref corresp="L_chapter_39.xml#_37_05_161-162r_9a"/>).</hi></p><p xml:id="Ch42.p8"><hi rendition="#smaller">Während der Abfassung von N. <ref corresp="L_section_421.xml#_57267_2"/>, also ebenfalls zwischen März und Mai 1677,
+entstand mit hoher Wahrscheinlichkeit auch das kurze, undatierte Stück N. <ref corresp="L_section_422.xml#_60343"/>,
+das auf einem Zettel überliefert ist und editorisch mit dem Titel „Schedula de decem casibus Hugenianis” versehen wird.
+Darin hält Leibniz die Ergebnisse seiner mathematischen Prüfung der <index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens’schen Regel summarisch fest.
+Zwar enthält das Stück weder eine ausdrückliche Nennung von Huygens,
+noch bietet es einen Kontext für die Rechnungen;
+dennoch kann es zweifelsfrei als weitgehend wörtliche Reinschrift
+dreier Passagen aus dem Mittelteil von N. <ref corresp="L_section_421.xml#_57267_2"/> eingeordnet werden:
+S. <ref corresp="L_section_421.xml#_37_05_144-145_25a"/>,
+S. <ref corresp="L_section_421.xml#_37_05_144-145_26a"/>
+und S. <ref corresp="L_section_421.xml#_37_05_144-145_27a"/>.
+Dabei wird die Huygens’sche Stoßregel zunächst algebraisch ausgedrückt
+und die Formel anschließend
+auf dessen zehn Fälle einzeln angewendet, was Leibniz zufolge
+jedes Mal zu einem falschen oder ungewissen Ergebnis führt.
+Allerdings entspringen sämtliche Fehler weder Huygens’ Regel noch ihrer an sich korrekten Formalisierung.
+Sie beruhen vielmehr, in N. <ref corresp="L_section_422.xml#_60343"/> wie bereits in N. <ref corresp="L_section_421.xml#_57267_2"/>,
+auf Leibnizens fehlerhafter Handhabung der Vorzeichen in der Vektoraddition.</hi></p><p xml:id="Ch42.p9"><hi rendition="#smaller">Sowohl die beträchtliche Nähe im Wortlaut als auch der Umstand, dass Leibniz
+seinen grundlegenden Fehler noch nicht aufgedeckt hat,
+legen für N. <ref corresp="L_section_422.xml#_60343"/>
+eine Entstehung unmittelbar nach Abfassung der entsprechenden Passagen von N. <ref corresp="L_section_421.xml#_57267_2"/> nahe.
+Letzteres Stück deutet in einem kurz darauffolgenden Abschnitt (S. <ref corresp="L_section_421.xml#_37_05_144-145_29a"/>)
+eine Rehabilitierung der <index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens’schen
+Berechnungen in einigen Fällen an; daher ist N. <ref corresp="L_section_422.xml#_60343"/> womöglich noch vor diesem Abschnitt entstanden.</hi></p><p xml:id="Ch42.p10"><hi rendition="#smaller">Einen Hinweis auf die mögliche Bestimmung von N. <ref corresp="L_section_422.xml#_60343"/> bieten die letzten Sätze von N. <ref corresp="L_section_421.xml#_57267_2"/> (S. <ref corresp="L_section_421.xml#_37_05_144-145_28a"/>):
+Dort äußert Leibniz die Absicht, <index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens
+auf die von ihm aufgedeckte (vermeintliche) Inkonsistenz seines Ansatzes aufmerksam zu machen.
+Möglicherweise war die <hi rendition="#i">Schedula</hi> als Vorlage für eine dahingehende Mitteilung an Huygens angedacht.
+Allerdings war seit Huygens’ Abreise aus Paris im Juli 1676 der briefliche Kontakt abgebrochen; er lebte erst mit Leibnizens Brief vom 8. (18.) September 1679 wieder auf (<ref corresp="#bib_02046"/><hi rendition="#i">LSB</hi> III, 2 N. 346).</hi></p></div><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_421.xml" xpointer="Ch42.S1" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_422.xml" xpointer="Ch42.S2" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_423.xml" xpointer="Ch42.S3" parse="xml"/></div></body>
+  </text>
+</TEI>

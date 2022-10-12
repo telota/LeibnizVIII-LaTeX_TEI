@@ -1,0 +1,77 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch59" n="59"><head>59
+QUOMODO INVENIRI POSSIT LOCUS DUORUM GLOBORUM POST ICTUM OBLIQUUM</head> <head>[Februar 1678 – 1686]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Aufzeichnung:
+LH XXXV 12, 2 Bl. 18.
+Ein Blatt 8<hi rendition="#sup">o</hi>;
+Papiererhaltungsmaßnahmen;
+unterer und linker Rand beschnitten.
+Eine Seite auf <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=4110">Bl. 18 r<hi rendition="#sup">o</hi></ref>; Rückseite leer.</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch59.p1"><anchor xml:id="_39566"/>
+<anchor xml:id="RK39566"/><!--  \hackfor{\par} --></p><p xml:id="Ch59.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Der im vorliegenden Stück skizzierte Ansatz
+zur Bestimmung der Geschwindigkeiten zweier Körper nach ihrem schiefen Stoß
+beruht auf den
+in <hi rendition="#i">De corporum concursu</hi>, <hi rendition="#i">Scheda octava</hi> (N. <ref corresp="L_section_5810.xml#dcc_08"/>) erstmals gesicherten Grundsatz der Erhaltung der Kraft (als <formula xml:id="Ch59.p4.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></formula>).
+Leibniz beruft sich in N. <ref corresp="#RK39566"/> nicht ausdrücklich auf diesen Grundsatz,
+setzt ihn aber in der letzten Gleichung des Stückes ein.
+Daher muss N. <ref corresp="#_39566"/> nach <hi rendition="#i">De corporum concursu</hi>, also ab Februar 1678, entstanden sein.
+Zugleich wirkt N. <ref corresp="#RK39566"/> im Vergleich mit dem weit ausführlicheren und differenzierteren Konzept zum schiefen Stoß
+N. <ref corresp="L_chapter_60.xml#RK41204"/> wie eine Skizze.
+Letzteres Stück entwickelt den in N. <ref corresp="#RK39566"/> im Keim enthaltenen Ansatz, aus dem Satz der Krafterhaltung die Kinematik eines einfachen Falls
+von schiefem Stoß herzuleiten, weiter.
+Noch raffinierter verfährt Leibniz in Stücken wie N. <ref corresp="L_section_652.xml#RK41167"/> und N. <ref corresp="L_chapter_66.xml#RK60320"/>,
+deren Datierung (1686 bis Oktober 1687) einen Terminus ante quem für N. <ref corresp="L_chapter_60.xml#RK41204"/> wie auch für N. <ref corresp="#RK39566"/> bietet.
+Demnach muss Leibniz sowohl N. <ref corresp="#RK39566"/> als auch N. <ref corresp="L_chapter_60.xml#RK41204"/> zwischen Februar 1678 und 1686 verfasst haben,
+wobei N. <ref corresp="#RK39566"/> aus den genannten Gründen vor N. <ref corresp="L_chapter_60.xml#RK41204"/> entstanden sein muss.
+Eine genauere Datierungsspanne lässt sich nach heutigem Kenntnisstand nicht angeben.</hi></p></div><div type="text"><p rendition="#noindent" xml:id="Ch59.p5"><app type="Bfootnote"><lem type="main"><ref><pb type="L"/><fw type="folNum">[18 r<hi rendition="#sup">o</hi>]</fw></ref> Globus<index indexName="Sachen"><term>globus</term></index></lem><note type="lemma-abbrev"><ref><pb type="L"/><fw type="folNum">[18 r<hi rendition="#sup">o</hi>]</fw></ref></note><rdg wit="#L" n="1"> Corpus </rdg><rdg wit="#L" n="2"> Globus <hi rendition="#i">L</hi></rdg></app>
+<hi rendition="#i">A</hi>, tendens linea <hi rendition="#i"><hi rendition="#smaller">1</hi>A<hi rendition="#smaller">2</hi>A</hi>, ad <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>, incidit in globum <hi rendition="#i">B</hi> quiescentem<index indexName="Sachen"><term>incursus globi in alium quiescens</term></index><index indexName="Sachen"><term>globus quiescens</term></index>
+in <hi rendition="#i"><hi rendition="#smaller">12</hi>B</hi>, quaeritur locus<index indexName="Sachen"><term>locus</term></index>
+<hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> et <app type="Bfootnote"><lem type="main">locus<index indexName="Sachen"><term>locus</term></index> <hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi>, ubi post</lem><note type="lemma-abbrev">locus <hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi>,</note><rdg wit="#L" n="1"> qui perve </rdg><rdg wit="#L" n="2"> ubi post <hi rendition="#i">L</hi></rdg></app>
+ictum<index indexName="Sachen"><term>ictus</term></index> erunt <app type="Bfootnote"><lem type="main"><hi rendition="#i">A</hi>,</lem><rdg wit="#L" cause="addition"><add><hi rendition="#i">A</hi>,</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
+<hi rendition="#i">B</hi>,
+<app type="Bfootnote"><lem type="main">tempore eodem</lem><note type="lemma-abbrev">tempore</note><rdg wit="#L" n="1"> aequali </rdg><rdg wit="#L" n="2"> eodem <hi rendition="#i">L</hi></rdg></app>
+quo ante ictum <hi rendition="#i">A</hi> venit ab <hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi> ad <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>.</p><figure rendition="#own-line_centered" xml:id="Ch59.p6"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_12_02_018_d.svg" width="95.3964pt" xml:id="Ch59.p6.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head></figure><p xml:id="Ch59.p7">Sit centrum gravitatis<index indexName="Sachen"><term>centrum gravitatis commune</term></index> <app type="Bfootnote"><lem type="main">commune, id</lem><note type="lemma-abbrev">commune</note><rdg wit="#L" n="1"> <hi rendition="#i">C</hi>, id post ictum </rdg><rdg wit="#L" n="2"> id <hi rendition="#i">L</hi></rdg></app>
+initio sit in <hi rendition="#i"><hi rendition="#smaller">1</hi>C</hi>, momento ictus<index indexName="Sachen"><term>momentum ictus</term></index> sit in <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>,
+tandem post ictum<index indexName="Sachen"><term>ictus</term></index> eodem tempore perveniat in <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>, utique <hi rendition="#i"><hi rendition="#smaller">1</hi>C</hi>, <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>, <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>, sunt in
+<app type="Bfootnote"><lem type="main">directum, seu</lem><note type="lemma-abbrev">directum,</note><rdg wit="#L" n="1"> et </rdg><rdg wit="#L" n="2"> seu <hi rendition="#i">L</hi></rdg></app>
+cadent in eandem rectam, et <formula xml:id="Ch59.p7.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">1</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:math></formula>. Rursus corpus <hi rendition="#i">B</hi> quiescens ibit in recta <formula xml:id="Ch59.p7.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">12</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:math></formula> cujus daretur quantitas, <app type="Bfootnote"><lem type="main">etiam <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> dabitur. Nam</lem><note type="lemma-abbrev">etiam</note><rdg wit="#L" n="1"> caetera darentur. Assumatur </rdg><rdg wit="#L" n="2"> <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> dabitur. <app><rdg wit="#L" n="a">Est </rdg><rdg wit="#L" n="b">Quia tri </rdg><rdg wit="#L" n="c">Haec ita assumi debet </rdg><rdg wit="#L" n="d">Quoniam </rdg></app></rdg><rdg wit="#L" n="3"> Nam <hi rendition="#i">L</hi></rdg></app>
+jungatur <hi rendition="#i"><hi rendition="#smaller">3</hi>B<hi rendition="#smaller">3</hi>C</hi>, et continuetur.
+Erit <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> in recta <hi rendition="#i"><hi rendition="#smaller">3</hi>B<hi rendition="#smaller">3</hi>C</hi>, praeterea <hi rendition="#i"><hi rendition="#smaller">3</hi>A<hi rendition="#smaller">3</hi>C</hi> erit ad <hi rendition="#i"><hi rendition="#smaller">3</hi>B<hi rendition="#smaller">3</hi>C</hi>, ut <hi rendition="#i">B</hi> ad <hi rendition="#i">A</hi>, seu <hi rendition="#i"><hi rendition="#smaller">1</hi>A<hi rendition="#smaller">1</hi>C</hi> ad <hi rendition="#i"><hi rendition="#smaller">12</hi>B<hi rendition="#smaller">1</hi>C</hi>. Itaque habebitur ipsum punctum <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi>, sed oportet esse
+<app type="Cfootnote"><lem type="main"><formula xml:id="Ch59.p7.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mtext>qu</m:mtext><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">12</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mtext>qu</m:mtext><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mtext>qu</m:mtext><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">1</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mrow></m:math></formula>.</lem><note type="lemma-abbrev"><formula xml:id="Ch59.p7.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mtext>qu</m:mtext><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">12</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mtext>qu</m:mtext><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mtext>qu</m:mtext><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">1</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mrow></m:math></formula></note><note type="editorial">Da Leibniz allem Anschein nach vom Grundsatz der Erhaltung der Kraft (<formula xml:id="Ch59.p7.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></formula>) ausgeht, müssten in der Gleichung auch die unterschiedlichen Massen der Körper <hi rendition="#i">A</hi> und <hi rendition="#i">B</hi> berücksichtigt werden.</note></app>
+Hinc determinabitur recta <hi rendition="#i"><hi rendition="#smaller">12</hi>B<hi rendition="#smaller">3</hi>B</hi>.</p><p xml:id="Ch59.p8">Si globi<index indexName="Sachen"><term>globus</term></index>
+forent aequales,<index indexName="Sachen"><term>globi aequales</term></index>
+caderet <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi> in
+punctum contactus,<index indexName="Sachen"><term>punctum contactus</term></index> nunc cadit citra.</p></div></div></body>
+  </text>
+</TEI>

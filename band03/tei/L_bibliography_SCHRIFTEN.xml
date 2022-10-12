@@ -1,0 +1,3406 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="bibliography" xml:id="Chx2">
+    <head rendition="#smaller">SCHRIFTEN</head>
+    
+      <p xml:id="Chx2.p1"><hi rendition="#smaller">Das Schriftenverzeichnis enthält die von Leibniz erwähnte und die in den Erläuterungen benutzte Literatur.
+Autorennamen und Werktitel sind in alphabetischer Reihenfolge aufgeführt.
+Die kursiv gesetzten Seitenzahlen
+geben die Stellen im Band an, an denen die Schriften zitiert werden.</hi></p>
+    
+    
+<!--  \hack{\bibliographystyle{leibniz8bib-neu}
+\footnotesize\Hack{\input{VIII, 3 retro RICHTIG.bbl}}
+\Hackfor{\bibliography{l8-3bib}{}}} -->    
+  
+  
+  
+    
+    <listBibl>
+      <bibl xml:id="bib_01023">
+        
+        
+<emph rendition="#i">Acta eruditorum</emph>.
+50 Bde.
+Leipzig 1682–1731.
+[= <hi rendition="#i">AE</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_01244">
+        
+        
+<emph rendition="#i">Catalogus universalis, hoc est: Designatio omnium librorum qui hisce
+nundinis vernalibus/autumnalibus Francofurtensibus et Lipsiensibus anni 1684
+vel novi vel emendatiores et auctiores prodierunt. Das ist: Verzeichnis aller
+Bücher, so zu Franckfurt in der Herbst-Messe, auch Leipziger
+Michaelis-Messe des jetzigen 1684sten Jahres entweder ganz neu oder sonsten
+verbessert oder auffs neue wieder aufgelegt und gedrucket worden sind</emph>.
+Leipzig [1684].
+
+
+      </bibl>
+      <bibl xml:id="bib_02018">
+        
+        
+<emph rendition="#i">Histoire des ouvrages des sçavans</emph>.
+Rotterdam 1687–1709.
+
+
+      </bibl>
+      <bibl xml:id="bib_01247">
+        
+        
+<emph rendition="#i">Indices generales auctorum et rerum primi Actorum eruditorum quae Lipsiae
+publicantur decennii, nec non supplementorum tomi primi</emph>.
+Leipzig 1693.
+
+
+      </bibl>
+      <bibl xml:id="bib_00157">
+        
+        
+<emph rendition="#i">Journal des Sçavans</emph>.
+Paris 1665 ff.
+[= <hi rendition="#i">JS</hi>]
+(Referenziert wird lediglich auf die Pariser Ausgabe.)
+
+
+      </bibl>
+      <bibl xml:id="bib_01236">
+        
+        
+<emph rendition="#i">Leben und Werk von Gottfried Wilhelm Leibniz. Eine Chronik</emph>.
+Bearbeitet v. K. <hi rendition="#k">Müller</hi> u. G. <hi rendition="#k">Krönert</hi>.
+Frankfurt am Main 1969.
+[= <hi rendition="#i">Chronik</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_02002">
+        
+        
+<emph rendition="#i">Nouvelles de la république des lettres</emph>.
+Amsterdam 1684–1718.
+
+
+      </bibl>
+      <bibl xml:id="bib_00158">
+        
+        
+<emph rendition="#i">Philosophical Transactions of the Royal Society</emph>.
+London 1665 ff.
+[= <hi rendition="#i">PT</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_01284">
+        
+        
+<emph rendition="#i">Stoicorum veterum fragmenta</emph>.
+Hrsg. v. H. <hi rendition="#k">von Arnim</hi> (Bd IV mit M. <hi rendition="#k">Adler</hi>).
+4 Bde.
+Leipzig 1903–1924.
+Nachdr. Stuttgart 1964.
+[= <hi rendition="#i">SVF</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_01295">
+        
+        
+<hi rendition="#k">Anonym</hi>.
+<emph rendition="#i">An accompt of two books. I. Tractatus quinque physico-medici,
+De sale-nitro et spiritu nitro-aereo; De respiratione; De respiratione foetus
+in utero et ovo; De motu musculari et spiritibus animalibus; De
+rachitide: Auth. Joh. Mayow … Oxonii, e Theatro Sheldoniano 1674, in 8<hi rendition="#sup">o</hi></emph> …
+In:
+<emph rendition="#i">PT</emph>, 9 (1674), S. 101–113.
+
+
+      </bibl>
+      <bibl xml:id="bib_01211">
+        
+        
+——.
+[Bericht über Duverneys Forschung zur Anatomie und Physiologie des Ohres].
+In:
+<emph rendition="#i">JS</emph> (1681), S. 464. 
+
+      </bibl>
+      <bibl xml:id="bib_02048">
+        
+        
+——.
+<emph rendition="#i">Experience curieuse faite à Paris sur la riviere de Seine l’esté passé</emph>.
+In:
+<emph rendition="#i">JS</emph> (1678), S. 39–41.
+
+
+      </bibl>
+      <bibl xml:id="bib_01271">
+        
+        
+——.
+<emph rendition="#i">Harmonica et Phytoscopica. Scripta posthuma Ioachimi Iungii Hamburg. 1678</emph>.
+In:
+<emph rendition="#i">JS</emph> (1678), S. 342. 
+
+      </bibl>
+      <bibl xml:id="bib_01381">
+        
+        
+<hi rendition="#k">Antognazza, M. R.</hi>
+<emph rendition="#i">Leibniz. An Intellectual Biography</emph>.
+Cambridge (UK) 2009.
+
+
+      </bibl>
+      <bibl xml:id="bib_00532">
+        
+        
+<hi rendition="#k">Archimedes</hi>.
+<emph rendition="#i">De conoidibus et sphaeroidibus</emph>.
+In:
+<emph rendition="#i">Archimedis opera omnia cum commentariis Eutocii</emph>.
+Hrsg. v. J. L. <hi rendition="#k">Heiberg</hi>.
+Bd I.
+Leipzig 1880.
+S. 273–498.
+
+
+      </bibl>
+      <bibl xml:id="bib_01217">
+        
+        
+<hi rendition="#k">Aristoteles</hi>.
+<emph rendition="#i">De anima</emph>.
+In:
+<emph rendition="#i">Aristoteles Graece</emph>.
+Hrsg. v. <hi rendition="#k">I. Bekker</hi>.
+Bd I.
+Berlin 1831.
+S. 402–435.
+
+
+      </bibl>
+      <bibl xml:id="bib_00235">
+        
+        
+——.
+<emph rendition="#i">Physica</emph>.
+In:
+<emph rendition="#i">Aristoteles Graece</emph>.
+Hrsg. v. <hi rendition="#k">I. Bekker</hi>.
+Bd I.
+Berlin 1831.
+S. 184–267.
+
+
+      </bibl>
+      <bibl xml:id="bib_01123">
+        
+        
+<hi rendition="#k">Bauhin, C.</hi>
+<emph rendition="#i">Theatrum anatomicum</emph>.
+Frankfurt am Main 1605.
+
+
+      </bibl>
+      <bibl xml:id="bib_01259">
+        
+        
+<hi rendition="#k">Bernoulli, Jacob</hi>.
+Brief an G. W. Leibniz vom 15. (25.) Dezember 1687. In:
+<emph rendition="#i">LSB</emph> III, 4 N. 200, S. 364–368.
+
+
+      </bibl>
+      <bibl xml:id="bib_01044">
+        
+        
+(<hi rendition="#k">Bernoulli, Jacob</hi>.)
+<emph rendition="#i">Der Briefwechsel</emph>.
+Hrsg. v. D. <hi rendition="#k">Speiser</hi> u. A. <hi rendition="#k">Weil</hi>. Basel 1993.
+
+
+      </bibl>
+      <bibl xml:id="bib_02061">
+        
+        
+——.
+<emph rendition="#i">Solutio problematum fraternorum</emph>.
+In:
+<emph rendition="#i">AE</emph> (1697), S. 211–214.
+
+
+      </bibl>
+      <bibl xml:id="bib_02020">
+        
+        
+<hi rendition="#k">Bernoulli, Johann</hi>.
+Brief an G. W. Leibniz vom 12. (22.) September 1696. In:
+<emph rendition="#i">LSB</emph> III, 7 N. 33, S. 120–141.
+
+
+      </bibl>
+      <bibl xml:id="bib_02060">
+        
+        
+——.
+<emph rendition="#i">Curvatura radii in diaphanis non uniformibus, solutioque problematis a se in Actis 1696, p. 269, propositi de invenienda linea brachystochrona</emph>.
+In:
+<emph rendition="#i">AE</emph> (1697), S. 206–211.
+
+
+      </bibl>
+      <bibl xml:id="bib_02035">
+        
+        
+——.
+<emph rendition="#i">Problema novum ad cujus solutionem mathematici invitantur.</emph>
+In:
+<emph rendition="#i">AE</emph> (1696), S. 269.
+
+
+      </bibl>
+      <bibl xml:id="bib_02034">
+        
+        
+——.
+<emph rendition="#i">Solutio problematis funicularii</emph>.
+In:
+<emph rendition="#i">AE</emph> (1691), S. 274–276.
+
+
+      </bibl>
+      <bibl xml:id="bib_01357">
+        
+        
+<hi rendition="#k">Bertoloni Meli</hi>, D.
+<emph rendition="#i">Equivalence and Priority: Newton versus Leibniz.
+Including Leibniz’s Unpublished Manuscripts on the Principia</emph>.
+Oxford 1993.
+
+
+      </bibl>
+      <bibl xml:id="bib_00337">
+        
+        
+<hi rendition="#k">Blondel</hi>, F.
+<hi rendition="#i">Epistola ad P</hi>[<hi rendition="#i">aulum</hi>] <hi rendition="#i">W</hi>[<hi rendition="#i">urzium</hi>] <hi rendition="#i">in qua famosa Galilaei propositio discutitur, circa naturam lineae qua trabes
+secari debent ut sint aequalis ubique resistentiae et in qua lineam illam non quidem parabolicam,
+ut ipse Galilaeus arbitratus est, sed ellipticam esse demonstratur.</hi>
+Paris 1661.
+
+
+      </bibl>
+      <bibl xml:id="bib_01230">
+        
+        
+——.
+<emph rendition="#i">Résolution des quatre principaux problèmes d’architecture</emph>.
+Paris 1673.
+
+
+      </bibl>
+      <bibl xml:id="bib_01237">
+        
+        
+<hi rendition="#k">Boccabadati</hi>, G. B.
+<emph rendition="#i">De conatu mechanico</emph>.
+[Hs. verschollen.] 
+
+      </bibl>
+      <bibl xml:id="bib_01287">
+        
+        
+<hi rendition="#k">Boethius</hi>.
+<emph rendition="#i">De institutione musica</emph>.
+In:
+<hi rendition="#i">Boethii De institutione arithmetica libri duo.
+De institutione musica libri quinque.
+Accedit Geometria quae fertur Boethii</hi>.
+Hrsg. v. G. <hi rendition="#k">Friedlein</hi>.
+Leipzig 1867.
+S. 177–371.
+
+
+      </bibl>
+      <bibl xml:id="bib_01221">
+        
+        
+[<hi rendition="#k">Bohn</hi>, J.]
+Rezension von
+<hi rendition="#i">Lettres escrites sur le sujet d’une nouvelle decouverte touchant la Veüe,
+faite par M. Mariotte (Paris 1682)</hi>.
+In:
+<emph rendition="#i">AE</emph> (1683), S. 67–73.
+
+
+      </bibl>
+      <bibl xml:id="bib_02068">
+        
+        
+<hi rendition="#k">Borelli</hi>, G. A.
+<emph rendition="#i">De motionibus naturalibus a gravitate pendentibus</emph>.
+Bologna 1670.
+
+
+      </bibl>
+      <bibl xml:id="bib_02036">
+        
+        
+——.
+<emph rendition="#i">De vi percussionis, et motionibus naturalibus a gravitate pendentibus</emph>.
+Leiden 1686.
+
+
+      </bibl>
+      <bibl xml:id="bib_01001">
+        
+        
+——.
+<emph rendition="#i">De vi percussionis liber</emph>.
+Bologna 1667.
+
+
+      </bibl>
+      <bibl xml:id="bib_00016">
+        
+        
+<hi rendition="#k">Boyle</hi>, R.
+<emph rendition="#i">Nova experimenta physico-mechanica de vi aeris elastica,
+et ejusdem effectibus, facta maximam partem in nova machina pneumatica</emph>.
+Oxford 1661.
+
+
+      </bibl>
+      <bibl xml:id="bib_00327">
+        
+        
+<hi rendition="#k">Brahe</hi>, T.
+<emph rendition="#i">De mundi aetherei recentioribus phaenomenis liber secundus.
+De cometa anni 1577</emph>.
+Prag 1603.
+
+
+      </bibl>
+      <bibl xml:id="bib_01245">
+        
+        
+<hi rendition="#k">Brosseau</hi>, C.
+Brief an G. W. Leibniz vom 12. Juni 1684. In:
+<emph rendition="#i">LSB</emph>, I 4 N. 381, S. 468.
+
+
+      </bibl>
+      <bibl xml:id="bib_00124">
+        
+        
+<hi rendition="#k">Dechales</hi>, C. F. M.
+<emph rendition="#i">Cursus seu mundus mathematicus</emph>.
+3 Bde.
+Lyon 1674.
+
+
+      </bibl>
+      <bibl xml:id="bib_01998">
+        
+        
+——.
+<emph rendition="#i">Traitté du mouvement local et du ressort</emph>.
+Lyon 1682.
+
+
+      </bibl>
+      <bibl xml:id="bib_01286">
+        
+        
+<hi rendition="#k">Descartes</hi>, R.
+Brief an M. Mersenne vom 22. Juli 1633.
+In:
+<emph rendition="#i">DL</emph> II (1659), Nr. 75, S. 348–351
+(<hi rendition="#i">DO</hi> I, Nr. 48, S. 266–269).
+
+
+      </bibl>
+      <bibl xml:id="bib_01226">
+        
+        
+——.
+Brief an M. Mersenne vom 30. April 1639.
+In:
+<emph rendition="#i">DL</emph> III (1667), Nr. 84, S. 480–487
+(<hi rendition="#i">DO</hi> II, Nr. 160, S. 529–539).
+
+
+      </bibl>
+      <bibl xml:id="bib_01214">
+        
+        
+——.
+Brief an M. Mersenne vom 18. März 1641.
+In:
+<emph rendition="#i">DL</emph> III (1667), Nr. 109, S. 596–600
+(<hi rendition="#i">DO</hi> III, Nr. 233, S. 334–340).
+
+
+      </bibl>
+      <bibl xml:id="bib_01298">
+        
+        
+——.
+Brief an J.-B. Morin vom 12. September 1638.
+In:
+<emph rendition="#i">DL</emph> I (1657), Nr. 62, S. 286–296
+(<hi rendition="#i">DO</hi> II, Nr. 143, S. 362–373).
+
+
+      </bibl>
+      <bibl xml:id="bib_00209">
+        
+        
+——.
+<emph rendition="#i">Lettres</emph>.
+Hrsg. v. C. <hi rendition="#k">Clerselier</hi>.
+3 Bde.
+Paris: Bd I, 1657; Bd II, 1659; Bd III, 1667.
+[Marg.]
+[= <hi rendition="#i">DL</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_01999">
+        
+        
+——.
+<emph rendition="#i">Meditationes de prima philosophia</emph>.
+Paris 1641
+(<hi rendition="#i">DO</hi> VII, S. 1–603).
+
+
+      </bibl>
+      <bibl xml:id="bib_00120">
+        
+        
+(<hi rendition="#k">Descartes</hi>, R.)
+<emph rendition="#i">Oeuvres</emph>.
+Hrsg. v. C. <hi rendition="#k">Adam</hi> u. P. <hi rendition="#k">Tannery</hi>.
+12 Bde.
+Paris 1879–1910.
+Nachdr. Paris 1964–1972.
+[= <hi rendition="#i">DO</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_01300">
+        
+        
+——.
+<emph rendition="#i">Opera philosophica. Editio secunda ab auctore recognita</emph>.
+Amsterdam 1650.
+[Marg.]
+
+
+      </bibl>
+      <bibl xml:id="bib_00035">
+        
+        
+——.
+<emph rendition="#i">Principia philosophiae</emph>.
+Amsterdam 1644
+(<hi rendition="#i">DO</hi> VIII, 1, S. 1–353).
+
+
+      </bibl>
+      <bibl xml:id="bib_01235">
+        
+        
+<hi rendition="#k">Diogenes Laertios</hi>.
+<emph rendition="#i">Vitae philosophorum</emph>.
+Hrsg. v. M. <hi rendition="#k">Marcovich</hi>.
+Leipzig 1999.
+
+
+      </bibl>
+      <bibl xml:id="bib_01246">
+        
+        
+<hi rendition="#k">Douceur</hi>, N.
+Brief an G. W. Leibniz vom 12. Juni 1684.
+In:
+<emph rendition="#i">LSB</emph> III, 4 N. 56, S. 118 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01203">
+        
+        
+<hi rendition="#k">Duverney</hi>, J.-G.
+<emph rendition="#i">Tractatus de organo auditus,
+continens structuram, usum et morbos omnium auris partium …
+e Gallico Latine versus</emph>.
+Nürnberg 1684.
+
+
+      </bibl>
+      <bibl xml:id="bib_01202">
+        
+        
+——.
+<emph rendition="#i">Traité de l’organe de l’ouie,
+contenant la structure, les usages et les maladies de toutes les parties de l’oreille</emph>.
+Paris 1683.
+
+
+      </bibl>
+      <bibl xml:id="bib_00044">
+        
+        
+<hi rendition="#k">Fabri.</hi>, H.
+<emph rendition="#i">Physica, id est,
+scientia rerum corporearum in decem tractatus distributa</emph>.
+4 Bde.
+Lyon 1669–1671.
+[Marg.]
+
+
+      </bibl>
+      <bibl xml:id="bib_01215">
+        
+        
+<hi rendition="#k">Fracastoro</hi>, G.
+<emph rendition="#i">De sympathia et antipathia rerum liber unus.
+De contagione et contagiosis morbis et curatione libri tres</emph>.
+Venedig 1546.
+
+
+      </bibl>
+      <bibl xml:id="bib_01216">
+        
+        
+——.
+<emph rendition="#i">Operum pars prior, philosophica et medica</emph>.
+Lyon 1591.
+
+
+      </bibl>
+      <bibl xml:id="bib_00047">
+        
+        
+<hi rendition="#k">Frölich</hi>, D.
+<emph rendition="#i">Bibliotheca seu Cynosura peregrinantium,
+hoc est: Viatorium omnium hactenus editorum absolutissimum, jucundissimum utilissimumque,
+in duas partes digestum</emph>.
+2 Bde.
+Ulm 1643–1644.
+
+
+      </bibl>
+      <bibl xml:id="bib_00050">
+        
+        
+<hi rendition="#k">Galilei</hi>, G.
+<emph rendition="#i">Discorsi e dimostrazioni matematiche
+intorno a due nuove scienze attenenti alla mecanica e i movimenti locali</emph>.
+Leiden 1638
+(<hi rendition="#i">GO</hi> VIII, S. 39–318).
+
+
+      </bibl>
+      <bibl xml:id="bib_01084">
+        
+        
+——.
+<emph rendition="#i">Opere</emph>.
+2 Bde.
+Bologna 1656.
+
+
+      </bibl>
+      <bibl xml:id="bib_00048">
+        
+        
+——.
+<emph rendition="#i">Opere. Edizione Nazionale</emph>.
+Hrsg. v. A. <hi rendition="#k">Favaro</hi> u. a.
+20 Bde.
+Florenz 1890–1909.
+[= <hi rendition="#i">GO</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_01029">
+        
+        
+<hi rendition="#k">Gassendi</hi>, P.
+<emph rendition="#i">Opera omnia</emph>.
+3 Bde.
+Lyon 1658.
+Nachdr. Stuttgart u. Bad Cannstatt 1964.
+[= <hi rendition="#i">GOO</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_01073">
+        
+        
+——.
+<emph rendition="#i">Syntagmatis philosophici pars secunda, quae est Physica</emph>.
+Lyon 1658
+(<hi rendition="#i">GOO</hi> I, S. 125–752; <hi rendition="#i">GOO</hi> II, S. 1–658).
+
+
+      </bibl>
+      <bibl xml:id="bib_00055">
+        
+        
+<hi rendition="#k">von Guericke</hi>, O.
+<emph rendition="#i">Experimenta nova (ut vocantur) Magdeburgica de vacuo spatio</emph>.
+Amsterdam 1672.
+
+
+      </bibl>
+      <bibl xml:id="bib_01342">
+        
+        
+<hi rendition="#k">Guidi</hi>, G.
+Brief an G. W. Leibniz vom 1. Januar 1705.
+In:
+<emph rendition="#i">LSB</emph> I, 24 N. 152, S. 259–261.
+
+
+      </bibl>
+      <bibl xml:id="bib_01242">
+        
+        
+<hi rendition="#k">Haak</hi>, T.
+Brief an G. W. Leibniz vom 24. August (3. September) 1679.
+In:
+<emph rendition="#i">LSB</emph> III, 2 N. 337, S. 818–822.
+
+
+      </bibl>
+      <bibl xml:id="bib_01241">
+        
+        
+<hi rendition="#k">Hooke</hi>, R.
+<emph rendition="#i">Lectures de potentia restitutiva,
+or of spring, explaining the power of springing bodies.
+To which are added some collections</emph>.
+London 1678.
+[Marg.]
+
+
+      </bibl>
+      <bibl xml:id="bib_01067">
+        
+        
+<hi rendition="#k">Huygens</hi>, C.
+<emph rendition="#i">A Summary Account of the Laws of Motion,
+communicated by Mr. Christian Hugens in a Letter to the R. Society,
+and since printed in French in the Iournal des Scavans of March 18, 1669. st. n.</emph>
+In:
+<emph rendition="#i">PT</emph>, 4 (1669), S. 925–928.
+
+
+      </bibl>
+      <bibl xml:id="bib_01201">
+        
+        
+(<hi rendition="#k">Huygens</hi>, C.)
+Brief an Constantyn Huygens (Vater) vom 26. Februar 1665.
+In:
+<emph rendition="#i">HO</emph> V, S. 243 f. Auszug in: <hi rendition="#i">JS</hi> (1665), S. 129–131.
+
+
+      </bibl>
+      <bibl xml:id="bib_01502">
+        
+        
+——.
+Brief an G. W. Leibniz vom 8. (18.) Februar 1690.
+In:
+<emph rendition="#i">LSB</emph> III, 4 N. 235, S. 460–464.
+
+
+      </bibl>
+      <bibl xml:id="bib_02037">
+        
+        
+——.
+<emph rendition="#i">De motu corporum ex mutuo impulsu hypothesis</emph>.
+[Hs. 1669.] In:
+<hi rendition="#i">HO</hi> VI, S. 336–343.
+
+
+      </bibl>
+      <bibl xml:id="bib_00530">
+        
+        
+——.
+<emph rendition="#i">De motu corporum ex percussione</emph>.
+In:
+<hi rendition="#i">Opuscula posthuma</hi>.
+Leiden 1703,
+S. 367–398
+(<hi rendition="#i">HO</hi> XVI, S. 29–91).
+
+
+      </bibl>
+      <bibl xml:id="bib_00062">
+        
+        
+——.
+<emph rendition="#i">Extrait d’une lettre de M. Hugens de l’Academie des Sciences à l’auteur de ce journal,
+touchant les phenomenes de l’eau purgée d’air</emph>.
+In:
+<emph rendition="#i">JS</emph> (1672), S. 133–140
+(<hi rendition="#i">HO</hi> VII, S. 201–206).
+
+
+      </bibl>
+      <bibl xml:id="bib_00123">
+        
+        
+——.
+<emph rendition="#i">Horologium oscillatorium sive
+De motu pendulorum ad horologia aptato demonstrationes geometricae</emph>.
+Paris 1673
+(<hi rendition="#i">HO</hi> XVIII, S. 69–365).
+
+
+      </bibl>
+      <bibl xml:id="bib_00113">
+        
+        
+——.
+<emph rendition="#i">Oeuvres complètes</emph>.
+Hrsg. v. D. <hi rendition="#k">Bierens de Haan</hi>, J. <hi rendition="#k">Bosscha</hi> u. a.
+22 Bde.
+Den Haag 1888–1950.
+[= <hi rendition="#i">HO</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_02076">
+        
+        
+——.
+<emph rendition="#i">Opuscula posthuma</emph>.
+[Hrsg. v. B. <hi rendition="#k">de Volder</hi> u. B. <hi rendition="#k">Fullenius</hi>.]
+Leiden 1703.
+[Marg.]
+
+
+      </bibl>
+      <bibl xml:id="bib_00529">
+        
+        
+——.
+<emph rendition="#i">Regles du mouvement dans la rencontre des corps</emph>.
+In:
+<emph rendition="#i">JS</emph> (1669), S. 22–24
+(<hi rendition="#i">HO</hi> VI, S. 383–386).
+
+
+      </bibl>
+      <bibl xml:id="bib_02019">
+        
+        
+——.
+<emph rendition="#i">Remarques de Mr. Huygens sur la lettre precedente</emph>.
+In:
+<emph rendition="#i">Histoire des ouvrages des sçavans</emph> (1690), S. 461–463.
+
+
+      </bibl>
+      <bibl xml:id="bib_00525">
+        
+        
+——.
+<emph rendition="#i">Traité de la lumiere,
+où sont expliquées les causes de ce qui luy arrive dans la reflexion et dans la refraction.
+Et particulierement dans l’etrange refraction du cristal d’Islande.
+Avec un discours de la cause de la pesanteur</emph>.
+Leiden 1690
+(<hi rendition="#i">HO</hi> XIX).
+
+
+      </bibl>
+      <bibl xml:id="bib_01266">
+        
+        
+<hi rendition="#k">Jungius, J.</hi>
+<emph rendition="#i">Harmonica</emph>.
+[Hamburg 1678.]
+[Marg.]
+
+
+      </bibl>
+      <bibl xml:id="bib_01268">
+        
+        
+——.
+<emph rendition="#i">Isagoge phytoscopica</emph>.
+[Hamburg 1679.]
+
+
+      </bibl>
+      <bibl xml:id="bib_01267">
+        
+        
+——.
+<emph rendition="#i">Praecipuae opiniones physicae,
+passim receptae, breviter quidem sed accuratissime examinatae,
+ex recensione et distincione Martini Fogelii,
+cujus annotationes quaedam accedunt;
+accesit[!] nunc primum ejusdem auctoris Harmonica et Isagoge phytoscopica</emph>.
+[Hrsg. v. J. <hi rendition="#k">Vagetius</hi>.]
+Hamburg 1679.
+
+
+      </bibl>
+      <bibl xml:id="bib_02050">
+        
+        
+<hi rendition="#k">Justel</hi>, H.
+Brief an G. W. Leibniz vom 24. Juli 1679.
+In:
+<emph rendition="#i">LSB</emph>, I 2 N. 495, S. 501–504.
+
+
+      </bibl>
+      <bibl xml:id="bib_00534">
+        
+        
+<hi rendition="#k">Kepler</hi>, J.
+<emph rendition="#i">Astronomia nova αἰτιολογετ´ος seu physica coelestis,
+tradita commentariis de motibus stellae Martis ex observationibus Tychonis Brahe</emph>.
+Heidelberg 1609
+(<hi rendition="#i">KGW</hi> III).
+
+
+      </bibl>
+      <bibl xml:id="bib_00114">
+        
+        
+——.
+<emph rendition="#i">Gesammelte Werke</emph>.
+Hrsg. v. d. Bayerischen Akademie der Wissenschaften.
+27 Bde.
+München 1937–2017.
+[= <hi rendition="#i">KGW</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_02059">
+        
+        
+<hi rendition="#k">Kopernikus</hi>, N.
+<emph rendition="#i">De revolutionibus orbium coelestium libri sex</emph>.
+Nürnberg 1543.
+
+
+      </bibl>
+      <bibl xml:id="bib_02026">
+        
+        
+<hi rendition="#k">de La Hire</hi>, P.
+<emph rendition="#i">Traité de méchanique</emph>.
+Paris 1695.
+
+
+      </bibl>
+      <bibl xml:id="bib_02043">
+        
+        
+<hi rendition="#k">Leibniz,</hi> G. W.
+<emph rendition="#i">Additio ad schediasma de medii resistentia</emph>.
+In:
+<emph rendition="#i">AE</emph> (1691), S. 177 f.
+(<hi rendition="#i">LMG</hi> VI, S. 143 f.).
+
+
+      </bibl>
+      <bibl xml:id="bib_02038">
+        
+        
+——.
+<emph rendition="#i">Animadversiones ad Cartesii Principia</emph>
+[1691].
+<hi rendition="#i">LPG</hi> IV, S. 354–392.
+
+
+      </bibl>
+      <bibl xml:id="bib_01197">
+        
+        
+——.
+Aus Otto von Guericke, <hi rendition="#i">Experimenta nova</hi>
+[Sommer 1672].
+In:
+<emph rendition="#i">LSB</emph> VIII, 1 N. 36, S. 245–276.
+
+
+      </bibl>
+      <bibl xml:id="bib_01100">
+        
+        
+——.
+Aus <hi rendition="#i">Saggi di naturali esperienze</hi>
+[2. Hälfte 1672].
+In:
+<emph rendition="#i">LSB</emph> VIII, 1 N. 37, S. 277–287.
+
+
+      </bibl>
+      <bibl xml:id="bib_01120">
+        
+        
+(<hi rendition="#k">Leibniz,</hi> G. W.)
+Aus und zu der <hi rendition="#i">Physik</hi> von Honoratus Fabri
+[Herbst 1670 – Frühjahr 1672 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 2 N. 39, S. 186–211.
+
+
+      </bibl>
+      <bibl xml:id="bib_01303">
+        
+        
+——.
+Aus und zu Descartes
+[Sommer 1678 – Winter 1680/81 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 341, S. 1784–1788.
+
+
+      </bibl>
+      <bibl xml:id="bib_00260">
+        
+        
+——.
+Aus und zu Galileis <hi rendition="#i">Discorsi</hi>
+[Herbst 1672/73(?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 3 N. 11, S. 163–168.
+
+
+      </bibl>
+      <bibl xml:id="bib_01234">
+        
+        
+——.
+Aus und zu Honoré Fabri, <hi rendition="#i">Physica</hi>
+[Herbst 1670 – Frühjahr 1672 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 2 N. 55, S. 465–522.
+
+
+      </bibl>
+      <bibl xml:id="bib_01343">
+        
+        
+——.
+Aus und zu John Wallis, <hi rendition="#i">Mechanica sive De motu</hi>
+[letzte Monate 1674 – erste Monate 1675].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 8, S. 64–106.
+
+
+      </bibl>
+      <bibl xml:id="bib_01272">
+        
+        
+——.
+Aus und zu Vagetius’ Edition von Jungius’ <hi rendition="#i">Logik</hi>
+[Ende 1681 – Anfang 1682 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 233, S. 1117 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_02074">
+        
+        
+——.
+Auszüge aus Sinclair und Mechovius. Aufzeichnung zur Medizin
+[Februar (?) 1671].
+In:
+<emph rendition="#i">LSB</emph> VI, 2 N. 43, S. 292 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01099">
+        
+        
+——.
+<emph rendition="#i">Brevis demonstratio erroris memorabilis Cartesii et aliorum circa legem naturae,
+secundum quam volunt a Deo eandem semper quantitatem motus conservari</emph>.
+In:
+<emph rendition="#i">AE</emph> (1686), S. 161–163
+(<hi rendition="#i">LSB</hi> VI, 4 N. 369, S. 2027–2030).
+
+
+      </bibl>
+      <bibl xml:id="bib_01260">
+        
+        
+——.
+Brief an Jacob Bernoulli vom 24. September (4. Oktober) 1690.
+In:
+<emph rendition="#i">LSB</emph> III, 4 N. 279, S. 571–584.
+
+
+      </bibl>
+      <bibl xml:id="bib_02047">
+        
+        
+——.
+Brief an J. Bertet, September 1677 (?).
+In:
+<emph rendition="#i">LSB</emph> II, 1 (2006) N. 158a, S. 571–574.
+
+
+      </bibl>
+      <bibl xml:id="bib_02066">
+        
+        
+——.
+Brief an F. Bianchini vom 12. (22.) September 1690.
+In:
+<emph rendition="#i">LSB</emph> III, 4 N. 274, S. 558–561.
+
+
+      </bibl>
+      <bibl xml:id="bib_01261">
+        
+        
+——.
+Brief an R. C. von Bodenhausen vom 26. Oktober (5. November) 1690.
+In:
+<emph rendition="#i">LSB</emph> III, 4 N. 285, S. 626–633.
+
+
+      </bibl>
+      <bibl xml:id="bib_01283">
+        
+        
+——.
+Brief an C. Brosseau vom 21. Juli 1684.
+In:
+<emph rendition="#i">LSB</emph> I, 4 N. 390, S. 475.
+
+
+      </bibl>
+      <bibl xml:id="bib_02053">
+        
+        
+——.
+Brief an H. Conring vom 3. (13.) Januar 1678.
+In:
+<emph rendition="#i">LSB</emph> II, 1 (2006) N. 162, S. 578–584.
+
+
+      </bibl>
+      <bibl xml:id="bib_01312">
+        
+        
+——.
+Brief an A. Eckhard vom 28. April 1677.
+In:
+<emph rendition="#i">LSB</emph> II, 1 (2006) N. 143, S. 498–502.
+
+
+      </bibl>
+      <bibl xml:id="bib_01313">
+        
+        
+——.
+Brief an A. Eckhard vom Sommer 1677.
+In:
+<emph rendition="#i">LSB</emph> II, 1 (2006) N. 148, S. 542–547.
+
+
+      </bibl>
+      <bibl xml:id="bib_01314">
+        
+        
+——.
+Brief an die Pfalzgräfin Elisabeth (?) vom November 1678.
+In:
+<emph rendition="#i">LSB</emph> II, 1 (2006) N. 187b, S. 659–666.
+
+
+      </bibl>
+      <bibl xml:id="bib_01309">
+        
+        
+——.
+Brief an H. Fabri vom Anfang 1677.
+In:
+<emph rendition="#i">LSB</emph> II, 1 (2006) N. 133, S. 441–466.
+
+
+      </bibl>
+      <bibl xml:id="bib_01335">
+        
+        
+——.
+Brief an D. Flach vom 5. (15.) Juni 1693.
+In:
+<emph rendition="#i">LSB</emph> I, Supplementband Harz-Bergbau, N. 28, S. 42 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01297">
+        
+        
+——.
+Brief an C. Gudenus vom 6. August 1689.
+In:
+<emph rendition="#i">LSB</emph> I, 5 N. 250, S. 464 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01282">
+        
+        
+——.
+Brief an J.-B. du Hamel vom 11. (21.) Juli 1684.
+In:
+<emph rendition="#i">LSB</emph> III, 4 N. 62, S. 130–132.
+
+
+      </bibl>
+      <bibl xml:id="bib_02046">
+        
+        
+——.
+Brief an C. Huygens vom 8. (18.) September 1679.
+In:
+<emph rendition="#i">LSB</emph> III, 2 N. 346, S. 840–850.
+
+
+      </bibl>
+      <bibl xml:id="bib_01507">
+        
+        
+——.
+Brief an C. Huygens vom 28. Oktober (7. November) 1690.
+In:
+<emph rendition="#i">LSB</emph> III, 4 N. 287, S. 640–647.
+
+
+      </bibl>
+      <bibl xml:id="bib_01243">
+        
+        
+——.
+Brief an C. Huygens vom 10. (20.) April 1691.
+In:
+<emph rendition="#i">LSB</emph> III, 5 N. 17, S. 93–103.
+
+
+      </bibl>
+      <bibl xml:id="bib_01325">
+        
+        
+——.
+Brief an F. W. Leidenfrost von Ende Juli 1680.
+In:
+<emph rendition="#i">LSB</emph> I, 3 N. 46, S. 65.
+
+
+      </bibl>
+      <bibl xml:id="bib_01326">
+        
+        
+——.
+Brief an F. W. Leidenfrost von Mitte Januar 1682.
+In:
+<emph rendition="#i">LSB</emph> I, 3 N. 112, S. 139 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01327">
+        
+        
+——.
+Brief an F. W. Leidenfrost vom 6. (?) April 1688.
+In:
+<emph rendition="#i">LSB</emph> I, 5 N. 33, S. 91.
+
+
+      </bibl>
+      <bibl xml:id="bib_01379">
+        
+        
+——.
+Brief an G. F. de L’Hospital vom 4. (14.) Dezember 1696.
+In:
+<emph rendition="#i">LSB</emph> III, 7 N. 56, S. 213–216.
+
+
+      </bibl>
+      <bibl xml:id="bib_01315">
+        
+        
+(<hi rendition="#k">Leibniz,</hi> G. W.)
+Brief an N. Malebranche vom 22. Juni (2. Juli) 1679.
+In:
+<emph rendition="#i">LSB</emph> II, 1 (2006) N. 207, S. 716–727.
+
+
+      </bibl>
+      <bibl xml:id="bib_01330">
+        
+        
+——.
+Brief an P. Marci vom 20. (30.) März 1685.
+In:
+<emph rendition="#i">LSB</emph> I, 4 N. 417, S. 497.
+
+
+      </bibl>
+      <bibl xml:id="bib_01334">
+        
+        
+——.
+Brief an P. Marci vom 27. März (6. April) 1691.
+In:
+<emph rendition="#i">LSB</emph> I, 6 N. 247, S. 443 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01374">
+        
+        
+——.
+Brief an E. Mariotte vom Juli 1673.
+In:
+<emph rendition="#i">LSB</emph> III, 1 N. 25, S. 101–112.
+
+
+      </bibl>
+      <bibl xml:id="bib_01193">
+        
+        
+——.
+Brief an E. Mariotte von der 2. Hälfte August 1681.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 269, S. 478–482.
+
+
+      </bibl>
+      <bibl xml:id="bib_01263">
+        
+        
+——.
+Brief an E. Mariotte von Ende Juli/ Anfang August 1682.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 380, S. 675–681.
+
+
+      </bibl>
+      <bibl xml:id="bib_01264">
+        
+        
+——.
+Brief an E. Mariotte vom 14. September 1682.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 400, S. 712–713.
+
+
+      </bibl>
+      <bibl xml:id="bib_01262">
+        
+        
+——.
+Brief an E. Mariotte vom März/April 1683.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 456, S. 793–798.
+
+
+      </bibl>
+      <bibl xml:id="bib_02045">
+        
+        
+——.
+Brief an O. Mencke vom 2. (12.) Oktober 1690.
+In:
+<emph rendition="#i">LSB</emph> III, 4 N. 281, S. 587 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01332">
+        
+        
+——.
+Brief an G. Mennichen von Ende Januar 1687.
+In:
+<emph rendition="#i">LSB</emph> I, 4 N. 267, S. 308.
+
+
+      </bibl>
+      <bibl xml:id="bib_01331">
+        
+        
+——.
+Brief an P. P. Metzger von 1685 (?).
+In:
+<emph rendition="#i">LSB</emph> I, 4 N. 457, S. 543 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01310">
+        
+        
+——.
+Brief an G. W. Molanus für A. Eckhard vom Anfang April 1677.
+In:
+<emph rendition="#i">LSB</emph> II, 1 (2006) N. 138, S. 478–484.
+
+
+      </bibl>
+      <bibl xml:id="bib_01346">
+        
+        
+——.
+Brief an H. Oldenburg vom 29. April (9. Mai) 1671.
+In:
+<emph rendition="#i">LSB</emph> II, 1 (2006) N. 57, S. 165–169.
+
+
+      </bibl>
+      <bibl xml:id="bib_01378">
+        
+        
+——.
+Brief an D. Papin vom [17.] November 1695.
+In:
+<emph rendition="#i">LSB</emph> III, 6 N. 172, S. 532–543.
+
+
+      </bibl>
+      <bibl xml:id="bib_01515">
+        
+        
+——.
+Brief an D. Papin vom 21. Juni (1. Juli) 1696.
+In:
+<emph rendition="#i">LSB</emph> III, 7 N. 1, S. 7–18.
+
+
+      </bibl>
+      <bibl xml:id="bib_02071">
+        
+        
+——.
+Brief an D. Papin vom 16. (26.) Juli 1696.
+In:
+<emph rendition="#i">LSB</emph> III, 7 N. 8, S. 32–35.
+
+
+      </bibl>
+      <bibl xml:id="bib_01503">
+        
+        
+——.
+Brief an D. Papin vom 8. (18.) November 1697.
+In:
+<emph rendition="#i">LSB</emph> III, 7 N. 156, S. 631–638.
+
+
+      </bibl>
+      <bibl xml:id="bib_02072">
+        
+        
+——.
+Brief an D. Papin vom 2. (12.) Dezember 1697.
+In:
+<emph rendition="#i">LSB</emph> III, 7 N. 163, S. 656–670.
+
+
+      </bibl>
+      <bibl xml:id="bib_02073">
+        
+        
+——.
+Brief an D. Papin vom 16. (26.) Januar 1698.
+In:
+<emph rendition="#i">LSB</emph> III, 7 N. 177, S. 702–728.
+
+
+      </bibl>
+      <bibl xml:id="bib_01281">
+        
+        
+——.
+Brief an C. Pfautz vom 28. April 1682.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 345, S. 594–597.
+
+
+      </bibl>
+      <bibl xml:id="bib_01316">
+        
+        
+——.
+Brief an C. Philipp vom Ende Januar 1680.
+In:
+<emph rendition="#i">LSB</emph> II, 1 (2006) N. 222, S. 786–790.
+
+
+      </bibl>
+      <bibl xml:id="bib_01238">
+        
+        
+——.
+Brief an B. Ramazzini vom 25. Februar 1690.
+In:
+<emph rendition="#i">LSB</emph> III, 4 N. 239, S. 466–468.
+
+
+      </bibl>
+      <bibl xml:id="bib_02049">
+        
+        
+——.
+Brief an J. P. de la Roque vom 17. (27.) September 1677.
+In:
+<emph rendition="#i">LSB</emph> III, 2 N. 78, S. 223 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01270">
+        
+        
+——.
+Brief an J. P. de la Roque von Mitte Juli 1678.
+In:
+<emph rendition="#i">LSB</emph> III, 2 N. 186, S. 473.
+
+
+      </bibl>
+      <bibl xml:id="bib_01322">
+        
+        
+——.
+Brief an Q. S. F. Rivinus vom 14. (24.) April 1685.
+In:
+<emph rendition="#i">LSB</emph> I, 4 N. 581, S. 690 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01293">
+        
+        
+——.
+Brief an G. C. Schelhammer von Mitte September 1674.
+In:
+<emph rendition="#i">LSB</emph> III, 5 N. I, S. 3 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01275">
+        
+        
+——.
+Brief an G. C. Schelhammer vom 6. (16.) Dezember 1680.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 139, S. 304 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01194">
+        
+        
+——.
+Brief an G. C. Schelhammer von Februar/März 1681.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 182, S. 355–361.
+
+
+      </bibl>
+      <bibl xml:id="bib_01195">
+        
+        
+——.
+Brief an G. C. Schelhammer vom 13. (23.) Januar 1682.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 311, S. 544–550.
+
+
+      </bibl>
+      <bibl xml:id="bib_02056">
+        
+        
+——.
+Brief an J. A. Schmidt vom 31. Dezember 1700.
+In:
+<emph rendition="#i">LSB</emph> I, 19 N. 150, S. 317 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_02058">
+        
+        
+(<hi rendition="#k">Leibniz,</hi> G. W.)
+Brief an J. A. Schmidt vom 29. April 1701.
+In:
+<emph rendition="#i">LSB</emph> I, 19 N. 336, S. 632 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01224">
+        
+        
+——.
+Brief an F. Schrader vom 6. (16.) Mai 1684.
+In:
+<emph rendition="#i">LSB</emph> III, 4 N. 55, S. 114–118.
+
+
+      </bibl>
+      <bibl xml:id="bib_01382">
+        
+        
+——.
+Brief an J. Schrader vom 9.–11. (?) Juni 1695.
+In:
+<emph rendition="#i">LSB</emph> I, 11 N. 338, S. 494–497.
+
+
+      </bibl>
+      <bibl xml:id="bib_01311">
+        
+        
+——.
+Brief an Unbekannten vom 1679.
+In:
+<emph rendition="#i">LSB</emph> II, 1 (2006) N. 219, S. 775–782.
+
+
+      </bibl>
+      <bibl xml:id="bib_01273">
+        
+        
+——.
+Brief an J. Vagetius vom Ende Mai 1687.
+In:
+<emph rendition="#i">LSB</emph> II, 2 N. 47, S. 209 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01514">
+        
+        
+——.
+Brief an B. de Volder vom 27. Dezember 1698.
+In:
+<emph rendition="#i">LSB</emph> II, 3 N. 194, S. 493–512.
+
+
+      </bibl>
+      <bibl xml:id="bib_01328">
+        
+        
+——.
+Brief an C. Wichmann vom 5. (15.) Mai 1682.
+In:
+<emph rendition="#i">LSB</emph> I, 3 N. 135, S. 178 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01329">
+        
+        
+——.
+Brief an C. Wichmann vom 29. September (9. Oktober) 1682.
+In:
+<emph rendition="#i">LSB</emph> I, 3 N. 165, S. 208 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01257">
+        
+        
+——.
+Brief für die <hi rendition="#i">Acta eruditorum</hi> [erste Oktoberhälfte 1684].
+In:
+<emph rendition="#i">LSB</emph> III, 4 N. 72, S. 171–184.
+
+
+      </bibl>
+      <bibl xml:id="bib_01208">
+        
+        
+——.
+Brief für J. P. de la Roque von Mitte März 1675 =
+<emph rendition="#i">Extrait d’une lettre de Monsieur Leibniz à l’Auteur du Journal,
+touchant le principe de justesse des horologes portatives de son invention</emph>
+(<hi rendition="#i">JS</hi> [1675], S. 93–96). In:
+<emph rendition="#i">LSB</emph> III, 1 N. 45, Fassung f, S. 192–201.
+
+
+      </bibl>
+      <bibl xml:id="bib_01350">
+        
+        
+——.
+Brief für die Royal Society vom 3. (13.) Februar 1673.
+In:
+<emph rendition="#i">LSB</emph> III, 1 N. 4, S. 22–29.
+
+
+      </bibl>
+      <bibl xml:id="bib_01348">
+        
+        
+——.
+<emph rendition="#i">Chronologia. Efficere horologia accurata</emph>
+[2. Hälfte 1672].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 84, S. 716 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_02031">
+        
+        
+——.
+<emph rendition="#i">Communicatio suae,
+pariter duarumque alienarum ad edendum sibi primum a dn. Jo. Bernoullio,
+deinde a dn. marchione Hospitalio communicatarum solutionum
+problematis curvae celerrimi descensus a dn. Jo. Bernoullio geometris publice propositi,
+una cum solutione sua problematis alterius ab eodem postea propositi</emph>.
+In:
+<emph rendition="#i">AE</emph> (1697), S. 201–205
+(<hi rendition="#i">LMG</hi> V, S. 331–336).
+
+
+      </bibl>
+      <bibl xml:id="bib_01347">
+        
+        
+——.
+<emph rendition="#i">Consilium Aegyptiacum.
+Justa dissertatio</emph>
+[Winter 1671/1672].
+In:
+<emph rendition="#i">LSB</emph> IV, 1 (1983) N. 15, S. 267–382.
+
+
+      </bibl>
+      <bibl xml:id="bib_01318">
+        
+        
+——.
+<emph rendition="#i">De animalis anima</emph>
+[1683 – 1685 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 287, S. 1474.
+
+
+      </bibl>
+      <bibl xml:id="bib_01352">
+        
+        
+——.
+<emph rendition="#i">De arcanis motus et mechanica ad puram geometriam reducenda</emph>
+[Februar – September 1676].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 12, S. 133–138.
+
+
+      </bibl>
+      <bibl xml:id="bib_02040">
+        
+        
+——.
+<emph rendition="#i">De causa gravitatis,
+et defensio sententiae suae de veris naturae legibus contra Cartesianos</emph>.
+In:
+<emph rendition="#i">AE</emph> (1690), S. 228–239
+(<hi rendition="#i">LMG</hi> VI, S. 193–203).
+
+
+      </bibl>
+      <bibl xml:id="bib_01253">
+        
+        
+——.
+<emph rendition="#i">De centro divulsionis</emph>
+[September 1672 – März 1673].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 23, S. 185–188.
+
+
+      </bibl>
+      <bibl xml:id="bib_01353">
+        
+        
+——.
+<emph rendition="#i">De chordis in circulo.
+De hemisphaerii et sphaeroeidum superficiebus</emph>
+[Frühjahr 1673].
+In:
+<emph rendition="#i">LSB</emph> VII, 4 N. 11, S. 164–173.
+
+
+      </bibl>
+      <bibl xml:id="bib_01299">
+        
+        
+——.
+<emph rendition="#i">De consistentia corporum</emph>
+[Herbst 1672 – Winter 1672/73].
+In:
+<emph rendition="#i">LSB</emph> VI, 3 N. 4, S. 94–96.
+
+
+      </bibl>
+      <bibl xml:id="bib_01345">
+        
+        
+——.
+<emph rendition="#i">De detrimento motus. Pars secunda</emph>
+[April 1675].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 32, S. 267–284.
+
+
+      </bibl>
+      <bibl xml:id="bib_01254">
+        
+        
+——.
+<emph rendition="#i">De distractione 1</emph>
+[September 1672 – März 1673].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 24, S. 189–190.
+
+
+      </bibl>
+      <bibl xml:id="bib_01255">
+        
+        
+——.
+<emph rendition="#i">De distractione 2</emph>
+[September 1672 – März 1673].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 25, S. 191–195.
+
+
+      </bibl>
+      <bibl xml:id="bib_01351">
+        
+        
+——.
+<emph rendition="#i">De ictuum quantitate</emph>
+[Mai 1675].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 52, S. 446–448.
+
+
+      </bibl>
+      <bibl xml:id="bib_01307">
+        
+        
+——.
+<emph rendition="#i">De la philosophie cartesienne</emph>
+[Sommer 1683 – Winter 1684/85].
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 289, S. 1479–1488.
+
+
+      </bibl>
+      <bibl xml:id="bib_02041">
+        
+        
+(<hi rendition="#k">Leibniz,</hi> G. W.)
+<emph rendition="#i">De legibus naturae et vera aestimatione virium motricium contra Cartesianos,
+responsio ad rationes a dn. Papino mense Januarii anni 1691 in Actis eruditorum propositas</emph>.
+In:
+<emph rendition="#i">AE</emph> (1691), S. 438–447
+(<hi rendition="#i">LMG</hi> VI, S. 204–211).
+
+
+      </bibl>
+      <bibl xml:id="bib_02033">
+        
+        
+——.
+<emph rendition="#i">De linea in quam flexile se pondere proprio curvat,
+ejusque usu insigni ad inveniendas quotcunque medias proportionales et logarithmos</emph>.
+In:
+<emph rendition="#i">AE</emph> (1691), S. 277–281
+(<hi rendition="#i">LMG</hi> V, S. 243–247).
+
+
+      </bibl>
+      <bibl xml:id="bib_01358">
+        
+        
+——.
+<emph rendition="#i">De lineis opticis, et alia</emph>.
+In:
+<emph rendition="#i">AE</emph> (1689), S. 36–38.
+
+
+      </bibl>
+      <bibl xml:id="bib_01376">
+        
+        
+——.
+<emph rendition="#i">De motu et effectu</emph>
+[April 1675].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 18, S. 160–163.
+
+
+      </bibl>
+      <bibl xml:id="bib_01355">
+        
+        
+——.
+<emph rendition="#i">De natura veritatis, contingentiae et indifferentiae
+atque de libertate et praedeterminatione</emph>
+[Ende 1685 – Mitte 1686 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 303, S. 1514–1524.
+
+
+      </bibl>
+      <bibl xml:id="bib_01308">
+        
+        
+——.
+<emph rendition="#i">De necessitate et contingentia</emph>
+[Sommer 1680 – Sommer 1684 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 272, S. 1449 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01228">
+        
+        
+——.
+<emph rendition="#i">De paraboloeidum et hyperboloeidum quadratura.
+Pars prima: De paraboloeidum quadratura</emph>.
+[Sommer 1673]
+In:
+<emph rendition="#i">LSB</emph> VII, 4 N. 39<hi rendition="#sub">1</hi>, S. 617–642.
+
+
+      </bibl>
+      <bibl xml:id="bib_01380">
+        
+        
+——.
+<emph rendition="#i">De potentiae absolutae conservatione</emph>.
+[Winter 1689/90 (?)]
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 379, S. 2077–2079.
+
+
+      </bibl>
+      <bibl xml:id="bib_02064">
+        
+        
+——.
+<emph rendition="#i">De primae philosophiae emendatione, et de notione substantiae</emph>.
+In:
+<emph rendition="#i">AE</emph> (1694), S. 110–112
+(<hi rendition="#i">LPG</hi> IV, S. 468–470).
+
+
+      </bibl>
+      <bibl xml:id="bib_01229">
+        
+        
+——.
+<emph rendition="#i">De quadratura arithmetica circuli ellipseos et hyperbolae</emph>.
+[Juni – September 1676]
+In:
+<emph rendition="#i">LSB</emph> VII, 6 N. 51, S. 520–676.
+
+
+      </bibl>
+      <bibl xml:id="bib_01249">
+        
+        
+——.
+<emph rendition="#i">De quibusdam circa resistentiam quae a Galileo dicuntur</emph>
+[September 1672 – März 1673].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 19, S. 167–172.
+
+
+      </bibl>
+      <bibl xml:id="bib_02025">
+        
+        
+——.
+<emph rendition="#i">De rationibus motus</emph>
+[August – September (?) 1669].
+In:
+<emph rendition="#i">LSB</emph> VI, 2 N. 38<hi rendition="#sub">1</hi>, S. 157–159.
+
+
+      </bibl>
+      <bibl xml:id="bib_01369">
+        
+        
+——.
+<emph rendition="#i">De resistentia absoluta et respectiva in frictione</emph>.
+[Mitte 1675]
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 35, S. 325–341.
+
+
+      </bibl>
+      <bibl xml:id="bib_01256">
+        
+        
+——.
+<emph rendition="#i">De resistentia tabulae ligneae</emph>
+[Januar (?) – März 1673].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 26, S. 196–201.
+
+
+      </bibl>
+      <bibl xml:id="bib_01252">
+        
+        
+——.
+<emph rendition="#i">De trabis resistentia uniformis</emph>.
+[September 1672 – März 1673]
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 22, S. 182–184.
+
+
+      </bibl>
+      <bibl xml:id="bib_02042">
+        
+        
+——.
+<emph rendition="#i">De vera proportione circuli ad quadratum circumscriptum
+in numeris rationalibus expressa</emph>.
+In:
+<emph rendition="#i">AE</emph> (1682), S. 41–46
+(<hi rendition="#i">LMG</hi> V, S. 118–122).
+
+
+      </bibl>
+      <bibl xml:id="bib_01344">
+        
+        
+——.
+<emph rendition="#i">De vitandis erroribus geometricis in re mechanica</emph>.
+[Dezember 1674] In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 10, S. 122–125.
+
+
+      </bibl>
+      <bibl xml:id="bib_01339">
+        
+        
+——.
+<emph rendition="#i">Definitiones cogitationesque metaphysicae</emph>
+[Sommer 1678 – Winter 1680/81 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 267, S. 1393–1405.
+
+
+      </bibl>
+      <bibl xml:id="bib_01098">
+        
+        
+——.
+<emph rendition="#i">Demonstratio geometrica regulae apud staticos receptae,
+de momentis gravium in planis inclinatis</emph>.
+In:
+<emph rendition="#i">AE</emph> (1685), S. 501–505
+(<hi rendition="#i">GM</hi> VI, S. 112–117).
+
+
+      </bibl>
+      <bibl xml:id="bib_01041">
+        
+        
+——.
+<emph rendition="#i">Demonstrationes novae de resistentia solidorum</emph>.
+In:
+<emph rendition="#i">AE</emph> (1684), S. 319–325
+(<hi rendition="#i">LMG</hi> VI, S. 106–112).
+
+
+      </bibl>
+      <bibl xml:id="bib_01305">
+        
+        
+——.
+<emph rendition="#i">Deus nihil vult sine ratione</emph>
+[1678 – 1681 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 264, S. 1388 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01370">
+        
+        
+——.
+<emph rendition="#i">Du frottement.
+Essais géométriques en fait de mécanique.</emph>
+Erste Fassung.
+[Ende 1675]
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 36<hi rendition="#sub">1</hi>, S. 343–352.
+
+
+      </bibl>
+      <bibl xml:id="bib_01371">
+        
+        
+——.
+<emph rendition="#i">Du frottement.
+Essais géométriques en fait de mécanique.</emph>
+Zweite Fassung [Ende 1675]
+mit späterem Zusatz [nach Januar 1678].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 36<hi rendition="#sub">2</hi>, S. 353–363.
+
+
+      </bibl>
+      <bibl xml:id="bib_01354">
+        
+        
+——.
+<emph rendition="#i">Dynamica de potentia et legibus naturae corporeae</emph>.
+In:
+<emph rendition="#i">LMG</emph> VI, S. 281–514.
+
+
+      </bibl>
+      <bibl xml:id="bib_01212">
+        
+        
+(<hi rendition="#k">Leibniz,</hi> G. W.)
+<emph rendition="#i">Epistolae ad diversos,
+theologici, iuridici, medici, philosophici, mathematici, historici et philologici argumenti</emph>.
+Hrsg. v. H. C. <hi rendition="#k">Kortholt</hi>.
+4 Bde.
+Leipzig 1734–1742.
+
+
+      </bibl>
+      <bibl xml:id="bib_01368">
+        
+        
+——.
+<emph rendition="#i">Essai de quelques démonstrations mécaniques, du frottement</emph>
+[Mai 1675].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 34<hi rendition="#sub">4</hi>, S. 319–223.
+
+
+      </bibl>
+      <bibl xml:id="bib_01289">
+        
+        
+——.
+<emph rendition="#i">Essais scientifiques et philosophiques</emph>.
+Hrsg. von A. <hi rendition="#k">Lamarra</hi> u. R. <hi rendition="#k">Palaia</hi>.
+3 Bde.
+Hildesheim, Zürich u. New York 2005.
+[= <hi rendition="#k">Lamarra/Palaia</hi> 2005]
+
+
+      </bibl>
+      <bibl xml:id="bib_01292">
+        
+        
+——.
+<emph rendition="#i">Excerpta ex libro Du choc des corps</emph>
+[letzte Monate 1674].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 50, S. 422–443.
+
+
+      </bibl>
+      <bibl xml:id="bib_01375">
+        
+        
+——.
+<emph rendition="#i">Excerpta ex Wallisio cogitatis obiter occurrentibus aucta</emph>
+[letzte Monate 1674].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 9, S. 107–121.
+
+
+      </bibl>
+      <bibl xml:id="bib_01069">
+        
+        
+——.
+<emph rendition="#i">Experimenta novissima pneumatica illustris Hugenii</emph>
+[25. Juli – 12. Dezember 1672].
+In:
+<emph rendition="#i">LSB</emph> VIII, 1 N. 39, S. 291–323.
+
+
+      </bibl>
+      <bibl xml:id="bib_01265">
+        
+        
+——.
+<emph rendition="#i">Experimenta pneumatica circa vacuum</emph>.
+[25. Juli – 12. Dezember 1672]
+In:
+<emph rendition="#i">LSB</emph> VIII, 1 N. 40, S. 324–333.
+
+
+      </bibl>
+      <bibl xml:id="bib_02054">
+        
+        
+——.
+<emph rendition="#i">Extrait d’une lettre de M. L. sur un principe général utile à l’explication des lois de la nature</emph>.
+In:
+<emph rendition="#i">Nouvelles de la république des lettres</emph> (1687), S. 744–753.
+
+
+      </bibl>
+      <bibl xml:id="bib_00256">
+        
+        
+——.
+<emph rendition="#i">Hypothesis physica nova</emph>.
+Mainz 1671
+(<hi rendition="#i">LSB</hi> VI, 2 N. 40, S. 219–257).
+
+
+      </bibl>
+      <bibl xml:id="bib_01304">
+        
+        
+——.
+<emph rendition="#i">Initia et specimina scientiae novae generalis</emph>.
+[Frühjahr 1682 (?)]
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 110, S. 442 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01056">
+        
+        
+——.
+<emph rendition="#i">La réforme de la dynamique:
+„De corporum concursu” (1678) et autres textes inédits</emph>.
+Hrsg. v. M. <hi rendition="#k">Fichant</hi>.
+Paris 1994.
+[= <hi rendition="#k">Fichant</hi> 1994]
+
+
+      </bibl>
+      <bibl xml:id="bib_02075">
+        
+        
+——.
+<emph rendition="#i">Machina ad navigationem efficiendam</emph>
+[Anfang 1672].
+In:
+<emph rendition="#i">LSB</emph> VIII, 1 N. 5, S. 62–64.
+
+
+      </bibl>
+      <bibl xml:id="bib_01043">
+        
+        
+——.
+<hi rendition="#i">Leibnizens gesammelte Werke</hi>.
+Hrsg. v. G. H. <hi rendition="#k">Pertz</hi>.
+Dritte Folge:
+<emph rendition="#i">Mathematische Schriften</emph>.
+Hrsg. v. C. I. <hi rendition="#k">Gerhardt</hi>.
+7 Bde.
+Berlin u. Halle 1849–1863.
+Nachdr. Hildesheim 1962.
+[= <hi rendition="#i">LMG</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_00197">
+        
+        
+——.
+<emph rendition="#i">Nachgelassene Schriften physikalischen, mechanischen und technischen Inhalts</emph>.
+Hrsg. v. E. <hi rendition="#k">Gerland</hi>.
+Leipzig 1906.
+[= <hi rendition="#k">Gerland</hi> 1906]
+
+
+      </bibl>
+      <bibl xml:id="bib_02065">
+        
+        
+——.
+<emph rendition="#i">Notata quaedam G. G. L. circa vitam et doctrinam Cartesii</emph>
+[Frühjahr 1689 – Herbst 1689 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 376, S. 2057–2065.
+
+
+      </bibl>
+      <bibl xml:id="bib_01248">
+        
+        
+——.
+<emph rendition="#i">Oeuvre concernant la physique</emph>.
+Hrsg. v. J. <hi rendition="#k">Peyroux</hi>.
+Paris 1985.
+
+
+      </bibl>
+      <bibl xml:id="bib_00150">
+        
+        
+——.
+<emph rendition="#i">Opera omnia.
+Nunc primum collecta, in classes distributa, praefationibus et indicibus exornata</emph>.
+Hrsg. v. L. <hi rendition="#k">Dutens</hi>.
+6 Bde.
+Genf 1768.
+[= <hi rendition="#i">LOD</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_01251">
+        
+        
+——.
+<emph rendition="#i">Paralogismus Galilaeanus de resistentia trabis</emph>
+[September 1672 – März 1673].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 21, S. 176–181.
+
+
+      </bibl>
+      <bibl xml:id="bib_01317">
+        
+        
+——.
+<emph rendition="#i">Periculosa in Cartesio</emph>
+[Sommer 1683 – Winter 1684/85].
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 288, S. 1475–1478.
+
+
+      </bibl>
+      <bibl xml:id="bib_02039">
+        
+        
+——.
+<emph rendition="#i">Philosophische Schriften</emph>.
+Hrsg. v. C. I. <hi rendition="#k">Gerhardt</hi>.
+7 Bde.
+Berlin u. Halle 1875–1890.
+Nachdr. Hildesheim 1960–1961.
+[= <hi rendition="#i">LPG</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_01338">
+        
+        
+——.
+<emph rendition="#i">Principia mechanica ex metaphysicis dependere</emph>.
+[Sommer 1678 – Winter 1680/81 (?)]
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 362, S. 1976–1980.
+
+
+      </bibl>
+      <bibl xml:id="bib_02055">
+        
+        
+(<hi rendition="#k">Leibniz,</hi> G. W.)
+<emph rendition="#i">Principium quoddam generale
+non in mathematicis tantum
+sed et physicis utile</emph>
+[September – Dezember 1688 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 371, S. 2031–2039.
+
+
+      </bibl>
+      <bibl xml:id="bib_01377">
+        
+        
+——.
+Promemoria von Mitte (?) September 1686 für das Bergamt zu Clausthal.
+In:
+<emph rendition="#i">LSB</emph> I, 4 N. 245, S. 284 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_00258">
+        
+        
+——.
+<emph rendition="#i">Propositiones quaedam physicae</emph>.
+Dritter Entwurf
+[Frühjahr – Herbst 1672 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 3 N. 2<hi rendition="#sub">3</hi>, S. 11–68.
+
+
+      </bibl>
+      <bibl xml:id="bib_02044">
+        
+        
+——.
+<emph rendition="#i">Quadratura arithmetica communis sectionum conicarum quae centrum habent,
+indeque ducta trigonometria canonica ad quantamcunque in numeris exactitudinem
+a tabularum necessitudine liberata,
+cum usu speciali ad lineam rhomborum nauticam aptatumque illi planisphaerium</emph>.
+In:
+<emph rendition="#i">AE</emph> (1691), S. 178–182
+(<hi rendition="#i">LMG</hi> V, S. 128–140).
+
+
+      </bibl>
+      <bibl xml:id="bib_01349">
+        
+        
+——.
+<emph rendition="#i">Quomodo penduli motus magnete effici possit</emph>
+[2. Hälfte 1672].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 87, S. 722 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01306">
+        
+        
+——.
+<emph rendition="#i">Reflexio</emph>
+[1683 – 1685 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 283, S. 1470 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01250">
+        
+        
+——.
+<emph rendition="#i">Resistentia trabis eadem est</emph>
+[September 1672 – März 1673].
+In:
+<emph rendition="#i">LSB</emph> VIII, 2 N. 20, S. 173–175.
+
+
+      </bibl>
+      <bibl xml:id="bib_02023">
+        
+        
+——.
+Rezension von I. F. <hi rendition="#k">Vanni</hi>, <hi rendition="#i">Exegeses physico-mathematicae</hi>.
+In:
+<emph rendition="#i">AE</emph> (1687), S. 197 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01024">
+        
+        
+——.
+<emph rendition="#i">Schediasma de resistentia medii et motu projectorum gravium in medio resistente</emph>.
+In:
+<emph rendition="#i">AE</emph> (1689), S. 38–47
+(<hi rendition="#i">LMG</hi> VI, S. 135–143).
+
+
+      </bibl>
+      <bibl xml:id="bib_02032">
+        
+        
+——.
+<emph rendition="#i">Specimen dynamicum,
+pro admirandis naturae legibus
+circa corporum vires et mutuas actiones detegendis
+et ad suas causas revocandis.
+Pars I</emph>. In:
+<emph rendition="#i">AE</emph> (1695), S. 145–157
+(<hi rendition="#i">LMG</hi> VI, S. 234–246).
+
+
+      </bibl>
+      <bibl xml:id="bib_01276">
+        
+        
+——.
+<emph rendition="#i">Summa hypotheseos physicae novae</emph>
+[zweite Hälfte 1671 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 2 N. 48, S. 326–378.
+
+
+      </bibl>
+      <bibl xml:id="bib_00267">
+        
+        
+——.
+<emph rendition="#i">Sur les phénomènes de l’attachement des corps dans le vide</emph>
+[Frühjahr 1673].
+In:
+<emph rendition="#i">LSB</emph> VIII, 1 N. 48, S. 417–460.
+
+
+      </bibl>
+      <bibl xml:id="bib_00543">
+        
+        
+——.
+<emph rendition="#i">Tentamen de motuum coelestium causis</emph>
+[erste Bearbeitung].
+In:
+<emph rendition="#i">AE</emph> (1689), S. 82–96
+(<hi rendition="#i">LMG</hi> VI, S. 144–161).
+
+
+      </bibl>
+      <bibl xml:id="bib_00259">
+        
+        
+——.
+<emph rendition="#i">Theoria motus abstracti</emph>
+[Winter 1670/71 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI N. 41, S. 258–276.
+
+
+      </bibl>
+      <bibl xml:id="bib_01277">
+        
+        
+——.
+<emph rendition="#i">Über Morlands Sprachrohr</emph>
+[1671].
+In:
+<emph rendition="#i">LSB</emph> VIII, 1 N. 58, S. 553.
+
+
+      </bibl>
+      <bibl xml:id="bib_01301">
+        
+        
+——.
+Zu Descartes’ <emph rendition="#i">Opera philosophica</emph>
+[1677 – 1687 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 4 N. 335, S. 1695–1705.
+
+
+      </bibl>
+      <bibl xml:id="bib_01302">
+        
+        
+——.
+Zu Descartes’ <emph rendition="#i">Principia philosophiae</emph>
+[Winter 1675/76 – Frühjahr 1676 (?)].
+In:
+<emph rendition="#i">LSB</emph> VI, 3 N. 15, S. 213–217.
+
+
+      </bibl>
+      <bibl xml:id="bib_01278">
+        
+        
+——.
+Zu Samuel Morland, <emph rendition="#i">Tuba stentoro-phonica</emph>
+[1. Hälfte 1671].
+In:
+<emph rendition="#i">LSB</emph> VIII, 1 N. 62, S. 570–571.
+
+
+      </bibl>
+      <bibl xml:id="bib_01319">
+        
+        
+<hi rendition="#k">Leibniz</hi>, J. F.
+Brief an G. W. Leibniz vom 28. Februar (10. März) 1685.
+In:
+<emph rendition="#i">LSB</emph> I, 4 N. 573, S. 684.
+
+
+      </bibl>
+      <bibl xml:id="bib_01320">
+        
+        
+——.
+Brief an G. W. Leibniz vom 23. März (2. April) 1685.
+In:
+<emph rendition="#i">LSB</emph> I, 4 N. 574, S. 685.
+
+
+      </bibl>
+      <bibl xml:id="bib_01321">
+        
+        
+——.
+Brief an G. W. Leibniz vom 8. (18.) April 1685.
+In:
+<emph rendition="#i">LSB</emph> I, 4 N. 577, S. 686 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01333">
+        
+        
+<hi rendition="#k">Leidenfrost</hi>, F. W.
+Brief an G. W. Leibniz vom 12. (22.) März 1683.
+In:
+<emph rendition="#i">LSB</emph> I, 3 N. 187, S. 223 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_02062">
+        
+        
+<hi rendition="#k">de L’Hospital</hi>, G. F. A.
+<emph rendition="#i">Solutio problematis de linea celerrimi descensus</emph>.
+In:
+<emph rendition="#i">AE</emph> (1697), S. 217–220.
+
+
+      </bibl>
+      <bibl xml:id="bib_00072">
+        
+        
+<hi rendition="#k">Line [Linus]</hi>, F.
+<emph rendition="#i">Tractatus de corporum inseparabilitate;
+in quo experimenta de vacuo tam Torricelliana quam Magdeburgica et Boyliana examinantur,
+veraque eorum causa detecta ostenditur vacuum naturaliter dari non posse;
+unde et Aristotelica de rarefactione sententia tam contra assertores vacuitatum quam corpusculorum demonstratur.
+Accessit solutio difficillimi illius problematis Aristotelici de duabus rotis
+quae, licet valde inaequales, aequales tamen orbitas describunt</emph>.
+London 1661.
+
+
+      </bibl>
+      <bibl xml:id="bib_00143">
+        
+        
+[<hi rendition="#k">Magalotti</hi>, L.]
+<emph rendition="#i">Saggi di naturali esperienze, fatte nell’Accademia del Cimento</emph>.
+Florenz 1666.
+
+
+      </bibl>
+      <bibl xml:id="bib_01196">
+        
+        
+<hi rendition="#k">Magiotti</hi>, R.
+<emph rendition="#i">Renitenza certissima dell’acqua alla compressione.
+Dichiarata con varij scherzi in occasion d’altri problemi curiosi</emph>.
+Rom 1648.
+
+
+      </bibl>
+      <bibl xml:id="bib_00539">
+        
+        
+<hi rendition="#k">Marci</hi>, J. M.
+<emph rendition="#i">De proportione motus figurarum recti-linearum et circuli quadratura ex motu</emph>.
+Prag 1648.
+
+
+      </bibl>
+      <bibl xml:id="bib_01232">
+        
+        
+<hi rendition="#k">Mariotte</hi>, E.
+Brief an G. W. Leibniz vom 28. April 1678.
+In:
+<emph rendition="#i">LSB</emph> III, 2 N. 163, S. 404–408.
+
+
+      </bibl>
+      <bibl xml:id="bib_01209">
+        
+        
+——.
+Brief an G. W. Leibniz von März/April 1681.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 193, S. 373–375.
+
+
+      </bibl>
+      <bibl xml:id="bib_01210">
+        
+        
+——.
+Brief an G. W. Leibniz vom 8. August 1681.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 262, S. 464–465.
+
+
+      </bibl>
+      <bibl xml:id="bib_01222">
+        
+        
+——.
+Brief an G. W. Leibniz vom 29. November 1681.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 297, S. 518–521.
+
+
+      </bibl>
+      <bibl xml:id="bib_01233">
+        
+        
+——.
+Brief an G. W. Leibniz vom 20. Juli 1682.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 376, S. 669–672.
+
+
+      </bibl>
+      <bibl xml:id="bib_01340">
+        
+        
+——.
+Brief an G. W. Leibniz vom 31. August 1682.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 394, S. 705–707.
+
+
+      </bibl>
+      <bibl xml:id="bib_01290">
+        
+        
+——.
+Brief an G. W. Leibniz vom 5. Juni 1683.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 474, S. 829–832.
+
+
+      </bibl>
+      <bibl xml:id="bib_01231">
+        
+        
+——.
+<emph rendition="#i">Dissertation sur la résistance des solides</emph>.
+Beilage zum Brief an G. W. Leibniz vom 25. Januar 1683.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 437, S. 772–776.
+
+
+      </bibl>
+      <bibl xml:id="bib_01219">
+        
+        
+——.
+<emph rendition="#i">Nouvelle découverte touchant la veüe</emph>.
+Paris 1668.
+
+
+      </bibl>
+      <bibl xml:id="bib_01218">
+        
+        
+——.
+<emph rendition="#i">Oeuvres,
+comprenant tous le Traitez de cet Auteur,
+tant ceux qui avoient déja paru séparément,
+que ceux qui n’avoient pas encore été publiez</emph>.
+2 Bde.
+Leiden 1717.
+[= <hi rendition="#i">MO</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_01220">
+        
+        
+——.
+<emph rendition="#i">Seconde lettre à M. Pequet pour montrer que la Choroide est le principal organe de veüe</emph>.
+Paris 1671.
+
+
+      </bibl>
+      <bibl xml:id="bib_00311">
+        
+        
+——.
+<emph rendition="#i">Traitté de la percussion ou chocq des corps,
+dans lequel les principales regles du mouvement, contraires à celles
+que Mr Des Cartes et quelques autres modernes ont voulu establir,
+sont demonstrées par leurs veritables causes.</emph>
+Paris 1673.
+
+
+      </bibl>
+      <bibl xml:id="bib_01296">
+        
+        
+<hi rendition="#k">Mayow</hi>, J.
+<emph rendition="#i">De respiratione foetus in utero, et ovo</emph>.
+In:
+<emph rendition="#i">Tractatus quinque physico-medici</emph>.
+Oxford 1674.
+
+
+      </bibl>
+      <bibl xml:id="bib_01997">
+        
+        
+——.
+<emph rendition="#i">Tractatus quinque medico-physici:
+Quorum primus agit de sal-nitro et spiritu nitro-aereo.
+Secundus de respiratione.
+Tertius de respiratione foetus in utero, et ovo.
+Quartus de motu musculari et spiritibus animalibus.
+Ultimus de rhachitide</emph>.
+Oxford 1674.
+
+
+      </bibl>
+      <bibl xml:id="bib_01258">
+        
+        
+<hi rendition="#k">Mencke</hi>, O.
+Brief an G. W. Leibniz vom 16. (26.) Juli 1684.
+In:
+<emph rendition="#i">LSB</emph> I, 4 N. 391, S. 475 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_02013">
+        
+        
+——.
+Brief an G. W. Leibniz vom 14. (24.) Oktober 1686.
+In:
+<emph rendition="#i">LSB</emph> I, 4 N. 499, S. 600 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_02014">
+        
+        
+——.
+Brief an G. W. Leibniz vom 2. (12.) März 1687.
+In:
+<emph rendition="#i">LSB</emph> I, 4 N. 521, S. 628.
+
+
+      </bibl>
+      <bibl xml:id="bib_01227">
+        
+        
+<hi rendition="#k">Mersenne</hi>, M.
+<emph rendition="#i">Ballistica et acontismologia,
+in qua sagittarum, iaculorum et aliorum missilium iactus
+et robur arcuum explicantur.</emph>
+Paris 1644.
+
+
+      </bibl>
+      <bibl xml:id="bib_01336">
+        
+        
+(<hi rendition="#k">Mersenne</hi>, M.)
+<emph rendition="#i">Harmonicorum libri duodecim:
+In quibus agitur de sonorum natura, causis et effectibus:
+de consonantiis, dissonantiis, rationibus, generibus, modis, cantibus, compositione orbisque totius harmonicis instrumentis</emph>.
+Paris 1648.
+
+
+      </bibl>
+      <bibl xml:id="bib_01205">
+        
+        
+——.
+<emph rendition="#i">Harmonie universelle, contenant la théorie et la pratique de la musique</emph>.
+2 Bde. Paris 1636–1637.
+
+
+      </bibl>
+      <bibl xml:id="bib_00118">
+        
+        
+<hi rendition="#k">de Monconys</hi>, B.
+<emph rendition="#i">Journal des Voyages</emph>.
+3 Bde.
+Lyon 1665–1666.
+
+
+      </bibl>
+      <bibl xml:id="bib_01213">
+        
+        
+<hi rendition="#k">More, H.</hi>
+Brief an R. Descartes vom 23. Juli 1649.
+In:
+<emph rendition="#i">DL</emph> I (1657), Nr. 70, S. 366–385
+(<hi rendition="#i">DO</hi> V, Nr. 564, S. 376-390).
+
+
+      </bibl>
+      <bibl xml:id="bib_01207">
+        
+        
+<hi rendition="#k">Morhof</hi>, D. G.
+<emph rendition="#i">Stentor ‛υαλοϰλαςτής sive
+De scypho vitreo per certum humanae vocis sonum fracto … dissertatio,
+qua soni natura non parum illustratur</emph>.
+2. vermehrte Ausg.
+Kiel 1682.
+
+
+      </bibl>
+      <bibl xml:id="bib_00149">
+        
+        
+<hi rendition="#k">Morland</hi>, S.
+<emph rendition="#i">Tuba stentoro-phonica,
+an instrument of excellent use,
+as well at sea, as at land;
+invented and variously experimented in the year 1670</emph>.
+London 1672.
+[Marg.]
+
+
+      </bibl>
+      <bibl xml:id="bib_02030">
+        
+        
+<hi rendition="#k">Newton</hi>, I.
+<emph rendition="#i">De ratione temporis
+quo grave labitur per rectam datam duo puncta conjungentem,
+ad tempus brevissimum
+quo, vi gravitatis, transit ab horum uno ad alterum per arcum cycloidis</emph>.
+In:
+<emph rendition="#i">PT</emph>, 19 (1697), S. 424 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_00535">
+        
+        
+——.
+<emph rendition="#i">Philosophiae naturalis principia mathematica</emph>.
+London 1687.
+[Marg.]
+
+
+      </bibl>
+      <bibl xml:id="bib_02069">
+        
+        
+<hi rendition="#k">Papin</hi>, D.
+Brief an G. W. Leibniz vom 29. November (9. Dezember) 1695.
+In:
+<emph rendition="#i">LSB</emph> III, 6 N. 179, S. 558–562.
+
+
+      </bibl>
+      <bibl xml:id="bib_02070">
+        
+        
+——.
+Brief an G. W. Leibniz vom 2. (12.) Juli 1696.
+In:
+<emph rendition="#i">LSB</emph> III, 7 N. 2, S. 19–21.
+
+
+      </bibl>
+      <bibl xml:id="bib_01500">
+        
+        
+<hi rendition="#k">Parent</hi>, A.
+<emph rendition="#i">Élémens de mécanique et de physique</emph>.
+Paris 1700.
+
+
+      </bibl>
+      <bibl xml:id="bib_02029">
+        
+        
+——.
+<emph rendition="#i">Loy universelle pour quelque multitude de corps que ce soit,
+dans quelque proportion de masse, de vitesse, de ressort, de dureté ou de molesse
+que ce puisse être.</emph>
+In:
+<emph rendition="#i">JS</emph> (1699), S. 197–200.
+
+
+      </bibl>
+      <bibl xml:id="bib_00234">
+        
+        
+<hi rendition="#k">Pascal</hi>, B.
+<emph rendition="#i">Oeuvres</emph>.
+Hrsg. v. P. <hi rendition="#k">Boutroux</hi>, L. <hi rendition="#k">Brunschvicg</hi> u. F. <hi rendition="#k">Gazier</hi>.
+14 Bde.
+Paris 1904–1914.
+Nachdr. Vaduz 1965.
+[= <hi rendition="#i">PO</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_00081">
+        
+        
+——.
+<emph rendition="#i">Traitez de l’équilibre des liqueurs
+et de la pesanteur de la masse de l’air,
+contenant l’explication des causes de divers effets de la nature
+qui n’avoient point été bien connus jusques ici,
+et particulièrement de ceux
+que l’on avait attribués à l’horreur du vide</emph>.
+Paris 1663
+(<hi rendition="#i">PO</hi> III, S. 141–292).
+
+
+      </bibl>
+      <bibl xml:id="bib_01223">
+        
+        
+<hi rendition="#k">Perrault</hi>, C.
+<emph rendition="#i">Du bruit</emph>.
+In:
+<hi rendition="#i">Essais de physique</hi>.
+Bd II.
+Paris 1680.
+
+
+      </bibl>
+      <bibl xml:id="bib_01016">
+        
+        
+——.
+<emph rendition="#i">Essais de physique,
+ou recueil de plusieurs traitez touchant les choses naturelles</emph>.
+4 Bde.
+Paris 1680–1688.
+
+
+      </bibl>
+      <bibl xml:id="bib_01356">
+        
+        
+<hi rendition="#k">Pfautz</hi>, C.
+Rezension von
+I. <hi rendition="#k">Newton</hi>,
+<emph rendition="#i">Philosophiae naturalis principia mathematica</emph>,
+London 1687.
+In:
+<emph rendition="#i">AE</emph> (1688), S. 303–315.
+
+
+      </bibl>
+      <bibl xml:id="bib_01199">
+        
+        
+<hi rendition="#k">Pseudo-Plutarch</hi>.
+<emph rendition="#i">Placita philosophorum (Epitome)</emph>.
+In:
+<emph rendition="#i">Doxographi Graeci</emph>.
+Hrsg. v. H. <hi rendition="#k">Diels</hi>.
+Berlin 1879.
+S. 273–444.
+
+
+      </bibl>
+      <bibl xml:id="bib_01239">
+        
+        
+<hi rendition="#k">Ramazzini</hi>, B.
+<emph rendition="#i">Epistolario</emph>.
+Modena 1964.
+
+
+      </bibl>
+      <bibl xml:id="bib_02021">
+        
+        
+<hi rendition="#k">Regnauld</hi>, F.
+Brief an B. de Monconys vom 21. Dezember 1655.
+In:
+B. <hi rendition="#k">de Monconys</hi>.
+<hi rendition="#i">Journal des Voyages</hi>.
+Bd III.
+Lyon 1666.
+S. 52–56.
+
+
+      </bibl>
+      <bibl xml:id="bib_02027">
+        
+        
+<hi rendition="#k">Renau d’Eliçagaray</hi>, B.
+<emph rendition="#i">Théorie de la manoeuvre des vaisseaux</emph>.
+Paris 1688.
+
+
+      </bibl>
+      <bibl xml:id="bib_01323">
+        
+        
+<hi rendition="#k">Rivinus</hi>, Q. S. F.
+Brief an G. W. Leibniz vom 8. (18.) April 1685.
+In:
+<emph rendition="#i">LSB</emph> I, 4 N. 578, S. 687.
+
+
+      </bibl>
+      <bibl xml:id="bib_01324">
+        
+        
+——.
+Entwurf eines Vertrages.
+Beilage zum Brief an G. W. Leibniz vom 8. (18.) April 1685.
+In:
+<emph rendition="#i">LSB</emph> I, 4 N. 579, S. 688 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01240">
+        
+        
+<hi rendition="#k">Robinet</hi>, A.
+<emph rendition="#i">G. W.Leibniz Iter Italicum
+(Mars 1689 – Mars 1690).
+La dynamique de la République des Lettres.
+Nombreux textes inédits</emph>.
+Florenz 1988.
+
+
+      </bibl>
+      <bibl xml:id="bib_00087">
+        
+        
+<hi rendition="#k">Rohault</hi>, J.
+<emph rendition="#i">Traité de physique.
+Première partie</emph>.
+2. Ausg.
+Paris 1672.
+
+
+      </bibl>
+      <bibl xml:id="bib_01337">
+        
+        
+<hi rendition="#k">Scheel</hi>, G.
+<emph rendition="#i">Einleitung</emph>.
+In:
+<emph rendition="#i">LSB</emph> I, Supplementband Harzbergbau 1692–1696,
+S. XXV–XLV.
+
+
+      </bibl>
+      <bibl xml:id="bib_01279">
+        
+        
+<hi rendition="#k">Schelhammer</hi>, G. C.
+Brief an G. W. Leibniz vom 8. (18.) November 1680.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 124, S. 284–286.
+
+
+      </bibl>
+      <bibl xml:id="bib_01280">
+        
+        
+——.
+Brief an G. W. Leibniz vom 31. Dezember 1680 (10. Januar 1681).
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 153, S. 317 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01200">
+        
+        
+——.
+Brief an G. W. Leibniz vom 13. (23.) April 1681.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 206, S. 394–399.
+
+
+      </bibl>
+      <bibl xml:id="bib_01204">
+        
+        
+——.
+<emph rendition="#i">De auditu liber unus.
+Quo plerorumque omnium doctorum sententiae examinantur
+et auditus ratio nova methodo, ex ipsius naturae legibus, explicatur</emph>.
+Leiden 1684.
+
+
+      </bibl>
+      <bibl xml:id="bib_02057">
+        
+        
+<hi rendition="#k">Schmidt</hi>, J. A.
+Brief an G. W. Leibniz vom 7. Januar 1701.
+In:
+<emph rendition="#i">LSB</emph> I, 19 N. 164, S. 335.
+
+
+      </bibl>
+      <bibl xml:id="bib_01294">
+        
+        
+<hi rendition="#k">Schrader</hi>, F.
+Brief an G. W. Leibniz vom 28. November (8. Dezember) 1681.
+In:
+<emph rendition="#i">LSB</emph> III, 3 N. 298, S. 521–523.
+
+
+      </bibl>
+      <bibl xml:id="bib_02067">
+        
+        
+<hi rendition="#k">Schuller</hi>, G. H.
+Auszug aus einem Brief von E. W. Tschirnhaus (1677).
+In:
+<emph rendition="#i">LSB</emph> III, 2 N. 33, S. 78 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_00546">
+        
+        
+<hi rendition="#k">Sinclair</hi>, G.
+<emph rendition="#i">Ars nova et magna gravitatis et levitatis.
+Sive dialogorum philosophicorum libri sex
+de aeris vera ac reali gravitate, etc.</emph>
+Rotterdam 1669.
+
+
+      </bibl>
+      <bibl xml:id="bib_01269">
+        
+        
+<hi rendition="#k">Siver</hi>, H.
+Brief an G. W. Leibniz vom 6. (16.) Juni 1678.
+In:
+<emph rendition="#i">LSB</emph> II, 1 (2006) N. 179, S. 626–628.
+
+
+      </bibl>
+      <bibl xml:id="bib_00526">
+        
+        
+<hi rendition="#k">Sohier</hi>, G. J.
+<emph rendition="#i">Nouveau systeme de la percussion des corps</emph>.
+In:
+<emph rendition="#i">JS</emph> (1696), S. 211–214.
+
+
+      </bibl>
+      <bibl xml:id="bib_02017">
+        
+        
+<hi rendition="#k">Tartaglia</hi>, N.
+<emph rendition="#i">Nova scientia</emph>.
+2. Ausg.
+Venedig 1550.
+
+
+      </bibl>
+      <bibl xml:id="bib_00107">
+        
+        
+<hi rendition="#k">Torricelli</hi>, E.
+Brief an Ricci vom 11. Juni 1644.
+In:
+C. <hi rendition="#k">Dati</hi>,
+<hi rendition="#i">Lettera a Filaleti di Timauro Antiante
+della vera storia della cicloide
+e della famosissima esperienza dell’argento vivo</hi>.
+Florenz 1663,
+S. 20 f.
+(<hi rendition="#i">TO</hi> III, S. 39–318).
+
+
+      </bibl>
+      <bibl xml:id="bib_00304">
+        
+        
+——.
+<emph rendition="#i">De motu gravium naturaliter descendentium et projectorum libri duo</emph>.
+In:
+<emph rendition="#i">Opera geometrica</emph>.
+Florenz 1644.
+
+
+      </bibl>
+      <bibl xml:id="bib_00108">
+        
+        
+——.
+<emph rendition="#i">Opere</emph>.
+Hrsg. v. G. <hi rendition="#k">Loria</hi> u. G. <hi rendition="#k">Vassura</hi>.
+4 Bde.
+Faenza 1919.
+[= <hi rendition="#i">TO</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_02000">
+        
+        
+<hi rendition="#k">Vanni</hi>, G.
+<emph rendition="#i">Exegeses physico-mathematicae
+de momentis gravium, de vecte
+ac de motu aequabiliter accelerato</emph>.
+Rom 1685.
+
+
+      </bibl>
+      <bibl xml:id="bib_02028">
+        
+        
+<hi rendition="#k">de Varignon</hi>, P.
+<emph rendition="#i">Projet d’une nouvelle mécanique
+avec un examen de l’opinion de M. Borelli,
+sur les propriétez des poids suspendus par des cordes</emph>.
+Paris 1687.
+
+
+      </bibl>
+      <bibl xml:id="bib_01225">
+        
+        
+<hi rendition="#k">Vitruvius</hi>.
+<emph rendition="#i">De architectura libri decem</emph>.
+Hrsg. v. F. <hi rendition="#k">Krohn</hi>.
+Leipzig 1912.
+
+
+      </bibl>
+      <bibl xml:id="bib_01065">
+        
+        
+<hi rendition="#k">Wallis</hi>, J.
+<emph rendition="#i">A Summary Account given by Dr. John Wallis,
+of the General Laws of Motion,
+by way of Letter written by him to the publisher,
+and communicated to the royal Society, Novemb. 26. 1668</emph>.
+In:
+<emph rendition="#i">PT</emph>, 3 (1668), S. 864–866.
+
+
+      </bibl>
+      <bibl xml:id="bib_01285">
+        
+        
+——.
+<emph rendition="#i">Letter to the Publisher, concerning a new Musical Discovery;
+written from Oxford, March 14, 1677</emph>.
+In:
+<emph rendition="#i">PT</emph>, 12 (1677), S. 839–842.
+
+
+      </bibl>
+      <bibl xml:id="bib_00301">
+        
+        
+(<hi rendition="#k">Wallis,</hi> J.)
+<emph rendition="#i">Mechanica sive De motu tractatus geometricus</emph>.
+2 Bde.
+London 1670–1671
+(<hi rendition="#i">WO</hi> I, S. 570–1063).
+
+
+      </bibl>
+      <bibl xml:id="bib_01008">
+        
+        
+——.
+<emph rendition="#i">Opera mathematica</emph>.
+3 Bde.
+Oxford 1693–1699.
+Nachdr. Hildesheim 1972.
+[= <hi rendition="#i">WO</hi>]
+
+
+      </bibl>
+      <bibl xml:id="bib_01066">
+        
+        
+<hi rendition="#k">Wren</hi>, C.
+<emph rendition="#i">Theory concerning the same Subject,
+imparted to the R. Society Decemb. 17. last,
+though entertain’d by the Author divers years ago,
+and verified by many Experiments,
+made by Himself and that other excellent Mathematician M. Rook before the said Society,
+as is attested by many Worthy Members of that Illustrious Body</emph>.
+In:
+<emph rendition="#i">PT</emph>, 3 (1668), S. 867 f.
+
+
+      </bibl>
+      <bibl xml:id="bib_01288">
+        
+        
+<hi rendition="#k">Zabarella</hi>, J.
+<emph rendition="#i">De rebus naturalibus libri triginta.
+Quibus quaestiones
+quae ab Aristotelis interpretibus hodie tractari solent,
+accurate discutiuntur</emph>.
+Frankfurt am Main 1617.
+
+
+      </bibl>
+    </listBibl>
+  
+</div></body>
+  </text>
+</TEI>

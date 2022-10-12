@@ -1,0 +1,3372 @@
+\begin{thebibliography}{100}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\selectlanguage}[1]{\relax}
+\input{babelbst.tex}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+\providecommand{\bibAnnoteFile}[1]{%
+\IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+\textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\let\bibAnnote\bibAnnoteFile
+
+% 001.
+\bibitem{01023}
+\emph{Acta eruditorum}.
+50~Bde.
+Leipzig 1682\textendash1731.
+[= \textit{AE}]
+\bibAnnote{01023}
+
+% 002.
+\bibitem{01244}
+\emph{Catalogus universalis, hoc est: Designatio omnium librorum qui hisce
+nundinis vernalibus/autumnalibus Francofurtensibus et Lipsiensibus anni 1684
+vel novi vel emendatiores et auctiores prodierunt. Das ist: Verzeichnis aller
+Bücher, so zu Franckfurt in der Herbst-Messe, auch Leipziger
+Michaelis-Messe des jetzigen 1684sten Jahres entweder ganz neu oder sonsten
+verbessert oder auffs neue wieder aufgelegt und gedrucket worden sind}.
+%%%
+Leipzig [1684].
+\bibAnnoteFile{01244}
+
+% 003.
+\bibitem{02018}
+\emph{Histoire des ouvrages des s{\c c}avans}.
+Rotterdam 1687\textendash1709.
+\bibAnnoteFile{02018}
+
+% 004.
+\bibitem{01247}
+\emph{Indices generales auctorum et rerum primi Actorum eruditorum quae Lipsiae
+publicantur decennii, nec non supplementorum tomi primi}.
+%%%
+Leipzig 1693.
+\bibAnnoteFile{01247}
+
+% 005.
+\bibitem{00157}
+\emph{Journal des S\c{c}avans}.
+Paris 1665\,ff.
+[= \textit{JS}]
+(Referenziert wird lediglich auf die Pariser Ausgabe.)
+\bibAnnote{00157}
+
+% 006.
+\bibitem{01236}
+\emph{Leben und Werk von Gottfried Wilhelm Leibniz. Eine Chronik}.
+%%%
+Bearbeitet v. K.~\textsc{Müller} u. G.~\textsc{Krönert}.
+Frankfurt am Main 1969.
+[= \textit{Chronik}]
+\bibAnnoteFile{01236}
+
+% 007.
+\bibitem{02002}
+\emph{Nouvelles de la république des lettres}.
+Amsterdam 1684\textendash1718.
+\bibAnnoteFile{02002}
+
+% 008.
+\bibitem{00158}
+\emph{Philosophical Transactions of the Royal Society}.
+London 1665\,ff.
+[= \textit{PT}]
+\bibAnnote{00158}
+
+% 009.
+\bibitem{01284}
+\emph{Stoicorum veterum fragmenta}.
+%%%
+Hrsg. v. H.~\textsc{von Arnim} (Bd~IV mit M.~\textsc{Adler}).
+4~Bde.
+Leipzig 1903\textendash1924.
+Nachdr. Stuttgart 1964.
+[= \textit{SVF}]
+\bibAnnoteFile{01284}
+
+% 010.
+\bibitem{01295}
+\textsc{Anonym}.
+%%%
+\emph{An accompt of two books. I. Tractatus quinque physico-medici,
+De sale-nitro et spiritu nitro-aereo; De respiratione; De respiratione foetus
+in utero et ovo; De motu mu\-scu\-la\-ri et spiritibus animalibus; De
+rachitide: Auth. Joh. Mayow ... Oxonii, e Theatro Sheldoniano 1674, in 8\textsuperscript{o}}\;...
+%%%
+\capitalize\bblin{}:
+\emph{PT},~9 (1674), \bblp{}~101\textendash113.
+\bibAnnote{01295}
+
+% 011.
+\bibitem{01211}
+---{}---.
+%%%
+% \emph{}
+[Bericht {\"u}ber Duverneys Forschung zur Anatomie und Physiologie des Ohres].
+%%%
+\capitalize\bblin{}:
+\emph{JS} (1681), \bblp{}~464. % 23. Juni 
+\bibAnnote{01211}
+
+% 012.
+\bibitem{02048}
+---{}---.
+%%%
+\emph{Experience curieuse faite {\`a} Paris sur la riviere de Seine l'est{\'e} pass{\'e}}.
+%%%
+\capitalize\bblin{}:
+\emph{JS} (1678), \bblp{}~39\textendash41.
+\bibAnnoteFile{02048}
+
+% 013.
+\bibitem{01271}
+---{}---.
+%%%
+\emph{Harmonica et Phytoscopica. Scripta po\-sthu\-ma Ioachimi Iungii Hamburg. 1678}.
+%%%
+\capitalize\bblin{}:
+\emph{JS} (1678), \bblp{}~342. % 22.~August 
+\bibAnnote{01271}
+
+% 014.
+\bibitem{01381}
+\textsc{Antognazza, M.\,R.}
+%%%
+\emph{Leibniz. An Intellectual Biography}.
+%%%
+Cambridge (UK) 2009.
+\bibAnnote{01381}
+
+% 015.
+\bibitem{00532}
+\textsc{Archimedes}.
+%%%
+\emph{De conoidibus et sphaeroidibus}.
+%%%
+\capitalize\bblin{}:
+\emph{Archimedis opera omnia cum commentariis Eutocii}.
+Hrsg. v. J.\,L. \textsc{Heiberg}.
+Bd~I.
+Leipzig 1880.
+S.~273\textendash498.
+\bibAnnoteFile{00532}
+
+% 016.
+\bibitem{01217}
+\textsc{Aristoteles}.
+%%%
+\emph{De anima}.
+%%%
+\capitalize\bblin{}:
+\emph{Aristoteles Grae\-ce}.
+Hrsg. v. \textsc{I.~Bekker}.
+Bd~I.
+Berlin 1831.
+S.~402\textendash435.
+\bibAnnoteFile{01217}
+
+% 017.
+\bibitem{00235}
+---{}---.
+%%%
+\emph{Physica}.
+%%%
+\capitalize\bblin{}:
+\emph{Aristoteles Graece}.
+Hrsg. v. \textsc{I.~Bekker}.
+Bd~I.
+Berlin 1831.
+S.~184\textendash267.
+\bibAnnoteFile{00235}
+
+% 018.
+\bibitem{01123}
+\textsc{Bauhin, C.}
+%%%
+\emph{Theatrum anatomicum}.
+%%%
+Frankfurt am Main 1605.
+\bibAnnoteFile{01123}
+
+% 019.
+\bibitem{01259}
+\textsc{Bernoulli, Jacob}.
+%%%
+Brief an G.\,W. Leibniz vom 15. (25.) Dezember 1687. % \emph{}
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~4 N.~200, \bblp{}~364\textendash368.
+\bibAnnoteFile{01259}
+
+% 020.
+\bibitem{01044}
+(\textsc{Bernoulli, Jacob}.)
+%%%
+\emph{Der Briefwechsel}.
+%%%
+Hrsg. v. D.\,\textsc{Speiser} u. A.\,\textsc{Weil}. % u.\,a.
+Basel 1993.
+\bibAnnote{01044}
+
+% 021.
+\bibitem{02061}
+---{}---.
+%%%
+\emph{Solutio problematum fraternorum}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1697), \bblp{}~211\textendash214.
+\bibAnnoteFile{02061}
+
+% 022.
+\bibitem{02020}
+\textsc{Bernoulli, Johann}.
+%%%
+Brief an G.\,W. Leibniz vom 12. (22.) September 1696. % \emph{}
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~7 N.~33, \bblp{}~120\textendash141.
+\bibAnnoteFile{02020}
+
+% 023.
+\bibitem{02060}
+---{}---.
+%%%
+\emph{Curvatura radii in diaphanis non uniformibus, solutioque problematis a se in Actis 1696, p.~269, propositi de invenienda linea brachystochrona}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1697), \bblp{}~206\textendash211.
+\bibAnnoteFile{02060}
+
+% 024.
+\bibitem{02035}
+---{}---.
+%%%
+\emph{Problema novum ad cujus solutionem mathematici invitantur.}
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1696), \bblp{}~269.
+\bibAnnoteFile{02035}
+
+% 025.
+\bibitem{02034}
+---{}---.
+%%%
+\emph{Solutio problematis funicularii}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1691), \bblp{} 274\textendash276.
+\bibAnnoteFile{02034}
+
+% 026.
+\bibitem{01357}
+\textsc{Bertoloni~Meli}, D.
+%%%
+\emph{Equivalence and Priority: Newton versus Leibniz.
+Including Leibniz's Unpublished Manuscripts on the Principia}.
+%%%
+Oxford 1993.
+\bibAnnote{01357}
+
+% 027.
+\bibitem{00337}
+\textsc{Blondel}, F.
+%%%
+\textit{Epistola ad P}\lbrack \textit{aulum}\rbrack\ \textit{W}\lbrack \textit{ur\-zi\-um}\rbrack\
+\textit{in qua famosa Galilaei propositio discutitur, circa naturam lineae qua trabes
+secari debent ut sint aequalis ubique resistentiae et in qua lineam illam non quidem parabolicam,
+ut ipse Galilaeus arbitratus est, sed ellipticam esse demonstratur.}
+%%%
+Paris 1661.
+\bibAnnote{00337}
+
+% 028.
+\bibitem{01230}
+---{}---.
+%%%
+\emph{R{\'e}solution des quatre principaux probl{\`e}mes d'architecture}.
+%%%
+Paris 1673.
+\bibAnnoteFile{01230}
+
+% 029.
+\bibitem{01237}
+\textsc{Boccabadati}, G.\,B.
+%%%
+\emph{De conatu mechanico}.
+%%%
+\lbrack Hs. verschollen.\rbrack\
+\bibAnnote{01237}
+
+% 030.
+\bibitem{01287}
+\textsc{Boethius}.
+%%%
+\emph{De institutione musica}.
+%%%
+In:
+\textit{Boethii De institutione arithmetica libri duo.
+De institutione musica libri quinque.
+Accedit Geometria quae fertur Boethii}.
+Hrsg. v. G.~\textsc{Friedlein}.
+Leipzig 1867.
+S.~177\textendash371.
+\bibAnnote{01287}
+
+% 031.
+\bibitem{01221}
+[\textsc{Bohn}, J.]
+%%%
+Rezension von
+\textit{Lettres escrites sur le sujet d'une nouvelle decouverte touchant la Ve{\"u}e,
+faite par M.~Mariotte (Paris 1682)}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1683), \bblp{}~67\textendash73.
+\bibAnnote{01221}
+
+% 032.
+\bibitem{02068}
+\textsc{Borelli}, G.\,A.
+%%%
+\emph{De motionibus naturalibus a gravitate pendentibus}.
+%%%
+Bologna 1670.
+\bibAnnoteFile{02068}
+
+% 033.
+\bibitem{02036}
+---{}---.
+%%%
+\emph{De vi percussionis, et motionibus naturalibus a gravitate pendentibus}.
+%%%
+Leiden 1686.
+\bibAnnoteFile{02036}
+
+% 034.
+\bibitem{01001}
+---{}---.
+%%%
+\emph{De vi percussionis liber}.
+%%%
+Bologna 1667.
+\bibAnnote{01001}
+
+% 035.
+\bibitem{00016}
+\textsc{Boyle}, R.
+%%%
+\emph{Nova experimenta physico-me\-cha\-ni\-ca de vi aeris elastica,
+et ejusdem effectibus, facta maximam partem in nova machina pneumatica}.
+%%%
+Oxford 1661.
+\bibAnnote{00016}
+
+% 036.
+\bibitem{00327}
+\textsc{Brahe}, T.
+%%%
+\emph{De mundi aetherei recentioribus phaenomenis liber secundus.
+De cometa anni 1577}.
+%%%
+Prag 1603.
+\bibAnnoteFile{00327}
+
+% 037
+\bibitem{01245}
+\textsc{Brosseau}, C.
+%%%
+Brief an G.\,W. Leibniz vom 12. Juni 1684. % \emph{}
+%%%
+\capitalize\bblin{}:
+\emph{LSB}, I~4 N.~381, \bblp{}~468.
+\bibAnnoteFile{01245}
+
+% 038.
+\bibitem{00124}
+\textsc{Dechales}, C.\,F.\,M.
+%%%
+\emph{Cursus seu mundus mathematicus}.
+%%%
+3 Bde.
+Lyon 1674.
+\bibAnnote{00124}
+
+% 039.
+\bibitem{01998}
+---{}---.
+%%%
+\emph{Traitt{\'e} du mouvement local et du ressort}.
+%%%
+Lyon 1682.
+\bibAnnoteFile{01998}
+
+% 040.
+\bibitem{01286}
+\textsc{Descartes}, R.
+%%%
+Brief an M. Mersenne vom 22. Juli 1633.
+%%%
+\capitalize\bblin{}:
+\emph{DL} II (1659), Nr.~75, S.~348\textendash351
+(\textit{DO} I, Nr.~48, S.~266\textendash269).
+\bibAnnote{01286}
+
+% 041.
+\bibitem{01226}
+---{}---.
+%%%
+Brief an M. Mersenne vom 30. April 1639.
+%%%
+\capitalize\bblin{}:
+\emph{DL} III (1667), Nr.~84, S.~480\textendash487
+(\textit{DO} II, Nr.~160, S.~529\textendash539).
+\bibAnnote{01226}
+
+% 042.
+\bibitem{01214}
+---{}---.
+%%%
+Brief an M. Mersenne vom 18. M{\"a}rz 1641.
+%%%
+\capitalize\bblin{}:
+\emph{DL} III (1667), Nr.~109, S.~596\textendash600
+(\textit{DO} III, Nr.~233, S.~334\textendash340).
+\bibAnnote{01214}
+
+% 043.
+\bibitem{01298}
+---{}---.
+%%%
+Brief an J.-B. Morin vom 12. September 1638.
+%%%
+\capitalize\bblin{}:
+\emph{DL} I (1657), Nr.~62, S.~286\textendash296
+(\textit{DO} II, Nr.~143, S.~362\textendash373).
+\bibAnnote{01298}
+
+% 044.
+\bibitem{00209}
+---{}---.
+%%%
+\emph{Lettres}.
+%%%
+Hrsg. v. C. \textsc{Clerselier}.
+3~Bde.
+Paris: Bd~I, 1657; Bd~II, 1659; Bd~III, 1667.
+[Marg.]
+[= \textit{DL}]
+\bibAnnote{00209}
+
+% 045.
+\bibitem{01999}
+---{}---.
+%%%
+\emph{Meditationes de prima philosophia}.
+%%%
+Paris 1641
+(\textit{DO} VII, S. 1\textendash603).
+\bibAnnoteFile{01999}
+
+% 046.
+\bibitem{00120}
+(\textsc{Descartes}, R.)
+%%%
+\emph{Oeuvres}.
+%%%
+Hrsg. v. C. \textsc{Adam} u. P. \textsc{Tannery}.
+12~Bde.
+Paris 1879\textendash1910.
+Nachdr. Paris 1964\textendash1972.
+[= \textit{DO}]
+\bibAnnote{00120}
+
+% 047.
+\bibitem{01300}
+---{}---.
+%%%
+\emph{Opera philosophica. Editio secunda ab auctore recognita}.
+%%%
+Amsterdam 1650.
+[Marg.]
+\bibAnnote{01300}
+
+% 048.
+\bibitem{00035}
+---{}---.
+%%%
+\emph{Principia philosophiae}.
+%%%
+Amsterdam 1644
+(\textit{DO} VIII,~1, S.~1\textendash353).
+\bibAnnote{00035}
+
+% 049.
+\bibitem{01235}
+\textsc{Diogenes Laertios}.
+%%%
+\emph{Vitae philosophorum}.
+%%%
+Hrsg. v. M. \textsc{Marcovich}.
+Leipzig 1999.
+\bibAnnote{01235}
+
+% 050.
+\bibitem{01246}
+\textsc{Douceur}, N.
+%%%
+Brief an G.\,W. Leibniz vom 12. Juni 1684.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~4 N.~56, \bblp{}~118\,f.
+\bibAnnoteFile{01246}
+
+% 051.
+\bibitem{01203}
+\textsc{Duverney}, J.-G.
+%%%
+\emph{Tractatus de organo auditus,
+continens structuram, usum et morbos omnium auris partium ...
+e Gallico Latine versus}.
+%%%
+N{\"u}rnberg 1684.
+\bibAnnoteFile{01203}
+
+% 052.
+\bibitem{01202}
+---{}---.
+%%%
+\emph{Trait{\'e} de l'organe de l'ouie,
+contenant la structure, les usages et les maladies de toutes les parties de l'oreille}.
+%%%
+Paris 1683.
+\bibAnnoteFile{01202}
+
+% 053.
+\bibitem{00044}
+\textsc{Fabri.}, H.
+%%%
+\emph{Physica, id est,
+scientia rerum corporearum in decem tractatus distributa}.
+%%%
+4~Bde.
+Lyon 1669\textendash1671.
+[Marg.]
+\bibAnnote{00044}
+
+% 054.
+\bibitem{01215}
+\textsc{Fracastoro}, G.
+%%%
+\emph{De sympathia et antipathia rerum liber unus.
+De contagione et contagiosis morbis et curatione libri tres}.
+%%%
+Venedig 1546.
+\bibAnnoteFile{01215}
+
+% 055.
+\bibitem{01216}
+---{}---.
+%%%
+\emph{Operum pars prior, philosophica et medica}.
+%%%
+Lyon 1591.
+\bibAnnoteFile{01216}
+
+% 056.
+\bibitem{00047}
+\textsc{Fr{\"o}lich}, D.
+%%%
+\emph{Bibliotheca seu Cynosura pe\-re\-gri\-nan\-tium,
+hoc est: Viatorium omnium hactenus editorum absolutissimum, jucundissimum utilissimumque,
+in duas partes digestum}.
+%%%
+2~Bde.
+Ulm 1643\textendash1644.
+\bibAnnote{00047}
+
+% 057.
+\bibitem{00050}
+\textsc{Galilei}, G.
+%%%
+\emph{Discorsi e dimostrazioni matematiche
+intorno a due nuove scienze attenenti alla mecanica e i movimenti locali}.
+%%%
+Leiden 1638
+(\textit{GO} VIII, S.~39\textendash318).
+\bibAnnote{00050}
+
+% 058
+\bibitem{01084}
+---{}---.
+%%%
+\emph{Opere}.
+%%%
+2~Bde.
+Bologna 1656.
+\bibAnnoteFile{01084}
+
+% 059
+\bibitem{00048}
+---{}---.
+%%%
+\emph{Opere. Edizione Nazionale}.
+%%%
+Hrsg. v. A.~\textsc{Favaro} u.\,a.
+20~Bde.
+Florenz 1890\textendash1909.
+%Neuausgabe v. S.~Garbasso u.\,a.
+%Florenz 1929\textendash1932.
+[= \textit{GO}]
+\bibAnnote{00048}
+
+% 060
+\bibitem{01029}
+\textsc{Gassendi}, P.
+%%%
+\emph{Opera omnia}.
+%%%
+3~Bde.
+Lyon 1658.
+Nachdr. Stuttgart u. Bad Cannstatt 1964.
+[= \textit{GOO}]
+\bibAnnote{01029}
+
+% 061.
+\bibitem{01073}
+---{}---.
+%%%
+\emph{Syntagmatis philosophici pars secunda, quae est Physica}.
+%%%%
+Lyon 1658
+(\textit{GOO} I, S.~125\textendash752; \textit{GOO} II, S.~1\textendash658).
+\bibAnnoteFile{01073}
+
+% 062.
+\bibitem{00055}
+\textsc{von Guericke}, O.
+%%%
+\emph{Experimenta nova (ut vocantur) Magdeburgica de vacuo spatio}.
+%%%
+Amsterdam 1672.
+\bibAnnote{00055}
+
+% 063.
+\bibitem{01342}
+\textsc{Guidi}, G.
+%%%
+Brief an G.\,W. Leibniz vom 1. Januar 1705.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~24 N.~152, \bblp{}~259\textendash261.
+\bibAnnote{01342}
+
+% 064.
+\bibitem{01242}
+\textsc{Haak}, T.
+%%%
+Brief an G.\,W. Leibniz vom 24. August (3. September) 1679.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~2 N.~337, \bblp{}~818\textendash822.
+\bibAnnoteFile{01242}
+
+% 065.
+\bibitem{01241}
+\textsc{Hooke}, R.
+%%%
+\emph{Lectures de potentia restitutiva,
+or of spring, explaining the power of springing bodies.
+To which are added some collections}.
+%%%
+London 1678.
+[Marg.]
+\bibAnnoteFile{01241}
+
+% 066.
+\bibitem{01067}
+\textsc{Huygens}, C.
+%%%
+\emph{A Summary Account of the Laws of Motion,
+communicated by Mr. Christian Hugens in a Letter to the R. Society,
+and since printed in French in the Iournal des Scavans of March 18, 1669. st.\,n.}
+%%%
+\capitalize\bblin{}:
+\emph{PT}, 4 (1669), \bblp{}~925\textendash928.
+\bibAnnoteFile{01067}
+
+% 067.
+\bibitem{01201}
+(\textsc{Huygens}, C.)
+%%%
+Brief an Constantyn Huygens (Vater) vom 26. Februar 1665.
+%%%
+\capitalize\bblin{}:
+\emph{HO} V, \bblpp{}~243\,f. % Nr.~1335, 
+Auszug in: \textit{JS} (1665), S. 129\textendash131.
+\bibAnnoteFile{01201}
+
+% 068.
+\bibitem{01502}
+---{}---.
+%%%
+Brief an G.\,W. Leibniz vom 8. (18.) Februar 1690.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~4 N.~235, \bblp{}~460\textendash464.
+\bibAnnoteFile{01502}
+
+% 069.
+\bibitem{02037}
+---{}---.
+%%%
+\emph{De motu corporum ex mutuo impulsu hypothesis}.
+%%%
+\lbrack Hs. 1669.\rbrack\
+In:
+\textit{HO} VI, S.~336\textendash343.
+\bibAnnoteFile{02037}
+
+% 070.
+\bibitem{00530}
+---{}---.
+%%%
+\emph{De motu corporum ex percussione}.
+%%%
+In:
+\textit{Opuscula posthuma}.
+Leiden 1703,
+S.~367\textendash398
+(\textit{HO} XVI, S.~29\textendash91).
+\bibAnnoteFile{00530}
+
+% 071.
+\bibitem{00062}
+---{}---.
+%%%
+\emph{Extrait d'une lettre de M. Hugens de l'Academie des Sciences {\`a} l'auteur de ce journal,
+touchant les phenomenes de l'eau purg{\'e}e d'air}.
+%%%
+\capitalize\bblin{}:
+\emph{JS} (1672), \bblpp{}~133\textendash140
+(\textit{HO} VII, S.~201\textendash206).
+\bibAnnote{00062}
+
+% 072.
+\bibitem{00123}
+---{}---.
+%%%
+\emph{Horologium oscillatorium sive
+De motu pendulorum ad horologia aptato demon\-strationes geometricae}.
+%%%
+Paris 1673
+(\textit{HO} XVIII, S.~69\textendash365).
+\bibAnnote{00123}
+
+% 073.
+\bibitem{00113}
+---{}---.
+%%%
+\emph{Oeuvres compl{\`e}tes}.
+%%%
+Hrsg. v. D.~\textsc{Bierens de Haan}, J.~\textsc{Bosscha} u.\,a.
+22~Bde.
+Den Haag 1888\textendash1950.
+[= \textit{HO}]
+\bibAnnote{00113}
+
+% 074.
+\bibitem{02076}
+---{}---.
+%%%
+\emph{Opuscula posthuma}.
+[Hrsg. v. B. \textsc{de Vol\-der} u. B. \textsc{Fullenius}.]
+%%%
+Leiden 1703.
+[Marg.]
+\bibAnnoteFile{02076}
+
+% 075.
+\bibitem{00529}
+---{}---.
+%%%
+\emph{Regles du mouvement dans la rencontre des corps}.
+%%%
+\capitalize\bblin{}:
+\emph{JS} (1669), \bblpp{}~22\textendash24
+(\textit{HO} VI, S.~383\textendash386).
+\bibAnnoteFile{00529}
+
+% 076.
+\bibitem{02019}
+---{}---.
+%%%
+\emph{Remarques de Mr. Huygens sur la lettre precedente}.
+%%%
+\capitalize\bblin{}:
+\emph{Histoire des ouvrages des s{\c c}avans} (1690), \bblp{}~461\textendash463.
+\bibAnnote{02019}
+
+% 077.
+\bibitem{00525}
+---{}---.
+%%%
+\emph{Trait{\'e} de la lumiere,
+o{\`u} sont expliqu{\'e}es les causes de ce qui luy arrive dans la reflexion et dans la refraction.
+Et particulierement dans l'etrange refraction du cristal d'Islande.
+Avec un discours de la cause de la pesanteur}.
+%%%
+Leiden 1690
+(\textit{HO} XIX).
+\bibAnnoteFile{00525}
+
+% 078.
+\bibitem{01266}
+\textsc{Jungius, J.}
+%%%
+\emph{Harmonica}.
+%%%
+% Hrsg. v. J. \textsc{Vagetius}. 
+[Hamburg 1678.]
+[Marg.]
+\bibAnnoteFile{01266}
+
+% 079.
+\bibitem{01268}
+---{}---.
+%%%
+\emph{Isagoge phytoscopica}.
+%%%
+% Hrsg. v. J. \textsc{Vagetius}.
+[Hamburg 1679.]
+\bibAnnoteFile{01268}
+
+% 080.
+\bibitem{01267}
+---{}---.
+%%%
+\emph{Praecipuae opiniones physicae,
+passim receptae, breviter quidem sed accuratissime examinatae,
+ex recensione et distincione Martini Fogelii,
+cujus annotationes quae\-dam accedunt;
+accesit[!] nunc primum ejusdem auctoris Harmonica et Isagoge phytoscopica}.
+%%%
+[Hrsg. v. J.~\textsc{Vagetius}.]
+Hamburg 1679.
+\bibAnnoteFile{01267}
+
+% 081.
+\bibitem{02050}
+\textsc{Justel}, H.
+%%%
+Brief an G.\,W. Leibniz vom 24. Juli 1679.
+%%%
+\capitalize\bblin{}:
+\emph{LSB}, I~2 N.~495, \bblp{}~501\textendash504.
+\bibAnnoteFile{02050}
+
+% 082.
+\bibitem{00534}
+\textsc{Kepler}, J.
+%%%
+\emph{Astronomia nova \pgrk{a>itiologet'os} seu physica coelestis,
+tradita commentariis de motibus stellae Martis ex observationibus Tychonis Brahe}.
+%%%
+Heidelberg 1609
+(\textit{KGW} III).
+\bibAnnoteFile{00534}
+
+% 083.
+\bibitem{00114}
+---{}---.
+%%%
+\emph{Gesammelte Werke}.
+%%%
+Hrsg. v. d. Bayerischen Akademie der Wissenschaften.
+27~Bde.
+M{\"u}nchen 1937\textendash2017.
+[= \textit{KGW}]
+\bibAnnote{00114}
+
+% 084.
+\bibitem{02059}
+\textsc{Kopernikus}, N.
+%%%
+\emph{De revolutionibus orbium coelestium libri sex}.
+%%%
+N{\"u}rnberg 1543.
+\bibAnnoteFile{02059}
+
+% 085.
+\bibitem{02026}
+\textsc{de La~Hire}, P.
+%%%
+\emph{Trait{\'e} de m{\'e}chanique}.
+%%%
+Paris 1695.
+\bibAnnoteFile{02026}
+
+% 086.
+\bibitem{02043}
+\textsc{Leibniz,} G.\,W.
+%%%
+\emph{Additio ad schediasma de medii resistentia}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1691), \bblpp{}~177\,f.
+(\textit{LMG} VI, S.~143\,f.).
+\bibAnnoteFile{02043}
+
+% 087.
+\bibitem{02038}
+---{}---.
+%%%
+\emph{Animadversiones ad Cartesii \textit{Principia}}
+[1691].
+%%%
+\textit{LPG} IV, \bblp{}~354\textendash392.
+\bibAnnoteFile{02038}
+
+% 088.
+\bibitem{01197}
+---{}---.
+%%%
+Aus Otto von Guericke, \textit{Experimenta nova}
+[Sommer 1672].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~1 N.~36, \bblp{}~245\textendash276.
+\bibAnnoteFile{01197}
+
+% 089.
+\bibitem{01100}
+---{}---.
+%%%
+Aus \textit{Saggi di naturali esperienze}
+[2.~Hälf\-te 1672].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~1 N.~37, \bblp{}~277\textendash287.
+\bibAnnoteFile{01100}
+
+% 090.
+\bibitem{01120}
+(\textsc{Leibniz,} G.\,W.)
+%%%
+Aus und zu der \textit{Physik} von Honoratus Fabri
+[Herbst 1670 \textendash\ Fr{\"u}hjahr 1672 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~2 N.~39, \bblp{}~186\textendash211.
+\bibAnnoteFile{01120}
+
+% 091.
+\bibitem{01303}
+---{}---.
+%%%
+Aus und zu Descartes
+[Sommer 1678 \textendash\ Winter 1680/81 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~341, \bblp{}~1784\textendash1788.
+\bibAnnote{01303}
+
+% 092.
+\bibitem{00260}
+---{}---.
+%%%
+Aus und zu Galileis \textit{Discorsi}
+[Herbst 1672/73(?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~3 N.~11, \bblp{}~163\textendash168.
+\bibAnnoteFile{00260}
+
+% 093.
+\bibitem{01234}
+---{}---.
+%%%
+Aus und zu Honor{\'e} Fabri, \textit{Physica}
+[Herbst 1670 \textendash\ Fr{\"u}hjahr 1672 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~2 N.~55, \bblp{}~465\textendash522.
+\bibAnnoteFile{01234}
+
+% 094.
+\bibitem{01343}
+---{}---.
+%%%
+Aus und zu John Wallis, \textit{Mechanica sive De motu}
+[letzte Monate 1674 \textendash\ erste Monate 1675].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~8, \bblp{}~64\textendash106.
+\bibAnnote{01343}
+
+% 095.
+\bibitem{01272}
+---{}---.
+%%%
+Aus und zu Vagetius' Edition von Jungius' \textit{Logik}
+[Ende 1681 \textendash\ Anfang 1682 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~233, \bblpp{}~1117\,f.
+\bibAnnoteFile{01272}
+
+% 096.
+\bibitem{02074}
+---{}---.
+%%%
+Ausz{\"u}ge aus Sinclair und Mechovius. Aufzeichnung zur Medizin
+[Februar (?) 1671].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~2 N.~43, \bblp{}~292\,f.
+\bibAnnoteFile{02074}
+
+% 097.
+\bibitem{01099}
+---{}---.
+%%%
+\emph{Brevis demonstratio erroris memorabilis Cartesii et aliorum circa legem naturae,
+secundum quam volunt a Deo eandem semper quantitatem motus conservari}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1686), \bblpp{}~161\textendash163
+(\textit{LSB} VI,~4 N.~369, S.~2027\textendash2030).
+\bibAnnote{01099}
+
+% 98.
+\bibitem{01260}
+---{}---.
+%%%
+Brief an Jacob Bernoulli vom 24. September (4. Oktober) 1690.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~4 N.~279, \bblp{}~571\textendash584.
+\bibAnnoteFile{01260}
+
+% 99.
+\bibitem{02047}
+---{}---.
+%%%
+Brief an J. Bertet, September 1677 (?).
+%%%
+\capitalize\bblin{}:
+\emph{LSB} II,~1 (2006) N.~158a, \bblp{}~571\textendash574.
+\bibAnnote{02047}
+
+% 100.
+\bibitem{02066}
+---{}---.
+%%%
+Brief an F. Bianchini vom 12. (22.) September 1690.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~4 N.~274, \bblp{}~558\textendash561.
+\bibAnnoteFile{02066}
+
+% 101.
+\bibitem{01261}
+---{}---.
+%%%
+Brief an R.\,C. von Bodenhausen vom 26. Oktober (5. November) 1690.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~4 N.~285, \bblp{}~626\textendash633.
+\bibAnnoteFile{01261}
+
+% 102.
+\bibitem{01283}
+---{}---.
+%%%
+Brief an C. Brosseau vom 21. Juli 1684.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~4 N.~390, \bblp{}~475.
+\bibAnnoteFile{01283}
+
+% 103.
+\bibitem{02053}
+---{}---.
+%%%
+Brief an H. Conring vom 3. (13.) Januar 1678.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} II,~1 (2006) N.~162, \bblp{}~578\textendash584.
+\bibAnnoteFile{02053}
+
+% 104.
+\bibitem{01312}
+---{}---.
+%%%
+Brief an A. Eckhard vom 28. April 1677.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} II,~1 (2006) N.~143, \bblp{}~498\textendash502.
+\bibAnnote{01312}
+
+% 105.
+\bibitem{01313}
+---{}---.
+%%%
+Brief an A. Eckhard vom Sommer 1677.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} II,~1 (2006) N.~148, \bblp{}~542\textendash547.
+\bibAnnote{01313}
+
+% 106.
+\bibitem{01314}
+---{}---.
+%%%
+Brief an die Pfalzgr{\"a}fin Elisabeth (?) vom November 1678.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} II,~1 (2006) N.~187b, \bblp{}~659\textendash666.
+\bibAnnote{01314}
+
+% 107.
+\bibitem{01309}
+---{}---.
+%%%
+Brief an H. Fabri vom Anfang 1677.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} II,~1 (2006) N.~133, \bblp{}~441\textendash466.
+\bibAnnote{01309}
+
+% 108.
+\bibitem{01335}
+---{}---.
+%%%
+Brief an D.\,Flach vom 5. (15.) Juni 1693.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I, Supplementband Harz-Bergbau, N.~28, \bblpp{}~42\,f.
+\bibAnnote{01335}
+
+% 109.
+\bibitem{01297}
+---{}---.
+%%%
+Brief an C. Gudenus vom 6. August 1689.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~5 N.~250, \bblpp{}~464\,f.
+\bibAnnote{01297}
+
+% 110.
+\bibitem{01282}
+---{}---.
+%%%
+Brief an J.-B. du Hamel vom 11. (21.) Juli 1684.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~4 N.~62, \bblp{}~130\textendash132.
+\bibAnnoteFile{01282}
+
+% 111.
+\bibitem{02046}
+---{}---.
+%%%
+Brief an C. Huygens vom 8. (18.) September 1679.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~2 N.~346, \bblp{}~840\textendash850.
+\bibAnnote{02046}
+
+% 112.
+\bibitem{01507}
+---{}---.
+%%%
+Brief an C. Huygens vom 28. Oktober (7. November) 1690.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~4 N.~287, \bblp{}~640\textendash647.
+\bibAnnoteFile{01507}
+
+% 113.
+\bibitem{01243}
+---{}---.
+%%%
+Brief an C. Huygens vom 10. (20.) April 1691.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~5 N.~17, \bblp{}~93\textendash103.
+\bibAnnoteFile{01243}
+
+% 114.
+\bibitem{01325}
+---{}---.
+%%%
+Brief an F.\,W. Leidenfrost von Ende Juli 1680.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~3 N.~46, \bblp{}~65.
+\bibAnnote{01325}
+
+% 115.
+\bibitem{01326}
+---{}---.
+%%%
+Brief an F.\,W. Leidenfrost von Mitte Januar 1682.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~3 N.~112, \bblpp{}~139\,f.
+\bibAnnote{01326}
+
+% 116.
+\bibitem{01327}
+---{}---.
+%%%
+Brief an F.\,W. Leidenfrost vom 6. (?) April 1688.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~5 N.~33, \bblp{}~91.
+\bibAnnoteFile{01327}
+
+% 117.
+\bibitem{01379}
+(\textsc{Leibniz,} G.\,W.)
+%%%
+Brief an G.\,F. de L'Hospital vom 4. (14.) Dezember 1696.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~7 N.~56, \bblp{}~213\textendash216.
+\bibAnnote{01379}
+
+% 118.
+\bibitem{01315}
+---{}---.
+%%%
+Brief an N. Malebranche vom 22. Juni (2. Juli) 1679.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} II,~1 (2006) N.~207, \bblp{}~716\textendash727.
+\bibAnnote{01315}
+
+% 119.
+\bibitem{01330}
+---{}---.
+%%%
+Brief an P. Marci vom 20. (30.) M{\"a}rz 1685.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~4 N.~417, \bblp{}~497.
+\bibAnnote{01330}
+
+% 120.
+\bibitem{01334}
+---{}---.
+%%%
+Brief an P. Marci vom 27. März (6.~April) 1691.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~6 N.~247, \bblpp{}~443\,f.
+\bibAnnote{01334}
+
+% 121.
+\bibitem{01374}
+---{}---.
+%%%
+Brief an E. Mariotte vom Juli 1673.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~1 N.~25, \bblp{}~101\textendash112.
+\bibAnnote{01374}
+
+% 122.
+\bibitem{01193}
+---{}---.
+%%%
+Brief an E. Mariotte von der 2. Hälfte August 1681.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~269, \bblp{}~478\textendash482.
+\bibAnnote{01193}
+
+% 123.
+\bibitem{01263}
+---{}---.
+%%%
+Brief an E. Mariotte von Ende Juli/ Anfang August 1682.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~380, \bblp{}~675\textendash681.
+\bibAnnoteFile{01263}
+
+% 124.
+\bibitem{01264}
+---{}---.
+%%%
+Brief an E. Mariotte vom 14. September 1682.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~400, \bblp{}~712\textendash713.
+\bibAnnoteFile{01264}
+
+% 125.
+\bibitem{01262}
+---{}---.
+%%%
+Brief an E. Mariotte vom März/April 1683.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~456, \bblp{}~793\textendash798.
+\bibAnnoteFile{01262}
+
+%. 126.
+\bibitem{02045}
+---{}---.
+%%%
+Brief an O. Mencke vom 2. (12.) Oktober 1690.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~4 N.~281, \bblp{}~587\,f.
+\bibAnnoteFile{02045}
+
+% 127.
+\bibitem{01332}
+---{}---.
+%%%
+Brief an G. Mennichen von Ende Januar 1687.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~4 N.~267, \bblp{}~308.
+\bibAnnote{01332}
+
+% 128.
+\bibitem{01331}
+---{}---.
+%%%
+Brief an P.\,P. Metzger von 1685 (?).
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~4 N.~457, \bblpp{}~543\,f.
+\bibAnnote{01331}
+
+% 129.
+\bibitem{01310}
+---{}---.
+%%%
+Brief an G.\,W. Molanus f{\"u}r A.~Eckhard vom Anfang April 1677.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} II,~1 (2006) N.~138, \bblp{}~478\textendash484.
+\bibAnnote{01310}
+
+% 130.
+\bibitem{01346}
+---{}---.
+%%%
+Brief an H. Oldenburg vom 29. April (9. Mai) 1671.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} II,~1 (2006) N.~57, \bblp{}~165\textendash169.
+\bibAnnote{01346}
+
+% 131.
+\bibitem{01378}
+---{}---.
+%%%
+Brief an D. Papin vom [17.] November 1695.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~6 N.~172, \bblp{}~532\textendash543.
+\bibAnnote{01378}
+
+% 132.
+\bibitem{01515}
+---{}---.
+%%%
+Brief an D. Papin vom 21. Juni (1. Juli) 1696.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~7 N.~1, \bblp{}~7\textendash18.
+\bibAnnote{01515}
+
+% 133.
+\bibitem{02071}
+---{}---.
+%%%
+Brief an D. Papin vom 16.\ (26.) Juli 1696.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~7 N.~8, \bblp{}~32\textendash35.
+\bibAnnoteFile{02071}
+
+% 134.
+\bibitem{01503}
+---{}---.
+%%%
+Brief an D. Papin vom 8. (18.) November 1697.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~7 N.~156, \bblp{}~631\textendash638.
+\bibAnnoteFile{01503}
+
+% 135.
+\bibitem{02072}
+---{}---.
+%%%
+Brief an D. Papin vom 2.\ (12.) Dezember 1697.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~7 N.~163, \bblp{}~656\textendash670.
+\bibAnnoteFile{02072}
+
+% 136.
+\bibitem{02073}
+---{}---.
+%%%
+Brief an D. Papin vom 16.\ (26.) Januar 1698.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~7 N.~177, \bblp{}~702\textendash728.
+\bibAnnoteFile{02073}
+
+% 137.
+\bibitem{01281}
+---{}---.
+%%%
+Brief an C. Pfautz vom 28. April 1682.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~345, \bblp{}~594\textendash597.
+\bibAnnoteFile{01281}
+
+% 138.
+\bibitem{01316}
+---{}---.
+%%%
+Brief an C. Philipp vom Ende Januar 1680.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} II,~1 (2006) N.~222, \bblp{}~786\textendash790.
+\bibAnnote{01316}
+
+% 139.
+\bibitem{01238}
+---{}---.
+%%%
+Brief an B. Ramazzini vom 25. Februar 1690.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~4 N.~239, \bblp{}~466\textendash468.
+\bibAnnoteFile{01238}
+
+% 140.
+\bibitem{02049}
+---{}---.
+%%%
+Brief an J.\,P. de la Roque vom 17. (27.) September 1677.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~2 N.~78, \bblp{}~223\,f.
+\bibAnnoteFile{02049}
+
+% 141.
+\bibitem{01270}
+---{}---.
+%%%
+Brief an J.\,P. de la Roque von Mitte Juli 1678.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~2 N.~186, \bblp{}~473.
+\bibAnnoteFile{01270}
+
+% 142.
+\bibitem{01322}
+---{}---.
+%%%
+Brief an Q.\,S.\,F. Rivinus vom 14. (24.) April 1685.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~4 N.~581, \bblpp{}~690\,f.
+\bibAnnote{01322}
+
+% 143.
+\bibitem{01293}
+---{}---.
+%%%
+Brief an G.\,C. Schelhammer von Mitte September 1674.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~5 N.~I, \bblpp{}~3\,f.
+\bibAnnote{01293}
+
+% 144.
+\bibitem{01275}
+---{}---.
+%%%
+Brief an G.\,C. Schelhammer vom 6. (16.) Dezember 1680.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~139, \bblpp{}~304\,f.
+\bibAnnote{01275}
+
+% 145.
+\bibitem{01194}
+---{}---.
+%%%
+Brief an G.\,C. Schelhammer von Februar/M{\"a}rz 1681.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~182, \bblp{}~355\textendash361.
+\bibAnnote{01194}
+
+% 146.
+\bibitem{01195}
+---{}---.
+%%%
+Brief an G.\,C. Schelhammer vom 13. (23.) Januar 1682.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~311, \bblp{}~544\textendash550.
+\bibAnnote{01195}
+
+% 147.
+\bibitem{02056}
+(\textsc{Leibniz,} G.\,W.)
+%%%
+Brief an J.\,A. Schmidt vom 31.\ Dezember 1700.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~19 N.~150, \bblp{}~317\,f.
+\bibAnnoteFile{02056}
+
+% 148.
+\bibitem{02058}
+---{}---.
+%%%
+Brief an J.\,A. Schmidt vom 29.\ April 1701.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~19 N.~336, \bblp{}~632\,f.
+\bibAnnoteFile{02058}
+
+% 149.
+\bibitem{01224}
+---{}---.
+%%%
+Brief an F. Schrader vom 6. (16.) Mai 1684.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~4 N.~55, \bblp{}~114\textendash118.
+\bibAnnoteFile{01224}
+
+% 150.
+\bibitem{01382}
+---{}---.
+%%%
+Brief an J. Schrader vom 9.\textendash11. (?) Juni 1695.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~11 N.~338, \bblp{}~494\textendash497.
+\bibAnnote{01382}
+
+% 151.
+\bibitem{01311}
+---{}---.
+%%%
+Brief an Unbekannten vom 1679.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} II,~1 (2006) N.~219, \bblp{}~775\textendash782.
+\bibAnnote{01311}
+
+% 152.
+\bibitem{01273}
+---{}---.
+%%%
+Brief an J. Vagetius vom Ende Mai 1687.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} II,~2 N.~47, \bblpp{}~209\,f.
+\bibAnnoteFile{01273}
+
+% 153.
+\bibitem{01514}
+---{}---.
+%%%
+Brief an B. de Volder vom 27. Dezember 1698.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} II,~3 N.~194, \bblp{}~493\textendash512.
+\bibAnnote{01514}
+
+% 154.
+\bibitem{01328}
+---{}---.
+%%%
+Brief an C. Wichmann vom 5. (15.) Mai 1682.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~3 N.~135, \bblpp{}~178\,f.
+\bibAnnote{01328}
+
+% 155.
+\bibitem{01329}
+---{}---.
+%%%
+Brief an C. Wichmann vom 29. September (9. Oktober) 1682.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~3 N.~165, \bblpp{}~208\,f.
+\bibAnnote{01329}
+
+% 156.
+\bibitem{01257}
+---{}---.
+%%%
+Brief für die \textit{Acta eruditorum} [erste Oktoberhälfte 1684].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~4 N.~72, \bblp{}~171\textendash184.
+\bibAnnoteFile{01257}
+
+% 157.
+\bibitem{01208}
+---{}---.
+%%%
+Brief für J.\,P. de la Roque von Mitte März 1675 =
+\emph{Extrait d'une lettre de Monsieur Leibniz {\`a} l'Auteur du Journal,
+touchant le principe de justesse des horologes portatives de son invention}
+(\textit{JS} [1675], S.~93\textendash96). % 25. Mä}rz 
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~1 N.~45, Fassung~f, \bblp{}~192\textendash201.
+\bibAnnote{01208}
+
+% 158.
+\bibitem{01350}
+---{}---.
+%%%
+Brief für die Royal Society vom 3. (13.) Februar 1673.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~1 N.~4, \bblp{}~22\textendash29.
+\bibAnnote{01350}
+
+% 159.
+\bibitem{01348}
+---{}---.
+%%%
+\emph{Chronologia. Efficere horologia accurata}
+[2. H{\"a}lfte 1672].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~84, \bblpp{}~716\,f.
+\bibAnnote{01348}
+
+% 160.
+\bibitem{02031}
+---{}---.
+%%%
+\emph{Communicatio suae,
+pariter duarumque alienarum ad edendum sibi primum a dn. Jo. Bernoullio,
+deinde a dn. marchione Hospitalio communicatarum solutionum
+problematis curvae celerrimi descensus a dn. Jo. Bernoullio geometris publice propositi,
+una cum solutione sua problematis alterius ab eodem postea propositi}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1697), \bblpp{}~201\textendash205
+(\textit{LMG} V, S.~331\textendash336).
+\bibAnnoteFile{02031}
+
+% 161.
+\bibitem{01347}
+---{}---.
+%%%
+\emph{Consilium Aegyptiacum.
+Justa dissertatio}
+[Winter 1671/1672].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} IV,~1 (1983) N.~15, \bblp{}~267\textendash382.
+\bibAnnote{01347}
+
+% 162.
+\bibitem{01318}
+---{}---.
+%%%
+\emph{De animalis anima}
+[1683 \textendash\ 1685 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~287, \bblp{}~1474.
+\bibAnnote{01318}
+
+% 163.
+\bibitem{01352}
+---{}---.
+%%%
+\emph{De arcanis motus et mechanica ad puram geometriam reducenda}
+[Februar \textendash\ September 1676].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~12, \bblp{}~133\textendash138.
+\bibAnnote{01352}
+
+% 164.
+\bibitem{02040}
+---{}---.
+%%%
+\emph{De causa gravitatis,
+et defensio sententiae suae de veris naturae legibus contra Cartesianos}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1690), \bblpp{}~228\textendash239
+(\textit{LMG} VI, S.~193\textendash203).
+\bibAnnoteFile{02040}
+
+% 165.
+\bibitem{01253}
+---{}---.
+%%%
+\emph{De centro divulsionis}
+[September 1672 \textendash\ M{\"a}rz 1673].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~23, \bblp{}~185\textendash188.
+\bibAnnoteFile{01253}
+
+% 166.
+\bibitem{01353}
+---{}---.
+%%%
+\emph{De chordis in circulo.
+De hemisphaerii et sphaeroeidum superficiebus}
+[Fr{\"u}hjahr 1673].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VII,~4 N.~11, \bblp{}~164\textendash173.
+\bibAnnote{01353}
+
+% 167.
+\bibitem{01299}
+---{}---.
+%%%
+\emph{De consistentia corporum}
+[Herbst 1672 \textendash\ Winter 1672/73].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~3 N.~4, \bblp{}~94\textendash96.
+\bibAnnote{01299}
+
+% 168.
+\bibitem{01345}
+---{}---.
+%%%
+\emph{De detrimento motus. Pars secunda}
+[April 1675].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~32, \bblp{}~267\textendash284.
+\bibAnnote{01345}
+
+% 169.
+\bibitem{01254}
+---{}---.
+%%%
+\emph{De distractione 1}
+[September 1672 \textendash\ M{\"a}rz 1673].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~24, \bblp{}~189\textendash190.
+\bibAnnoteFile{01254}
+
+% 170.
+\bibitem{01255}
+---{}---.
+%%%
+\emph{De distractione 2}
+[September 1672 \textendash\ M{\"a}rz 1673].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~25, \bblp{}~191\textendash195.
+\bibAnnoteFile{01255}
+
+% 171.
+\bibitem{01351}
+---{}---.
+%%%
+\emph{De ictuum quantitate}
+[Mai 1675].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~52, \bblp{}~446\textendash448.
+\bibAnnote{01351}
+
+% 172.
+\bibitem{01307}
+(\textsc{Leibniz,} G.\,W.)
+%%%
+\emph{De la philosophie cartesienne}
+[Sommer 1683 \textendash\ Winter 1684/85].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~289, \bblp{}~1479\textendash1488.
+\bibAnnote{01307}
+
+% 173.
+\bibitem{02041}
+---{}---.
+%%%
+\emph{De legibus naturae et vera aestimatione virium motricium contra Cartesianos,
+responsio ad rationes a dn. Papino mense Januarii anni 1691 in Actis eruditorum propositas}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1691), \bblpp{}~438\textendash447
+(\textit{LMG} VI, S.~204\textendash211).
+\bibAnnoteFile{02041}
+
+% 174.
+\bibitem{02033}
+---{}---.
+%%%
+\emph{De linea in quam flexile se pondere proprio curvat,
+ejusque usu insigni ad inveniendas quotcunque medias proportionales et logarithmos}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1691), \bblpp{}~277\textendash281
+(\textit{LMG} V, S.~243\textendash247).
+\bibAnnoteFile{02033}
+
+% 175.
+\bibitem{01358}
+---{}---.
+%%%
+\emph{De lineis opticis, et alia}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1689), \bblp{}~36\textendash38.
+\bibAnnote{01358}
+
+% 176.
+\bibitem{01376}
+---{}---.
+%%%
+\emph{De motu et effectu}
+[April 1675].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~18, \bblp{}~160\textendash163.
+\bibAnnote{01376}
+
+% 177.
+\bibitem{01355}
+---{}---.
+%%%
+\emph{De natura veritatis, contingentiae et indifferentiae
+atque de libertate et praedeterminatione}
+[Ende 1685 \textendash\ Mitte 1686 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~303, \bblp{}~1514\textendash1524.
+\bibAnnote{01355}
+
+% 178.
+\bibitem{01308}
+---{}---.
+%%%
+\emph{De necessitate et contingentia}
+[Sommer 1680 \textendash\ Sommer 1684 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~272, \bblpp{}~1449\,f.
+\bibAnnote{01308}
+
+% 179.
+\bibitem{01228}
+---{}---.
+%%%
+\emph{De paraboloeidum et hyperboloeidum quadratura.
+Pars prima: De paraboloeidum quadratura}.
+[Sommer 1673]
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VII,~4 N.~39\textsubscript{1}, \bblp{}~617\textendash642.
+\bibAnnoteFile{01228}
+
+% 180.
+\bibitem{01380}
+---{}---.
+%%%
+\emph{De potentiae absolutae conservatione}.
+[Winter 1689/90 (?)]
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~379, \bblp{}~2077\textendash2079.
+\bibAnnote{01380}
+
+% 181.
+\bibitem{02064}
+---{}---.
+%%%
+\emph{De primae philosophiae emendatione, et de notione substantiae}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1694), \bblpp{}~110\textendash112
+(\textit{LPG} IV, S.~468\textendash470).
+\bibAnnoteFile{02064}
+
+% 182.
+\bibitem{01229}
+---{}---.
+%%%
+\emph{De quadratura arithmetica circuli ellipseos et hyperbolae}.
+[Juni \textendash\ September 1676]
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VII,~6 N.~51, \bblp{}~520\textendash676.
+\bibAnnoteFile{01229}
+
+% 183.
+\bibitem{01249}
+---{}---.
+%%%
+\emph{De quibusdam circa resistentiam quae a Galileo dicuntur}
+[September 1672 \textendash\ M{\"a}rz 1673].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~19, \bblp{}~167\textendash172.
+\bibAnnoteFile{01249}
+
+% 184.
+\bibitem{02025}
+---{}---.
+%%%
+\emph{De rationibus motus}
+[August \textendash\ September (?) 1669].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~2 N.~38\textsubscript{1}, \bblp{}~157\textendash159.
+\bibAnnoteFile{02025}
+
+% 185.
+\bibitem{01369}
+---{}---.
+%%%
+\emph{De resistentia absoluta et respectiva in frictione}.
+[Mitte 1675]
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~35, \bblp{}~325\textendash341.
+\bibAnnote{01369}
+
+% 186.
+\bibitem{01256}
+---{}---.
+%%%
+\emph{De resistentia tabulae ligneae}
+[Januar (?) \textendash\ M{\"a}rz 1673].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~26, \bblp{}~196\textendash201.
+\bibAnnoteFile{01256}
+
+% 187.
+\bibitem{01252}
+---{}---.
+%%%
+\emph{De trabis resistentia uniformis}.
+[September 1672 \textendash\ M{\"a}rz 1673]
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~22, \bblp{}~182\textendash184.
+\bibAnnoteFile{01252}
+
+% 188.
+\bibitem{02042}
+---{}---.
+%%%
+\emph{De vera proportione circuli ad quadratum circumscriptum
+in numeris rationalibus expressa}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1682), \bblpp{}~41\textendash46
+(\textit{LMG} V, S.~118\textendash122).
+\bibAnnoteFile{02042}
+
+%. 189.
+\bibitem{01344}
+---{}---.
+%%%
+\emph{De vitandis erroribus geometricis in re mechanica}.
+\lbrack Dezember 1674\rbrack\
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~10, \bblp{}~122\textendash125.
+\bibAnnote{01344}
+
+% 190.
+\bibitem{01339}
+---{}---.
+%%%
+\emph{Definitiones cogitationesque metaphysicae}
+[Sommer 1678 \textendash\ Winter 1680/81 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~267, \bblp{}~1393\textendash1405.
+\bibAnnote{01339}
+
+% 191.
+\bibitem{01098}
+---{}---.
+%%%
+\emph{Demonstratio geometrica regulae apud staticos receptae,
+de momentis gravium in planis inclinatis}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1685), \bblpp{}~501\textendash505
+(\textit{GM} VI, S.~112\textendash117).
+\bibAnnote{01098}
+
+% 192.
+\bibitem{01041}
+---{}---.
+%%%
+\emph{Demonstrationes novae de resistentia solidorum}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1684), \bblpp{}~319\textendash325
+(\textit{LMG} VI, S.~106\textendash112).
+\bibAnnoteFile{01041}
+
+% 193.
+\bibitem{01305}
+---{}---.
+%%%
+\emph{Deus nihil vult sine ratione}
+[1678 \textendash\ 1681 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~264, \bblpp{}~1388\,f.
+\bibAnnote{01305}
+
+% 194.
+\bibitem{01370}
+---{}---.
+%%%
+\emph{Du frottement.
+Essais g{\'e}om{\'e}triques en fait de m{\'e}canique.}
+Erste Fassung.
+[Ende 1675]
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~36\textsubscript{1}, \bblp{}~343\textendash352.
+\bibAnnote{01370}
+
+% 195.
+\bibitem{01371}
+---{}---.
+%%%
+\emph{Du frottement.
+Essais g{\'e}om{\'e}triques en fait de m{\'e}canique.}
+Zweite Fassung [Ende 1675]
+mit sp{\"a}terem Zusatz [nach Januar 1678].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~36\textsubscript{2}, \bblp{}~353\textendash363.
+\bibAnnote{01371}
+
+% 196.
+\bibitem{01354}
+---{}---.
+%%%
+\emph{Dynamica de potentia et legibus naturae corporeae}.
+%%%
+\capitalize\bblin{}:
+\emph{LMG} VI, \bblp{}~281\textendash514.
+\bibAnnote{01354}
+
+% 197.
+\bibitem{01212}
+(\textsc{Leibniz,} G.\,W.)
+%%%
+\emph{Epistolae ad diversos,
+theologici, iuridici, medici, philosophici, mathematici, historici et philologici argumenti}.
+%%%
+Hrsg. v. H.\,C. \textsc{Kortholt}.
+4~Bde.
+Leipzig 1734\textendash1742.
+\bibAnnoteFile{01212}
+
+% 198.
+\bibitem{01368}
+---{}---.
+%%%
+\emph{Essai de quelques d{\'e}monstrations m{\'e}caniques, du frottement}
+[Mai 1675].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~34\textsubscript{4}, \bblp{}~319\textendash223.
+\bibAnnote{01368}
+
+% 199.
+\bibitem{01289}
+---{}---.
+%%%
+\emph{Essais scientifiques et philosophiques}.
+%%%
+Hrsg. von A.~\textsc{Lamarra} u. R.~\textsc{Palaia}.
+3~Bde.
+Hildesheim, Z{\"u}rich u. New York 2005.
+[= \textsc{La\-mar\-ra/Palaia} 2005]
+\bibAnnote{01289}
+
+% 200.
+\bibitem{01292}
+---{}---.
+%%%
+\emph{Excerpta ex libro Du choc des corps}
+[letzte Monate 1674].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~50, \bblp{}~422\textendash443.
+\bibAnnote{01292}
+
+% 201.
+\bibitem{01375}
+---{}---.
+%%%
+\emph{Excerpta ex Wallisio cogitatis obiter occurrentibus aucta}
+[letzte Monate 1674].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~9, \bblp{}~107\textendash121.
+\bibAnnote{01375}
+
+% 202.
+\bibitem{01069}
+---{}---.
+%%%
+\emph{Experimenta novissima pneumatica illustris Hugenii}
+[25. Juli \textendash\ 12. Dezember 1672].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~1 N.~39, \bblp{}~291\textendash323.
+\bibAnnoteFile{01069}
+
+% 203.
+\bibitem{01265}
+---{}---.
+%%%
+\emph{Experimenta pneumatica circa vacuum}.
+[25. Juli \textendash\ 12. Dezember 1672]
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~1 N.~40, \bblp{}~324\textendash333.
+\bibAnnoteFile{01265}
+
+% 204.
+\bibitem{02054}
+---{}---.
+%%%
+\emph{Extrait d'une lettre de M.\ L.\ sur un principe g{\'e}n{\'e}ral utile {\`a} l'explication des lois de la nature}.
+%%%
+\capitalize\bblin{}:
+\emph{Nouvelles de la r{\'e}publique des lettres} (1687), \bblp{}~744\textendash753.
+\bibAnnoteFile{02054}
+
+% 205.
+\bibitem{00256}
+---{}---.
+%%%
+\emph{Hypothesis physica nova}.
+%%%
+Mainz 1671
+(\textit{LSB} VI,~2 N.~40, S.~219\textendash257).
+\bibAnnote{00256}
+
+% 206.
+\bibitem{01304}
+---{}---.
+%%%
+\emph{Initia et specimina scientiae novae generalis}.
+[Fr{\"u}hjahr 1682 (?)]
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~110, \bblpp{}~442\,f.
+\bibAnnote{01304}
+
+% 207.
+\bibitem{01056}
+---{}---.
+%%%
+\emph{La r{\'e}forme de la dynamique:
+\glqq De corporum concursu\grqq\ (1678) et autres textes in{\'e}dits}.
+%%%
+Hrsg. v. M.~\textsc{Fichant}.
+Paris 1994.
+[= \textsc{Fichant} 1994]
+\bibAnnote{01056}
+
+% 208.
+\bibitem{02075}
+---{}---.
+%%%
+\emph{Machina ad navigationem efficiendam}
+[Anfang 1672].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~1 N.~5, \bblp{}~62\textendash64.
+\bibAnnoteFile{02075}
+
+% 209.
+\bibitem{01043}
+---{}---.
+%%%
+\textit{Leibnizens gesammelte Werke}.
+Hrsg.\ v. G.\,H. \textsc{Pertz}.
+Dritte Folge: 
+\emph{Mathematische Schriften}.
+%%%
+Hrsg. v. C.\,I. \textsc{Gerhardt}.
+7~Bde.
+Berlin u. Halle 1849\textendash1863.
+Nachdr. Hildesheim 1962.
+[= \textit{LMG}]
+\bibAnnote{01043}
+
+% 210.
+\bibitem{00197}
+---{}---.
+%%%
+\emph{Nachgelassene Schriften physikalischen, mechanischen und technischen Inhalts}.
+%%%
+Hrsg. v. E.~\textsc{Gerland}.
+Leipzig 1906.
+[= \textsc{Gerland} 1906]
+\bibAnnote{00197}
+
+% 211.
+\bibitem{02065}
+---{}---.
+%%%
+\emph{Notata quaedam G.\,G.\,L. circa vitam et doctrinam Cartesii}
+[Fr{\"u}hjahr 1689 \textendash\ Herbst 1689 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~376, \bblp{}~2057\textendash2065.
+\bibAnnoteFile{02065}
+
+% 212.
+\bibitem{01248}
+---{}---.
+%%%
+\emph{Oeuvre concernant la physique}.
+%%%
+Hrsg. v. J.~\textsc{Peyroux}.
+Paris 1985.
+\bibAnnoteFile{01248}
+
+% 213.
+\bibitem{00150}
+---{}---.
+%%%
+\emph{Opera omnia.
+Nunc primum collecta, in classes distributa, praefationibus et indicibus exornata}.
+%%%
+Hrsg. v. L.~\textsc{Dutens}.
+6~Bde.
+Genf 1768.
+[= \textit{LOD}]
+\bibAnnote{00150}
+
+% 214.
+\bibitem{01251}
+---{}---.
+%%%
+\emph{Paralogismus Galilaeanus de resistentia trabis}
+[September 1672 \textendash\ M{\"a}rz 1673].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~21, \bblp{}~176\textendash181.
+\bibAnnoteFile{01251}
+
+% 215.
+\bibitem{01317}
+---{}---.
+%%%
+\emph{Periculosa in Cartesio}
+[Sommer 1683 \textendash\ Winter 1684/85].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~288, \bblp{}~1475\textendash1478.
+\bibAnnote{01317}
+
+% 216.
+\bibitem{02039}
+---{}---.
+%%%
+\emph{Philosophische Schriften}.
+%%%
+Hrsg. v. C.\,I. \textsc{Gerhardt}.
+7~Bde.
+Berlin u. Halle 1875\textendash1890.
+Nachdr.\ Hildesheim 1960\textendash1961.
+[= \textit{LPG}]
+\bibAnnoteFile{02039}
+
+% 217.
+\bibitem{01338}
+---{}---.
+%%%
+\emph{Principia mechanica ex metaphysicis dependere}.
+[Sommer 1678 \textendash\ Winter 1680/81 (?)]
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~362, \bblp{}~1976\textendash1980.
+\bibAnnote{01338}
+
+% 218.
+\bibitem{02055}
+(\textsc{Leibniz,} G.\,W.)
+%%%
+\emph{Principium quoddam generale
+non in mathematicis tantum
+sed et physicis utile}
+[September \textendash\ Dezember 1688 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~371, \bblp{}~2031\textendash2039.
+\bibAnnoteFile{02055}
+
+% 219.
+\bibitem{01377}
+---{}---.
+%%%
+Promemoria von Mitte (?) September 1686 für das Bergamt zu Clausthal.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~4 N.~245, \bblpp{}~284\,f.
+\bibAnnote{01377}
+
+% 220.
+\bibitem{00258}
+---{}---.
+%%%
+\emph{Propositiones quaedam physicae}.
+Dritter Entwurf
+[Frühjahr \textendash\ Herbst 1672 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~3 N.~2\textsubscript{3}, \bblp{}~11\textendash68.
+\bibAnnoteFile{00258}
+
+% 221.
+\bibitem{02044}
+---{}---.
+%%%
+\emph{Quadratura arithmetica communis sectionum conicarum quae centrum habent,
+indeque ducta trigonometria canonica ad quantamcunque in numeris exactitudinem
+a tabularum necessitudine liberata,
+cum usu speciali ad lineam rhomborum nauticam aptatumque illi planisphaerium}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1691), \bblpp{}~178\textendash182
+(\textit{LMG} V, S.~128\textendash140).
+\bibAnnoteFile{02044}
+
+% 222.
+\bibitem{01349}
+---{}---.
+%%%
+\emph{Quomodo penduli motus magnete effici possit}
+[2. H{\"a}lfte 1672].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~87, \bblpp{}~722\,f.
+\bibAnnote{01349}
+
+% 223.
+\bibitem{01306}
+---{}---.
+%%%
+\emph{Reflexio}
+[1683 \textendash\ 1685 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~283, \bblpp{}~1470\,f.
+\bibAnnote{01306}
+
+% 224.
+\bibitem{01250}
+---{}---.
+%%%
+\emph{Resistentia trabis eadem est}
+[September 1672 \textendash\ M{\"a}rz 1673].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~2 N.~20, \bblp{}~173\textendash175.
+\bibAnnoteFile{01250}
+
+% 225.
+\bibitem{02023}
+---{}---.
+%%%
+Rezension von I.\,F.\,\textsc{Vanni}, \textit{Exegeses physico-mathematicae}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1687), \bblp{}~197\,f.
+\bibAnnoteFile{02023}
+
+% 226.
+\bibitem{01024}
+---{}---.
+%%%
+\emph{Schediasma de resistentia medii et motu projectorum gravium in medio re\-si\-sten\-te}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1689), \bblpp{}~38\textendash47
+(\textit{LMG} VI, S.~135\textendash143).
+\bibAnnote{01024}
+
+% 227.
+\bibitem{02032}
+---{}---.
+%%%
+\emph{Specimen dynamicum,
+pro admirandis naturae legibus
+circa corporum vires et mutuas actiones detegendis
+et ad suas causas revocandis.
+Pars I}. % prima 
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1695), \bblpp{}~145\textendash157
+(\textit{LMG} VI, S.~234\textendash246).
+\bibAnnoteFile{02032}
+
+% 228.
+\bibitem{01276}
+---{}---.
+%%%
+\emph{Summa hypotheseos physicae novae}
+[zweite H{\"a}lfte 1671 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~2 N.~48, \bblp{}~326\textendash378.
+\bibAnnote{01276}
+
+% 229.
+\bibitem{00267}
+---{}---.
+%%%
+\emph{Sur les ph{\'e}nom{\`e}nes de l'attachement des corps dans le vide}
+[Fr{\"u}hjahr 1673].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~1 N.~48, \bblp{}~417\textendash460.
+\bibAnnoteFile{00267}
+
+% 230.
+\bibitem{00543}
+---{}---.
+%%%
+\emph{Tentamen de motuum coelestium causis}
+[erste Bearbeitung].
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1689), \bblpp{}~82\textendash96
+(\textit{LMG} VI, S.~144\textendash161).
+\bibAnnoteFile{00543}
+
+% 231.
+\bibitem{00259}
+---{}---.
+%%%
+\emph{Theoria motus abstracti}
+[Winter 1670/71 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI N.~41, \bblpp{}~258\textendash276.
+\bibAnnoteFile{00259}
+
+% 232.
+\bibitem{01277}
+---{}---.
+%%%
+\emph{{\"U}ber Morlands Sprachrohr}
+[1671].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~1 N.~58, \bblp{}~553.
+\bibAnnote{01277}
+
+% 233.
+\bibitem{01301}
+---{}---.
+%%%
+Zu Descartes' \emph{Opera philosophica}
+[1677 \textendash\ 1687 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~4 N.~335, \bblp{}~1695\textendash1705.
+\bibAnnote{01301}
+
+% 234.
+\bibitem{01302}
+---{}---.
+%%%
+Zu Descartes' \emph{Principia philosophiae}
+[Winter 1675/76 \textendash\ Fr{\"u}hjahr 1676 (?)].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VI,~3 N.~15, \bblp{}~213\textendash217.
+\bibAnnote{01302}
+
+% 235.
+\bibitem{01278}
+---{}---.
+%%%
+Zu Samuel Morland, \emph{Tuba stentoro-phonica}
+[1. H{\"a}lfte 1671].
+%%%
+\capitalize\bblin{}:
+\emph{LSB} VIII,~1 N.~62, \bblp{}~570\textendash571.
+\bibAnnote{01278}
+
+% 236.
+\bibitem{01319}
+\textsc{Leibniz}, J.\,F.
+%%%
+Brief an G.\,W. Leibniz vom 28. Februar (10. M{\"a}rz) 1685.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~4 N.~573, \bblp{}~684.
+\bibAnnote{01319}
+
+% 237.
+\bibitem{01320}
+---{}---.
+%%%
+Brief an G.\,W. Leibniz vom 23. M{\"a}rz (2. April) 1685.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~4 N.~574, \bblp{}~685.
+\bibAnnote{01320}
+
+% 238.
+\bibitem{01321}
+---{}---.
+%%%
+Brief an G.\,W. Leibniz vom 8. (18.) April 1685.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~4 N.~577, \bblpp{}~686\,f.
+\bibAnnote{01321}
+
+% 239.
+\bibitem{01333}
+\textsc{Leidenfrost}, F.\,W.
+%%%
+Brief an G.\,W. Leibniz vom 12. (22.) M{\"a}rz 1683.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~3 N.~187, \bblpp{}~223\,f.
+\bibAnnote{01333}
+
+% 240.
+\bibitem{02062}
+\textsc{de L'Hospital}, G.\,F.\,A.
+%%%
+\emph{Solutio problematis de linea celerrimi descensus}.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1697), \bblp{}~217\textendash220.
+\bibAnnote{02062}
+
+% 241.
+\bibitem{00072}
+\textsc{Line [Linus]}, F.
+%%%
+\emph{Tractatus de corporum inseparabilitate;
+in quo experimenta de vacuo tam Torricelliana quam Magdeburgica et Boyliana examinantur,
+veraque eorum causa detecta ostenditur vacuum naturaliter dari non posse;
+unde et Aristotelica de rarefactione sententia tam contra assertores vacuitatum quam corpusculorum demonstratur.
+Accessit solutio difficillimi illius problematis Aristotelici de duabus rotis
+quae, licet valde inaequales, aequales tamen orbitas describunt}.
+%%%
+London 1661.
+\bibAnnote{00072}
+
+% 242.
+\bibitem{00143}
+[\textsc{Magalotti}, L.]
+%%%
+\emph{Saggi di naturali esperienze, fatte nell'Accademia del Cimento}.
+%%%
+Florenz 1666.
+\bibAnnote{00143}
+
+% 243.
+\bibitem{01196}
+\textsc{Magiotti}, R.
+%%%
+\emph{Renitenza certissima del\-l'ac\-qua alla compressione.
+Dichiarata con varij scherzi in occasion d'altri problemi curiosi}.
+%%%
+Rom 1648.
+\bibAnnote{01196}
+
+% 244.
+\bibitem{00539}
+\textsc{Marci}, J.\,M.
+%%%
+\emph{De proportione motus figurarum recti-linearum et circuli quadratura ex motu}.
+%%%
+Prag 1648.
+\bibAnnoteFile{00539}
+
+% 245.
+\bibitem{01232}
+\textsc{Mariotte}, E.
+%%%
+Brief an G.\,W. Leibniz vom 28. April 1678.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~2 N.~163, \bblp{}~404\textendash408.
+\bibAnnoteFile{01232}
+
+% 246.
+\bibitem{01209}
+---{}---.
+%%%
+Brief an G.\,W. Leibniz von März/April 1681.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~193, \bblp{}~373\textendash375.
+\bibAnnoteFile{01209}
+
+% 247.
+\bibitem{01210}
+---{}---.
+%%%
+Brief an G.\,W. Leibniz vom 8. August 1681.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~262, \bblp{}~464\textendash465.
+\bibAnnoteFile{01210}
+
+% 248.
+\bibitem{01222}
+---{}---.
+%%%
+Brief an G.\,W. Leibniz vom 29. November 1681.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~297, \bblp{}~518\textendash521.
+\bibAnnoteFile{01222}
+
+% 249.
+\bibitem{01233}
+---{}---.
+%%%
+Brief an G.\,W. Leibniz vom 20. Juli 1682.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~376, \bblp{}~669\textendash672.
+\bibAnnoteFile{01233}
+
+% 250.
+\bibitem{01340}
+---{}---.
+%%%
+Brief an G.\,W. Leibniz vom 31. August 1682.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~394, \bblp{}~705\textendash707.
+\bibAnnote{01340}
+
+% 251.
+\bibitem{01290}
+---{}---.
+%%%
+Brief an G.\,W. Leibniz vom 5. Juni 1683.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~474, \bblp{}~829\textendash832.
+\bibAnnote{01290}
+
+% 252.
+\bibitem{01231}
+---{}---.
+%%%
+\emph{Dissertation sur la r{\'e}sistance des solides}.
+Beilage zum Brief an G.\,W. Leibniz vom 25. Januar 1683.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~437, \bblp{}~772\textendash776.
+\bibAnnoteFile{01231}
+
+% 253.
+\bibitem{01219}
+---{}---.
+%%%
+\emph{Nouvelle d{\'e}couverte touchant la ve{\"u}e}.
+%%%
+Paris 1668.
+\bibAnnoteFile{01219}
+
+% 254.
+\bibitem{01218}
+---{}---.
+%%%
+\emph{Oeuvres,
+comprenant tous le Traitez de cet Auteur,
+tant ceux qui avoient d{\'e}ja paru s{\'e}par{\'e}ment,
+que ceux qui n'avoient pas encore {\'e}t{\'e} publiez}.
+%%%
+2~Bde.
+Leiden 1717.
+[= \textit{MO}]
+\bibAnnoteFile{01218}
+
+% 255.
+\bibitem{01220}
+---{}---.
+%%%
+\emph{Seconde lettre {\`a} M. Pequet pour montrer que la Choroide est le principal organe de ve{\"u}e}.
+%%%
+Paris 1671.
+\bibAnnoteFile{01220}
+
+% 256.
+\bibitem{00311}
+---{}---.
+%%%
+\emph{Traitt{\'e} de la percussion ou chocq des corps,
+dans lequel les principales regles du mouvement, contraires {\`a} celles
+que Mr Des Cartes et quelques autres modernes ont voulu establir,
+sont demonstr{\'e}es par leurs veritables causes.}
+%%%
+Paris 1673.
+\bibAnnote{00311}
+
+% 257.
+\bibitem{01296}
+\textsc{Mayow}, J.
+%%%
+\emph{De respiratione foetus in utero, et ovo}.
+%%%
+\capitalize\bblin{}:
+\emph{Tractatus quinque physico-medici}.
+Oxford 1674.
+\bibAnnote{01296}
+
+% 258.
+\bibitem{01997}
+---{}---.
+%%%
+\emph{Tractatus quinque medico-physici:
+Quorum primus agit de sal-nitro et spiritu nitro-aereo.
+Secundus de respiratione.
+Tertius de respiratione foetus in utero, et ovo.
+Quartus de motu musculari et spiritibus animalibus.
+Ultimus de rhachitide}.
+%%%
+Oxford 1674.
+\bibAnnoteFile{01997}
+
+% 259.
+\bibitem{01258}
+\textsc{Mencke}, O.
+%%%
+Brief an G.\,W. Leibniz vom 16. (26.) Juli 1684.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~4 N.~391, \bblp{}~475\,f.
+\bibAnnoteFile{01258}
+
+% 260.
+\bibitem{02013}
+---{}---.
+%%%
+Brief an G.\,W. Leibniz vom 14. (24.) Oktober 1686.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~4 N.~499, \bblp{}~600\,f.
+\bibAnnoteFile{02013}
+
+% 261.
+\bibitem{02014}
+---{}---.
+%%%
+Brief an G.\,W. Leibniz vom 2. (12.) März 1687.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~4 N.~521, \bblp{}~628.
+\bibAnnoteFile{02014}
+
+% 262.
+\bibitem{01227}
+\textsc{Mersenne}, M.
+%%%
+\emph{Ballistica et acontismologia, 
+in qua sagittarum, iaculorum et aliorum missilium iactus
+et robur arcuum explicantur.}
+%%%
+Paris 1644.
+\bibAnnoteFile{01227}
+
+% 263.
+\bibitem{01336}
+---{}---.
+%%%
+\emph{Harmonicorum libri duodecim:
+In quibus agitur de sonorum natura, causis et effectibus:
+de consonantiis, dissonantiis, rationibus, generibus, modis, cantibus, compositione orbisque totius harmonicis instrumentis}.
+%%%
+Paris 1648.
+\bibAnnote{01336}
+
+% 264.
+\bibitem{01205}
+(\textsc{Mersenne}, M.)
+%%%
+\emph{Harmonie universelle, contenant la th{\'e}orie et la pratique de la musique}.
+%%%
+2~Bde. % 2~Teile in 
+Paris 1636\textendash1637.
+\bibAnnoteFile{01205}
+
+% 265.
+\bibitem{00118}
+\textsc{de Monconys}, B.
+%%%
+\emph{Journal des Voyages}.
+%%%
+3~Bde.
+Lyon 1665\textendash1666.
+\bibAnnoteFile{00118}
+
+% 266.
+\bibitem{01213}
+\textsc{More, H.}
+%%%
+Brief an R. Descartes vom 23. Juli 1649.
+%%%
+\capitalize\bblin{}:
+\emph{DL} I (1657), Nr.~70, S.~366\textendash385
+(\textit{DO}~V, Nr.~564, S.~376-390).
+\bibAnnote{01213}
+
+% 267.
+\bibitem{01207}
+\textsc{Morhof}, D.\,G.
+%%%
+\emph{Stentor \pgrk{<ualoklast'hs} sive
+De scypho vitreo per certum humanae vocis sonum fracto ...\;dissertatio,
+qua soni natura non parum illustratur}.
+%%%
+2.~vermehrte Ausg.
+Kiel 1682.
+\bibAnnote{01207}
+
+% 268.
+\bibitem{00149}
+\textsc{Morland}, S.
+%%%
+\emph{Tuba stentoro-phonica,
+an instrument of excellent use,
+as well at sea, as at land;
+invented and variously experimented in the year 1670}.
+%%%
+London 1672.
+[Marg.]
+\bibAnnote{00149}
+
+% 269.
+\bibitem{02030}
+\textsc{Newton}, I.
+%%%
+\emph{De ratione temporis
+quo grave labitur per rectam datam duo puncta conjungentem,
+ad tempus brevissimum
+quo, vi gravitatis, transit ab horum uno ad alterum per arcum cycloidis}.
+%%%
+\capitalize\bblin{}:
+\emph{PT}, 19 (1697), \bblp{}~424\,f.
+\bibAnnoteFile{02030}
+
+% 270.
+\bibitem{00535}
+---{}---.
+%%%
+\emph{Philosophiae naturalis principia mathematica}.
+%%%
+London 1687.
+[Marg.]
+\bibAnnoteFile{00535}
+
+% 271.
+\bibitem{02069}
+\textsc{Papin}, D.
+%%%
+Brief an G.\,W. Leibniz vom 29.\ November (9.\ Dezember) 1695.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~6 N.~179, \bblp{}~558\textendash562.
+\bibAnnoteFile{02069}
+
+% 272.
+\bibitem{02070}
+---{}---.
+%%%
+Brief an G.\,W. Leibniz vom 2.\ (12.) Juli 1696.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~7 N.~2, \bblp{}~19\textendash21.
+\bibAnnoteFile{02070}
+
+% 273.
+\bibitem{01500}
+\textsc{Parent}, A.
+%%%
+\emph{{\'E}l{\'e}mens de m{\'e}canique et de physique}.
+%%%
+Paris 1700.
+\bibAnnote{01500}
+
+% 274.
+\bibitem{02029}
+---{}---.
+%%%
+\emph{Loy universelle pour quelque multitude de corps que ce soit,
+dans quelque proportion de masse, de vitesse, de ressort, de duret{\'e} ou de molesse
+que ce puisse {\^e}tre.}
+%%%
+\capitalize\bblin{}:
+\emph{JS} (1699), \bblp{}~197\textendash200.
+\bibAnnoteFile{02029}
+
+% 275.
+\bibitem{00234}
+\textsc{Pascal}, B.
+%%%
+\emph{Oeuvres}.
+%%%
+Hrsg. v. P.~\textsc{Boutroux}, L.~\textsc{Brunschvicg} u. F.~\textsc{Gazier}.
+14~Bde.
+Paris 1904\textendash1914.
+Nachdr. Vaduz 1965.
+[= \textit{PO}]
+\bibAnnote{00234}
+
+% 276.
+\bibitem{00081}
+---{}---.
+%%%
+\emph{Traitez de l'{\'e}quilibre des liqueurs
+et de la pesanteur de la masse de l'air,
+contenant l'explication des causes de divers effets de la nature
+qui n'avoient point {\'e}t{\'e} bien connus jusques ici,
+et particuli{\`e}rement de ceux
+que l'on avait attribu{\'e}s {\`a} l'horreur du vide}.
+%%%
+Paris 1663
+(\textit{PO} III, S.~141\textendash292).
+\bibAnnote{00081}
+
+% 277.
+\bibitem{01223}
+\textsc{Perrault}, C.
+%%%
+\emph{Du bruit}.
+%%%
+In:
+\textit{Essais de physique}.
+Bd~II.
+Paris 1680.
+\bibAnnoteFile{01223}
+
+% 278.
+\bibitem{01016}
+---{}---.
+%%%
+\emph{Essais de physique,
+ou recueil de plusieurs traitez touchant les choses naturelles}.
+%%%
+4~Bde.
+Paris 1680\textendash1688.
+\bibAnnote{01016}
+
+% 279.
+\bibitem{01356}
+\textsc{Pfautz}, C.
+%%%
+Rezension von
+I.\,\textsc{Newton},
+\emph{Philosophiae naturalis principia mathematica},
+London 1687.
+%%%
+\capitalize\bblin{}:
+\emph{AE} (1688), \bblp{}~303\textendash315.
+\bibAnnote{01356}
+
+% 280.
+\bibitem{01199}
+\textsc{Pseudo-Plutarch}.
+%%%
+\emph{Placita philosophorum (Epitome)}.
+%%%
+\capitalize\bblin{}:
+\emph{Doxographi Graeci}.
+Hrsg. v. H.~\textsc{Diels}.
+Berlin 1879.
+S.~273\textendash444.
+\bibAnnote{01199}
+
+% 281.
+\bibitem{01239}
+\textsc{Ramazzini}, B.
+%%%
+\emph{Epistolario}.
+%%%
+Modena 1964.
+\bibAnnote{01239}
+
+% 282.
+\bibitem{02021}
+\textsc{Regnauld}, F.
+%%%
+Brief an B. de Monconys vom 21.~Dezember 1655.
+%%%
+In:
+B.~\textsc{de Monconys}.
+\textit{Journal des Voyages}.
+Bd~III.
+Lyon 1666.
+S.~52\textendash56.
+\bibAnnoteFile{02021}
+
+% 283.
+\bibitem{02027}
+\textsc{Renau~d'Eli\c{c}agaray}, B.
+%%%
+\emph{Th{\'e}orie de la manoeuvre des vaisseaux}.
+%%%
+Paris 1688.
+\bibAnnoteFile{02027}
+
+% 284.
+\bibitem{01323}
+\textsc{Rivinus}, Q.\,S.\,F.
+%%%
+Brief an G.\,W. Leibniz vom 8. (18.) April 1685.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~4 N.~578, \bblp{}~687.
+\bibAnnote{01323}
+
+% 285.
+\bibitem{01324}
+(\textsc{Rivinus}, Q.\,S.\,F.)
+%%%
+Entwurf eines Vertrages.
+Beilage zum Brief an G.\,W. Leibniz vom 8. (18.) April 1685.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~4 N.~579, \bblpp{}~688\,f.
+\bibAnnoteFile{01324}
+
+% 286.
+\bibitem{01240}
+\textsc{Robinet}, A.
+%%%
+\emph{G.\,W.\:Leibniz Iter Italicum
+(Mars 1689 \textendash\ Mars 1690).
+La dynamique de la R{\'e}publique des Lettres.
+Nombreux textes in{\'e}dits}.
+%%%
+Florenz 1988.
+\bibAnnoteFile{01240}
+
+% 287.
+\bibitem{00087}
+\textsc{Rohault}, J.
+%%%
+\emph{Trait{\'e} de physique.
+Premi{\`e}re partie}.
+%%%
+2. Ausg.
+Paris 1672.
+\bibAnnote{00087}
+
+% 288.
+\bibitem{01337}
+\textsc{Scheel}, G.
+%%%
+\emph{Einleitung}.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I, Supplementband Harzbergbau 1692\textendash1696,
+\bblp{}~XXV–XLV.
+\bibAnnoteFile{01337}
+
+% 289.
+\bibitem{01279}
+\textsc{Schelhammer}, G.\,C.
+%%%
+Brief an G.\,W. Leibniz vom 8. (18.) November 1680.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~124, \bblp{}~284\textendash286.
+\bibAnnoteFile{01279}
+
+% 290.
+\bibitem{01280}
+---{}---.
+%%%
+Brief an G.\,W. Leibniz vom 31. Dezember 1680 (10. Januar 1681).
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~153, \bblpp{}~317\,f.
+\bibAnnoteFile{01280}
+
+% 291.
+\bibitem{01200}
+---{}---.
+%%%
+Brief an G.\,W. Leibniz vom 13. (23.) April 1681.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~206, \bblp{}~394\textendash399.
+\bibAnnoteFile{01200}
+
+% 292.
+\bibitem{01204}
+---{}---.
+%%%
+\emph{De auditu liber unus.
+Quo plerorumque omnium doctorum sententiae examinantur
+et auditus ratio nova methodo, ex ipsius naturae legibus, explicatur}.
+%%%
+Leiden 1684.
+\bibAnnoteFile{01204}
+
+% 293.
+\bibitem{02057}
+\textsc{Schmidt}, J.\,A.
+%%%
+Brief an G.\,W. Leibniz vom 7. Januar 1701.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} I,~19 N.~164, \bblp{}~335.
+\bibAnnoteFile{02057}
+
+% 294.
+\bibitem{01294}
+\textsc{Schrader}, F.
+%%%
+Brief an G.\,W. Leibniz vom 28. November (8. Dezember) 1681.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~3 N.~298, \bblp{}~521\textendash523.
+\bibAnnote{01294}
+
+% 295.
+\bibitem{02067}
+\textsc{Schuller}, G.\,H.
+%%%
+Auszug aus einem Brief von E.\,W.\ Tschirnhaus (1677).
+%%%
+\capitalize\bblin{}:
+\emph{LSB} III,~2 N.~33, \bblp{}~78\,f.
+\bibAnnoteFile{02067}
+
+% 296.
+\bibitem{00546}
+\textsc{Sinclair}, G.
+%%%
+\emph{Ars nova et magna gravitatis et levitatis.
+Sive dialogorum philosophicorum libri sex
+de aeris vera ac reali gravitate, etc.}
+%%%
+Rotterdam 1669.
+\bibAnnoteFile{00546}
+
+% 297.
+\bibitem{01269}
+\textsc{Siver}, H.
+%%%
+Brief an G.\,W. Leibniz vom 6. (16.) Juni 1678.
+%%%
+\capitalize\bblin{}:
+\emph{LSB} II,~1 (2006) N.~179, \bblpp{}~626\textendash628.
+\bibAnnoteFile{01269}
+
+% 298.
+\bibitem{00526}
+\textsc{Sohier}, G.\,J.
+%%%
+\emph{Nouveau systeme de la percussion des corps}.
+%%%
+\capitalize\bblin{}:
+\emph{JS} (1696), \bblp{}~211\textendash214.
+\bibAnnote{00526}
+
+% 299.
+\bibitem{02017}
+\textsc{Tartaglia}, N.
+%%%
+\emph{Nova scientia}.
+%%%
+2. Ausg.
+Venedig 1550.
+\bibAnnoteFile{02017}
+
+% 300.
+\bibitem{00107}
+\textsc{Torricelli}, E.
+%%%
+Brief an Ricci vom 11. Juni 1644.
+%%%
+In:
+C.~\textsc{Dati},
+\textit{Lettera a Filaleti di Timauro Antiante
+della vera storia della cicloide
+e della famosissima esperienza dell'argento vivo}.
+Florenz 1663,
+S.~20\,f.
+(\textit{TO} III, S.~39\textendash318).
+\bibAnnote{00107}
+
+% 301.
+\bibitem{00304}
+---{}---.
+%%%
+\emph{De motu gravium naturaliter descendentium et projectorum libri duo}.
+%%%
+\capitalize\bblin{}:
+\emph{Opera geometrica}.
+Florenz 1644.
+\bibAnnote{00304}
+
+% 302.
+\bibitem{00108}
+---{}---.
+%%%
+\emph{Opere}.
+%%%
+Hrsg. v. G.~\textsc{Loria} u. G.~\textsc{Vassura}.
+4~Bde.
+Faenza 1919.
+[= \textit{TO}]
+\bibAnnote{00108}
+
+% 303.
+\bibitem{02000}
+\textsc{Vanni}, G.
+%%%
+\emph{Exegeses physico-mathematicae
+de momentis gravium, de vecte
+ac de motu aequabiliter accelerato}.
+%%%
+Rom 1685.
+\bibAnnote{02000}
+
+% 304.
+\bibitem{02028}
+\textsc{de Varignon}, P.
+%%%
+\emph{Projet d'une nouvelle mécanique
+avec un examen de l'opinion de M. Borelli,
+sur les propriétez des poids suspendus par des cordes}.
+%%%
+Paris 1687.
+\bibAnnoteFile{02028}
+
+% 305.
+\bibitem{01225}
+\textsc{Vitruvius}.
+%%%
+\emph{De architectura libri decem}.
+%%%
+Hrsg. v. F.~\textsc{Krohn}.
+Leipzig 1912.
+\bibAnnoteFile{01225}
+
+% 306.
+\bibitem{01065}
+\textsc{Wallis}, J.
+%%%
+\emph{A Summary Account given by Dr. John Wallis,
+of the General Laws of Motion,
+by way of Letter written by him to the publisher,
+and communicated to the royal Society, Novemb. 26. 1668}.
+%%%
+\capitalize\bblin{}:
+\emph{PT}, 3 (1668), \bblp{}~864\textendash866.
+\bibAnnote{01065}
+
+% 307.
+\bibitem{01285}
+---{}---.
+%%%
+\emph{Letter to the Publisher, concerning a new Musical Discovery;
+written from Oxford, March 14, 1677}.
+%%%
+\capitalize\bblin{}:
+\emph{PT}, 12 (1677), \bblp{}~839\textendash842.
+\bibAnnote{01285}
+
+% 308.
+\bibitem{00301}
+---{}---.
+%%%
+\emph{Mechanica sive De motu tractatus geometricus}.
+%%%
+2~Bde.
+London 1670\textendash1671
+(\textit{WO} I, S.~570\textendash1063).
+\bibAnnote{00301}
+
+% 309.
+\bibitem{01008}
+(\textsc{Wallis,} J.)
+%%%
+\emph{Opera mathematica}.
+%%%
+3~Bde.
+Oxford 1693\textendash1699.
+Nachdr. Hildesheim 1972.
+[= \textit{WO}]
+\bibAnnote{01008}
+
+% 310.
+\bibitem{01066}
+\textsc{Wren}, C.
+%%%
+\emph{Theory concerning the same Subject,
+imparted to the R. Society Decemb. 17. last,
+though entertain'd by the Author divers years ago,
+and verified by many Experiments,
+made by Himself and that other excellent Mathematician M. Rook before the said Society,
+as is attested by many Worthy Members of that Illustrious Body}.
+%%%
+\capitalize\bblin{}:
+\emph{PT}, 3 (1668), \bblp{}~867\,f.
+\bibAnnote{01066}
+
+% 311.
+\bibitem{01288}
+\textsc{Zabarella}, J.
+%%%
+\emph{De rebus naturalibus libri triginta.
+Quibus quaestiones
+quae ab Aristotelis interpretibus hodie tractari solent,
+accurate discutiuntur}.
+%%%
+Frankfurt am Main 1617.
+\bibAnnoteFile{01288}
+
+\end{thebibliography}
+
+%%%% PR: Fassung vom 26. XII. 2020

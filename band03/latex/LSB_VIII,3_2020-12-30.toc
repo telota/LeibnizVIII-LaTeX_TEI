@@ -1,0 +1,862 @@
+
+\select@language {latin}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {Inhaltsverzeichnis}}{V}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {Vorwort}}{XIII}
+\select@language {german}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {Einleitung}}{XVII}
+\select@language {german}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {Zur Text- und Variantengestaltung}}{XXVII}
+\select@language {ngerman}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {I. Akustik, Elastizit\"{a}t, Festigkeit}}{1}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {1.}\relax \fontsize {7}{8}\selectfont \uppercase {De sono}}{3}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{1.\hskip .5em\relax De sono \hskip .5em\relax [zweite H\IeC {\"a}lfte 1671\tmspace +\thinmuskip {.1667em}(?) \textendash \ vor Dezember 1680]}{3}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {2.}\relax \fontsize {7}{8}\selectfont \uppercase {Tuba stentorea vel acustica}}{7}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{2.\hskip .5em\relax Tuba stentorea vel acustica \hskip .5em\relax [1672 \textendash \ erste H\IeC {\"a}lfte 1685\tmspace +\thinmuskip {.1667em}(?)]}{7}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {ngerman}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {ngerman}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {ngerman}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {ngerman}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {ngerman}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {ngerman}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {ngerman}
+\contentsline {chapter}{\numberline {3.}\relax \fontsize {7}{8}\selectfont \uppercase {Zu J. Mayow, Tractatus de sal-nitro}}{10}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{3.\hskip .5em\relax Zu John Mayow, Tractatus de sal-nitro et spiritu nitro-aereo\hskip .5em\relax [Mitte September 1674 \textendash \ fr\IeC {\"u}he 1680er Jahre\tmspace +\thinmuskip {.1667em}(?)]}{10}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {4.}\relax \fontsize {7}{8}\selectfont \uppercase {De motu}}{12}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{4.\hskip .5em\relax De motu \hskip .5em\relax [Ende 1674 \textendash \ Ende 1677\tmspace +\thinmuskip {.1667em}(?)]}{12}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {5.}\relax \fontsize {7}{8}\selectfont \uppercase {Utrum in animalibus}}{17}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{5.\hskip .5em\relax Utrum in animalibus omnia possint fieri beneficio elateriorum mechanicorum \hskip .5em\relax [1677 \textendash \ Januar 1680\tmspace +\thinmuskip {.1667em}(?)]}{17}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\select@language {german}
+\select@language {ngerman}
+\contentsline {chapter}{\numberline {6.}\relax \fontsize {7}{8}\selectfont \uppercase {Corpora impulsa agunt a se ipsis}}{19}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{6.\hskip .5em\relax Corpora impulsa agunt a se ipsis \hskip .5em\relax [M\IeC {\"a}rz 1677\tmspace +\thinmuskip {.1667em}(?) \textendash \ Januar 1678]}{19}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {7.}\relax \fontsize {7}{8}\selectfont \uppercase {De tensione et restitutione}}{22}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{7.\hskip .5em\relax De tensione et restitutione \hskip .5em\relax [Fr\IeC {\"u}hjahr 1679 \textendash \ Winter 1680/1681\tmspace +\thinmuskip {.1667em}(?)]}{22}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {8.}\relax \fontsize {7}{8}\selectfont \uppercase {De chordarum tensione schedae}}{29}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{8.\hskip .5em\relax Tentaminum de chordarum tensione schedae Dezember 1680 }{29}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {8\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {De chordarum tensione scheda prima}}{30}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{8\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax Tentaminum de chordarum tensione scheda prima }{30}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {8\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {De chordarum tensione scheda secunda}}{36}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{8\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax Tentaminum de chordarum tensione scheda secunda }{36}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {8\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.}\relax \fontsize {7}{8}\selectfont \uppercase {De chordarum tensione scheda tertia}}{43}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{8\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.\hskip .5em\relax Tentaminum de chordarum tensione scheda tertia }{43}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {8\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.}\relax \fontsize {7}{8}\selectfont \uppercase {De chordarum tensione scheda quarta}}{50}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{8\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.\hskip .5em\relax Tentaminum de chordarum tensione scheda quarta }{50}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {8\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 5}.}\relax \fontsize {7}{8}\selectfont \uppercase {De chordarum tensione scheda quinta}}{60}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{8\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 5}.\hskip .5em\relax Tentaminum de chordarum tensione scheda quinta }{60}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {8\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 6}.}\relax \fontsize {7}{8}\selectfont \uppercase {De chordarum tensione scheda sexta}}{64}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{8\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 6}.\hskip .5em\relax Tentaminum de chordarum tensione scheda sexta }{64}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {9.}\relax \fontsize {7}{8}\selectfont \uppercase {Motuum restitutionis regula}}{71}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{9.\hskip .5em\relax Motuum restitutionis regula \hskip .5em\relax [Dezember 1680]}{71}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {10.}\relax \fontsize {7}{8}\selectfont \uppercase {De chordarum tensione}}{83}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{10.\hskip .5em\relax De chordarum tensione \hskip .5em\relax [Ende Dezember 1680\tmspace +\thinmuskip {.1667em}/\tmspace +\thinmuskip {.1667em}Anfang 1681\tmspace +\thinmuskip {.1667em}(?); Ende Juli 1682 \textendash \ April 1683\tmspace +\thinmuskip {.1667em}(?)]}{83}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {11.}\relax \fontsize {7}{8}\selectfont \uppercase {Chordae aequabiles aequaliter tensae}}{88}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{11.\hskip .5em\relax Chordae aequabiles aequaliter tensae habent sonos longitudinibus reciproce proportionales \hskip .5em\relax [Ende 1680\tmspace +\thinmuskip {.1667em}(?) \textendash \ 1685\tmspace +\thinmuskip {.1667em}(?)]}{88}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {12.}\relax \fontsize {7}{8}\selectfont \uppercase {Cogitationes novae de sono}}{90}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{12.\hskip .5em\relax Cogitationes novae de sono \hskip .5em\relax [zweite H\IeC {\"a}lfte August 1681 \textendash \ erste H\IeC {\"a}lfte 1685]}{90}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {12\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {De soni generatione, propagatione et expressione}}{94}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{12\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax De soni generatione, propagatione et expressione in organo, mechanice explicatis }{94}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {12\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {Explicatio mechanica soni}}{105}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{12\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax Explicatio mechanica soni }{105}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {12\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.}\relax \fontsize {7}{8}\selectfont \uppercase {Cogitationes novae quomodo formetur sonus}}{112}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{12\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.\hskip .5em\relax Cogitationes novae quomodo formetur sonus et per aerem propagetur atque in organo auditus exprimatur }{112}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {12\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus G. C. Schelhammer, De auditu}}{148}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{12\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.\hskip .5em\relax Aus G\IeC {\"u}nther Christoph Schelhammer, De auditu }{148}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {12\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 5}.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu J.-G. Duverney, De organo auditus}}{151}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{12\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 5}.\hskip .5em\relax Aus und zu Joseph-Guichard Duverney, Tractatus de organo auditus }{151}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {13.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu J. Jungius, Harmonica}}{159}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{13.\hskip .5em\relax Aus und zu Joachim Jungius, Harmonica \hskip .5em\relax [1683\tmspace +\thinmuskip {.1667em}(?) \textendash \ 1685\tmspace +\thinmuskip {.1667em}(?)]}{159}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {14.}\relax \fontsize {7}{8}\selectfont \uppercase {Demonstrationes de resistentia solidorum}}{169}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{14.\hskip .5em\relax Demonstrationes de resistentia solidorum \hskip .5em\relax [Ende Januar 1683 \textendash \ erste H\IeC {\"a}lfte Juli 1684; erste H\IeC {\"a}lfte 1693]}{169}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {De la resistence des solides}}{176}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax De la resistence des solides }{176}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {De firmitate corporum}}{188}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax De firmitate corporum }{188}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.}\relax \fontsize {7}{8}\selectfont \uppercase {Explicatio mechanica elastri}}{204}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.\hskip .5em\relax Explicatio mechanica elastri }{204}
+\select@language {ngerman}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.}\relax \fontsize {7}{8}\selectfont \uppercase {Solidum ubique aequiresistens}}{214}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.\hskip .5em\relax Solidum ubique aequiresistens }{214}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 5}.}\relax \fontsize {7}{8}\selectfont \uppercase {De duabus tabulis planis divellendis}}{218}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 5}.\hskip .5em\relax De duabus tabulis planis divellendis }{218}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 6}.}\relax \fontsize {7}{8}\selectfont \uppercase {Demonstrationes novae de resistentia solidorum}}{220}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 6}.\hskip .5em\relax Demonstrationes novae de resistentia solidorum }{220}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 7}.}\relax \fontsize {7}{8}\selectfont \uppercase {Extensiones elasticorum viribus tendentibus proportionales}}{241}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 7}.\hskip .5em\relax Demonstratio quod extensiones elasticorum sint viribus tendentibus proportionales }{241}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 8}.}\relax \fontsize {7}{8}\selectfont \uppercase {De figura trabis ubique aequaliter resistentis}}{250}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 8}.\hskip .5em\relax De figura trabis ubique aequaliter resistentis }{250}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 9}.}\relax \fontsize {7}{8}\selectfont \uppercase {Conoeides solidum aequalis ubique resistentiae}}{257}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 9}.\hskip .5em\relax Invenire conoeides solidum aequalis ubique resistentiae }{257}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 10}.}\relax \fontsize {7}{8}\selectfont \uppercase {Corrigenda}}{259}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{14\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 10}.\hskip .5em\relax Corrigenda zu den Demonstrationes novae de resistentia solidorum }{259}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {15.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus G. Galilei, Discorsi}}{260}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{15.\hskip .5em\relax Aus Galileo Galilei, Discorsi \hskip .5em\relax [Ende Januar \textendash \ M\IeC {\"a}rz\tmspace +\thinmuskip {.1667em}/\tmspace +\thinmuskip {.1667em}April 1683]}{260}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {16.}\relax \fontsize {7}{8}\selectfont \uppercase {Cohaesio}}{261}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{16.\hskip .5em\relax Cohaesio \hskip .5em\relax [Ende Januar 1683 \textendash \ erste H\IeC {\"a}lfte 1684\tmspace +\thinmuskip {.1667em}(?)]}{261}
+\select@language {ngerman}
+\select@language {latin}
+\select@language {german}
+\select@language {ngerman}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {17.}\relax \fontsize {7}{8}\selectfont \uppercase {De viribus chordas ad rupturam tendentibus}}{264}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{17.\hskip .5em\relax De viribus chordas ad rupturam tendentibus \hskip .5em\relax [Ende Januar 1683 \textendash \ Ende 1684]}{264}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {18.}\relax \fontsize {7}{8}\selectfont \uppercase {De corpore tensili rumpendo}}{270}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{18.\hskip .5em\relax De corpore tensili rumpendo \hskip .5em\relax [Ende Januar 1683 \textendash \ Ende 1684]}{270}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {19.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporum compositorum duritie}}{273}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{19.\hskip .5em\relax De corporum compositorum duritie \hskip .5em\relax [Ende Januar 1683 \textendash \ Ende 1684]}{273}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {20.}\relax \fontsize {7}{8}\selectfont \uppercase {Paradoxon circa firmitatem}}{274}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{20.\hskip .5em\relax Paradoxon circa firmitatem \hskip .5em\relax [Ende Januar 1683 \textendash \ Mitte 1685\tmspace +\thinmuskip {.1667em}(?)]}{274}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {21.}\relax \fontsize {7}{8}\selectfont \uppercase {De vibrationibus aeris tensi}}{276}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{21.\hskip .5em\relax De vibrationibus aeris tensi \hskip .5em\relax [Ende Januar 1683\tmspace +\thinmuskip {.1667em}(?) \textendash \ Juli 1686\tmspace +\thinmuskip {.1667em}(?)]}{276}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {22.}\relax \fontsize {7}{8}\selectfont \uppercase {De funibus inaequaliter tensis}}{286}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{22.\hskip .5em\relax De funibus inaequaliter tensis \hskip .5em\relax [nach Mitte M\IeC {\"a}rz 1683]}{286}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {23.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu Dechales, Traitt\IeC {\'e} du mouvement local}}{290}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{23.\hskip .5em\relax Aus und zu C.\tmspace +\thinmuskip {.1667em}F.\tmspace +\thinmuskip {.1667em}M. Dechales, Traitt\IeC {\'e} du mouvement local et du ressort \hskip .5em\relax [zweite H\IeC {\"a}lfte 1683 \textendash \ erste H\IeC {\"a}lfte Januar 1686]}{290}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {24.}\relax \fontsize {7}{8}\selectfont \uppercase {De flexione laminae elasticae}}{296}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{24.\hskip .5em\relax De flexione laminae elasticae \hskip .5em\relax [Ende 1683\tmspace +\thinmuskip {.1667em}(?) \textendash \ Mitte 1685\tmspace +\thinmuskip {.1667em}(?)]}{296}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {25.}\relax \fontsize {7}{8}\selectfont \uppercase {De restitutionis potentia}}{299}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{25.\hskip .5em\relax De restitutionis potentia \hskip .5em\relax [Ende 1683\tmspace +\thinmuskip {.1667em}(?) \textendash \ Oktober 1690]}{299}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {26.}\relax \fontsize {7}{8}\selectfont \uppercase {Ob lange Seile eher reissen als kurze}}{305}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{26.\hskip .5em\relax Ob lange Seile eher rei\IeC {\ss }en als kurze \hskip .5em\relax 29.~April\tmspace +\thinmuskip {.1667em}(9.~Mai) 1685}{305}
+\select@language {ngerman}
+\select@language {ngerman}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {27.}\relax \fontsize {7}{8}\selectfont \uppercase {De vi elastica ad rationes geometricas}}{306}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{27.\hskip .5em\relax De vi elastica ad rationes geometricas revocata \hskip .5em\relax Juli 1686\tmspace +\thinmuskip {.1667em}/\tmspace +\thinmuskip {.1667em}27.~August 1689}{306}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {27\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {De aeris resistentia elastica}}{307}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{27\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax De aeris resistentia elastica \hskip .5em\relax Juli 1686}{307}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {27\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {De vi elastica ad rationes geometricas}}{311}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{27\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax De vi elastica ad rationes geometricas revocata tentamen \hskip .5em\relax 27.~August 1689}{311}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {28.}\relax \fontsize {7}{8}\selectfont \uppercase {De motu elaterii se restituentis}}{320}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{28.\hskip .5em\relax De motu elaterii se restituentis \hskip .5em\relax [Anfang August \textendash \ zweite H\IeC {\"a}lfte November 1689]}{320}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {Chordae extensae restitutionis velocitas}}{321}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax Chordae extensae restitutionis velocitas }{321}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {De motu elaterii se restituentis}}{323}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{28\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax De motu elaterii se restituentis }{323}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {29.}\relax \fontsize {7}{8}\selectfont \uppercase {Ratio tensionis et longitudinis in chordis vel funibus}}{326}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{29.\hskip .5em\relax Ratio tensionis et longitudinis in chordis vel funibus \hskip .5em\relax \unhbox \voidb@x \hbox {[Ende Dezember 1689 \textendash } Fr\IeC {\"u}hjahr 1690\tmspace +\thinmuskip {.1667em}(?)]}{326}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {30.}\relax \fontsize {7}{8}\selectfont \uppercase {Zeichnungen zur Bruchfestigkeit}}{329}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{30.\hskip .5em\relax Zeichnungen zur Bruchfestigkeit \hskip .5em\relax [Ende Dezember 1689 \textendash \ Fr\IeC {\"u}hjahr 1690\tmspace +\thinmuskip {.1667em}(?)]}{329}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {31.}\relax \fontsize {7}{8}\selectfont \uppercase {Appendix de vi absoluta}}{331}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{31.\hskip .5em\relax Appendix de vi absoluta \hskip .5em\relax [Januar \textendash \ April 1690]}{331}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {31\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {Annotatio de vi absoluta}}{332}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{31\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax Annotatio de vi absoluta }{332}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {31\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {Appendix de vi absoluta}}{334}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{31\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax Appendix de vi absoluta }{334}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {32.}\relax \fontsize {7}{8}\selectfont \uppercase {Restitutio isochrona elastri}}{341}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{32.\hskip .5em\relax Restitutio isochrona elastri \hskip .5em\relax [zweite H\IeC {\"a}lfte 1690 \textendash \ 1695\tmspace +\thinmuskip {.1667em}(?)]}{341}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {32\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {Restitutio isochrona elastri}}{342}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{32\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax Restitutio isochrona elastri }{342}
+\select@language {ngerman}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {32\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {De restitutionis elasticae isochronismo}}{352}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{32\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax Demonstratio de restitutionis elasticae isochronismo }{352}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {33.}\relax \fontsize {7}{8}\selectfont \uppercase {Hypothesis de fluido elastico materiae interfuso}}{362}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{33.\hskip .5em\relax Hypothesis de fluido elastico materiae interfuso\hskip .5em\relax [April 1704 \textendash \ \unhbox \voidb@x \hbox {Anfang 1705\tmspace +\thinmuskip {.1667em}(?)]}}{362}
+\select@language {ngerman}
+\select@language {latin}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {II. Stoss}}{365}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {II.A. Notizen, Konzepte, Aufzeichnungen}}{367}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {34.}\relax \fontsize {7}{8}\selectfont \uppercase {Quomodo concursus corporum concipi possint}}{369}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{34.\hskip .5em\relax Quomodo concursus corporum concipi possint\hskip .5em\relax [1671\tmspace +\thinmuskip {.1667em}(?)\tmspace +\thinmuskip {.1667em}\textendash \tmspace +\thickmuskip {.2777em}\unhbox \voidb@x \hbox {September 1677\tmspace +\thinmuskip {.1667em}(?)]}}{369}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {35.}\relax \fontsize {7}{8}\selectfont \uppercase {Experimenta domini Regnault}}{371}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{35.\hskip .5em\relax Experimenta domini Regnault pendulis facta \hskip .5em\relax [Herbst 1674\tmspace +\thinmuskip {.1667em}(?) \textendash \ Januar 1678]}{371}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {36.}\relax \fontsize {7}{8}\selectfont \uppercase {De concursu duorum corporum}}{373}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{36.\hskip .5em\relax De concursu duorum corporum \hskip .5em\relax [zweite H\IeC {\"a}lfte November 1676]}{373}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {37.}\relax \fontsize {7}{8}\selectfont \uppercase {De legibus concursus}}{375}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{37.\hskip .5em\relax De legibus concursus \hskip .5em\relax [Winter 1676/1677\tmspace +\thinmuskip {.1667em}(?) \textendash \ Januar 1678]}{375}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {38.}\relax \fontsize {7}{8}\selectfont \uppercase {Aequalis processus centri gravitatis}}{377}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{38.\hskip .5em\relax Aequalis processus centri gravitatis \hskip .5em\relax [Winter 1676/1677 \textendash \ Januar 1678]}{377}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {39.}\relax \fontsize {7}{8}\selectfont \uppercase {Elaterium est causa imperfectionis in corporum concursu}}{380}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{39.\hskip .5em\relax Elaterium est causa imperfectionis in corporum concursu \hskip .5em\relax M\IeC {\"a}rz 1677}{380}
+\select@language {ngerman}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {french}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {40.}\relax \fontsize {7}{8}\selectfont \uppercase {Ex duobus regulis concursus consequentiae}}{390}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{40.\hskip .5em\relax Ex duobus regulis concursus consequentiae \hskip .5em\relax M\IeC {\"a}rz 1677}{390}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {41.}\relax \fontsize {7}{8}\selectfont \uppercase {Propositio fundamentalis totius scientiae Mechanicae}}{396}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{41.\hskip .5em\relax Propositio fundamentalis totius scientiae Mechanicae \hskip .5em\relax [M\IeC {\"a}rz \textendash \ Mai 1677]}{396}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {42.}\relax \fontsize {7}{8}\selectfont \uppercase {De regulis concursus apud Hugenium et Mariottum}}{398}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{42.\hskip .5em\relax De regulis concursus apud Hugenium et Mariottum \hskip .5em\relax [M\IeC {\"a}rz \textendash \ Mai 1677]}{398}
+\select@language {ngerman}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {42\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {Regle de Mons.~Hugens}}{400}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{42\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax Regle de Mons.~Hugens}{400}
+\select@language {ngerman}
+\select@language {french}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {42\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {Schedula de decem casibus Hugenianis}}{407}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{42\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax Schedula de decem casibus Hugenianis}{407}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {42\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu E.~Mariotte, Trait\'{e} de la percussion}}{409}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{42\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.\hskip .5em\relax Aus und zu E.~Mariotte, Trait\'{e} de la percussion}{409}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {43.}\relax \fontsize {7}{8}\selectfont \uppercase {De ratione celeritatum ante et post concursum}}{414}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{43.\hskip .5em\relax De ratione celeritatum ante et post concursum \hskip .5em\relax [M\IeC {\"a}rz \textendash \ Mai 1677]}{414}
+\select@language {ngerman}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {43\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {De ratione celeritatum ante et post concursum}}{416}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{43\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax De ratione celeritatum ante et post concursum \hskip .5em\relax [M\IeC {\"a}rz \textendash \ Mai 1677]}{416}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {43\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {Specimina artis condendi theoremata}}{422}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{43\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax Specimina artis condendi theoremata \hskip .5em\relax Mai 1677}{422}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {44.}\relax \fontsize {7}{8}\selectfont \uppercase {De centro potentiae}}{429}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{44.\hskip .5em\relax De centro potentiae. De servanda potentia et directione in duorum corporum concursu \hskip .5em\relax [Mai \textendash \ Mitte Juni 1677]}{429}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {45.}\relax \fontsize {7}{8}\selectfont \uppercase {Motus centri potentiae}}{443}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{45.\hskip .5em\relax Motus centri potentiae \hskip .5em\relax [Mai \textendash \ Mitte Juni 1677]}{443}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {46.}\relax \fontsize {7}{8}\selectfont \uppercase {De concursu corporum inflexilium ac de via centri potentiae}}{448}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{46.\hskip .5em\relax De concursu corporum inflexilium ac de via centri potentiae \hskip .5em\relax [Mai \textendash \ Mitte Juni 1677]}{448}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {47.}\relax \fontsize {7}{8}\selectfont \uppercase {Calculus summae et differentiae quadratorum celeritatum}}{456}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{47.\hskip .5em\relax Calculus summae et differentiae quadratorum celeritatum \hskip .5em\relax [Mai \textendash \ Juni\tmspace +\thinmuskip {.1667em}(?) 1677]}{456}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {48.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporibus concurrentibus in navi progrediente}}{460}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{48.\hskip .5em\relax De compositione motuum sive de corporibus concurrentibus in navi progrediente \hskip .5em\relax 10.\tmspace +\thinmuskip {.1667em}(20.)~Juni 1677}{460}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {49.}\relax \fontsize {7}{8}\selectfont \uppercase {Certa de motu}}{468}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{49.\hskip .5em\relax Certa de motu \hskip .5em\relax 10.\tmspace +\thinmuskip {.1667em}(20.)~Juni 1677}{468}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {50.}\relax \fontsize {7}{8}\selectfont \uppercase {De vi ictus}}{474}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{50.\hskip .5em\relax De vi ictus \hskip .5em\relax 11.\tmspace +\thinmuskip {.1667em}(21.)~Juni 1677}{474}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {51.}\relax \fontsize {7}{8}\selectfont \uppercase {De permutatione potentiarum deque motuum compositione}}{480}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{51.\hskip .5em\relax De permutatione potentiarum deque motuum compositione \hskip .5em\relax [Sommer\tmspace +\thinmuskip {.1667em}(?) 1677]}{480}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {52.}\relax \fontsize {7}{8}\selectfont \uppercase {Eandem semper est celeritas separationis et celeritas concursus}}{488}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{52.\hskip .5em\relax Eandem semper est celeritas separationis et celeritas concursus \hskip .5em\relax [Ende Juni 1677 \textendash \ Januar 1678]}{488}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {53.}\relax \fontsize {7}{8}\selectfont \uppercase {Centrum gravitatis semper sequitur corpus potentius}}{498}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{53.\hskip .5em\relax Centrum gravitatis semper sequitur corpus potentius \hskip .5em\relax [Ende Juni 1677 \textendash \ Januar 1678]}{498}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {54.}\relax \fontsize {7}{8}\selectfont \uppercase {De motu centri potentiae si corpus unum in aliud quiescens incurrit}}{505}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{54.\hskip .5em\relax De motu centri potentiae si corpus unum in aliud quiescens incurrit \hskip .5em\relax \unhbox \voidb@x \hbox {[Ende Juni} 1677 \textendash \ Januar 1678]}{505}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {55.}\relax \fontsize {7}{8}\selectfont \uppercase {De aestimatione ictus in concursibus corporum}}{516}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{55.\hskip .5em\relax De aestimatione ictus in concursibus corporum \hskip .5em\relax [Ende Juni 1677 \textendash \ Januar 1678]}{516}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {56.}\relax \fontsize {7}{8}\selectfont \uppercase {Experiences \IeC {\`a} faire sur le mouvement}}{520}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{56.\hskip .5em\relax Experiences \IeC {\`a} faire sur le mouvement \hskip .5em\relax [Ende September \textendash \ Oktober\tmspace +\thinmuskip {.1667em}(?) 1677]}{520}
+\select@language {ngerman}
+\select@language {french}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {57.}\relax \fontsize {7}{8}\selectfont \uppercase {De regula concursus corporum inaequalium}}{524}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{57.\hskip .5em\relax De regula concursus corporum inaequalium \hskip .5em\relax [um Mitte]\ Januar 1678}{524}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {58.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporum concursu}}{527}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{58.\hskip .5em\relax De corporum concursu \hskip .5em\relax Januar \textendash \ Februar 1678}{527}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporum concursu scheda prima}}{530}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax De corporum concursu scheda prima}{530}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporum concursu scheda secunda}}{542}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax De corporum concursu scheda secunda}{542}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporum concursu scheda secundo-secunda}}{553}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.\hskip .5em\relax De corporum concursu scheda secundo-secunda}{553}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporum concursu scheda tertia}}{560}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 4}.\hskip .5em\relax De corporum concursu scheda tertia }{560}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 5}.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporum concursu scheda quarta}}{569}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 5}.\hskip .5em\relax De corporum concursu scheda quarta }{569}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 6}.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporum concursu scheda quinta}}{577}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 6}.\hskip .5em\relax De corporum concursu scheda quinta }{577}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 7}.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporum concursu scheda sexta}}{588}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 7}.\hskip .5em\relax De corporum concursu scheda sexta}{588}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 8}.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporum concursu scheda secundo-sexta}}{599}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 8}.\hskip .5em\relax De corporum concursu scheda secundo-sexta }{599}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 9}.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporum concursu scheda septima}}{627}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 9}.\hskip .5em\relax De corporum concursu scheda septima }{627}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 10}.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporum concursu scheda octava}}{636}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 10}.\hskip .5em\relax De corporum concursu scheda octava }{636}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 11}.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporum concursu scheda nona}}{645}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 11}.\hskip .5em\relax De corporum concursu scheda nona }{645}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 12}.}\relax \fontsize {7}{8}\selectfont \uppercase {De corporum concursu scheda decima}}{653}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{58\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 12}.\hskip .5em\relax De corporum concursu scheda decima }{653}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {59.}\relax \fontsize {7}{8}\selectfont \uppercase {Locus duorum globorum post ictum obliquum}}{661}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{59.\hskip .5em\relax Quomodo inveniri possit locus duorum globorum post ictum obliquum \hskip .5em\relax \unhbox \voidb@x \hbox {[Februar} 1678 \textendash \ 1686]}{661}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {60.}\relax \fontsize {7}{8}\selectfont \uppercase {Corporum concursus casus aliqui faciliores}}{663}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{60.\hskip .5em\relax Corporum concursus casus aliqui faciliores \hskip .5em\relax [Februar 1678 \textendash \ 1686]}{663}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {61.}\relax \fontsize {7}{8}\selectfont \uppercase {De aequilibrio in corporum concursu}}{668}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{61.\hskip .5em\relax De aequilibrio in corporum concursu \hskip .5em\relax [1680\tmspace +\thinmuskip {.1667em}(?) \textendash \ 1685\tmspace +\thinmuskip {.1667em}(?)]}{668}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {62.}\relax \fontsize {7}{8}\selectfont \uppercase {Modus demonstrandi leges percussionis}}{670}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{62.\hskip .5em\relax Modus demonstrandi leges percussionis \hskip .5em\relax [1680 \textendash \ 1685]}{670}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {63.}\relax \fontsize {7}{8}\selectfont \uppercase {De concursu sine ictu, deque refractione}}{674}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{63.\hskip .5em\relax De concursu sine ictu, deque refractione \hskip .5em\relax 19.\tmspace +\thinmuskip {.1667em}(29.)~November 1681}{674}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {64.}\relax \fontsize {7}{8}\selectfont \uppercase {De virium gyrationis ad vires progressionis proportione}}{679}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{64.\hskip .5em\relax De virium gyrationis ad vires progressionis proportione \hskip .5em\relax \unhbox \voidb@x \hbox {[Dezember 1681\tmspace +\thinmuskip {.1667em}(?) \textendash } Februar 1689]}{679}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {65.}\relax \fontsize {7}{8}\selectfont \uppercase {Motuum compositioni non fidendum, praesertim in concursu obliquo}}{681}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{65.\hskip .5em\relax Motuum compositioni non est fidendum, praesertim in concursu obliquo \hskip .5em\relax [1686\tmspace +\thinmuskip {.1667em}(?) \textendash \ Oktober 1687]}{681}
+\select@language {ngerman}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {65\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {De motu impresso et ex gravitate orto non componendis}}{683}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{65\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax De motu impresso et ex gravitate orto non componendis}{683}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {65\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {De methodo alternorum in concursu obliquo}}{685}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{65\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax De methodo alternorum, deque compositione motuum et virium in concursu obliquo}{685}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {65\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.}\relax \fontsize {7}{8}\selectfont \uppercase {Motuum compositioni non fidendum, praesertim in concursu obliquo}}{689}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{65\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 3}.\hskip .5em\relax Motuum compositioni non est fidendum, praesertim in concursu obliquo}{689}
+\select@language {ngerman}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {66.}\relax \fontsize {7}{8}\selectfont \uppercase {Principia universalia ad concursus determinandos}}{705}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{66.\hskip .5em\relax Principia universalia ad concursus directos ac obliquos determinandos \hskip .5em\relax \unhbox \voidb@x \hbox {[1686 \textendash } Oktober 1687]}{705}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {67.}\relax \fontsize {7}{8}\selectfont \uppercase {Leges concursuum}}{735}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{67.\hskip .5em\relax Leges concursuum \hskip .5em\relax [Ende Oktober 1686 \textendash \ Anfang Februar 1687]}{735}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {68.}\relax \fontsize {7}{8}\selectfont \uppercase {Physico-Mechanicae leges}}{747}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{68.\hskip .5em\relax Physico-Mechanicae leges ex congressu corporum ductae \hskip .5em\relax [Herbst 1688]}{747}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {69.}\relax \fontsize {7}{8}\selectfont \uppercase {Plurium corporum concursus}}{759}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{69.\hskip .5em\relax Plurium corporum concursus \hskip .5em\relax [Herbst 1688 \textendash \ Anfang 1689]}{759}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {70.}\relax \fontsize {7}{8}\selectfont \uppercase {Permutatio impetuum non succedit nisi inter aequalia}}{766}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{70.\hskip .5em\relax Permutatio impetuum non succedit nisi inter aequalia \hskip .5em\relax [M\IeC {\"a}rz 1689 \textendash \ \unhbox \voidb@x \hbox {M\IeC {\"a}rz 1690]}}{766}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {71.}\relax \fontsize {7}{8}\selectfont \uppercase {Si corpus incurrens sistatur, non eadem servetur potentia}}{767}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{71.\hskip .5em\relax Si corpus incurrens sistatur, non eadem servetur potentia \hskip .5em\relax [M\IeC {\"a}rz 1689 \textendash \ \unhbox \voidb@x \hbox {M\IeC {\"a}rz 1690]}}{767}
+\select@language {ngerman}
+\select@language {latin}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {II.B. Ausz\"uge, Rezensionen}}{769}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {72.}\relax \fontsize {7}{8}\selectfont \uppercase {Notiz zu M.~Marci, De Motu}}{771}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{72.\hskip .5em\relax Notiz zu M.~Marci, De Motu \hskip .5em\relax [Anfang 1686\tmspace +\thinmuskip {.1667em}(?) \textendash \ Anfang 1695\tmspace +\thinmuskip {.1667em}(?)]}{771}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {73.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu G.\tmspace +\thinmuskip {.1667em}A.\tmspace +\thinmuskip {.1667em}Borelli, De vi percussionis}}{772}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{73.\hskip .5em\relax Aus und zu G.\tmspace +\thinmuskip {.1667em}A.\tmspace +\thinmuskip {.1667em}Borelli, De vi percussionis \hskip .5em\relax [M\IeC {\"a}rz 1689 \textendash \ M\IeC {\"a}rz 1690]}{772}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {74.}\relax \fontsize {7}{8}\selectfont \uppercase {Regulae motus Cartesii}}{785}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{74.\hskip .5em\relax Regulae motus Cartesii \hskip .5em\relax [M\IeC {\"a}rz 1689 \textendash \ M\IeC {\"a}rz 1690]}{785}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {75.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus C.\tmspace +\thinmuskip {.1667em}Huygens, Trait\IeC {\'e} de la lumi\IeC {\`e}re}}{787}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{75.\hskip .5em\relax Aus C.\tmspace +\thinmuskip {.1667em}Huygens, Trait\IeC {\'e} de la lumi\IeC {\`e}re [...]\ avec un discours de la cause de la pesanteur \hskip .5em\relax [Mitte September \textendash \ 12.~Oktober 1690]}{787}
+\select@language {ngerman}
+\select@language {latin}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {76.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu G.\tmspace +\thinmuskip {.1667em}J.\tmspace +\thinmuskip {.1667em}Sohier, Nouveau systeme}}{790}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{76.\hskip .5em\relax Aus und zu G.\tmspace +\thinmuskip {.1667em}J.\tmspace +\thinmuskip {.1667em}Sohier, Nouveau systeme de la percussion des corps \hskip .5em\relax \unhbox \voidb@x \hbox {[Mai 1696} \textendash \ Januar 1698\tmspace +\thinmuskip {.1667em}(?)]}{790}
+\select@language {ngerman}
+\select@language {french}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {77.}\relax \fontsize {7}{8}\selectfont \uppercase {Zu A.\tmspace +\thinmuskip {.1667em}Parent, \'{E}l\'{e}mens}}{800}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{77.\hskip .5em\relax Zu A.\tmspace +\thinmuskip {.1667em}Parent, \'{E}l\'{e}mens de m\'{e}chanique et de physique \hskip .5em\relax [Mitte Januar \textendash \ Ju\/ni~1701]}{800}
+\select@language {ngerman}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {77\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.}\relax \fontsize {7}{8}\selectfont \uppercase {Aus und zu A.\tmspace +\thinmuskip {.1667em}Parent, \'{E}l\'{e}mens}}{802}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{77\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 1}.\hskip .5em\relax Aus und zu A.\tmspace +\thinmuskip {.1667em}Parent, \'{E}l\'{e}mens de m\'{e}chanique et de physique}{802}
+\select@language {ngerman}
+\select@language {french}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {french}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {french}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {section}{\numberline {77\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.}\relax \fontsize {7}{8}\selectfont \uppercase {Rezension zu A.\tmspace +\thinmuskip {.1667em}Parent, \'{E}l\'{e}mens}}{827}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {section}{77\raisebox {-0.5ex}{\fontsize {7pt}{8pt}\selectfont 2}.\hskip .5em\relax Rezension zu A.\tmspace +\thinmuskip {.1667em}Parent, \'{E}l\'{e}mens de m\'{e}chanique et de physique}{827}
+\select@language {ngerman}
+\select@language {latin}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {III. Nachtr\"{a}ge}}{833}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {III.A. Technica} (Zu Bd VIII, 1)}{835}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {78.}\relax \fontsize {7}{8}\selectfont \uppercase {Perspektivische Zeichnung}}{837}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{78.\hskip .5em\relax Perspektivische Zeichnung einer pyramidenf\IeC {\"o}rmigen Turmspitze auf Sockel \hskip .5em\relax [Fr\IeC {\"u}hjahr 1672\ \textendash \ Herbst 1673]}{837}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {III.B. Bewegung} (Zu Bd VIII, 2)}{839}
+\save@tocdepth \setcounter {tocdepth}{-1}
+\contentsline {chapter}{\numberline {79.}\relax \fontsize {7}{8}\selectfont \uppercase {An ex Sinclaro}}{841}
+\save@tocdepth \setcounter {tocdepth}{1}
+\contentsline {chapter}{79.\hskip .5em\relax An ex Sinclaro \hskip .5em\relax [August 1670\ \textendash \ Anfang 1672]}{841}
+\select@language {ngerman}
+\select@language {latin}
+\select@language {ngerman}
+\vspace {5mm}
+\contentsline {part}{\relax \fontsize {12}{14}\selectfont \uppercase {Verzeichnisse}}{845}
+\contentsline {chapter}{\hskip .5em\relax Personen}{847}
+\contentsline {chapter}{\hskip .5em\relax Schriften}{850}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {ngerman}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {ngerman}
+\contentsline {chapter}{\hskip .5em\relax Sachen}{863}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {latin}
+\select@language {polutonikogreek}
+\select@language {ngerman}
+\contentsline {chapter}{\hskip .5em\relax Orte}{930}
+\contentsline {chapter}{\hskip .5em\relax Fundstellen}{933}
+\contentsline {chapter}{\hskip .5em\relax Konkordanzen}{937}
+\contentsline {chapter}{\hskip .5em\relax Siglen, Abk\IeC {\"u}rzungen, Zeichen}{939}
+\contentsline {chapter}{\hskip .5em\relax Berichtigungen}{943}

@@ -1,0 +1,115 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch33" n="33"><head>33
+HYPOTHESIS DE FLUIDO ELASTICO MATERIAE INTERFUSO</head>
+<head>[April 1704 – Anfang 1705 (?)]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Aufzeichnung:
+LH XXXV 10, 6 Bl. 37.
+Ein längs halbiertes Blatt 2<hi rendition="#sup">o</hi> (32 x 10,5 cm).
+Eine Seite auf <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1478">Bl. 37 r<hi rendition="#sup">o</hi></ref>.
+Die ersten einundzwanzig Textzeilen
+(bis ungefähr S. <ref corresp="#LH_35_10_06_037r_blstft_udhakv"/>)
+wurden mit Bleistift aufgesetzt und nachträglich mit Tinte überschrieben;
+da die Bleistiftfassung weitgehend verblasst ist,
+lässt sich deren Übereinstimmung mit der Tintenfassung nur mancherorts feststellen.
+<ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1480">Bl. 37 v<hi rendition="#sup">o</hi></ref> überliefert ein Fragment eines Briefkonzeptes von Leibnizens Hand,
+welches voraussichtlich in <hi rendition="#i">LSB</hi> II, 4 ediert wird.
+Der Textträger von N. <ref corresp="#N.33"/> hing ursprünglich mit der Handschrift LH XXXV 14, 2 Bl. 60 zusammen,
+die ein weiteres Fragment des letztgenannten Briefkonzeptes sowie eine voraussichtlich in <hi rendition="#i">LSB</hi> VII zu edierende Aufzeichnung über den Schwerpunkt überliefert.</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch33.p1"><anchor xml:id="_60029"/>
+<anchor xml:id="N.33"/><!--  \hackfor{\par} --></p><p xml:id="Ch33.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi><anchor xml:id="LH_35_10_06_037_datierung_rhtj"/>
+Das auf dem Träger des Textes N. <ref corresp="#N.33"/> mit überlieferte Brieffragment gehört zum verworfenen Konzept eines Schreibens von Leibniz an W. Pulteney (d.J.), das die Herausgeber von <hi rendition="#i">LSB</hi> II, 4 auf die Zeit nach April 1704 datieren.<index indexName="Personen"><term><hi rendition="#g #smaller">Pulteney</hi><hi rendition="#smaller">, William 1684–1764</hi></term></index>
+Das Brieffragment lag zweifelsohne bereits vor, als N. <ref corresp="#N.33"/> verfasst wurde.
+Hieraus ergibt sich der Terminus post quem der Datierung.
+Zur Ermittlung eines Terminus ante quem gilt es die nur flüchtige Bekanntschaft zwischen Leibniz und Pulteney zu berücksichtigen.
+Die Anzahl der Erwähnungen von Pulteney im Leibniz-Nachlass ist entsprechend begrenzt und reicht nach heutigem Kenntnisstand nicht über den Anfang 1705 hinaus (G. Guidis Brief an Leibniz vom 4. Januar, <hi rendition="#i">LSB</hi> I, 24 N. 152, S. 259.13<ref corresp="#bib_01342"/>).<index indexName="Personen"><term><hi rendition="#g #smaller">Guidi</hi> <hi rendition="#smaller">Giuseppe, gest. 1720 (?)</hi></term></index>
+Somit ist wahrscheinlich, dass auch das mit überlieferte Brieffragment nicht viel später entstand.
+Da es nicht ausgeschlossen ist, dass Leibniz erst später die unbeschriebene Seite des Briefkonzeptes für die Aufzeichnung N. <ref corresp="#N.33"/> verwendete, bleibt der vorgeschlagene Terminus ante quem aber hypothetisch.</hi></p></div><div type="text"><p rendition="#noindent" xml:id="Ch33.p5"><ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1478"><pb type="L"/><fw type="folNum">[37 r<hi rendition="#sup">o</hi>]</fw></ref> Si non contactu<index indexName="Sachen"><term>contactus</term></index>
+sed vi interpositi<index indexName="Sachen"><term>vis elastri</term></index>
+Elastri<index indexName="Sachen"><term>elastrum interpositum</term></index>
+corpus agat in Corpus<index indexName="Sachen"><term>actio corporis in corpus</term></index> efficiemus phaenomena<index indexName="Sachen"><term>phaenomenon</term></index>
+non supponendo corpus quiescens<index indexName="Sachen"><term>corpus quiescens</term></index>
+quasi occurrere ictui alterius,<index indexName="Sachen"><term>ictus corporis</term></index>
+<app type="Bfootnote"><lem type="main">sed</lem><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
+erunt resistentiae<index indexName="Sachen"><term>resistentia</term></index> tamen
+ut moles<index indexName="Sachen"><term>moles</term></index>.
+Si porro
+<app type="Bfootnote"><lem type="main">concipiamus materiae<index indexName="Sachen"><term>materia</term></index></lem><note type="lemma-abbrev">concipiamus</note><rdg wit="#L" n="1"> materiam
+</rdg><rdg wit="#L" n="2"> materiae <hi rendition="#i">L</hi></rdg></app>
+fluidum elasticum<index indexName="Sachen"><term>fluidum elasticum</term></index> aequaliter intelligi posse interfusum[,] licebit Massam<index indexName="Sachen"><term>massa</term></index> intelligere ut
+divisam in partes aequales,
+nec aliud nisi vim elasticam<index indexName="Sachen"><term>vis elastica</term></index>
+utrinque in aequalia aequaliter agere
+nullo discrimine quiescentis aut moti[,] obtinebitur etiam effectus aequivalens ei<index indexName="Sachen"><term>effectus aequivalens</term></index>
+qui evenisset sine mutatione<index indexName="Sachen"><term>effectus sine mutatione</term></index>[,] cum scilicet aequale incurrit in aequale.
+Addatur jam attractio corporum<index indexName="Sachen"><term>attractio corporum</term></index> rursus
+ex fluidi interpositi<index indexName="Sachen"><term>fluidum interpositum</term></index> impulsu,<index indexName="Sachen"><term>impulsus fluidi</term></index>
+quae simul efficit,
+ut cohaereant corpora,<index indexName="Sachen"><term>cohaesio corporis</term></index>
+et totum compositum motu centri gravitatis<index indexName="Sachen"><term>motus centri gravitatis</term></index><index indexName="Sachen"><term>centrum gravitatis</term></index>
+ex legibus aequilibrii<index indexName="Sachen"><term>lex aequilibrii</term></index><index indexName="Sachen"><term>aequilibrium</term></index>
+seu vis mortuae<index indexName="Sachen"><term>vis mortua</term></index> feratur.
+In his omnibus tamen concipienda est quaedam materiae<index indexName="Sachen"><term>materia</term></index>
+ad motum resistentia,<index indexName="Sachen"><term>resistentia materiae ad motum</term></index>
+quae etiam ab initio assumta restitantiam<index indexName="Sachen"><term>restitantia</term></index> daret,
+adeoque vim efficeret,
+<pb type="L"/>perinde ac si corpora
+<app type="Bfootnote"><lem type="main">aequali vi restitiva<index indexName="Sachen"><term>vis restitiva</term></index> occurrerent;</lem><note type="lemma-abbrev">aequali</note><rdg wit="#L" n="1"> vi respectiva concurrerent
+</rdg><rdg wit="#L" n="2"> <note type="editorial">|</note> concur- <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> </rdg><rdg wit="#L" n="3"> vi restitiva occurrerent; <hi rendition="#i">L</hi></rdg></app>
+interim distincte explicando causas,<index indexName="Sachen"><term>causa explicanda</term></index><anchor xml:id="LH_35_10_06_037r_blstft_udhakv"/>
+remque adeo reducendo ad mutationes insensibiles,<index indexName="Sachen"><term>mutatio insensibilis</term></index>
+ut evitetur mutatio per saltum,<index indexName="Sachen"><term>mutatio per saltum</term></index>
+via quam proposui optima distinctissimaque est[;] etsi enim materia nostri gradus<index indexName="Sachen"><term>materia nostri gradus</term></index>
+sit diversae densitatis<index indexName="Sachen"><term>densitas materiae</term></index>
+quoad alia fluida,
+<app type="Bfootnote"><lem type="main">attamen quoad</lem><note type="lemma-abbrev">attamen</note><rdg wit="#L" n="1"> quod
+</rdg><rdg wit="#L" n="2"> quoad <hi rendition="#i">L</hi></rdg></app>
+fluidum suum elasticificans<index indexName="Sachen"><term>fluidum elasticificans</term></index> ubique uniformiter disgregata,
+seu in partes aequales divisa concipi potest.
+Cum fluida nobis tenuia,<index indexName="Sachen"><term>fluidum tenue</term></index>
+huic tenuissimo rursus sint crassa,<index indexName="Sachen"><term>fluidum tenue</term></index>
+et pertusa,
+ut ipsius respectu caetera uniforme quid esse videantur[,] ut si tam globi<index indexName="Sachen"><term>globus minimus</term></index> majores
+quam minores minimis
+<app type="Bfootnote"><lem type="main">aequalibus foraminibus<index indexName="Sachen"><term>foramen</term></index> pertusi,</lem><note type="lemma-abbrev">aequalibus</note><rdg wit="#L" n="1"> pertusi p
+</rdg><rdg wit="#L" n="2"> foraminibus pertusi, <hi rendition="#i">L</hi></rdg></app>
+vel
+<app type="Bfootnote"><lem type="main">potius in globos sui generis minimos<index indexName="Sachen"><term>globus minimus</term></index> aequales</lem><note type="lemma-abbrev">potius</note><rdg wit="#L" n="1"> in aequales
+</rdg><rdg wit="#L" n="2"> in globos <seg type="apparat-ellipsis"/> minimos aequales <hi rendition="#i">L</hi></rdg></app>
+divisi intelligantur.</p><figure rendition="#own-line_centered" xml:id="Ch33.p6"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_06_037_d.svg" width="112.7412pt" xml:id="Ch33.p6.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_35_10_06_037r_Fig.1"/></head></figure><p xml:id="Ch33.p7">Sunt autem in Systematibus<index indexName="Sachen"><term>systema</term></index> concipiendi
+velut gradus.<index indexName="Sachen"><term>gradus</term></index>
+Sic hi globuli<index indexName="Sachen"><term>globulus</term></index> minimi nostri Systematis
+fortasse sint instar planetarum <index indexName="Sachen"><term>planeta</term></index>
+<app type="Bfootnote"><lem type="main">Systematis inferioris.<index indexName="Sachen"><term>systema inferius</term></index></lem><note type="lemma-abbrev">Systematis</note><rdg wit="#L" n="1"> major
+</rdg><rdg wit="#L" n="2"> inferioris. <hi rendition="#i">L</hi></rdg></app></p></div></div></body>
+  </text>
+</TEI>

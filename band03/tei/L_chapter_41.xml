@@ -1,0 +1,74 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch41" n="41"><head>41
+PROPOSITIO FUNDAMENTALIS TOTIUS SCIENTIAE MECHANICAE</head> <head>[März – Mai 1677]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Konzept: LH XXXVII 5, Bl. 162.
+Ein Blatt 2<hi rendition="#sup">o</hi>;
+Papierschaden an den Rändern;
+Papiererhaltungsmaßnahmen.
+Eine Viertelseite auf <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=498">Bl. 162 r<hi rendition="#sup">o</hi></ref>;
+der obere Bereich von <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=498">Bl. 162 r<hi rendition="#sup">o</hi></ref> überliefert den Schlussteil von N. <ref corresp="L_chapter_39.xml#_57266_1"/>, <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=500">Bl. 162 v<hi rendition="#sup">o</hi></ref> überliefert N. <ref corresp="L_section_431.xml#_57266_3"/>.
+Vermutlich bildete der Träger ursprünglich einen Bogen mit LH XXXVII 5, Bl. 161.</hi></p></item><item><label><hi rendition="#i #smaller">E</hi></label>
+<p><hi rendition="#smaller">(tlw.) <ref corresp="#bib_01056"/><hi rendition="#k">Fichant</hi> 1994, S. 352.</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch41.p1"><anchor xml:id="RK57266-2"/>
+<anchor xml:id="_57266_2"/><!--  \hackfor{\par} --></p><p xml:id="Ch41.p5"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Das vorliegende Stück wird unmittelbar im Anschluss an N. <ref corresp="L_chapter_39.xml#_57266_1"/> überliefert, das Leibniz eigenhändig auf März 1677 (a. St.) datiert hat, weist aber Unterschiede im Schreibduktus und in der Feder auf.
+Die Rückseite desselben Blattes überliefert wiederum N. <ref corresp="L_section_431.xml#_57266_3"/>, das sich auf den Zeitraum März bis Mai 1677 (a. St.) datieren lässt.
+Unter der Annahme einer durchgehenden Beschreibung des Bogens, die durch die thematischen Überschneidungen der Stücke bekräftigt wird,
+kann N. <ref corresp="#_57266_2"/> ebenfalls auf den Zeitraum März bis Mai 1677 (a. St.) datiert werden, jedoch vor N. <ref corresp="L_section_431.xml#_57266_3"/>.</hi></p></div><div type="text"><p rendition="#noindent" xml:id="Ch41.p6"><app type="Bfootnote"><lem type="main"><ref><pb type="L"/><fw type="folNum">[162 r<hi rendition="#sup">o</hi>]</fw></ref> Propositio</lem>
+<note type="lemma-abbrev"><ref><pb type="L"/><fw type="folNum">[162 r<hi rendition="#sup">o</hi>]</fw></ref></note><rdg wit="#L" n="1"> Duae propositiones fundamentales totius scientiae <app><rdg wit="#L" n="a">de Motu: E
+</rdg><rdg wit="#L" n="b" cause="deletion">Mechanicae:
+(1)  eadem semper manet potentia <note type="editorial">|</note> <del>seu vis</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> (2) eadem semper manet <app><rdg wit="#L" n="aa">directio </rdg><rdg wit="#L" n="bb">determin </rdg><rdg wit="#L" n="cc">directio. </rdg></app></rdg></app></rdg><rdg wit="#L" n="2"> Propositio <hi rendition="#i">L</hi></rdg></app>
+fundamentalis totius scientiae
+<app type="Bfootnote"><lem type="main">Mechanicae:<index indexName="Sachen"><term>scientia Mechanicae</term></index><index indexName="Sachen"><term>propositio fundamentalis totius scientiae Mechanicae</term></index> Datis corporibus</lem><note type="lemma-abbrev">Mechanicae</note><rdg wit="#L" n="1"> Sumto quodam corporum aggregato nihil ab extrinseco
+<note type="editorial">|</note> in <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> </rdg><rdg wit="#L" n="2"> Datis <app><rdg wit="#L" n="a">aliquot </rdg><rdg wit="#L" n="b">corporibus <hi rendition="#i">L</hi></rdg></app></rdg></app>
+<app type="Bfootnote"><lem type="main">quotcunque nihil ab aliis</lem><note type="lemma-abbrev">quotcunque</note><rdg wit="#L" n="1"> nihi </rdg><rdg wit="#L" n="2"> quae nihil ab aliis pati intelli
+</rdg><rdg wit="#L" n="3"> ab </rdg><rdg wit="#L" n="4"> nihil <app><rdg wit="#L" n="a">aliunde </rdg><rdg wit="#L" n="b">aliunde </rdg><rdg wit="#L" n="c">ab
+<app><rdg wit="#L" n="aa">extrinseci </rdg><rdg wit="#L" n="bb">aliis <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app>
+extra
+<app type="Bfootnote"><lem type="main">ipsa sumtis</lem><note type="lemma-abbrev">ipsa</note><rdg wit="#L" n="1"> patientibus </rdg><rdg wit="#L" n="2"> sumtis <hi rendition="#i">L</hi></rdg></app>
+patientibus, eadem semper manet potentia<index indexName="Sachen"><term>potentia</term></index> et directio<index indexName="Sachen"><term>directio</term></index> totius aggregati.<index indexName="Sachen"><term>potentia totius aggregati</term></index><index indexName="Sachen"><term>directio totius aggregati</term></index>
+<hi rendition="#g">Potentia</hi><index indexName="Sachen"><term>potentia</term></index> est quantitas
+effectus,<index indexName="Sachen"><term>quantitas effectus</term></index> quem res aliqua producere potest. Directio<index indexName="Sachen"><term>directio</term></index> est linea motus,<index indexName="Sachen"><term>linea motus</term></index> vel si curva sit ejus tangens;
+directio totius
+aggregati<index indexName="Sachen"><term>directio totius aggregati</term></index> eadem est quae directio centri gravitatis.<index indexName="Sachen"><term>directio centri gravitatis</term></index><index indexName="Sachen"><term>centrum gravitatis</term></index> Nulla enim alia totius directio<index indexName="Sachen"><term>directio</term></index> intelligi potest.
+In aggregato corporum quotcunque sibi relicto<index indexName="Sachen"><term>aggregatum corporum sibi relictum</term></index> eadem semper potentia et
+<app type="Bfootnote"><lem type="main">directio totius</lem><note type="lemma-abbrev">directio</note><rdg wit="#L" n="1"> conservatur </rdg><rdg wit="#L" n="2"> totius <hi rendition="#i">L</hi></rdg></app>
+aggregati<index indexName="Sachen"><term>potentia totius aggregati</term></index><index indexName="Sachen"><term>directio totius aggregati</term></index> servatur. Cum enim sibi relictum esse intelligamus, nihil est quod mutet. Servatur ergo potentia<index indexName="Sachen"><term>potentia</term></index> et
+directio<index indexName="Sachen"><term>directio</term></index> non quidem partium,<index indexName="Sachen"><term>directio partium</term></index><index indexName="Sachen"><term>potentia partium</term></index> eae enim invicem patiuntur, augentque et minuunt potentiam, et mutant
+directionem; sed totius. Est autem directio totius<index indexName="Sachen"><term>directio totius</term></index> eadem quae directio certi alicujus puncti. Quod semper
+progredi necesse est.</p><figure rendition="#own-line_centered" xml:id="Ch41.p7"><graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_162r_d1.svg" width="238.491pt" xml:id="Ch41.p7.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head></figure><p xml:id="Ch41.p8">Sit corpus <hi rendition="#i">A</hi>, ejus celeritas <formula xml:id="Ch41.p8.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mpadded width="+1.7pt"><m:mi>a</m:mi></m:mpadded><m:mo rspace="4.2pt">⊓</m:mo><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:mrow></m:math></formula>[,] corpus <hi rendition="#i">B</hi>, ejus celeritas <formula xml:id="Ch41.p8.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mpadded width="+1.7pt"><m:mi>b</m:mi></m:mpadded><m:mo rspace="4.2pt">⊓</m:mo><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mi>E</m:mi></m:mrow></m:mrow></m:math></formula>[,] distantia corporum <formula xml:id="Ch41.p8.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mpadded width="+1.7pt"><m:mi>b</m:mi></m:mpadded></m:mrow><m:mo rspace="7.5pt">⊓</m:mo><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>E</m:mi></m:mrow></m:mrow></m:math></formula>, punctum concursus<index indexName="Sachen"><term>punctum concursus</term></index> <hi rendition="#i">D</hi>. Sit centrum gravitatis<index indexName="Sachen"><term>centrum gravitatis</term></index>
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[<hi rendition="#i">F</hi>]</corr></lem><rdg wit="#L"><orig><hi rendition="#i">E</hi> </orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>.
+Erit
+<formula xml:id="Ch41.p8.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mpadded width="+1.7pt"><m:mi>F</m:mi></m:mpadded></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mi>B</m:mi></m:mrow></m:math></formula>. et <formula xml:id="Ch41.p8.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mpadded width="+1.7pt"><m:mi>E</m:mi></m:mpadded></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mi>A</m:mi></m:mrow></m:math></formula>.</p></div></div></body>
+  </text>
+</TEI>

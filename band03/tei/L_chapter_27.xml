@@ -1,0 +1,49 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch27" n="27"><head>27
+DE VI ELASTICA AD RATIONES GEOMETRICAS REVOCATA</head>
+<head>Juli 1686 / 27. August 1689</head><div type="contents"><p xml:id="Ch27.p1"><anchor xml:id="visel_0"/>
+<anchor xml:id="N.27"/><!--  \hackfor{\par} --></p><p rendition="#noindent" xml:id="Ch27.p2"><anchor xml:id="LH_35_10_08_010-011_LH_35_10_08_015_Vorbemerkung"/><hi rendition="#smaller">Beide folgenden Entwürfe N. <ref corresp="L_section_271.xml#N.27.1"/> und N. <ref corresp="L_section_272.xml#N.27.2"/> sind von Leibniz eigenhändig datiert worden: N. <ref corresp="L_section_271.xml#N.27.1"/> auf Juli 1686; N. <ref corresp="L_section_272.xml#N.27.2"/> auf den 27. August 1689.
+Die Datierung von N. <ref corresp="L_section_272.xml#N.27.2"/> geht also auf die Zeit zurück, als Leibniz sich in Rom<index indexName="Orte"><term><hi rendition="#smaller">Rom</hi></term></index> aufhielt (der Textträger selbst kann mangels eines Wasserzeichens nicht datiert werden), wohingegen N. <ref corresp="L_section_271.xml#N.27.1"/> zweifelsohne in Deutschland<index indexName="Orte"><term><hi rendition="#smaller">Deutschland (Germania, Duitsland)</hi></term></index> entstanden war (das Papier stammt wohl aus dem Harz).<index indexName="Orte"><term><hi rendition="#smaller">Harz</hi></term></index>
+Trotz ihres zeitlichen und räumlichen Abstands weisen beide Entwürfe eine enge inhaltliche Verwandtschaft auf.
+Der erste Teil von N. <ref corresp="L_section_272.xml#N.27.2"/> (S. <ref corresp="L_section_272.xml#LH_35_10_08_010-011_ersterTeil-1"/>) ist eine ausführlichere und sorgfältigere Wiederaufnahme der in N. <ref corresp="L_section_271.xml#N.27.1"/> durchgeführten Untersuchung, bei der die elastische Kraft einer Luftmasse, die in einem verschlossenen Behälter zunehmend komprimiert wird, zu bestimmen ist.
+Im zweiten, symmetrischen Teil von N. <ref corresp="L_section_272.xml#N.27.2"/>, für den es in N. <ref corresp="L_section_271.xml#N.27.1"/> keine Entsprechung gibt, wird der komplementäre Fall untersucht, in dem die Kraft eines sich entladenden elastischen Körpers im Mittelpunkt steht.
+Demnach lässt sich N. <ref corresp="L_section_272.xml#N.27.2"/> als Weiterentwicklung und Vervollständigung von N. <ref corresp="L_section_271.xml#N.27.1"/> betrachten.
+Beide Texte weisen zudem inhaltliche Verwandtschaft mit dem Entwurf N. <ref corresp="L_chapter_21.xml#N.21"/> <hi rendition="#i">De vibrationibus aeris tensi</hi> auf: Bei allen steht im Hintergrund das Gedankenexperiment, mit dem in N. <ref corresp="L_section_143.xml#N.14.3"/> (S. <ref corresp="L_section_143.xml#LH_35_09_16_020v_kolbenmodell-1"/>) und N. <ref corresp="L_section_147.xml#N.14.7"/> (S. <ref corresp="L_section_147.xml#LH_35_09_16_002_Beweis-1"/>) sowie im Brief an E. Mariotte von März/April 1683 (<hi rendition="#i">LSB</hi> III, 3 N. 456, S. 795.21–796.3)<ref corresp="#bib_01262"/> die Proportionalität zwischen Spannungskräften und Dehnungen elastischer Körper nachgewiesen werden soll.</hi></p><p xml:id="Ch27.p3"><hi rendition="#smaller">Auf den engen Zusammenhang der Entwürfe N. <ref corresp="L_section_271.xml#N.27.1"/> und N. <ref corresp="L_section_272.xml#N.27.2"/> weist Leibniz selbst in einer Randbemerkung am Kopf von N. <ref corresp="L_section_272.xml#N.27.2"/> (S. <ref corresp="L_section_272.xml#LH_35_10_08_010r_Marg_1686"/>) hin: <hi rendition="#i">Haec accurate constituta Jul. 1686.</hi>
+Es ist auf den ersten Blick naheliegend, diesen Hinweis als eine unmittelbare Anspielung auf N. <ref corresp="L_section_271.xml#N.27.1"/> zu deuten.
+Allerdings könnte der Hinweis auch so gedeutet werden, dass der Text N. <ref corresp="L_section_272.xml#N.27.2"/> bereits im Juli 1686 – im Anschluss an N. <ref corresp="L_section_271.xml#N.27.1"/> – verfasst worden war und am 27. August 1687 nur überarbeitet wurde; zu dieser späteren Textschicht würden dann hauptsächlich die Randbemerkungen zu S. <ref corresp="L_section_272.xml#LH_35_10_08_010r_suurihuomaus-1"/>, S. <ref corresp="L_section_272.xml#LH_35_10_08_010v_zewiteMarg-1"/> und S. <ref corresp="L_section_272.xml#LH_35_10_08_011r_dritteMarg-1"/> sowie der Schlussteil, S. <ref corresp="L_section_272.xml#LH_35_10_08_011v_finisschedae_avdf-1"/> gehören.
+Diese zweite Deutung ist nach heutigem Wissensstand nicht auszuschließen.
+Bemerkenswert ist, dass Leibniz in beiden Fällen mindestens einen der beiden Entwürfe auf seine Reise nach Italien<index indexName="Orte"><term><hi rendition="#smaller">Italien</hi></term></index> mitgenommen und in Rom<index indexName="Orte"><term><hi rendition="#smaller">Rom</hi></term></index> weiter bearbeitet haben muss.
+Die enge Verbindung, die sowohl den Inhalt wie auch die Entstehung beider Texte umfasst, rechtfertigt jedoch in beiden Fällen die Entscheidung der Herausgeber, N. <ref corresp="L_section_271.xml#N.27.1"/> und N. <ref corresp="L_section_272.xml#N.27.2"/> zusammenhängend zu edieren.</hi></p></div><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_271.xml" xpointer="Ch27.S1" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_272.xml" xpointer="Ch27.S2" parse="xml"/></div></body>
+  </text>
+</TEI>

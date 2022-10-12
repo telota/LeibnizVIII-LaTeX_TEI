@@ -1,0 +1,64 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch3" n="3"><head>3
+ZU JOHN MAYOW, TRACTATUS DE SAL-NITRO ET SPIRITU NITRO-AEREO</head>
+<head>[nach Mitte September 1674 – frühe 1680er Jahre (?)]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Notiz zu <hi rendition="#k">J. Mayow</hi>, <hi rendition="#i">Tractatus de sal-nitro et spiritu nitro-aereo</hi>, in: <hi rendition="#k">Ders.</hi>, <hi rendition="#i">Tractatus quinque medico-physici</hi>, Oxford 1674:<ref corresp="#bib_01997"/>
+LH XXXV 9, 16 Bl. 15.
+Ein Zettel (7 x 2,5 cm).
+Eineinhalb Seiten;
+Textfolge: Bl. <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1002">15 v<hi rendition="#sup">o</hi></ref>, <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1000">15 r<hi rendition="#sup">o</hi></ref>.</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch3.p1"><anchor xml:id="_41165"/>
+<anchor xml:id="N.3"/><!--  \hackfor{\par} --></p><p xml:id="Ch3.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+In seinem Brief an G. C. Schelhammer<index indexName="Personen"><term><hi rendition="#g #smaller">Schelhammer</hi> <hi rendition="#smaller">(Schelhammerus), Günther Christoph 1649–1716</hi></term></index> von Mitte September 1674 vermerkte Leibniz, er warte gerade auf ein englisches Buch <hi rendition="#i">de respiratione foetus in utero</hi> (<hi rendition="#i">LSB</hi> III, 5 N. I, S. 3.19–4.1<ref corresp="#bib_01293"/>).
+Damit war die gleichnamige Abhandlung gemeint,<ref corresp="#bib_01296"/> die J. Mayow<index indexName="Personen"><term><hi rendition="#g #smaller">Mayow</hi><hi rendition="#smaller">, John 1643–1679</hi></term></index> 1674 in seinen <hi rendition="#i">Tractatus quinque medico-physici</hi> veröffentlicht hatte und Leibniz vermutlich aus einer Besprechung in den <hi rendition="#i">Philosophical Transactions</hi> (20. Juli 1674, S. 101–113<ref corresp="#bib_01295"/>) kannte.
+Zum Sammelband gehörte auch Mayows <hi rendition="#i">Tractatus de sal-nitro et spiritu nitro-aereo</hi><ref corresp="#bib_01997"/>, an den die vorliegende Notiz N. <ref corresp="#N.3"/> anknüpft.
+Unter der Annahme, dass Leibniz das erwartete Buch auch empfing, kann er ab Mitte September 1674 diese Abhandlung gelesen und N. <ref corresp="#N.3"/> verfasst haben.</hi></p></div><div type="text"><p xml:id="Ch3.p5"><hi rendition="#smaller">Auf Mayows Sammelband wurde Leibniz ferner von F. Schrader<index indexName="Personen"><term><hi rendition="#g #smaller">Schrader</hi><hi rendition="#smaller">, Friedrich 1657–1704</hi></term></index> in einem Brief vom 28. November (8. Dezember) 1681 aufmerksam gemacht (vgl. <hi rendition="#i">LSB</hi> III, 3 N. 299, S. 522.5–9; 523.16–18<ref corresp="#bib_01294"/>).
+Dies könnte ihn erneut dazu veranlasst haben, sich mit Mayows <hi rendition="#i">Tractatus de sal-nitro et spiritu nitro-aereo</hi> zu beschäftigen.
+Es ist ohnehin wahrscheinlich, dass N. <ref corresp="#N.3"/> auf die frühen Achtziger Jahre zurückgeht, als Leibniz sich intensiv mit der Theorie der Elastizität und Festigkeit befasste, wie zahlreiche Texte im vorliegenden Band bezeugen.</hi></p><p rendition="#noindent" xml:id="Ch3.p6"><ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1002"><pb type="L"/><fw type="folNum">[15 v<hi rendition="#sup">o</hi>]</fw></ref> <app type="Cfootnote" from="#LH35_09_16_015v_1" to="#LH35_09_16_015v_2"><lem type="main"/><note type="lemma-abbrev">Corpus <seg type="apparat-ellipsis"/> flexiles</note><note type="editorial">Siehe J. <hi rendition="#k">Mayow</hi>, <bibl corresp="#bib_01997"><hi rendition="#i">Tractatus de sal-nitro et spiritu nitro-aereo</hi>, S. 73–77; in: <hi rendition="#k">Ders.</hi>, <hi rendition="#i">Tractatus quinque medico-physici</hi>, Oxford 1674.</bibl></note></app>Corpus
+rigidum variis modis flectitur,<anchor xml:id="LH35_09_16_015v_1"/><index indexName="Sachen"><term>corpus rigidum</term></index><index indexName="Sachen"><term>corpus flexum</term></index>
+ut vel superficies convexa maneat aeque longa,
+concava mutetur;<index indexName="Sachen"><term>superficies convexa</term></index><index indexName="Sachen"><term>superficies concava</term></index>
+vel ut contra;<index indexName="Sachen"><term>flexio corporis</term></index>
+vel ut ambae maneant aeque longae ut ante
+(<?tex-source \phantom{)}?>curvedine<index indexName="Sachen"><term>curvedo</term></index> tantum
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[mutata]</corr></lem><rdg wit="#L"><orig>mutata<?tex-source \phantom{(}?>)</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+et incluso[<?tex-source \phantom{(}?>)],
+vel ut ambae mutentur. Mayow<index indexName="Personen"><term><hi rendition="#g">Mayow</hi>, John 1643–1679</term></index>
+<hi rendition="#i">de Nitro</hi> c. 6.<app type="Cfootnote"><lem type="main"/><note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]</note><note type="editorial">Siehe a.a.O., die Abbildung <hi rendition="#i">Fig. 8</hi> auf der Tafel <hi rendition="#i">Tab. 1</hi> am Bandende.</note></app></p><figure rendition="#own-line_centered" xml:id="Ch3.p7"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_015_d.svg" width="151.767pt" xml:id="Ch3.p7.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_35_09_16_015v_Fig.1"/></head></figure><p rendition="#noindent" xml:id="Ch3.p8"><hi rendition="#i">a</hi> <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[chorda<index indexName="Sachen"><term>chorda tensa</term></index>]</corr></lem><rdg wit="#L"><orig>corda</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+ <hi rendition="#i">b</hi> baculus<index indexName="Sachen"><term>baculus</term></index>
+ <hi rendition="#i">ab</hi> baculi
+ Chorda vel firmiter utrinque alligata, vel ab una parte soluta[,] baculi flexiles.
+<anchor xml:id="LH35_09_16_015v_2"/><ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1000"><pb type="L"/><fw type="folNum">[15 r<hi rendition="#sup">o</hi>]</fw></ref></p><p xml:id="Ch3.p9">Multa notanda habet Mayow<index indexName="Personen"><term><hi rendition="#g">Mayow</hi>, John 1643–1679</term></index>
+de varietate Elasticorum solidorum<index indexName="Sachen"><term>solidum elasticum</term></index> inter tendendum.<index indexName="Sachen"><term>tensio corporis</term></index></p></div></div></body>
+  </text>
+</TEI>

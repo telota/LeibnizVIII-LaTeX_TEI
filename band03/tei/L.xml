@@ -1,0 +1,256 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+    <fileDesc>
+      <titleStmt xml:id="L_VIII_3_titleStmt">
+        <title type="main" level="s">Gottfried Wilhelm Leibniz. Reihe VIII: Naturwissenschaftliche,
+          medizinische und technische Schriften</title>
+        <title type="volume" n="1" level="m">Erster Band 1668 – 1676</title>
+        <respStmt>
+          <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
+            Wissenschaften</orgName>
+          <resp>
+            <note type="remarkResponsibility">Herausgeber</note>
+          </resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="EK">
+            <forename>Eberhard</forename>
+            <surname>Knobloch</surname>
+          </persName>
+          <resp>
+            <note type="remarkResponsibility">Projektleiter der Leibniz-Editionsstelle Berlin der
+              Berlin-Brandenburgischen Akademie der Wissenschaften</note>
+          </resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="#HS">
+            <forename>Harald</forename>
+            <surname>Siebert</surname>
+          </persName>
+          <resp>
+            <note type="remarkResponsibility">Arbeitsstellenleiter der Leibniz-Editionsstelle Berlin
+              der Berlin-Brandenburgischen Akademie der Wissenschaften</note>
+          </resp>
+        </respStmt>
+        <respStmt>
+          <orgName xml:id="le-tex">le-tex publishing services GmbH</orgName>
+          <resp>
+            <note type="remarkResponsibility">Entwicklung von Konversionsroutinen für die
+              laTeX-Vorlage nach TEI, Überführung der Daten in das TEI-Format (inkl.
+              MathML-Formelnotation)</note>
+          </resp>
+        </respStmt>
+        <respStmt>
+          <orgName xml:id="textloop">textloop Martina Gödel</orgName>
+          <resp>
+            <note type="remarkResponsibility">Entwicklung TEI-Datenmodell und Sample-Dateien für die
+              Konversion</note>
+          </resp>
+        </respStmt>
+        <funder>
+          <orgName>Gemeinsame Wissenschaftskonferenz von Bund und Ländern im Akademienprogramm</orgName>
+          <orgName>Bundesministerium für Bildung und Forschung</orgName>
+          <orgName>Senatsverwaltung für Bildung, Wissenschaft und Forschung des Landes Berlin</orgName>
+        </funder>
+      </titleStmt>
+      <editionStmt xml:id="L_VIII_3_editionStmt">
+        <edition>TEI-Version auf Basis der LaTeX-Druck-Vorlage</edition>
+      </editionStmt>
+      <publicationStmt xml:id="L_VIII_3_publicationStmt">
+        <publisher>Berlin-Brandenburgischen Akademie der Wissenschaften</publisher>
+        <date type="creation">2019</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull xml:id="L_VIII_3_biblFull">
+          <titleStmt>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="1" level="m">Zweiter Band 1668 – 1676</title>
+            <author>
+              <persName ref="http://d-nb.info/gnd/118571249">
+                <surname>Leibniz</surname>
+                <forename>Gottfried Wilhelm</forename>
+              </persName>
+            </author>
+          </titleStmt>
+          <editionStmt>
+            <edition n="1"/>
+            <respStmt>
+              <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
+                Wissenschaften</orgName>
+              <resp>
+                <note type="remarkResponsibility">Herausgeber</note>
+              </resp>
+            </respStmt>
+            <respStmt>
+              <persName ref="#EK">
+                <forename>Eberhard</forename>
+                <surname>Knobloch</surname>
+              </persName>
+              <resp>
+                <note type="remarkResponsibility">Projektleiter der Leibniz-Editionsstelle Berlin
+                  der Berlin-Brandenburgischen Akademie der Wissenschaften</note>
+              </resp>
+            </respStmt>
+            <respStmt>
+              <persName xml:id="HH">
+                <forename>Hartmut</forename>
+                <surname>Hecht</surname>
+              </persName>
+              <resp>
+                <note type="remarkResponsibility">Arbeitsstellenleiter der Leibniz-Editionsstelle
+                  Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</note>
+              </resp>
+            </respStmt>
+            <editor role="editor">
+              <persName>
+                <forename>Hartmut</forename>
+                <surname> Hecht</surname>
+              </persName>
+              <persName>
+                <forename>Eberhard</forename>
+                <surname>Knobloch</surname>
+              </persName>
+              <persName>
+                <forename>Alena</forename>
+                <surname>Kuznetsova</surname>
+              </persName>
+              <persName>
+                <forename>Sebastian W.</forename>
+                <surname>Storck</surname>
+              </persName>
+            </editor>
+            <editor role="coworker">
+              <persName>
+                <forename>Vladimir</forename>
+                <surname> Kirsanov</surname>
+              </persName>
+              <persName>
+                <forename>Anne-Lise</forename>
+                <surname>Rey</surname>
+              </persName>
+            </editor>
+          </editionStmt>
+          <publicationStmt>
+            <publisher>Akademie Verlag GmbH</publisher>
+            <pubPlace>Berlin</pubPlace>
+            <date type="publication">2009</date>
+          </publicationStmt>
+          <seriesStmt>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+            <title type="sub" level="m">Achte Reihe, Erster Band</title>
+            <respStmt>
+              <name>Berlin-Brandenburgischen Akademie der Wissenschaften</name>
+              <name>Akademie der Wissenschaften zu Göttingen</name>
+              <resp>
+                <note type="remarkResponsibility">Herausgeber</note>
+              </resp>
+            </respStmt>
+            <respStmt>
+              <name>Akademie Verlag</name>
+              <resp>
+                <note type="remarkResponsibility">Verlage</note>
+              </resp>
+            </respStmt>
+          </seriesStmt>
+        </biblFull>
+        <listWit xml:id="L_VIII_3_listWit">
+          <witness xml:id="L">Der nach den editorischen Richtlinien der Leibniz-Edition edierte Text
+            von Leibniz </witness>
+          <witness xml:id="L1">Leibniz Textzeuge 1</witness>
+          <witness xml:id="L2">Leibniz Textzeuge 2</witness>
+          <witness xml:id="Lil">TODO</witness>
+          <witness xml:id="A">Abschrift durch Schreiberhand</witness>
+          <witness xml:id="H">Geändert wird hier der Text eines Handexemplars, also eines gedruckten Buchtextes, in dem Leibniz Anmerkungen/Marginalien hinterlassen hat</witness>
+          <witness xml:id="ed">Herausgeber</witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="L_VIII_3_encodingDesc">
+      <tagsDecl>
+        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+      </tagsDecl>
+      <charDecl>
+        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+        <!--rightpropto-->
+        <glyph xml:id="rightpropto">
+          <glyphName>rightpropto</glyphName>
+          <desc>...</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\rightpropto</mapping>
+          <graphic url="../../glyphs/rightpropto.svg"/>
+        </glyph>
+        <glyph xml:id="Pfund">
+          <glyphName>Pfund</glyphName>
+          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.7</value>
+          </charProp>
+          <mapping type="TeX">\Pfund</mapping>
+          <graphic url="../../glyphs/Pfund.svg"/>
+        </glyph>
+        <!-- leibdashv -->
+        <glyph xml:id="pleibdashv">
+          <glyphName>pleibdashv</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\pleibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <glyph xml:id="leibdashv">
+          <glyphName>leibdashv</glyphName>
+          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\leibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <!-- Sonderzeichen MIT Unicodeentsprechung -->
+      </charDecl>
+    </encodingDesc>
+  </teiHeader><text><front><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_part_VORWORT.xml" xpointer="Pt2" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_part_EINLEITUNG.xml" xpointer="Pt3" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_part_ZUR_TEXT_UND_VARIANTENGESTALTUNG.xml" xpointer="Pt4" parse="xml"/></front><body><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_part_I_AKUSTIK_ELASTIZIT_T_FESTIGKEIT.xml" xpointer="Pt5" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_part_II_STOSS.xml" xpointer="Pt6" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_part_II_A_NOTIZEN_KONZEPTE_AUFZEICHNUNGEN.xml" xpointer="Pt7" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_part_II_B_AUSZ_GE_REZENSIONEN.xml" xpointer="Pt8" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_part_III_NACHTR_GE.xml" xpointer="Pt9" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_part_III_A_TECHNICA_Zu_Bd_VIII_1_.xml" xpointer="Pt10" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_part_III_B_BEWEGUNG_Zu_Bd_VIII_2_.xml" xpointer="Pt11" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_appendix_VERZEICHNISSE.xml" xpointer="Pt12" parse="xml"/></body><back/></text></TEI>

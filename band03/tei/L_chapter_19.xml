@@ -1,0 +1,79 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch19" n="19"><head>19
+DE CORPORUM COMPOSITORUM DURITIE</head>
+<head>[Ende Januar 1683 – Ende 1684]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Notiz: LH XXXV 9, 15 Bl. 20.
+Ein Blatt 4<hi rendition="#sup">o</hi>;
+Fragment eines <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=950">Wasserzeichens</ref> am Blattrand:
+Papier aus dem Harz.
+Eine Seite auf <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=949">Bl. 20 r<hi rendition="#sup">o</hi></ref>;
+<ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=951">Bl. 20 v<hi rendition="#sup">o</hi></ref> überliefert N. <ref corresp="L_chapter_18.xml#N.18"/>.</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch19.p1"><anchor xml:id="_60650"/>
+<anchor xml:id="N.19"/><!--  \hackfor{\par} --></p><p xml:id="Ch19.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Die vorliegende Notiz N. <ref corresp="#N.19"/> ist auf demselben Textträger wie die Aufzeichnung N. <ref corresp="L_chapter_18.xml#N.18"/> überliefert.
+Diese letztere lässt sich auf den Zeitraum von Ende Januar 1683 bis Ende des Jahres 1684 datieren (siehe die entsprechende Begründung, S. <ref corresp="L_chapter_18.xml#LH_35_09_15_020v_Datierung"/>).
+Aufgrund der gemeinsamen Überlieferung liegt es nahe, für N. <ref corresp="#N.19"/> dieselbe Datierung vorzuschlagen.</hi></p></div><div type="text"><p rendition="#noindent" xml:id="Ch19.p5"><ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=949"><pb type="L"/><fw type="folNum">[20 r<hi rendition="#sup">o</hi>]</fw></ref> Ex cupro<index indexName="Sachen"><term>cuprum</term></index> et stanno<index indexName="Sachen"><term>stannum</term></index> confusis,
+fit corpus durissimum,<index indexName="Sachen"><term>corpus durum</term></index>
+magis quam composita,<index indexName="Sachen"><term>corpus compositum</term></index>
+et in talibus casibus<index indexName="Sachen"><term>casus</term></index> non est
+<app type="Bfootnote"><lem type="main">verum, non dare</lem><note type="lemma-abbrev">verum,</note><rdg wit="#L" cause="addition"><note type="editorial">|</note> <add>non</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> dare <hi rendition="#i">L</hi></rdg></app>
+quid posse,
+quod non habet.</p><p xml:id="Ch19.p6"><app type="Bfootnote"><lem type="main">Ex glutine<index indexName="Sachen"><term>gluten</term></index> et</lem><note type="lemma-abbrev">Ex</note><rdg wit="#L" n="1"> colla<index indexName="Sachen"><term>colla</term></index> et
+</rdg><rdg wit="#L" n="2"> glutine et <hi rendition="#i">L</hi></rdg></app>
+charta<index indexName="Sachen"><term>charta</term></index> fit etiam corpus
+durius<index indexName="Sachen"><term>corpus durus</term></index> longe et charta et glutine.
+Gluten habet duritiem,<index indexName="Sachen"><term>durities</term></index>
+sed est fragile,<index indexName="Sachen"><term>fragilitas</term></index>
+charta habet mollitiem,<index indexName="Sachen"><term>mollities</term></index>
+et est tensilis:<index indexName="Sachen"><term>tensilitas</term></index>
+si misceantur inter se non potest glutinis unius pars ab alia abjungi,
+nisi simul chartae pars una ab alia sejungatur,
+ergo minor
+<app type="Bfootnote"><lem type="main">est distensio<index indexName="Sachen"><term>distensio</term></index> tam</lem><note type="lemma-abbrev">est</note><rdg wit="#L" n="1"> tam
+</rdg><rdg wit="#L" n="2"> distensio tam <hi rendition="#i">L</hi></rdg></app>
+glutinis quam chartae.</p><p rendition="#noindent" xml:id="Ch19.p7">[<hi rendition="#i">Nachfolgend kleingedruckter Text in L gestrichen:</hi>]</p><p rendition="#noindent" xml:id="Ch19.p8"><hi rendition="#smaller">At notandum cum
+<app type="Bfootnote"><lem type="main">glutinis frustum<index indexName="Sachen"><term><hi rendition="#smaller">frustum</hi></term></index> <hi rendition="#i">A</hi> frangimus</lem><note type="lemma-abbrev">glutinis</note><rdg wit="#L" n="1"> partem fran
+</rdg><rdg wit="#L" n="2"> frustum <hi rendition="#i">A</hi> frangimus <hi rendition="#i">L</hi></rdg></app>
+nos operari quasi per vectem<index indexName="Sachen"><term><hi rendition="#smaller">vectis</hi></term></index>
+cuius fulcrum<index indexName="Sachen"><term><hi rendition="#smaller">fulcrum</hi></term></index> <hi rendition="#i">B</hi>.
+Et ita minore vi<index indexName="Sachen"><term><hi rendition="#smaller">vis frangendi</hi></term></index> opus habere quam recta diducendo.</hi></p><figure rendition="#own-line_centered" xml:id="Ch19.p9"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020r_d.svg" width="52.0344pt" xml:id="Ch19.p9.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1, gestr.</hi>]</head></figure><p rendition="#noindent" xml:id="Ch19.p10">Charta autem per se ferre potest multo majorem distensionem<index indexName="Sachen"><term>distensio</term></index>
+quam gluten per se,
+contra gluten minus cedit quam charta.
+Charta non facile frangitur, gluten non facile flectitur.
+Ergo compositum non facile flectitur, nec facile frangitur.
+Sed quaeritur
+an compositum<index indexName="Sachen"><term>corpus compositum</term></index>
+difficilius frangatur quam charta,<index indexName="Sachen"><term>charta</term></index>
+et difficilius flectatur quam gluten.<index indexName="Sachen"><term>gluten</term></index></p></div></div></body>
+  </text>
+</TEI>

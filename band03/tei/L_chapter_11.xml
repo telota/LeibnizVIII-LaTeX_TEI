@@ -1,0 +1,70 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch11" n="11"><head>11
+CHORDAE AEQUABILES AEQUALITER TENSAE HABENT SONOS LONGITUDINIBUS RECIPROCE PROPORTIONALES</head>
+<head>[Ende 1680 (?) – 1685 (?)]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Notiz: LH XXXVII 1 Bl. 26.
+Ein Zettel (10 x 9 cm).
+Text und Diagramme auf <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=77">Bl. 26 r<hi rendition="#sup">o</hi></ref>.
+<ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=79">Bl. 26 v<hi rendition="#sup">o</hi></ref> leer
+bis auf die Spur einer mit Bleistift verfassten Rechnung möglicherweise von fremder Hand:</hi></p><p> <formula xml:id="Ch11.p4.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo largeop="true" mathsize="80%" rspace="0.8pt" stretchy="false" symmetric="true">∫</m:mo><m:mrow><m:mpadded width="+1.7pt"><m:mi mathsize="80%">x</m:mi></m:mpadded><m:mo>⁢</m:mo><m:mrow><m:mo maxsize="80%" minsize="80%">⟨</m:mo><m:mo mathsize="80%" stretchy="false">-</m:mo><m:mo maxsize="80%" minsize="80%" rspace="7.5pt">⟩</m:mo></m:mrow><m:mo>⁢</m:mo><m:mi mathsize="80%">x</m:mi></m:mrow></m:mrow></m:mstyle><m:mo mathsize="80%" stretchy="false">+</m:mo><m:mn mathsize="80%">1</m:mn></m:mrow><m:mo mathsize="80%" rspace="7.5pt" stretchy="false">,</m:mo><m:mrow><m:mi mathsize="80%">x</m:mi><m:mo mathsize="80%" stretchy="false">+</m:mo><m:mpadded width="+5pt"><m:mn mathsize="80%">2</m:mn></m:mpadded></m:mrow></m:mrow><m:mo mathsize="80%" rspace="7.5pt" stretchy="false">=</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi mathsize="80%">x</m:mi><m:mo mathsize="80%" stretchy="false">,</m:mo><m:mrow><m:mrow><m:mrow><m:mo maxsize="80%" minsize="80%">⟨</m:mo><m:mo mathsize="80%" stretchy="false">-</m:mo><m:mo maxsize="80%" minsize="80%" rspace="7.5pt">⟩</m:mo></m:mrow><m:mo>⁢</m:mo><m:mi mathsize="80%">x</m:mi></m:mrow><m:mo mathsize="80%" stretchy="false">+</m:mo><m:mrow><m:mo maxsize="80%" minsize="80%">⟨</m:mo><m:mo mathsize="80%" stretchy="false">-</m:mo><m:mo maxsize="80%" minsize="80%">⟩</m:mo></m:mrow></m:mrow></m:mrow><m:mn mathsize="80%">4</m:mn></m:mfrac></m:mstyle></m:mrow></m:math></formula><hi rendition="#smaller"/></p><p> <formula xml:id="Ch11.p5.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo mathsize="80%" stretchy="false">=</m:mo></m:math></formula><hi rendition="#smaller"/></p><p> <formula xml:id="Ch11.p6.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mstyle displaystyle="true"><m:mrow><m:mo largeop="true" mathsize="80%" rspace="0pt" stretchy="false" symmetric="true">∫</m:mo><m:mpadded width="+5pt"><m:mi mathsize="80%">x</m:mi></m:mpadded></m:mrow></m:mstyle><m:mo mathsize="80%" rspace="7.5pt" stretchy="false">=</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mpadded width="+5pt"><m:msub><m:mi mathsize="80%">x</m:mi><m:mn mathsize="80%">1</m:mn></m:msub></m:mpadded><m:mo>⁢</m:mo><m:mrow><m:mo maxsize="80%" minsize="80%">(</m:mo><m:mrow><m:mpadded width="+5pt"><m:msub><m:mi mathsize="80%">x</m:mi><m:mn mathsize="80%">2</m:mn></m:msub></m:mpadded><m:mo>⁢</m:mo><m:mrow><m:mo maxsize="80%" minsize="80%">⟨</m:mo><m:mo mathsize="80%" stretchy="false">-</m:mo><m:mo maxsize="80%" minsize="80%" rspace="7.5pt">⟩</m:mo></m:mrow><m:mo>⁢</m:mo><m:msub><m:mi mathsize="80%">x</m:mi><m:mn mathsize="80%">1</m:mn></m:msub></m:mrow><m:mo maxsize="80%" minsize="80%">)</m:mo></m:mrow></m:mrow><m:mn mathsize="80%">4</m:mn></m:mfrac></m:mstyle></m:mrow></m:math></formula><hi rendition="#smaller"/></p><p> <formula xml:id="Ch11.p7.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mo mathsize="80%" rspace="7.5pt" stretchy="false">-</m:mo><m:mrow><m:mrow><m:mo maxsize="80%" minsize="80%">⟨</m:mo><m:mo mathsize="80%" stretchy="false">-</m:mo><m:mo maxsize="80%" minsize="80%" rspace="0pt">⟩</m:mo></m:mrow><m:mo>⁢</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo largeop="true" mathsize="80%" rspace="0pt" stretchy="false" symmetric="true">∫</m:mo><m:mrow><m:mi mathsize="80%">x</m:mi><m:mo>⁢</m:mo><m:mpadded width="+1.7pt"><m:mi mathsize="80%">x</m:mi></m:mpadded></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow><m:mo mathsize="80%" rspace="4.2pt" stretchy="false">-</m:mo><m:mrow><m:mrow><m:mo maxsize="80%" minsize="80%">⟨</m:mo><m:mo mathsize="80%" stretchy="false">-</m:mo><m:mo maxsize="80%" minsize="80%" rspace="0pt">⟩</m:mo></m:mrow><m:mo>⁢</m:mo><m:mstyle displaystyle="true"><m:mrow><m:mo largeop="true" mathsize="80%" rspace="0pt" stretchy="false" symmetric="true">∫</m:mo><m:mi mathsize="80%">x</m:mi></m:mrow></m:mstyle></m:mrow></m:mrow></m:math></formula><hi rendition="#smaller"/></p></item><item><label><hi rendition="#i #smaller">E</hi></label>
+<p><hi rendition="#smaller"><hi rendition="#k">Gerland</hi> 1906, S. 35.<ref corresp="#bib_00197"/></hi></p></item></list></p></div><div type="contents"><p xml:id="Ch11.p1"><anchor xml:id="_38540"/>
+<anchor xml:id="N.11"/><!--  \hackfor{\par} --></p><p xml:id="Ch11.p9"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Ausgangspunkt der Notiz N. <ref corresp="#N.11"/> ist die Feststellung, dass gleichartige Saiten beim Schwingen Klänge erzeugen, deren Frequenz bei gleichbleibender Spannung jeweils in umgekehrtem Verhältnis zur Länge der Saiten steht.
+Diese Feststellung ist in Leibnizens Texten über die Akustik mehrmals anzutreffen, etwa in
+N. <anchor xml:id="LH_37_01_026_belegstellen-1"/><ref corresp="L_section_82.xml#N.8.2"/>, S. <ref corresp="L_section_82.xml#LH35_09_15_009v_freqzulaeng-1"/>;
+N. <ref corresp="L_section_86.xml#N.8.6"/>, S. <ref corresp="L_section_86.xml#LH35_09_15_016r_freqzulaeng-1"/>;
+N. <ref corresp="L_section_122.xml#N.12.2"/>, S. <ref corresp="L_section_122.xml#LH_37_01_021r_freqzulaeng-1"/>;
+N. <ref corresp="L_section_123.xml#N.12.3"/>, S. <ref corresp="L_section_123.xml#LH_37_01_006v_sa1"/>;
+N. <ref corresp="L_chapter_13.xml#N.13"/>, S. <ref corresp="L_chapter_13.xml#LH_37_01_027r_hypoth-1"/>.
+Die Entstehungszeit dieser Texte erstreckt sich insgesamt vom Dezember 1680 bis zum Jahre 1685.
+Diese Zeitspanne wird – mangels weiterer Anhaltspunkte – im Ganzen als Datierung von N. <anchor xml:id="LH_37_01_026_belegstellen-2"/><ref corresp="#N.11"/> übernommen.
+Eine frühere oder spätere Entstehung des Textes ist jedoch nicht auszuschließen.</hi></p></div><div type="text"><p rendition="#noindent" xml:id="Ch11.p10"><ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=77"><pb type="L"/><fw type="folNum">[26 r<hi rendition="#sup">o</hi>]</fw></ref></p><figure rendition="#own-line_centered" xml:id="Ch11.p11"><graphic url="../gesamttex/edit_VIII,3/images/LH_37_01_026_d1.svg" width="238.491pt" xml:id="Ch11.p11.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head></figure><p rendition="#noindent" xml:id="Ch11.p12">Si chorda musica<index indexName="Sachen"><term>chorda musica</term></index> <formula xml:id="Ch11.p12.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula> varie dividatur in punctis <formula xml:id="Ch11.p12.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>X</m:mi><m:mo>,</m:mo></m:mrow></m:math></formula> <formula xml:id="Ch11.p12.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>,</m:mo></m:mrow></m:math></formula>
+<app type="Bfootnote"><lem type="main">etc.</lem><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
+sonos<index indexName="Sachen"><term>sonus</term></index> edet proportionales rectis <formula xml:id="Ch11.p12.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>X</m:mi><m:mo>⁢</m:mo><m:mi>Y</m:mi></m:mrow><m:mo>,</m:mo></m:mrow></m:math></formula>
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[<formula xml:id="Ch11.p12.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>Y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow><m:mo>,</m:mo></m:mrow></m:math></formula>]</corr></lem><rdg wit="#L"><orig><formula xml:id="Ch11.p12.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>⁢</m:mo><m:mi>Y</m:mi></m:mrow></m:math></formula></orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+posito <formula xml:id="Ch11.p12.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>X</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula> esse Asymptoton Hyperbolae <formula xml:id="Ch11.p12.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>Y</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>Y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow><m:mo>,</m:mo></m:mrow></m:math></formula><index indexName="Sachen"><term>hyperbola</term></index>
+et <formula xml:id="Ch11.p12.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>X</m:mi></m:mrow></m:math></formula> abscissas, et <formula xml:id="Ch11.p12.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>X</m:mi><m:mo>⁢</m:mo><m:mi>Y</m:mi></m:mrow></m:math></formula> ordinatas.
+<app type="Bfootnote"><lem type="main">Nam chordae aequabiles aequaliter tensae,<index indexName="Sachen"><term>chorda tensa</term></index>
+habent</lem><note type="lemma-abbrev">Nam</note><rdg wit="#L" n="1"> chorda aequabilis aequaliter tensa, habet
+</rdg><rdg wit="#L" n="2"> chordae aequabiles aequaliter tensae, habent <hi rendition="#i">L</hi></rdg></app>
+sonos longitudinibus<index indexName="Sachen"><term>longitudo chordae</term></index> reciproce proportionales.
+Hinc dicimus reciprocos arithmeticorum<index indexName="Sachen"><term>progressio arithmetica</term></index>
+esse progressionis harmonicae,<index indexName="Sachen"><term>progressio harmonica</term></index>
+ubi ea est proprietas,
+ut <app type="Bfootnote"><lem type="main">differentiae trium sint ut extrema.</lem><note type="lemma-abbrev">differentiae</note><rdg wit="#L" n="1"> sint
+</rdg><rdg wit="#L" n="2"> trium sint ut
+<app><rdg wit="#L" n="a">extrema<formula xml:id="Ch11.p12.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula><hi rendition="#sup">rum</hi><formula xml:id="Ch11.p12.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula>.
+</rdg><rdg wit="#L" n="b">extrema. <hi rendition="#i">L</hi></rdg></app></rdg></app></p><p rendition="#noindent" xml:id="Ch11.p13">[<hi rendition="#i">Auf <ref>Bl. 26 r<hi rendition="#sup">o</hi></ref>, ohne erkennbaren Zusammenhang mit dem Text:</hi>]</p><figure rendition="#own-line_centered" xml:id="Ch11.p14_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_37_01_026_d2a.svg" width="86.724pt" xml:id="Ch11.p14.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 2a</hi>]</head></figure><figure rendition="#own-line_centered" xml:id="Ch11.p14_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_37_01_026_d2b.svg" width="130.086pt" xml:id="Ch11.p14.g2"/><head rendition="#c">[<hi rendition="#i">Fig. 2b</hi>]</head></figure></div></div></body>
+  </text>
+</TEI>

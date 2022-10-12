@@ -6,17 +6,15 @@ Die LaTeX-Daten bilden die Grundlage für den Druck der Reihe VIII und werden vo
 
 # Inhalte
 
-## [band01](https://github.com/telota/LeibnizVIII-LaTeX_TEI/tree/main/band01)
+## Reihe 8, Bände I-III
+
+Die Ordner der bereits erschienen Bände der Reihe VIII (1-3) enthalten jeweils: 
 
 * latex: LaTeX-Datensatz zur Erstellung der PDF-Druckvorlage
 * tei: XML/TEI-Datensatz (konvertiert aus LaTeX)
 
-## [band02](https://github.com/telota/LeibnizVIII-LaTeX_TEI/tree/main/band02)
 
-* latex: LaTeX-Datensatz zur Erstellung der PDF-Druckvorlage
-* tei: XML/TEI-Datensatz (konvertiert aus LaTeX)
-
-Die PDF-Dateien der gedruckten Edition stehen auf dem edoc-Server der BBAW zur Verfügung: [VIII, 1](https://edoc.bbaw.de/frontdoor/index/index/docId/14) und [VIII, 2](https://edoc.bbaw.de/frontdoor/index/index/docId/2585).
+Die PDF-Dateien der gedruckten Edition stehen auf dem edoc-Server der BBAW zur Verfügung: [VIII, 1](https://edoc.bbaw.de/frontdoor/index/index/docId/14), [VIII, 2](https://edoc.bbaw.de/frontdoor/index/index/docId/2585) und [VIII, 3](https://edoc.bbaw.de/frontdoor/index/index/docId/3407).
 
 # Lizenz
 

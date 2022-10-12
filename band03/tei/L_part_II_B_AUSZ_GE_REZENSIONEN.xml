@@ -1,0 +1,35 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="part" xml:id="Pt8"><head>II.B. AUSZÜGE, REZENSIONEN</head><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_72.xml" xpointer="Ch72" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_73.xml" xpointer="Ch73" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_74.xml" xpointer="Ch74" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_75.xml" xpointer="Ch75" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_76.xml" xpointer="Ch76" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_chapter_77.xml" xpointer="Ch77" parse="xml"/></div></body>
+  </text>
+</TEI>

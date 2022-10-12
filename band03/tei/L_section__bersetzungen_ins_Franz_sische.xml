@@ -1,0 +1,88 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="section" xml:id="Chx6.Sx3"><head rendition="#smaller"><hi rendition="#k">Übersetzungen ins Französische</hi></head><head/><div type="text"><table>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 185–200</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_581.xml#dcc_01"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 200–207</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_582.xml#dcc_02-1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 208–212</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_583.xml#dcc_02-2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 213–223</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_584.xml#dcc_03"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 223–228</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_585.xml#dcc_04"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 229–236</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_586.xml#dcc_05"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 236–255</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_587.xml#dcc_06-1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 257–277</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_588.xml#dcc_06-2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 278–302</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_589.xml#dcc_07"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 308–316</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_5810.xml#dcc_08"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 317–330</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_5811.xml#dcc_09"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 331–337</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_5812.xml#dcc_10"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">G. W.</hi> <hi rendition="#k #smaller">Leibniz</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Œuvre concernant la physique</hi><hi rendition="#smaller">, hrsg. von P.</hi><hi rendition="#k #smaller">Peyroux</hi><hi rendition="#smaller">, Paris 1985, S. 15–20</hi><ref corresp="#bib_01248"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_146.xml#ddrs_06"/></cell>
+          </row>
+        </table></div></div></body>
+  </text>
+</TEI>

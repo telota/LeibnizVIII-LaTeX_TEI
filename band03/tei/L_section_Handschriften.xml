@@ -1,0 +1,810 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="section" xml:id="Chx5.Sx2"><head rendition="#smaller"><hi rendition="#k">Handschriften</hi></head><head/><div type="text"><p xml:id="Chx5.Sx2.p1"><hi rendition="#smaller"/><hi rendition="#k #smaller">Hannover</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Gottfried Wilhelm Leibniz Bibliothek – Niedersächsische Landesbibliothek</hi><hi rendition="#smaller"/></p><table>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 14</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 1–2</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_148.xml#ddrs_08"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 14</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 3</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_146.xml#ddrs_06"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 14</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 3</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_149.xml#ddrs_09"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 15</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 1</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_7.xml#_41157"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 15</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 2–5</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_9.xml#_41153"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 15</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 6–7</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_81.xml#_41152_1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 15</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 8–9</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_82.xml#_41152_2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 15</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 10–11</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_83.xml#_41152_3"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 15</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 12–13</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_84.xml#_41152_4"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 15</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 14–15</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_85.xml#_41152_5"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 15</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 16–17</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_86.xml#_41152_6"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 15</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 18–19</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_17.xml#_60649"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 15</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 20</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_18.xml#_60651"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 15</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 20</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_19.xml#_60650"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 15</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 21</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_10.xml#_41156"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 15</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 22</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_7.xml#_41157"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 16</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 1, 20</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_142.xml#ddrs_02"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 16</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 1, 20</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_143.xml#ddrs_03"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 16</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 2–3</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_146.xml#ddrs_06"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 16</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 2–3</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_147.xml#ddrs_07"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 16</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 4</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_23.xml#_41160"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 16</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 6</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_61.xml#RK41176"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 16</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 8</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_20.xml#_41174"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 16</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 15</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_3.xml#_41165"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 16</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 16</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_651.xml#RK41169"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 16</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 17</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_652.xml#RK41167"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 16</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 19</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_22.xml#_41178"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 21</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 1–2</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_67.xml#RK41201"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 21</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 5–6</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_60.xml#RK41204"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 21</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 7</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_62.xml#RK41205"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 22</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 1–2</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_63.xml#RK41206"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 23</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 1–2</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_581.xml#dcc_01"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 23</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 3, 6</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_582.xml#dcc_02-1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 23</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 4–5</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_583.xml#dcc_02-2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 23</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 7–8</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_584.xml#dcc_03"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 23</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 9–10</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_585.xml#dcc_04"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 23</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 11–12</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_586.xml#dcc_05"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 23</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 13–14</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_587.xml#dcc_06-1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 23</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 15–20</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_588.xml#dcc_06-2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">9, 23</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 21–22</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_589.xml#dcc_07"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">10, 6</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 37</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_33.xml#_60029"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">10, 7</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 9–10</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_69.xml#RK60038"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">10, 7</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 45</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_34.xml#RK60060"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">10, 8</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 10–11</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_272.xml#visel_2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">10, 8</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 15</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_271.xml#visel_1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">10, 8</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 17</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_72.xml#RK60069"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">10, 8</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 18</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_35.xml#RK60070"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">10, 8</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 19</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_25.xml#_60071"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">10, 16</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 7</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_36.xml#RK60127"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">10, 17</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 5–6</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_312.xml#adva_2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">10, 17</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 7–8</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_312.xml#adva_2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">11, 14</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 33</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_75.xml#RK58948"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">12, 2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 18</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_59.xml#RK39566"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">12, 2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 86</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_78.xml#RK39624"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">13, 3</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 203</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_2.xml#_58290"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">14, 2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 2, 52</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_73.xml#RK58217"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">14, 2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 7</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_70.xml#RK58221"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">14, 2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 13</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_74.xml#RK58226"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">14, 2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 39</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_144.xml#ddrs_04"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">14, 2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 39</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_15.xml#_58233"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">14, 2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 46</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_30.xml#_60653"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">14, 2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 47</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_29.xml#_58242"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">14, 2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 47</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_30.xml#_60653"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">14, 2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 48</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_311.xml#adva_1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">14, 2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 161–162</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_281.xml#_58256_1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXV</hi></cell>
+            <cell><hi rendition="#smaller">14, 2</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 161–162</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_282.xml#_58256_2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">1</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 1–2</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_123.xml#cnds_3"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">1</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 3–8</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_123.xml#cnds_3"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">1</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 14</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_124.xml#cnds_4"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">1</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 16</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_1.xml#_38535"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">1</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 18–19</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_121.xml#cnds_1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">1</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 20–21</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_122.xml#cnds_2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">1</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 22–23</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_21.xml#_38538"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">1</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 24</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_125.xml#cnds_5"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">1</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 25</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_123.xml#cnds_3"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">1</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 26</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_11.xml#_38540"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">1</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 27</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_13.xml#_38541"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">3</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 69–70</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_142.xml#ddrs_02"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">3</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 71–72</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_146.xml#ddrs_06"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">3</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 73–74</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_141.xml#ddrs_01"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">3</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 118</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_145.xml#ddrs_05"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">4</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 59–60</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_588.xml#dcc_06-2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">4</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 78</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_16.xml#_60239"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">4</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 80</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_5.xml#_60241"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 1</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_4.xml#_60273"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 16</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_55.xml#RK57272"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 17</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_71.xml#RK60276"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 19</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_56.xml#RK52278"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 20</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_38.xml#RK60278"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 24</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_37.xml#RK60282"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 45–46</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_322.xml#RK60301"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 60–61</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_76.xml#RK42448"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 86–87</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_5810.xml#dcc_08"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 88–89</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_5811.xml#dcc_09"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 90</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_5812.xml#dcc_10"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 91</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_588.xml#dcc_06-2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 91</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_5812.xml#dcc_10"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 94–95</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_653.xml#RK60318"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 96–99</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_66.xml#RK60320"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 104–105</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_68.xml#RK60323"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 118</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_24.xml#_60334"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 123</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_6.xml#_60338"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 140–141</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_54.xml#RK57275"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 143</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_422.xml#RK60343"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 144–145</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_40.xml#RK57267-1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 144–145</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_421.xml#RK57267-2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 144–145</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_423.xml#RK57267-3"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 144–145</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_432.xml#RK57268"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 146–147</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_44.xml#RK57273"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 148–149</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_53.xml#RK57276"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 148–149</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_54.xml#RK57275"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 150–151</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_46.xml#RK57274"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 152</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_45.xml#RK60344_1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 152</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_47.xml#RK60344_2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 153–154</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_52.xml#RK57277"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 155–156</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_51.xml#RK60345"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 157–158</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_49.xml#RK57270"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 159–160</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_50.xml#RK57271"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 161</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_39.xml#RK57266-1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 162</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_39.xml#RK57266-1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 162</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_41.xml#RK57266-2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 162</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_431.xml#RK57266-3"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 180</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_321.xml#RK60353"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 191–192</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_48.xml#RK57269"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 193</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_57.xml#RK57279"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+            <cell/>
+            <cell><hi rendition="#smaller">Bl. 57</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_26.xml#_55749"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+            <cell/>
+            <cell><hi rendition="#smaller">Bl. 135</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_79.xml#RK55793"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XXXVIII</hi></cell>
+            <cell/>
+            <cell><hi rendition="#smaller">Bl. 212–215</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_771.xml#RK55822"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller">LH XLII</hi></cell>
+            <cell><hi rendition="#smaller">5</hi></cell>
+            <cell><hi rendition="#smaller">Bl. 43</hi></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_64.xml#RK60632"/></cell>
+          </row>
+        </table></div></div></body>
+  </text>
+</TEI>

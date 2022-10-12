@@ -1,0 +1,58 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="section" xml:id="Ch65.S1" n="651"><head>65<hi rendition="#sub">1</hi>
+DE MOTU IMPRESSO ET EX GRAVITATE ORTO NON COMPONENDIS</head><head>[1686 (?) – Oktober 1687]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Aufzeichnung:
+LH XXXV 9, 16 Bl. 16.
+Als Schreibblatt wiederverwendeter Teil eines Briefumschlags (ca. 15 x 6 cm.);
+alle Ränder bis auf den oberen unregelmäßig beschnitten.
+Zwei Seiten;
+<ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005">Bl. 16 v<hi rendition="#sup">o</hi></ref> überliefert den Text, <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1003">Bl. 16 r<hi rendition="#sup">o</hi></ref> das Diagramm.
+Rest eines Briefsiegels auf <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005">Bl. 16 v<hi rendition="#sup">o</hi></ref>.</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch65.S1.p1"><anchor xml:id="RK41169"/>
+<anchor xml:id="_41169"/><!--  \hackfor{\par} --></p></div><div type="text"><p rendition="#noindent" xml:id="Ch65.S1.p4"><ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005"><pb type="L"/><fw type="folNum">[16 v<hi rendition="#sup">o</hi>]</fw></ref> <app type="Bfootnote"><lem type="main">Videndum nihilne</lem><note type="lemma-abbrev">Videndum</note><rdg wit="#L" n="1"> nihilque </rdg><rdg wit="#L" n="2"> nihilne <hi rendition="#i">L</hi></rdg></app>
+differentiae vel erroris <app type="Cfootnote"><lem type="main">in Galilaeanis</lem><note type="editorial"><index indexName="Personen"><term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564–1642</term></index><hi rendition="#k">G. Galilei</hi>, <bibl corresp="#bib_00050"><hi rendition="#i">Discorsi</hi>, Giornata Quarta, Leiden 1638, S. 236–288 (<bibl corresp="#bib_00048"><hi rendition="#i">GO</hi> VIII, S. 268–313).</bibl></bibl></note></app>
+prodeat, supponendo <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">n[on]</corr></lem><rdg wit="#L"><orig>nam </orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+motus impressi<index indexName="Sachen"><term>motus impressus</term></index> et
+ex gravitate orti<index indexName="Sachen"><term>motus ex gravitate ortus</term></index> compositionem,<index indexName="Sachen"><term>compositio motus</term></index>
+sed potius unum contra alterum. Nam si componas sequitur si qua ratione vis<index indexName="Sachen"><term>vis</term></index> a gravitate<index indexName="Sachen"><term>gravitas</term></index> impressa<index indexName="Sachen"><term>vis a gravitate impressa</term></index> tolleretur,
+continuaturum adhuc (post ascensum<index indexName="Sachen"><term>ascensus</term></index>) motum sursum. Res parallelogrammo<index indexName="Sachen"><term>parallelogrammum</term></index> et triangulo
+repraesentabilis; cum tamen debeat tota vis assurgendi<index indexName="Sachen"><term>vis assurgendi</term></index> a
+deprimente aethere<index indexName="Sachen"><term>aether</term></index> consumi, quia ab illo etiam
+inter descendendum <app type="Bfootnote"><lem type="main">data. Semper</lem><note type="lemma-abbrev">data.</note><rdg wit="#L" n="1"> Vis </rdg><rdg wit="#L" n="2"> Semper <hi rendition="#i">L</hi></rdg></app>
+in obliquo ictu<index indexName="Sachen"><term>ictus obliquus</term></index> sumendae duae directiones[,]<index indexName="Sachen"><term>directiones duae in ictu obliquo</term></index> perpendicularis<index indexName="Sachen"><term>directio perpendicularis</term></index> et parallela,<index indexName="Sachen"><term>directio parallela</term></index> et in sola perpendiculari<index indexName="Sachen"><term>directio perpendicularis</term></index> resistentia[,]<index indexName="Sachen"><term>resistentia</term></index>
+seu idem fit ac si ictu esset.</p><p xml:id="Ch65.S1.p5">Non videtur compositio Mot⟨us⟩<index indexName="Sachen"><term>compositio motus</term></index> sola sufficere.
+Exemplo concursus duorum globorum<index indexName="Sachen"><term>globus</term></index> obliqui,<index indexName="Sachen"><term>concursus obliquus</term></index> concurrentium in unum<index indexName="Sachen"><term>concursus obliquus duorum globorum in unum</term></index>
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">ipsi[s]</corr></lem><rdg wit="#L"><orig>ipsi </orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+aequalem.</p><p rendition="#noindent" xml:id="Ch65.S1.p6"><ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1003"><pb type="L"/><fw type="folNum">[16 r<hi rendition="#sup">o</hi>]</fw></ref><app type="Cfootnote"><lem type="main"/><note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]</note><note type="editorial">Leibniz hat den Buchstaben <hi rendition="#i">G</hi> an zwei verschiedene Punkte vergeben; die Bezeichnung des zweiten Punktes ändert Hrsg.</note></app></p><figure rendition="#own-line_centered" xml:id="Ch65.S1.p7"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_016_d_016r.svg" width="156.1032pt" xml:id="Ch65.S1.p7.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head></figure></div></div></body>
+  </text>
+</TEI>

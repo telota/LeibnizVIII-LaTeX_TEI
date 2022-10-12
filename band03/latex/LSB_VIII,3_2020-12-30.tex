@@ -1,0 +1,3100 @@
+% ! TEX TS-program = pdflatexmk
+%Läuft kraft dieser ersten Zeile so viele Male, bis alles gesetzt ist.
+% Aktiviert = !TEX TS...; Deaktiviert = ! TEX TS...
+
+%Stand 2020-01-21: VIII,3_Rahmen-TeX_9-0 Änderungen gegenüber VIII,3_Rahmen-TeX_8-9: 
+% "glyphtounicode" um Ligaturen durchsuchbar zu machen
+% fontenc "T1" in Verbindung mit Schriftpaket "lmodern" um Akzente, Umlaute durchsuchbar zu machen
+% neue Umgebungen "DEledgroup", "DEledgroupsized" für Stückkopf: Standardsprache ist Deutsch
+% Umdefinition der "Cfootnote": Standardsprache ist Deutsch
+% Liste besonderer Worttrennungen angelegt (\hyphenation)
+% neuer Befehl "\bars{}" zur Eingrenzung von Textphänomenen im Apparat
+% Reduzierung der Sperrung von \testso von 0,25 auf 0,1 durch \sodef\textso{}{.1em}{.65em\@plus.08em\@minus.06em}{.55em\@plus.275em\@minus.183em}
+
+
+%Stand 2019-12-12: VIII,3_Rahmen-TeX_8-9 Änderungen gegenüber VIII,3_Rahmen-TeX_8-8: 
+%\setstretch{1.1} für Afootnotes (zuvor \setstretch{1.3})
+% \count\Afootins=1200 (zuvor \count\Afootins=1500)
+% \count\Bfootins=1200 (zuvor \count\Bfootins=1500)
+% \count\Cfootins=1200 (zuvor \count\Cfootins=1500)
+
+%Stand 2015-01-15: VIII,2_Rahmen-TeX_8-0 mit den neuen PlusMinusZeichen von Paolo Rubini.
+
+%Stand 2013-09-25: _Rahmen-TeX_4 nach Totalabsturz
+
+
+%%Frame-file for Leibniz-Edition, series VIII, vol 2
+%%
+%%changes: 2012.08.09-10 SWS: (re!)setting fontsize to 10pts, tw=(DIV-3)pw/DIV gives DIV 10.4, structuring package-list at begin, deleting doubly loaded packages,
+%%adding negative limits to footins Afootins, setting hyperfootnotes=false, adding \pgrk
+%%changes 2012.08.15 SWS: headsep=5mm, Zeilenabstand
+%%changes 2012.09.06- SWS: baselinestretch=1.1, textheight=178mm, \skip\Afootins=10mm+/-3mm, vmarginratio=2:3
+%%changes 2012.10.01, SWS: vmarginratio=10:21 causes textheight=188mm, set to tmargin=21mm, bmargin=47mm
+%%optimisation of \count\footins, (A,B)footins, footfudgefiddle for minimal dist. text to apparatus at 1000, (1050, 1050), 500; 2012.11.09, again 2013.01.08
+%%overlength of pages with \chapter, esp. firstchapter, re-adjusting parameters to 1000, (1300, 1300), 1000; 2013.01.08
+%%Umstellung auf ABC-system: GWL's marginals as Afootnotes, text genesis as Bfootnotes, editor's comments as Cfootnotes;
+%%parameters adjusted to: \skip\Afootins 8mm+/-3mm, \skip\Bfootins 5mm+/-2mm, ABCfootins=1050, footfudgefiddle=1000; Feb 2013
+%%newcommands biblio, biblioplus, for Cnotes indicating quotations; newcommand GWLypsilon; 16 Apr 2013
+%%hyperref-package auskommentiert, \href-commands auskommentiert; \textbar correct; 22 Apr 2013
+%%changes in Afootnotes, Bfootnotes; 23 Apr 2013
+%%modification \ledsetnormaparstuff for sufficient separation of Afootnotes, keine weiteren Versuche Abstand Afootnotes to Bfootnotes zu reduzieren; 16 Mai 2013
+%%
+%%
+%%
+%%
+%
+%Dokumentklasse ist KOMA-Script Klasse Scrbook
+\documentclass[fontsize=10pt,twoside,DIV=calc,BCOR0mm,headings=small,numbers=enddot,headinclude=false,footinclude=true,
+openany]{scrbook}
+
+\listfiles %MS,HS 18.12.2020
+
+%Zeilennummerierung, mehrere Serien an Fussnoten (footnotes, Xfootnotes or critical notes), Zeilennrr in Xfootnotes
+\usepackage[noeledmac] {ledmac}
+
+%general Seitenlayout
+\usepackage{scrpage2}
+\usepackage{chngpage}
+\usepackage{stdclsdv}
+\usepackage{infwarerr} %indicates errors
+\usepackage{etex}     
+
+%languages, inputencoding
+\usepackage[ngerman,german,polutonikogreek,french,dutch,english,danish,portuguese,spanish,italian,latin]{babel}
+\usepackage[T1]{fontenc}		% 8-bit encoding: 2020-01-08
+\usepackage{lmodern}		% fonts for T1:	2020-01-08
+\usepackage[utf8x]{inputenc}
+\usepackage{soulutf8}
+%\usepackage{autofe}F
+
+%special layout/s
+\usepackage{letterspace}
+\usepackage{units} %unitfrac etc fuer Brueche innerhalb Textzeile
+
+%%Leibniz' Halbkreise für Multiplikation und Division : HS 26.01.2017
+%\usepackage{fge}
+
+%tables, calculations
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multirow} %HS 28.10.2014
+%figures
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+%creating subparts
+\usepackage[explicit]{titlesec}
+%\usepackage{tocloft}
+\usepackage{lipsum}
+\usepackage{fmtcount}
+\usepackage{caption} %SWS 13.03.2019
+
+%table of contents
+\usepackage{tocloft}
+\usepackage{tocvsec2}
+% \usepackage[pageref]{ut-backref} %nicht in MikTex enthalten; angepasste Version CH;
+
+%links, internal and external
+%\usepackage[hyperfootnotes=false]{hyperref}
+
+%Indices
+\usepackage{makeidx}
+\usepackage{multind}
+\usepackage{multicol}
+
+%%Font
+\fontfamily{cmr}
+\usepackage{suetterl}  %von H.S. am 17.05.2017 für LH035_10_07_41: \textsuetterlin{\Large S}
+
+%Um das PDF für Ligaturen (ff, fi) durchsuchbar zu machen (2019-12-19)
+\input glyphtounicode
+\pdfgentounicode=1
+
+
+
+%%Bögen über und unter Zeichen setzen (overarc und underarc) - H.S. 03-06-2014
+%\usepackage{arcs}
+%\parindent 0pt
+
+
+
+%%Special Characters and Symbols
+% There are a number of symbols (e.g., \Square) that are defined by      %
+% multiple packages.  In order to typeset all the variants in this       %
+% document, we have to give glyph a unique name.  To do that, we define  %
+% \savesymbol{XXX}, which renames a symbol from \XXX to \origXXX, and    %
+% \restoresymbols{yyy}{XXX}, which renames \origXXX back to \XXX and     %
+% defines a new command, \yyyXXX, which corresponds to the most recently %
+% loaded version of \XXX.                                                %
+% Save a symbol that we know is going to get redefined.
+\def\savesymbol#1{%
+  \expandafter\let\expandafter\origsym\expandafter=\csname#1\endcsname
+  \expandafter\let\csname orig#1\endcsname=\origsym
+  \expandafter\let\csname#1\endcsname=\relax
+}
+% Restore a previously saved symbol, and rename the current one.
+\def\restoresymbol#1#2{%
+  \expandafter\let\expandafter\newsym\expandafter=\csname#2\endcsname
+  \expandafter\global\expandafter\let\csname#1#2\endcsname=\newsym
+  \expandafter\let\expandafter\origsym\expandafter=\csname orig#2\endcsname
+  \expandafter\global\expandafter\let\csname#2\endcsname=\origsym
+}
+\usepackage{textcomp}
+\usepackage{wasysym}
+\usepackage{marvosym}
+\usepackage{upgreek}
+  \savesymbol{bigtriangleup} \savesymbol{bigtriangledown}
+\usepackage{stmaryrd}
+  \restoresymbol{ST}{bigtriangleup} \restoresymbol{ST}{bigtriangledown}
+\usepackage{ipa}
+\let\eth\relax
+\usepackage{amssymb}
+  \savesymbol{iint}\savesymbol{iiint}
+\usepackage{amsmath}
+  \restoresymbol{AMS}{iint} 
+  \restoresymbol{AMS}{iiint}
+
+
+%\usepackage{showidx}
+\let\Sun\relax
+\let\Mercury\relax
+\let\Venus\relax
+\let\Earth\relax
+\let\Mars\relax
+\let\Jupiter\relax
+\let\Saturn\relax
+\let\Uranus\relax
+\let\Neptune\relax
+\let\Pluto\relax
+\let\leftmoon\relax
+\let\rightmoon\relax
+\let\fullmoon\relax
+\let\newmoon\relax
+\let\Aries\relax
+\let\Taurus\relax
+\let\Gemini\relax
+\let\Leo\relax
+\let\Libra\relax
+\let\Scorpio\relax
+\let\diameter\relax
+\let\urcorner\relax %\urcorner from AMS Delimiters
+\let\ulcorner\relax
+\usepackage{mathabx}%schnoepf muss noch installiert werden wg. oright
+\usepackage{MnSymbol}
+%  \restoresymbol{MnSymbol}{urcorner}
+%  \restoresymbol{MnSymbol}{ulcorner}
+
+%Greek
+\newcommand{\pgrk}[1]{%
+   \selectlanguage{polutonikogreek}#1\selectlanguage{latin}}
+
+%Hebrew
+\usepackage{cjhebrew}
+\newcommand{\hebr}[1]{\smash{\cjRL{#1}}}
+
+%Rechnungen, packages for math-Umgebung
+\usepackage{ulem} % doppelte Unterstreichung
+\usepackage{tikz} % Formeln einkreisen
+\usepackage{fancybox}
+\usepackage{cancel} %Streichen von Ziffern
+\usepackage{phonetic}%2Punkte unter Buchstaben \td{} %neu 22-01-2015 aus RahmenTeX von SWS übernommen: HS
+
+%self defined commands for math signs unique by GWL
+%\def\leibdashvv{\diatop[$\vspace{8pt}-$|$|$]}
+
+% Obsolete Definitionen
+%\def\leibdashv{\diatop[$\leibdashvv$|$\hspace{-5.15pt}\dashv$]} %fuer plusminus
+%\def\leibvdash{\protect\raisebox{7pt}{\protect\scalebox{1}[-1]{$\leibdashv$}}} %fuer minusplus
+
+\usepackage{setspace}
+
+% K.Zeitz: Beginn neue Definitionen
+% Absatzformate
+\newenvironment{Ueberlieferung}{	\begin{ledgroupsized}[r]{120mm}\footnotesize\pstart  
+	\noindent\textbf{\"{U}berlieferung:} \pend\end{ledgroupsized}
+	\begin{ledgroupsized}[r]{114mm}\footnotesize \pstart \parindent -6mm\makebox[6mm][l]}
+{\pend\normalsize\end{ledgroupsized}}
+
+\newenvironment{Datierungsgruende}{\vspace*{5mm}\begin{ledgroup}\footnotesize
+	\pstart\noindent\footnotesize\textbf{Datierungsgr\"{u}nde}: }
+{\normalsize\pend\end{ledgroup}}
+
+\newcommand{\pstartfirst}{\vspace*{8mm}\pstart\normalsize\noindent}
+
+\newenvironment{Geometrico}{%
+	\pstart 
+	\parindent -7.5mm
+	\hsize 362pt}
+{\pend}
+
+
+% Absatzformate für Stückkopf mit Standardsprache Deutsch	2020-01-08 MS %wieder abgeschaltet wegen Problemen/Unterdrückung von \frenchspacing
+%\newenvironment{DEledgroup}%
+%{\begin{ledgroup}%				
+%\selectlanguage{ngerman}}%				
+%{\selectlanguage{latin}%					
+%\end{ledgroup}}			
+%wieder abgeschaltet wegen Problemen/Unterdrückung von \frenchspacing
+%\makeatletter						
+%\newenvironment{DEledgroupsized}[2][l]{%	%  in enger Anlehnung an die Standard-Definition von ledgroupsized
+%\hsize #2\relax
+%%  \textwidth #2\relax
+%%  \columnwidth #2\relax
+%\let\ledllfill\hfil
+%\let\ledrlfill\hfil
+%\def\@tempa{#1}\def\@tempb{l}%
+%\ifx\@tempa\@tempb
+%\let\ledllfill\relax
+%\else
+%\def\@tempb{r}%
+%\ifx\@tempa\@tempb
+%\let\ledrlfill\relax
+%\fi
+%\fi
+%\def\@mpfn{mpfootnote}\def\thempfn{\thempfootnote}\c@mpfootnote\z@
+%\let\@footnotetext\@mpfootnotetext
+%\l@dfeetbeginmini
+%\selectlanguage{ngerman}%				% Deutsch
+%}{%
+%\selectlanguage{latin}%					% Latein
+%\par
+%\unskip
+%\ifvoid\@mpfootins\else
+%\l@dunboxmpfoot
+%\fi
+%\l@dfeetendmini%
+%}
+%\makeatother
+
+
+
+% Zeichen
+\makeatletter 
+
+
+
+
+% PR: PlusMinus (Couturat): 1.a (+-)
+\newcommand*\PsMs{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.55\@tempdima,height=1.02\@tempdimb]{images/PsMs.pdf}
+}
+\DeclareRobustCommand\pPsMs{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\PsMs}\!$
+}
+
+
+% PR: MinusPlus (Couturat): 1.b (-+)
+\newcommand*\MsPs{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.55\@tempdima,height=1.02\@tempdimb]{images/MsPs.pdf}
+}
+\DeclareRobustCommand\pMsPs{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\MsPs}\!$
+}
+
+
+% PR: PlusPlusMinus (Couturat): 2.a.a (+(+-))
+\newcommand*\PsPsMs{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=1.0\@tempdima,height=1.02\@tempdimb]{images/PsPsMs.pdf}
+}
+\DeclareRobustCommand\pPsPsMs{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\PsPsMs}\!$
+}
+
+
+% PR: PlusMinusPlus (Couturat): 2.a.b (+(-+))
+\newcommand*\PsMsPs{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=1.0\@tempdima,height=1.02\@tempdimb]{images/PsMsPs.pdf}
+}
+\DeclareRobustCommand\pPsMsPs{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\PsMsPs}\!$
+}
+
+
+% PR: MinusPlusMinus (Couturat): 2.b.a (-(+-))
+\newcommand*\MsPsMs{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=1.0\@tempdima,height=1.02\@tempdimb]{images/MsPsMs.pdf}
+}
+\DeclareRobustCommand\pMsPsMs{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\MsPsMs}\!$
+}
+
+
+% PR: MinusMinusPlus (Couturat): 2.b.b (-(-+))
+\newcommand*\MsMsPs{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=1.0\@tempdima,height=1.02\@tempdimb]{images/MsMsPs.pdf}
+}
+\DeclareRobustCommand\pMsMsPs{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\MsMsPs}\!$
+}
+
+
+% PR: MinusPlusPlus (Couturat): aus der Reihe (-(++))
+\newcommand*\MsPsPs{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=1.5\@tempdima,height=1.02\@tempdimb]{images/MsPsPs.pdf}
+}
+\DeclareRobustCommand\pMsPsPs{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\MsPsPs}\!$
+}
+
+
+%%%%%%%%%%%%%%%%
+
+
+%       FÜR HERRN BAYUK (VIII.3)
+% PR: MinusMinusPlus (erweitert): pmA (-(-+))
+\newcommand*\pmA{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmA.pdf}
+}
+\DeclareRobustCommand\ppmA{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmA}\!$
+}
+
+
+%       FÜR HERRN BAYUK (VIII.3)
+% PR: MinusPlusMinus (erweitert): pmB (-(+-))
+\newcommand*\pmB{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmB.pdf}
+}
+\DeclareRobustCommand\ppmB{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmB}\!$
+}
+
+
+%%%%%%%%%%%%%%%%%
+
+
+%       Überflüssig
+% PR: MinusPlus (erweitert): pmC (-+)
+% \newcommand*\pmC{%
+%    	\settowidth{\@tempdima}{$m$}% 
+%    	\settoheight{\@tempdimb}{$b$}% 
+% 	\protect\includegraphics[width=0.5\@tempdima,height=0.8\@tempdimb]{images/pmC.png}
+% }
+
+
+% PR: MinusPlusPlus (erweitert): pmD (-(++))
+\newcommand*\pmD{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmD.pdf}
+}
+\DeclareRobustCommand\ppmD{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmD}\!$
+}
+
+
+% PR: PlusPlusMinus (erweitert): pmE (+(+-))
+\newcommand*\pmE{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=1.0\@tempdima,height=1.02\@tempdimb]{images/pmE.pdf}
+}
+\DeclareRobustCommand\ppmE{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.2\@tempdimb}[0pt][8pt]{\pmE}\!$
+}
+
+
+%       Überflüssig
+% PR: PlusPlusMinus (erweitert): pmF (+(+-))
+% \newcommand*\pmF{%
+%    	\settowidth{\@tempdima}{$m$}% 
+%    	\settoheight{\@tempdimb}{$b$}% 
+% 	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmF.pdf}
+% }
+% \DeclareRobustCommand\ppmF{%
+% 	\settoheight{\@tempdimb}{$b$}% 
+% 	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmF}\!$
+% }
+
+
+% PR: PlusPlusMinus (erweitert): pmG (+(+-))
+\newcommand*\pmG{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmG.pdf}
+}
+\DeclareRobustCommand\ppmG{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmG}\!$
+}
+
+
+% PR: PlusMinusPlus (erweitert): pmH (+(-+))
+\newcommand*\pmH{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmH.pdf}
+}
+\DeclareRobustCommand\ppmH{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmH}\!$
+}
+
+
+% PR: Plusminus (neu): pm (+-)
+\newcommand*\leibdashv{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pm.pdf}
+}
+\DeclareRobustCommand\pleibdashv{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\leibdashv}\!$
+}
+
+
+% PR: Minusplus (neu): mp (-+)
+\newcommand*\leibvdash{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/mp.pdf}
+}
+\DeclareRobustCommand\pleibvdash{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\leibvdash}\!$
+}
+
+
+
+
+% HS 2019-05-17: PlusMinusMinus (erweitert): pmK (+(--)) %%%neu für Bd 3 (aus LH 37, 5 Bl. 146v)
+\newcommand*\pmK{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.54\@tempdima,height=1.34\@tempdimb]{images/pmK.pdf}
+}
+\DeclareRobustCommand\ppmK{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.425\@tempdimb}[0pt][8pt]{\pmK}\!$
+}
+
+
+
+%MS 2019-09-11: Bruch mit Doppelbruchstrich: \doublefrac{#1}{#2} %(aus LH 37 5 Bl. 145v)
+\newcommand*{\doublefrac}[2]{%
+   \mathchoice
+    {\ooalign{%
+      $\hspace{1pt}\genfrac{}{}{2.8pt}0{\phantom{#1}}{\phantom{#2}}\hspace{1pt}$\cr%
+      $\color{white}\genfrac{}{}{1.4pt}0{\hspace{1pt}\color{black}#1\hspace{1pt}}{\hspace{1pt}\color{black}#2\hspace{1pt}}$\cr%
+      $\color{white}\genfrac{}{}{1.8pt}0{\hspace{1pt}\phantom{#1}\hspace{1pt}}{\hspace{1pt}\phantom{#2}\hspace{1pt}}$}}%
+    {\ooalign{%
+      $\hspace{1pt}\genfrac{}{}{2.8pt}1{\phantom{#1}}{\phantom{#2}}\hspace{1pt}$\cr%
+      $\color{white}\genfrac{}{}{1.4pt}1{\hspace{1pt}\color{black}#1\hspace{1pt}}{\hspace{1pt}\color{black}#2\hspace{1pt}}$\cr%
+      $\color{white}\genfrac{}{}{1.8pt}1{\hspace{1pt}\phantom{#1}\hspace{1pt}}{\hspace{1pt}\phantom{#2}\hspace{1pt}}$}}%
+    {\ooalign{%
+     $\hspace{1pt}\genfrac{}{}{2.8pt}2{\phantom{#1}}{\phantom{#2}}\hspace{1pt}$\cr%
+      $\color{white}\genfrac{}{}{1.4pt}2{\hspace{1pt}\color{black}#1\hspace{1pt}}{\hspace{1pt}\color{black}#2\hspace{1pt}}$\cr%
+      $\color{white}\genfrac{}{}{1.8pt}2{\hspace{1pt}\phantom{#1}\hspace{1pt}}{\hspace{1pt}\phantom{#2}\hspace{1pt}}$}}%
+    {\ooalign{%
+      $\hspace{1pt}\genfrac{}{}{2.8pt}3{\phantom{#1}}{\phantom{#2}}\hspace{1pt}$\cr%
+      $\color{white}\genfrac{}{}{1.4pt}3{\hspace{1pt}\color{black}#1\hspace{1pt}}{\hspace{1pt}\color{black}#2\hspace{1pt}}$\cr%
+      $\color{white}\genfrac{}{}{1.8pt}3{\hspace{1pt}\phantom{#1}\hspace{1pt}}{\hspace{1pt}\phantom{#2}\hspace{1pt}}$}}%
+      }
+
+
+
+
+
+
+
+
+% Groesser
+\newcommand*\ggroesser{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.55\@tempdima,height=1.3\@tempdimb]{images/groesser.png}
+}
+\DeclareRobustCommand\groesser{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.55\@tempdimb}[0pt][8pt]{\ggroesser}\!$
+}
+
+% Kleiner
+\newcommand*\kkleiner{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=0.55\@tempdima,height=1.3\@tempdimb]{images/kleiner.png}
+}
+\DeclareRobustCommand\kleiner{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.55\@tempdimb}[0pt][8pt]{\kkleiner}\!$
+}
+
+% Alchemistisches Zeichen Doppelsigma
+%\newcommand*\dsig{%
+   	%\settowidth{\@tempdima}{$v$}% 
+   	%\settoheight{\@tempdimb}{$v$}% 
+	%\protect\includegraphics[width=1.6\@tempdima,height=1.1\@tempdimb]{images/dsig.pdf}
+\newcommand*\dsig{%
+   	\settowidth{\@tempdima}{$v$}% 
+   	\settoheight{\@tempdimb}{$v$}% 
+	\protect\includegraphics[width=1.7\@tempdima,height=1.15\@tempdimb]{images/dsig.png}
+}
+
+
+%SWS additional plus- and minus- sings
+% half-circle circle minus
+\newcommand*\hccms{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=1.75\@tempdima,height=1.5\@tempdimb]{images/hccms.pdf}
+}
+\DeclareRobustCommand\phccms{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.25\@tempdimb}[0pt][8pt]{\hccms}\!$
+}
+
+% half-circle circle plus
+\newcommand*\hccps{%
+   	\settowidth{\@tempdima}{$m$}% 
+   	\settoheight{\@tempdimb}{$b$}% 
+	\protect\includegraphics[width=1.75\@tempdima,height=1.5\@tempdimb]{images/hccps.pdf}
+}
+\DeclareRobustCommand\phccps{%
+	\settoheight{\@tempdimb}{$b$}% 
+	$\raisebox{-0.25\@tempdimb}[0pt][8pt]{\hccps}\!$
+}
+
+
+
+
+% Der Befehl \crossedcircle{x} erzeugt einen Kreis, der unten links zweimal durchgestrichen ist.
+
+% Das Argument x erscheint innerhalb des Kreises.
+
+% Achtung: Das funktioniert nur mit einem Argument, das aus einem einzigen Zeichen, z.B. 2 oder a, besteht.
+
+\newcommand*\@crossedcircle{%
+
+\settowidth{\@tempdima}{$2$}%
+
+\settoheight{\@tempdimb}{$2$}%
+
+\protect\includegraphics[width=2.4\@tempdima,height=2.2\@tempdimb]{images/circle.png}
+
+}
+
+\newcommand{\crossedcircle}[1]{\raisebox{-1.8mm}{\@crossedcircle}\hspace{-1.2em}#1\;\,}
+
+
+\makeatother 
+
+% K.Zeitz: Ende neue Definitionen
+
+
+\def\largerthan{$\raisebox{0.8pt}{$\urcorner$} \hspace{-5.5pt}|\hspace{3pt}$} %fuer groesser als
+\newcommand{\GWLypsilon}{\raisebox{2pt}{\text{\tiny{o}}}\hspace{-1pt}\upsilon}
+
+ 
+% Seitenlayout
+\usepackage[paperwidth=190mm, paperheight=246mm, textwidth=135mm, textheight=178mm,
+  hmarginratio=2:3, tmargin=21mm, bmargin=47mm, twoside, includehead, headsep=5mm]{geometry}
+\flushbottom
+
+%Kolumnentitel: linke Druckseite zentriert Part-Titel, rechte Seite aktuelle chapter oder section
+\automark[chapter]{part}
+\newmarks\numbermark
+\renewcommand*{\chaptermark}[1]{%
+  \marks\numbermark{\chaptermarkformat}%
+  \markright{#1}%
+}      
+\makeatletter% 
+  \renewcommand*{\sectionmark}[1]{%
+  \begingroup
+  \@temptokena\expandafter{\sectionmarkformat}%
+  \marks\numbermark{\the\@temptokena}%
+  \endgroup
+  \markright{#1}%
+  }
+\makeatother
+        
+\clearscrheadfoot
+\ohead[\pagemark]{\pagemark}
+\ihead[{\botmarks\numbermark}]{\botmarks\numbermark}
+\chead[\headmark]{\headmark}   
+%CH: Keine Partnummern in den automatischen Kolumnentiteln
+\renewcommand*{\partmarkformat}{}
+%Formatierug der Kapitelnummer im header
+\renewcommand*{\chaptermarkformat}{N.\ \arabic{chapter}}
+%Formatierung der Sectionnummer im header
+\newcommand{\notsotiny}{\fontsize{7pt}{8pt}\selectfont}
+\renewcommand*{\sectionmarkformat}{% 
+  N.\ \arabic{chapter}\raisebox{-0.5ex}{\notsotiny\arabic{section}}}
+\setkomafont{pagehead}{\normalfont\small}
+%\setkomafont{pagehead}{\notsotiny}
+\setkomafont{pagenumber}{\normalfont\normalsize}
+\setheadsepline{0.4pt}
+\pagestyle{scrheadings}
+
+
+%erste Seiten
+%erste Seite eines neuen Teils
+\renewcommand*{\partpagestyle}{empty}
+\renewcommand*{\partformat}{}
+\setkomafont{part}{\normalfont\MakeUppercase}
+%\renewcommand*{\partheadstartvskip}{\vspace*{-9.5ex}}
+\renewcommand*{\partheadstartvskip}{\vspace*{-6ex}}
+%CH: Part-Ueberschriften auf der neuen leeren Seite linksbuendig ausgeben
+\renewcommand*{\raggedpart}{\raggedright}
+ 
+%erste Seite eines neuen Kapitels
+%Punkt immer hinter Kapitelnummer und weitere Formatspezifikationen
+\renewcommand{\thechapter}{\arabic{chapter}.}
+\renewcommand*{\chapterformat}{%
+  \chapappifchapterprefix{\ }\thechapter\enskip}
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+%schnoepf2001\setkomafont{chapter}{\normalfont\normalsize\uppercase}
+\setkomafont{chapter}{\normalfont\normalsize}
+%\addtokomafont{chapter}{\scshape}
+
+\renewcommand*{\chapterheadendvskip}{\vspace*{0mm}}
+
+%erste Seite des ersten Kapitels im Part (keine Kolumnenzeile)
+\newpagestyle{firstchapter}{(0pt,0pt){}{}{}(0pt,0pt)}{{}{}{}}
+
+% section-Formatierung: Schriftgroesse, Nummerierung mit tiefgestellten Zahlen
+% und weitere Formatspezifikationen
+%schnoepf2001\setkomafont{section}{\normalfont\normalsize\uppercase}
+\setkomafont{section}{\normalfont\normalsize}
+%\addtokomafont{section}{\scshape}
+\renewcommand{\thesection}{\arabic{chapter}\protect\raisebox{-0.5ex}{\notsotiny\arabic{section}}\autodot}
+\renewcommand*{\othersectionlevelsformat}[1]{%
+  \csname the#1\endcsname\enskip}
+
+
+%Haupttext
+%Zeilendurchschuss
+\renewcommand{\baselinestretch}{1.1}
+%Absatzueinrckung
+\parindent=7.5mm
+%Seitenumbruch
+\frenchspacing     
+%\clubpenalty=9999 % keine Schusterjungen
+%\widowpenalty=9999 % keine Hurenkinder
+\tolerance=1750 % Zeilenumbruch-Toleranz (ca. 500--3000)
+%headerelemente
+\newcommand{\link}[1]{\ref{#1}}
+\renewcommand{\title}[2][]{\cite{#1}\textit{#2}}
+
+%Zeilenzaehler
+\lineation{page}
+\linenummargin{outer}
+\setcounter{firstlinenum}{5}
+\setcounter{linenumincrement}{5}
+%5 rechtsbuendig
+\makeatletter
+  \renewcommand{\rightlinenum}{\ifbypage@\ifnum\line@num<10\kern.5em\fi\else 
+  \ifnum\line@num<10\kern1em\else\ifnum\line@num<100 \kern.5em\fi\fi\fi\kern.5em\numlabfont\the\line@num 
+  \ifnum\subline@num>0:\the\subline@num\fi} 
+\makeatother
+%haendische Zeilenzaehler
+\usepackage{marginnote}
+
+\renewcommand{\footfudgefiddle}{71}
+%Afootnotes = Marginalien written by GWL
+\footnormal{A}
+\setlength{\skip\Afootins}{8mm plus 3mm minus 3mm} %amount of whitespace between text and footnotes
+\renewcommand{\Afootnoterule}{\noindent\rule{18mm}{0.4pt}\vspace*{3.0mm}}
+\newcommand{\Afootnotefontsetup}{\normalsize}
+\makeatletter
+  \renewcommand{\ledsetnormalparstuff}{%
+    \normal@pars
+    \parindent \z@ \parfillskip \z@ \@plus 1fil \vspace{1pt}}
+\makeatother
+\makeatletter
+\renewcommand*{\Afootfmt}[3]{%
+	\normalsize
+	\setstretch{1.1}
+	\ledsetnormalparstuff
+	\mbox{{\notenumfont\printlines#1|}\enspace
+	{\select@lemmafont#1|#2}}\enskip#3\strut\par%
+}
+\makeatother
+\count\Afootins=1200
+
+
+
+%Kritische Apparate
+%Bfootnotes = Varianten, Textgenese
+\setlength{\skip\Bfootins}{5mm plus 2mm minus 2mm}
+\renewcommand{\Bfootnoterule}{\rule{0mm}{0pt}\vspace*{1mm}}
+\footparagraph{B}
+\interparanoteglue{7.5mm plus1.9mm minus1.9mm}
+\makeatletter
+  \renewcommand*{\Bfootfmt}[3]{%
+  \noindent
+  \mbox{{\notenumfont\printlines#1|}\enspace
+  {\select@lemmafont#1|#2}}\enskip#3\strut\par}
+\makeatother
+\count\Bfootins=1200
+%
+%Cfootnotes, Kommentare der Editoren
+\setlength{\skip\Cfootins}{1mm plus 0mm} %KZeitz
+\renewcommand{\Cfootnoterule}{\rule{\textwidth}{0.4pt}\vspace*{1mm}} 
+\footparagraph{C}
+\interparanoteglue{7.5mm plus 1.9mm minus 1.9mm}
+\makeatletter
+  \renewcommand*{\Cfootfmt}[3]{%
+  \noindent
+  \mbox{{\notenumfont\printlines#1|}\enspace
+  {\select@lemmafont#1|#2}:}\enskip#3\strut\par}
+\makeatother
+\count\Cfootins=1200
+%commands for bibliographical data in Cfootnotes
+\newcommand{\biblio}[3]{\textsc{#1}, \textit{#2}, S. #3.}
+\newcommand{\biblioplus}[5]{\textsc{#1}, \textit{#2}, S. #3, (\textit{#4}, S. #5).}
+%\newcommand{\biblionote}[2]{\Cfootnote{\textsc{#1}, \textit{#2},\ }} requires \edtext, impractical
+%more space for crit apparatus
+\renewcommand{\footfudgefiddle}{500}
+%
+%Deutsch als Standardsprache der Cfootnote		2020-01-08 MS
+\let\origCfootnote\Cfootnote	
+\renewcommand\Cfootnote[1]%
+{\origCfootnote{%
+\foreignlanguage{ngerman}{%		% S. Dokumentation von reledmac unter "Xwrapcontent"
+#1}%
+}}
+
+
+% Ausgabe einer Zeilenreferenz mit 'f', sofern sich die Fussnote auf genau zwei 
+% aufeinanderfolgende Zeilen bezieht.
+% K. Zeitz: Zusätzliche Ergänzung: Möglichkeit, die Zeilenreferenz in der Fußnote mit Hilfe des unten
+% definierten Befehls \killnumber ganz zu unterdrücken.
+\makeatletter
+\def\printlines#1|#2|#3|#4|#5|#6|#7|{%					
+	\begingroup
+		\setprintlines{#1}{#2}{#3}{#4}{#5}{#6}%
+			\ifnum #1=#4
+				\ifnum #2<#5
+					\newcount\endlinenumber
+					\endlinenumber = #5
+					\advance\endlinenumber by -1
+					\ifnum #2<\endlinenumber 
+						#2\endashchar#5\else #2f\fullstop
+					\fi       
+				\fi 
+				\ifnum#2=-1 % K. Zeitz: Neu
+					\symplinenum  \hspace*{-1.4em} % K. Zeitz: Neu 
+				\else % K. Zeitz: Neu
+					\ifnum #2=#5 #2 \fi
+				\fi % K. Zeitz: Neu
+			\fi
+			\ifnum #1<#4							
+			\ifl@d@pnum 
+				#2\endashchar S\fullstop\ #4\fullstop
+			\fi
+			#5
+		\fi
+	\endgroup%
+}
+\makeatother
+
+% K.Zeitz: Unterdrückung der Referenz auf die Zeilennummer in Fußnoten.
+% Dazu den nachfolgend definierten Befehl \killnumber wie folgt einfügen:
+%		\edtext{...}{\lemma{...}\killnumber\Afootnote{...}}
+% Analog für \Bfootnote und \Cfootnote
+\newcommand{\killnumber}{\linenum{|-1|||-1||}} 
+ 
+% Eingrenzung von Textphänomenen im B-Apparat durch \bars{}		2020-01-08 MS
+\newcommand*{\leftbar}{\textbar}			 % orientierte Befehle leftbar, rightbar für XML-Converter
+\newcommand*{\rightbar}{\textbar}
+
+\newcommand*{\bars}[1]{\leftbar#1\rightbar}
+ 
+ 
+%Ueberschriften, Inhaltsverzeichnis, Indizes
+%titlepages set by hand / publisher
+%Inhaltsverzeichnis
+%Name des Inhaltsverzeichnisses      
+\addto\captionslatin{%
+\def\contentsname{}}
+%\maxtocdepth{section}
+%\maxtocdepth{part}
+
+
+% Ein durch \edlabel{LH-Nummer_n} … \edlabel{LH-Nummer_n+1} bestimmter Referenzbereich lässt sich mit dem Befehl \refpassage{LH-Nummer_n}{LH-Nummer_n+1} innerhalb von footnotes als Querverweis (Seite.Zeile-Seite.Zeile) anführen. H.S.%
+
+\newcommand{\refpassage}[2]{%
+ \xpageref{#1}\fullstop\xlineref{#1}%
+ \ifnum\xpageref{#1}=\xpageref{#2}
+  \ifnum\xlineref{#1}=\xlineref{#2}
+  \else
+   \endashchar\xlineref{#2}%
+  \fi
+ \else
+  \endashchar\xpageref{#2}\fullstop\xlineref{#2}%
+ \fi
+}
+
+\hyphenation{%			% Korrekte Worttrennung in einzelnen Fällen
+aequ
+be-trach-ten
+be-trach-tet
+Be-trach-tung
+Be-trach-tun-gen
+Be-trach-tungs-wei-se
+Be-trach-tungs-wei-sen
+Blatt-rand
+Ent-ste-hung
+Ent-ste-hungs-zeit
+fehlt
+ge-druckt
+ge-druck-te
+ge-druck-tem
+ge-druck-ten
+ge-druck-ter
+ge-druck-tes
+gestr
+klein-ge-druckt
+klein-ge-druck-te
+klein-ge-druck-tem
+klein-ge-druck-ten
+klein-ge-druck-ter
+klein-ge-druck-tes
+ins-ge-samt
+pa-ra-lo-gis-mi
+pa-ra-lo-gis-mis
+pa-ra-lo-gis-mo
+pa-ra-lo-gis-mo-rum
+pa-ra-lo-gis-mos
+pa-ra-lo-gis-mum
+pa-ra-lo-gis-mus
+post-ea
+pot-e-ram
+pot-e-ras
+pot-e-rat
+pot-e-ra-mus
+pot-e-ra-tis
+pot-e-rant
+pot-e-rim
+pot-e-ris
+pot-e-rit
+pot-e-ri-mus
+pot-e-ri-tis
+pot-e-rint
+pot-e-ro
+pot-es
+pot-est
+pot-e-stis
+prae-sum-tio
+prae-sum-ti-o-ne
+prae-sum-ti-o-nem
+prae-sum-ti-o-nes
+prae-sum-ti-o-ni
+prae-sum-ti-o-nis
+prae-sum-ti-o-ni-bus
+prae-sum-ti-o-num
+quem-ad-mo-dum
+qui-bus-ve
+streicht
+sub-qua-dru-pla
+sub-qua-dru-plae
+sub-qua-dru-plam
+sub-qua-dru-pla-rum
+sub-qua-dru-plas
+sub-qua-dru-plis
+vor-aus
+vor-aus-sicht-lich
+}
+
+%%Textausrichtung bei fester Spaltenbreite %H.S.
+%\usepackage{tabularx}
+%\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % linksbündig mit Breitenangabe
+%\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % zentriert mit Breitenangabe
+%\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % rechtsbündig mit Breitenangabe
+%
+%
+
+
+%Aufnahme der Chapter- und Sectiontitel ins Inhaltsverzeichnis unterdruecken
+\newcommand*\OrigChapter[2][]{}
+\let\OrigChapter\chapter
+\renewcommand*{\chapter}[2][]{%
+  \settocdepth{part}\OrigChapter[#1]{#2}%
+  \settocdepth{section}%
+  }
+\newcommand*\OrigSection[2][]{}
+  \let\OrigSection\section
+\renewcommand*{\section}[2][]{%
+  \settocdepth{part}\OrigSection[#1]{#2} %
+  \settocdepth{section}%
+  }
+
+%Aufnahme der parts ins Inhaltsverzeichnis verhindern
+%\newcommand*\OrigPart[2][]{}
+ % \let\OrigPart\apart
+%\renewcommand*{\apart}[2][]{%
+ % \settocdepth{apart}\OrigPart[#1]{#2} %
+ % \settocdepth{section}%
+  %}
+%\makeatletter
+%\let\settocdepth\relax
+%\newcommand{\settocdepth}[-1]{%
+  %\addtocontents{toc}{\protect\setcounter{tocdepth}{#1}}}
+%\makeatother
+%Format des Inhaltsverzeichnisses
+\tocloftpagestyle{empty}
+%Kopfzeile
+\makeatletter
+  \renewcommand{\cftmarktoc}{%
+%  \@mkboth{\scshape Inhaltsssverzeichnis}{\scshape Inhaltsverzeichnis}}
+  \@mkboth{\scriptsize\uppercase{Inhaltsverzeichnis}}{\scriptsize\uppercase{Inhaltsverzeichnis}}}
+  \renewcommand*{\l@part}{\@dottedtocline{-1}{0mm}{0mm}}
+ % \renewcommand*{\l@chapter}{\@dottedtocline{0}{2mm}{6mm}}
+  \renewcommand*{\l@chapter}{\@dottedtocline{0}{2mm}{6mm}}
+ %   \setlength{\cftsecnumwidth}{35mm}
+  \renewcommand*{\l@section}{\@dottedtocline{1}{8mm}{7mm}}
+  \renewcommand{\@pnumwidth}{9mm}
+\renewcommand{\@tocrmarg}{9.5mm}
+  \renewcommand{\@dotsep}{4.5}
+\makeatother
+
+
+
+%Bibliografie
+%Keine Ueberschrift fuer die Bibliografie
+\addto\captionslatin{\def\bibname{\ \vspace{1.6ex}}}
+
+% Werke in der Bibliographie werden mit '1., 2.' durchnummeriert
+%\cite-Befehl gibt nichts aus
+\makeatletter
+  \renewcommand{\@biblabel}[1]{#1.}
+  \renewcommand*{\@cite}[2]{{#1\if@tempswa , #2\fi}}
+\makeatother
+        
+%\cite-Befehl gibt nichts aus
+\makeatletter
+  \def\@citex[#1]#2{\leavevmode
+  \let\@citea\@empty
+  \@cite{\@for\@citeb:=#2\do
+  {\@citea\def\@citea{,\penalty\@m\ }%
+  \edef\@citeb{\expandafter\@firstofone\@citeb\@empty}%
+  \if@filesw\immediate\write\@auxout{\string\citation{\@citeb}}\fi
+  }}{#1}}
+\makeatother
+
+%Folgende Zeilen werden auskommentiert, wenn eine vorläufige Bibliografie als Bearbeitungshilfe kompiliert werden soll:
+\usepackage{nohyperref}
+\usepackage[pageref,verbose]{backref}
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{%
+    \ifcase #1 (Not cited.)%
+    \or        {\it S. ~#2}%
+    \else     {\it S. ~#2}%
+    \fi}
+\renewcommand*{\backreftwosep}{\backrefsep}
+\renewcommand*{\backreflastsep}{\backrefsep}
+
+       
+%Indices
+\makeindex{Namensregister}
+\makeindex{Sachverzeichnis}
+\makeindex{Ortsregister}
+%Index zweispaltig, mit 'Praeambel'
+\makeatletter
+
+ % \renewcommand{\see}[2]{{\em s.\/a.\/} #1}
+   \renewcommand{\see}[2]{\newline{\em s.\/a.\/} #1}
+  \renewcommand\printindex[2]{
+  \clearpage{\pagestyle{empty}\cleardoublepage}
+  \setchapterpreamble{\index@preamble}
+  \addchap*{\hfill #2\hfill}
+  \thispagestyle{empty}
+  \clearscrheadings
+  \chead{\sc{#2}}
+  \ohead[\pagemark]{\pagemark}
+  \begin{multicols}{2}\setlength{\columnseprule}{0.4pt}
+  \footnotesize\raggedright
+  \@input{#1.ind}
+  \end{multicols}}
+  \renewcommand*\@idxitem{\par\hangindent 11\p@}
+ % \renewcommand*\subitem{\@idxitem \hspace*{11\p@}}
+  \renewcommand*\subitem{\@idxitem \par\hangindent 22\p@ \hspace*{11\p@}}
+  %\renewcommand*\@idxsubitem{\@idxsubitem \hspace*{11\p@}}
+\makeatother
+\newcommand\efrac[2]{\genfrac{}{}{0pt}{}{#1}{#2}} %KZeitz \efrac produziert einen Bruch ohne Bruchstrich
+
+
+% Reduzierung der Sperrung von \testso von 0,25 auf 0,1
+\makeatletter
+\sodef\textso{}{.1em}{.65em\@plus.08em\@minus.06em}{.55em\@plus.275em\@minus.183em}
+\makeatother
+
+
+
+% Für dynamische Referenzierung der Stücknummern (N.) mittels /ref und Zitation der Nummer ohne darauf folgenden Punkt
+\makeatletter
+ \def\@nodotref\csname thechapter\endcsname{\arabic{chapter}}% ?? entfernt
+ \renewcommand{\p@chapter}{\@nodotref}
+\makeatother
+
+\makeatletter
+ \def\@nodotsubref\csname thesection\endcsname{\arabic{chapter}\textsubscript{\arabic{section}}}%	% ?? entfernt
+ \renewcommand{\p@section}{\@nodotsubref}
+\makeatother
+
+
+
+
+%neuer Vorspann
+\begin{document}
+
+
+
+%Titelseite
+        \begin{titlepage}
+        \begin{center}
+        \pagenumbering{Roman}
+        {\huge GOTTFRIED WILHELM}\\
+        \vspace*{7.5mm}
+        {\Huge LEIBNIZ}\\
+        \vspace*{10.5mm}
+        {\Large SAEMTLICHE\\
+        SCHRIFTEN UND BRIEFE}\\
+        \vspace*{13mm}
+        {\large HERAUSGEGEBEN\\
+        VON DER}\\
+        \vspace*{5.5mm}
+        {\Large BERLIN-BRANDENBURGISCHEN\\
+        AKADEMIE DER WISSENSCHAFTEN}\\
+        {\large UND DER}\\
+        {\Large AKADEMIE DER WISSENSCHAFTEN\\
+        IN GOETTINGEN\\
+        \vspace*{15mm}
+        ACHTE REIHE}\\
+        {\large NATURWISSENSCHAFTLICHE, TECHNISCHE UND MEDIZINISCHE SCHRIFTEN}\\
+        \vspace*{4.5mm}
+        {\Large DRITTER BAND}\\
+        \vspace{3mm}
+         {\Large Mechanik 1}\\
+         \vspace{2mm}
+        {\Large Akustik, Elastizität, Festigkeit, Stoß}\\
+	\vspace{2mm}
+	{\Large(1671\ \textendash\ 1705)}
+       % {\Large\textit{Korrekturvorlage}}\\
+        %\vspace*{3mm}
+      %  \large{Umfang und Bearbeitungszustand entsprechen nicht dem fertigen Band.}\\ %KZeitz
+        \end{center}
+        \end{titlepage}
+%Titelseite_Ende
+
+
+
+
+\pagenumbering{Roman}
+%\beginnumbering
+
+\newpage
+\newpage
+
+
+\setcounter{page}{4}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+%CH \part und \addpart* geaendert, damit Ueberschrift keine Nummer und nicht ins Inhaltsverzeichnis
+\addpart[\large\uppercase{Inhaltsverzeichnis}]{\large\protect\textso{INHALTSVERZEICHNIS}} 
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+   \tableofcontents
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{Vorwort}]{\large\protect\textso{VORWORT}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\markleft{\scriptsize\uppercase{Vorwort}}
+   \input{gesamttex/VIII,3_Vorwort.tex}
+
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{Einleitung}]{\large\protect\textso{EINLEITUNG}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\markleft{\scriptsize\uppercase{Einleitung}}
+\markright{\scriptsize\uppercase{Einleitung}}
+    \input{gesamttex/VIII,3_Einleitung.tex}
+
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{Zur Text- und Variantengestaltung}]{\large\protect\textso{ZUR TEXT- UND VARIANTENGESTALTUNG}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\markleft{\scriptsize\uppercase{Zur Text- und Variantengestaltung}}
+\markright{\scriptsize\uppercase{Zur Text- und Variantengestaltung}}
+    \input{gesamttex/VIII,3_Textgestaltung.tex}
+    \clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+
+
+\pagenumbering{arabic}
+\beginnumbering
+
+
+
+
+
+
+%%%%     AEF (ex AKUSTIK)     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage{\pagestyle{empty}\cleardoublepage}	
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{I. Akustik, Elastizit\"{a}t, Festigkeit}]{\large\protect\textso{I. Akustik, Elastizit\"{a}t, Festigkeit}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+
+\markleft{\scriptsize\uppercase{I. Akustik Elastizit\"{a}t Festigkeit}}
+
+
+% N.~1. ((??A01; RK 38535)) De sono // AEF (Akustik)
+\chapter[\scriptsize\uppercase{De sono}]{\uppercase{De sono}
+\newline\lbrack zweite Hälfte 1671\,(?) \textendash\ vor Dezember 1680\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De sono \enskip\lbrack zweite Hälfte 1671\,(?) \textendash\ vor Dezember 1680\rbrack}
+\label{38535}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_37_01_016.tex}
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+% N.~2. ((??A25; RK 58290)) Tuba stentorea vel acustica [früher: Ad tubam stentoream vel acusticam] // AEF (Akustik)
+\chapter[\scriptsize\uppercase{Tuba stentorea vel acustica}]{\uppercase{Tuba stentorea vel acustica}
+\newline\lbrack1672 \textendash\ erste Hälfte 1685\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Tuba stentorea vel acustica \enskip\lbrack1672 \textendash\ erste Hälfte 1685\,(?)\rbrack}
+\label{58290}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_13_03_203.tex}
+	
+	
+	
+% N.~3. ((??A31; RK 41165)) Zu John Mayow, Tractatus de sal-nitro et spiritu nitro-aereo // AEF (Elastizität)
+\chapter[\scriptsize\uppercase{Zu J. Mayow, Tractatus de sal-nitro}]{\uppercase{Zu John Mayow, Tractatus de sal-nitro et spiritu nitro-aereo}
+\newline \lbrack nach Mitte September 1674 \textendash\ frühe 1680er Jahre\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Zu John Mayow, Tractatus de sal-nitro et spiritu nitro-aereo%
+\enskip\lbrack Mitte September 1674 \textendash\ frühe 1680er Jahre\,(?)\rbrack}
+\label{41165}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_16_015.tex}
+
+
+
+% N.~4. ((??A37; RK 60273)) De motu // AEF (Elastizität, Festigkeit)
+\chapter[\scriptsize\uppercase{De motu}]{\uppercase{De motu}
+\newline \lbrack Ende 1674 \textendash\ Ende 1677\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De motu \enskip\lbrack Ende 1674 \textendash\  Ende 1677\,(?)\rbrack}
+\label{60273}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_37_05_001.tex}
+
+
+
+% N.~5. ((??A36; RK 60241)) Utrum in animalibus omnia possint fieri beneficio elateriorum mechanicorum // AEF (Elastizität)
+\chapter[\scriptsize\uppercase{Utrum in animalibus}]{\uppercase{Utrum in animalibus omnia possint fieri beneficio elateriorum mechanicorum}
+\newline \lbrack1677 \textendash\  Januar 1680\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Utrum in animalibus omnia possint fieri beneficio elateriorum mechanicorum \enskip\lbrack1677 \textendash\  Januar 1680\,(?)\rbrack}
+\label{60241}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_37_04_080.tex}
+
+
+
+% N.~6. ((??A44; RK 60338)) Corpora impulsa agunt a se ipsis [ex: Defendi potest] // AEF (Elastizität)
+\chapter[\scriptsize\uppercase{Corpora impulsa agunt a se ipsis}]{\uppercase{Corpora impulsa agunt a se ipsis}
+\newline \lbrack März 1677\,(?) \textendash\  Januar 1678\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Corpora impulsa agunt a se ipsis \enskip\lbrack März 1677\,(?) \textendash\  Januar 1678\rbrack}
+\label{60338}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_37_05_123.tex}
+
+
+
+% N.~7. ((??A14; RK 41157)) De tensione et restitutione // AEF (Elastizität)
+\chapter[\scriptsize\uppercase{De tensione et restitutione}]{\uppercase{De tensione et restitutione}
+\newline\lbrack Frühjahr 1679 \textendash\  Winter 1680/1681\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De tensione et restitutione \enskip\lbrack Frühjahr 1679 \textendash\  Winter 1680/1681\,(?)\rbrack}
+\label{41157}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_15_001,022.tex}
+
+
+
+% N.~8.0 [4.0]. ((??A10; RK 41152)) Tentaminum de chordarum tensione schedae // AEF (Akustik, Elasizität)
+\chapter[\scriptsize\uppercase{De chordarum tensione schedae}]{\uppercase{Tentaminum de chordarum tensione schedae}
+\newline Dezember 1680} % 10. Dezember 1680
+\addcontentsline{toc}{chapter}{\thechapter\enskip Tentaminum de chordarum tensione schedae Dezember 1680 % 10. Dezember 1680
+}
+\label{41152_0}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_15_006-017_intro.tex}
+
+
+% N.~8.1 [4.1]. ((??A10.1; RK 41152)) Tentaminum de chordarum tensione scheda prima // AEF (Akustik, Elastizität)
+\vspace{12mm}
+\section[\scriptsize\uppercase{De chordarum tensione scheda prima}]{\uppercase{Tentaminum de chordarum tensione scheda prima}%
+\newline 10.\,(20.)~Dezember 1680
+}
+\addcontentsline{toc}{section}{\thesection\enskip Tentaminum de chordarum tensione scheda prima % 10. (20.) Dezember 1680 
+}
+\label{41152_1}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_15_006-007.tex}
+
+
+% N.~8.2 [4.2]. ((??A10.2; RK 41152)) Tentaminum de chordarum tensione scheda secunda // AEF (Akustik, Elastizität)
+\vspace{12mm}
+\section[\scriptsize\uppercase{De chordarum tensione scheda secunda}]{\uppercase{Tentaminum de chordarum tensione scheda secunda
+}%
+\newline 10.\,(20.)~Dezember 1680
+}
+\addcontentsline{toc}{section}{\thesection\enskip Tentaminum de chordarum tensione scheda secunda % 10. (20.) Dezember 1680 
+}
+\label{41152_2}
+\vspace{2.8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_15_008-009.tex}
+
+
+% N.~8.3 [4.3]. ((??A10.3; RK 41152)) Tentaminum de chordarum tensione scheda tertia // AEF (Akustik, Elastizität)
+\vspace{12mm}
+\section[\scriptsize\uppercase{De chordarum tensione scheda tertia}]{\uppercase{Tentaminum de chordarum tensione scheda tertia
+}%
+\newline 10.\,(20.)~Dezember 1680
+}
+\addcontentsline{toc}{section}{\thesection\enskip Tentaminum de chordarum tensione scheda tertia %  10. (20.) Dezember 1680 
+}
+\label{41152_3}
+\vspace{2.8 mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_15_010-011.tex}
+
+
+% N.~8.4 [4.4]. ((??A10.4; RK 41152)) Tentaminum de chordarum tensione scheda quarta // AEF (Akustik, Elastizität)
+\vspace{12mm}
+\section[\scriptsize\uppercase{De chordarum tensione scheda quarta}]{\uppercase{Tentaminum de chordarum tensione scheda quarta}%
+\newline Dezember 1680
+}
+\addcontentsline{toc}{section}{\thesection\enskip Tentaminum de chordarum tensione scheda quarta % Dezember 1680 
+}
+\label{41152_4}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_15_012-013.tex}
+
+
+% N.~8.5 [4.5]. ((??A10.5; RK 41152)) Tentaminum de chordarum tensione scheda quinta // AEF (Akustik, Elastizität)
+\vspace{12mm}
+\section[\scriptsize\uppercase{De chordarum tensione scheda quinta}]{\uppercase{Tentaminum de chordarum tensione scheda quinta}%
+\newline 10.\,(20.)~Dezember 1680
+}
+\addcontentsline{toc}{section}{\thesection\enskip Tentaminum de chordarum tensione scheda quinta % 10. (20.) Dezember 1680 
+}
+\label{41152_5}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_15_014-015.tex}
+
+
+% N.~8.6 [4.6]. ((??A10.6; RK 41152)) Tentaminum de chordarum tensione scheda sexta // AEF (Akustik, Elastizität)
+\vspace{12mm}
+\section[\scriptsize\uppercase{De chordarum tensione scheda sexta}]{\uppercase{Tentaminum de chordarum tensione scheda sexta}%
+\newline 10.\,(20.)~Dezember 1680
+}
+\addcontentsline{toc}{section}{\thesection\enskip Tentaminum de chordarum tensione scheda sexta % 10. (20.) Dezember 1680 
+}
+\label{41152_6}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_15_016-017.tex}
+
+
+
+% N.~9 [5]. ((??A11; RK 41153)) Motuum restitutionis regula // AEF (Akustik, Elastizität)
+\chapter[\scriptsize\uppercase{Motuum restitutionis regula}]{\uppercase{Motuum restitutionis regula}
+\newline\lbrack Dezember 1680\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Motuum restitutionis regula \enskip\lbrack Dezember 1680\rbrack}
+\label{41153}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_15_002-005.tex}
+
+
+
+% N.~10 [6]. ((??A13; RK 41156)) De chordarum tensione (ex: vibrationibus) // AEF (Akustik, Elastizität)
+\chapter[\scriptsize\uppercase{De chordarum tensione}]{\uppercase{De chordarum tensione}
+\newline\lbrack Ende Dezember 1680\,/\,Anfang 1681\,(?); Ende Juli 1682 \textendash\  April 1683\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De chordarum tensione \enskip\lbrack Ende Dezember 1680\,/\,Anfang 1681\,(?); Ende Juli 1682 \textendash\ April 1683\,(?)\rbrack}
+\label{41156}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_15_021.tex}
+
+
+
+% N.~11 [3]. ((??A09; RK 38540)) Chordae aequabiles aequaliter tensae habent sonos longitudinibus reciproce proportionales (ex: Si chorda musica) // AEF (Akustik)
+\chapter[\scriptsize\uppercase{Chordae aequabiles aequaliter tensae}]{\uppercase{Chordae aequabiles aequaliter tensae habent sonos longitudinibus reciproce proportionales}
+\newline\lbrack Ende 1680\,(?) \textendash\ 1685\,(?)\rbrack} % Ende Juni 1678 (?) \textendash\ Ende Mai 1687 (?)
+\addcontentsline{toc}{chapter}{\thechapter\enskip Chordae aequabiles aequaliter tensae habent sonos longitudinibus reciproce proportionales \enskip\lbrack Ende 1680\,(?) \textendash\ 1685\,(?)\rbrack % Ende Juni 1678 (?) \textendash\ Ende Mai 1687 (?)
+}
+\label{38540}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_37_01_026.tex}
+
+
+
+% N.~12.0 [7.0]. ((??A04/X)) [Cogitationes novae de sono] // AEF (Akustik)
+\chapter[\scriptsize\uppercase{Cogitationes novae de sono}]{\uppercase{Cogitationes novae de sono}
+\newline\lbrack zweite Hälfte August 1681 \textendash\ erste Hälfte 1685\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Cogitationes novae de sono \enskip\lbrack zweite Hälfte August 1681 \textendash\ erste Hälfte 1685\rbrack}
+\label{cnds_0}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_37_01_001-008_intro.tex}
+
+
+% N.~12.1 [7.1]. ((??A03/X.1; RK 38536)) De soni generatione propagatione et expressione in organo, mechanice explicatis // AEF (Akustik)
+\vspace{12mm}
+\section[\scriptsize\uppercase{De soni generatione, propagatione et expressione}]{\uppercase{De soni generatione, propagatione et expressione in organo, mechanice explicatis} %
+\newline\lbrack zweite Hälfte August 1681 \textendash\ 1682\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip De soni generatione, propagatione et expressione in organo, mechanice explicatis % \lbrack zweite Hälfte August 1681 \textendash\ 1682\rbrack
+}
+\label{cnds_1}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_37_01_018-019.tex}
+
+
+% N.~12.2 [7.2]. ((??A02/X.2; RK 38537)) [Explicatio mechanica soni (ex: Omne quod sonat tremit)] // AEF (Akustik)
+\vspace{12mm}
+\section[\scriptsize\uppercase{Explicatio mechanica soni}]{\uppercase{Explicatio mechanica soni} %
+\newline\lbrack zweite Hälfte August 1681 \textendash\ 1682\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip Explicatio mechanica soni % \lbrack zweite Hälfte August 1681 \textendash\ 1682\rbrack
+}
+\label{cnds_2}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_37_01_020-021.tex}
+
+
+% N.~12.3 [7.3]. ((??A04/X.3; RK 38526, 38527, 38528)) Cogitationes novae quomodo formetur sonus = ex ??A04.1/X.3 + ex ??A04.2/X.4 + ??A04.3/X.7 // AEF (Akustik)
+\vspace{12mm}
+\section[\scriptsize\uppercase{Cogitationes novae quomodo formetur sonus}]{\uppercase{Cogitationes novae quomodo formetur sonus et per aerem propagetur atque in organo auditus exprimatur}% ((ex ??A04.1/X.3 + ex ??A04.2/X.4 + ??A04.3/X.7))
+\newline\lbrack Frühjahr 1682 \textendash\ erste Hälfte 1685\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip Cogitationes novae quomodo formetur sonus et per aerem propagetur atque in organo auditus exprimatur % \lbrack Frühjahr 1682 \textendash\ erste Hälfte 1685\rbrack 
+}
+\label{cnds_3}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_37_01_001-002,003-008,025.tex}
+
+
+% N.~12.4 [7.4]. ((??A05/X.3; RK 38533)) Auszüge aus G. C. Schelhammer, De auditu = ex ??A05/X.4 // AEF (Akustik)
+\vspace{12mm}
+\section[\scriptsize\uppercase{Aus G. C. Schelhammer, De auditu}]{\uppercase{Aus Günther Christoph Schelhammer, De auditu}%
+\newline\lbrack Frühjahr 1684 \textendash\ erste Hälfte 1685\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip Aus Günther Christoph Schelhammer, De auditu % \lbrack Frühjahr 1684 \textendash\ erste Hälfte 1685\rbrack
+}
+\label{cnds_4}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_37_01_014.tex}
+
+
+% N.~12.5 [7.5]. ((??A06/X.5; RK 38539)) Auszüge aus J.-G. Duverney, Tractatus de organo auditus = ex ??A06/X.5 // AEF (Akustik)
+\vspace{12mm}
+\section[\scriptsize\uppercase{Aus und zu J.-G. Duverney, De organo auditus}]{\uppercase{Aus und zu Joseph-Guichard Duverney, Tractatus de organo auditus}%
+\newline\lbrack April 1684 \textendash\ erste Hälfte 1685\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip Aus und zu Joseph-Guichard Duverney, Tractatus de organo auditus % \lbrack April 1684 \textendash\ erste Hälfte 1685\rbrack
+}
+\label{cnds_5}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_37_01_024.tex}
+
+
+
+% N.~13 [11]. ((??A08; RK 38541)) Aus und zu Joachim Jungius, Harmonica [[ex De sonorum intervallis]] // AEF (Akustik)
+\chapter[\scriptsize\uppercase{Aus und zu J. Jungius, Harmonica}]{\uppercase{Aus und zu Joachim Jungius, Harmonica} 
+\newline\lbrack1683\,(?) \textendash\ 1685\,(?)\rbrack} % Ende Juni 1678 \textendash\ Ende Mai 1687
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu Joachim Jungius, Harmonica \enskip\lbrack1683\,(?) \textendash\ 1685\,(?)\rbrack % Ende Juni 1678 \textendash\ Ende Mai 1687
+}
+\label{38541}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_37_01_027.tex}
+
+
+
+% N.~14.0. ((??Y/A19)) [Demonstrationes de resistentia solidorum] // AEF (Festigkeit, Elastizität)
+\chapter[\scriptsize\uppercase{Demonstrationes de resistentia solidorum}]{\uppercase{Demonstrationes de resistentia solidorum}
+\newline\lbrack Ende Januar 1683 \textendash\  erste Hälfte Juli 1684; erste Hälfte 1693\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Demonstrationes de resistentia solidorum \enskip\lbrack Ende Januar 1683 \textendash\  erste Hälfte Juli 1684; erste Hälfte 1693\rbrack}
+\label{ddrs_00}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/AE_1684_319-325_intro.tex}
+\newpage
+
+
+% N.~14.1. ((??Y.1/A22; RK 60203)) De la resistence des solides // AEF (Festigkeit) 
+\vspace{12mm}
+\section[\scriptsize\uppercase{De la resistence des solides}]{\uppercase{De la resistence des solides} %
+\newline\lbrack Ende Januar \textendash\  März\,/\,April 1683\rbrack} % ????
+\addcontentsline{toc}{section}{\thesection\enskip De la resistence des solides % Ende Januar \textendash\  März/April 1683
+}
+\label{ddrs_01}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_37_03_073-074.tex}
+\newpage
+
+
+% N.~14.2. ((??Y.2/A21.1; RK 60201-41158)) De firmitate corporum // AEF (Festigkeit) 
+\vspace{12mm}
+\section[\scriptsize\uppercase{De firmitate corporum}]{\uppercase{De firmitate corporum}%
+\newline\lbrack Ende Januar \textendash\  März\,/\,April 1683\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip De firmitate corporum % Ende Januar \textendash\  März/April 1683
+}
+\label{ddrs_02}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_37_03_069-070,LH_35_09_16_001.tex}
+\newpage
+
+
+% N.~14.3. ((??Y.3/A23; RK 41158)) Explicatio mechanica elastri // AEF (Elastizität, Festigkeit) 
+\vspace{12mm}
+\section[\scriptsize\uppercase{Explicatio mechanica elastri}]{\uppercase{Explicatio mechanica elastri}% 
+\newline\lbrack Ende Januar \textendash\  März\,/\,April 1683\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip Explicatio mechanica elastri % Ende Januar \textendash\  März/April 1683
+}
+\label{ddrs_03}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_16_001,020.tex}
+\newpage
+
+
+% N.~14.4. ((??Y.4/A40; RK 58234)) Solidum ubique aequiresistens // AEF (Festigkeit) 
+\vspace{12mm}
+\section[\scriptsize\uppercase{Solidum ubique aequiresistens}]{\uppercase{Solidum ubique aequiresistens}%
+\newline\lbrack Ende Januar \textendash\  März\,/\,April 1683\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip Solidum ubique aequiresistens % Ende Januar \textendash\  März/April 1683
+}
+\label{ddrs_04}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_35_14_02_039r2.tex}
+\newpage
+
+
+% N.~14.5. ((??Y.5/A21.2; RK 60207)) De duabus tabulis planis divellendis // AEF (Festigkeit) 
+\vspace{12mm}
+\section[\scriptsize\uppercase{De duabus tabulis planis divellendis}]{\uppercase{De duabus tabulis planis divellendis}%
+\newline\lbrack März\,/\,April 1683\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip De duabus tabulis planis divellendis % März/April 1683
+}
+\label{ddrs_05}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_37_03_118r.tex}
+\newpage
+
+
+% N.~14.6. ((??Y.6/A19.1; RK 41159: tlw.?? L1; RK 60202: L2; 41151: L3; RK 49434: E1: Ravier Nr.~89)) Demonstrationes novae de resistentia solidorum // AEF (Festigkeit)
+\vspace{12mm}
+\section[\scriptsize\uppercase{Demonstrationes novae de resistentia solidorum}]{\uppercase{Demonstrationes novae de resistentia solidorum} %
+\newline\lbrack März\,/\,April 1683 \textendash\  Ende Juni 1684\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip Demonstrationes novae de resistentia solidorum % März/April 1683 \textendash\  Ende Juni 1684
+}
+\label{ddrs_06}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/dnr_AE_1684_319-325.tex}
+\newpage
+
+
+% N.~14.7. ((??Y.7/A20; RK 41159)) Demonstratio nova quod extensiones elasticorum sint viribus tendentibus proportionales // AEF (Elastizität)
+\vspace{12mm}
+\section[\scriptsize\uppercase{Extensiones elasticorum viribus tendentibus proportionales}]{\uppercase{Demonstratio quod extensiones elasticorum sint viribus tendentibus proportionales}%
+\newline\lbrack März\,/\,April 1683 \textendash\  erste Hälfte 1684\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip Demonstratio quod extensiones elasticorum sint viribus tendentibus proportionales % März/April 1683 \textendash\  erste Hälfte 1684\
+}
+\label{ddrs_07}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_16_002-003.tex}
+\newpage
+
+
+% N.~14.8. ((??Y.8/A39; RK 41148)) De figura trabis ubique aequaliter resistentis // AEF (Festigkeit) 
+\vspace{12mm}
+\section[\scriptsize\uppercase{De figura trabis ubique aequaliter resistentis}]{\uppercase{De figura trabis ubique aequaliter resistentis}%
+\newline\lbrack März\,/\,April 1683 \textendash\  erste Hälfte 1684 (?)\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip De figura trabis ubique aequaliter resistentis % März/April 1683 \textendash\  erste Hälfte 1684 (?)
+}
+\label{ddrs_08}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_14_001-002.tex}
+\newpage
+
+
+% N.~14.9. ((??Y.9/A43; RK 41150)) Conoeides solidum aequalis ubique resistentiae // AEF (Festigkeit) 
+\vspace{12mm}
+\section[\scriptsize\uppercase{Conoeides solidum aequalis ubique resistentiae}]{\uppercase{Invenire conoeides solidum aequalis ubique resistentiae}%
+\newline\lbrack März\,/\,April 1683 \textendash\  erste Hälfte 1684\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip Invenire conoeides solidum aequalis ubique resistentiae % März/April 1683 \textendash\  erste Hälfte 1684
+}
+\label{ddrs_09}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_14_003r.tex}
+\newpage
+
+
+% N.~14.10. ((??Y.10/A19.2; RK 61051)) Corrigenda et annotandum // AEF (Festigkeit)
+\vspace{12mm}
+\section[\scriptsize\uppercase{Corrigenda}]{\uppercase{Corrigenda zu den Demonstrationes novae de resistentia solidorum}%
+\newline\lbrack erste Hälfte 1693\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip Corrigenda zu den Demonstrationes novae de resistentia solidorum % erste Hälfte 1693
+}
+\label{ddrs_10}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/AE_1693_Indices_Qq2r.tex}
+\newpage
+
+
+
+% N.~15 [8]. ((??A24; RK 58233)) Aus Galileo Galilei, Discorsi [früher: La corda della cetra] // AEF (Akustik)
+\chapter[\scriptsize\uppercase{Aus G. Galilei, Discorsi}]{\uppercase{Aus Galileo Galilei, Discorsi}
+\newline\lbrack Ende Januar \textendash\  März\,/\,April 1683\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus Galileo Galilei, Discorsi \enskip\lbrack Ende Januar \textendash\  März\,/\,April 1683\rbrack}
+\label{58233}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_14_02_039r1.tex}
+
+
+
+% N.~16. ((??A35; RK 60239)) Cohaesio // AEF (Festigkeit)
+\chapter[\scriptsize\uppercase{Cohaesio}]{\uppercase{Cohaesio}
+\newline \lbrack Ende Januar 1683 \textendash\  erste Hälfte 1684\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Cohaesio \enskip\lbrack Ende Januar 1683 \textendash\  erste Hälfte 1684\,(?)\rbrack}
+\label{60239}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_37_04_078.tex}
+
+
+
+% N.~17 [10]. ((??A12; RK 60649)) De viribus chordas ad rupturam tendentibus [ex: De viribus chordas tendentibus] // AEF (Elastizität, Festigkeit)
+\chapter[\scriptsize\uppercase{De viribus chordas ad rupturam tendentibus}]{\uppercase{De viribus chordas ad rupturam tendentibus} 
+\newline\lbrack Ende Januar 1683 \textendash\ Ende 1684\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De viribus chordas ad rupturam tendentibus \enskip\lbrack Ende Januar 1683 \textendash\ Ende 1684\rbrack}
+\label{60649}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_15_018-019.tex}
+
+
+
+% N.~18. ((??A15; RK 60651)) De corpore tensili rumpendo // AEF (Elastizität, Festigkeit)
+\chapter[\scriptsize\uppercase{De corpore tensili rumpendo}]{\uppercase{De corpore tensili rumpendo}
+\newline\lbrack Ende Januar 1683 \textendash\ Ende 1684\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De corpore tensili rumpendo \enskip\lbrack Ende Januar 1683 \textendash\ Ende 1684\rbrack}
+\label{60651}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_15_020v.tex}
+
+
+
+% N.~19. ((??A16; RK 60650)) De corporum compositorum duritie // AEF (Festigkeit, Elastizität)
+\chapter[\scriptsize\uppercase{De corporum compositorum duritie}]{\uppercase{De corporum compositorum duritie}
+\newline\lbrack Ende Januar 1683 \textendash\ Ende 1684\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De corporum compositorum duritie \enskip\lbrack Ende Januar 1683 \textendash\ Ende 1684\rbrack}
+\label{60650}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_15_020r.tex}
+
+
+
+% N.~20. ((??A41; RK 41174)) Paradoxon circa firmitatem // AEF (Festigkeit, Elastizität)
+\chapter[\scriptsize\uppercase{Paradoxon circa firmitatem}]{\uppercase{Paradoxon circa firmitatem}
+\newline \lbrack Ende Januar 1683 \textendash\  Mitte 1685\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Paradoxon circa firmitatem \enskip\lbrack Ende Januar 1683 \textendash\  Mitte 1685\,(?)\rbrack}
+\label{41174}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_16_008.tex}
+
+
+
+% N.~21 [9]. ((??A07; RK 38538)) De vibrationibus aeris tensi // AEF (Akustik, Elastizität)
+\chapter[\scriptsize\uppercase{De vibrationibus aeris tensi}]{\uppercase{De vibrationibus aeris tensi}
+\newline\lbrack Ende Januar 1683\,(?) \textendash\ Juli 1686\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De vibrationibus aeris tensi \enskip\lbrack Ende Januar 1683\,(?) \textendash\ Juli 1686\,(?)\rbrack}
+\label{38538}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_37_01_022-023.tex}
+
+
+
+% N.~22. ((??A32; RK 41178)) De funibus inaequaliter tensis [ex: Ex laqueari seu tecto] // AEF (Elastizität)
+\chapter[\scriptsize\uppercase{De funibus inaequaliter tensis}]{\uppercase{De funibus inaequaliter tensis}
+\newline \lbrack nach Mitte März 1683\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De funibus inaequaliter tensis \enskip\lbrack nach Mitte März 1683\rbrack}
+\label{41178}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_16_019.tex}
+
+
+
+% N.~23. ((??A30; RK 41160)) Aus und zu C.F.M. Dechales, Traitté du mouvement local et du ressort // AEF (Elastizität)
+\chapter[\scriptsize\uppercase{Aus und zu Dechales, Traitté du mouvement local}]{\uppercase{Aus und zu C.\,F.\,M. Dechales, Traitté du mouvement local et du ressort}
+\newline \lbrack zweite Hälfte 1683 \textendash\ erste Hälfte Januar 1686\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu C.\,F.\,M. Dechales, Traitté du mouvement local et du ressort \enskip\lbrack zweite Hälfte 1683 \textendash\ erste Hälfte Januar 1686\rbrack}
+\label{41160}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_16_004.tex}
+
+
+
+% N.~24. ((??A42; RK 60334)) De flexione laminae elasticae // AEF (Elastizität, Festigkeit)
+\chapter[\scriptsize\uppercase{De flexione laminae elasticae}]{\uppercase{De flexione laminae elasticae}
+\newline \lbrack Ende 1683\,(?) \textendash\  Mitte 1685\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De flexione laminae elasticae \enskip\lbrack Ende 1683\,(?) \textendash\  Mitte 1685\,(?)\rbrack}
+\label{60334}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_37_05_118.tex}
+
+
+
+% N.~25. ((??A18; RK 60071)) De restitutionis potentia // AEF (Elastizität)
+\chapter[\scriptsize\uppercase{De restitutionis potentia}]{\uppercase{De restitutionis potentia}
+\newline\lbrack Ende 1683\,(?) \textendash\ Oktober 1690\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De restitutionis potentia \enskip\lbrack Ende 1683\,(?) \textendash\ Oktober 1690\rbrack}
+\label{60071}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_10_08_019.tex}
+
+
+
+% N.~26. ((??A38; RK 55749)) Ob lange Seile eher reißen als kurze // AEF (Elastizität, Festigkeit)
+\chapter[\scriptsize\uppercase{Ob lange Seile eher reissen als kurze}]{\uppercase{Ob lange Seile eher reissen als kurze}
+\newline29.~April\,(9.~Mai) 1685}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Ob lange Seile eher reißen als kurze \enskip 29.~April\,(9.~Mai) 1685}
+\label{55749}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_38_057.tex}
+
+
+
+% N.~27.0. ((??Z.0)) De vi elastica ad rationes geometricas revocata // AEF (Elastizität)
+\chapter[\scriptsize\uppercase{De vi elastica ad rationes geometricas}]{\uppercase{De vi elastica ad rationes geometricas revocata}
+\newline Juli 1686 / 27.~August 1689}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De vi elastica ad rationes geometricas revocata \enskip Juli 1686\,/\,27.~August 1689}
+\label{visel_0}
+\vspace{8mm}
+     \input{gesamttex/edit_VIII,3/LH_35_10_08_010-011,015_intro.tex}
+\newpage%
+
+
+% N.~27.1. ((??Z.1/A29; RK 60067)) De aeris resistentia elastica // AEF (Elastizität)
+\vspace{12mm}
+\section[\scriptsize\uppercase{De aeris resistentia elastica}]{\uppercase{De aeris resistentia elastica}%
+\newline Juli 1686}
+\addcontentsline{toc}{section}{\thesection\enskip De aeris resistentia elastica \enskip Juli 1686}
+\label{visel_1}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_10_08_015.tex}
+\newpage%
+
+
+% N.~27.2. ((??Z.2/A28; RK 60064)) De vi elastica ad rationes geometricas revocata tentamen // AEF (Elastizität)
+\vspace{12mm}
+\section[\scriptsize\uppercase{De vi elastica ad rationes geometricas}]{\uppercase{De vi elastica ad rationes geometricas revocata tentamen}%
+\newline 27.~August 1689}
+\addcontentsline{toc}{section}{\thesection\enskip De vi elastica ad rationes geometricas revocata tentamen \enskip27.~August 1689}
+\label{visel_2}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_10_08_010-011.tex}
+\newpage%
+
+
+
+% N.~28.0. ((??A34.0; RK 58256)) De motu elaterii se restituentis // AEF (Elastizität)
+\chapter[\scriptsize\uppercase{De motu elaterii se restituentis}]{\uppercase{De motu elaterii se restituentis}
+\newline\lbrack Anfang August \textendash\  zweite Hälfte November 1689\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De motu elaterii se restituentis \enskip\lbrack Anfang August \textendash\  zweite Hälfte November 1689\rbrack}
+\label{58256_0}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_14_02_161-162_intro.tex}
+
+
+% N.~28.1. ((??A34.1; RK 58256)) Chordae extensae restitutionis velocitas // AEF (Elastizität)
+\vspace{12mm}
+\section[\scriptsize\uppercase{Chordae extensae restitutionis velocitas}]{\uppercase{Chordae extensae restitutionis velocitas}}
+\addcontentsline{toc}{section}{\thesection\enskip Chordae extensae restitutionis velocitas
+}
+\label{58256_1}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_35_14_02_162r.tex}
+
+
+% N.~28.2. ((??A34.2; RK 58256)) De motu elaterii se restituentis // AEF (Elastizität)
+\vspace{12mm}
+\section[\scriptsize\uppercase{De motu elaterii se restituentis}]{\uppercase{De motu elaterii se restituentis}}
+\addcontentsline{toc}{section}{\thesection\enskip De motu elaterii se restituentis
+}
+\label{58256_2}
+\vspace{4mm}
+	\input{gesamttex/edit_VIII,3/LH_35_14_02_161-162.tex}
+
+
+
+% N.~29. ((??A26; RK 58242)) Ratio tensionis et longitudinis in chordis (ex: Sit funis F) // AEF (Elastizität, Akustik)
+\chapter[\scriptsize\uppercase{Ratio tensionis et longitudinis in chordis vel funibus}]{\uppercase{Ratio tensionis et longitudinis in chordis vel funibus}
+\newline \lbrack Ende Dezember 1689 \textendash\  Frühjahr 1690\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Ratio tensionis et longitudinis in chordis vel funibus \enskip\mbox{\lbrack Ende Dezember 1689 \textendash}  Frühjahr 1690\,(?)\rbrack}
+\label{58242}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_14_02_047.tex}
+
+
+
+% N.~30. ((??A27; RK 60653)) Zeichnungen zur Bruchfestigkeit // AEF (Festigkeit)
+\chapter[\scriptsize\uppercase{Zeichnungen zur Bruchfestigkeit}]{\uppercase{Zeichnungen zur Bruchfestigkeit}
+\newline\lbrack Ende Dezember 1689 \textendash\  Frühjahr 1690\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Zeichnungen zur Bruchfestigkeit \enskip\lbrack Ende Dezember 1689 \textendash\  Frühjahr 1690\,(?)\rbrack}
+\label{60653}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_14_02_046v,047v.tex}
+
+
+
+% N.~31.0. ((??A17)) Appendix de vi absoluta // AEF (Elastizität)
+\chapter[\scriptsize\uppercase{Appendix de vi absoluta}]{\uppercase{Appendix de vi absoluta}
+\newline \lbrack Januar \textendash\  April 1690\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Appendix de vi absoluta \enskip\lbrack Januar \textendash\  April 1690\rbrack}
+\label{adva_0}
+\vspace{8mm}
+     \input{gesamttex/edit_VIII,3/LH_35_10_17_005-008_intro.tex}
+
+
+% N.~31.1. ((??A17.1; RK 58243)) Annotatio de vi absoluta // AEF (Elastizität)
+%zuvor RK mit Zahlendreher (i.e. RK 58423) HS 2021-06-09
+\vspace{12mm}
+\section[\scriptsize\uppercase{Annotatio de vi absoluta}]{\uppercase{Annotatio de vi absoluta}}
+\addcontentsline{toc}{section}{\thesection\enskip Annotatio de vi absoluta
+}
+\label{adva_1}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_14_02_048.tex}
+
+
+% N.~31.2. ((??A17.2; RK 60141, 60140)) Appendix de vi absoluta // AEF (Elastizität)
+\vspace{12mm}
+\section[\scriptsize\uppercase{Appendix de vi absoluta}]{\uppercase{Appendix de vi absoluta}}
+\addcontentsline{toc}{section}{\thesection\enskip Appendix de vi absoluta
+}
+\label{adva_2}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_10_17_005-008.tex}
+
+
+
+
+% N.~32.0. ((??A45/46)) Restitutio isochrona elastri // AEF (Elastizität) 
+\chapter[\scriptsize\uppercase{Restitutio isochrona elastri}]{\uppercase{Restitutio isochrona elastri}
+\newline \lbrack zweite Hälfte 1690 \textendash\ 1695\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Restitutio isochrona elastri \enskip\lbrack zweite Hälfte 1690 \textendash\ 1695\,(?)\rbrack}
+\label{rie}
+\vspace{8mm}
+     \input{gesamttex/edit_VIII,3/AEF_rie_intro.tex}
+\newpage
+
+
+% N.~32.1. ((??A46; RK 60353)) Restitutio isochrona elastri // AEF (Elastizität)
+\vspace{12mm}
+\section[\scriptsize\uppercase{Restitutio isochrona elastri}]{\uppercase{Restitutio isochrona elastri}}
+\addcontentsline{toc}{section}{\thesection\enskip Restitutio isochrona elastri
+}
+\label{RK60353}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_180.tex}
+\newpage
+
+
+% N.~32.2. ((??A45; RK 60301)) [Demonstratio de restitutionis elasticae isochronismo] // AEF (Elastizität)
+\vspace{12mm}
+\section[\scriptsize\uppercase{De restitutionis elasticae isochronismo}]{\uppercase{Demonstratio de restitutionis elasticae isochronismo}}
+\addcontentsline{toc}{section}{\thesection\enskip Demonstratio de restitutionis elasticae isochronismo
+}
+\label{RK60301}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_045-046.tex}
+\newpage
+
+
+
+
+
+% N.~33 [32]. ((??A33; RK 60029)) Hypothesis de fluido elastico materiae interfuso [ex: Quomodo agant corpora in se invicem] // AEF (Elastizität)
+\chapter[\scriptsize\uppercase{Hypothesis de fluido elastico materiae interfuso}]{\uppercase{Hypothesis de fluido elastico materiae interfuso}
+\newline \lbrack April 1704 \textendash\ Anfang 1705\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Hypothesis de fluido elastico materiae interfuso%
+\enskip\lbrack April 1704 \textendash\ \mbox{Anfang 1705\,(?)\rbrack}}
+\label{60029}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_10_06_037.tex}
+
+%%% Ende >>>>>>>>>>
+%%% PR: Bis hierher durch die neue Rubrik AEF ersetzt
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%           S T O S S         %%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Stoß
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}	
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{II. Stoss}]{\large\protect\textso{II. Stoss}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+%\renewcommand{\chapterpagestyle}{firstchapter}
+%\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+
+\markleft{\scriptsize\uppercase{II. Stoss}}
+\vspace{8mm}
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}	
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{II.A. Notizen, Konzepte, Aufzeichnungen}]{\large\protect\textso{II.A. Notizen, Konzepte, Aufzeichnungen}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+%
+\markleft{\scriptsize\uppercase{II.A. Notizen, Konzepte, Aufzeichnungen}}
+\vspace{8mm}
+%
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Beginn DCCplus VOR DCC %%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%RK 60060
+\chapter[\scriptsize\uppercase{Quomodo concursus corporum concipi possint}]{\uppercase{Quomodo concursus corporum concipi possint}
+\newline \lbrack 1671\,(?) \textendash\ September 1677\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Quomodo concursus corporum concipi possint% 
+\enskip\lbrack 1671\,(?)\,\textendash\;\mbox{September 1677\,(?)\rbrack}}
+\vspace{8mm}
+\label{RK60060}
+\label{60060}
+ \input{gesamttex/edit_VIII,3/LH_35_10_07_045.tex}
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+% RK 60070  Experimenta domini Regnault pendulis facta // Stoß ()
+\chapter[\scriptsize\uppercase{Experimenta domini Regnault}]{\uppercase{Experimenta domini Regnault pendulis facta}
+\newline \lbrack Herbst 1674\,(?) \textendash\ Januar 1678\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Experimenta domini Regnault pendulis facta \enskip\lbrack Herbst 1674\,(?) \textendash\ Januar 1678\rbrack}
+\label{RK60070}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_10_08_018.tex}
+\newpage%
+
+
+% RK 60127  De concursu duorum corporum // Stoß ()
+\chapter[\scriptsize\uppercase{De concursu duorum corporum}]{\uppercase{De concursu duorum corporum}
+\newline \lbrack zweite Hälfte November 1676\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De concursu duorum corporum \enskip\lbrack zweite Hälfte November 1676\rbrack}
+\vspace{8mm}
+\label{RK60127}
+    \input{gesamttex/edit_VIII,3/LH_35_10_16_007.tex}
+\newpage%
+
+
+%RK 60282 De legibus concursus // Stoß ()
+\chapter[\scriptsize\uppercase{De legibus concursus}]{\uppercase{De legibus concursus}
+\newline \lbrack Winter 1676/1677\,(?) \textendash\ Januar 1678\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De legibus concursus \enskip\lbrack Winter 1676/1677\,(?) \textendash\ Januar 1678\rbrack}
+\label{RK60282}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_37_05_024.tex}
+\newpage%
+
+
+%RK 60278 Aequalis processus centri gravitatis // Stoß ()
+\chapter[\scriptsize\uppercase{Aequalis processus centri gravitatis}]{\uppercase{Aequalis processus centri gravitatis}
+\newline \lbrack Winter 1676/1677 \textendash\ Januar 1678\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aequalis processus centri gravitatis \enskip\lbrack Winter 1676/1677 \textendash\ Januar 1678\rbrack}
+\label{RK60278}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_37_05_020.tex}
+\newpage%
+
+
+
+
+% Santi 2020
+% 12-1
+% 37 5 Bl. 161-162 – RK 57266_1
+\chapter[\scriptsize\uppercase{Elaterium est causa imperfectionis in corporum concursu}]{\uppercase{Elaterium est causa imperfectionis in corporum concursu}
+\newline März 1677}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Elaterium est causa imperfectionis in corporum concursu
+\enskip März 1677}
+\label{RK57266-1}
+\label{57266_1}
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_161-162r.tex}
+
+
+
+
+% Santi 2020
+% 10 
+% 37 5 Bl. 144-145v – RK 57267_1
+\chapter[\scriptsize\uppercase{Ex duobus regulis concursus consequentiae}]{\uppercase{Ex duobus regulis concursus consequentiae}
+\newline März 1677}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Ex duobus regulis concursus consequentiae \enskip März 1677}
+\label{RK57267-1}
+\label{57267_1}
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_144r.tex}
+
+
+% Santi 2020
+% 12-2
+% 37 5 Bl. 161-162 – RK 57266_2
+\chapter[\scriptsize\uppercase{Propositio fundamentalis totius scientiae Mechanicae}]{\uppercase{Propositio fundamentalis totius scientiae Mechanicae} %
+\newline \lbrack März \textendash\ Mai 1677\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Propositio fundamentalis totius scientiae Mechanicae \enskip\lbrack März \textendash\ Mai 1677\rbrack}
+\label{RK57266-2}
+\label{57266_2}
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_162r.tex}
+
+
+
+
+% Santi 2020
+% Komplex / Oberstück  Hugenius/Mariottus 
+% N.~X. (RK 57267_2 + 60343 + RK 57267_3)  
+\chapter[\scriptsize\uppercase{De regulis concursus apud Hugenium et Mariottum}]{\uppercase{De regulis concursus apud Hugenium et Mariottum}%
+\newline \lbrack März \textendash\ Mai 1677\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De regulis concursus apud Hugenium et Mariottum \enskip\lbrack März \textendash\ Mai 1677\rbrack}
+\label{hugenius_mariottus}
+\label{RK57267-2+60343}	
+\label{RK57267-2+60343+57267-3}
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/HugeniusMariottus_intro.tex} 
+
+
+% Santi 2020
+% 11-A
+% 37 5 Bl. 144-145r – RK 57267_2
+% N. X.1.  Kommentierte Auszüge Huygens
+\newpage
+%\vspace{12mm}
+\section[\scriptsize\uppercase{Regle de Mons.~Hugens}]{\uppercase{Regle de Mons.~Hugens}}
+\addcontentsline{toc}{section}{\thesection\enskip Regle de Mons.~Hugens}
+\label{RK57267-2}
+\label{57267_2}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_144-145r.tex}
+		
+
+% Santi 2020
+% 13 
+% 37 5 Bl. 143 – RK 60343
+\newpage
+%\vspace{12mm}
+\section[\scriptsize\uppercase{Schedula de decem casibus Hugenianis}]{\uppercase{Schedula de decem casibus Hugenianis}} % 
+\addcontentsline{toc}{section}{\thesection\enskip Schedula de decem casibus Hugenianis%
+} 
+\label{RK60343}
+\label{60343}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_143.tex}
+				
+		
+% Santi 2020
+% 11-B
+% 37 5 Bl. 145r-145v – RK 57267_3
+% N. X.3.  Kommentierte Auszüge Mariotte
+\newpage
+%\vspace{12mm}
+\section[\scriptsize\uppercase{Aus und zu E.~Mariotte, Trait\'{e} de la percussion}]{\uppercase{Aus und zu E.~Mariotte, Trait\'{e} de la percussion}}
+\addcontentsline{toc}{section}{\thesection\enskip Aus und zu E.~Mariotte, Trait\'{e} de la percussion} 
+\label{RK57267-3}	
+\label{57267_3}		
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_145.tex}
+		
+
+
+% Santi 2020
+% Komplex / Oberstück "De ratione celeritatum"
+% N.~X. (RK 57266_3 + 57268)  
+\chapter[\scriptsize\uppercase{De ratione celeritatum ante et post concursum}]{\uppercase{De ratione celeritatum ante et post concursum}%
+\newline\lbrack März \textendash\ Mai 1677\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De ratione celeritatum ante et post concursum \enskip\lbrack März \textendash\ Mai 1677\rbrack}
+\label{ratio_cel}
+\label{RK57266_3+57268}
+\label{RK57266-3+57268}
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/Ratio_celeritatum_Einleitung.tex}
+
+
+% Santi 2020
+% 12-3
+% 37 5 Bl. 161-162 – RK 57266_3
+\newpage
+\section[\scriptsize\uppercase{De ratione celeritatum ante et post concursum}]{\uppercase{De ratione celeritatum ante et post concursum}%
+\newline\lbrack März \textendash\ Mai 1677\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip De ratione celeritatum ante et post concursum
+\enskip\lbrack März \textendash\ Mai 1677\rbrack} 
+\label{RK57266-3}
+\label{57266_3}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_162v.tex}
+
+
+% Santi 2019
+% 02 
+% 37 5 Bl. 144r-145v – RK 57268
+\newpage
+\section[\scriptsize\uppercase{Specimina artis condendi theoremata}]{\uppercase{Specimina artis condendi theoremata}%
+\newline Mai 1677}
+\addcontentsline{toc}{section}{\thesection\enskip Specimina artis condendi theoremata
+\enskip Mai 1677} 
+\label{RK57268}
+\label{57268}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_144r-145v.tex}
+
+
+
+
+
+% Santi 2020
+% 30 
+% 37 5 Bl. 146-147 – RK 57273
+\chapter[\scriptsize\uppercase{De centro potentiae}]{\uppercase{De centro potentiae. De servanda potentia et directione in duorum corporum concursu} %
+\newline\lbrack Mai  \textendash\ Mitte Juni 1677\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De centro potentiae. De servanda potentia et directione in duorum corporum concursu \enskip\lbrack Mai  \textendash\ Mitte Juni 1677\rbrack}
+\label{57273}
+\label{RK57273}
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_146-147.tex}
+
+
+
+% Santi 2020
+% 25-1
+% 37 5 Bl. 152r – RK 60344_1
+\chapter[\scriptsize\uppercase{Motus centri potentiae}]{\uppercase{Motus centri potentiae}
+\newline \lbrack Mai \textendash\ Mitte Juni 1677\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Motus centri potentiae \enskip\lbrack Mai \textendash\ Mitte Juni 1677\rbrack}
+\label{60344_1}
+\label{RK60344_1}
+\vspace{8mm}
+    \input{gesamttex/edit_VIII,3/LH_37_05_152r.tex}
+
+
+
+% Santi 2019
+% 01 
+% 37 5 Bl. 150-151 – RK 57274
+\chapter[\scriptsize\uppercase{De concursu corporum inflexilium ac de via centri potentiae}]{\uppercase{De concursu corporum inflexilium ac de via centri potentiae}
+\newline \lbrack Mai \textendash\ Mitte Juni 1677\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De concursu corporum inflexilium ac de via centri potentiae \enskip\lbrack Mai \textendash\ Mitte Juni 1677\rbrack}
+\label{57274}
+\label{RK57274}
+\vspace{8mm}
+   \input{gesamttex/edit_VIII,3/LH_37_05_150-151.tex}
+
+
+
+% Santi 2020
+% 25-2
+% 37 5 Bl. 152v – RK 60344_2
+\chapter[\scriptsize\uppercase{Calculus summae et differentiae quadratorum celeritatum}]{\uppercase{Calculus summae et differentiae quadratorum celeritatum}
+\newline \lbrack Mai \textendash\ Juni\,(?) 1677\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Calculus summae et differentiae quadratorum celeritatum \enskip\lbrack Mai \textendash\ Juni\,(?) 1677\rbrack}
+\label{60344_2}
+\label{RK60344_2}
+\vspace{8mm}
+    \input{gesamttex/edit_VIII,3/LH_37_05_152v.tex}
+
+
+
+
+
+% Santi 2020
+% 22 
+% 37 5 Bl. 191-192 – RK 57269
+\chapter[\scriptsize\uppercase{De corporibus concurrentibus in navi progrediente}]{\uppercase{De compositione motuum sive de corporibus concurrentibus in navi progrediente}
+\newline 10.\,(20.)~Juni 1677}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De compositione motuum sive de corporibus concurrentibus in navi progrediente \enskip10.\,(20.)~Juni 1677}
+\vspace{8mm}
+\label{57269}
+\label{RK57269}
+ \input{gesamttex/edit_VIII,3/LH_37_05_191-192.tex}
+
+ 
+ 
+ 
+% Santi 2020
+% 23 
+% 37 5 Bl. 157-158 – RK 57270
+\chapter[\scriptsize\uppercase{Certa de motu}]{\uppercase{Certa de motu}
+\newline 10.\,(20.)~Juni 1677}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Certa de motu \enskip10.\,(20.)~Juni 1677}
+\vspace{8mm}
+\label{RK57270}
+\label{57270}
+ \input{gesamttex/edit_VIII,3/LH_37_05_157-158.tex}
+
+
+% Santi 2020
+% 24 
+% 37 5 Bl. 159-160 – RK 57271
+\chapter[\scriptsize\uppercase{De vi ictus}]{\uppercase{De vi ictus}
+\newline 11.\,(21.)~Juni 1677}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De vi ictus \enskip11.\,(21.)~Juni 1677}
+\vspace{8mm}
+\label{RK57271}
+\label{57271}
+ \input{gesamttex/edit_VIII,3/LH_37_05_159-160.tex}
+
+
+
+
+% Santi 2020
+% 31
+% 37 5 Bl. 155-156 – RK 60345
+\chapter[\scriptsize\uppercase{De permutatione potentiarum deque motuum compositione}]{\uppercase{De permutatione potentiarum deque motuum compositione} %
+\newline\lbrack  Sommer\,(?) 1677\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De permutatione potentiarum deque motuum compositione  \enskip\lbrack Sommer\,(?) 1677\rbrack}
+\label{60345}
+\label{RK60345}
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_155-156.tex}
+
+
+
+
+% Santi 2020
+% 26 
+% 37 5 Bl. 153-154 – RK 57277
+\chapter[\scriptsize\uppercase{Eandem semper est celeritas separationis et celeritas concursus}]{\uppercase{Eandem semper est celeritas separationis et celeritas concursus}
+\newline \lbrack Ende Juni 1677 \textendash\ Januar 1678\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Eandem semper est celeritas separationis et celeritas concursus \enskip\lbrack Ende Juni 1677 \textendash\ Januar 1678\rbrack}
+\label{57277}
+\label{RK57277}
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_153-154.tex}
+%neuer Titel; vormals: De motuum compositionibus hoc est de corporibus sibi concurrentibus in navi 
+
+
+
+% Santi 2019
+% 03 
+% 37 5 Bl. 148-149 – RK 57276
+\chapter[\scriptsize\uppercase{Centrum gravitatis semper sequitur corpus potentius}]{\uppercase{Centrum gravitatis semper sequitur corpus potentius}
+\newline \lbrack Ende Juni 1677 \textendash\ Januar 1678\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Centrum gravitatis semper sequitur corpus potentius  \enskip\lbrack Ende Juni 1677 \textendash\ Januar 1678\rbrack}
+\label{57276}
+\label{RK57276}
+\vspace{8mm}
+   \input{gesamttex/edit_VIII,3/LH_37_05_148-149.tex}
+
+
+
+
+  
+% Santi 2020
+% 20 
+% 37 5 Bl. 140-141 – RK 57275
+\chapter[\scriptsize\uppercase{De motu centri potentiae si corpus unum in aliud quiescens incurrit}]{\uppercase{De motu centri potentiae si corpus unum in aliud quiescens incurrit}
+\newline \lbrack Ende Juni 1677 \textendash\ Januar 1678\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De motu centri potentiae si corpus unum in aliud quiescens incurrit  \enskip\mbox{\lbrack Ende Juni} 1677 \textendash\ Januar 1678\rbrack}
+\label{57275}
+\label{RK57275}
+\vspace{8mm}
+\input{gesamttex/edit_VIII,3/LH_37_05_140-141,148-149.tex} 
+
+
+
+% Santi 2020
+% 33 
+% 37 5 Bl. 16 – RK 57272
+\chapter[\scriptsize\uppercase{De aestimatione ictus in concursibus corporum}]{\uppercase{De aestimatione ictus in concursibus corporum}
+\newline \lbrack Ende Juni 1677 \textendash\ Januar 1678\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De aestimatione ictus in concursibus corporum \enskip\lbrack Ende Juni 1677 \textendash\ Januar 1678\rbrack}
+\vspace{8mm}
+\label{RK57272}
+\label{57272} 
+    \input{gesamttex/edit_VIII,3/LH_37_05_016.tex}
+
+
+
+
+% Santi 2020
+% 27 
+% 37 5 Bl. 19 – RK 52278
+\chapter[\scriptsize\uppercase{Experiences à faire sur le mouvement}]{\uppercase{Experiences à faire sur le mouvement}
+\newline\lbrack Ende September \textendash\ Oktober\,(?) 1677\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Experiences à faire sur le mouvement 
+\enskip\lbrack Ende September \textendash\ Oktober\,(?) 1677\rbrack}
+\label{52278}
+\label{RK52278} 
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_019.tex}
+
+
+
+% Santi 2019
+% 04 
+% 37 5 Bl. 193 – RK 57279
+\chapter[\scriptsize\uppercase{De regula concursus corporum inaequalium}]{\uppercase{De regula concursus corporum inaequalium}
+\newline \lbrack um Mitte\rbrack\ Januar 1678}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De regula concursus corporum inaequalium \enskip\lbrack um Mitte\rbrack\ Januar 1678}
+\label{57279}
+\label{RK57279}
+\vspace{8mm}
+   \input{gesamttex/edit_VIII,3/LH_37_05_193.tex}
+ 
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Ende DCCplus VOR DCC)%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Beginn DCC %%%%%%%%%%%%%%%%% BEI ZEITZ
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% N.~. ((??S01.00)) De corporum concursu // Stoß ()
+\chapter[\scriptsize\uppercase{De corporum concursu}]{\uppercase{De corporum concursu}
+\newline Januar \textendash\  Februar 1678}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De corporum concursu 
+\enskip Januar \textendash\  Februar 1678}
+\label{dcc_00}
+\vspace{8mm}
+     \input{gesamttex/edit_VIII,3/LH_35_09_23_001-022_intro.tex}
+\newpage%
+
+
+% N.~. ((??S01.01; RK 41208 /1)) De corporum concursu scheda prima // Stoß ()
+\vspace{12mm}
+\section[\scriptsize\uppercase{De corporum concursu scheda prima}]{\uppercase{De corporum concursu scheda prima}%
+% \newline{Januar 1678}
+}
+\addcontentsline{toc}{section}{\thesection\enskip De corporum concursu scheda prima}
+\label{dcc_01}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_09_23_001-002.tex}
+\newpage%
+
+
+% N.~. ((??S01.02; RK 41208 /2)) De corporum concursu scheda secunda // Stoß ()
+\vspace{12mm}
+\section[\scriptsize\uppercase{De corporum concursu scheda secunda}]{\uppercase{De corporum concursu scheda secunda}%
+% \newline{Januar 1678}
+}
+\addcontentsline{toc}{section}{\thesection\enskip De corporum concursu scheda secunda}
+\label{dcc_02-1}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_09_23_003,006.tex}
+\newpage%
+
+
+% N.~. ((??S01.03; RK 41208 /3)) De corporum concursu scheda secundo-secunda // Stoß ()
+\vspace{12mm}
+\section[\scriptsize\uppercase{De corporum concursu scheda secundo-secunda}]{\uppercase{De corporum concursu scheda secundo-secunda}%
+% \newline{\lbrack Januar 1678\rbrack}
+}
+\addcontentsline{toc}{section}{\thesection\enskip De corporum concursu scheda secundo-secunda}
+\label{dcc_02-2}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_09_23_004-005.tex}
+\newpage%
+
+
+% N.~. ((??S01.04; RK 41208 /4)) De corporum concursu scheda tertia // Stoß ()
+\vspace{12mm}
+\section[\scriptsize\uppercase{De corporum concursu scheda tertia}]{\uppercase{De corporum concursu scheda tertia}}
+\addcontentsline{toc}{section}{\thesection\enskip De corporum concursu scheda tertia
+}
+\label{dcc_03}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_09_23_007-008.tex}
+\newpage%
+
+
+% N.~. ((??S01.05; RK 41208 /5)) De corporum concursu scheda quarta // Stoß ()
+\vspace{12mm}
+\section[\scriptsize\uppercase{De corporum concursu scheda quarta}]{\uppercase{De corporum concursu scheda quarta}}
+\addcontentsline{toc}{section}{\thesection\enskip De corporum concursu scheda quarta
+}
+\label{dcc_04}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_09_23_009-010.tex}
+\newpage%
+
+
+% N.~. ((??S01.06; RK 41208 /6)) De corporum concursu scheda quinta // Stoß ()
+\vspace{12mm}
+\section[\scriptsize\uppercase{De corporum concursu scheda quinta}]{\uppercase{De corporum concursu scheda quinta}}
+\addcontentsline{toc}{section}{\thesection\enskip De corporum concursu scheda quinta
+}
+\label{dcc_05}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_09_23_011-012.tex}
+\newpage%
+
+
+% N.~. ((??S01.07; RK 41208 /7)) De corporum concursu scheda sexta // Stoß ()
+\vspace{12mm}
+\section[\scriptsize\uppercase{De corporum concursu scheda sexta}]{\uppercase{De corporum concursu scheda sexta}}
+\addcontentsline{toc}{section}{\thesection\enskip De corporum concursu scheda sexta}
+\label{dcc_06-1}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_09_23_013-014.tex}
+\newpage%
+
+
+% N.~. ((??S01.08; RK 41208 /8 + 57256 + 60235)) De corporum concursu scheda secundo-sexta // Stoß ()
+\vspace{12mm}
+\section[\scriptsize\uppercase{De corporum concursu scheda secundo-sexta}]{\uppercase{De corporum concursu scheda secundo-sexta}}
+\addcontentsline{toc}{section}{\thesection\enskip De corporum concursu scheda secundo-sexta
+}
+\label{dcc_06-2}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_09_23_015-020,37_04_059-060,37_05_091.tex}
+\newpage%
+
+
+% N.~. ((??S01.09; RK 41208 /9)) De corporum concursu scheda septima // Stoß ()
+\vspace{12mm}
+\section[\scriptsize\uppercase{De corporum concursu scheda septima}]{\uppercase{De corporum concursu scheda septima}}
+\addcontentsline{toc}{section}{\thesection\enskip De corporum concursu scheda septima
+}
+\label{dcc_07}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_09_23_021-022.tex}
+\newpage%
+
+
+% N.~. ((??S01.10; RK 57263)) De corporum concursu scheda octava // Stoß ()
+\vspace{12mm}
+\section[\scriptsize\uppercase{De corporum concursu scheda octava}]{\uppercase{De corporum concursu scheda octava}}
+\addcontentsline{toc}{section}{\thesection\enskip De corporum concursu scheda octava
+}
+\label{dcc_08}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_086-087.tex}
+\newpage%
+
+
+% N.~. ((??S01.11; RK 57264)) De corporum concursu scheda nona // Stoß ()
+\vspace{12mm}
+\section[\scriptsize\uppercase{De corporum concursu scheda nona}]{\uppercase{De corporum concursu scheda nona}}
+\addcontentsline{toc}{section}{\thesection\enskip De corporum concursu scheda nona
+}
+\label{dcc_09}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_088-089.tex}
+\newpage%
+
+
+% N.~. ((??S01.12; RK 57265)) De corporum concursu scheda decima // Stoß ()
+\vspace{12mm}
+\section[\scriptsize\uppercase{De corporum concursu scheda decima}]{\uppercase{De corporum concursu scheda decima}}
+\addcontentsline{toc}{section}{\thesection\enskip De corporum concursu scheda decima
+}
+\label{dcc_10}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_090-091.tex}
+\newpage%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Ende DCC %%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Beginn DCCplus nach DCC %%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+ % Santi 2020
+% 29 
+% 35 12, 2 Bl. 18 – RK 39566
+\chapter[\scriptsize\uppercase{Locus duorum globorum post ictum obliquum}]{\uppercase{Quomodo inveniri possit locus duorum globorum post ictum obliquum} %
+\newline\lbrack Februar 1678 \textendash\ 1686\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Quomodo inveniri possit locus duorum globorum post ictum obliquum 
+\enskip\mbox{\lbrack Februar} 1678 \textendash\ 1686\rbrack}
+\label{39566}
+\label{RK39566}
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/LH_35_12_02_018.tex}
+    
+
+    
+
+% Santi 2020
+% 16 
+% 35 9, 21 Bl. 5-6 – RK 41204
+\chapter[\scriptsize\uppercase{Corporum concursus casus aliqui faciliores}]{\uppercase{Corporum concursus casus aliqui faciliores}%
+\newline\lbrack Februar 1678 \textendash\ 1686\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Corporum concursus casus aliqui faciliores 
+\enskip\lbrack Februar 1678 \textendash\ 1686\rbrack}
+\label{41204}
+\label{RK41204}
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/LH_35_09_21_005-006.tex}
+		
+		
+		
+
+%RK 41176 De aequilibrio in corporum concursu // Stoß //
+\chapter[\scriptsize\uppercase{De aequilibrio in corporum concursu}]{\uppercase{De aequilibrio in corporum concursu}
+\newline\lbrack1680\,(?) \textendash\  1685\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De aequilibrio in corporum concursu 
+\enskip\lbrack1680\,(?) \textendash\  1685\,(?)\rbrack}
+\label{RK41176}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_16_006.tex}
+\newpage%
+
+
+
+
+%RK41205 Modus demonstrandi leges percussionis // Stoß //
+\chapter[\scriptsize\uppercase{Modus demonstrandi leges percussionis}]{\uppercase{Modus demonstrandi leges percussionis}
+\newline \lbrack1680 \textendash\ 1685\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Modus demonstrandi leges percussionis 
+\enskip\lbrack1680 \textendash\ 1685\rbrack}
+\label{RK41205}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_21_007.tex}
+
+
+
+% Santi 2020
+% 06 
+% 35 9, 22 Bl. 1-2 – RK 41206
+\chapter[\scriptsize\uppercase{De concursu sine ictu, deque refractione}]{\uppercase{De concursu sine ictu, deque refractione}
+\newline 19.\,(29.)~November 1681}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De concursu sine ictu, deque refractione 
+\enskip19.\,(29.)~November 1681}
+\label{41206}
+\label{RK41206}
+\vspace{8mm}
+   \input{gesamttex/edit_VIII,3/LH_35_09_22_001-002.tex}
+
+
+
+% Santi 2020
+% 17 
+% 42 5 Bl. 43 – RK 60632
+\chapter[\scriptsize\uppercase{De virium gyrationis ad vires progressionis proportione}]{\uppercase{De virium gyrationis ad vires progressionis proportione} %
+\newline\lbrack Dezember 1681\,(?) \textendash\ Februar 1689\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip De virium gyrationis ad vires progressionis proportione 
+\enskip\mbox{\lbrack Dezember 1681\,(?) \textendash} Februar 1689\rbrack}
+\label{60632}
+\label{RK60632}
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/LH_42_05_043.tex}   
+
+
+
+% Santi 2020
+% Komplex   Adversus motuum compositionem 
+% (RK 41169 + 41167 + 60318)
+\chapter[\scriptsize\uppercase{Motuum compositioni non fidendum, praesertim in concursu obliquo}]{\uppercase{Motuum compositioni non est fidendum, praesertim in concursu obliquo}%
+\newline\lbrack1686\,(?) \textendash\ Oktober 1687\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Motuum compositioni non est fidendum, praesertim in concursu obliquo 
+\enskip\lbrack1686\,(?) \textendash\ Oktober 1687\rbrack}
+\label{comp_non_fidendum}% 
+\label{RK41169+41167+60318+60320}
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/CompositioniNonFidendum_intro.tex} 
+
+
+% Santi 2020
+% 09 
+% 35 9, 16 Bl. 16 – RK 41169
+\newpage
+%\vspace{12mm}
+\section[\scriptsize\uppercase{De motu impresso et ex gravitate orto non componendis}]{\uppercase{De motu impresso et ex gravitate orto non componendis}%
+\newline\lbrack1686\,(?) \textendash\ Oktober 1687\rbrack} 
+\addcontentsline{toc}{section}{\thesection\enskip De motu impresso et ex gravitate orto non componendis%
+% \lbrack1686\,(?) \textendash\ Oktober 1687\rbrack
+}
+\label{RK41169}
+\label{41169}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_09_16_016.tex}
+
+
+% Santi 2019
+% 05 
+% 35 9, 16 Bl. 17 – RK 41167
+\newpage
+%\vspace{12mm}
+\section[\scriptsize\uppercase{De methodo alternorum in concursu obliquo}]{\uppercase{De methodo alternorum, deque compositione motuum et virium in concursu obliquo}%
+\newline\lbrack1686 \textendash\ Oktober 1687\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip De methodo alternorum, deque compositione motuum et virium in concursu obliquo%
+%   \lbrack1686 \textendash\ Oktober 1687\rbrack
+}
+\label{RK41167}
+\label{41167}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_35_09_16_017.tex}
+
+
+
+
+% Santi 2020
+% 07
+% 35 7 Bl. 94-95 – RK 60318
+\newpage
+%\vspace{12mm}
+\section[\scriptsize\uppercase{Motuum compositioni non fidendum, praesertim in concursu obliquo}]{\uppercase{Motuum compositioni non est fidendum, praesertim in concursu obliquo}%
+\newline\lbrack1686 \textendash\ Oktober 1687\rbrack}
+\addcontentsline{toc}{section}{\thesection\enskip Motuum compositioni non est fidendum, praesertim in concursu obliquo%
+%   \lbrack1686 \textendash\ Oktober 1687\rbrack
+}
+\label{RK60318}
+\label{60318}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_094-095.tex}
+
+
+
+
+% Santi 2020
+% 08 
+% 35 7 Bl. 96-99 (vormals 2 Stücke 60320+60319)
+\chapter[\scriptsize\uppercase{Principia universalia ad concursus determinandos}]%
+{\uppercase{Principia universalia ad concursus directos ac obliquos determinandos} %
+\newline\lbrack1686 \textendash\ Oktober 1687\rbrack}
+\addcontentsline{toc}{chapter}%
+{\thechapter\enskip  Principia universalia ad concursus directos ac obliquos determinandos %
+\enskip\mbox{\lbrack1686 \textendash} Oktober 1687\rbrack}
+\label{60320}
+\label{RK60320}
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/LH_37_05_096-099.tex}
+
+
+
+
+%RK 41201 Leges concursuum
+\chapter[\scriptsize\uppercase{Leges concursuum}]{\uppercase{Leges concursuum}
+\newline \lbrack Ende Oktober 1686 \textendash\ Anfang Februar 1687\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Leges concursuum 
+\enskip\lbrack Ende Oktober 1686 \textendash\ Anfang Februar 1687\rbrack}
+\label{41201}
+\label{RK41201}
+\vspace{8mm}
+	\input{gesamttex/edit_VIII,3/LH_35_09_21_001-002.tex}
+\newpage%
+
+
+
+%RK 60323 Physico-Mechanicae leges ex congressu corporum ductae // Stoß ()
+\chapter[\scriptsize\uppercase{Physico-Mechanicae leges}]{\uppercase{Physico-Mechanicae leges ex congressu corporum ductae} 
+\newline \lbrack Herbst 1688\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Physico-Mechanicae leges ex congressu corporum ductae 
+\enskip\lbrack Herbst 1688\rbrack}
+\label{RK60323}
+\vspace{8mm}
+\label{LH_37_05_104-105_datierung}
+	\input{gesamttex/edit_VIII,3/LH_37_05_104-105.tex}
+\newpage%
+
+
+
+
+%RK60038
+\chapter[\scriptsize\uppercase{Plurium corporum concursus}]{\uppercase{Plurium corporum concursus}
+\newline \lbrack Herbst 1688 \textendash\ Anfang 1689\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Plurium corporum concursus 
+\enskip\lbrack Herbst 1688 \textendash\ Anfang 1689\rbrack}
+\vspace{8mm}
+\label{RK60038}
+    \input{gesamttex/edit_VIII,3/LH_35_10_07_009-010.tex}
+%
+
+
+% Santi 2020
+% 35 
+% 35 14 2 Bl. 7 – RK 58221
+\chapter[\scriptsize\uppercase{Permutatio impetuum non succedit nisi inter aequalia}]{\uppercase{Permutatio impetuum non succedit nisi inter aequalia}
+\newline \lbrack März 1689 \textendash\ März 1690\rbrack
+}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Permutatio impetuum non succedit nisi inter aequalia
+\enskip\lbrack März 1689 \textendash\ \mbox{März 1690\rbrack}}
+\vspace{8mm}
+\label{RK58221}
+ \input{gesamttex/edit_VIII,3/LH_35_14_02_007.tex}
+
+   
+
+% Santi 2020
+% 28 
+% 37 5 Bl. 17 – RK 60276
+\chapter[\scriptsize\uppercase{Si corpus incurrens sistatur, non eadem servetur potentia}]{\uppercase{Si corpus incurrens sistatur, non eadem servetur potentia}
+\newline \lbrack März 1689 \textendash\ März 1690\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Si corpus incurrens sistatur, non eadem servetur potentia 
+\enskip\lbrack März 1689 \textendash\ \mbox{März 1690\rbrack}}
+\label{60276}
+\label{RK60276}
+\vspace{8mm}
+    \input{gesamttex/edit_VIII,3/LH_37_05_017.tex}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Ende DCCplus nach DCC %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Beginn Auszüge und Rezensionen %%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}	
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{II.B. Ausz\"uge, Rezensionen}]{\large\protect\textso{II.B. Ausz\"uge, Rezensionen}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+%
+\markleft{\scriptsize\uppercase{II.B. Ausz\"uge, Rezensionen}}
+\vspace{8mm}
+%
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{15.5ex}}
+
+
+
+%RK 60069
+% Notiz zu Marci
+\chapter[\scriptsize\uppercase{Notiz zu M.~Marci, De Motu}]{\uppercase{Notiz zu M.~Marci, De Motu}
+\newline \lbrack Anfang 1686\,(?) \textendash\ Anfang 1695\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Notiz zu M.~Marci, De Motu
+\enskip\lbrack Anfang 1686\,(?) \textendash\ Anfang 1695\,(?)\rbrack}
+\vspace{8mm}
+\label{RK60069}
+    \input{gesamttex/edit_VIII,3/LH_35_10_08_017.tex}
+
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+
+% RK 58217
+% Borelli, De vi percussionis
+\chapter[\scriptsize\uppercase{Aus und zu G.\,A.\,Borelli, De vi percussionis}]{\uppercase{Aus und zu G.\,A.\,Borelli, De vi percussionis} 
+\newline \lbrack März 1689 \textendash\ März 1690\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu G.\,A.\,Borelli, De vi percussionis
+\enskip\lbrack März 1689 \textendash\ März 1690\rbrack}
+\vspace{8mm}
+\label{RK58217}
+ \input{gesamttex/edit_VIII,3/LH_35_14_02_002,052.tex}
+
+
+
+
+% RK 58226
+% Regulae motus Cartesii
+\chapter[\scriptsize\uppercase{Regulae motus Cartesii}]{\uppercase{Regulae motus Cartesii}
+\newline\lbrack März 1689 \textendash\ März 1690\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Regulae motus Cartesii
+\enskip\lbrack März 1689 \textendash\ März 1690\rbrack}
+\label{58226} 
+\label{RK58226} 
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/LH_35_14_02_013.tex}
+		
+
+
+% RK 58948
+% Aus Huygens, Traité de la lumière
+\chapter[\scriptsize\uppercase{Aus C.\,Huygens, Traité de la lumière}]{\uppercase{Aus C.\,Huygens, Traité de la lumière  \lbrack...\rbrack\ avec un discours de la cause de la pesanteur}
+\newline \lbrack Mitte September \textendash\ 12.~Oktober 1690\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus C.\,Huygens, Traité de la lumière  \lbrack...\rbrack\ avec un discours de la cause de la pesanteur
+\enskip\lbrack Mitte September \textendash\ 12.~Oktober 1690\rbrack}
+\vspace{8mm}
+\label{RK58948}
+\label{58948}
+    \input{gesamttex/edit_VIII,3/LH_35_11_14_033.tex}				
+	
+
+
+
+% RK 42448
+% Aus Sohier, Nouveau Systeme
+\chapter[\scriptsize\uppercase{Aus und zu G.\,J.\,Sohier, Nouveau systeme}]{\uppercase{Aus und zu G.\,J.\,Sohier, Nouveau systeme de la percussion des corps}
+\newline \lbrack Mai 1696 \textendash\ Januar 1698\,(?)\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Aus und zu G.\,J.\,Sohier, Nouveau systeme de la percussion des corps 
+\enskip\mbox{\lbrack Mai 1696} \textendash\ Januar 1698\,(?)\rbrack}
+\vspace{8mm}
+\label{RK42448}
+ \input{gesamttex/edit_VIII,3/LH_37_05_060-061.tex}
+	
+
+
+
+% Oberstück
+% Auszüge und Rezension zu Parent, Elemens 1700
+% RK 55822 + RK 61042
+\chapter[\scriptsize\uppercase{Zu A.\,Parent, \'{E}l\'{e}mens}]
+{\uppercase{Zu A.\,Parent, \'{E}l\'{e}mens de m\'{e}chanique et de physique} 
+\newline \lbrack Mitte Januar \textendash\ Juni 1701\rbrack}
+\addcontentsline{toc}{chapter}
+{\thechapter\enskip Zu A.\,Parent, \'{E}l\'{e}mens de m\'{e}chanique et de physique
+\enskip\lbrack Mitte Januar \textendash\  Ju\/ni~1701\rbrack}
+\label{Parent_intro}
+\vspace{8mm}
+		\input{gesamttex/edit_VIII,3/Parent_intro.tex}
+
+
+
+% RK 55822
+% Auszüge aus Parent, Elemens
+\newpage
+%\vspace{12mm}
+\section[\scriptsize\uppercase{Aus und zu A.\,Parent, \'{E}l\'{e}mens}]%
+{\uppercase{Aus und zu A.\,Parent, \'{E}l\'{e}mens de m\'{e}chanique et de physique}%
+\newline \lbrack Mitte Januar \textendash\ Mitte April 1701\rbrack}
+\addcontentsline{toc}{section}
+{\thesection\enskip Aus und zu A.\,Parent, \'{E}l\'{e}mens de m\'{e}chanique et de physique%
+%\enskip\lbrack Mitte Januar \textendash\ Mitte April 1701\rbrack
+}
+\label{RK55822}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/LH_38_212-215.tex}
+	
+
+
+% RK 61042
+% Rezension zu Parent, Elemens
+\newpage
+%\vspace{12mm}
+\section[\scriptsize\uppercase{Rezension zu A.\,Parent, \'{E}l\'{e}mens}]%
+{\uppercase{Rezension zu A.\,Parent, \'{E}l\'{e}mens de m\'{e}chanique et de physique}
+\newline Juni 1701}
+\addcontentsline{toc}{section}
+{\thesection\enskip Rezension zu A.\,Parent, \'{E}l\'{e}mens de m\'{e}chanique et de physique%
+%\enskip Juni 1701
+} 
+\label{RK61042}
+\vspace{4mm}
+		\input{gesamttex/edit_VIII,3/AE_1701_252-256.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Ende Auszüge und Rezensionen %%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Beginn Nachträge %%%%%%%%%%%%%%%   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{III. Nachtr\"{a}ge}]{\large\protect\textso{III. Nachtr\"{a}ge}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+
+\markleft{\scriptsize\uppercase{III. Nachtr\"{a}ge}}
+
+
+%Nachträge  - III.A. Technica (Bautechnik) %%%%%%%%%%%%5
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{III.A. Technica} (Zu Bd VIII, 1)]{\large\protect\textso{III.A. Technica} (Z\lowercase{u} B\lowercase{d} VIII, 1)}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{8ex}}
+
+
+
+\markleft{\scriptsize\uppercase{III.A. Technica}}
+    
+% RK 39624    
+\chapter[\scriptsize\uppercase{Perspektivische Zeichnung}]{\uppercase{Perspektivische Zeichnung einer pyramidenförmigen Turmspitze auf Sockel}
+\newline \lbrack Frühjahr 1672\ \textendash\ Herbst 1673\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip Perspektivische Zeichnung einer pyramidenförmigen Turmspitze auf Sockel \enskip\lbrack Frühjahr 1672\ \textendash\ Herbst 1673\rbrack}
+\vspace{8mm}
+\label{RK39624}
+   \input{gesamttex/edit_VIII,3/LH_35_12_02_086.tex}  
+   
+
+%Nachträge  - III.B. Bewegung %%%%%%%%%%%%
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{III.B. Bewegung} (Zu Bd VIII, 2)]{\large\protect\textso{III.B. Bewegung} (Z\lowercase{u} B\lowercase{d} VIII, 2)}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\renewcommand{\chapterpagestyle}{firstchapter}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{8ex}}
+
+\markleft{\scriptsize\uppercase{III.B. Bewegung}}
+
+
+% RK 55793
+\chapter[\scriptsize\uppercase{An ex Sinclaro}]{\uppercase{An ex Sinclaro}
+\newline \lbrack August 1670\ \textendash\ Anfang 1672\rbrack}
+\addcontentsline{toc}{chapter}{\thechapter\enskip An ex Sinclaro \enskip\lbrack August 1670\ \textendash\ Anfang 1672\rbrack}
+\vspace{8mm}
+\label{RK55793}
+   \input{gesamttex/edit_VIII,3/LH_38_135.tex}    
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-5mm}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Ende Nachträge %%%%%%%%%%%%%%%%   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+
+
+
+\newpage
+%
+%
+%
+%
+%
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%  V E R Z E I C H N I S S E.  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%
+%
+\selectlanguage{ngerman}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\addtocontents{toc}{\vspace{5mm}}
+\addpart[\large\uppercase{Verzeichnisse}]{\large\protect\textso{VERZEICHNISSE}}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\renewcommand*{\chapterpagestyle}{empty}
+ 	
+
+%% 				    			    
+% PERSONENVERZEICHNIS
+\clearscrheadfoot
+\chead{\headmark}
+\automark[personen]{personen}
+\ohead[\pagemark]{\pagemark}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\small
+\setindexpreamble{\vspace{-1.8em}\begin{center}\uppercase{\normalsize Personen}\end{center}\vskip0.5ex%
+Kaiser werden unter dem Stichwort Kaiser mit nachfolgendem Namen, 
+P\"{a}pste unter dem Stichwort Papst mit nachfolgendem Namen aufgef\"{u}hrt. 
+Andere Regenten werden unter dem Namen des von ihnen regierten Staates gelistet. 
+Bei diesen Personengruppen sind die Jahreszahlen Regierungszeiten, bei allen anderen Lebensdaten. 
+Bei Autoren ist zus\"{a}tzlich das Schriftenverzeichnis heranzuziehen. 
+Es wird nach Seiten zitiert.\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Personen}
+\markleft{\scriptsize\uppercase{Verzeichnisse}}
+\printindex{Namensregister}{}
+
+%
+%
+% SCHRIFTENVERZEICHNIS
+\clearscrheadfoot
+\chead{\sc{schriften}}
+\ohead[\pagemark]{\pagemark}
+\begin{multicols}{2}[\footnotesize\addchap*{\hfill SCHRIFTEN\hfill}%
+\addcontentsline{toc}{chapter}{\enskip Schriften}%
+\vspace{15pt}%
+Das Schriftenverzeichnis enthält die von Leibniz erwähnte und die in den Erläuterungen benutzte Literatur.
+Autorennamen und Werktitel sind in alphabetischer Reihenfolge aufgeführt. 
+Die kursiv gesetzten Seitenzahlen geben die Stellen im Band an, an denen die Schriften zitiert werden.\\]
+\setlength{\columnseprule}{0.4pt}					
+\renewcommand{\chapter}[2]{}	% unterdrückt die Zwischenüberschrift "Literaturverzeichnis"
+\bibliographystyle{leibniz8bib-neu}
+\footnotesize
+\normalem
+\bibliography{l8-3bib_2020-12-17}{}
+\end{multicols}    %%
+%
+%
+% SACHVERZEICHNIS
+\setindexpreamble{\vspace{-1.8em}\begin{center}\uppercase{\normalsize SACHEN}\end{center}\vskip0.5ex%
+Eintr\"{a}ge in dieses Verzeichnis erfolgen in der jeweils von Leibniz verwendeten Sprache. 
+Die Reihenfolge der Eintr\"{a}ge ist rein alphabetisch bestimmt, 
+eine systematische Gliederung findet nicht statt. 
+Es wird nach Seiten zitiert.\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Sachen}
+\printindex{Sachverzeichnis}{} 
+
+
+% ORTSVERZEICHNIS
+\setindexpreamble{\vspace{-1.8em}\begin{center}\uppercase{\normalsize Orte}\end{center}\vskip0.5ex%
+Dieses Verzeichnis listet alle genannten Ortsnamen in ihrer deutschen Version auf. 
+Es wird nach Seiten zitiert.\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Orte}
+\printindex{Ortsregister}{}  
+
+       
+       
+% FUNDSTELLENVERZEICHNIS
+\clearscrheadfoot
+\chead{\sc{fundstellen}}
+\ohead[\pagemark]{\pagemark}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\setindexpreamble{\vskip4ex%
+% ???? 
+\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Fundstellen}
+	\input{gesamttex/VIII,3_Fundstellen.tex}
+       
+
+% KONKORDANZEN
+\clearscrheadfoot
+\chead{\sc{konkordanzen}}
+\ohead[\pagemark]{\pagemark}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\setindexpreamble{\vskip4ex%
+% ???? 
+\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Konkordanzen}
+    \label{Siglen}
+    \input{gesamttex/VIII,3_Konkordanzen.tex}
+       
+
+% SIGLENVERZEICHNIS
+\clearscrheadfoot
+\chead{\sc{siglen, abkürzungen, zeichen}}
+\ohead[\pagemark]{\pagemark}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\setindexpreamble{\vskip4ex%
+\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Siglen, Abkürzungen, Zeichen}
+    \input{gesamttex/VIII,3_Siglen.tex}
+
+
+% BERICHTIGUNGEN
+\clearscrheadfoot
+\chead{\sc{berichtigungen}}
+\ohead[\pagemark]{\pagemark}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\setindexpreamble{\vskip4ex%
+\vskip4ex}
+\addcontentsline{toc}{chapter}{\enskip Berichtigungen}
+    \input{gesamttex/VIII,3_Berichtigungen.tex}
+%%
+%
+%
+%
+% ENDE DER VERZEICHNISSE       
+
+\endnumbering
+\end{document}
+\endinput
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+

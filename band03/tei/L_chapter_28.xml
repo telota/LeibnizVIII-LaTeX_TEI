@@ -1,0 +1,46 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch28" n="28"><head>28
+DE MOTU ELATERII SE RESTITUENTIS</head>
+<head>[Anfang August – zweite Hälfte November 1689]</head><div type="contents"><p xml:id="Ch28.p1"><anchor xml:id="_58256_0"/>
+<anchor xml:id="N.28"/><!--  \hackfor{\par} --></p><p rendition="#noindent" xml:id="Ch28.p2"><hi rendition="#smaller">Beide folgenden Aufzeichnungen N. <ref corresp="L_section_281.xml#N.28.1"/> und <ref corresp="L_section_282.xml#N.28.2"/> sind auf demselben Träger (dem Oktavbogen LH XXXV 14, 2 Bl. 161–162) überliefert und erweisen sich auch inhaltlich als eng miteinander verbunden.
+In beiden Fällen handelt es sich um die mathematische Beschreibung der verzögerten Bewegung, mit der sich ein gespannter elastischer Körper zusammenzieht; dieser Körper wird in N. <ref corresp="L_section_281.xml#N.28.1"/> als eine Saite (<hi rendition="#i">chorda</hi>) beschrieben.
+Aufgrund der gemeinsamen Überlieferung und der thematischen Verbindung bietet sich an,N. <ref corresp="L_section_281.xml#N.28.1"/> und <ref corresp="L_section_282.xml#N.28.2"/> zusammenhängend zu edieren.</hi></p><p xml:id="Ch28.p3"><hi rendition="#smaller">Auf <ref href="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht/?id=6&amp;tx_dlf[id]=1747&amp;tx_dlf[page]=323">Bl. 162 r<hi rendition="#sup">o</hi></ref> ist ein von der Aufzeichnung N. <ref corresp="L_section_281.xml#N.28.1"/> überschriebenes Satzfragment überliefert, das wohl den ersten Entwurf eines Briefes darstellt, den Leibniz am 6. August 1689 aus Rom an C. Gudenus, kurmainzischen Residenten in Wien,<index indexName="Personen"><term><hi rendition="#g #smaller">Gudenus</hi> <hi rendition="#smaller">Johann Christoph 1632–1705</hi></term></index> sendete (<hi rendition="#i">LSB</hi> I, 5 N. 250;<ref corresp="#bib_01297"/> auf S. 46.8–10 kommt eine nahezu gleiche Formulierung wie im Satzfragment auf <ref href="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht/?id=6&amp;tx_dlf[id]=1747&amp;tx_dlf[page]=323">Bl. 162 r<hi rendition="#sup">o</hi></ref> vor).
+Der Träger der Texte N. <ref corresp="L_section_281.xml#N.28.1"/> und <ref corresp="L_section_282.xml#N.28.2"/> weist zudem das gleiche Wasserzeichen wie die Handschrift LBr 425 Bl. 57–58
+auf, welche das vollständige Konzept des Briefes an Gudenus überliefert.
+Hieraus lässt sich schließen, dass die Texte N. <ref corresp="L_section_281.xml#N.28.1"/> und <ref corresp="L_section_282.xml#N.28.2"/> zwischen Anfang August 1689 und spätestens Leibnizens Abreise aus Rom<index indexName="Orte"><term><hi rendition="#smaller">Rom</hi></term></index> – vermutlich am 21. November desselben Jahres (<hi rendition="#i">Chronik</hi>, S. 98<ref corresp="#bib_01236"/>) – entstanden sind, wahrscheinlich aber noch etwa zu der Zeit, als der Brief an Gudenus abgefasst wurde.
+Dagegen ist unwahrscheinlich, dass Leibniz den Oktavbogen nach Oberitalien<index indexName="Orte"><term><hi rendition="#smaller">Italien</hi></term></index> mitgenommen hätte, wenn dort die Aufzeichnungen N. <ref corresp="L_section_281.xml#N.28.1"/> und <ref corresp="L_section_282.xml#N.28.2"/> nicht schon gestanden hätten.</hi></p><p xml:id="Ch28.p4"><hi rendition="#smaller">Mit Blick auf die relative Chronologie ist anzunehmen, dass gemäß der Anordnung der zwei Texte auf ihrem gemeinsamen Träger N. <ref corresp="L_section_281.xml#N.28.1"/> wohl als erster verfasst wurde.
+Schließlich gilt es zu bemerken, dass beide Aufzeichnungen eine besondere inhaltliche Verwandtschaft mit N. <ref corresp="L_chapter_25.xml#N.25"/> <hi rendition="#i">De restitutionis potentia</hi> aufweisen.
+Auch dort steht die verzögerte Bewegung eines sich zusammenziehenden elastischen Körpers im Mittelpunkt der Betrachtung; und auch N. <ref corresp="L_chapter_25.xml#N.25"/> knüpft ausdrücklich und mit Tadel auf R. Hookes<index indexName="Personen"><term><hi rendition="#g #smaller">Hooke</hi> <hi rendition="#smaller">(Hookius, Hook), Robert 1635–1703</hi></term></index> elastizitätstheoretische Ausführungen an.</hi></p></div><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_281.xml" xpointer="Ch28.S1" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_282.xml" xpointer="Ch28.S2" parse="xml"/></div></body>
+  </text>
+</TEI>

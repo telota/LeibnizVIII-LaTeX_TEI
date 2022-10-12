@@ -1,0 +1,82 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="section" xml:id="Ch14.S10" n="1410"><head>14<hi rendition="#sub">10</hi>
+CORRIGENDA ZU DEN DEMONSTRATIONES NOVAE DE RESISTENTIA SOLIDORUM</head><head>[erste Hälfte 1693]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">E</hi></label>
+<p><hi rendition="#smaller">Druck:
+<ref corresp="#bib_01247"/><hi rendition="#i">Indices generales auctorum et rerum primi Actorum eruditorum quae Lipsiae publicantur decennii</hi>,
+Leipzig 1693, Bd. I, S. *Qq2 r<hi rendition="#sup">o</hi>. Drei anonyme Berichtigungen und eine anonyme Anmerkung, die sich auf N 14<hi rendition="#sub">6</hi>, <hi rendition="#i">E<hi rendition="#sup">1</hi></hi> beziehen;
+sämtliche Einträge gehen höchstwahrscheinlich auf Leibniz selbst zurück.
+Das Heft der <hi rendition="#i">Acta eruditorum</hi> vom Juli 1684 liegt in verschiedenen Druckfassungen vor, von denen einige nicht alle in N. <ref corresp="#N.14.10"/> verbesserten Druckfehler aufweisen.</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch14.S10.p1"><anchor xml:id="ddrs_10"/>
+<anchor xml:id="N.14.10"/><!--  \hackfor{\par} --></p></div><div type="text"><!--The following content until the following tei:head was contained in a tei:p which had to be removed.  Please check if something has to be adjusted manually.-->[S. *Qq2 r<hi rendition="#sup">o</hi>]<head rendition="#c" xml:id="Ch14.S10.p5">Corrigenda<index indexName="Sachen"><term>corrigendum</term></index>
+in <index indexName="Sachen"><term>schediasma</term></index>Schediasmatibus <hi rendition="#g">Leibnitianis,</hi><lb/>quae <ref corresp="#bib_01023"/><hi rendition="#i">Actis Eruditorum Lipsiensibus</hi> sunt inserta</head><p rendition="#noindent" xml:id="Ch14.S10.p6">Anno 84,
+mense Julio,
+<anchor xml:id="AE_1693_Indices_Qq2r_corr-1"/><app type="Cfootnote"><lem type="main">p. 322, lin. 1,
+pro<anchor xml:id="AE_1684_322_1_corrige-3"/> <hi rendition="#g">fibris,</hi> <index indexName="Sachen"><term>fibra</term></index>ponatur <hi rendition="#g">fibra,</hi><anchor xml:id="AE_1684_322_1_corrige-4"/></lem><note type="lemma-abbrev">p. 322 <seg type="apparat-ellipsis"/> <hi rendition="#g">fibra</hi> </note><note type="editorial">Siehe N. <ref corresp="L_section_146.xml#N.14.6"/>, S. <ref corresp="L_section_146.xml#AE_1684_322_1_corrige-1"/> (<hi rendition="#i">E<hi rendition="#sup">1</hi></hi>).
+Hierauf beziehen sich auch Leibnizens Verbesserungen in einem verworfenen Konzept seines
+wohl in der ersten Oktoberhälfte 1684 verfassten Briefes für die Herausgeber der <hi rendition="#i">AE</hi>; vgl. <hi rendition="#i">LSB</hi> III, 4 N. 72, S. 181.26–27<bibl corresp="#bib_01257">.</bibl></note></app>
+et
+<app type="Cfootnote"><lem type="main">p. 325, lin. 19,
+pro<anchor xml:id="AE_1684_325_19_corrige-3"/> <hi rendition="#g">liberationis,</hi> <index indexName="Sachen"><term>libratio</term></index>ponatur <hi rendition="#g">librationis,</hi><anchor xml:id="AE_1684_325_19_corrige-4"/></lem><note type="lemma-abbrev">p. 325 <seg type="apparat-ellipsis"/> <hi rendition="#g">librationis</hi> </note><note type="editorial">SieheN. <ref corresp="L_section_146.xml#N.14.6"/>, S. <ref corresp="L_section_146.xml#AE_1684_325_19_corrige-1"/> (<hi rendition="#i">E<hi rendition="#sup">1</hi></hi>).
+Hierauf beziehen sich auch Berichtigungen der Herausgeber in <hi rendition="#i">AE</hi>, September 1684, S. 438<bibl corresp="#bib_01023">
+sowie Leibnizens Verbesserungen in <hi rendition="#i">LSB</hi> III, 4 N. 72, S. 181.28–32<bibl corresp="#bib_01257">.</bibl></bibl></note></app>
+<app type="Cfootnote"><lem type="main">lin. 22, pro <hi rendition="#g">conveides,</hi><index indexName="Sachen"><term>conoeides</term></index> ponatur <hi rendition="#g">Conoeides.</hi></lem><note type="lemma-abbrev">lin. 22 <seg type="apparat-ellipsis"/> <hi rendition="#g">Conoeides</hi> </note><note type="editorial">(Es geht eigentlich um Z. 23.)
+Siehe N. <ref corresp="L_section_146.xml#N.14.6"/>, S. <ref corresp="L_section_146.xml#AE_1684_325_22_corrige-1"/> (<hi rendition="#i">E<hi rendition="#sup">1</hi></hi>).
+Hierauf beziehen sich auch Berichtigungen der Herausgeber in <hi rendition="#i">AE</hi>, September 1684, S. 438<bibl corresp="#bib_01023">
+sowie Leibnizens Verbesserungen in <hi rendition="#i">LSB</hi> III, 4 N. 72, S. 181.32–33<bibl corresp="#bib_01257">.</bibl></bibl></note></app>
+<anchor xml:id="AE_1693_Indices_Qq2r_corr-2"/></p><p xml:id="Ch14.S10.p7">Annotandum<anchor xml:id="AE_1693_Indices_Qq2r_annotandum-1"/><app type="Cfootnote" from="#AE_1693_Indices_Qq2r_annotandum-1" to="#AE_1693_Indices_Qq2r_annotandum-2"><lem type="main"/><note type="lemma-abbrev">Annotandum <seg type="apparat-ellipsis"/> evellente</note><note type="editorial">Ähnlich äußert sich Leibniz in seinen Briefen
+an Jacob Bernoulli vom 24. September (4. Oktober) 1690 und
+an R. C. von Bodenhausen vom 26. Oktober (5. November) 1690;
+<hi rendition="#i">LSB</hi> III, 4 N. 279, S. 574.14–575.18;<bibl corresp="#bib_01260">
+N. 285, S. 628.1–6.<bibl corresp="#bib_01261"/></bibl></note></app>
+est autem illic,
+licet dubitaretur de
+<app type="Cfootnote"><lem type="main">hypothesi,<index indexName="Sachen"><term>hypothesis</term></index>
+quod extensiones<index indexName="Sachen"><term>extensio</term></index>
+sint viribus tendentibus<index indexName="Sachen"><term>vis tendens</term></index> proportionales,</lem><note type="lemma-abbrev">hypothesi <seg type="apparat-ellipsis"/> proportionales</note><note type="editorial">Siehe N. <ref corresp="L_section_146.xml#N.14.6"/>,
+S. <ref corresp="L_section_146.xml#AE_1684_319-325_a1"/> (<hi rendition="#i">E<hi rendition="#sup">1</hi></hi>).</note></app>
+manere tamen verum quod diximus
+<app type="Cfootnote"><lem type="main">fig. 5</lem><note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 5e</hi>] in N. <ref corresp="L_section_146.xml#N.14.6"/>, S. <ref corresp="L_section_146.xml#LH_37_03_072v_AE_1684_323_Fig.5e"/> (<hi rendition="#i">E<hi rendition="#sup">1</hi></hi>).</note></app>
+<app type="Cfootnote"><lem type="main">resistentiam<index indexName="Sachen"><term>resistentia trabis</term></index> in <hi rendition="#i">FG</hi> esse ad resistentiam in <hi rendition="#i">BA</hi>,
+ut quadratum <hi rendition="#i">FG</hi> ad quadratum <hi rendition="#i">BA</hi>;<index indexName="Sachen"><term>quadratum</term></index></lem><note type="lemma-abbrev">resistentiam <seg type="apparat-ellipsis"/> quadratum <hi rendition="#i">BA</hi></note><note type="editorial">Siehe N. <ref corresp="L_section_146.xml#N.14.6"/>, S. <ref corresp="L_section_146.xml#AE_1684_319-325_a3"/> (<hi rendition="#i">E<hi rendition="#sup">1</hi></hi>).</note></app>
+quia quaecunque sint figurae <hi rendition="#i">BAEB</hi>, et <hi rendition="#i">FGHF</hi><index indexName="Sachen"><term>figura</term></index>
+(<?tex-source \phantom{)}?>quae ex dicta hypothesi<index indexName="Sachen"><term>hypothesis</term></index>
+trilineae parabolicae<index indexName="Sachen"><term>trilinea parabolica</term></index> fiunt<?tex-source \phantom{(}?>)
+quia tamen sunt similes,
+utique sunt ut quadrata circumscripta,<index indexName="Sachen"><term>quadratum circumscriptum</term></index>
+seu ab <hi rendition="#i">AB</hi>, <hi rendition="#i">FG</hi>.
+Unde etsi mutaretur hypothesis,<index indexName="Sachen"><term>hypothesis</term></index>
+nihil tamen esset mutandum in dictis,
+nisi circa comparationem potentiae transverse abrumpentis,<index indexName="Sachen"><term>potentia abrumpens</term></index>
+cum directe evellente.<anchor xml:id="AE_1693_Indices_Qq2r_annotandum-2"/><index indexName="Sachen"><term>potentia evellens</term></index></p></div></div></body>
+  </text>
+</TEI>

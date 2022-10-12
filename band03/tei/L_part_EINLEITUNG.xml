@@ -1,0 +1,267 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="part" xml:id="Pt3"><head>EINLEITUNG</head><div type="text"><p rendition="#noindent" xml:id="Pt3.p1">DER DRITTE BAND UND DIE <hi rendition="#i">LEIBNIZ EDITION BERLIN</hi></p><p rendition="#noindent" xml:id="Pt3.p2">Schon wenige Jahre nach Gründung der Berliner Editionsstelle (2001) wurde für die Reihe VIII als Teilprojekt der Leibniz-Edition eine erste Laufzeit im Akademienprogramm bewilligt. Sie sah einen Abschluss des dritten Bandes bis zum Jahre 2020 vor und knüpfte daran die Möglichkeit einer Verlängerung des Vorhabens über diese Zeit hinaus.
+Der nun vorliegende dritte Band vereint erstmals Schriften, die Leibniz nach Paris verfasst hat.
+Das hierfür zu edierende Material war ungleich weniger erschlossen und hinsichtlich des größeren Zeitraums weit schwieriger zu datieren sowie angesichts von Leibnizens eigener Entwicklung um vieles anspruchsvoller als alles, was an Inhalten und deren Behandlung die Bände davor zu bieten hatten. Allen Herausforderungen zum Trotz erfüllt die Editionsstelle mit vorliegendem Band das Ziel, das für die erste Laufzeit bis 2020 gesetzt war, und kann im Anschluss daran nach der mittlerweile bewilligten Verlängerung des Vorhabens die weiteren Bände der Reihe bearbeiten.</p><p rendition="#noindent" xml:id="Pt3.p3">DER DRITTE BAND IN DER REIHENPLANUNG</p><p xml:id="Pt3.p4">Leibnizens Abschied aus Paris liefert eine Zäsur für die Reihenplanung, an der die chronologische Ordnung von einer inhaltlichen abgelöst wird. Die bereits erschienenen Bände 1 und 2 der Reihe enthalten diejenigen Schriften, von denen als sicher gelten durfte, dass Leibniz sie während seines Aufenthalts in Paris (1672–1676) oder davor abgefasst hatte.
+Die weiteren Bände der Reihe sind für die Schriften bestimmt, die in der Zeit nach Paris entstanden sind oder entstanden sein könnten.
+Für ihre Planung ist das Prinzip einer chronologischen Anordnung nicht haltbar, weil sie ganz überwiegend undatiert überliefert sind und für die zu erschließende Datierung der viel größere Zeitraum von Ende 1676 bis zu Leibnizens Tod in Frage kommt.
+Datierungen zu erschließen, ist ein Ergebnis der Forschung, die Hand in Hand mit der Aufnahme und Edition der Stücke erfolgt und nicht getrennt davon oder im Vorfeld erbracht werden kann, ohne den auf Bände kalkulierten Bearbeitungsfortschritt und Veröffentlichungsplan des Vorhabens aufzugeben.
+Daher folgt die Reihenplanung für die Bände drei bis zwölf dem Prinzip der Modularisierung, d.h. einer Edition des Materials nach Teilbereichen (naturwissenschaftliche, medizinische, technische Schriften) und Themen. Das größte Modul bildet dabei die Mechanik, die allein fünf Teile bzw. Bände der naturwissenschaftlichen Schriften umfassen wird und deren erster Teil mit vorliegendem Band ediert wird. Eine chronologische Ordnung der Schriften gilt hier wie in allen weiteren Bänden der Reihe nur noch innerhalb eines Bandes in den Rubriken und Unterrubriken, die darin für die verschiedenen Themen gebildet werden. Zeiträume, die im Titel der Bände in Klammern mit angeführt werden, liefern für die Bändeplanung kein Kriterium, sondern vermerken lediglich die Spanne der für die Stücke des jeweiligen Bandes erschlossenen Datierungen.
+<lb/>Grundlage dieser modularisierten Reihenplanung bilden diejenigen Handschriftenbestände, die bei Gründung der Editionsstelle für eine Aufnahme in Reihe VIII ausgewählt worden waren und deren genauere Überprüfung in den Jahren 2013/2014 durchgeführt wurde. Für diese sogenannte Nachkatalogisierung stand nur ein Zeitraum von zwölf Monaten zur Verfügung, in dem neben einer geringen Zahl an Drucken mehr als 9.300 Handschriftenseiten zu sichten waren, die der Arbeitsstelle seit ihrer Gründung in Form hochauflösender Scans zur Verfügung standen. Dabei kamen allein 688 Stücke zu Tage, die im Arbeitskatalog der Leibniz-Edition („Ritter-Katalog”) bis dahin unbekannt waren und schließlich eine Anpassung der Reihenplanung von acht auf zwölf Bände nach sich zogen.
+Allerdings erlaubte die Nachkatalogisierung es nicht, die Handschriften inhaltlich weiter zu erschließen, als es zu Zwecken der Reihenplanung erforderlich war, die darauf abzielte, die Stücke nach den Teilbereichen der Reihe und darin nach Themen zu ordnen. Für eine tiefergehende Erfassung war die Zeit im Verhältnis zum Umfang des zu sichtenden Materials schlicht zu kurz.
+Allein daher darf fest damit gerechnet werden, dass sich mit fortschreitender Bearbeitung der Reihe die Erkenntnisse über den Nachlass erweitern. Der Inhalt einzelner Stücke erschließt sich zunehmend, wenn Handschriften im Zuge der Bandbearbeitung aufgenommen werden. Dabei wird es nicht ausbleiben, mitunter erst dann erkennen zu können, dass Stücke thematisch ganz oder teilweise zu Rubriken gehören, die bereits in einem früheren Band bearbeitet worden sind.
+Mit diesem unvermeidlichen Umstand, dass die Erforschung des Nachlasses auf dem Fortschritt der Edition beruht und davon nicht zu trennen ist, wird die Reihe VIII pragmatisch umgehen: Bleibt die Zahl der nachträglich einer bereits bearbeiteten Rubrik zuzuordnenden Stücke gering, werden diese als Nachträge zu einem früheren Band ediert, ist deren Zahl größer, erfährt eine bereits einmal bearbeitete Rubrik eine Fortsetzung in einem späteren Band.
+<lb/>Zur Rubrik Stoß, die aufgrund der Laufzeitvorgabe, die für diesen dritten Band und die Editionsstelle verpflichtend war, nicht mehr alle vorbereiteten Stücke aufnehmen konnte, wird es auf jeden Fall eine Fortsetzung im zweiten Teil der Mechanik (Bd VIII, 4) geben.
+Dass Erkenntnisse über das zu edierende und überwiegend unveröffentlichte Material nur sukzessive zu erlangen sind, liegt in der Natur der Sache: Ein riesiger Nachlass, der erst durch die Edition erschlossen wird.
+Kompensieren wird man diese vom Bearbeitungsfortschritt abhängige und nach Bänden getrennte Präsentation der Editions- und Forschungsergebnisse im Nachhinein einmal, wenn die Metadaten dazu digital erfasst werden, so dass sich die Stücke dann beliebig nach thematischen, chronologischen und anderen Zusammenhängen anordnen und in Beziehung setzen lassen.</p><p rendition="#noindent" xml:id="Pt3.p5">DIE STÜCKE IM DRITTEN BAND</p><p xml:id="Pt3.p6">Der vorliegende dritte Band der naturwissenschaftlichen, medizinischen und technischen Schriften vereint 79 Stücke aus den Gebieten Akustik, Elastizität, Festigkeit und Stoß und liefert damit den ersten Teil der voraussichtlich fünf Bände umfassenden Schriften zur Mechanik. Zwölf der im Band nummerierten Stücke (N. <ref corresp="L_chapter_8.xml#_41152_0"/>, N. <ref corresp="L_chapter_12.xml#cnds_0"/>, N. <ref corresp="L_chapter_14.xml#ddrs_00"/>, N. <ref corresp="L_chapter_27.xml#visel_0"/>, N. <ref corresp="L_chapter_28.xml#_58256_0"/>, N. <ref corresp="L_chapter_31.xml#adva_0"/>, N. <ref corresp="L_chapter_32.xml#rie"/>, N. <ref corresp="L_chapter_42.xml#RK57267-2_60343"/>, N. <ref corresp="L_chapter_43.xml#ratio_cel"/>, N. <ref corresp="L_chapter_58.xml#dcc_00"/>, N. <ref corresp="L_chapter_65.xml#comp_non_fidendum"/>, N. <ref corresp="L_chapter_77.xml#Parent_intro"/>) gliedern sich insgesamt in 51 Unterstücke, so dass <hi rendition="#i">LSB</hi> VIII, 3 mit 118 Einzelstücken vorliegt, die zusammen 421 Nachzeichnungen von Diagrammen und Abbildungen enthalten, von denen drei zusätzlich in Reproduktion der handschriftlichen Vorlage (Faksimile) wiedergegeben werden (N. <ref corresp="L_section_84.xml#_41152_4"/>, N. <ref corresp="L_chapter_11.xml#_38540"/>, N. <ref corresp="L_section_146.xml#ddrs_06"/>).
+<lb/>Unter den Schriften des Bandes bilden diejenigen zu den Gebieten Akustik, Elastizität und Festigkeit eine zusammenhängende und chronologisch geordnete Rubrik mit 33 Stücken (N. <ref corresp="L_chapter_1.xml#_38535"/> bis N. <ref corresp="L_chapter_33.xml#_60029"/> bestehend aus 55 Einzelstücken). Der Grund hierfür ist, dass eine strenge Trennung zwischen diesen Gebieten auf Grundlage der edierten Schriften kaum möglich ist; unscharf getrennt lassen sich aus dieser gemeinsamen Rubrik 20 Einzelstücke eher der Akustik (N. <ref corresp="L_chapter_1.xml#_38535"/>,
+N. <ref corresp="L_chapter_2.xml#_58290"/>,
+N. <ref corresp="L_section_81.xml#_41152_1"/>,
+N. <ref corresp="L_section_82.xml#_41152_2"/>,
+N. <ref corresp="L_section_83.xml#_41152_3"/>,
+N. <ref corresp="L_section_84.xml#_41152_4"/>,
+N. <ref corresp="L_section_85.xml#_41152_5"/>,
+N. <ref corresp="L_section_86.xml#_41152_6"/>,
+N. <ref corresp="L_chapter_9.xml#_41153"/>,
+N. <ref corresp="L_chapter_10.xml#_41156"/>,
+N. <ref corresp="L_chapter_11.xml#_38540"/>,
+N. <ref corresp="L_section_121.xml#cnds_1"/>,
+N. <ref corresp="L_section_122.xml#cnds_2"/>,
+N. <ref corresp="L_section_123.xml#cnds_3"/>,
+N. <ref corresp="L_section_124.xml#cnds_4"/>,
+N. <ref corresp="L_section_125.xml#cnds_5"/>,
+N. <ref corresp="L_chapter_13.xml#_38541"/>,
+N. <ref corresp="L_chapter_15.xml#_58233"/>,
+N. <ref corresp="L_section_321.xml#RK60353"/>,
+N. <ref corresp="L_section_322.xml#RK60301"/>),
+23 Einzelstücke der Elastizität (N. <ref corresp="L_chapter_3.xml#_41165"/>,
+N. <ref corresp="L_chapter_4.xml#_60273"/>,
+N. <ref corresp="L_chapter_5.xml#_60241"/>,
+N. <ref corresp="L_chapter_6.xml#_60338"/>,
+N. <ref corresp="L_chapter_7.xml#_41157"/>,
+N. <ref corresp="L_section_143.xml#ddrs_03"/>,
+N. <ref corresp="L_section_147.xml#ddrs_07"/>,
+N. <ref corresp="L_chapter_17.xml#_60649"/>,
+N. <ref corresp="L_chapter_18.xml#_60651"/>,
+N. <ref corresp="L_chapter_21.xml#_38538"/>,
+N. <ref corresp="L_chapter_22.xml#_41178"/>,
+N. <ref corresp="L_chapter_23.xml#_41160"/>,
+N. <ref corresp="L_chapter_24.xml#_60334"/>,
+N. <ref corresp="L_chapter_25.xml#_60071"/>,
+N. <ref corresp="L_chapter_26.xml#_55749"/>,
+N. <ref corresp="L_section_271.xml#visel_1"/>,
+N. <ref corresp="L_section_272.xml#visel_2"/>,
+N. <ref corresp="L_section_281.xml#_58256_1"/>,
+N. <ref corresp="L_section_282.xml#_58256_2"/>,
+N. <ref corresp="L_chapter_29.xml#_58242"/>,
+N. <ref corresp="L_section_311.xml#adva_1"/>,
+N. <ref corresp="L_section_312.xml#adva_2"/>,
+N. <ref corresp="L_chapter_33.xml#_60029"/>),
+und zwölf Einzelstücke der Festigkeit (N. <ref corresp="L_section_141.xml#ddrs_01"/>,
+N. <ref corresp="L_section_142.xml#ddrs_02"/>,
+N. <ref corresp="L_section_144.xml#ddrs_04"/>,
+N. <ref corresp="L_section_145.xml#ddrs_05"/>,
+N. <ref corresp="L_section_146.xml#ddrs_06"/>,
+N. <ref corresp="L_section_148.xml#ddrs_08"/>,
+N. <ref corresp="L_section_149.xml#ddrs_09"/>,
+N. <ref corresp="L_section_1410.xml#ddrs_10"/>,
+N. <ref corresp="L_chapter_16.xml#_60239"/>,
+N. <ref corresp="L_chapter_19.xml#_60650"/>,
+N. <ref corresp="L_chapter_20.xml#_41174"/>,
+N. <ref corresp="L_chapter_30.xml#_60653"/>) zuordnen; die Rubrik Stoß umfasst mit zwei Unterrubriken (II.A. Notizen, Konzepte, Aufzeichnungen; II.B. Auszüge, Rezensionen) insgesamt 44 Stücke (N. <ref corresp="L_chapter_34.xml#_60060"/> bis N. <ref corresp="L_section_772.xml#RK61042"/> bestehend aus 61 Einzelstücken); als Nachträge zu den beiden ersten Bänden der Reihe erscheinen zwei Stücke (N. <ref corresp="L_chapter_78.xml#RK39624"/>, N. <ref corresp="L_chapter_79.xml#RK55793"/>). <lb/>Von diesen 118 Einzelstücken des vorliegenden Bandes sind 29 eigenhändig von Leibniz datiert (N. <ref corresp="L_section_81.xml#_41152_1"/>,
+N. <ref corresp="L_section_82.xml#_41152_2"/>,
+N. <ref corresp="L_section_83.xml#_41152_3"/>,
+N. <ref corresp="L_section_84.xml#_41152_4"/>,
+N. <ref corresp="L_section_85.xml#_41152_5"/>,
+N. <ref corresp="L_section_86.xml#_41152_6"/>,
+N. <ref corresp="L_chapter_26.xml#_55749"/>,
+N. <ref corresp="L_section_271.xml#visel_1"/>,
+N. <ref corresp="L_section_272.xml#visel_2"/>,
+N. <ref corresp="L_chapter_39.xml#_57266_1"/>,
+N. <ref corresp="L_chapter_40.xml#_57267_1"/>,
+N. <ref corresp="L_section_432.xml#_57268"/>,
+N. <ref corresp="L_chapter_48.xml#_57269"/>,
+N. <ref corresp="L_chapter_49.xml#_57270"/>,
+N. <ref corresp="L_chapter_50.xml#_57271"/>,
+N. <ref corresp="L_chapter_57.xml#_57279"/>,
+N. <ref corresp="L_section_581.xml#dcc_01"/>,
+N. <ref corresp="L_section_582.xml#dcc_02-1"/>,
+N. <ref corresp="L_section_583.xml#dcc_02-2"/>,
+N. <ref corresp="L_section_584.xml#dcc_03"/>,
+N. <ref corresp="L_section_585.xml#dcc_04"/>,
+N. <ref corresp="L_section_586.xml#dcc_05"/>,
+N. <ref corresp="L_section_587.xml#dcc_06-1"/>,
+N. <ref corresp="L_section_588.xml#dcc_06-2"/>,
+N. <ref corresp="L_section_589.xml#dcc_07"/>,
+N. <ref corresp="L_section_5810.xml#dcc_08"/>,
+N. <ref corresp="L_section_5811.xml#dcc_09"/>,
+N. <ref corresp="L_section_5812.xml#dcc_10"/>,
+N. <ref corresp="L_chapter_63.xml#_41206"/>);
+bei den dreien als Druck überlieferten Stücken liefert das Veröffentlichungsdatum einen sicheren Anhaltspunkt für die Datierung (N. <ref corresp="L_section_146.xml#ddrs_06"/>, N. <ref corresp="L_section_1410.xml#ddrs_10"/>, N. <ref corresp="L_section_772.xml#RK61042"/>). Bei den übrigen 86 Einzelstücken musste die Datierung erschlossen werden (und wird neben dem Titel in eckigen Klammern angegeben). Die hierfür im Kopf der Stücke angeführten Datierungsgründe fallen je nach Schwierigkeit unterschiedlich umfangreich aus (was wiederum durch Fragezeichen in den erschlossenen Datierungen angezeigt wird). Um untere und obere Grenzen (<hi rendition="#i">termini post</hi> bzw. <hi rendition="#i">ante quem</hi>) der zeitlichen Entstehung zu bestimmen, werden Argumente und Indizien zusammengetragen, die sich einem immer nur begrenzten Kenntnisstand verdanken und nicht vollständig sein müssen. Oft ist es daher kaum auszuschließen, dass ein so datiertes Stück tatsächlich früher oder später entstanden sein könnte, auch wenn identifizierte Wasserzeichen in vielen Fällen geholfen haben, den Zeitraum näher einzugrenzen. Die Spannen dieser erschlossenen Datierungen reichen von maximal 174 Monaten (N. <ref corresp="L_chapter_2.xml#_58290"/>) bis zu einem Monat und betragen für alle Stücke, deren Datierung erschlossen werden musste, im Durchschnitt 27,4 Monate. Eine größere Genauigkeit als diese rund zweieinviertel Jahre wäre natürlich wünschenswert, aber die Entstehung der undatierten Stücke wird damit auf durchschnittlich weniger als sieben Prozent des Gesamtzeitraums eingegrenzt, aus dem die im Band vereinten Schriften insgesamt stammen.
+Die im Titel des Bandes ausgewiesene Datierungsspanne ist etwas kürzer, reicht von 1671 bis 1705 und erstreckt sich damit bis in die Pariser Zeit und davor, die Gegenstand der ersten beiden Bände der Reihe war. Dies erklärt sich daraus, dass bei sieben Stücken des vorliegenden Bandes ein so früher Zeitraum nicht auszuschließen ist, sich deren Entstehung aber auch nicht sicher darauf eingrenzen lässt (N. <ref corresp="L_chapter_1.xml#_38535"/>, N. <ref corresp="L_chapter_2.xml#_58290"/>, N. <ref corresp="L_chapter_3.xml#_41165"/>, N. <ref corresp="L_chapter_4.xml#_60273"/>, N. <ref corresp="L_chapter_34.xml#_60060"/>, N. <ref corresp="L_chapter_35.xml#RK60070"/>, N. <ref corresp="L_chapter_36.xml#RK60127"/>). Zwei weitere Stücke, bei denen diese Eingrenzung möglich ist und deren Abfassung noch in Paris oder davor als sicher gelten darf, erscheinen als Nachträge (N. <ref corresp="L_chapter_78.xml#RK39624"/>, N. <ref corresp="L_chapter_79.xml#RK55793"/>); sie bleiben für die im Bandtitel angeführte Datierungsspanne unberücksichtigt.
+<lb/>Dass Leibniz Frankreich verlässt und nach Deutschland zurückkehrt, schlägt sich auch sprachlich nieder. Zwar ist nur ein einziges Stück auf Deutsch verfasst – eine Notiz zur Festigkeitslehre (N. <ref corresp="L_chapter_26.xml#_55749"/>) –, aber die Verwendung des Französischen geht, soweit sich an den hier edierten Schriften ablesen lässt, deutlich zurück.
+Von den 115 Einzelstücken (ohne Nachträge und ohne N. <ref corresp="L_chapter_30.xml#_60653"/>, das nur aus Zeichnungen besteht) sind fünf teilweise oder ganz auf Französisch geschrieben (N. <ref corresp="L_chapter_23.xml#_41160"/> tlw.,
+N. <ref corresp="L_section_421.xml#_57267_2"/>,
+N. <ref corresp="L_chapter_56.xml#_52278"/> tlw.,
+N. <ref corresp="L_chapter_76.xml#RK42448"/>,
+N. <ref corresp="L_section_771.xml#RK55822"/>). Bei vieren handelt es sich um Auszüge aus französischsprachigen Veröffentlichungen, aus denen Leibniz den französischen Text zitierend oder paraphrasierend übernimmt und in derselben Sprache kommentiert (im Fall von N. <ref corresp="L_chapter_23.xml#_41160"/> und N. <ref corresp="L_section_421.xml#_57267_2"/> auf Lateinisch). Im Vergleich zu diesem sehr geringen Anteil (von rund vier Prozent) war im zweiten Band der Reihe noch ein Drittel der Stücke auf Französisch verfasst.
+Wenn sich Leibniz nach Paris mit den Themen auseinandersetzt, die Gegenstand des vorliegenden Bandes sind, denkt er, soweit sich dies aus seinem Schreiben folgern lässt, fast ausschließlich auf Lateinisch.
+<lb/>Unter den im Band vorkommenden Textarten bzw. Textsorten sind Konzepte am häufigsten anzutreffen: Konzept ist eine weit gefasste Bezeichnung für Stücke unterschiedlicher Länge, in denen nicht einfach Unfertiges zu sehen ist, aber auch nicht unbedingt Entwürfe für geplante oder mögliche Veröffentlichungen oder Weitergaben, sondern in denen Leibniz Erkenntnisse zusammenführt, in Beziehung setzt, überprüft, Gedanken entwickelt, Untersuchungen durchführt oder Ideen nachgeht. Ingesamt 55 Einzelstücke im Band sind Konzepte (N. <ref corresp="L_chapter_4.xml#_60273"/>,
+N. <ref corresp="L_chapter_9.xml#_41153"/>,
+N. <ref corresp="L_section_121.xml#cnds_1"/>,
+N. <ref corresp="L_section_122.xml#cnds_2"/>,
+N. <ref corresp="L_section_141.xml#ddrs_01"/>,
+N. <ref corresp="L_section_142.xml#ddrs_02"/>,
+N. <ref corresp="L_section_143.xml#ddrs_03"/>,
+N. <ref corresp="L_section_145.xml#ddrs_05"/>,
+N. <ref corresp="L_section_147.xml#ddrs_07"/>,
+N. <ref corresp="L_chapter_21.xml#_38538"/>,
+N. <ref corresp="L_section_272.xml#visel_2"/>,
+N. <ref corresp="L_section_321.xml#RK60353"/>,
+N. <ref corresp="L_section_322.xml#RK60301"/>,
+N. <ref corresp="L_chapter_34.xml#_60060"/>,
+N. <ref corresp="L_chapter_39.xml#_57266_1"/>,
+N. <ref corresp="L_chapter_40.xml#_57267_1"/>,
+N. <ref corresp="L_chapter_41.xml#_57266_2"/>,
+N. <ref corresp="L_section_431.xml#_57266_3"/>,
+N. <ref corresp="L_section_432.xml#_57268"/>,
+N. <ref corresp="L_chapter_44.xml#_57273"/>,
+N. <ref corresp="L_chapter_45.xml#_60344_1"/>,
+N. <ref corresp="L_chapter_46.xml#_57274"/>,
+N. <ref corresp="L_chapter_47.xml#_60344_2"/>,
+N. <ref corresp="L_chapter_48.xml#_57269"/>,
+N. <ref corresp="L_chapter_49.xml#_57270"/>,
+N. <ref corresp="L_chapter_50.xml#_57271"/>,
+N. <ref corresp="L_chapter_51.xml#_60345"/>,
+N. <ref corresp="L_chapter_52.xml#_57277"/>,
+N. <ref corresp="L_chapter_53.xml#_57276"/>,
+N. <ref corresp="L_chapter_54.xml#_57275"/>,
+N. <ref corresp="L_chapter_55.xml#_57272"/>,
+N. <ref corresp="L_chapter_56.xml#_52278"/>,
+N. <ref corresp="L_chapter_57.xml#_57279"/>,
+N. <ref corresp="L_section_581.xml#dcc_01"/> bis N. <ref corresp="L_section_5812.xml#dcc_10"/>,
+N. <ref corresp="L_chapter_60.xml#_41204"/>,
+N. <ref corresp="L_chapter_63.xml#_41206"/>,
+N. <ref corresp="L_chapter_64.xml#_60632"/>,
+N. <ref corresp="L_section_653.xml#_60318"/>,
+N. <ref corresp="L_chapter_66.xml#_60320"/>,
+N. <ref corresp="L_chapter_67.xml#_41201"/>,
+N. <ref corresp="L_chapter_68.xml#RK60323"/>,
+N. <ref corresp="L_chapter_69.xml#RK60038"/>,
+N. <ref corresp="L_chapter_70.xml#RK58221"/>,
+N. <ref corresp="L_chapter_71.xml#_60276"/>).
+<lb/>Aufzeichnungen kommen im Band am zweithäufigsten vor. Leibniz sammelt und dokumentiert in diesen Schriften, was ihm an eigenen und fremden Gedanken, Erfahrungen, Beobachtungen, Berichten bemerkenswert oder wichtig erscheint. Zu dieser Textart zählen insgesamt 31 Einzelstücke (N. <ref corresp="L_chapter_1.xml#_38535"/>,
+N. <ref corresp="L_chapter_2.xml#_58290"/>,
+N. <ref corresp="L_chapter_6.xml#_60338"/>,
+N. <ref corresp="L_chapter_7.xml#_41157"/>,
+N. <ref corresp="L_section_81.xml#_41152_1"/>,
+N. <ref corresp="L_section_82.xml#_41152_2"/>,
+N. <ref corresp="L_section_83.xml#_41152_3"/>,
+N. <ref corresp="L_section_84.xml#_41152_4"/>,
+N. <ref corresp="L_section_85.xml#_41152_5"/>,
+N. <ref corresp="L_section_86.xml#_41152_6"/>,
+N. <ref corresp="L_chapter_10.xml#_41156"/>,
+N. <ref corresp="L_section_144.xml#ddrs_04"/>,
+N. <ref corresp="L_section_148.xml#ddrs_08"/>,
+N. <ref corresp="L_section_149.xml#ddrs_09"/>,
+N. <ref corresp="L_chapter_16.xml#_60239"/>,
+N. <ref corresp="L_chapter_17.xml#_60649"/>,
+N. <ref corresp="L_chapter_18.xml#_60651"/>,
+N. <ref corresp="L_chapter_22.xml#_41178"/>,
+N. <ref corresp="L_chapter_24.xml#_60334"/>,
+N. <ref corresp="L_chapter_25.xml#_60071"/>,
+N. <ref corresp="L_section_271.xml#visel_1"/>,
+N. <ref corresp="L_section_281.xml#_58256_1"/>,
+N. <ref corresp="L_section_282.xml#_58256_2"/>,
+N. <ref corresp="L_chapter_29.xml#_58242"/>,
+N. <ref corresp="L_chapter_33.xml#_60029"/>,
+N. <ref corresp="L_chapter_37.xml#RK60282"/>,
+N. <ref corresp="L_chapter_38.xml#RK60278"/>,
+N. <ref corresp="L_chapter_59.xml#_39566"/>,
+N. <ref corresp="L_chapter_62.xml#RK41205"/>,
+N. <ref corresp="L_section_651.xml#_41169"/>,
+N. <ref corresp="L_section_652.xml#_41167"/>).
+Im zweiten Band der Reihe war die Verteilung umgekehrt: Dort überwogen die Aufzeichnungen mit 42 Einzelstücken gegenüber den Konzepten mit 31 Einzelstücken.
+Gleichhäufig kommen im dritten Band Notizen und Auszüge vor. Während Notizen sich vor allem dadurch von Aufzeichnungen unterscheiden, dass sie kürzer sind, spontan wirken und fragmentarisch sein können, gehen Auszüge auf eine intensive inhaltliche Auseinandersetzung mit einem fremden Text zurück und bestehen aus Paraphrasen und Zitaten, teils begleitet von Leibnizens eigenen Kommentaren. Bei zwölf Einzelstücken handelt es sich um Notizen (N. <ref corresp="L_chapter_3.xml#_41165"/>,
+N. <ref corresp="L_chapter_5.xml#_60241"/>,
+N. <ref corresp="L_chapter_11.xml#_38540"/>,
+N. <ref corresp="L_chapter_15.xml#_58233"/>,
+N. <ref corresp="L_chapter_19.xml#_60650"/>,
+N. <ref corresp="L_chapter_20.xml#_41174"/>,
+N. <ref corresp="L_chapter_26.xml#_55749"/>,
+N. <ref corresp="L_section_311.xml#adva_1"/>,
+N. <ref corresp="L_chapter_35.xml#RK60070"/>,
+N. <ref corresp="L_chapter_36.xml#RK60127"/>,
+N. <ref corresp="L_chapter_61.xml#RK41176"/>,
+N. <ref corresp="L_chapter_72.xml#RK60069"/>), bei zwölf weiteren um Auszüge (N. <ref corresp="L_chapter_75.xml#_58948"/>,
+N. <ref corresp="L_section_124.xml#cnds_4"/>,
+N. <ref corresp="L_chapter_23.xml#_41160"/>,
+N. <ref corresp="L_section_421.xml#_57267_2"/>,
+N. <ref corresp="L_section_421.xml#_57267_2"/>,
+N. <ref corresp="L_section_125.xml#cnds_5"/>,
+N. <ref corresp="L_chapter_13.xml#_38541"/>,
+N. <ref corresp="L_chapter_73.xml#RK58217"/>,
+N. <ref corresp="L_chapter_74.xml#_58226"/>,
+N. <ref corresp="L_chapter_76.xml#RK42448"/>,
+N. <ref corresp="L_section_771.xml#RK55822"/>,
+N. <ref corresp="L_chapter_79.xml#RK55793"/>). Drucke (N. <ref corresp="L_section_146.xml#ddrs_06"/>, N. <ref corresp="L_section_1410.xml#ddrs_10"/>, N. <ref corresp="L_section_772.xml#RK61042"/>) und Reinschriften (N. <ref corresp="L_section_123.xml#cnds_3"/>, N. <ref corresp="L_section_312.xml#adva_2"/>, N. <ref corresp="L_section_422.xml#_60343"/>) sind jeweils nur durch drei Einzelstücke vertreten. Zwei Stücke bestehen ausschließlich aus Zeichnungen ohne Text (N. <ref corresp="L_chapter_30.xml#_60653"/>, N. <ref corresp="L_chapter_78.xml#RK39624"/>).
+<lb/>Über den gesamten Band hinweg halten sich Konzepte (55) einerseits und Aufzeichnungen, Notizen und Auszüge (55) andererseits die Waage.
+Man mag versucht sein, eine
+Haltung daran abzulesen, die gleichermaßen ausgewogen ist: Leibniz, der sich einerseits mit den Erkenntnissen seiner Zeit auseinandersetzte und sich Wissen aneignete (Aufzeichnungen, Notizen, Auszüge) und der davon ausgehend weiter forschte und zu eigenen Erkenntnissen kam (Konzepte).
+Die beiden Rubriken des Bandes haben sehr unterschiedlich Anteil an dieser Verteilung von Textarten. Während bei den Stücken zur Akustik, Elastizität und Festigkeit die Aufzeichnungen (25), Notizen (8) und Auszüge (4) gegenüber den Konzepten (13) überwiegen, handelt es sich bei den Stücken zum Stoß mehrheitlich um Konzepte (42), neben wenigen Notizen (4), Aufzeichnungen (6) und Auszügen (7). Die Dominanz der Konzepte beim Stoß mag dafür sprechen, dass Leibniz mehr selbständig Wege geht, Dinge durchdenkt und ausprobiert, eigene Lösungen anstrebt. Nicht zu vergessen ist dabei aber, dass Leibniz eigene Ergebnisse nur zur Festigkeit veröffentlichte (N. <ref corresp="L_section_146.xml#ddrs_06"/>), während er zum Stoß lediglich eine Rezension publizierte (N. <ref corresp="L_section_772.xml#RK61042"/>).
+<lb/>Deutlich ausgewogener zwischen den beiden Rubriken des Bandes vergibt Leibniz seinen Schriften einen Titel, der bei 24 Einzelstücken zum Stoß und bei 28 Einzelstücken zur Akustik, Elastizität und Festigkeit von ihm selbst stammt. Sehr selten versieht Leibniz seine Schriften mit einem Datum, wichtig scheint ihm dies aber deutlich mehr bei seinen Schriften zum Stoß gewesen zu sein, von denen 20 Einzelstücke eigenhändig datiert sind, während dies nur auf neun Schriften zur Akustik, Elastizität und Festigkeit zutrifft. Zu diesen datierten Stoß-Stücken zählen auch die zwölf Unterstücke von <hi rendition="#i">De corporum concursu</hi> (N. <ref corresp="L_chapter_58.xml#dcc_00"/>). Aber auch unter den eigenhändig datierten Stücken zur Akustik und Elastizität findet sich eine ähnlich akribisch durchgezählte Abfolge von Blättern, die <hi rendition="#i">Tentaminum de chordarum tensione schedae</hi> (N. <ref corresp="L_chapter_8.xml#_41152_0"/>), im Umfang von immerhin sechs Unterstücken.
+<lb/>Nur drei Stücke dieses Bandes sind von Leibniz selbst veröffentlicht worden: Ein Aufsatz zur Festigkeitslehre, der 1684 in den <hi rendition="#i">Acta eruditorum</hi> erschien (N. <ref corresp="L_section_146.xml#ddrs_06"/>), Corrigenda dazu, die fast zehn Jahre später in derselben Zeitschrift gedruckt wurden (N. <ref corresp="L_section_1410.xml#ddrs_10"/>), sowie eine Rezension, die 1701 ebenda erschien (N. <ref corresp="L_section_772.xml#RK61042"/>). Posthum sind nicht nur dieser Aufsatz aus den <hi rendition="#i">Acta eruditorum</hi> (N. <ref corresp="L_section_146.xml#ddrs_06"/>), sondern weitere 23 Einzelstücke des Bandes veröffentlicht worden, davon sechs aus der Rubrik Akustik, Elastizität, Festigkeit bei <hi rendition="#k">Gerland 1906</hi> (N. <ref corresp="L_chapter_11.xml#_38540"/>,
+N. <ref corresp="L_section_121.xml#cnds_1"/>,
+N. <ref corresp="L_section_122.xml#cnds_2"/>,
+N. <ref corresp="L_section_123.xml#cnds_3"/>,
+N. <ref corresp="L_chapter_21.xml#_38538"/>,
+N. <ref corresp="L_chapter_26.xml#_55749"/>) und 17 aus der Rubrik Stoß bei <hi rendition="#k">Fichant 1994</hi> (N. <ref corresp="L_section_423.xml#_57267_3"/>,
+N. <ref corresp="L_chapter_48.xml#_57269"/>,
+N. <ref corresp="L_chapter_49.xml#_57270"/>,
+N. <ref corresp="L_chapter_56.xml#_52278"/>,
+N. <ref corresp="L_chapter_57.xml#_57279"/>,
+N. <ref corresp="L_section_581.xml#dcc_01"/> bis N. <ref corresp="L_section_5812.xml#dcc_10"/>), darunter die zwölf Unterstücke von <hi rendition="#i">De corporum concursu</hi> (N. <ref corresp="L_chapter_58.xml#dcc_00"/>). Es handelt sich hier um vollständige Wiedergaben der Handschriften bezogen auf den gültigen Text (während die gestrichenen Teile unberücksichtigt bleiben). Zumindest teilweise ist der nicht gestrichene Text von zwölf weiteren Stücken zum Stoß bei <hi rendition="#k">Fichant 1994</hi> erschienen (N. <ref corresp="L_chapter_39.xml#_57266_1"/>,
+N. <ref corresp="L_chapter_40.xml#_57267_1"/>,
+N. <ref corresp="L_chapter_41.xml#_57266_2"/>,
+N. <ref corresp="L_section_421.xml#_57267_2"/>,
+N. <ref corresp="L_section_432.xml#_57268"/>,
+N. <ref corresp="L_chapter_44.xml#_57273"/>,
+N. <ref corresp="L_chapter_46.xml#_57274"/>,
+N. <ref corresp="L_chapter_50.xml#_57271"/>,
+N. <ref corresp="L_chapter_52.xml#_57277"/>,
+N. <ref corresp="L_chapter_53.xml#_57276"/>,
+N. <ref corresp="L_chapter_54.xml#_57275"/>,
+N. <ref corresp="L_chapter_55.xml#_57272"/>). Somit liefert
+der Band zu zwei Dritteln Stücke (80 Einzelstücke), die bislang unveröffentlicht waren und macht diese Schriften aus dem Nachlass erstmals einer interessierten Leserschaft zugänglich und in historisch-kritisch edierter Form für die Forschung nutzbar.</p><p xml:id="Pt3.p7">Harald Siebert</p></div></div></body>
+  </text>
+</TEI>

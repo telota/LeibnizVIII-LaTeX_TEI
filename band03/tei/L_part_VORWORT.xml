@@ -1,0 +1,48 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="part" xml:id="Pt2"><head>VORWORT</head><div type="text"><p xml:id="Pt2.p1">Die Reihe VIII der Leibniz-Edition ist ein durch das Akademienprogramm gefördertes Langzeitvorhaben der Berlin-Brandenburgischen Akademie der Wissenschaften. Die Reihe VIII wird an der für sie gegründeten Editionsstelle Leibniz-Edition Berlin seit 2001 bearbeitet und ist auf 12 Bände geplant. Neben den bereits erschienenen ersten beiden Bänden mit Schriften aus der Pariser Zeit (1672–1676) werden in dem hier nun vorliegenden dritten Band wie in den noch folgenden Bänden alle übrigen Schriften, die der Nachlass überliefert oder Leibniz noch selbst veröffentlicht hat, geordnet nach Teilbereichen – Naturwissenschaften (Bde 3 bis 8), Medizin (Bde 9, 10), Technik (Bde 11, 12) – ediert, wobei die Mechanik voraussichtlich fünf Bände der naturwissenschaftlichen Schriften umfassen wird. Grundlage dieser Reihenplanung war eine 2013/2014 durchgeführte Nachkatalogisierung, die darin bestand, die Handschriftenbestände des Leibniz-Archivs, die für eine Aufnahme in Reihe VIII vorgesehen waren, vollständig zu sichten.
+<lb/>Wir danken dem Bundesministerium für Bildung und Forschung sowie dem Regierenden Bürgermeister von Berlin, Senatskanzlei für Wissenschaft und Forschung, für die Finanzierung des Vorhabens. Arbeitsgrundlage der Berliner Editionsstelle sind die Digitalisate der in Reihe VIII zu edierenden Handschriften. Sie sind dank der umfassenden Finanzierung seitens der Deutschen Forschungsgemeinschaft in hochauflösender Qualität angefertigt worden und werden freundlicherweise von der Gottfried Wilhelm Leibniz Bibliothek Hannover (Niedersächsische Landesbibliothek) zur Verfügung gestellt. Dank der großzügigen Finanzierung sowohl durch die Alfried Krupp von Bohlen und Halbach-Stiftung als auch durch die Stiftung der Versicherungsgruppe Hannover sind die Digitalisate online zugänglich
+<anchor xml:id="BE_Vorw-Internet"/>(<ref target="https://leibniz-berlin.bbaw.de/de/leibniz-online/digitalisate">https://leibniz-berlin.bbaw.de</ref>).
+<lb/>Der Gottfried Wilhelm Leibniz Bibliothek Hannover danken wir für ihre Unterstützung, insbesondere dem Leiter der Abteilung Handschriften, Matthias Wehry, sowie Anja Fleck, die uns mit Reproduktionen und Durchlichtscans aus dem Leibniz-Archiv umfangreich versorgte.
+Seitens der Leibniz-Forschungsstelle Hannover haben wir vielfach Unterstützung erfahren: Nora Gädeke, Charlotte Wahl und Siegmund Probst verdanken wir zahlreiche wertvolle Hinweise auf Handschriften, Schreiberhände, auf Literatur, die Leibniz benutzt haben könnte, sowie zu Fragen der Datierung.
+Sehr dankbar sind wir den Editionsstellen in Münster und Potsdam, die uns dabei halfen, Wasserzeichen in Textträgern von Schriften, die im vorliegenden Band ediert sind, zu bestimmen, um sie näher datieren zu können. Stephan Meier-Oeser überließ der Arbeitsstelle eine Kopie der Münsteraner Wasserzeichendatenbank und unterwies uns in deren Benutzung. Stephan Waldhoff unterstützte uns in der Benutzung der Potsdamer Wasserzeichensammlung, identifizierte eigens Wasserzeichen sowie Schreiberhände und half überdies bei der Klärung von Datierungsfragen.
+<lb/>Ein besonderer Dank geht an Laurynas Adomaitis, der so großzügig seine Forschungserbnisse mit uns teilte: Auf seinen Beobachtungen und der von ihm vorgeschlagenen Lösung („Flip theory”) beruht weitestgehend die Textfolge der Scheda secundo-secunda (N. <ref corresp="L_section_583.xml#dcc_02-2"/>), wie sie in vorliegendem Band als Unterstück des Komplexes <hi rendition="#i">De corporum concursu</hi> (N. <ref corresp="L_chapter_58.xml#dcc_00"/>) konstituiert worden ist. Wir danken Valérie Debuiche für Hinwei-se, die sie uns bezüglich der im ersten Band
+<anchor xml:id="BE_Vorw-Stuecke"/>erschienenen Stücke
+zur Perspektive zukommenließ.
+Zu großem Dank sind wir Walter Bühler verpflichtet, der uns zur frühneuzeitlichen Literatur sowie zur Geschichte der Musiktheorie und physikalischen Akustik viele wichtige Hinweise gab und uns großzügig weit mehr an Informationen zu den hier edierten Stücken zur Akustik lieferte, insbesondere zu den Jungius-Auszügen (N. <ref corresp="L_chapter_13.xml#_38541"/>), als wir aus Rücksicht auf die Richtlinien der Edition in den Erläuterungen aufnehmen konnten.<lb/>Unserer studentischen Mitarbeiterin Pauline Just sind wir sehr dankbar: Sie erstellte für die Stücke des vorliegenden Bandes eine Datierungsmappe, in der die datierungsrelevanten Informationen gesammelt wurden, identifizierte und dokumentierte Wasserzeichen für diesen wie den nächsten Band und trug in vielerlei Hinsicht zum Bearbeitungsfortschritt des Vorhabens bei.
+Wir danken Gunthild Peters (geb. Storeck), die im Rahmen eines Werkvertrages Nachzeichnungen von Diagrammen anfertigte und Vorarbeiten zur Kollation von N. <ref corresp="L_section_146.xml#ddrs_06"/> lieferte.
+Christoph Sander danken wir, dass er die Möglichkeiten seines Werkvertrags intensiv nutzte, um die von Leibniz zitierte Literatur zu bibliographieren und weitere Anspielungen aufzulösen und mit Stellennachweisen zu belegen.
+<anchor xml:id="BE_Vorw-DankOF-a"/><ref target="#BE_Vorw-DankOF">*</ref><lb/>Wie schon beim zweiten Band meisterte Katharina Zeitz in unermüdlichem Einsatz auch die setzerischen Herausforderungen für den allergrößten Teil des vorliegenden Bandes. Ihr ist es wieder zu verdanken, dass zahlreiche Probleme des Layouts in LaTeX gelöst werden konnten.
+Wir danken Serena Pirrotta und Christoph Schirmer vom De Gruyter Verlag für die gute Zusammenarbeit.</p><p xml:id="Pt2.p2">Berlin, im Dezember 2020                                                        Harald Siebert</p></div></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,122 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="section" xml:id="Ch14.S9" n="149"><head>14<hi rendition="#sub">9</hi>
+INVENIRE CONOEIDES SOLIDUM AEQUALIS UBIQUE RESISTENTIAE</head><head>[März / April 1683 – erste Hälfte 1684]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Aufzeichnung:
+LH XXXV 9, 14 Bl. 3.
+Ein halbes Blatt 4<hi rendition="#sup">o</hi>,
+am unteren Rand unregelmäßig beschnitten;
+Fragment eines <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=887">Wasserzeichens</ref>:
+Papier aus dem Harz.
+Eine Seite auf <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=886">Bl. 3 r<hi rendition="#sup">o</hi></ref>;
+<ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=888">Bl. 3 v<hi rendition="#sup">o</hi></ref> überliefert das Teilkonzept N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">3</hi></hi>.
+Das Diagramm [<hi rendition="#i">Fig. 1</hi>] ist sowohl Bestandteil von N. <ref corresp="#N.14.9"/> wie auch von N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">3</hi></hi>.</hi></p></item></list></p></div><div type="contents"><p xml:id="Ch14.S9.p1"><anchor xml:id="ddrs_09"/>
+<anchor xml:id="N.14.9"/><!--  \hackfor{\par} --></p></div><div type="text"><p rendition="#noindent" xml:id="Ch14.S9.p4"><ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=886"><pb type="L"/><fw type="folNum">[3 r<hi rendition="#sup">o</hi>]</fw></ref></p><p rendition="#c" xml:id="Ch14.S9.p5">Invenire Conoeides Solidum,<index indexName="Sachen"><term>solidum conoeides</term></index>
+aequalis ubique resistentiae<index indexName="Sachen"><term>solidum ubique aequiresistens</term></index><index indexName="Sachen"><term>resistentia ubique aequalis</term></index></p><p rendition="#noindent" xml:id="Ch14.S9.p6">Sit Trilineum orthogonium planum <hi rendition="#i">ABCEA</hi><index indexName="Sachen"><term>trilineum orthogonium</term></index><index indexName="Sachen"><term>trilineum planum</term></index>
+quod rotatum circa proprium axem <hi rendition="#i">AB</hi>
+generet solidum conoeides <hi rendition="#i">AECDFA</hi>.<index indexName="Sachen"><term>solidum conoeides</term></index>
+Hoc quaeritur tale,
+<app type="Bfootnote"><lem type="main">ut momentum<index indexName="Sachen"><term>momentum solidi conoeidis</term></index>
+portionis <hi rendition="#i">AEFA</hi></lem><note type="lemma-abbrev">ut</note><rdg wit="#L" n="1"> vires frangentes<index indexName="Sachen"><term>vis frangens</term></index>
+</rdg><rdg wit="#L" n="2"> momentum
+<app><rdg wit="#L" n="a">ipsius <hi rendition="#i">A</hi>
+</rdg><rdg wit="#L" n="b">portionis <hi rendition="#i">AEFA</hi> <hi rendition="#i">L</hi></rdg></app></rdg></app>
+sit ad resistentiam suae basis <hi rendition="#i">EHF</hi>,<index indexName="Sachen"><term>resistentia basis</term></index>
+ut momentum totius <hi rendition="#i">ACDA</hi><index indexName="Sachen"><term>momentum totius</term></index>
+ad resistentiam suae basis <hi rendition="#i">CGD</hi>.
+Sunt autem resistentiae basium,<index indexName="Sachen"><term>resistentia basis</term></index>
+ut cubi diametrorum <hi rendition="#i">EF</hi>, <hi rendition="#i">CD</hi>.<index indexName="Sachen"><term>cubus diametri</term></index>
+Debet
+<app type="Bfootnote"><lem type="main">ergo linea</lem><note type="lemma-abbrev">ergo</note><rdg wit="#L" n="1"> figura
+</rdg><rdg wit="#L" n="2"> linea <hi rendition="#i">L</hi></rdg></app>
+<hi rendition="#i">AEC</hi> esse talis,
+ut
+<app type="Bfootnote"><lem type="main">momenta solidorum <hi rendition="#i">AEFA</hi>, <hi rendition="#i">ACDA</hi>,<index indexName="Sachen"><term>momentum solidi conoeidis</term></index>
+sint ut cubi <hi rendition="#i">EF</hi>, <hi rendition="#i">CD</hi>, diametrorum basium.<index indexName="Sachen"><term>cubus diametri</term></index>
+<hi rendition="#i">CD</hi> sit <hi rendition="#i">y</hi>, <hi rendition="#i">AB</hi> sit <hi rendition="#i">x</hi>.</lem><note type="lemma-abbrev">momenta</note><rdg wit="#L" n="1"> frustroru
+</rdg><rdg wit="#L" n="2"> sint ut cubi diametrorum basium
+</rdg><rdg wit="#L" n="3"> <hi rendition="#i">AEF</hi>
+</rdg><rdg wit="#L" n="4"> solidorum <hi rendition="#i">AEFA</hi>, <seg type="apparat-ellipsis"/> diametrorum basium. <app><rdg wit="#L" n="a"><hi rendition="#i">EF</hi> sit <hi rendition="#i">y</hi>
+</rdg><rdg wit="#L" n="b"><hi rendition="#i">CD</hi> sit <hi rendition="#i">y</hi>, <hi rendition="#i">AB</hi> sit <hi rendition="#i">x</hi>. <hi rendition="#i">L</hi></rdg></app></rdg></app>
+Et sit proprietas<index indexName="Sachen"><term>proprietas curvae</term></index>
+<app type="Bfootnote"><lem type="main">curvae<index indexName="Sachen"><term>curva</term></index> <hi rendition="#i">y</hi> aequ. <formula xml:id="Ch14.S9.p6.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>x</m:mi><m:mi>e</m:mi></m:msup><m:mo>.</m:mo></m:mrow></m:math></formula></lem><note type="lemma-abbrev">curvae</note><rdg wit="#L" n="1"> <hi rendition="#i">x</hi>
+</rdg><rdg wit="#L" n="2"> <hi rendition="#i">y</hi> aequ. <formula xml:id="Ch14.S9.p6.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>x</m:mi><m:mi>b</m:mi></m:msup><m:mo>.</m:mo></m:mrow></m:math></formula>
+</rdg><rdg wit="#L" n="3"> <hi rendition="#i">y</hi> aequ. <formula xml:id="Ch14.S9.p6.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>x</m:mi><m:mi>e</m:mi></m:msup><m:mo>.</m:mo></m:mrow></m:math></formula> <hi rendition="#i">L</hi></rdg></app>
+Et
+<app type="Bfootnote"><lem type="main">Elementa conoidis<index indexName="Sachen"><term>elementum conoeidis</term></index></lem><note type="lemma-abbrev">Elementa</note><rdg wit="#L" n="1"> cononoidis
+</rdg><rdg wit="#L" n="2"> conoidis <hi rendition="#i">L</hi></rdg></app>
+cum sint proportionalia ipsis <hi rendition="#i">yy</hi>,
+erunt ut <formula xml:id="Ch14.S9.p6.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>x</m:mi><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></formula>
+Quorum momenta<anchor xml:id="LH_35_09_14_003r_summasummarum_rglj-1"/><index indexName="Sachen"><term>momentum solidi conoeidis</term></index>
+ex <hi rendition="#i">CD</hi> sunt summae
+<app type="Bfootnote"><lem type="main">summarum per
+<app type="Cfootnote"><lem type="main">alibi demonstrata,<anchor xml:id="LH_35_09_14_003r_summasummarum_rglj-2"/></lem><note type="lemma-abbrev">alibi demonstrata</note><note type="editorial">Siehe N. <ref corresp="L_section_148.xml#N.14.8"/>, S. <ref corresp="L_section_148.xml#LH_35_09_14_001r_summasummarum_ouir-1"/>.</note></app>
+sunt autem</lem><note type="lemma-abbrev">summarum</note><rdg wit="#L" n="1"> sunt au
+</rdg><rdg wit="#L" n="2"> per alibi demonstrata, sunt autem <hi rendition="#i">L</hi></rdg></app>
+summae <formula xml:id="Ch14.S9.p6.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mpadded width="-1.7pt"><m:msup><m:mi>x</m:mi><m:mfrac><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>⋅</m:mo></m:mfrac></m:msup></m:mpadded><m:mo rspace="4.2pt">:</m:mo><m:mover accent="true"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>¯</m:mo></m:mover></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula>
+Et summae summarum erunt:<index indexName="Sachen"><term>summa summae</term></index>
+<formula xml:id="Ch14.S9.p6.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mpadded width="-1.7pt"><m:msup><m:mi>x</m:mi><m:mfrac><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>⋅</m:mo></m:mfrac></m:msup></m:mpadded><m:mo rspace="4.2pt">:</m:mo><m:mrow><m:mover accent="true"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>¯</m:mo></m:mover><m:mo>⋅</m:mo><m:mover accent="true"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>¯</m:mo></m:mover></m:mrow></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula>
+Quae ut sint proportionales cubis ab <hi rendition="#i">y</hi>,
+debent coincidere <formula xml:id="Ch14.S9.p6.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mo>,</m:mo></m:mrow></m:math></formula>
+seu <formula xml:id="Ch14.S9.p6.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>x</m:mi><m:mrow><m:mn>3</m:mn><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow></m:msup><m:mo>,</m:mo></m:mrow></m:math></formula>
+et <formula xml:id="Ch14.S9.p6.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>x</m:mi><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math></formula>
+Ergo aequantur <formula xml:id="Ch14.S9.p6.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>3</m:mn><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow></m:math></formula>
+<app type="Bfootnote"><lem type="main">et <formula xml:id="Ch14.S9.p6.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>,</m:mo></m:mrow></m:math></formula>
+sive erit <hi rendition="#i">e</hi> aequ. 2,</lem><note type="lemma-abbrev">et</note><rdg wit="#L"><formula xml:id="Ch14.S9.p6.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow><m:mo>+</m:mo><m:mn>2</m:mn></m:mrow><m:mo>,</m:mo></m:mrow></m:math></formula>
+</rdg><rdg wit="#L" n="1"> sive <hi rendition="#i">e</hi> et 2
+</rdg><rdg wit="#L" n="2"> sive erit <hi rendition="#i">e</hi> aequ. 2, <hi rendition="#i">L</hi></rdg></app>
+et fiet <hi rendition="#i">y</hi> aequ. <formula xml:id="Ch14.S9.p6.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:mrow></m:math></formula>
+Ergo Conoeides parabolicum concavum<index indexName="Sachen"><term>conoeides parabolicum concavum</term></index>
+<app type="Bfootnote"><lem type="main">seu Tuba parabolica<index indexName="Sachen"><term>tuba parabolica</term></index></lem><note type="lemma-abbrev">seu</note><rdg wit="#L" cause="addition"><add>Tuba parabolica</add>
+<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
+ubique aequaliter resistit.<index indexName="Sachen"><term>solidum ubique aequiresistens</term></index>
+Quae cum sit quinta pars cylindri circumscripti,<index indexName="Sachen"><term>cylinder circumscriptus</term></index>
+hinc
+<app type="Bfootnote"><lem type="main">modum</lem><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
+habemus
+quo trabs<index indexName="Sachen"><term>trabs ubique aequiresistens</term></index>
+ad quintam ponderis<index indexName="Sachen"><term>pondus trabis</term></index>
+partem reduci potest,
+<app type="Bfootnote"><lem type="main">salva firmitate.<index indexName="Sachen"><term>firmitas trabis</term></index></lem><note type="lemma-abbrev">salva</note><rdg wit="#L" n="1"> resistentia
+</rdg><rdg wit="#L" n="2"> firmitate <hi rendition="#i">L</hi></rdg></app>
+<app type="Cfootnote"><lem type="main">Quod Theorema pulcherrimum<index indexName="Sachen"><term>theorema pulcherrimum</term></index>
+a Galileo<index indexName="Personen"><term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564–1642</term></index>
+non fuit observatum.</lem><note type="lemma-abbrev">Quod <seg type="apparat-ellipsis"/> observatum</note><note type="editorial">Galilei hatte sich mit dem Längsschnitt eines prismatischen Balkens befasst, der an jedem Punkt seiner Länge den gleichen Bruchwiderstand aufweist.
+Siehe G. <hi rendition="#k">Galilei</hi>, <hi rendition="#i">Discorsi</hi>,
+Leiden 1638, S. 137–141<bibl corresp="#bib_00050"> (<hi rendition="#i">GO</hi> VIII, S. 177–181).<bibl corresp="#bib_00048"/></bibl></note></app></p><figure rendition="#own-line_centered" xml:id="Ch14.S9.p7"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_14_003r_d1.svg" width="156.1032pt" xml:id="Ch14.S9.p7.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_35_09_14_003r_Fig.1"/></head></figure><p rendition="#noindent" xml:id="Ch14.S9.p8"><app type="Cfootnote"><lem type="main"/><note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]</note><note type="editorial">Hierzu ist in <hi rendition="#i">L</hi> ein gestrichener, hier nicht wiedergegebener Entwurf überliefert.
+Das Diagramm gehört zugleich zum Teilkonzept N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">3</hi></hi>;
+vgl. [<hi rendition="#i">Fig. 8a</hi>] auf S. <ref corresp="L_section_146.xml#LH_35_09_14_003r_bis_Fig.8a"/>.</note></app>[<hi rendition="#i">Unterhalb eines Trennungsstrichs:</hi>]</p><p rendition="#noindent" xml:id="Ch14.S9.p9">Solidum quaerere,
+quod extremis apprehensum,
+flectenti ubique aequaliter resistit.<index indexName="Sachen"><term>solidum flectenti ubique aequiresistens</term></index></p><figure rendition="#own-line_centered" xml:id="Ch14.S9.p10_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_14_003r_d2.svg" width="216.8pt" xml:id="Ch14.S9.p10.g1"/><head>[<hi rendition="#i">Fig. 2a</hi>]<anchor xml:id="LH_35_09_14_003r_Fig.2"/></head> </figure><figure rendition="#own-line_centered" xml:id="Ch14.S9.p10_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_14_003r_d3.svg" width="216.8pt" xml:id="Ch14.S9.p11.g1"/><head>[<hi rendition="#i">Fig. 2b</hi>]<anchor xml:id="LH_35_09_14_003r_Fig.3"/></head></figure></div></div></body>
+  </text>
+</TEI>

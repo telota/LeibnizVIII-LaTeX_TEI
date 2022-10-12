@@ -1,0 +1,51 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch30" n="30"><head>30
+ZEICHNUNGEN ZUR BRUCHFESTIGKEIT</head>
+<head>[Ende Dezember 1689 – Frühjahr 1690 (?)]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><list><item><label><hi rendition="#i #smaller">L</hi></label>
+<p><hi rendition="#smaller">Zeichnungen: LH XXXV 14, 2 Bl. 46 und LH XXXV 14, 2 Bl. 47.
+Ein unregelmäßig beschnittener und seitlich gerissener Bogen 4<hi rendition="#sup">o</hi> (Bl. 46)
+und ein davon abgeschnittener Zettel (Bl. 47; 10,7 x 10,1 cm);
+ein Wasserzeichen auf <ref href="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht/?id=6&amp;tx_dlf[id]=">Bl. 46</ref> und ein Fragment hiervon auf <ref href="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht/?id=6&amp;tx_dlf[id]=">Bl. 47</ref>:
+italienisches Papier.
+Zwei Seiten: auf <ref href="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht/?id=6&amp;tx_dlf[id]=1747&amp;tx_dlf[page]=92">Bl. 46 v<hi rendition="#sup">o</hi></ref> sind die Diagramme [<hi rendition="#i">Fig. 1</hi>] und [<hi rendition="#i">Fig. 4</hi>] bis [<hi rendition="#i">Fig. 9</hi>] sowie zwei nicht wiedergegebene Entwürfe überliefert;
+auf <ref href="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht/?id=6&amp;tx_dlf[id]=1747&amp;tx_dlf[page]=94">Bl. 47 v<hi rendition="#sup">o</hi></ref> die Diagramme [<hi rendition="#i">Fig. 2</hi>] und [<hi rendition="#i">Fig. 3</hi>].
+Ferner finden sich auf <ref href="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht/?id=6&amp;tx_dlf[id]=1747&amp;tx_dlf[page]=91">Bl. 46 r<hi rendition="#sup">o</hi></ref> Auszüge aus Galileis <hi rendition="#i">Discorsi</hi> (die noch in <hi rendition="#i">LSB</hi> VIII zu edieren sind)
+und auf Bl. 47 das Stück N. <ref corresp="L_chapter_29.xml#N.29"/>.<index indexName="Personen"><term><hi rendition="#g #smaller">Galilei</hi> <hi rendition="#smaller">(Galilaeus, Galileus), Galileo 1564–1642</hi></term></index></hi></p></item></list></p></div><div type="contents"><p xml:id="Ch30.p1"><anchor xml:id="_60653"/>
+<anchor xml:id="N.30"/><!--  \hackfor{\par} --></p><p xml:id="Ch30.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Die Verwendung des Papiers, auf dem das vorliegende Stück N. <ref corresp="#N.30"/> überliefert ist, ist im Leibniz-Nachlass nach heutigem Wissensstand lediglich für den Zeitraum zwischen Ende Dezember 1689 und spätestens Januar 1691 belegt (siehe die Datierungsgründe von N. <ref corresp="L_chapter_29.xml#N.29"/>, S. <ref corresp="L_chapter_29.xml#LH_35_14_02_047_datierung"/>).
+Die zu N. <ref corresp="#N.30"/> gehörigen Zeichnungen [<hi rendition="#i">Fig. 2</hi>] und [<hi rendition="#i">Fig. 3</hi>] wurden aber bei der Abfassung der mit überlieferten Aufzeichnung N. <ref corresp="L_chapter_29.xml#N.29"/> überschrieben.
+Folglich muss N. <ref corresp="#N.30"/> zwischen Ende Dezember 1689 und der Abfassung von N. <ref corresp="L_chapter_29.xml#N.29"/> entstanden sein.
+Daraus ergibt sich die vorgeschlagene Datierung.</hi></p></div><div type="text"><p rendition="#noindent" xml:id="Ch30.p5"><ref href="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht/?id=6&amp;tx_dlf[id]=1747&amp;tx_dlf[page]=92">[46v<hi rendition="#sup">o</hi>]</ref></p><figure rendition="#own-line_centered" xml:id="Ch30.p6"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_14_02_046v,047v_d1.svg" width="156.1032pt" xml:id="Ch30.p6.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_35_14_02_046v_047v_Fig.1"/></head></figure><p rendition="#noindent" xml:id="Ch30.p7"><ref href="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht/?id=6&amp;tx_dlf[id]=1747&amp;tx_dlf[page]=94"><pb type="L"/><fw type="folNum">[47 v<hi rendition="#sup">o</hi>]</fw></ref></p><figure rendition="#own-line_centered" xml:id="Ch30.p8_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_14_02_046v,047v_d2.svg" width="216.8pt" xml:id="Ch30.p8.g1"/><head>[<hi rendition="#i">Fig. 2</hi>]<anchor xml:id="LH_35_14_02_046v_047v_Fig.2"/></head> </figure><figure rendition="#own-line_centered" xml:id="Ch30.p8_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_14_02_046v,047v_d3.svg" width="216.8pt" xml:id="Ch30.p9.g1"/><head>[<hi rendition="#i">Fig. 3</hi>]<anchor xml:id="LH_35_14_02_046v_047v_Fig.3"/></head> </figure><p rendition="#noindent" xml:id="Ch30.p11"><ref href="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht/?id=6&amp;tx_dlf[id]=1747&amp;tx_dlf[page]=92">[46v<hi rendition="#sup">o</hi>]</ref></p><figure rendition="#own-line_centered" xml:id="Ch30.p12_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_14_02_046v,047v_d4.svg" width="216.8pt" xml:id="Ch30.p12.g1"/><head>[<hi rendition="#i">Fig. 4</hi>]<anchor xml:id="LH_35_14_02_046v_047v_Fig.4"/></head> </figure><figure rendition="#own-line_centered" xml:id="Ch30.p12_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_14_02_046v,047v_d5.svg" width="216.8pt" xml:id="Ch30.p13.g1"/><head>[<hi rendition="#i">Fig. 5</hi>]<anchor xml:id="LH_35_14_02_046v_047v_Fig.5"/></head> </figure><figure rendition="#own-line_centered" xml:id="Ch30.p15_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_14_02_046v,047v_d6.svg" width="143.1pt" xml:id="Ch30.p15.g1"/><head>[<hi rendition="#i">Fig. 6</hi>]<anchor xml:id="LH_35_14_02_046v_047v_Fig.6"/></head></figure><figure rendition="#own-line_centered" xml:id="Ch30.p15_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_14_02_046v,047v_d7.svg" width="143.1pt" xml:id="Ch30.p16.g1"/><head>[<hi rendition="#i">Fig. 7</hi>]<anchor xml:id="LH_35_14_02_046v_047v_Fig.7"/></head></figure><figure rendition="#own-line_centered" xml:id="Ch30.p15_3"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_14_02_046v,047v_d8.svg" width="143.1pt" xml:id="Ch30.p17.g1"/><head>[<hi rendition="#i">Fig. 8</hi>]<anchor xml:id="LH_35_14_02_046v_047v_Fig.8"/></head></figure><figure rendition="#own-line_centered" xml:id="Ch30.p19"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_14_02_046v,047v_d9.svg" width="177.7842pt" xml:id="Ch30.p19.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 9</hi>]<anchor xml:id="LH_35_14_02_046v_047v_Fig.9"/></head></figure></div></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,176 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="section" xml:id="Chx6.Sx1"><head rendition="#smaller"><hi rendition="#k">Editionen</hi></head><head/><div type="text"><table>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 71–79</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_581.xml#dcc_01"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 80–88</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_582.xml#dcc_02-1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 89–92</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_583.xml#dcc_02-2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 93–99</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_584.xml#dcc_03"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 100–105</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_585.xml#dcc_04"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 106–115</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_586.xml#dcc_05"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 116–124</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_587.xml#dcc_06-1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 125–144</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_588.xml#dcc_06-2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 145–151</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_589.xml#dcc_07"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 152–158</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_5810.xml#dcc_08"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 159–165</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_5811.xml#dcc_09"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 166–171</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_5812.xml#dcc_10"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 346–352</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_39.xml#RK57266-1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 352</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_41.xml#RK57266-2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 356f.</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_40.xml#RK57267-1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 357–361</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_421.xml#RK57267-2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 361–364</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_423.xml#RK57267-3"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 365–367</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_432.xml#RK57268"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 375–378</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_48.xml#RK57269"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 379–383</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_49.xml#RK57270"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 384–387</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_50.xml#RK57271"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 387f.</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_55.xml#RK57272"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 390f.</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_44.xml#RK57273"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 391–393</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_46.xml#RK57274"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 394</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_54.xml#RK57275"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 397f.</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_53.xml#RK57276"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 399–402</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_52.xml#RK57277"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 403–405</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_56.xml#RK52278"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Fichant</hi> <hi rendition="#smaller">1994, S. 406–408</hi><ref corresp="#bib_01056"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_57.xml#RK57279"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Gerland</hi> <hi rendition="#smaller">1906, S. 11–15</hi><ref corresp="#bib_00197"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_121.xml#cnds_1"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Gerland</hi> <hi rendition="#smaller">1906, S. 16–27</hi><ref corresp="#bib_00197"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_123.xml#cnds_3"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Gerland</hi> <hi rendition="#smaller">1906, S. 27–31</hi><ref corresp="#bib_00197"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_section_122.xml#cnds_2"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Gerland</hi> <hi rendition="#smaller">1906, S. 31–35</hi><ref corresp="#bib_00197"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_21.xml#_38538"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Gerland</hi> <hi rendition="#smaller">1906, S. 35</hi><ref corresp="#bib_00197"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_11.xml#_38540"/></cell>
+          </row>
+          <row>
+            <cell><hi rendition="#smaller"/><hi rendition="#k #smaller">Gerland</hi> <hi rendition="#smaller">1906, S. 175</hi><ref corresp="#bib_00197"/></cell>
+            <cell><hi rendition="#smaller">N.</hi><ref corresp="L_chapter_26.xml#_55749"/></cell>
+          </row>
+        </table></div></div></body>
+  </text>
+</TEI>

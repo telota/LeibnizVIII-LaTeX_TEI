@@ -1,0 +1,333 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Chx8"><head rendition="#smaller">BERICHTIGUNGEN UND ERGÄNZUNGEN</head><div type="text"><p xml:id="Chx8.p1"><hi rendition="#smaller">Zu Band VIII, 1 der</hi> <ref target="https://edoc.bbaw.de/frontdoor/index/index/docId/14">Druckausgabe</ref>
+<hi rendition="#smaller">(2009):</hi></p><table>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_1.pdf#page=274">229</ref><hi rendition="#smaller">, Anmerkung</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">ergo dupl.</hi><hi rendition="#i #smaller">CP</hi> <hi rendition="#smaller">dupl.</hi><hi rendition="#i #smaller">CS</hi><hi rendition="#smaller">.</hi> <hi rendition="#i #smaller">CT</hi><hi rendition="#smaller">.</hi> <hi rendition="#i #smaller">SO</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">erunt dupl.</hi><hi rendition="#i #smaller">CO</hi> <hi rendition="#smaller">dupl.</hi><hi rendition="#i #smaller">CS</hi><hi rendition="#smaller">.</hi> <hi rendition="#i #smaller">CT</hi><hi rendition="#smaller">. [</hi><hi rendition="#i #smaller">ST</hi><hi rendition="#smaller">]</hi><hi rendition="#i #smaller">u. ergänze dazu im Apparat</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">SO</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">L ändert Hrsg.</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_1.pdf#page=275">230</ref><hi rendition="#smaller">, Anmerkung</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><formula xml:id="Chx8.T9.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi mathsize="80%">c</m:mi><m:mo mathsize="80%" stretchy="false">:</m:mo><m:mrow><m:mi mathsize="80%">M</m:mi><m:mo mathsize="80%" stretchy="false">+</m:mo><m:mrow><m:mi mathsize="80%">x</m:mi><m:mo>⁢</m:mo><m:mi mathsize="80%" mathvariant="normal">⸬</m:mi><m:mo>⁢</m:mo><m:mi mathsize="80%">y</m:mi></m:mrow></m:mrow><m:mo mathsize="80%" stretchy="false">:</m:mo><m:mi mathsize="80%">x</m:mi></m:mrow></m:math></formula> <hi rendition="#smaller">ergo</hi> <hi rendition="#i #smaller">y</hi> <hi rendition="#smaller">aeq.</hi><formula xml:id="Chx8.T9.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi mathsize="80%">c</m:mi><m:mo>⁢</m:mo><m:mi mathsize="80%">x</m:mi></m:mrow><m:mo mathsize="80%" stretchy="false">:</m:mo><m:mrow><m:mi mathsize="80%">M</m:mi><m:mo mathsize="80%" stretchy="false">+</m:mo><m:mi mathsize="80%">x</m:mi></m:mrow></m:mrow></m:math></formula><hi rendition="#smaller">. Si ponatur</hi> <hi rendition="#i #smaller">c</hi> <hi rendition="#smaller">et</hi> <hi rendition="#i #smaller">M</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><formula xml:id="Chx8.T9.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi mathsize="80%">c</m:mi><m:mo mathsize="80%" stretchy="false">:</m:mo><m:mrow><m:mi mathsize="80%">m</m:mi><m:mo mathsize="80%" stretchy="false">+</m:mo><m:mrow><m:mi mathsize="80%">x</m:mi><m:mo>⁢</m:mo><m:mi mathsize="80%" mathvariant="normal">⸬</m:mi><m:mo>⁢</m:mo><m:mi mathsize="80%">y</m:mi></m:mrow></m:mrow><m:mo mathsize="80%" stretchy="false">:</m:mo><m:mi mathsize="80%">x</m:mi></m:mrow></m:math></formula> <hi rendition="#smaller">ergo</hi> <hi rendition="#i #smaller">y</hi> <hi rendition="#smaller">aeq.</hi><formula xml:id="Chx8.T9.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi mathsize="80%">c</m:mi><m:mo>⁢</m:mo><m:mi mathsize="80%">x</m:mi></m:mrow><m:mo mathsize="80%" stretchy="false">:</m:mo><m:mrow><m:mi mathsize="80%">m</m:mi><m:mo mathsize="80%" stretchy="false">+</m:mo><m:mi mathsize="80%">x</m:mi></m:mrow></m:mrow></m:math></formula><hi rendition="#smaller">. Si ponantur</hi> <hi rendition="#i #smaller">c</hi> <hi rendition="#smaller">et</hi> <hi rendition="#i #smaller">m</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_1.pdf#page=310">265</ref><hi rendition="#smaller">, Z. 5</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">Jam</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">Tam</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_1.pdf#page=318">273</ref><hi rendition="#smaller">, Z. 2</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">Petronis</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">Petronii</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_1.pdf#page=386">341</ref><hi rendition="#smaller">, Z. 17</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">festinandam</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">festinandum</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"/>
+          <cell style="; width:261.8pt"/>
+        </row>
+      </table><p xml:id="Chx8.p2"><hi rendition="#smaller">Zu Band VIII, 2 der</hi> <ref target="https://edoc.bbaw.de/frontdoor/index/index/docId/2585">Druckausgabe</ref>
+<hi rendition="#smaller">(2016):</hi></p><table>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=182">134</ref><hi rendition="#smaller">, Erläuterung zu Z. 1</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">De aequiponderantibus.</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">De aequiponderantibus</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">De corporibus fluitantibus.</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=183">135</ref><hi rendition="#smaller">, Z. 18</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">sumtorum ad rem</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">sumtorum. Ad rem</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=184">136</ref><hi rendition="#smaller">, Z. 18</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">eijus</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">ejus</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=233">185</ref><hi rendition="#smaller">, Z. 19</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">de</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">[</hi><hi rendition="#i #smaller">ce</hi><hi rendition="#smaller">]</hi><hi rendition="#i #smaller">u. ergänze dazu im Apparat</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">de</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">L ändert Hrsg.</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=237">189</ref><hi rendition="#smaller">, Z. 19</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">hunc</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">[hanc]</hi><hi rendition="#i #smaller">u. ergänze dazu im Apparat</hi> <hi rendition="#smaller">hunc</hi> <hi rendition="#i #smaller">L ändert Hrsg.</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=323">275</ref><hi rendition="#smaller">, Z. 25</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">infinita</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">insumta</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=339">291</ref><hi rendition="#smaller">, Z. 12</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">[il est]</hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">ce [qui est]</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=344">296</ref><hi rendition="#smaller">, Z. 4</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">streiche</hi> <hi rendition="#smaller">reciproce</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=344">296</ref><hi rendition="#smaller">, Z. 8</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">proportionis</hi> <hi rendition="#i #smaller">lies jeweils</hi> <hi rendition="#smaller">progressionis</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=346">298</ref><hi rendition="#smaller">, Z. 7</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><formula xml:id="Chx8.T10.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mi mathsize="80%">d</m:mi><m:mi mathsize="80%">a</m:mi></m:mfrac></m:mstyle><m:mo>⁢</m:mo><m:mi mathsize="80%">g</m:mi><m:mo>⁢</m:mo><m:mi mathsize="80%">t</m:mi><m:mo>⁢</m:mo><m:mi mathsize="80%">c</m:mi></m:mrow></m:math></formula><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><formula xml:id="Chx8.T10.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mi mathsize="80%">d</m:mi><m:msup><m:mi mathsize="80%">a</m:mi><m:mn mathsize="80%">2</m:mn></m:msup></m:mfrac></m:mstyle><m:mo>⁢</m:mo><m:mi mathsize="80%">g</m:mi><m:mo>⁢</m:mo><m:mi mathsize="80%">t</m:mi><m:mo>⁢</m:mo><m:mi mathsize="80%">c</m:mi></m:mrow></m:math></formula></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=361">313</ref><hi rendition="#smaller">, Erläuterung zu Z. 1</hi> <hi rendition="#i #smaller">GEA</hi><hi rendition="#smaller"/></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">M</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies jeweils</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">B</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=390">342</ref><hi rendition="#smaller">, Z. 27</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">285</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">258</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=403">355</ref><hi rendition="#smaller">, Erläuterung zu Z. 8</hi> <hi rendition="#g #smaller">I. fig.</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">[</hi><hi rendition="#i #smaller">Fig. 2</hi><hi rendition="#smaller">]</hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">[</hi><hi rendition="#i #smaller">Fig. 1</hi><hi rendition="#smaller">] in N. 36</hi><hi rendition="#smaller #sub">1</hi><hi rendition="#smaller">, S. 349</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=403">355</ref><hi rendition="#smaller">, Erläuterung zu Z. 13 Triangle</hi> <hi rendition="#i #smaller">GEA</hi><hi rendition="#smaller"/></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">[</hi><hi rendition="#i #smaller">Fig. 2</hi><hi rendition="#smaller">]</hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">[</hi><hi rendition="#i #smaller">Fig. 1</hi><hi rendition="#smaller">] in N. 36</hi><hi rendition="#smaller #sub">1</hi><hi rendition="#smaller">, S. 349</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=414">366</ref><hi rendition="#smaller">, Datierung von N. 38</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">Ende 1675</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">April bis Mai 1675</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=414">366</ref><hi rendition="#smaller">, Z. 5–9</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">Im <seg type="apparat-ellipsis"/> sein.</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">Der Inhalt dieses Résumé N. 38 spiegelt den Stand der Untersuchung nach N. 31 und N. 32 wider. Somit ist die Angabe in Z. 12 „j’y ay travaillé depuis quelques jours” vermutlich auf die genannten Texte zu beziehen. Die sich daraus ergebende Datierung ist April bis Mai 1675.</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=471">423</ref><hi rendition="#smaller">, Z. 15</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">elles</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">ils</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=472">424</ref><hi rendition="#smaller">, Z. 10</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">on arrestera</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">on [n’]arrestera</hi> <hi rendition="#i #smaller">u. ergänze dazu im Apparat</hi> <hi rendition="#smaller">n’</hi> <hi rendition="#i #smaller">erg. Hrsg.</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=478">430</ref><hi rendition="#smaller">, Z. 22</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">remis</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">[remissus]</hi><hi rendition="#i #smaller">u. ergänze dazu im Apparat</hi> <hi rendition="#smaller">remis</hi> <hi rendition="#i #smaller">L ändert Hrsg.</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=490">442</ref><hi rendition="#smaller">, Z. 9</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">resistentiis</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">resistentis</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=495">447</ref><hi rendition="#smaller">, Z. 8</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">F.</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">A.</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=496">448</ref><hi rendition="#smaller">, Z. 1</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">AF,</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">A,</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=518">470</ref><hi rendition="#smaller">, Z. 3</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">duorum</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">durorum</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=519">471</ref><hi rendition="#smaller">, Z. 4</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">praetera</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">praeterea</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=527">479</ref><hi rendition="#smaller">, Z. 8</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">ferat</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">ferat.</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=530">482</ref><hi rendition="#smaller">, Z. 6</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">vacuo</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">vacuo,</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=542">494</ref><hi rendition="#smaller">, Z. 4</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">hoc</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">hoc,</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=734">686</ref><hi rendition="#smaller">, Z. 23–25</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">ergänze Erl. zu</hi> <hi rendition="#smaller">Boylius habet <seg type="apparat-ellipsis"/> in Iezzo: Möglicherweise handelt es sich um eine Bemerkung zu</hi> <hi rendition="#k #smaller">D. Rembrantsz van Nierop</hi><hi rendition="#smaller">:</hi> <hi rendition="#i #smaller">Tweede deel van enige oefeningen in de geografie</hi><hi rendition="#smaller">, Amsterdam 1674. Eine ausführliche Rezension erschien in den</hi> <hi rendition="#i #smaller">Philosophical Transactions</hi><hi rendition="#smaller">:
+„A narrative of some observations made upon several voyages <seg type="apparat-ellipsis"/> Together with instructions given by the Dutch East-India Company for the discovery of the famous land of</hi> <hi rendition="#i #smaller">Jesso</hi> <hi rendition="#smaller">near</hi> <hi rendition="#i #smaller">Japan</hi><hi rendition="#smaller">”,</hi> <hi rendition="#i #smaller">PT</hi><hi rendition="#smaller">, Bd 9 N. 109, 14. (24.) Dezember 1674, S. 197–208.</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=735">687</ref><hi rendition="#smaller">, Z. 27</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">de Verret</hi> <hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">du Verney</hi> <hi rendition="#i #smaller">u. ergänze Erl. dazu</hi><hi rendition="#smaller"> </hi><hi rendition="#k #smaller">C. Perrault</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Essais de physique</hi><hi rendition="#smaller">, Bd 3, Paris 1680, S. 5 (Duverney) und S. 226 („fibre du coeur <seg type="apparat-ellipsis"/> en spirale”); sowie</hi> <hi rendition="#k #smaller">A. Guerrini</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">The Courtier’s Anatomists</hi><hi rendition="#smaller">, Chicago/London, 2015, S. 12 und S. 171.</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=735">687</ref><hi rendition="#smaller">, Z. 29</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">ergänze Erl. zu</hi> <hi rendition="#smaller">un Anglois:</hi> <hi rendition="#k #smaller">W. Cole</hi> <hi rendition="#smaller">„A discourse concerning the</hi> <hi rendition="#i #smaller">spiral</hi><hi rendition="#smaller">, instead of the supposed</hi> <hi rendition="#i #smaller">annular</hi><hi rendition="#smaller">, structures of the fibres of the intestins”,</hi> <hi rendition="#i #smaller">PT</hi><hi rendition="#smaller">, Bd 11 N. 125, 22. Mai (1. Juni) 1676, S. 603–609.</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref target="\LSBviiiURL LSB_VIII_2.pdf#page=747">699</ref><hi rendition="#smaller">, Z. 7</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">ergänze</hi> <hi rendition="#smaller">Weitere Drucke nach</hi> <hi rendition="#i #smaller">E<!--  \hack{\textsuperscript} -->
+</hi><hi rendition="#smaller">:</hi><hi rendition="#k #smaller">M. Petzet</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Claude Perrault und die Architektur des Sonnenkönigs</hi><hi rendition="#smaller">, München 2000, S. 568f.;</hi>
+<hi rendition="#k #smaller">H. Bredekamp</hi><hi rendition="#smaller">,</hi> <hi rendition="#i #smaller">Die Fenster der Monade</hi><hi rendition="#smaller">, Berlin 2004, S. 210–214.</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"/>
+          <cell style="; width:261.8pt"/>
+        </row>
+      </table><p xml:id="Chx8.p3"><hi rendition="#smaller">Zu Band VIII, 3 der</hi> <ref target="https://edoc.bbaw.de/frontdoor/index/index/docId/3407">Druckausgabe</ref>
+<hi rendition="#smaller">(2021),
+hier in der</hi> <ref target="https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf">PDF-Fassung</ref> <hi rendition="#smaller">aktualisiert, mit Ausnahme der durch ein Sternchen gekennzeichneten Einträge:</hi></p><table>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref rendition="#smaller" target="#BE_InhV-BE">xii</ref><hi rendition="#smaller">, Z.</hi><ref rendition="#smaller" target="#BE_InhV-BE">17</ref></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">Berichtigungen</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">Berichtigungen und Ergänzungen</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref rendition="#smaller" target="#BE_Vorw-Internet">xv</ref><hi rendition="#smaller">, Z.</hi><ref rendition="#smaller" target="#BE_Vorw-Internet">22</ref></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">ritter.bbaw.de</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">leibniz-berlin.bbaw.de</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref rendition="#smaller" target="#BE_Vorw-Stuecke">xvi</ref><hi rendition="#smaller">, Z.</hi><ref rendition="#smaller" target="#BE_Vorw-Stuecke">15</ref></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">erschienen Stücken</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">erschienenen Stücke</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><anchor xml:id="BE_Vorw-DankOF"/><hi rendition="#smaller">S.</hi><ref rendition="#smaller" target="#BE_Vorw-DankOF-a">xvi</ref><hi rendition="#smaller">, Z.</hi><ref rendition="#smaller" target="#BE_Vorw-DankOF-a">29</ref><hi rendition="#smaller #sup">*</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">ergänze</hi> <hi rendition="#smaller">Gedankt sei Olga Fedorova, die Dimitri Bayuk bei der Aufnahme von Stücken half.</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">Streichungen</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">Anstreichungen</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">ispius</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">ipsius</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">naturalem</hi><hi rendition="#i #smaller">TAQ</hi><hi rendition="#smaller">
+</hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">naturalem</hi><hi rendition="#i #smaller">TAQ</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">vibr.</hi><hi rendition="#i #smaller">MLP</hi><hi rendition="#smaller">
+</hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">vibr.</hi><hi rendition="#i #smaller">MLP</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><!--  \hack{\hangindent=3.5em } --><hi rendition="#smaller">S.</hi><note class="edpageref"/><hi rendition="#smaller">, Variante</hi> <hi rendition="#i #smaller">E<hi rendition="#sup">1</hi></hi> <hi rendition="#smaller">zu</hi></cell>
+          <cell style="; width:261.8pt"/>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">Z.</hi><note class="edlineref"/><hi rendition="#smaller">–S.</hi><note class="edpageref"/><hi rendition="#smaller">, Z.</hi><note class="edlineref"/></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">aliqasque</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">aliasque</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">quantum</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">tum</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">G</hi><hi rendition="#smaller">trabem</hi>
+<hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">G</hi><hi rendition="#smaller">trabem</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><ref corresp="L_section_146.xml#BE:N14-6-Fig-5"/><hi rendition="#smaller">, zu</hi> <hi rendition="#i #smaller">Fig. 5a</hi><hi rendition="#smaller"/></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">Bl. 1 r<hi rendition="#sup">o</hi></hi><hi rendition="#smaller">
+</hi><hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">Bl. 2 r<hi rendition="#sup">o</hi></hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><note class="edpageref"/><hi rendition="#smaller">, Anmerkung</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">versu[s] 3</hi><hi rendition="#smaller #sup">[a]</hi><hi rendition="#smaller"> <seg type="apparat-ellipsis"/> ictus</hi><hi rendition="#smaller #sup">[b]</hi><hi rendition="#smaller">
+</hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">versu[s]</hi><hi rendition="#smaller #sup">[a]</hi> <hi rendition="#smaller">3</hi><hi rendition="#smaller #sup">[b]</hi><hi rendition="#smaller"> <seg type="apparat-ellipsis"/> ictus</hi><hi rendition="#smaller #sup">[c]</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">N. 40,</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">N. 40.</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">Gründen</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">Gründe</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">[149 r</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller">]</hi><hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">Bl. 149 r</hi><hi rendition="#smaller #sup">o</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">bei</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">an</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">eadem,etiam</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">eadem, etiam</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">(LH XXXV 11, 18B Bl. 207 v</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller">–210 v</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller">)</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">(LH XXXV 11, 18C Bl. 207 v</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller">–210 v</hi><hi rendition="#smaller #sup">o</hi><hi rendition="#smaller">)</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><anchor xml:id="BE_N65-WZ"/><hi rendition="#smaller">S.</hi><note class="edpageref"/><hi rendition="#smaller">, Z.</hi><note class="edlineref"/><hi rendition="#smaller">–</hi><note class="edlineref"/><hi rendition="#smaller #sup">*</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">streiche</hi> <hi rendition="#smaller">in Bl. 98 <seg type="apparat-ellipsis"/> Das Zeichen</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><note class="edpageref"/><hi rendition="#smaller">, Z.</hi><note class="edlineref"/></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">Bl. 96</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">Bl. 94</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">Kustode</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">Kustoden</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">im den</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">in dem</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><hi rendition="#smaller">S.</hi><note class="edpageref"/><hi rendition="#smaller">, Anmerkung</hi></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">An Rand</hi><hi rendition="#smaller">
+</hi><hi rendition="#i #smaller">lies</hi><hi rendition="#smaller"> </hi><hi rendition="#i #smaller">Am Rand</hi><hi rendition="#smaller"/></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">les corps</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">corps</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"><note class="refBerichtigung"><note class="arg1"/><note class="arg2"/></note></cell>
+          <cell style="; width:261.8pt"><hi rendition="#smaller"/><hi rendition="#i #smaller">statt</hi> <hi rendition="#smaller">ein Absatz</hi>
+<hi rendition="#i #smaller">lies</hi> <hi rendition="#smaller">fünf Zeilen</hi></cell>
+        </row>
+        <row>
+          <cell style="; width:102.4pt"/>
+          <cell style="; width:261.8pt"/>
+        </row>
+      </table><p rendition="#noindent" xml:id="Chx8.p4"><hi rendition="#smaller">Hinweise und Korrekturen werden dankbar entgegengenommen unter</hi>
+<ref target="mailto:leibniz8@bbaw.de">leibniz8@bbaw.de</ref><hi rendition="#smaller"/></p></div></div></body>
+  </text>
+</TEI>

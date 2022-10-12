@@ -1,0 +1,107 @@
+
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/basisformat_ms_leibniz.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.bbaw.de/telota/Leibniz-TEI/schema/leibniz-tei-konsistenzpruefungen_editor-hinweise.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_titleStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_editionStmt" parse="xml"/>
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_publicationStmt" parse="xml"/>
+      <sourceDesc>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_biblFull" parse="xml"/>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_listWit" parse="xml"/>
+      </sourceDesc>
+    </fileDesc>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L.xml" xpointer="L_VIII_3_encodingDesc" parse="xml"/>
+    <profileDesc>
+      <langUsage>
+        <language ident=""/>
+      </langUsage>
+      <textClass source="#Leibniz-keywords">
+        <classCode scheme=""/>
+      </textClass>
+      <textClass source="#Leibniz-text-type">
+        <classCode scheme="">Handschrift</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-04" who="#textloop #le-tex" status="draft"/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body xml:id="Document"><div type="chapter" xml:id="Ch77" n="77"><head>77
+ZU A. PARENT, ÉLÉMENS DE MÉCHANIQUE ET DE PHYSIQUE</head>
+<head>[Mitte Januar – Juni 1701]</head><div type="contents"><p xml:id="Ch77.p1"><anchor xml:id="Parent_intro"/><!--  \hackfor{\par} --></p><p xml:id="Ch77.p2"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Die Entstehung der nachfolgenden zwei Stücke, Leibnizens kommentierter Auszüge aus
+<index indexName="Personen"><term><hi rendition="#g #smaller">Parent</hi><hi rendition="#smaller">, Antoine 1666–1716</hi></term></index>Antoine Parents
+<ref corresp="#bib_01500"/><hi rendition="#i">Élémens de méchanique et de physique</hi> (N. <ref corresp="L_section_771.xml#RK55822"/>) und seiner Rezension davon (N. <ref corresp="L_section_772.xml#RK61042"/>), lässt sich anhand des Briefwechsels beleuchten.</hi></p><p xml:id="Ch77.p3"><hi rendition="#smaller">Während seines kurzen Aufenthalts in <index indexName="Orte"><term><hi rendition="#smaller">Helmstedt (Helmaestadium)</hi></term></index>Helmstedt
+auf der Rückreise aus Wien<index indexName="Orte"><term><hi rendition="#smaller">Wien</hi></term></index>
+und <index indexName="Orte"><term><hi rendition="#smaller">Prag</hi></term></index>Prag
+traf Leibniz am 30. Dezember 1700
+<index indexName="Personen"><term><hi rendition="#g #smaller">Schmidt</hi> <hi rendition="#smaller">(Schmidius), Johann Andreas 1652–1726</hi></term></index>Johannes Andreas Schmidt.
+Dieser bot ihm einige Bücher zur Lektüre an, die Leibniz allerdings mitzunehmen vergaß.
+Am Folgetag, den 31. Dezember, schrieb Leibniz aus <index indexName="Orte"><term><hi rendition="#smaller">Hannover</hi></term></index>Hannover
+einen Brief<ref corresp="#bib_02056"/>(<hi rendition="#i">LSB</hi> I, 19 N. 150), in dem er
+<index indexName="Personen"><term><hi rendition="#g #smaller">Schmidt</hi> <hi rendition="#smaller">(Schmidius), Johann Andreas 1652–1726</hi></term></index>Schmidt um die Zusendung der Bücher bat,
+wobei er „Parentii Galli librum de re Mechanica” namentlich erwähnte,
+die um 1700 erschienenen
+<ref corresp="#bib_01500"/><hi rendition="#i">Élémens de méchanique et de physique</hi>.
+<index indexName="Personen"><term><hi rendition="#g #smaller">Schmidt</hi> <hi rendition="#smaller">(Schmidius), Johann Andreas 1652–1726</hi></term></index>Schmidt übersandte die Bücher mit seinem Brief vom 7. Januar 1701
+(<ref corresp="#bib_02057"/><hi rendition="#i">LSB</hi> I, 19 N. 164).
+Er wünschte sich von Leibniz eine Buchbesprechung der <ref corresp="#bib_01500"/><hi rendition="#i">Élémens</hi> für die
+<ref corresp="#bib_01023"/><hi rendition="#i">Acta Eruditorum</hi>.
+Leibniz kam dieser Bitte nach.
+In seinem Brief vom 15. Februar informierte er
+<index indexName="Personen"><term><hi rendition="#g #smaller">Schmidt</hi> <hi rendition="#smaller">(Schmidius), Johann Andreas 1652–1726</hi></term></index>Schmidt über den Fortschritt (und die Hindernisse) seiner Parent-Lektüre:
+„Recensionem ejus libri absolvam quam primum. Sic satis progressus eram, sed interrupere alia urgentia…” (<hi rendition="#i">LSB</hi> I, 19 N. 206, hier S. 423).
+Diese Unterbrechung lässt sich tatsächlich am Schriftbild der Auszüge (N. <ref corresp="L_section_771.xml#RK55822"/>) gut ausmachen (oben auf <ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&amp;pn=660">Bl. 215 r<hi rendition="#sup">o</hi></ref>) und wird durch Leibnizens eigene Bemerkung unterstrichen: „Je n’ay pas le loisir d’achever tous ces chapitres comme j’ay commencé” (S. <ref corresp="L_section_771.xml#_38_212-215_6a"/>).
+Die großzügigen Exzerpte der Vorrede und die Kommentierung der ersten Teile der <ref corresp="#bib_01500"/><hi rendition="#i">Élémens</hi> bis Teil III, Kap. 9 nehmen etwas mehr als sechs der sieben Folioseiten ein (Bl. 212 r<hi rendition="#sup">o</hi> bis Anfang von Bl. 215 r<hi rendition="#sup">o</hi>),
+während auf den Rest des Buchs (S. 183–449) nur eine knappe, vergleichsweise flüchtig geschriebene Folioseite (<ref href="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&amp;pn=660">Bl. 215 r<hi rendition="#sup">o</hi></ref>) entfällt.</hi></p><p xml:id="Ch77.p4"><hi rendition="#smaller">Die Auszüge müssen spätestens Mitte April fertig vorgelegen haben, denn Leibniz teilte
+<index indexName="Personen"><term><hi rendition="#g #smaller">Schmidt</hi> <hi rendition="#smaller">(Schmidius), Johann Andreas 1652–1726</hi></term></index>Schmidt
+am 29. April mit, dass die daraus hervorgegangene Rezension (N. <ref corresp="L_section_772.xml#RK61042"/>) bereits an
+<index indexName="Personen"><term><hi rendition="#g #smaller">Mencke</hi> <hi rendition="#smaller">(Menken, Menkenius, Menque), Otto 1644–1707</hi></term></index>O. Mencke
+abgegangen war (<ref corresp="#bib_02058"/><hi rendition="#i">LSB</hi> I, 19 N. 336, hier S. 633).
+Sie erschien anonym in den <ref corresp="#bib_01023"/><hi rendition="#i">Acta Eruditorum</hi> vom Juni 1701.</hi></p><p xml:id="Ch77.p5"><hi rendition="#smaller">Leibnizens Urteil über
+<index indexName="Personen"><term><hi rendition="#g #smaller">Parent</hi><hi rendition="#smaller">, Antoine 1666–1716</hi></term></index>Parents
+Leistung für die Stoßlehre ist nicht nur in N. <ref corresp="L_section_772.xml#RK61042"/>, sondern auch in späteren Briefen an
+<index indexName="Personen"><term><hi rendition="#g #smaller">Bernoulli</hi><hi rendition="#smaller">, Johann 1667–1748</hi></term></index>Johann Bernoulli festgehalten.
+<index indexName="Personen"><term><hi rendition="#g #smaller">Parent</hi><hi rendition="#smaller">, Antoine 1666–1716</hi></term></index>Parent
+sah sein Hauptergebnis darin, jede Art von Stoß
+„auf das Gleichgewicht reduziert” zu haben, d. h. auf einen geraden zentralen Stoß,
+in dem die Geschwindigkeiten sich reziprok zu den Massen verhalten
+(<ref corresp="#bib_01500"/><hi rendition="#i">Élémens</hi>, Preface, S. [1]).
+Der Beweis
+(<ref corresp="#bib_01500"/>Pars I, chap. XIII) beruht auf dem Prinzip, dass der gerade zentrale Stoß zweier Körper
+nur von ihrer relativen Geschwindigkeit abhängt und dass die Stoßphänomene, abzüglich der gemeinsamen Bewegung des Systems, gleich bleiben.
+Dies verdeutlicht er durch die Analogie des Zusammenstoßes zweier Kugeln auf einem fahrenden Schiff, der vom Ufer aus betrachtet wird (S. [5]).
+Für Leibniz, der in N. <ref corresp="L_section_771.xml#RK55822"/> alle diese Stellen exzerpiert hat, ist dieser Ansatz, wie auch die Ergebnisse und die Schiffsanalogie,
+vor allem mit <index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens fest assoziiert,
+obwohl dessen einschlägige Schriften zu seinen Lebzeiten unveröffentlicht blieben
+und die Abhandlung <ref corresp="#bib_00530"/><hi rendition="#i">De motu corporum ex percussione</hi> erst 1703,
+nach <index indexName="Personen"><term><hi rendition="#g #smaller">Parent</hi><hi rendition="#smaller">, Antoine 1666–1716</hi></term></index>Parents <hi rendition="#i">Élémens</hi>, erschien
+(<index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index><hi rendition="#k">C. Huygens</hi>, <ref corresp="#bib_02076"/><hi rendition="#i">Opuscula postuma</hi>, 1703, S. 367–398, bes. S. 370);
+siehe dazu die editorische Vorbemerkung zu N <ref corresp="L_chapter_48.xml#RK57269"/>.
+<index indexName="Personen"><term><hi rendition="#g #smaller">Parent</hi><hi rendition="#smaller">, Antoine 1666–1716</hi></term></index>Parent behauptet in der Vorrede (S. [3f.]),
+er habe seine Ergebnisse selbständig erreicht und
+erst nach Vollendung der Abhandlung von den Arbeiten
+<index indexName="Personen"><term><hi rendition="#g #smaller">Wallis</hi> <hi rendition="#smaller">(Wallisius), John 1616–1703</hi></term></index>Wallis’,
+<index indexName="Personen"><term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term></index>Mariottes und
+<index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens’
+erfahren.
+In der Rezension beurteilt Leibniz
+<index indexName="Personen"><term><hi rendition="#g #smaller">Parent</hi><hi rendition="#smaller">, Antoine 1666–1716</hi></term></index>Parents Unabhängigkeitsanspruch
+nicht, sondern stellt lediglich fest, dass er in seinen Thesen über den geraden Stoß
+„non dissentit quoad conclusiones ab iis, quae <index indexName="Personen"><term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term></index>Mariottus aliique dedere” (siehe <ref corresp="L_section_772.xml#RK61042"/>, S. <ref corresp="L_section_772.xml#AE_1701_252-256_2a"/>).
+Allerdings scheint Leibniz um 1704 an die Abhängigkeit
+<index indexName="Personen"><term><hi rendition="#g #smaller">Parent</hi><hi rendition="#smaller">, Antoine 1666–1716</hi></term></index>Parents von <index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens’ Methode zu glauben,
+wenn er <index indexName="Personen"><term><hi rendition="#g #smaller">Bernoulli</hi><hi rendition="#smaller">, Johann 1667–1748</hi></term></index>Johann Bernoulli
+die <ref corresp="#bib_01500"/><hi rendition="#i">Élémens</hi> empfiehlt:
+„librum Dn. Parent Galli quem inscripsit
+<pb type="L"/><hi rendition="#i">Elemens de Mecanique et de physique</hi>, sed in quo tantum Leges motus ex Hugeniano principio (navis scilicet) deduxit” (Brief vom 25. März 1704, Basel <hi rendition="#i">Universitätsbibl</hi>. L Ia 19 Bl. 221–222).
+In seinem Schreiben vom 2. Mai 1704 vermutet er bei Parent sogar ein Plagiat der
+<index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens’schen Ergebnisse, die zwar um 1700 noch nicht veröffentlicht vorlagen,
+über die aber der Autor in der <hi rendition="#i">Académie des Sciences</hi> vorgetragen hatte:
+„…librum Dni Parent Academiae Regiae Gallicae Socii, inscriptum <hi rendition="#i">Elemens de Mathematique et de Physique</hi>, Paris 1700 editum ubi tamen non nisi de motus Legibus agit, ex Hugeniano plane principio, quod suspicor ipsi innotuisse ex iis quae Hugenius forte Parisiis olim communicavit Academiae, et Parentius reperire potuit in Academiae schedis aut ex relatu habere” (Basel <hi rendition="#i">Universitätsbibl</hi>. L Ia 19 Bl. 223–224; beide Briefe erscheinen in <hi rendition="#i">LSB</hi> III, 9).</hi></p></div><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_771.xml" xpointer="Ch77.S1" parse="xml"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="L_section_772.xml" xpointer="Ch77.S2" parse="xml"/></div></body>
+  </text>
+</TEI>
