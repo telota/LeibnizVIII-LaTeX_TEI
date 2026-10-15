@@ -1,0 +1,2264 @@
+
+
+
+
+\let\oldcite\cite
+\let\oldnocite\nocite
+\let\cite\notecite			%
+
+\makeatletter			%
+\protected\def\abx@missing#1{}
+\makeatother
+  
+
+
+
+\renewcommand*{\bibfont}{\footnotesize}		%
+
+\DeclareFieldFormat{labelnumberwidth}{#1.}	%
+\DeclareFieldFormat{shorthandwidth}{#1.}
+\setlength{\biblabelsep}{5pt}		%
+
+\patchcmd{\bibsetup}{\interlinepenalty=5000}{\interlinepenalty=1000}{}{}
+
+
+
+
+\begin{filecontents*}[overwrite]{lsb-entrytypes.dbx}
+\DeclareDatamodelFields[type=field, datatype=literal]{%
+  author-is-anonymous,
+  author-addon,				%
+  lsb-volume,
+  lsb-number,
+  lsb-subnumber,
+  also-in-lsb-volume,
+  also-in-lsb-number,
+  also-in-lsb-subnumber,
+  other-ed-title,
+  other-ed-volume,
+  other-ed-number,
+  other-ed-subnumber,
+  also-in-other-ed-title,
+  also-in-other-ed-volume,
+  also-in-other-ed-number,
+  also-in-other-ed-subnumber,
+  editor-as-institution,			%
+  other-ed-editor-as-institution,
+  also-in-other-ed-institution,
+  visible-date,				%
+  force-title,				%
+  beilage-title,				%
+  title-in-lsb,				%
+  title-in-other-ed,			%
+  editor-is-anonymous,
+  editor-addon,				%
+  bookeditor-addon,			%
+  reviewed-work,			%
+  reviewed-work-edition,
+  reviewed-author-is-anonymous,
+  reviewed-work-addon,
+  second-reviewed-work, 		%
+  second-reviewed-work-edition,
+  second-reviewed-author-is-anonymous,
+  second-reviewed-work-addon,
+  excerpted-work,			%
+  excerpted-work-edition,
+  excerpted-author-is-anonymous,
+  excerpted-work-addon,
+  second-excerpted-work,
+  second-excerpted-work-edition,
+  second-excerpted-author-is-anonymous,
+  second-excerpted-work-addon,
+  journal-number,
+  journal-number-addon,
+  journal-number-part-two,
+  journal-number-part-two-addon,
+  journal-number-part-three,
+  journal-number-part-three-addon,
+  edition-one-addon,			%
+  edition-two-addon,			%
+  edition-three-addon,
+  edition-four-addon,
+  edition-two-ordinal,			%
+  edition-three-ordinal,
+  edition-four-ordinal,
+  edition-two-volumes,  
+  edition-three-volumes,  
+  edition-four-volumes,  
+  pages-addon,
+  pages-part-two-addon,
+  pages-part-three-addon,
+  lsb-pages-addon,
+  also-in-lsb-pages-addon,
+  other-ed-pages-addon,
+  also-in-other-ed-pages-addon,
+  hat-dubletten,
+  ist-dublette-von,
+  bearbeitet}                          %
+\DeclareDatamodelFields[type=list, datatype=literal]{%
+  reviewed-work-location,
+  second-reviewed-work-location,
+  excerpted-work-location,
+  second-excerpted-work-location,
+  other-ed-location,
+  also-in-other-ed-location,
+  edition-two-location,		%
+  edition-three-location,
+  edition-four-location,
+  reprint-location}
+\DeclareDatamodelFields[type=field, datatype=range]{%
+  pages-part-two,
+  pages-part-three,
+  lsb-pages,
+  also-in-lsb-pages,
+  other-ed-pages,
+  also-in-other-ed-pages}
+\DeclareDatamodelFields[type=field, datatype=date]{%
+  reviewedworkdate,
+  secondreviewedworkdate,
+  excerptedworkdate,
+  secondexcerptedworkdate,
+  othereditiondate,
+  alsoinothereditiondate,
+  editiontwodate,			%
+  editionthreedate,
+  editionfourdate,
+  parttwodate,			%
+  partthreedate,			%
+  reprintdate}                         %
+\DeclareDatamodelFields[type=list, datatype=name]{%
+  correspondent,                       %
+  reviewed-author,                     %
+  second-reviewed-author,              %
+  excerpted-author,                    %
+  second-excerpted-author,                    %
+  respondent,				%
+  other-ed-editor,
+  also-in-other-ed-editor,
+  other-ed-author,			%
+  also-in-other-ed-author,
+  bookeditor,				%
+  redactor}                            %
+\DeclareDatamodelEntrytypes{lsb-brief}
+\DeclareDatamodelEntryfields[lsb-brief]{%
+  correspondent,
+  visible-date,
+  lsb-volume,
+  lsb-number,
+  lsb-subnumber,
+  lsb-pages,
+  lsb-pages-addon,
+  force-title}
+\DeclareDatamodelEntrytypes{lsb-beilage-brief}
+\DeclareDatamodelEntryfields[lsb-beilage-brief]{%
+  beilage-title,                       %
+  correspondent,
+  visible-date,
+  lsb-volume,
+  lsb-number,
+  lsb-subnumber,
+  lsb-pages,
+  lsb-pages-addon,
+  force-title}
+\DeclareDatamodelEntrytypes{lsb-stueck}
+\DeclareDatamodelEntryfields[lsb-stueck]{%
+  visible-date,
+  lsb-volume,
+  lsb-number,
+  lsb-subnumber,
+  lsb-pages,
+  lsb-pages-addon,
+  force-title}
+\DeclareDatamodelEntrytypes{lsb-auszug}
+\DeclareDatamodelEntryfields[lsb-auszug]{%
+  author,
+  title-in-lsb,                        %
+  date,
+  visible-date,
+  excerpted-author,
+  excerpted-author-is-anonymous,
+  excerpted-work,
+  excerpted-work-location,
+  excerptedworkdate,
+  excerpted-work-edition, 
+  excerpted-work-addon,
+  second-excerpted-author,
+  second-excerpted-author-is-anonymous,
+  second-excerpted-work-addon,
+  second-excerpted-work,
+  second-excerpted-work-location,
+  secondexcerptedworkdate,
+  second-excerpted-work-edition,
+  lsb-volume,
+  lsb-number,
+  lsb-subnumber,
+  lsb-pages,
+  lsb-pages-addon,
+  force-title}
+\DeclareDatamodelEntrytypes{other-edition-brief}
+\DeclareDatamodelEntryfields[other-edition-brief]{%
+  correspondent,
+  visible-date,
+  other-ed-title,
+  other-ed-editor,
+  other-ed-editor-as-institution,
+  other-ed-author,
+  other-ed-location,
+  othereditiondate,
+  other-ed-volume,
+  other-ed-number,
+  other-ed-subnumber,
+  other-ed-pages,
+  other-ed-pages-addon,
+  force-title}
+\DeclareDatamodelEntrytypes{other-edition-stueck}
+\DeclareDatamodelEntryfields[other-edition-stueck]{%
+  visible-date,
+  other-ed-title,
+  other-ed-editor,
+  other-ed-editor-as-institution,
+  other-ed-author,
+  other-ed-location,
+  othereditiondate,
+  other-ed-volume,
+  other-ed-number,
+  other-ed-subnumber,
+  other-ed-pages,
+  other-ed-pages-addon,
+  force-title}
+\DeclareDatamodelEntrytypes{other-edition-auszug}
+\DeclareDatamodelEntryfields[other-edition-auszug]{%
+  author,
+  title-in-other-ed,                   %
+  date,
+  visible-date,
+  excerpted-author,
+  excerpted-author-is-anonymous,
+  excerpted-work,
+  excerpted-work-location,
+  excerptedworkdate,
+  excerpted-work-edition,
+  excerpted-work-addon,
+  second-excerpted-author,
+  second-excerpted-author-is-anonymous,
+  second-excerpted-work-addon,
+  second-excerpted-work,
+  second-excerpted-work-location,
+  secondexcerptedworkdate,
+  second-excerpted-work-edition,
+  other-ed-title,
+  other-ed-editor,
+  other-ed-editor-as-institution,
+  other-ed-author,
+  other-ed-location,
+  othereditiondate,
+  other-ed-volume,
+  other-ed-number,
+  other-ed-subnumber,
+  other-ed-pages,
+  other-ed-pages-addon,
+  force-title}
+\DeclareDatamodelEntrytypes{periodical}
+\DeclareDatamodelEntryfields[periodical]{%
+  title,
+  titleaddon,
+  location,
+  date,
+  editor}
+\DeclareDatamodelEntrytypes{periodical-stueck}
+\DeclareDatamodelEntryfields[periodical-stueck]{%
+  visible-date,
+  journal,
+  journal-number,
+  journal-number-addon,
+  journaltitleaddon,
+  editor,
+  pages,
+  parttwodate,				%
+  journal-number-part-two,		%
+  pages-part-two,			%
+  pages-part-two-addon,		%
+  partthreedate,				%
+  journal-number-part-three,
+  pages-part-three,			
+  pages-part-three-addon,
+  force-title}
+\DeclareDatamodelEntrytypes{stueck-in-book}
+\DeclareDatamodelEntryfields[stueck-in-book]{%
+  visible-date,
+  editor,
+  bookeditor,
+  bookeditor-addon,
+  pages,
+  force-title}
+\DeclareDatamodelEntrytypes{review}
+\DeclareDatamodelEntryfields[review]{%
+  author,
+  date,
+  journal,
+  pages,
+  reviewed-author,
+  reviewed-author-is-anonymous,
+  reviewed-work,
+  reviewed-work-location,
+  reviewedworkdate,
+  reviewed-work-edition,
+  reviewed-work-addon,
+  second-reviewed-author,
+  second-reviewed-author-is-anonymous,
+  second-reviewed-work,
+  second-reviewed-work-addon,
+  second-reviewed-work-location,
+  secondreviewedworkdate,
+  second-reviewed-work-edition,
+  force-title}
+\DeclareDatamodelEntrytypes{edition}
+\DeclareDatamodelEntryfields[edition]{%
+  author,
+  title,
+  editor,                              	%
+  editor-as-institution,		%
+  volumes,
+  location,
+  date}
+\DeclareDatamodelEntrytypes{manuscript}
+\DeclareDatamodelEntryfields[manuscript]{%
+  author,
+  title,
+  date,
+  visible-date,
+  force-title}
+\DeclareDatamodelEntrytypes{dissertation-neuzeit}
+\DeclareDatamodelEntryfields[dissertation-neuzeit]{%
+  author,
+  title,
+  respondent,				%
+  editor,
+  volumes,
+  location,
+  date}
+\DeclareDatamodelEntryfields{%
+  author-is-anonymous,
+  author-addon,				%
+  titleaddon,
+  redactor,
+  editor-is-anonymous,
+  editor-addon,                        	%
+  reprint-location,
+  reprintdate,
+  pages-addon,
+  addendum,
+  hat-dubletten,
+  ist-dublette-von,
+  bearbeitet}
+\DeclareDatamodelEntryfields[article,book,review,dissertation-neuzeit,periodical-stueck,stueck-in-book]{%
+  also-in-lsb-volume,                  %
+  also-in-lsb-number,
+  also-in-lsb-subnumber,
+  also-in-lsb-pages,
+  also-in-lsb-pages-addon,
+  also-in-other-ed-title,               %
+  also-in-other-ed-editor,    
+  also-in-other-ed-author,
+  also-in-other-ed-institution,
+  also-in-other-ed-location,
+  alsoinothereditiondate,           
+  also-in-other-ed-volume,
+  also-in-other-ed-number,
+  also-in-other-ed-subnumber,
+  also-in-other-ed-pages,
+  also-in-other-ed-pages-addon}
+\DeclareDatamodelEntryfields[book]{%
+ volumes}
+\DeclareDatamodelEntryfields[inbook]{%
+ bookeditor,
+ bookeditor-addon}
+\DeclareDatamodelEntryfields[book,collection]{%
+  edition-one-addon,		%
+  edition-two-ordinal,		%
+  edition-two-volumes,
+  edition-two-location,
+  editiontwodate,	
+  edition-two-addon,
+  edition-three-ordinal,		
+  edition-three-volumes,
+  edition-three-location,	%
+  editionthreedate,
+  edition-three-addon,
+  edition-four-ordinal,		
+  edition-four-volumes,  
+  edition-four-location,  	%
+  editionfourdate,
+  edition-four-addon}
+\DeclareDatamodelEntryfields[article]{%
+  journal-number,
+  journal-number-addon,
+  journal-number-part-two,		%
+  parttwodate,				
+  pages-part-two,			
+  pages-part-two-addon,		
+  journal-number-part-three,	%
+  partthreedate,
+  pages-part-three,
+  pages-part-three-addon,
+  }
+\end{filecontents*}
+
+
+
+
+
+
+\ExecuteBibliographyOptions{date=long}	%
+
+\DeclareFieldFormat{date}{%
+\iffieldequalstr{endyear}{}{\printfield{year}\addnbthinspace ff\adddot}{#1}}	
+
+\DeclareFieldFormat{parttwodate}{\mkbibparens{#1}}
+\DeclareFieldFormat{partthreedate}{\mkbibparens{#1}}
+
+
+\DefineBibliographyStrings{ngerman}{
+  january		= {Januar},
+  february		= {Februar},
+  march		= {März},
+  april		= {April},
+  may		= {Mai},
+  june		= {Juni},
+  july			= {Juli},
+  august		= {August},
+  september	= {September},
+  october 		= {Oktober},
+  november	= {November},
+  december	= {Dezember}}
+
+
+
+\ExecuteBibliographyOptions{%
+maxbibnames=99,		%
+giveninits=true}			%
+
+
+\DeclareNameAlias{author}{family-given}		%
+\DeclareNameAlias{bookauthor}{given-family}	%
+
+\ExecuteBibliographyOptions{useprefix=true}	%
+\DeclareSortingNamekeyTemplate{	%
+  \keypart{\namepart{family}}
+  \keypart{\namepart{prefix}}
+  \keypart{\namepart{given}}
+  \keypart{\namepart{suffix}}}
+\renewbibmacro{begentry}{\midsentence}
+
+
+\renewcommand\bibnamedelimd{\addhighpenspace}
+
+\renewcommand\bibinitdelim{\addnbthinspace}
+
+
+\renewcommand*\mkbibcompletename{\ifcurrentname{correspondent}{}{\textsc}}
+
+
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map{
+    \step[fieldsource=author, match={Bernoulli, Ja(c|k)ob}, final]
+    \step[fieldset=keywords, fieldvalue=ante-Leibniz]}
+  \map{
+    \step[fieldsource=author, match={Bernoulli, Ja(c|k)ob}, replace={family=Bernoulli, given=Jacob, given-i={Jacob}}]}
+  \map[overwrite, foreach={
+correspondent,
+editor,
+reviewed-author,
+second-reviewed-author,
+excerpted-author,
+second-excerpted-author,
+respondent,
+other-ed-editor,
+also-in-other-ed-editor,
+other-ed-author,
+also-in-other-ed-author,
+bookauthor
+}]{
+\step[fieldsource=\regexp{$MAPLOOP}, match={Bernoulli, Ja(c|k)ob}, replace={family=Bernoulli, given=Jacob, given-i={Jacob\\nopunct}}]}
+}}
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map{
+    \step[fieldsource=author, match={Bernoulli, Johann}, final]
+    \step[fieldset=keywords, fieldvalue=ante-Leibniz]}
+  \map{
+    \step[fieldsource=author, match={Bernoulli, Johann}, replace={family=Bernoulli, given=Johann, given-i={Johann}}]}
+  \map[overwrite, foreach={
+correspondent,
+editor,
+reviewed-author,
+second-reviewed-author,
+excerpted-author,
+second-excerpted-author,
+respondent,
+other-ed-editor,
+also-in-other-ed-editor,
+other-ed-author,
+also-in-other-ed-author,
+bookauthor
+}]{
+\step[fieldsource=\regexp{$MAPLOOP}, match={Bernoulli, Johann}, replace={family=Bernoulli, given=Johann, given-i={Johann\\nopunct}}]}
+}}
+
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map{
+    \step[fieldsource=author, match={Leibniz, Johann Friedrich}, final]
+    \step[fieldset=keywords, fieldvalue=post-Leibniz]}
+  \map{
+    \step[fieldsource=author, match={Leibniz, Johann Friedrich}, replace={family=Leibniz, given=Johann Friedrich, given-i={Johann Friedrich}}]
+    \step[fieldsource=correspondent, match={Leibniz, Johann Friedrich}, replace={family=Leibniz, given=Johann Friedrich, given-i={Johann Friedrich\\nopunct}}]
+}}}
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map{
+    \step[fieldsource=author, match={Marchetti, Alessandro}, final]
+    \step[fieldset=keywords, fieldvalue=post-Leibniz]}
+  \map{
+    \step[fieldsource=author, match={Marchetti, Alessandro}, replace={family=Marchetti, given=Alessandro, given-i={Alessandro}}]}
+  \map[overwrite, foreach={
+correspondent,
+editor,
+reviewed-author,
+second-reviewed-author,
+excerpted-author,
+second-excerpted-author,
+respondent,
+other-ed-editor,
+also-in-other-ed-editor,
+other-ed-author,
+also-in-other-ed-author,
+bookauthor
+}]{
+\step[fieldsource=\regexp{$MAPLOOP}, match={Marchetti, Alessandro}, replace={family=Marchetti, given=Alessandro, given-i={Alessandro}}]}
+}}
+
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map{
+    \step[fieldsource=author, match={Marchetti, Angelo}, final]
+    \step[fieldset=keywords, fieldvalue=post-Leibniz]}
+  \map{
+    \step[fieldsource=author, match={Marchetti, Angelo}, replace={family=Marchetti, given=Angelo, given-i={Angelo}}]}
+  \map[overwrite, foreach={
+correspondent,
+editor,
+reviewed-author,
+second-reviewed-author,
+excerpted-author,
+second-excerpted-author,
+respondent,
+other-ed-editor,
+also-in-other-ed-editor,
+other-ed-author,
+also-in-other-ed-author,
+bookauthor
+}]{
+\step[fieldsource=\regexp{$MAPLOOP}, match={Marchetti, Angelo}, replace={family=Marchetti, given=Angelo, given-i={Angelo}}]}
+}}
+
+
+
+
+\DeclareListFormat{correspondent}{%
+#1\ifthenelse{\value{listcount}<\value{liststop}}{\addcomma\space}{}}
+
+\DeclareListFormat{excerpted-author}{%
+#1\ifthenelse{\value{listcount}<\value{liststop}}{\addcomma\space}{}}
+
+\DeclareListFormat{second-excerpted-author}{%
+#1\ifthenelse{\value{listcount}<\value{liststop}}{\addcomma\space}{}}
+
+\DeclareListFormat{reviewed-author}{%
+#1\ifthenelse{\value{listcount}<\value{liststop}}{\addcomma\space}{}}
+
+\DeclareListFormat{second-reviewed-author}{%
+#1\ifthenelse{\value{listcount}<\value{liststop}}{\addcomma\space}{}}
+
+
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map{
+    \step[fieldsource=author-is-anonymous, match={1}, final] %
+    \step[fieldset=author, fieldvalue={Anonym}]}	%
+  \map{
+    \step[fieldsource=author, match={Anonym}, final] %
+    \step[fieldset=sortname, fieldvalue={000}]	%
+    \step[fieldset=author-is-anonymous, fieldvalue={1}]	%
+}}}
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map{
+    \step[notfield=author, final] 		%
+    \step[fieldsource=title]			%
+    \step[fieldset=sorttitle, origfieldval]
+}}}
+
+\newbibmacro*{anon-author}[1]{%
+\iffieldequalstr{fullhash}{f8c427fa3c9be2de5ce9b3e50e6cf886}%
+{\mkbibbrackets{#1}}			%
+{#1}}
+\newbibmacro*{anon-zusatz}{%
+\ifboolexpr{%
+test {\iffieldequalstr{fullhash}{f8c427fa3c9be2de5ce9b3e50e6cf886}}%
+or
+not test {\iffieldequalstr{author-is-anonymous}{1}}}	%
+{}{%
+\setunit{\addspace}%
+\printtext{\mkbibbrackets{anonym}}}}
+
+\ExecuteBibliographyOptions{pagetracker=page}	%
+\makeatletter
+\InitializeBibliographyStyle{%
+  \global\undef\bbx@lasthash}
+\newbibmacro*{bbx:savehash}{%
+  \savefield{fullhash}{\bbx@lasthash}}
+\newbibmacro*{bbx:dashcheck}[2]{%
+  \ifboolexpr{test {\iffieldequals{fullhash}{\bbx@lasthash}}}	%
+{\iffirstonpage		%
+{\mkbibparens{#2}}	%
+{#1}}				%
+{#2}}				%
+\makeatother
+
+\DeclareFieldFormat{author-addon}{\def\tmpstringauthoraddon##1##2{%
+\ifboolexpr{test {\ifstrequal{##1}{[}} or test {\ifstrequal{##1}{\lbrack}} or test {\ifstrequal{##1}{(}}}%
+{##1##2}{\unspace\nopunct\space##1##2}}\expandafter\tmpstringauthoraddon#1}	%
+
+
+
+\DeclareFieldFormat[article,incollection,thesis]{title}{\mkbibemph{#1}\isdot}
+\DeclareFieldFormat[inbook]{title}{#1}   			%
+
+\DeclareFieldFormat[lsb-stueck]{title}{\mkbibemph{#1}\isdot}
+\DeclareFieldFormat[lsb-beilage-brief]{beilage-title}{\mkbibemph{#1}\isdot}
+\DeclareFieldFormat[other-edition-stueck]{title}{\mkbibemph{#1}\isdot}
+\DeclareFieldFormat[periodical-stueck]{title}{\mkbibemph{#1}\isdot}
+\DeclareFieldFormat[stueck-in-book]{title}{\mkbibemph{#1}\isdot}
+
+\DeclareFieldFormat{title-in-lsb}{\mkbibemph{#1}\isdot}	%
+\DeclareFieldFormat{title-in-other-ed}{\mkbibemph{#1}\isdot}
+
+\DeclareFieldFormat[review]{title}{#1\isdot}
+
+\DeclareFieldFormat{force-title}{#1\isdot}	%
+
+
+\DeclareFieldFormat{reviewed-work-addon}{\def\tmpstringreviewedworkaddon##1##2{%
+\ifboolexpr{test {\ifstrequal{##1}{[}} or test {\ifstrequal{##1}{\lbrack}} or test {\ifstrequal{##1}{(}}}%
+{##1##2}{\unspace\addcomma\space##1##2}}\expandafter\tmpstringreviewedworkaddon#1}
+\DeclareFieldFormat{second-reviewed-work-addon}{\def\tmpstringsecondreviewedworkaddon##1##2{%
+\ifboolexpr{test {\ifstrequal{##1}{[}} or test {\ifstrequal{##1}{\lbrack}} or test {\ifstrequal{##1}{(}}}%
+{##1##2}{\unspace\addcomma\space##1##2}}\expandafter\tmpstringsecondreviewedworkaddon#1}
+
+\DeclareFieldFormat{excerpted-work-addon}{\def\tmpstringexcerptedworkaddon##1##2{%
+\ifboolexpr{test {\ifstrequal{##1}{[}} or test {\ifstrequal{##1}{\lbrack}} or test {\ifstrequal{##1}{(}}}%
+{##1##2}{\unspace\addcomma\space##1##2}}\expandafter\tmpstringexcerptedworkaddon#1}
+\DeclareFieldFormat{second-excerpted-work-addon}{\def\tmpstringsecondexcerptedworkaddon##1##2{%
+\ifboolexpr{test {\ifstrequal{##1}{[}} or test {\ifstrequal{##1}{\lbrack}} or test {\ifstrequal{##1}{(}}}%
+{##1##2}{\unspace\addcomma\space##1##2}}\expandafter\tmpstringsecondexcerptedworkaddon#1}
+
+
+
+  \renewbibmacro*{journal}{%
+  \ifboolexpr{
+    test {\iffieldundef{journaltitle}}
+    and
+    test {\iffieldundef{journalsubtitle}}}{}
+    {\printtext[journaltitle]{%
+       \printfield[titlecase]{journaltitle}%
+       \setunit{\subtitlepunct}%
+       \printfield[titlecase]{journalsubtitle}}}%
+     \setunit{\addspace}%
+    \printfield{journaltitleaddon}}
+    
+\DeclareFieldFormat{journaltitleaddon}{\def\tmpstringjournaltitleaddon##1##2{%
+\ifboolexpr{test {\ifstrequal{##1}{[}} or test {\ifstrequal{##1}{\lbrack}} or test {\ifstrequal{##1}{(}}}%
+{##1##2}{\unspace\addperiod\space##1##2}}\expandafter\tmpstringjournaltitleaddon#1}
+
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex,overwrite=true]{
+    \map{
+      \pertype{article}
+      \pertype{periodical-stueck}
+      \pertype{review}
+      \step[fieldsource=journal-number,fieldtarget=number]
+      }}}
+      
+      
+
+\DeclareFieldFormat{lsb-volume}{\mkbibemph{LSB}~#1}
+\DeclareFieldFormat{lsb-number}{N.\addnbspace#1}
+\DeclareFieldFormat{lsb-subnumber}{\textsubscript{#1}}
+
+\DeclareFieldFormat{also-in-lsb-volume}{\mkbibemph{LSB}~#1}
+\DeclareFieldFormat{also-in-lsb-number}{N.\addnbspace#1}
+\DeclareFieldFormat{also-in-lsb-subnumber}{\textsubscript{#1}}
+
+\DeclareFieldFormat{other-ed-title}{\mkbibemph{#1}}
+\DeclareFieldFormat{other-ed-number}{Nr.\addnbspace#1}
+\DeclareFieldFormat{other-ed-subnumber}{\adddot#1}
+
+\DeclareFieldFormat{also-in-other-ed-title}{\mkbibemph{#1}}
+\DeclareFieldFormat{also-in-other-ed-number}{Nr.\addnbspace#1}
+\DeclareFieldFormat{also-in-other-ed-subnumber}{\adddot{#1}}
+
+\DeclareFieldFormat{excerpted-work}{\mkbibemph{#1}}
+\DeclareFieldFormat{excerpted-work-edition}{%
+	\ifinteger{#1}{\mkbibordedition{#1}~\bibstring{edition}}{#1\isdot}}
+
+\DeclareFieldFormat{second-excerpted-work}{\mkbibemph{#1}}
+\DeclareFieldFormat{second-excerpted-work-edition}{%
+	\ifinteger{#1}{\mkbibordedition{#1}~\bibstring{edition}}{#1\isdot}}
+
+\DeclareFieldFormat{reviewed-work}{\mkbibemph{#1}}
+\DeclareFieldFormat{reviewed-work-edition}{%
+  \ifinteger{#1}{\mkbibordedition{#1}~\bibstring{edition}}{#1\isdot}}
+
+\DeclareFieldFormat{second-reviewed-work}{\mkbibemph{#1}}
+\DeclareFieldFormat{second-reviewed-work-edition}{%
+  \ifinteger{#1}{\mkbibordedition{#1}~\bibstring{edition}}{#1\isdot}}
+
+\DeclareFieldFormat{edition-two-ordinal}{%
+  \ifinteger{#1}{\mkbibordedition{#1}~\bibstring{edition}}{#1\isdot}}
+\DeclareFieldFormat{edition-three-ordinal}{%
+  \ifinteger{#1}{\mkbibordedition{#1}~\bibstring{edition}}{#1\isdot}}
+\DeclareFieldFormat{edition-four-ordinal}{%
+  \ifinteger{#1}{\mkbibordedition{#1}~\bibstring{edition}}{#1\isdot}}
+
+\DeclareFieldFormat{edition-two-volumes}{#1~\bibstring{volumes}}
+\DeclareFieldFormat{edition-three-volumes}{#1~\bibstring{volumes}}
+\DeclareFieldFormat{edition-four-volumes}{#1~\bibstring{volumes}}
+
+
+\DeclareFieldFormat{pages}{S.\;%
+\ifnumequal{2}{\frangelen{pages}}{\mkfirstpage{#1}\addnbthinspace f\adddot}{#1}}
+
+\DeclareFieldFormat{pages-part-two}{S.\;%
+\ifnumequal{2}{\frangelen{pages}}{\mkfirstpage{#1}\addnbthinspace f\adddot}{#1}}
+
+\DeclareFieldFormat{pages-part-three}{S.\;%
+\ifnumequal{2}{\frangelen{pages}}{\mkfirstpage{#1}\addnbthinspace f\adddot}{#1}}
+
+\DeclareFieldFormat{lsb-pages}{S.\;%
+\ifnumequal{2}{\frangelen{lsb-pages}}{\mkfirstpage{#1}\addnbthinspace f\adddot}{#1}}
+
+\DeclareFieldFormat{also-in-lsb-pages}{S.\;%
+\ifnumequal{2}{\frangelen{also-in-lsb-pages}}{\mkfirstpage{#1}\addnbthinspace f\adddot}{#1}}
+
+\DeclareFieldFormat{other-ed-pages}{S.\;%
+\ifnumequal{2}{\frangelen{other-ed-pages}}{\mkfirstpage{#1}\addnbthinspace f\adddot}{#1}}
+
+\DeclareFieldFormat{also-in-other-ed-pages}{S.\;%
+\ifnumequal{2}{\frangelen{also-in-other-ed-pages}}{\mkfirstpage{#1}\addnbthinspace f\adddot}{#1}}
+
+
+\DefineBibliographyStrings{ngerman}{
+  edition		= {Ausg.},
+  reviewof		= {Rezension zu},		%
+  phdthesis        = {Dissertation},
+  byeditor		= {hrsg\adddot\addnbthinspace v.},		
+  byredactor	= {bearb\adddot\addnbthinspace v.}}
+
+
+
+
+\makeatletter
+\renewbibmacro*{author}{%
+  \ifboolexpr{test \ifuseauthor
+    and not test {\ifnameundef{author}}}%
+    {\usebibmacro{bbx:dashcheck}{%
+	{\mbox{\textemdash\textemdash}}}%
+       {\usebibmacro{anon-author}%
+       {\printnames{author}}%
+        \setunit{\printdelim{authortypedelim}}%
+        \usebibmacro{bbx:savehash}}%
+        \usebibmacro{anon-zusatz}%
+        \setunit{\addspace}%
+        \printfield{author-addon}%
+    \printdelim{nametitledelim}%
+     \usebibmacro{authorstrg}}%
+    {\global\undef\bbx@lasthash}}
+\makeatother
+
+
+\newbibmacro*{byredactor}{%
+  \ifnameundef{redactor}{}
+  {\usebibmacro{bytypestrg}{redactor}{redactor}%
+  \setunit{\addspace}%
+  \printnames[byeditor]{redactor}%
+  \newunit}}
+
+\newbibmacro*{bybookeditor}{%
+  \ifnameundef{bookeditor}{}
+  {\usebibmacro{bytypestrg}{editor}{bookeditor}%
+  \setunit{\addspace}%
+  \printnames[byeditor]{bookeditor}%
+  \newunit}}
+  
+  
+\newbibmacro*{anon-editor}[1]{%
+\iffieldequalstr{editor-is-anonymous}{1}%
+{\printtext{\mkbibbrackets{#1}}}%
+{#1}}
+  
+\renewbibmacro*{byeditor}{%
+  \ifnameundef{editor}
+    {\iffieldundef{editor-as-institution}
+     {}
+     {\usebibmacro{bytypestrg}{editor}{editor}%
+     \setunit{\addspace}%
+     \printfield{editor-as-institution}%
+     \newunit}}%
+     {%
+     \usebibmacro{anon-editor}%
+     {\usebibmacro{bytypestrg}{editor}{editor}%
+     \setunit{\addspace}%
+     \printnames[byeditor]{editor}%
+     \newunit}}%
+  \usebibmacro{byeditorx}}
+
+
+\newbibmacro*{by-other-editor}{%
+  \ifnameundef{other-ed-editor}
+    {\iffieldundef{other-ed-editor-as-institution}
+     {}
+     {\usebibmacro{bytypestrg}{editor}{editor}%
+     \setunit{\addspace}%
+     \printfield{other-ed-editor-as-institution}%
+     \newunit}}%
+     {\usebibmacro{bytypestrg}{editor}{editor}%
+     \setunit{\addspace}%
+     \printnames[byeditor]{other-ed-editor}%
+     \newunit}%
+  \usebibmacro{byeditorx}}
+\newbibmacro*{also-by-other-editor}{%
+  \ifnameundef{also-in-other-ed-editor}
+    {\iffieldundef{also-in-other-ed-institution}
+     {}
+     {\usebibmacro{bytypestrg}{editor}{editor}%
+     \setunit{\addspace}%
+     \printfield{also-in-other-ed-institution}%
+     \newunit}}%
+     {\usebibmacro{bytypestrg}{editor}{editor}%
+     \setunit{\addspace}%
+     \printnames[byeditor]{also-in-other-ed-editor}%
+     \newunit}%
+  \usebibmacro{byeditorx}}
+  
+  
+\newbibmacro*{anon-review-author}[1]{%
+\iffieldequalstr{reviewed-author-is-anonymous}{1}%
+{\printtext{\mkbibbrackets{#1}}}%
+{#1}}
+
+\newbibmacro*{anon-second-review-author}[1]{%
+\iffieldequalstr{second-reviewed-author-is-anonymous}{1}%
+{\printtext{\mkbibbrackets{#1}}}%
+{#1}}
+
+\newbibmacro*{anon-excerpt-author}[1]{%
+\iffieldequalstr{excerpted-author-is-anonymous}{1}%
+{\printtext{\mkbibbrackets{#1}}}%
+{#1}}
+
+\newbibmacro*{anon-second-excerpt-author}[1]{%
+\iffieldequalstr{second-excerpted-author-is-anonymous}{1}%
+{\printtext{\mkbibbrackets{#1}}}%
+{#1}}
+
+
+
+\newbibmacro*{review-title}{%
+\iffieldundef{force-title}{%
+\bibstring{reviewof}%
+\addspace%
+\usebibmacro{anon-review-author}
+       {\printnames{reviewed-author}}%
+\setunit*{\addcomma\space}%
+\printfield{reviewed-work}%
+\printunit{\addcomma\space}%
+\printfield{reviewed-work-edition}%
+\newunit%
+\printlist{reviewed-work-location}%
+\setunit{\addspace}%
+\printreviewedworkdate%
+\setunit{\addspace}%
+\printfield{reviewed-work-addon}%
+\iffieldundef{second-reviewed-work}{}{%
+\setunit{\addspace}%
+\bibstring{and}%
+\setunit{\addspace}%
+\ifnamesequal{reviewed-author}{second-reviewed-author}%
+{\usebibmacro{anon-second-review-author}		
+       {\printtext{\textsc{Ders.}}}%
+\setunit*{\addcomma\space}%
+}{\usebibmacro{anon-second-review-author}		
+       {\printnames{second-reviewed-author}}}%
+\setunit*{\addcomma\space}%
+\printfield{second-reviewed-work}%
+\printunit{\addcomma\space}%
+\printfield{second-reviewed-work-edition}%
+\newunit%
+\printlist{second-reviewed-work-location}%
+\setunit{\addspace}%
+\printsecondreviewedworkdate%
+\setunit{\addspace}%
+\printfield{second-reviewed-work-addon}%
+}%
+}{\printfield{force-title}}%
+}
+
+
+\newbibmacro*{lsb-stueck-title}{%
+\iffieldundef{force-title}{%
+\printfield{title}%
+\setunit{\addspace}%
+\printfield{titleaddon}%
+\setunit{\addspace}%
+\printfield{visible-date}%
+}{\printfield{force-title}}%
+}
+
+\newbibmacro*{lsb-brief-title}{%
+\iffieldundef{force-title}{%
+\printtext{Brief an}%
+\setunit{\addspace}%
+\printnames{correspondent}%
+\setunit{\addspace}%
+\printfield{visible-date}%
+\setunit{\addspace}%
+\printfield{titleaddon}%
+}{\printfield{force-title}}%
+}
+
+\newbibmacro*{lsb-beilage-brief-title}{%
+\iffieldundef{force-title}{%
+\iffieldundef{beilage-title}{}{%
+\printfield{beilage-title}%
+\adddotspace}%
+\printtext{Beilage zum Brief an}%
+\setunit{\addspace}%
+\printnames{correspondent}%
+\setunit{\addspace}%
+\printfield{visible-date}%
+\setunit{\addspace}%
+\printfield{titleaddon}%
+}{\printfield{force-title}}%
+}
+
+\newbibmacro*{lsb-auszug-title}{%
+\iffieldundef{force-title}{%
+\iffieldundef{title-in-lsb}{%
+\printtext{Aus und zu}%
+{\addspace}%
+\usebibmacro{anon-excerpt-author}%
+       {\printnames{excerpted-author}}%
+\setunit*{\addcomma\space}%
+\printfield{excerpted-work}%
+\printunit{\addcomma\space}%
+\printfield{excerpted-work-edition}%
+\newunit%
+\printlist{excerpted-work-location}%
+\setunit{\addspace}%
+\printexcerptedworkdate%
+\setunit{\addspace}%
+\printfield{excerpted-work-addon}%
+\iffieldundef{second-excerpted-work}{}{%
+\setunit{\addspace}%
+\bibstring{and}%
+\setunit{\addspace}%
+\usebibmacro{anon-second-excerpt-author}%
+       {\printnames{second-excerpted-author}}%
+\setunit*{\addcomma\space}%
+\printfield{second-excerpted-work}%
+\printunit{\addcomma\space}%
+\printfield{second-excerpted-work-edition}%
+\newunit%
+\printlist{second-excerpted-work-location}%
+\setunit{\addspace}%
+\printsecondexcerptedworkdate%
+\setunit{\addspace}%
+\printfield{second-excerpted-work-addon}}%
+\setunit{\addspace}%
+\printfield{titleaddon}%
+\setunit{\addperiod\addspace}%
+}{%
+\printfield{title-in-lsb}%
+\adddotspace}%
+}{\printfield{force-title}%
+\setunit{\addspace}%
+}%
+\printfield{visible-date}%
+}
+
+
+\newbibmacro*{other-ed-stueck-title}{%
+\iffieldundef{force-title}{%
+\printfield{title}%
+\setunit{\addspace}%
+\printfield{visible-date}%
+}{\printfield{force-title}}%
+}
+
+\newbibmacro*{other-ed-brief-title}{%
+\iffieldundef{force-title}{%
+\printtext{Brief an}%
+\setunit{\addspace}%
+\printnames{correspondent}%
+\setunit{\addspace}%
+\printfield{visible-date}%
+}{\printfield{force-title}}%
+}
+
+\newbibmacro*{other-ed-auszug-title}{%
+\iffieldundef{force-title}{%
+\iffieldundef{title-in-other-ed}{%
+\printtext{Aus und zu}%
+\setunit{\addspace}%
+\usebibmacro{anon-excerpt-author}%
+       {\printnames{excerpted-author}}%
+\setunit*{\addcomma\space}%
+\printfield{excerpted-work}%
+\printunit{\addcomma\space}%
+\printfield{excerpted-work-edition}%
+\newunit%
+\printlist{excerpted-work-location}%
+\setunit{\addspace}%
+\printexcerptedworkdate%
+\setunit{\addspace}%
+\printfield{excerpted-work-addon}%
+\iffieldundef{second-excerpted-work}{}{%
+\setunit{\addspace}%
+\bibstring{and}%
+\setunit{\addspace}%
+\ifnamesequal{excerpted-author}{second-excerpted-author}%
+{\usebibmacro{anon-second-excerpt-author}		
+       {\printtext{\textsc{Ders.}}}%
+\setunit*{\addcomma\space}%
+}{\usebibmacro{anon-second-excerpt-author}		
+       {\printnames{second-excerpted-author}}}%
+\setunit*{\addcomma\space}%
+\printfield{second-excerpted-work-edition}%
+\newunit%
+\printlist{second-excerpted-work-location}%
+\setunit{\addspace}%
+\printsecondexcerptedworkdate%
+\setunit{\addspace}%
+\printfield{second-excerpted-work-addon}}%
+\setunit{\addspace}%
+\printfield{titleaddon}%
+\setunit{\addperiod\addspace}%
+}{%
+\printfield{title-in-other-ed}%
+\adddotspace}%
+}{\printfield{force-title}%
+\setunit{\addspace}%
+}%
+\printfield{visible-date}%
+}
+
+
+\newbibmacro*{manuscript-title}{%
+\iffieldundef{force-title}{%
+\printfield{title}%
+\setunit{\addspace}%
+\printfield{titleaddon}%
+\setunit{\addspace}%
+\printfield{visible-date}%
+}{\printfield{force-title}}%
+}
+
+
+\renewbibmacro*{title}{%
+  \ifboolexpr{
+    test {\iffieldundef{title}}
+    and
+    test {\iffieldundef{subtitle}}}{}
+    {\printtext[title]{%
+       \printfield[titlecase]{title}%
+       \setunit{\subtitlepunct}%
+       \printfield[titlecase]{subtitle}}}%
+  \setunit{\addspace}%
+  \printfield{titleaddon}}
+\DeclareFieldFormat{titleaddon}{\def\tmpstringtitleaddon##1##2{%
+\ifboolexpr{test {\ifstrequal{##1}{[}} or test {\ifstrequal{##1}{\lbrack}} or test {\ifstrequal{##1}{(}}}%
+{##1##2}{\unspace\addperiod\space##1##2}}\expandafter\tmpstringtitleaddon#1}
+
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \pertype{thesis}
+      \pertype{dissertation-heute}
+    \step[fieldset=titleaddon, fieldvalue={[Dissertation]}]
+    }}}
+
+
+\DeclareFieldFormat[lsb-stueck,other-edition-stueck,lsb-auszug,periodical-stueck,stueck-in-book]{visible-date}{\def\tmpstringdate##1##2{%
+\ifboolexpr{test {\ifstrequal{##1}{[}} or test {\ifstrequal{##1}{\lbrack}} or test {\ifstrequal{##1}{(}}}%
+{##1##2}{\unspace\addperiod\space##1##2}}\expandafter\tmpstringdate#1}
+
+
+
+
+\newbibmacro*{in-lsb}{%
+\usebibmacro{in:}%
+\printfield{lsb-volume}%
+\setunit{\addspace}%
+\printfield{lsb-number}%
+\printfield{lsb-subnumber}%
+\setunit{\addcomma\addspace}%
+\printfield{lsb-pages}%
+\setunit{\addspace}%
+\printfield{lsb-pages-addon}}
+
+\newbibmacro*{also-in-lsb}{%
+\iffieldundef{also-in-lsb-volume}{}{%
+\printtext[parens]{%
+\usebibmacro{in:}%
+\printfield{also-in-lsb-volume}%
+\setunit{\addspace}%
+\printfield{also-in-lsb-number}%
+\printfield{also-in-lsb-subnumber}%
+\setunit{\addcomma\addspace}%
+\printfield{also-in-lsb-pages}}%
+}}
+
+\newbibmacro*{in-other-ed}{%
+\usebibmacro{in:}%
+\ifnameundef{other-ed-author}{}{%
+\printnames{other-ed-author}%
+\printdelim{nametitledelim}}%
+\printfield{other-ed-title}%
+\setunit{\addcomma\addspace}%
+\usebibmacro{by-other-editor}%
+\setunit{\addcomma\addspace}%
+\printlist{other-ed-location}%
+\setunit{\addspace}%
+\printothereditiondate%
+\setunit*{\adddot\addspace}%
+\printfield{other-ed-volume}%
+\setunit{\addspace}%
+\printfield{other-ed-number}%
+\printfield{other-ed-subnumber}%
+\setunit{\addcomma\addspace}%
+\printfield{other-ed-pages}}
+
+\newbibmacro*{also-in-other-ed}{%
+\iffieldundef{also-in-other-ed-title}{}{%
+\printtext[parens]{%
+\usebibmacro{in:}%
+\ifnameundef{also-in-other-ed-author}{}{%
+\printnames{also-in-other-ed-author}%
+\printdelim{nametitledelim}}%
+\printfield{also-in-other-ed-title}%
+\printunit{\addcomma\addspace}%
+\usebibmacro{also-by-other-editor}%
+\setunit{\addcomma\addspace}%
+\printlist{also-in-other-ed-location}%
+\setunit{\addspace}%
+\printalsoinothereditiondate%
+\setunit*{\adddot\addspace}%
+\printfield{also-in-other-ed-volume}%
+\setunit{\addspace}%
+\printfield{also-in-other-ed-number}%
+\printfield{also-in-other-ed-subnumber}%
+\setunit{\addcomma\addspace}%
+\printfield{also-in-other-ed-pages}}%
+}}
+
+
+\renewbibmacro*{journal+issuetitle}{%
+  \usebibmacro{journal}%
+  \setunit*{\addspace}%
+  \iffieldundef{series}
+    {}
+    {\newunit
+     \printfield{series}%
+     \setunit{\addspace}}%
+  \printfield{number}%
+  \setunit{\addspace}%
+  \printtext[parens]{%
+    \printdate}%
+  \newunit
+  \setunit{\addspace}%
+  \printfield{journal-number-addon}%
+  \newunit%
+}
+\newbibmacro*{journal-part-two}{%
+  \setunit{\addsemicolon\addspace}%
+  \printfield{journal-number-part-two}%
+  \setunit{\addspace}%
+    \printparttwodate%
+  \setunit{\addspace}%
+  \printfield{journal-number-part-two-addon}%
+  \newunit%
+}
+\newbibmacro*{journal-part-three}{%
+  \setunit{\addsemicolon\addspace}%
+  \printfield{journal-number-part-three}%
+  \setunit{\addspace}%
+  \printpartthreedate%
+  \setunit{\addspace}%
+  \printfield{journal-number-part-three-addon}%
+  \newunit%
+}
+
+\renewbibmacro*{chapter+pages}{%
+  \printfield{chapter}%
+  \setunit{\bibpagespunct}%
+  \printfield{eid}%
+  \setunit{\bibpagespunct}%
+  \printfield{pages}%
+  \setunit{\addspace}%
+  \printfield{pages-addon}%
+  \newunit}
+\renewbibmacro*{note+pages}{%
+  \printfield{note}%
+  \setunit{\bibpagespunct}%
+  \printfield{pages}%
+  \setunit{\addspace}%
+  \printfield{pages-addon}%
+  \newunit}  
+\newbibmacro*{note+pages-part-two}{%
+  \setunit{\bibpagespunct}%
+  \printfield{pages-part-two}%
+  \setunit{\addspace}%
+  \printfield{pages-part-two-addon}%
+  \newunit}
+\newbibmacro*{note+pages-part-three}{%
+  \setunit{\bibpagespunct}%
+  \printfield{pages-part-three}%
+  \setunit{\addspace}%
+  \printfield{pages-part-three-addon}%
+  \newunit}  
+
+\newbibmacro*{in-periodical}{%
+\usebibmacro{in:}%
+\setunit{\addspace}%
+\usebibmacro{journal+issuetitle}%
+\setunit{\addcomma\addspace}%
+\usebibmacro{note+pages}%
+\usebibmacro{journal-part-two}%
+\setunit{\addcomma\addspace}%
+\usebibmacro{note+pages-part-two}%
+\usebibmacro{journal-part-three}%
+\setunit{\addcomma\addspace}%
+\usebibmacro{note+pages-part-three}%
+\setunit*{\adddot\addspace}}
+
+
+\DeclareFieldFormat{edition-one-addon}{\def\tmpstringedoneaddon##1##2{%
+\ifboolexpr{test {\ifstrequal{##1}{[}} or test {\ifstrequal{##1}{\lbrack}} or test {\ifstrequal{##1}{(}}}%
+{##1##2}{\unspace\addcomma\space##1##2}}\expandafter\tmpstringedoneaddon#1}
+\DeclareFieldFormat{edition-two-addon}{\def\tmpstringedtwoaddon##1##2{%
+\ifboolexpr{test {\ifstrequal{##1}{[}} or test {\ifstrequal{##1}{\lbrack}} or test {\ifstrequal{##1}{(}}}%
+{##1##2}{\unspace\addcomma\space##1 ##2}}\expandafter\tmpstringedtwoaddon#1}
+\DeclareFieldFormat{edition-three-addon}{\def\tmpstringedthreeaddon##1##2{%
+\ifboolexpr{test {\ifstrequal{##1}{[}} or test {\ifstrequal{##1}{\lbrack}} or test {\ifstrequal{##1}{(}}}%
+{##1##2}{\unspace\addcomma\space##1##2}}\expandafter\tmpstringedthreeaddon#1}
+\DeclareFieldFormat{edition-four-addon}{\def\tmpstringedtfouraddon##1##2{%
+\ifboolexpr{test {\ifstrequal{##1}{[}} or test {\ifstrequal{##1}{\lbrack}} or test {\ifstrequal{##1}{(}}}%
+{##1##2}{\unspace\addcomma\space##1##2}}\expandafter\tmpstringedfouraddon#1}
+
+
+
+\renewbibmacro*{location+date}{%
+  \printlist{location}%
+  \setunit*{\addspace}%
+  \usebibmacro{date}%
+  \setunit*{\addspace}%
+  \printfield{edition-one-addon}%
+  \newunit}
+
+\newbibmacro*{reprint-location+date}{%
+\iflistundef{reprint-location}{%
+  \iffieldundef{reprintyear}{}{%
+    \bibstring{reprint}%
+    \addspace%
+    \printreprintdate\newunit}%
+  }{%
+  \bibstring{reprint}%
+  \addspace%
+  \printlist{reprint-location}%
+  \addspace%
+  \printreprintdate%
+  \newunit}}
+
+\newbibmacro*{edition-two-location+date}{%
+\iffieldundef{edition-two-ordinal}{}{%
+  \printfield{edition-two-ordinal}%
+  \newunit
+  \printfield{edition-two-volumes}%
+  \newunit
+  \printlist{edition-two-location}%
+  \addspace%
+  \printeditiontwodate%
+  \setunit*{\addspace}%
+  \printfield{edition-two-addon}%
+  \newunit}}
+
+\newbibmacro*{edition-three-location+date}{%
+\iffieldundef{edition-three-ordinal}{}{%
+  \printfield{edition-three-ordinal}%
+  \newunit
+  \printfield{edition-three-volumes}%
+  \newunit
+  \printlist{edition-three-location}%
+  \addspace%
+  \printeditionthreedate%
+  \setunit*{\addspace}%
+  \printfield{edition-three-addon}%
+  \newunit}}
+
+\newbibmacro*{edition-four-location+date}{%
+\iffieldundef{edition-four-ordinal}{}{%
+  \printfield{edition-four-ordinal}%
+  \newunit
+  \printfield{edition-four-volumes}%
+  \newunit
+  \printlist{edition-four-location}%
+  \addspace%
+  \printeditionfourdate%
+  \setunit*{\addspace}%
+  \printfield{edition-four-addon}%
+  \newunit}}
+
+
+\DeclareFieldFormat{addendum}{\def\tmpstringaddendum##1##2{%
+\ifboolexpr{test {\ifstrequal{##1}{[}} or test {\ifstrequal{##1}{\lbrack}} or test {\ifstrequal{##1}{(}}}%
+{##1##2}{\unspace\addperiod\space##1##2}}\expandafter\tmpstringaddendum#1}
+
+
+\newbibmacro*{numcite}{%
+  \printtext[bibhyperref]{%
+    \printtext{SV\addnbthinspace}%
+    \printfield{labelnumber}%
+      }}
+\DeclareCiteCommand{\citeSV}[\mkbibbrackets]	%
+  {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+   \usebibmacro{numcite}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+  
+  
+
+
+\DeclareBibliographyDriver{article}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author/translator+others}%
+  \setunit{\printdelim{nametitledelim}}\newblock
+  \usebibmacro{title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  \newunit\newblock
+  \usebibmacro{bytranslator+others}%
+  \newunit\newblock
+  \printfield{version}%
+  \newunit\newblock
+  \usebibmacro{in-periodical}%
+  \newunit
+  \newunit\newblock						%
+  \usebibmacro{also-in-lsb}%
+  \newunit\newblock						%
+  \usebibmacro{also-in-other-ed}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock
+  \usebibmacro{pageref}%
+  \newunit\newblock
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyDriver{book}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \newunit\newblock
+  \usebibmacro{title}%
+  \newunit\newblock%
+  \usebibmacro{byeditor}%
+  \setunit{\addspace}%
+  \printfield{editor-addon}%
+  \newunit\newblock%
+  \usebibmacro{byredactor}%
+  \newunit\newblock
+  \printfield{edition}%
+  \newunit
+  \printfield{volumes}%
+  \newunit
+  \usebibmacro{location+date}%
+  \setunit{\addsemicolon\addspace}
+  \usebibmacro{edition-two-location+date}%
+  \setunit{\addsemicolon\addspace}
+  \usebibmacro{edition-three-location+date}%
+  \setunit{\addsemicolon\addspace}
+  \usebibmacro{edition-four-location+date}%
+  \newunit\newblock
+  \usebibmacro{reprint-location+date}%
+  \setunit{\addspace}%
+  \usebibmacro{also-in-lsb}%
+  \newunit\newblock
+  \usebibmacro{also-in-other-ed}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock
+  \usebibmacro{pageref}%
+  \newunit\newblock
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyDriver{collection}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{maintitle+title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{byeditor}%
+  \setunit{\addspace}%
+  \printfield{editor-addon}%
+  \newunit\newblock
+  \printfield{edition}%
+  \newunit
+  \iffieldundef{maintitle}
+    {\printfield{volume}%
+     \printfield{part}}
+    {}%
+  \newunit
+  \printfield{volumes}%
+  \newunit\newblock
+  \usebibmacro{series+number}%
+  \newunit\newblock
+  \printfield{note}%
+  \newunit\newblock
+  \usebibmacro{location+date}%
+  \setunit{\addsemicolon\addspace}
+  \usebibmacro{edition-two-location+date}%
+  \setunit{\addsemicolon\addspace}
+  \usebibmacro{edition-three-location+date}%
+  \setunit{\addsemicolon\addspace}
+  \usebibmacro{edition-four-location+date}%
+  \newunit\newblock
+  \usebibmacro{reprint-location+date}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock
+  \usebibmacro{pageref}%
+  \newunit\newblock
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyAlias{dissertation-heute}{thesis}
+
+
+\DeclareBibliographyDriver{dissertation-neuzeit}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \setunit{\printdelim{nametitledelim}}\newblock
+  \usebibmacro{title}%
+  \setunit*{\addspace}\newblock%
+  \printtext{\mkbibbrackets{\bibstring{phdthesis}%
+  \setunit{\addcolon\addspace}%
+  \printtext{Respondent}%
+  \setunit{\addspace}%
+  \printnames{respondent}}}
+  \newunit\newblock
+  \usebibmacro{byeditor}%
+  \setunit{\addspace}%
+  \printfield{editor-addon}%
+  \newunit\newblock
+  \printfield{volumes}%
+  \newunit\newblock
+  \printfield{note}%
+  \newunit\newblock
+  \usebibmacro{location+date}%
+  \newunit\newblock
+  \usebibmacro{reprint-location+date}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock
+  \usebibmacro{pageref}%
+  \newunit\newblock
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyDriver{edition}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \setunit{\printdelim{nametitledelim}}\newblock
+  \usebibmacro{title}%
+  \newunit\newblock
+  \usebibmacro{byeditor}%
+  \setunit{\addspace}%
+  \printfield{editor-addon}%
+  \newunit\newblock
+  \printfield{volumes}%
+  \newunit\newblock
+  \printfield{note}%
+  \newunit\newblock
+  \usebibmacro{location+date}%
+  \newunit\newblock
+  \usebibmacro{reprint-location+date}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock
+  \usebibmacro{pageref}%
+  \newunit\newblock
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyDriver{inbook}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \setunit{\printdelim{nametitledelim}}\newblock
+  \usebibmacro{title}%
+  \newunit\newblock
+  \usebibmacro{in:}%
+  \usebibmacro{bybookauthor}%
+  \newunit\newblock
+  \usebibmacro{maintitle+booktitle}%
+  \newunit\newblock
+  \usebibmacro{byeditor}%
+  \setunit{\addspace}%
+  \printfield{editor-addon}%
+  \newunit\newblock
+  \printfield{edition}%
+  \newunit
+  \iffieldundef{maintitle}
+    {\printfield{volume}%
+     \printfield{part}}
+    {}%
+  \newunit
+  \printfield{volumes}%
+  \newunit\newblock
+  \usebibmacro{series+number}%
+  \newunit\newblock
+  \printfield{note}%
+  \newunit\newblock
+  \usebibmacro{location+date}%
+  \newunit\newblock
+  \usebibmacro{reprint-location+date}%
+  \setunit{\addspace}%
+  \usebibmacro{chapter+pages}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock
+  \usebibmacro{pageref}%
+  \newunit\newblock
+  \usebibmacro{finentry}}
+
+  
+\DeclareBibliographyDriver{incollection}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \setunit{\printdelim{nametitledelim}}\newblock%
+  \usebibmacro{title}%
+  \newunit\newblock%
+  \usebibmacro{byauthor}%
+  \newunit\newblock%
+  \usebibmacro{in:}%
+  \usebibmacro{maintitle+booktitle}%
+  \newunit\newblock%
+  \usebibmacro{byeditor}%
+  \setunit{\addspace}%
+  \printfield{editor-addon}%
+  \newunit\newblock%
+  \printfield{edition}%
+  \newunit%
+  \iffieldundef{maintitle}%
+    {\printfield{volume}%
+     \printfield{part}}%
+    {}%
+  \newunit%
+  \printfield{volumes}%
+  \newunit\newblock%
+  \usebibmacro{series+number}%
+  \newunit\newblock%
+  \printfield{note}%
+  \newunit\newblock%
+  \usebibmacro{location+date}%
+  \newunit\newblock
+  \usebibmacro{reprint-location+date}%
+  \setunit{\addspace}%
+  \usebibmacro{chapter+pages}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock%
+  \usebibmacro{pageref}%
+  \newunit\newblock%
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyDriver{lsb-auszug}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \adddotspace%
+  \usebibmacro{lsb-auszug-title}%
+  \setunit{\unspace.\space}\newblock%
+  \usebibmacro{in-lsb}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock%
+  \usebibmacro{pageref}%
+  \newunit\newblock%
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyDriver{lsb-beilage-brief}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \adddotspace%
+  \newunit\newblock%
+  \usebibmacro{lsb-beilage-brief-title}%
+  \setunit{\unspace.\space}\newblock%
+  \usebibmacro{in-lsb}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock%
+  \usebibmacro{pageref}%
+  \newunit\newblock%
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyDriver{lsb-brief}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \adddotspace%
+  \newunit\newblock%
+  \usebibmacro{lsb-brief-title}%
+  \setunit{\unspace.\space}\newblock%
+  \usebibmacro{in-lsb}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock%
+  \usebibmacro{pageref}%
+  \newunit\newblock%
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyDriver{lsb-stueck}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \newunit\newblock%
+  \usebibmacro{lsb-stueck-title}%
+  \setunit{\unspace.\space}\newblock%
+  \usebibmacro{in-lsb}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock%
+  \usebibmacro{pageref}%
+  \newunit\newblock%
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyDriver{manuscript}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \newunit\newblock%
+  \usebibmacro{manuscript-title}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock%
+  \usebibmacro{pageref}%
+  \newunit\newblock%
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyDriver{other-edition-auszug}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \adddotspace%
+  \newunit\newblock%
+  \usebibmacro{other-ed-auszug-title}%
+  \setunit{\unspace.\space}\newblock%
+  \usebibmacro{in-other-ed}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock%
+  \usebibmacro{pageref}%
+  \newunit\newblock%
+  \usebibmacro{finentry}}
+  
+  
+\DeclareBibliographyDriver{other-edition-brief}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \adddotspace%
+  \newunit\newblock%
+  \usebibmacro{other-ed-brief-title}%
+  \newunit\newblock%
+  \usebibmacro{in-other-ed}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock%
+  \usebibmacro{pageref}%
+  \newunit\newblock%
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyDriver{other-edition-stueck}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \newunit\newblock%
+  \usebibmacro{other-ed-stueck-title}%
+  \newunit\newblock%
+  \usebibmacro{in-other-ed}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock%
+  \usebibmacro{pageref}%
+  \newunit\newblock%
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyDriver{periodical}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{title}%
+  \newunit\newblock%
+  \usebibmacro{byeditor}%
+  \setunit{\addspace}%
+  \printfield{editor-addon}%
+  \newunit\newblock%
+  \usebibmacro{location+date}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock%
+  \usebibmacro{pageref}%
+  \newunit\newblock%
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyDriver{periodical-stueck}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \newunit\newblock%
+  \usebibmacro{other-ed-stueck-title}%
+  \newunit\newblock%
+  \usebibmacro{byeditor}%
+  \setunit{\addspace}%
+  \printfield{editor-addon}%
+  \newunit\newblock%
+  \usebibmacro{in-periodical}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock%
+  \usebibmacro{pageref}%
+  \newunit\newblock%
+  \usebibmacro{finentry}}
+
+
+\DeclareBibliographyDriver{review}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \adddotspace%
+  \usebibmacro{review-title}%
+  \newunit\newblock%
+  \usebibmacro{in:}%
+  \usebibmacro{journal+issuetitle}%
+  \newunit%
+  \usebibmacro{note+pages}%
+  \newunit\newblock%
+  \usebibmacro{also-in-lsb}%
+  \newunit\newblock%
+  \usebibmacro{also-in-other-ed}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock%
+  \usebibmacro{pageref}%
+  \newunit\newblock%
+  \usebibmacro{finentry}}
+  
+  
+\DeclareBibliographyDriver{stueck-in-book}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \newunit\newblock%
+  \usebibmacro{other-ed-stueck-title}%
+  \newunit\newblock%
+  \usebibmacro{byeditor}%
+  \setunit{\addspace}%
+  \printfield{editor-addon}%
+  \newunit\newblock%
+  \usebibmacro{in:}%
+  \usebibmacro{bybookauthor}%
+  \newunit\newblock
+  \usebibmacro{maintitle+booktitle}%
+  \newunit\newblock
+  \usebibmacro{bybookeditor}%
+  \setunit{\addspace}%
+  \printfield{bookeditor-addon}%
+  \newunit\newblock
+  \printfield{edition}%
+  \newunit
+  \iffieldundef{maintitle}
+    {\printfield{volume}%
+     \printfield{part}}
+    {}%
+  \newunit
+  \printfield{volumes}%
+  \newunit\newblock
+  \usebibmacro{series+number}%
+  \newunit\newblock
+  \printfield{note}%
+  \newunit\newblock
+  \usebibmacro{location+date}%
+  \newunit\newblock
+  \usebibmacro{reprint-location+date}%
+  \setunit{\addspace}%
+  \usebibmacro{chapter+pages}%
+  \setunit{\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  \setunit{\bibpagerefpunct}\newblock
+  \usebibmacro{pageref}%
+  \newunit\newblock%
+  \usebibmacro{finentry}}
+
+
+
+
+\ExecuteBibliographyOptions{sorting=lsb-sorting}
+
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map{
+    \pertype{lsb-auszug}
+    \pertype{other-edition-auszug}
+    \step[fieldset=title, null]
+    \step[fieldsource=title-in-lsb]
+    \step[fieldset=title, origfieldval]
+    }
+    \map[overwrite]{
+    \pertype{lsb-auszug}
+    \pertype{other-edition-auszug}
+      \step[fieldsource=excerpted-author, final]
+      \step[fieldset=title, fieldvalue={Aus und zu~}, append]
+      \step[fieldset=title, origfieldval, append]
+}
+    \map[overwrite]{
+    \pertype{lsb-auszug}
+    \pertype{other-edition-auszug}
+      \step[fieldsource=excerpted-work, final]
+      \step[fieldset=title, fieldvalue={,~}, append]
+      \step[fieldset=title, origfieldval, append]
+}
+}}
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map{
+    \pertype{lsb-brief}
+    \pertype{other-edition-brief}
+    \step[fieldset=title, null]
+    \step[fieldsource=force-title]
+    \step[fieldset=title, origfieldval]
+    }
+    \map[overwrite]{
+    \pertype{lsb-brief}
+    \pertype{other-edition-brief}
+      \step[fieldsource=correspondent, final]
+      \step[fieldset=title, fieldvalue={Brief an~}, append]
+      \step[fieldset=title, origfieldval, append]
+}
+    \map[overwrite]{
+    \pertype{lsb-brief}
+    \pertype{other-edition-brief}
+      \step[fieldsource=date, final]
+      \step[fieldset=title, fieldvalue={,~}, append]
+      \step[fieldset=title, origfieldval, append]
+}
+}}
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map{
+   \pertype{lsb-beilage-brief}
+    \step[fieldset=title, null]
+    \step[fieldsource=beilage-title]
+    \step[fieldset=title, origfieldval]
+    }
+    \map[overwrite]{
+     \pertype{lsb-beilage-brief}
+      \step[fieldsource=correspondent, final]
+      \step[fieldset=title, fieldvalue={Brief an~}, append]
+      \step[fieldset=title, origfieldval, append]
+}
+    \map[overwrite]{
+     \pertype{lsb-beilage-brief}
+      \step[fieldsource=date, final]
+      \step[fieldset=title, fieldvalue={,~}, append]
+      \step[fieldset=title, origfieldval, append]
+}
+    \map[overwrite]{
+     \pertype{lsb-beilage-brief}
+      \step[fieldset=title, fieldvalue={--Beilage}, append]
+}
+}}
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map{
+    \pertype{review}
+    \step[fieldset=title, null]
+    \step[fieldset=title, origfieldval]
+    }
+    \map[overwrite]{
+    \pertype{review}
+      \step[fieldsource=reviewed-author, final]
+      \step[fieldset=title, fieldvalue={Rezension zu~}, append]
+      \step[fieldset=title, origfieldval, append]
+}
+    \map[overwrite]{
+    \pertype{review}
+      \step[fieldsource=reviewed-work, final]
+      \step[fieldset=title, fieldvalue={,~}, append]
+      \step[fieldset=title, origfieldval, append]
+}
+}}
+
+
+\DeclarePresort[edition,collection]{00-gesamtausgabe}
+\DeclarePresort[book,dissertation-neuzeit,thesis]{01-buch}
+\DeclarePresort[article,review,inbook,incollection]{02-artikel-rezension}
+\DeclarePresort[lsb-stueck,lsb-auszug,other-edition-stueck,other-edition-auszug,periodical-stueck,stueck-in-book]{03-stueck-auszug}
+\DeclarePresort[lsb-brief,lsb-beilage-brief,other-edition-brief]{04-brief}
+\DeclarePresort[manuscript]{05-verschollene-handschrift}
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map[overwrite=true]{
+    \step[fieldsource=author, 
+    notmatch={Leibniz, Gottfried Wilhelm}, final]
+    \step[fieldset=presort, fieldvalue = {other-author}]
+}}}
+
+
+\DeclareSortingTemplate{lsb-sorting}{%
+\sort{\field{sortname}%
+	\field{author}}%
+\sort{\field{sorttitle}}%
+\sort{\field{presort}}%
+\sort{\field{force-title}%
+	\field{title}}	%
+\sort{\field{correspondent}}%
+\sort{\field{excerpted-author}}%
+\sort{\field{year}	%
+}%
+\sort{\field{month}%
+	\literal{00}}%
+\sort{\field{day}%
+	\literal{00}}}
+
+\DeclareSortExclusion{lsb-brief,lsb-beilage-brief,other-edition-brief}{title, force-title}	%
+
+
+
+
+\ExecuteBibliographyOptions{%
+hyperref=true,
+backref=true,
+backrefstyle=two+}	%
+
+\DefineBibliographyStrings{ngerman}{%
+  backrefpage = {S\adddot},%
+  backrefpages = {S\adddot}}
+\renewcommand*{\sqspace}{%
+\addnbthinspace}				%
+\renewcommand*{\bibpagerefpunct}{\finentrypunct\quad}
+\DeclareFieldFormat{italicsnoperiod}{\textit{#1}}
+\renewbibmacro*{pageref}{%
+  \iflistundef{pageref}{}%
+    {\printtext[italicsnoperiod]{%
+      \ifnumgreater{\value{pageref}}{1}%
+        {\bibstring{backrefpages}\ppspace}%
+        {\bibstring{backrefpage}\ppspace}%
+      \printlist[pageref][-\value{listtotal}]{pageref}}%
+    \renewcommand*{\finentrypunct}{}}}
+
+
+
+
+\defbibcheck{fertig}{%
+\iffieldequalstr{bearbeitet}{5} 				%
+{}{\skipentry}}
+
+\defbibcheck{tlw-fertig}{%
+\ifboolexpr{							%
+test {\iffieldequalstr{bearbeitet}{4}}
+or test {\iffieldequalstr{bearbeitet}{3}}
+or test {\iffieldequalstr{bearbeitet}{2}}
+or test {\iffieldequalstr{bearbeitet}{1}}}
+{}{\skipentry}}
+
+\defbibcheck{nicht-bearbeitet}{%
+\ifboolexpr{
+test {\iffieldundef{bearbeitet}}				%
+or test {\iffieldequalstr{bearbeitet}{0}}}		%
+{}{\skipentry}}
+
+\defbibcheck{fertig+tlw-fertig}{%
+\ifboolexpr{
+test {\iffieldequalstr{bearbeitet}{5}}			%
+or test {\iffieldequalstr{bearbeitet}{4}}
+or test {\iffieldequalstr{bearbeitet}{3}}
+or test {\iffieldequalstr{bearbeitet}{2}}
+or test {\iffieldequalstr{bearbeitet}{1}}}
+{}{\skipentry}}
+
+\defbibcheck{tlw-fertig+nicht-bearbeitet}{%
+\ifboolexpr{
+test {\iffieldundef{bearbeitet}}%
+or test {\iffieldequalstr{bearbeitet}{4}}			%
+or test {\iffieldequalstr{bearbeitet}{3}}
+or test {\iffieldequalstr{bearbeitet}{2}}
+or test {\iffieldequalstr{bearbeitet}{1}}
+or test {\iffieldequalstr{bearbeitet}{0}}}
+{}{\skipentry}}
+
+
+\DeclareFieldFormat{entrykey}{%
+  \textcolor{RedOrange}{%
+    \sffamily\mkbibbrackets{key\addcolon\addnbspace\textbf{#1}}}}
+\DeclareFieldFormat{entrytype}{%
+  \textcolor{RoyalBlue}{%
+    \sffamily\mkbibbrackets{type\addcolon\addnbspace\textbf{#1}}}}
+\DeclareFieldFormat{hat-dubletten}{%
+  \textcolor{RoyalPurple}{%
+    \sffamily\mkbibbrackets{Hat Dubletten\addcolon\addspace\textbf{#1}\addspace\citeSV{#1}}}}
+\DeclareFieldFormat{ist-dublette-von}{%
+  \textcolor{Green}{%
+    \sffamily\mkbibbrackets{Dublette von\addspace\textbf{#1}\addspace\citeSV{#1}}}}
+\renewbibmacro*{finentry}{%
+  \ifBiblioInBearbeitung%
+  \setunit{\finentrypunct\addspace}%
+  \printfield{entrykey}%
+  \setunit{\addspace}%
+  \printfield{ist-dublette-von}%
+  \setunit{\addspace}%
+  \printfield{hat-dubletten}%
+  \else\fi%
+  \renewcommand\finentrypunct{}%
+  \finentry}
+
+\newbibmacro*{citepilcrow}{%
+  \printtext[bibhyperref]{\llap{\raisebox{1ex}{\smash{\color{Aquamarine}\textpilcrow}}}}}
+\DeclareCiteCommand{\citeLektorat}
+  {}{\usebibmacro{citeindex}%
+  \usebibmacro{citepilcrow}}{}{}	%
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{
+\map{
+\step[fieldset=abstract, null]			%
+\step[fieldset=annote, null]				%
+\step[fieldset=annotation, null]			%
+}}}
+
+
+\makeatletter     
+\def\blx@bibnote#1{%
+  \ifdefempty#1
+    {}
+    {%
+    \begingroup
+     \let\newrefsection\relax
+     \let\newrefsegment\relax
+     \noindent
+     \csuse{blx@note@#1}\par\nobreak	%
+     \endgroup}}
+\makeatother
+
+
+\defbibnote{Leibniz-Editionen}{%
+\\[-1.5ex]%
+\textls{G.\,W.\,Leibniz}:\enskip
+\textls{Editionen und Sammlungen}}
+
+\defbibnote{Leibniz-Buecher}{%
+\\[-1.5ex]%
+\textls{G.\,W.\,Leibniz:\quad Bücher}}
+
+\defbibnote{Leibniz-Aufsaetze}{%
+\\[-1.5ex]%
+\textls{G.\,W.\,Leibniz:\quad Aufsätze}}
+
+\defbibnote{Leibniz-Stuecke}{%
+\\[-1.5ex]%
+\textls{G.\,W.\,Leibniz:\quad Edierte Stücke}}
+
+\defbibnote{Leibniz-Briefe}{%
+\\[-1.5ex]%
+\textls{G.\,W.\,Leibniz:\quad Briefe}}
+
+\defbibnote{Leibniz-Verschollen}{%
+\\[-1.5ex]%
+\textls{G.\,W.\,Leibniz:\enskip Verschollene Handschriften}}
+
+\defbibnote{post-Leibniz}{\vspace{-.5\baselineskip}}
+
+
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map[overwrite]{
+  \pertype{edition}
+  \pertype{collection}
+    \step[fieldsource=author, match={Leibniz, Gottfried Wilhelm}, final]
+    \step[fieldset=keywords, fieldvalue={Leibniz-Editionen}]
+    }
+  \map[overwrite]{
+  \pertype{book}
+  \pertype{dissertation}
+    \step[fieldsource=author, match={Leibniz, Gottfried Wilhelm}, final]
+    \step[fieldset=keywords, fieldvalue={Leibniz-Buecher}]
+    }
+  \map[overwrite]{
+  \pertype{article}
+  \pertype{review}
+  \pertype{inbook}
+  \pertype{incollection}
+    \step[fieldsource=author, match={Leibniz, Gottfried Wilhelm}, final]
+    \step[fieldset=keywords, fieldvalue={Leibniz-Aufsaetze}]
+    }
+  \map[overwrite]{
+  \pertype{lsb-stueck}
+  \pertype{lsb-auszug}
+  \pertype{other-edition-stueck}
+  \pertype{other-edition-auszug}
+  \pertype{periodical-stueck}
+  \pertype{stueck-in-book}
+    \step[fieldsource=author, match={Leibniz, Gottfried Wilhelm}, final]
+    \step[fieldset=keywords, fieldvalue={Leibniz-Stuecke}]
+    }
+  \map[overwrite]{
+  \pertype{lsb-brief}
+  \pertype{lsb-beilage-brief}
+  \pertype{other-edition-brief}
+    \step[fieldsource=author, match={Leibniz, Gottfried Wilhelm}, final]
+    \step[fieldset=keywords, fieldvalue={Leibniz-Briefe}]
+    }
+  \map[overwrite]{
+  \pertype{manuscript}
+    \step[fieldsource=author, match={Leibniz, Gottfried Wilhelm}, final]
+    \step[fieldset=keywords, fieldvalue={Leibniz-Verschollen}]
+    }
+}}
+
+
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map{
+    \step[notfield=author, final]			%
+    \step[fieldset=keywords, fieldvalue=ante-Leibniz]
+    }
+}}
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map{
+    \step[fieldsource=author, match={^[\{a-z' ]*[A-K].+}, final]
+    \step[fieldset=keywords, fieldvalue=ante-Leibniz]
+    }
+  \map{
+    \step[fieldset=keywords, origfieldval, final]
+    \step[fieldsource=author, match={^[\{a-z' ]*L[' a-dA-D].+}, final]
+    \step[fieldset=keywords, fieldvalue=ante-Leibniz]
+    }
+  \map{
+    \step[fieldset=keywords, origfieldval, final]
+    \step[fieldsource=author, match={^[\{a-z' ]*L[' eE][' a-hA-H].+}, final]
+    \step[fieldset=keywords, fieldvalue=ante-Leibniz]
+    }
+  \map{
+    \step[fieldset=keywords, origfieldval, final]
+    \step[fieldsource=author, match={^[\{a-z' ]*L[' eE][' iI][' aA].+}, final]
+    \step[fieldset=keywords, fieldvalue=ante-Leibniz]
+    }
+  \map{
+    \step[fieldset=keywords, origfieldval, final]
+    \step[fieldsource=author, match={^[\{a-z' ]*L[' eE][' iI][' bB][' a-mA-M].+}, final]
+    \step[fieldset=keywords, fieldvalue=ante-Leibniz]
+    }
+  \map{
+    \step[fieldset=keywords, origfieldval, final]
+    \step[fieldsource=author, match={^[\{a-z' ]*L[' eE][' iI][' bB][' nN][' a-hA-H].+}, final]
+    \step[fieldset=keywords, fieldvalue=ante-Leibniz]
+    }
+  \map{
+    \step[fieldset=keywords, origfieldval, final]
+    \step[fieldsource=author, match={^[\{a-z' ]*L[' eE][' iI][' bB][' nN][' iI][' a-yA-Y].+}, final]
+    \step[fieldset=keywords, fieldvalue=ante-Leibniz]
+    }
+}}
+
+
+
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{	
+  \map{
+    \step[fieldsource=author, match={^[\{a-z' ]*[M-Z].+}, final]
+    \step[fieldset=keywords, fieldvalue=post-Leibniz]
+    }
+  \map{
+    \step[fieldset=keywords, origfieldval, final]
+    \step[fieldsource=author, match={^[\{a-z' ]*L[^a-eA-E].+}, final]
+    \step[fieldset=keywords, fieldvalue=post-Leibniz]
+    }
+  \map{
+    \step[fieldset=keywords, origfieldval, final]
+    \step[fieldsource=author, match={^[\{a-z' ]*L[eE][^a-iA-I].+}, final]
+    \step[fieldset=keywords, fieldvalue=post-Leibniz]
+    }
+  \map{
+    \step[fieldset=keywords, origfieldval, final]
+    \step[fieldsource=author, match={^[\{a-z' ]*L[eE][iI][^a-bA-B].+}, final]
+    \step[fieldset=keywords, fieldvalue=post-Leibniz]
+    }
+  \map{
+    \step[fieldset=keywords, origfieldval, final]
+    \step[fieldsource=author, match={^[\{a-z' ]*L[eE][iI][bB][^a-nA-N].+}, final]
+    \step[fieldset=keywords, fieldvalue=post-Leibniz]
+    }
+  \map{
+    \step[fieldset=keywords, origfieldval, final]
+    \step[fieldsource=author, match={^[\{a-z' ]*L[eE][iI][bB][nN][^a-iA-I].+}, final]
+    \step[fieldset=keywords, fieldvalue=post-Leibniz]
+    }
+}}

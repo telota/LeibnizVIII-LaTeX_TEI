@@ -1,0 +1,3366 @@
+
+
+
+
+
+
+
+
+
+
+
+\documentclass[%
+fontsize=10pt,
+]{scrbook}
+
+\usepackage[T1]{fontenc}	%
+
+\usepackage{lmodern}				%
+\usepackage[scaled=.8]{beramono}		%
+
+\usepackage[shorthands=:;!?,		%
+ngerman, french, greek.ancient, latin.classic]{babel}	%
+\babelprovide[hyphenrules=classiclatin]{latin}		%
+
+
+\input glyphtounicode	%
+\pdfgentounicode=1		%
+
+
+
+\usepackage{letltxmacro}		%
+\usepackage{etoolbox}		%
+
+\usepackage{xpatch}			%
+
+
+\newcommand{\comment}[1]{}		%
+
+\makeatletter		%
+\patchcmd{\@include}{\clearpage}{}{}{}
+\makeatother
+
+
+
+
+\renewcommand*{\title}{\GenericError{}{Command \string\title\space no longer supported.\MessageBreak Please use \string\textit\space instead}{}{}}
+\newcommand*{\pstartfirst}{\GenericError{}{Command \string\pstartfirst\space no longer supported.\MessageBreak Please use \string\vspace{8mm}\string\pstart\string\noindent\space instead}{}{}}
+\newcommand*{\killnumber}{\GenericError{}{Command \string\killnumber\space no longer supported.\MessageBreak To create a footnote with no line number, please use the option [nonum]. See the reledmac documentation, § 6.2.2. for help}{}{}}
+\BeforeBeginEnvironment{center}{\GenericError{}{Environment "center" deprecated because of layout problems. \MessageBreak Please use \string\pstart\string\centering\space...\space\string\pend\space to center text within a numbered paragraph; to center a (group of) figure(s) occurring between paragraphs, enclose it in an \string\edfigure\space environment, then provide captions with \string\edcaption\string{...\string}}{}{}}		%
+\BeforeBeginEnvironment{wrapfigure}{\GenericError{}{Environment "wrapfigure" deprecated because of layout problems. \MessageBreak Please only include figures between paragraphs. Enclose a (group of) figure(s) in an \string\edfigure\space environment, then provide captions with \string\edcaption\string{...\string}}{}{}}		%
+
+\newcommand*{\BStandTitel}[1]{\marginnote{\textls[-20]{ #1}}}	%
+\newcommand*{\BStandTOC}[1]{\newline\colorbox{lightgray}{#1}}	%
+
+\newcommand*{\Offen}{$\Square$\\ \ }
+\newcommand*{\Fertig}{$\CheckedBox$\\ \ }
+\newcommand*{\NichtAnwendbar}{$\XBox$\\ \ } 
+
+
+
+
+\usepackage[%
+paperwidth=190mm,
+paperheight=246mm,
+textwidth=135mm,
+hmarginratio=2:3,
+tmargin=21mm,
+bmargin=47mm,
+includehead,		
+headsep=5mm,
+]{geometry}
+
+
+\linespread{1.1}			%
+
+\clubpenalty=10000		%
+\widowpenalty=10000	%
+
+\parindent=7.5mm		%
+
+\tolerance=1000		%
+\hbadness=999			%
+
+\AtBeginDocument{%
+\let\nonfrenchspacing\frenchspacing
+\frenchspacing}
+
+
+
+\usepackage{graphicx}		%
+
+\usepackage{xspace}		%
+
+\usepackage[dvipsnames]{xcolor}	%
+
+\usepackage{tikz}			%
+
+\usepackage{microtype}	%
+
+
+\usepackage{longtable}	%
+\usepackage{multirow}	%
+\usepackage{array}  		%
+
+
+\usepackage{marginnote}		%
+
+\usepackage{soulutf8}		%
+
+\usepackage[normalem]{ulem}		%
+
+\usepackage{cancel}		%
+
+\usepackage[style=german,german=quotes]{csquotes}		%
+\MakeOuterQuote{"}				%
+
+
+
+\KOMAoptions{%
+open=any,				%
+headings=small,		%
+headings=optiontoheadandtoc}	%
+
+
+\setkomafont{disposition}{\normalfont} 			%
+\setkomafont{part}{\large\textls}
+\setkomafont{chapter}{\normalsize}
+\setkomafont{section}{\normalsize}
+\setkomafont{pagehead}{\normalfont\scriptsize}		%
+\setkomafont{pagenumber}{\normalsize} 			%
+
+
+\renewcommand*{\thechapter}{\arabic{chapter}}
+\renewcommand*{\thesection}{\arabic{chapter}\textsubscript{\arabic{section}}}
+\renewcommand*{\partformat}{}			%
+\renewcommand*{\chapterformat}{\thechapter.\enskip}	%
+\renewcommand*{\sectionformat}{\thesection.\enskip}
+\renewcommand*{\partmarkformat}{}		%
+\renewcommand*{\chaptermarkformat}{N.\;\arabic{chapter}}	%
+\renewcommand*{\sectionmarkformat}{N.\;\arabic{chapter}\textsubscript{\arabic{section}}} %
+
+
+\RedeclareSectionCommand[afterskip=5.3ex]{chapter}	%
+\RedeclareSectionCommand[afterskip=5.3ex]{section}	%
+
+\let\SamePageSec\section		%
+\newcommand*{\NewPageSec}{\clearpage\SamePageSec}	%
+
+\renewcommand*{\partpagestyle}{empty}		%
+\renewcommand*{\raggedpart}{\raggedright}	%
+\renewcommand*{\partheadstartvskip}{\vspace*{-3.5ex}}	%
+\renewcommand*{\partheadmidvskip}{\vspace*{0pt}}		%
+
+\preto\part{%
+\cleardoublepage%
+\renewcommand*{\chapterheadstartvskip}{\vspace*{19.5ex}}	%
+\renewcommand*{\chapterpagestyle}{empty}}		%
+
+\preto\addpart{\cleardoublepage}	%
+
+\makeatletter
+\newcounter{chapinpart}[part]	%
+\let\NumberingHack\relax	%
+\newif\if@documatter
+\preto\chapter{%
+\clearpage
+ \if@mainmatter				%
+  \ifnum\value{chapinpart}=0	%
+  \else						%
+\NumberingHack	%
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0pt}}
+\renewcommand*{\chapterpagestyle}{scrheadings}\fi
+ \else \renewcommand*{\chapterheadstartvskip}{\vspace*{0pt}}\fi	%
+\stepcounter{chapinpart}}		%
+\makeatother
+
+
+\usepackage{scrlayer-scrpage}		%
+\KOMAoptions{%
+headsepline,		%
+plainheadsepline,	%
+markcase=upper}	%
+
+\pagestyle{scrheadings}		%
+\clearpairofpagestyles		%
+\automark[chapter]{part}			%
+\newmarks\numbermark				%
+\renewcommand*{\chaptermark}[1]{%
+\marks\numbermark{\chaptermarkformat}%
+\markright{\MakeMarkcase{#1}}}
+\makeatletter%
+\renewcommand*{\sectionmark}[1]{%
+\begingroup
+\@temptokena\expandafter{\sectionmarkformat}%
+\marks\numbermark{\the\@temptokena}%
+\endgroup
+\markright{\MakeMarkcase{#1}}}
+\makeatother
+\ohead*{\pagemark}					%
+\ihead[]{\small\botmarks\numbermark}	%
+\chead[\leftmark]{\headmark}			%
+
+\newpairofpagestyles{backheadings}{%
+\ohead*{\pagemark}					%
+\ihead*{}							%
+\chead*{\headmark}}					%
+
+\newpairofpagestyles{docuheadings}{%
+\ohead*{\pagemark}					%
+\ihead*{\small\firstmarks\docunumbermark%
+}	%
+\chead*{\headmark}}					%
+
+
+\makeatletter
+\renewcommand*\frontmatter{%
+\cleardoubleoddpage	%
+\@mainmatterfalse%
+\pagenumbering{Roman}%
+\selectlanguage{ngerman}				%
+\pagestyle{plain.scrheadings}				%
+\let\section\SamePageSec			%
+\renewcommand*{\partheademptypage}{%
+\cleardoublepage
+\thispagestyle{empty}				%
+\vspace*{19.5ex}}}					%
+
+\renewcommand*\mainmatter{%
+\cleardoubleoddpage	%
+\@mainmattertrue%
+\pagenumbering{arabic}%
+\pagestyle{scrheadings}				%
+\let\section\NewPageSec					%
+\renewcommand*{\partheademptypage}{%
+\cleardoublepage
+\thispagestyle{empty}}				%
+\beginnumbering}				%
+
+\renewcommand*\backmatter{%
+\endnumbering					%
+\boolfalse{backtracker}			%
+\cleardoubleoddpage	%
+\@mainmatterfalse%
+\selectlanguage{ngerman}				%
+\pagestyle{backheadings}			%
+\automark[chapter]{part}				%
+\let\section\SamePageSec				%
+\addtokomafont{chapter}{\centerline}			%
+\renewcommand*{\chapterpagestyle}{empty}		%
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0pt}}		%
+\renewcommand*{\thesubsection}{\arabic{subsection}}	%
+\renewcommand*{\subsectionformat}{\thesubsection.\enskip}
+\setkomafont{subsection}{\footnotesize\MakeUppercase}}
+\makeatother
+
+\makeatletter
+\newcommand*\documentationmatter{%
+\cleardoubleoddpage	%
+\@documattertrue%
+\selectlanguage{ngerman}				%
+\pagestyle{docuheadings}				%
+\let\section\SamePageSec			%
+\setcounter{chapter}{0}
+\renewcommand*{\partheademptypage}{%
+\cleardoublepage
+\thispagestyle{empty}				%
+\vspace*{19.5ex}}}	
+\makeatother
+
+\DeclareNewSectionCommand[
+  style=section,
+  level=\chapternumdepth,
+  afterskip=2.3ex plus .2ex,
+  beforeskip=-3.5ex plus -1ex minus -.2ex,
+  indent=0pt,
+  font=\mdseries\normalsize,
+  tocstyle=chapter,
+  tocindent=0.5em,
+  tocnumwidth=2.58em,		%
+  toclevel=0,
+]{docuchapter}
+
+\DeclareTOCStyleEntry[indent=0.5em]{dottedtocline}{docuchapter}
+
+\DeclareNewSectionCommand[
+  style=section,
+  level=\sectionnumdepth,
+  afterskip=2.3ex plus .2ex,
+  beforeskip=-3.5ex plus -1ex minus -.2ex,
+  indent=0pt,
+  font=\mdseries\normalsize,
+  tocstyle=section,
+  tocindent=1.5em,
+  tocnumwidth=3.23em,		%
+  toclevel=1,
+]{docusection}
+
+\DeclareTOCStyleEntry[indent+=1.58em,	%
+]{dottedtocline}{docusection}
+
+
+\renewcommand*{\thedocuchapter}{D\,\arabic{docuchapter}}
+\renewcommand*{\thedocusection}{D\,\arabic{docuchapter}\textsubscript{\arabic{docusection}}}
+\renewcommand*{\docuchaptermarkformat}{D\,\arabic{docuchapter}}	%
+\renewcommand*{\docusectionmarkformat}{D\,\arabic{docuchapter}\textsubscript{\arabic{docusection}}} %
+\renewcommand*{\docuchapterformat}{\thedocuchapter.\enskip}	%
+\renewcommand*{\docusectionformat}{\thedocusection.\enskip}
+
+
+\newmarks\docunumbermark				%
+\renewcommand*{\docuchaptermark}[1]{%
+\marks\docunumbermark{\docuchaptermarkformat}%
+\markright{\MakeMarkcase{#1}}}
+
+\newcommand*{\docupart}[1]{\docuchapter*{#1}}
+\renewcommand*{\docupart}[1]{\vspace{2ex}\phantomsection\addsec[tocentry=,head=]{\MakeUppercase{#1}}%
+\vspace{-2ex}%
+\addchaptertocentry{}{#1}}
+
+
+\deftocheading{toc}{}		%
+\setcounter{tocdepth}{1}		%
+\DeclareTOCStyleEntry[%
+beforeskip=2.8ex plus 1pt,		%
+entrynumberformat=\phantom,		%
+numsep=0em,						%
+numwidth=0em,					%
+linefill=\TOCLineLeaderFill,		%
+pagenumberformat=\normalsize]{tocline}{part}
+\DeclareTOCStyleEntry[indent=0.5em,
+numwidth=2.0em%
+]{dottedtocline}{chapter}    %
+\DeclareTOCStyleEntry[indent+=1em,    %
+numwidth=2.45em%
+]{dottedtocline}{section}    %
+\makeatletter			%
+\renewcommand*{\@pnumwidth}{3.0em}		%
+\g@addto@macro{\numberline@numberprefix}{%
+\ifx\Hy@tocdestname\ltx@empty\else\hyper@linkstart{link}{\Hy@tocdestname}\fi}
+\g@addto@macro{\numberline@numberpostfix}{%
+\ifx\Hy@tocdestname\ltx@empty\else\hyper@linkend\fi\makeatother}
+\makeatother
+
+
+\newcommand*{\secfrontmatter}[1]{%
+\pdfbookmark[0]{#1}{#1}					%
+\subsection*{\MakeUppercase{#1}}}			%
+
+\newcommand*{\chapbackmatter}[2]{%
+\cleardoublepage							%
+\phantomsection\addchap[tocentry=,head={#1}]{#2}	%
+\addparttocentry{}{#2}}
+
+\newcommand*{\secbackmatter}[1]{%
+\addsec[tocentry={#1}]{\centerline{\textsc{#1}}}}
+
+
+
+\usepackage{imakeidx}		%
+
+\usepackage[series={A,B,C},		%
+noend,
+nofamiliar,
+noeledsec]
+{reledmac}
+
+\lineation{page}			%
+\linenummargin{outer}	%
+
+\makeatletter
+\renewcommand*{\rightlinenum}{%
+ \ifbypage@
+  \ifnum\line@num<10\kern4pt\fi
+ \else \kern5pt\fi
+\kern5pt\numlabfont\the\line@num}
+\makeatother
+
+\renewcommand{\footfudgefiddle}{70}	%
+\Xarrangement[B]{paragraph}
+\Xarrangement[C]{paragraph}
+
+\Xnotefontsize[A]{\normalsize}			%
+
+\Xtwolines{\,f.}			%
+\Xtwolinesbutnotmore		%
+\Xtwolinesonlyinsamepage		%
+\renewcommand*{\fullstop}{.}		%
+
+\Xlinerangeseparator{\nolinebreak\textendash\nolinebreak}	%
+
+\Xnonbreakableafternumber	%
+
+
+\makeatletter
+\patchcmd{\printlines}%
+{\wrap@edcrossref{\@this@crossref@start}{#1}%
+\ifl@d@Xlinenumber\csuse{Xpagelinesep@\@currentseries}\fi}%
+{}%
+{}{}
+\patchcmd{\printlines}%
+{\csuse{Xtwolines@\@currentseries}}%
+{\wrap@edcrossref{\@this@crossref@end}{\csuse{Xtwolines@\@currentseries}}}%
+{}{}
+\patchcmd{\printlines}%
+{\wrap@edcrossref{\@this@crossref@end}{#4}}%
+{S.\;\wrap@edcrossref{\@this@crossref@end}{#4}}%
+{}{}
+\makeatother
+
+\Xlemmaseparator[A,B]{\ }		%
+\Xafterlemmaseparator[A,B]{0pt}	%
+\Xlemmaseparator[C]{:}
+
+\Xinplaceofnumber{0em}	%
+
+\Xafternote[B,C]{7.5mm plus 1.9mm minus 1.9mm}
+
+
+\Xbeforenotes[A]{7mm plus 2mm minus 2mm}			%
+\renewcommand*{\Afootnoterule}{\noindent\rule{18mm}{0.4pt}} 		%
+\Xbhooknote[A]{\vskip 10pt} 	%
+\Xbeforenotes[B]{5mm plus 2mm minus 2mm}  		%
+\renewcommand*{\Bfootnoterule}{\noindent\rule{0pt}{0pt}} 			%
+\Xafterrule[B]{5pt}  			%
+\Xbeforenotes[C]{3mm plus 1mm minus 1mm}  		%
+\renewcommand*{\Cfootnoterule}{\noindent\rule{\textwidth}{0.4pt}} 		%
+\Xafterrule[C]{7pt}	  		%
+
+
+\newlength\lemmaoffset	%
+\setlength{\lemmaoffset}{0pt}	%
+\makeatletter					%
+\apptocmd{\lemma}{%
+\global\appto\@beforeinsertofthisedtext{%
+\def\repeatlemma{\lemmastyle{#1}}%
+\ifstrempty{#1}{\settowidth{\lemmaoffset}{ }}{\setlength{\lemmaoffset}{0pt}}%
+}}{}{}			
+\makeatother	
+\newcommand*{\lemmastyle}[1]{%
+\textbullet~#1~}
+
+
+\makeatletter
+\newcommand*\bars[1]{%
+    \@ifnextchar{\bars}{\textbar\nolinebreak}{\textbar~}%
+    #1~%
+    \@ifnextchar{\bars}{\textbar\linebreak[0]}{\textbar\ }}
+\makeatother
+
+
+\newif\ifinedfigure			%
+\NewDocumentEnvironment{edfigure}{O{\edfiguresep} O{\edfiguresep}} %
+{\setlength{\parskip}{0pt}%
+\setlength{\belowspace}{#2}%
+\inedfiguretrue%
+\centering\startlock\vspace{#1}}%
+{\par\endlock\vspace{\belowspace}%
+\inedfigurefalse}
+\newlength\edfiguresep				%
+\setlength{\edfiguresep}{1\baselineskip plus 1.0pt minus 2.0pt}
+\newlength\belowspace
+\setlength{\belowspace}{\edfiguresep}
+\newcommand{\edcaption}[2][0.5em]%
+{\unspace\nopagebreak\vspace{#1}\pstart%
+\ifinedfigure\else%
+\smash{\ledouternote{\smaller\textls[-40]{\texttt{edcaption}\\ 
+\textbf{nur} innerhalb \\ \texttt{edfigure}!\\\vspace*{-\baselineskip}}}}\fi%
+#2%
+\pend}
+
+
+\newcommand*\slashes[1]{%
+\ifstrempty{#1}%
+{\llap{\raisebox{0.4ex}{\scalebox{2}[1]{\textcolor{green}{\textbf{\textbar}}}}}}%
+{\clap{\raisebox{0.3ex}{\scalebox{2}[1]{\textcolor{cyan}{\(\lceil\)}}}}#1%
+\clap{\raisebox{0.3ex}{\scalebox{2}[1]{\textcolor{cyan}{\(\rceil\)}}}}}%
+}
+
+\let\oldedlabel\edlabel
+
+
+\makeatletter	%
+\newcommand{\SchnellerKompilieren}{%
+\patchcmd{\endnumbering}{\ifnum\l@dnumpstartsL=0\led@err@NumberingWithoutPstart\fi}{}{}{}
+\def\NumberingHack{\endnumbering\beginnumbering}} 	%
+\makeatother
+
+
+
+
+
+
+
+
+\def\PageAbbrev{}
+\makeatletter
+\newcount\passage@count		%
+\newcommand*{\refpassagebase}[2]{%
+\def\refdot{}%
+\global\advance\passage@count by 1%
+\edlabel{passage@\the\passage@count}%
+  \ifnum\xpageref{#1}=\xpageref{#2}%
+    \ifnum\xpageref{#1}=\xpageref{passage@\the\passage@count}%
+    Z.\;\edlineref{#1}%
+    \else%
+    \PageAbbrev\edpageref{#1}.\edlineref{#1}%
+    \fi%
+    \ifnum\xlineref{#1}=\xlineref{#2}%
+    \else%
+      \ifnum\numexpr\xlineref{#2}-\xlineref{#1}=1%
+      \,\hyperlink{#2}{f}\def\refdot{.}%
+      \else%
+      \endashchar\edlineref{#2}%
+      \fi%
+    \fi%
+  \else%
+    \ifnum\xpageref{#1}=\xpageref{passage@\the\passage@count}%
+    Z.\;\edlineref{#1}\endashchar S.\;\edpageref{#2}.\edlineref{#2}%
+    \else%
+    \PageAbbrev\edpageref{#1}.\edlineref{#1}\endashchar\edpageref{#2}.\edlineref{#2}%
+    \fi%
+  \fi%
+\@ifnextchar{.}{}{\hyperlink{#2}{\refdot}\xspace}%
+}
+\makeatother
+
+\newcommand*{\refpassage}[2]{\def\PageAbbrev{S.\;}\refpassagebase{#1}{#2}}
+\newcommand*{\refpassageohne}[2]{\def\PageAbbrev{}\refpassagebase{#1}{#2}}
+
+
+\makeatletter
+\newcount\refnote@count		%
+\newcommand*{\refnotebase}[1]{%
+\def\refdot{}%
+\global\advance\refnote@count by 1%
+\edlabel{refnote@\the\refnote@count}%
+  \ifnum\xpageref{#1:start}=\xpageref{#1:end}%
+    \ifnum\xpageref{#1:start}=\xpageref{refnote@\the\refnote@count}%
+    Z.\;\edlineref{#1:start}%
+    \else%
+    \PageAbbrev\edpageref{#1:start}.\edlineref{#1:start}%
+    \fi%
+    \ifnum\xlineref{#1:start}=\xlineref{#1:end}%
+    \else%
+      \ifnum\numexpr\xlineref{#1:end}-\xlineref{#1:start}=1%
+      \,\hyperlink{#1:end}{f}\def\refdot{.}%
+      \else%
+      \endashchar\edlineref{#1:end}%
+      \fi%
+    \fi%
+  \else%
+    \ifnum\xpageref{#1:start}=\xpageref{refnote@\the\refnote@count}%
+        Z.\;\edlineref{#1:start}\endashchar S.\;\edpageref{#1:end}.\edlineref{#1:end}%
+    \else%
+    \PageAbbrev\edpageref{#1:start}.\edlineref{#1:start}\endashchar\edpageref{#1:end}.\edlineref{#1:end}%
+    \fi%
+  \fi%
+\@ifnextchar{.}{}{\hyperlink{#1:end}{\refdot}\xspace}%
+}
+\makeatother
+
+\newcommand*{\refnote}[1]{\def\PageAbbrev{S.\;}\refnotebase{#1}}
+\newcommand*{\refnoteohne}[1]{\def\PageAbbrev{}\refnotebase{#1}}
+
+
+\makeatletter
+\patchcmd{\edtext}%
+{{\showlemma{#1}}}%
+{{\showlemma{#1}}%
+  \ifdef{\hypertarget}{\def\do##1{\Hy@raisedlink{\hypertarget{##1:end}{}}}%
+  \dolistcsloop{applabel@thisedtext@\the\@edtext@level}%
+  \global\cslet{applabel@thisedtext@\the\@edtext@level}{\empty}}{}%
+}{}{}
+\patchcmd{\applabel}%
+{\@esphack}%
+{\@esphack%
+  \ifdef{\hypertarget}{\ifcsundef{applabel@thisedtext@\the\@edtext@level}%
+  {\global\cslet{applabel@thisedtext@\the\@edtext@level}{\relax}}{}%
+  \listcsgadd{applabel@thisedtext@\the\@edtext@level}{#1}}{}%
+}{}{}
+\makeatother
+
+
+\newcommand{\pagelabel}[1]{\phantomsection\label{#1}}
+
+
+
+
+\makeindex[name=index-Sachen,		%
+title=\uppercase{Sachen},
+columnseprule=true,
+columnsep=12pt]
+\makeindex[name=index-Namen,		%
+title=\uppercase{Personen},
+columnseprule=true,
+columnsep=12pt] 
+\makeindex[name=index-Orte,			%
+title=\uppercase{Orte},
+columnseprule=true,
+columnsep=12pt] 
+
+\ExplSyntaxOn			%
+\NewExpandableDocumentCommand \stripLS { m }
+{ \text_purify:n {#1} }		%
+\NewDocumentCommand{\indexS}{m}{\index[index-Sachen]{#1}}
+\NewDocumentCommand{\indexO}{m}{\index[index-Orte]{#1}}
+\NewDocumentCommand{\indexN}{ O{\stripLS{#2}} m }{\index[index-Namen]{{#1}@#2}}
+\ExplSyntaxOff
+
+
+\indexsetup{%
+level=\chapter,
+firstpagestyle=empty,
+headers={\leftmark}{\indexname},
+othercode={\footnotesize\raggedright
+\raggedcolumns			%
+\setcounter{unbalance}{50}}}	%
+
+\makeatletter
+\renewcommand*{\@idxitem}{\par\hangindent 11\p@} %
+\makeatother
+
+
+\makeatletter
+\AtBeginDocument{%
+\LetLtxMacro\OrigIndex\index
+\newcommand*\fnindex[2][]%
+{\OrigIndex[#1]{#2|textit}}			 %
+\newcommand*\indextext\textrm	%
+\newcommand*\htindex[2][]%
+{\OrigIndex[#1]{#2|indextext}}		%
+\newcommand*{\starredtext}[1]{#1*}	%
+\newcommand*\starindex[2][]%
+{\OrigIndex[#1]{#2|starredtext}}		%
+\let\index\htindex}			%
+\makeatother
+\newcommand{\innotestar}[1]{\hspace{-\lemmaoffset}\let\index\starindex#1\let\index\htindex} %
+\Xwrapcontent[A]{\innotestar}		%
+\newcommand{\innote}[1]{\hspace{-\lemmaoffset}\let\index\fnindex#1\let\index\htindex}	%
+\Xwrapcontent[B]{\innote}			%
+\newcommand{\innotedeutsch}[1]{\let\index\fnindex\foreignlanguage{ngerman}{#1}\let\index\htindex} %
+\Xwrapcontent[C]{\innotedeutsch}	%
+
+
+
+\usepackage[style=numeric,	%
+datamodel=lsb-entrytypes,
+]{biblatex}
+\newif\ifBiblioInBearbeitung
+\input{gesamttex/biblatex-Einstellungen}	%
+\addbibresource{gesamttex/bib/L8-bib_2024-12-30.bib}					%
+
+
+
+
+
+\usepackage{textcomp}			%
+\usepackage[nointegrals]{wasysym}	%
+\usepackage{marvosym}	%
+\usepackage{suetterl}	%
+
+
+\usepackage{relsize}				%
+
+
+
+\usepackage{amsmath}
+\usepackage{MnSymbol}	%
+
+\DeclareFontFamily{U}{matha}{}
+\DeclareFontShape{U}{matha}{m}{n}{<-5.5> matha5 <5.5-6.5> matha6 <6.5-7.5> matha7 
+<7.5-8.5> matha8 <8.5-9.5> matha9 <9.5-11> matha10 <11-> matha12}{}
+\DeclareSymbolFont{matha}{U}{matha}{m}{n}
+\DeclareFontSubstitution{U}{matha}{m}{n}
+\DeclareMathSymbol{\hash}{\mathord}{matha}{"23}	%
+\DeclareMathSymbol{\oright}{\mathord}{matha}{"69}		%
+\let\vitriol\oright
+\DeclareFontFamily{U}{mathb}{}
+\DeclareFontShape{U}{mathb}{m}{n}{<-5.5> mathb5 <5.5-6.5> mathb6 <6.5-7.5> mathb7 
+<7.5-8.5> mathb8 <8.5-9.5> mathb9 <9.5-11> mathb10 <11-> mathb12}{}
+\DeclareSymbolFont{mathb}{U}{mathb}{m}{n}
+\DeclareFontSubstitution{U}{mathb}{m}{n}
+\let\leftmoon\relax
+\DeclareMathSymbol{\leftmoon}{\mathord}{mathb}{"4B}		%
+\let\rightmoon\relax
+\DeclareMathSymbol{\rightmoon}{\mathord}{mathb}{"4C}		%
+
+\let\oldodot\odot								%
+\renewcommand{\odot}{\ensuremath{\oldodot}}		%
+\let\astrosun\odot
+\let\oldbigodot\bigodot	
+\renewcommand{\bigodot}{\ensuremath{\oldbigodot}}	
+\let\Sun\bigodot
+
+
+
+\usepackage{fancybox}
+\usepackage{circledsteps}				%
+		\pgfkeys{/csteps/inner xsep=6pt}	%
+		\pgfkeys{/csteps/inner ysep=6pt}	%
+
+\usepackage{units}	%
+
+
+
+
+
+\let\origsqcap\sqcap			%
+\DeclareRobustCommand\sqcap{\ensuremath{\mathrel{\origsqcap}}}		%
+
+
+\DeclareRobustCommand\kleiner{%
+   	\ensuremath{\mathrel{%
+	\raisebox{-1.1ex}[0pt][1ex]%
+	{\includegraphics[width=.48em,height=2ex]{images/kleiner.pdf}%
+}}}}
+\DeclareRobustCommand\groesser{%
+   	\ensuremath{\mathrel{%
+	\raisebox{-1.1ex}[0pt][1ex]%
+	{\includegraphics[width=.48em,height=2ex]{images/groesser.pdf}%
+}}}}
+
+\DeclareMathOperator{\numerus}{num} %
+
+
+
+
+\DeclareRobustCommand{\efrac}[2]{\genfrac{}{}{0pt}{}{#1}{#2}} 		%
+
+
+\DeclareRobustCommand{\doublefrac}[2]{%
+   \displaystyle\ooalign{%
+      $\,\genfrac{}{}{.65ex}0{\phantom{#1}}{\phantom{#2}}\,$\cr%
+      $\color{white}\genfrac{}{}{.32ex}0{\,\color{black}#1\,}{\,\color{black}#2\,}$\cr%
+      $\color{white}\genfrac{}{}{.42ex}0{\,\phantom{#1}\,}{\,\phantom{#2}\,}$}}
+
+
+
+\let\oldovalbox\ovalbox
+\DeclareRobustCommand\ovalbox[1]{{\,\oldovalbox{\ensuremath{\!#1\!}}\,}}
+
+\DeclareRobustCommand\crossedcircle[1]{%
+{\ensuremath{\raisebox{-1.25ex}{\includegraphics[width=1.2em]{images/circle.pdf}}%
+\hspace{-0.85em}#1\:\,}}}
+\DeclareRobustCommand\crossedcircletwo[1]{%
+{\ensuremath{\raisebox{-2.1ex}{\includegraphics[width=1.75em]{images/circle.pdf}}%
+\hspace{-1.4em}#1\;\,}}}
+
+\DeclareRobustCommand{\ind}[1]{%
+\ifmmode {\scriptstyle\textit{#1}}%
+\else {\smaller[2]#1}\fi}				%
+
+
+
+\DeclareRobustCommand\ouLigatur{\ensuremath{\mathord{\downpropto}}}	%
+
+\DeclareRobustCommand\dsig{%
+\includegraphics[width=.88em,height=1.15ex]{images/dsig.pdf}}
+
+\DeclareRobustCommand\GWLypsilon{%
+\ensuremath{\mathord{\raisebox{0.46ex}{\text{\tiny{o}}}\hspace{-0.1em}\upsilon}}}
+
+\DeclareRobustCommand\circledhash{%
+\raisebox{-0.55ex}{\scalebox{0.75}{\rotatebox{45}{\Circled{$\hash$}}}}}
+
+\DeclareRobustCommand\GatterVier{%
+\raisebox{0.25ex}{\scalebox{0.85}{\,%
+\rlap{\hspace{0.07em}\textbar\hspace{-.08em}\textbar\hspace{-.08em}\textbar\hspace{-.08em}\textbar}{%
+\raisebox{-0.45ex}{\rotatebox{90}{%
+\textbar\hspace{-.08em}\textbar\hspace{-.08em}\textbar\hspace{-.08em}\textbar}}}\,}}}
+
+
+
+\DeclareRobustCommand\PM{%
+   	\ensuremath{\mathbin{%
+	\raisebox{-1ex}[.9ex][.9ex]%
+	{\includegraphics[width=.5em,height=2ex]{images/pm.pdf}%
+}}}}
+
+\DeclareRobustCommand\MP{%
+   	\ensuremath{\mathbin{%
+	\raisebox{-1ex}[.9ex][.9ex]%
+	{\includegraphics[width=.5em,height=2ex]{images/mp.pdf}%
+}}}}
+
+\DeclareRobustCommand\PSMS{%
+\ensuremath{\mathbin{%
+	\raisebox{-.55ex}[.7ex][.7ex]%
+	{\includegraphics[width=.5em,height=1.6ex]{images/PsMs.pdf}%
+}}}}
+
+\DeclareRobustCommand\MSPS{%
+\ensuremath{\mathbin{%
+	\raisebox{-.55ex}[.7ex][.7ex]%
+	{\includegraphics[width=.5em,height=1.6ex]{images/MsPs.pdf}%
+}}}}
+
+\DeclareRobustCommand\PSPSMS{%
+\ensuremath{\mathbin{%
+	\raisebox{-.55ex}[.7ex][.7ex]%
+	{\includegraphics[width=.88em,height=1.6ex]{images/PsPsMs.pdf}%
+}}}}
+
+\DeclareRobustCommand\PSMSPS{%
+\ensuremath{\mathbin{%
+	\raisebox{-.55ex}[.7ex][.7ex]%
+	{\includegraphics[width=.88em,height=1.6ex]{images/PsMsPs.pdf}%
+}}}}
+
+\DeclareRobustCommand\MSPSMS{%
+\ensuremath{\mathbin{%
+	\raisebox{-.55ex}[.7ex][.7ex]%
+	{\includegraphics[width=.88em,height=1.6ex]{images/MsPsMs.pdf}%
+}}}}
+
+\DeclareRobustCommand\MSMSPS{%
+\ensuremath{\mathbin{%
+	\raisebox{-.55ex}[.7ex][.7ex]%
+	{\includegraphics[width=.88em,height=1.6ex]{images/MsMsPs.pdf}%
+}}}}
+
+\DeclareRobustCommand\MSPSPS{%
+\ensuremath{\mathbin{%
+	\raisebox{-.5ex}[.7ex][.7ex]%
+	{\includegraphics[width=1.32em,height=1.6ex]{images/MsPsPs.pdf}%
+}}}}
+			
+\DeclareRobustCommand\PMA{%
+   	\ensuremath{\mathbin{%
+	\raisebox{-1ex}[.9ex][.9ex]%
+	{\includegraphics[width=.5em,height=2ex]{images/pmA.pdf}%
+}}}}
+
+\DeclareRobustCommand\PMB{%
+   	\ensuremath{\mathbin{%
+	\raisebox{-1ex}[.9ex][.9ex]%
+	{\includegraphics[width=.5em,height=2ex]{images/pmB.pdf}%
+}}}}
+
+
+\DeclareRobustCommand\PMD{%
+   	\ensuremath{\mathbin{%
+	\raisebox{-1ex}[.9ex][.9ex]%
+	{\includegraphics[width=.5em,height=2ex]{images/pmD.pdf}%
+}}}}
+
+\DeclareRobustCommand\PME{%
+\ensuremath{\mathbin{%
+	\raisebox{-.55ex}[.7ex][.7ex]%
+	{\includegraphics[width=.88em,height=1.6ex]{images/pmE.pdf}%
+}}}}
+
+
+\DeclareRobustCommand\PMG{%
+   	\ensuremath{\mathbin{%
+	\raisebox{-1ex}[.9ex][.9ex]%
+	{\includegraphics[width=.5em,height=2ex]{images/pmG.pdf}%
+}}}}
+
+\DeclareRobustCommand\PMH{%
+   	\ensuremath{\mathbin{%
+	\raisebox{-1ex}[.9ex][.9ex]%
+	{\includegraphics[width=.5em,height=2ex]{images/pmH.pdf}%
+}}}}
+
+\DeclareRobustCommand\PMK{%
+   	\ensuremath{\mathbin{%
+	\raisebox{-1ex}[.9ex][.9ex]%
+	{\includegraphics[width=.5em,height=2ex]{images/pmK.pdf}%
+}}}}
+
+
+
+\DeclareRobustCommand\PMkla{%
+   	\ensuremath{\mathbin{(%
+	\raisebox{-1ex}[.9ex][.9ex]%
+	{\includegraphics[width=.5em,height=2ex]{images/pm.pdf}})}%
+}}
+
+\DeclareRobustCommand\MPkla{%
+   	\ensuremath{\mathbin{(%
+	\raisebox{-1ex}[.9ex][.9ex]%
+	{\includegraphics[width=.5em,height=2ex]{images/mp.pdf}})}%
+}}
+
+\DeclareRobustCommand\PMklakla{%
+   	\ensuremath{\mathbin{(\!(%
+	\raisebox{-1ex}[.9ex][.9ex]%
+	{\includegraphics[width=.5em,height=2ex]{images/pm.pdf}})\!)}%
+}}
+
+\DeclareRobustCommand\MPklakla{%
+   	\ensuremath{\mathbin{(\!(%
+	\raisebox{-1ex}[.9ex][.9ex]%
+	{\includegraphics[width=.5em,height=2ex]{images/mp.pdf}})\!)}%
+}}
+
+
+
+\DeclareRobustCommand\hccps{%
+   	\ensuremath{\mathbin{%
+	\raisebox{-.55ex}[.7ex][.7ex]%
+	{\includegraphics[height=2.15ex]{images/hccps.pdf}%
+}}}}
+
+\DeclareRobustCommand\hccms{%
+   	\ensuremath{\mathbin{%
+	\raisebox{-.55ex}[.7ex][.7ex]%
+	{\includegraphics[height=2.15ex]{images/hccms.pdf}%
+}}}}
+
+
+
+\newcommand*{\ditto}{\texttt{"}}	
+
+\DeclareRobustCommand{\bracks}[1]{%
+\textup{\lbrack}#1\textup{\rbrack}}
+\DeclareRobustCommand{\bracksup}[1]{%
+\textup{\lbrack{}#1\rbrack{}}}
+
+\DeclareRobustCommand{\angles}[1]{%
+\ifmmode {\langle{}}\else {\textlangle{}}\fi%
+#1\ifmmode {\rangle{}}\else {\textrangle{}}\fi}	%
+
+
+
+
+\DeclareRobustCommand{\greek}[1]{\foreignlanguage{greek}{#1}}	%
+\DeclareRobustCommand{\pgrk}[1]{\foreignlanguage{greek}{#1}}	%
+
+\usepackage{cjhebrew}			%
+\newcommand*{\hebr}[1]{\mbox{\cjRL{#1}}}
+
+\BeforeBeginEnvironment{ledgroupsized}{\selectlanguage{ngerman}}	%
+\BeforeBeginEnvironment{ledgroup}{\selectlanguage{ngerman}}	%
+
+\input{gesamttex/Worttrennungen.tex}
+
+
+
+\usepackage[%
+hidelinks,			%
+linktocpage=true,		%
+bookmarksnumbered=true,	%
+]{hyperref}			
+
+\hypersetup{%
+urlcolor=RoyalBlue,			%
+urlbordercolor=RoyalBlue,
+citecolor=red,
+citebordercolor=red,
+}
+
+\hypersetup{pdfinfo={%
+Title={\textit{LSB}, Achte Reihe, Vierter Band, Mechanik 2},	%
+Author={G. W. Leibniz},				%
+Creator={BBAW, Arbeitsstelle Leibniz-Edition Berlin},	%
+}}
+
+\pdfstringdefDisableCommands{\let\thepart\relax}	%
+\pdfstringdefDisableCommands{\let\textsubscript\fullstop{}}	%
+
+\newcommand{\ScanURL}[2]{%
+\expandafter\newcommand\csname scan-#1\endcsname{#2}}    %
+\newcommand{\Scan}[1]{\csname scan-#1\endcsname}    %
+\input{gesamttex/VIII,4_Scanadressen.tex}			%
+
+\newcommand*{\LSBviiiURL}{https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/}
+
+\newcommand*{\refBerichtigung}[2]{%
+S.\;\edpageref{#1}, Z.\;\edlineref{#1}%
+  \ifnum\xpageref{#1}=\xpageref{#2}%
+    \ifnum\xlineref{#1}=\xlineref{#2}%
+    \else%
+    \endashchar\edlineref{#2}%
+    \fi%
+  \else%
+  \endashchar S.\;\edpageref{#2}, Z.\;\edlineref{#2}%
+\fi}
+\newcommand*{\NichtBerichtigteStelle}[1]{%
+\ledinnernote{\hyperlink{#1-BE}{\textasteriskcentered}}}	%
+\newcommand*{\BerichtigungNichtVorgenommen}[2]{%
+\hypertarget{#1-BE}{#2}\textsuperscript{\textasteriskcentered}}	%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+\frontmatter
+
+\label{TRIX}
+
+\input{gesamttex/VIII,4_Titelseite.tex}
+
+
+\addpart[%
+tocentry=,
+head=Inhaltsverzeichnis%
+]{INHALTSVERZEICHNIS}
+\pdfbookmark[-1]{INHALTSVERZEICHNIS}{}
+\tableofcontents
+
+
+\part{VORWORT}
+
+\input{gesamttex/VIII,4_Vorwort.tex}
+
+
+\part{EINLEITUNG}
+
+\input{gesamttex/VIII,4_Einleitung.tex}
+
+
+
+\part{ZUR TEXT- UND VARIANTENGESTALTUNG}
+
+\input{gesamttex/VIII,4_Textgestaltung.tex}
+
+
+
+\mainmatter
+
+
+
+
+
+
+
+\part[tocentry={I.~AKUSTIK, ELASTIZITÄT, FESTIGKEIT},
+head={I.~AKUSTIK, ELASTIZITÄT, FESTIGKEIT}]%
+{I.~AKUSTIK, ELASTIZITÄT, FESTIGKEIT}	%
+
+
+
+\chapter[tocentry={Corporum connexio a motu orta  %
+\enskip\bracks{%
+Winter 1670/1671 -- Frühjahr 1683 (?)%
+}}, %
+head={Corporum connexio a motu orta %
+}]%
+{\MakeUppercase{Corporum connexio a motu orta} %
+\newline\bracks{%
+Winter 1670/1671 -- Frühjahr 1683 (?)%
+}} %
+\label{60250}
+\include{gesamttex/edit_VIII-4/LH_37_04_095.tex}
+
+
+
+\chapter[tocentry={Der Donner als Echo 
+\enskip%
+\bracks{%
+1672 -- frühe 1680er Jahre (?)}%
+}, %
+head={Der Donner als Echo %
+}]%
+{\MakeUppercase{Der Donner als Echo} %
+\newline%
+\bracks{%
+1672 -- frühe 1680er Jahre (?)%
+}%
+}%
+\label{56218}
+\include{gesamttex/edit_VIII-4/Gerland_1906_011.tex}
+
+
+
+\chapter[tocentry={Aus Erhard Weigel, Pendulum ex tetracty deductum 
+\enskip \bracks{zweite Hälfte Dezember 1676 -- erste Monate 1677~(?)}},
+head={Aus Erhard Weigel, Pendulum ex tetracty deductum}]%
+{\MakeUppercase{Aus Erhard Weigel, Pendulum ex tetracty deductum}
+\newline \bracks{zweite Hälfte Dezember 1676 -- erste Monate 1677~(?)}}
+\label{38575}
+\include{gesamttex/edit_VIII-4/LBr_250_001.tex}
+
+
+
+\chapter[tocentry={Aero-nautica 
+\enskip\bracks{zweite Hälfte Dezember 1676 -- Dezember 1679}},
+head={Aero-nautica }]%
+{\MakeUppercase{Aero-nautica}
+\newline\bracks{zweite Hälfte Dezember 1676 -- Dezember 1679}}
+\label{56215}
+\include{gesamttex/edit_VIII-4/Gerland_1906_007-009.tex}
+
+
+
+\chapter[tocentry={Funiculus Lini 
+\enskip\lbrack%
+1677\;(?) -- 1684\;(?)%
+\rbrack},
+head={Funiculus Lini}]%
+{\MakeUppercase{Funiculus Lini}
+\newline\lbrack%
+1677\;(?) -- 1684\;(?)%
+\rbrack}%
+\label{60261}
+\include{gesamttex/edit_VIII-4/LH_37_04_107.tex}
+
+
+
+\chapter[tocentry={Cur aqua frigore intumescat %
+\enskip\bracks{%
+ab 1677 (?)%
+}}, %
+head={Cur aqua frigore intumescat%
+}]%
+{\MakeUppercase{Cur aqua frigore intumescat} %
+\newline\bracks{%
+ab 1677 (?)%
+}}%
+\label{60248}
+\include{gesamttex/edit_VIII-4/LH_37_04_093.tex}
+
+
+
+\chapter[tocentry={Liquidum transparens %
+\enskip\bracks{%
+ab 1677 (?)%
+}}, %
+head={Liquidum transparens%
+}]%
+{\MakeUppercase{Liquidum transparens} %
+\newline\bracks{%
+ab 1677 (?)%
+}}%
+\label{60255}
+\include{gesamttex/edit_VIII-4/LH_37_04_100.tex}
+
+
+ 
+
+
+
+\chapter[tocentry={Notatiuncula de tonitru %
+\enskip \bracks{%
+ab 1677 (?)%
+}}, %
+head={Notatiuncula de tonitru%
+}]%
+{\MakeUppercase{Notatiuncula de tonitru} %
+\newline\bracks{%
+ab 1677 (?)%
+}}%
+\label{60249}
+\include{gesamttex/edit_VIII-4/LH_37_04_094.tex}
+
+
+
+\chapter[tocentry={Notula de retinentia corporum %
+\enskip\bracks{%
+ab 1677 (?)%
+}}, %
+head={De retinentia corporum%
+}]%
+{\MakeUppercase{Notula de retinentia corporum} %
+\newline\bracks{%
+ab 1677 (?)%
+}}%
+\label{41172}
+\include{gesamttex/edit_VIII-4/LH_35_09_16_007.tex}
+
+
+
+\chapter[tocentry={Vis agens absque vi connectente
+\enskip März 1677},
+head={Vis agens absque vi connectente}]%
+{\MakeUppercase{Vis agens absque vi connectente}
+\newline März 1677}
+\label{60277}
+\include{gesamttex/edit_VIII-4/LH_37_05_018.tex}
+
+
+
+\chapter[tocentry={Vorrichtung zum Glockenschlagen
+\enskip \lbrack August 1677\rbrack},
+head={Vorrichtung zum Glockenschlagen}]%
+{\MakeUppercase{Vorrichtung zum Glockenschlagen}
+\newline \lbrack August 1677\rbrack}
+\label{57037-3}
+\include{gesamttex/edit_VIII-4/LH_37_04_156-3.tex}
+
+
+
+\chapter[tocentry={Barometrum portabile %
+\enskip August -- 12.\;(22.) November 1677},
+head={Barometrum portabile}]%
+{\MakeUppercase{Barometrum portabile}
+\newline August -- 12.\;(22.) November 1677}
+\label{barom-portab_intro}
+\include{gesamttex/edit_VIII-4/barom-portab_intro.tex}
+
+
+\section[tocentry={Memorabile inventum barometri et thermometri portatilis exactissimi
+\enskip August 1677},
+head={Memorabile inventum barometri et thermometri %
+}]%
+{\MakeUppercase{Memorabile inventum barometri et thermometri portatilis exactissimi}
+\newline August 1677}
+\label{57037-1}
+\include{gesamttex/edit_VIII-4/LH_37_04_156-1.tex}
+
+
+\section[tocentry={De barometro portabili scheda prima
+\enskip 12.\;(22.) November 1677},
+head={De barometro portabili scheda I}]%
+{\MakeUppercase{De barometro portabili scheda prima}
+\newline 12.\;(22.) November 1677}
+\label{57038}
+\include{gesamttex/edit_VIII-4/LH_37_04_157-158.tex}
+
+\section[tocentry={De barometro portabili scheda secunda
+\enskip 12.\;(22.) November 1677},
+head={De barometro portabili scheda II}]%
+{\MakeUppercase{De barometro portabili scheda secunda}
+\newline 12.\;(22.) November 1677}
+\label{57039}
+\include{gesamttex/edit_VIII-4/LH_37_04_159.tex} %
+
+
+
+\chapter[tocentry={Barometri partium volumina
+\enskip%
+\bracks{%
+Herbst 1677~(?)%
+}%
+}, %
+head={Barometri partium volumina %
+}]%
+{\MakeUppercase{Barometri partium volumina}
+\newline%
+\bracks{%
+Herbst 1677~(?)%
+}%
+}%
+\label{57960}
+\include{gesamttex/edit_VIII-4/LH_35_13_02c_112-113.tex}
+
+
+
+\chapter[tocentry={Instrumentum utile ad aerometrum portatilem
+\enskip%
+\lbrack Herbst 1677~(?)\rbrack%
+}, %
+head={Instrumentum utile ad aerometrum portatilem %
+}]%
+{\MakeUppercase{Instrumentum utile ad aerometrum portatilem}
+\newline%
+\lbrack Herbst 1677~(?)\rbrack%
+} %
+\label{55813-E}
+\include{gesamttex/edit_VIII-4/LH_38_184.tex}
+
+
+
+\chapter[tocentry={Motus perpetuus per thermometrum, barometrum, hygrometrum %
+\enskip\lbrack Oktober 1677\rbrack},
+head={Motus perpetuus%
+}]%
+{\MakeUppercase{Motus perpetuus per thermometrum, barometrum, hygrometrum}
+\newline\lbrack Oktober 1677\rbrack}
+\label{motus-perpetuus_intro}
+\include{gesamttex/edit_VIII-4/motus-perpetuus_intro.tex}
+
+
+\section[tocentry={Motus perpetuus per thermometrum, barometrum, hygrometrum. Scheda prima 
+\enskip Oktober 1677},
+head={Motus perpetuus%
+. Scheda I}]%
+{\MakeUppercase{Motus perpetuus per thermometrum, barometrum, hygrometrum. Scheda prima}
+\newline Oktober 1677}
+\label{57040}
+\include{gesamttex/edit_VIII-4/LH_37_04_160-161.tex}
+
+
+\section[tocentry={Motus perpetuus per thermometrum, barometrum, hygrometrum. Scheda secunda 
+\enskip\lbrack Oktober 1677\rbrack},
+head={Motus perpetuus%
+. Scheda II}]%
+{\MakeUppercase{Motus perpetuus per thermometrum, barometrum, hygrometrum. Scheda secunda}
+\newline\lbrack Oktober 1677\rbrack}
+\label{57041}
+\include{gesamttex/edit_VIII-4/LH_37_04_162-163.tex}
+
+
+
+\chapter[tocentry={Columba Architae resuscitata
+\enskip Juni 1678},
+head={Columba Architae resuscitata}]%
+{\MakeUppercase{Columba Architae resuscitata}
+\newline Juni 1678}
+\label{55774}
+\include{gesamttex/edit_VIII-4/LH_38_091.tex}
+
+
+
+\chapter[tocentry={Aer externus efficacius ab ala impellitur quam ab immediata aeris compressi eruptione
+\enskip%
+\lbrack Juni 1678~(?)\rbrack},
+head={Aer externus efficacius ab ala impellitur %
+}]%
+{\MakeUppercase{Aer externus efficacius ab ala impellitur quam ab immediata aeris compressi eruptione}
+\newline%
+\bracks{Juni 1678~(?)}%
+}
+\label{55805}
+\include{gesamttex/edit_VIII-4/LH_38_157.tex}
+
+
+
+
+
+\chapter[tocentry={Nulla chorda pondere praedita exacte tendi potest
+\enskip\bracks{%
+Herbst 1679 -- 1682\;(?)%
+}},
+head={Nulla chorda exacte tendi potest}]%
+{\MakeUppercase{Nulla chorda pondere praedita exacte tendi potest}
+\newline\bracks{%
+Herbst 1679 -- 1682\;(?)%
+}%
+}%
+\label{60198}
+\include{gesamttex/edit_VIII-4/LH_37_03_065.tex}
+\chapter[tocentry={Tractatio de aeris elastro
+\enskip%
+\bracks{September 1679
+-- erste Monate 1683%
+}},
+head={Tractatio de elastro}]%
+{\MakeUppercase{Tractatio de aeris elastro}
+\newline%
+\bracks{September 1679
+-- erste Monate 1683%
+}}
+\label{60212}
+\include{gesamttex/edit_VIII-4/LH_37_03_125-127.tex}
+
+
+
+\chapter[tocentry={Corpus impingens a penetrabili repercuti potest
+\enskip%
+\bracks{%
+1680\;(?) -- 1684\;(?)%
+}},
+head={Corpus impingens repercuti potest}]%
+{\MakeUppercase{Corpus impingens a penetrabili repercuti potest}
+\newline%
+\bracks{%
+1680\;(?) -- 1684\;(?)}%
+}
+\label{60283}
+\include{gesamttex/edit_VIII-4/LH_37_05_025.tex}
+
+
+
+\chapter[tocentry={Non quies est causa unionis corporum, sed motus %
+\enskip\lbrack%
+1680--1687%
+\rbrack}, %
+head={Non quies est causa unionis corporum, sed motus%
+}]%
+{\MakeUppercase{Non quies est causa unionis corporum, sed motus} %
+\newline\lbrack%
+1680--1687%
+\rbrack} %
+\label{60349-1}
+\include{gesamttex/edit_VIII-4/LH_37_05_171-172_171r.tex}
+
+
+
+\chapter[tocentry={Estne lumen liquor ultimae subtilitatis? %
+\enskip\lbrack%
+1680--1687%
+\rbrack}, %
+head={Estne lumen liquor ultimae subtilitatis?%
+}]%
+{\MakeUppercase{Estne lumen liquor ultimae subtilitatis?} %
+\newline\lbrack%
+1680--1687%
+\rbrack} %
+\label{60349-2}
+\include{gesamttex/edit_VIII-4/LH_37_05_171-172_172v.tex}
+
+
+
+\chapter[tocentry={De nova pressione aeris subtilioris etiam intra locum aeri communi exhaustum deprehensa, et in aere libero pressionem a cylindro aeris crassi ortam longe superante
+\enskip\bracks{%
+Herbst\;(?) 1680 -- April 1683%
+}},
+head={De nova pressione aeris subtilioris}]%
+{\MakeUppercase{De nova pressione aeris subtilioris etiam intra locum aeri communi exhaustum deprehensa, et in aere libero pressionem a cylindro aeris crassi ortam longe superante}
+\newline\bracks{%
+Herbst\;(?) 1680 -- April 1683%
+}%
+}
+\label{60205}
+\include{gesamttex/edit_VIII-4/LH_37_03_115-116.tex}
+
+
+
+\chapter[tocentry={Consideratio magni in mechanicis momenti %
+\enskip\bracks{%
+ab Herbst 1680 (?)%
+}}, %
+head={Consideratio magni in mechanicis momenti%
+}]%
+{\MakeUppercase{Consideratio magni in mechanicis momenti} %
+\newline\bracks{%
+ab Herbst 1680 (?)%
+}}%
+\label{55813-C}
+\include{gesamttex/edit_VIII-4/LH_38_182.tex}
+
+
+
+\chapter[tocentry={Pendulae chordae curvitas ex vibratione %
+\enskip \lbrack um 22.\;Juni 1681\rbrack}, %
+head={Pendulae chordae curvitas ex vibratione%
+}]%
+{\MakeUppercase{Pendulae chordae curvitas ex vibratione} %
+\newline\lbrack um den 22.\;Juni (2.\;Juli) 1681\rbrack} %
+\label{60234}
+\include{gesamttex/edit_VIII-4/LH_37_04_055.tex}
+
+
+
+\chapter[tocentry={Aus und zu Dechales, Cursus (Pneumatik) %
+\enskip \bracks{Winter 1682/1683 -- erste Hälfte 1685}},
+head={Aus und zu Dechales, Cursus (Pneumatik)}]%
+{\MakeUppercase{Aus und zu Dechales, Cursus (Pneumatik)}
+\newline \bracks{Winter 1682/1683 -- erste Hälfte 1685}}
+\label{41182-1}%
+\include{gesamttex/edit_VIII-4/LH_35_09_17_005-006_1.tex}%
+
+
+
+\chapter[tocentry={Observationes von Winden
+\enskip \lbrack1683 \textendash\ 1684\rbrack},
+head={Observationes von Winden}]%
+{\MakeUppercase{Observationes von Winden}
+\newline \lbrack1683 \textendash\ 1684\rbrack}
+\label{60258}
+\include{gesamttex/edit_VIII-4/LH_37_04_104.tex}
+
+
+
+
+\chapter[tocentry={Pro pressione aeris, contra funiculum
+\enskip \bracks{1683 -- 1684}},
+head={Pro pressione aeris, contra funiculum}]%
+{\MakeUppercase{Pro pressione aeris, contra funiculum}
+\newline \bracks{1683 -- 1684}}
+\label{60206}
+\include{gesamttex/edit_VIII-4/LH_37_03_117.tex}
+
+
+
+\chapter[tocentry={De aestimatione virium aeris compressi %
+\enskip%
+\bracks{%
+zweite Hälfte 1683\;(?)
+\textendash\
+erste Hälfte
+1686}},
+head={De aestimatione virium aeris compressi}]%
+{\MakeUppercase{De aestimatione virium aeris compressi}
+\newline%
+\bracks{%
+zweite Hälfte 1683\;(?)
+\textendash\
+erste Hälfte
+1686}}
+\label{aestimavirium_intro}
+\include{gesamttex/edit_VIII-4/aestimavirium_intro.tex}
+
+
+\section[tocentry={De aestimatione virium quas per aeris compressionem acquirere licet
+\enskip%
+\bracks{%
+zweite Hälfte 1683\;(?)
+\textendash\
+erste Hälfte
+1686}},
+head={De aestimatione virium}]%
+{\MakeUppercase{De aestimatione virium quas per aeris compressionem acquirere licet}
+\newline%
+\bracks{%
+zweite Hälfte 1683\;(?)
+\textendash\
+erste Hälfte
+1686}}
+\label{41212}
+\include{gesamttex/edit_VIII-4/LH_35_09_25_001-002+004-005.tex}
+
+
+\section[tocentry={Die Kraft der zusammengedrückten Luft
+\enskip%
+\bracks{%
+zweite Hälfte 1683\;(?)
+\textendash\
+erste Hälfte
+1686%
+}},
+head={Die Kraft der zusammengedrückten Luft}]%
+{\MakeUppercase{Die Kraft der zusammengedrückten Luft}
+\newline%
+\bracks{%
+zweite Hälfte 1683\;(?)
+\textendash\
+erste Hälfte
+1686%
+}}
+\label{41213}
+\include{gesamttex/edit_VIII-4/LH_35_09_25_003.tex}
+
+
+
+\chapter[tocentry={Principium demonstrandi perutile in geometria et mechanica
+\enskip%
+\bracks{September 1686 -- Frühjahr 1695~(?)}},
+head={Principium demonstrandi perutile}]%
+{\MakeUppercase{Principium demonstrandi perutile in geometria et mechanica%
+}
+\newline%
+\bracks{September 1686 -- Frühjahr 1695~(?)}}
+\label{39978}
+\include{gesamttex/edit_VIII-4/LH_35_01_09_030.tex}
+
+
+
+\chapter[tocentry={Problema thermometri aequaliter dividendi
+\enskip \lbrack Zweite Hälfte April 1689 \textendash\ 20. Februar 1690\rbrack},
+head={Problema thermometri aequaliter dividendi}]%
+{\MakeUppercase{Problema thermometri aequaliter dividendi}
+\newline \lbrack Zweite Hälfte April 1689 \textendash\ 20. Februar 1690\rbrack}
+\label{60270+RK60326}
+\include{gesamttex/edit_VIII-4/intro_problema-thermometri.tex}
+\section[tocentry={Rechnungen und Zeichnungen},
+head={Rechnungen und Zeichnungen}]%
+{\MakeUppercase{Rechnungen und Zeichnungen}}
+\label{60326}
+\include{gesamttex/edit_VIII-4/LH_37_05_108.tex}
+\section[tocentry={Problema exactum indicem densitatum et raritatum aeris designare seu thermometrum exhibere ad gradus caloris vel frigoris designandos accurate divisurum},
+head={Problema exactum Indicem densitatum et raritatum Aeris designare}]%
+{\MakeUppercase{Problema exactum indicem densitatum et raritatum aeris designare seu thermometrum exhibere ad gradus caloris vel frigoris designandos accurate divisurum}}
+\label{60270}
+\include{gesamttex/edit_VIII-4/LH_37_04_169-170.tex}
+
+
+
+\chapter[tocentry={Densitas ex viribus coercentibus %
+\enskip%
+\bracks{%
+Sommer -- November
+1689}}, %
+head={Densitas ex viribus coercentibus%
+}]%
+{\MakeUppercase{Densitas ex viribus coercentibus} %
+\newline%
+\bracks{%
+Sommer -- November
+1689}%
+}%
+\label{58656-A}
+\include{gesamttex/edit_VIII-4/LH_35_06_23_003.tex}
+
+
+
+\chapter[tocentry={Densitates sunt ut materiae quantitates
+\enskip\bracks{%
+Sommer -- November 1689 (?)%
+}}, %
+head={Densitates sunt ut materiae quantitates}]%
+{\MakeUppercase{Densitates sunt ut materiae quantitates}
+\newline\bracks{%
+Sommer -- November 1689 (?)%
+}}%
+\label{58216}
+\include{gesamttex/edit_VIII-4/LH_35_14_02_001.tex}
+
+
+
+\chapter[tocentry={Ratio densitatis et voluminis in mobilium molibus %
+\enskip%
+\bracks{%
+Sommer -- November
+1689}}, %
+head={Ratio densitatis et voluminis%
+}]%
+{\MakeUppercase{Ratio densitatis et voluminis in mobilium molibus} %
+\newline%
+\bracks{%
+Sommer -- November
+1689}} %
+\label{58258}
+\include{gesamttex/edit_VIII-4/LH_35_14_02_165.tex}
+
+
+
+\chapter[tocentry={Tenacitas in fluidis %
+\enskip%
+\bracks{%
+Sommer -- November
+1689}}, %
+head={Tenacitas in fluidis%
+}]%
+{\MakeUppercase{Tenacitas in fluidis} %
+\newline%
+\bracks{%
+Sommer -- November
+1689}} %
+\label{58218}
+\include{gesamttex/edit_VIII-4/LH_35_14_02_004.tex}
+
+
+
+\chapter[tocentry={Motus leges ex abstractis principiis ductae %
+\enskip%
+\bracks{ab
+Sommer
+1689}%
+}, %
+head={Motus leges ex abstractis principiis ductae%
+}]%
+{\MakeUppercase{Motus leges ex abstractis principiis ductae} %
+\newline%
+\bracks{ab
+Sommer
+1689}%
+} %
+\label{60080}
+\include{gesamttex/edit_VIII-4/LH_35_10_11_107.tex}
+
+
+
+\chapter[tocentry={Utrum et quatenus vis aeris elastica imminuatur per flammam
+\enskip \lbrack Dezember 1689\rbrack}, %
+head={Utrum vis aeris elastica imminuatur per flammam %
+}]%
+{\MakeUppercase{Utrum et quatenus vis aeris elastica imminuatur per flammam
+}
+\newline \lbrack Dezember 1689\rbrack}%
+\label{55743+55744+60656}
+\include{gesamttex/edit_VIII-4/LH_38_049-051+Gerland_1906_006.tex}
+
+
+
+\chapter[tocentry={Liquorum ascensus in tubulos capillares %
+\enskip\lbrack%
+ab Frühjahr 1690 (?)%
+\rbrack}, %
+head={Liquorum ascensus in tubulos capillares%
+}]%
+{\MakeUppercase{Liquorum ascensus in tubulos capillares} %
+\newline\lbrack%
+ab Frühjahr 1690 (?)%
+\rbrack}%
+\label{42488}
+\include{gesamttex/edit_VIII-4/LH_37_07_008.tex}
+
+
+
+\chapter[tocentry={Corporum solidorum liquida ingredientium refractio %
+\enskip%
+\bracks{%
+August
+1690 -- Anfang 1691\;(?)}}, %
+head={Corporum solidorum refractio%
+}]%
+{\MakeUppercase{Corporum solidorum liquida ingredientium refractio} %
+\newline%
+\bracks{%
+August
+1690 -- Anfang 1691\;(?)}%
+} %
+\label{58952}
+\include{gesamttex/edit_VIII-4/LH_35_11_14_037.tex}
+
+
+
+\chapter[tocentry={Aus und zu Denis Papin, Nova methodus ad vires motrices validissimas levi pretio comparandas
+\enskip%
+\bracks{%
+August
+1690 -- Mitte April 1698}},
+head={Aus und zu Denis Papin, Nova methodus
+}]%
+{\MakeUppercase{Aus und zu Denis Papin, Nova methodus ad vires motrices validissimas levi pretio comparandas}
+\newline%
+\bracks{%
+August
+1690 -- Mitte April 1698}}
+\label{55804}
+\include{gesamttex/edit_VIII-4/LH_38_156.tex}
+
+
+
+\chapter[tocentry={Virium distributio in tractione %
+\enskip \lbrack März 1691~(?)\rbrack}, %
+head={Virium distributio in tractione%
+}]%
+{\MakeUppercase{Virium distributio in tractione} %
+\newline\lbrack März 1691~(?)\rbrack} %
+\label{60117}
+\include{gesamttex/edit_VIII-4/LH_35_10_14_011.tex}
+
+
+
+\chapter[tocentry={La composition de l'air
+\enskip\bracks{%
+1693\;(?) -- 1701%
+}}, %
+head={La composition de l'air%
+}]%
+{\MakeUppercase{La composition de l'air} %
+\newline\bracks{%
+1693\;(?) -- 1701%
+}}%
+\label{56214}
+\include{gesamttex/edit_VIII-4/Gerland_1906_005b.tex}
+
+
+
+\chapter[tocentry={Calculus infinitesimalis de fili tensione %
+\enskip\bracks{ab Juni 1695~(?)}}, %
+head={Calculus infinitesimalis de fili tensione%
+}]%
+{\MakeUppercase{Calculus infinitesimalis de fili tensione} %
+\newline\bracks{ab Juni 1695~(?)}} %
+\label{57578}
+\include{gesamttex/edit_VIII-4/LH_35_13_01_427r.tex}
+
+
+
+\chapter[tocentry={Centrum tensionis %
+\enskip\bracks{Ende Juli 1696~(?)}%
+}, %
+head={Centrum tensionis%
+}]%
+{\MakeUppercase{Centrum tensionis} %
+\newline\bracks{Ende Juli 1696~(?)}%
+} %
+\label{60337}
+\include{gesamttex/edit_VIII-4/LH_37_05_121.tex}
+
+
+
+\chapter[tocentry={Domini Amontons barometrum brevius
+\enskip\bracks{%
+Mitte September 1696
+(?)
+-- Sommer 1714%
+}}, %
+head={Domini Amontons barometrum brevius}]%
+{\MakeUppercase{Domini Amontons barometrum brevius}
+\newline\bracks{%
+Mitte September 1696
+(?)
+-- Sommer 1714%
+}} %
+\label{53451}
+\include{gesamttex/edit_VIII-4/LH_37_04_171.tex}
+
+
+
+\chapter[tocentry={Paradoxon de aeris gravitate%
+\enskip%
+\bracks{%
+Mitte September 1696\;(?)
+-- 1715}},
+head={Paradoxon de aeris gravitate %
+}]%
+{\MakeUppercase{Paradoxon de aeris gravitate %
+}
+\newline%
+\bracks{%
+Mitte September 1696\;(?)
+-- 1715}}
+\label{paradoxon_intro}
+\include{gesamttex/edit_VIII-4/paradoxonbarom_intro.tex}
+
+
+\section[tocentry={Causa paradoxi cur aer pluvius sit levior
+\enskip%
+\bracks{%
+Mitte September\;(?) -- Mitte Oktober 1696%
+}},
+head={Causa paradoxi cur aer pluvius sit levior}]%
+{\MakeUppercase{Causa paradoxi cur aer pluvius sit levior}
+\newline%
+\bracks{%
+Mitte September\;(?) -- Mitte Oktober 1696%
+}}
+\label{53442}
+\include{gesamttex/edit_VIII-4/LH_37_04_151.tex}
+
+
+\section[tocentry={Paradoxon barometricum ejusque causa
+\enskip%
+\bracks{%
+Mitte September 1696 -- zweite Hälfte 1697 / zweite Hälfte 1699%
+}%
+},
+head={Paradoxon barometricum ejusque causa}]%
+{\MakeUppercase{Paradoxon barometricum ejusque causa}
+\newline%
+\bracks{%
+Mitte September 1696 -- zweite Hälfte 1697 / zweite Hälfte 1699%
+}}
+\label{60267}
+\include{gesamttex/edit_VIII-4/LH_37_04_149-150.tex}
+
+
+\section[tocentry={Experimentum mechanicum de paradoxi barometrici causa %
+\enskip \bracks{zweite Hälfte 1699 -- 19.\;März 1701}%
+},
+head={Experimentum mechanicum de paradoxi barometrici causa}]%
+{\MakeUppercase{Experimentum mechanicum de paradoxi barometrici causa} %
+\newline \bracks{zweite Hälfte 1699 -- 19.\;März 1701}%
+}
+\label{36805}
+\include{gesamttex/edit_VIII-4/LBr_413_048.tex}
+
+
+\section[tocentry={De aetiologia barometri
+\enskip%
+\bracks{zweite Hälfte Juni 1712 --
+1715%
+}},
+head={De aetiologia barometri}]%
+{\MakeUppercase{De aetiologia barometri} %
+\newline%
+\bracks{zweite Hälfte Juni 1712 --
+1715%
+}}
+\label{54958}
+\include{gesamttex/edit_VIII-4/EphSNC_1715_app_49-51.tex}
+
+
+
+\chapter[tocentry={Tentamen de aeris extensione per determinatum caloris gradum
+\enskip Juni 1698}, %
+head={Tentamen de aeris extensione %
+}]%
+{\MakeUppercase{Tentamen de aeris extensione per determinatum caloris gradum}
+\newline Juni 1698} %
+\label{36650}
+\include{gesamttex/edit_VIII-4/Halle_ULB_Yg_8o_23_C_001-002.tex}
+
+
+
+\chapter[tocentry={Duplices naturae leges %
+\enskip\bracks{%
+ab 1705 (?)%
+}}, %
+head={Duplices naturae leges%
+}]%
+{\MakeUppercase{Duplices naturae leges} %
+\newline\bracks{%
+ab 1705 (?)%
+}}%
+\label{39746}
+\include{gesamttex/edit_VIII-4/LH_04_01_02a_015.tex}
+
+
+
+\chapter[tocentry={De elevatione vaporum
+\enskip%
+\bracks{Mitte Mai 1708 --
+Mitte Mai 1710%
+}},
+head={De elevatione vaporum}]%
+{\MakeUppercase{De elevatione vaporum}
+\newline%
+\bracks{Mitte Mai 1708 --
+Mitte Mai 1710%
+}}
+\label{elevaporum_intro}
+\include{gesamttex/edit_VIII-4/elevaporum_intro.tex}
+
+
+\section[tocentry={Annotatio ad hypothesin de ascensu vaporum
+\enskip%
+\bracks{Mitte Mai 1708 --
+Mitte August\;(?) 1709%
+}},
+head={Annotatio ad hypothesin de ascensu vaporum%
+}]%
+{\MakeUppercase{Annotatio ad hypothesin de ascensu vaporum}
+\newline%
+\bracks{Mitte Mai 1708 --
+Mitte August\;(?) 1709%
+}}
+\label{60210}
+\include{gesamttex/edit_VIII-4/LH_37_03_123-124.tex}
+
+
+\section[tocentry={De elevatione vaporum et de corporibus quae ob cavitatem inclusam in aere natare possint
+\enskip%
+\bracks{Mitte Mai 1708 --
+Mitte August\;(?) 1709 / erste Hälfte Mai 1710%
+}},
+head={De elevatione vaporum%
+}]%
+{\MakeUppercase{De elevatione vaporum et de corporibus quae ob cavitatem inclusam in aere natare possint}
+\newline%
+\bracks{Mitte Mai 1708 --
+Mitte August\;(?) 1709 / erste Hälfte Mai 1710%
+}}
+\label{37109+60209}
+\include{gesamttex/edit_VIII-4/MB_1710_123-128+LH_37_03_120-122.tex}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\part{II.~STATIK} 
+
+
+
+
+\chapter[tocentry={Demonstratio centri gravitatis
+\enskip \bracks{ab 1677\,(?)}
+},
+head={Demonstratio centri gravitatis}]
+{\MakeUppercase{Demonstratio centri gravitatis}
+\newline \bracks{ab 1677\,(?)}
+}
+\label{60066}
+\include{gesamttex/edit_VIII-4/LH_35_10_08_014.tex}
+
+
+
+
+
+\chapter[tocentry={Demonstratio quod in quolibet corpore sit Centrum Gravitatis
+\enskip \bracks{April 1677\,(?) \textendash\ Oktober 1684\,(?)}},
+head={Demonstratio quod in quolibet corpore sit Centrum Gravitatis}]
+{\MakeUppercase{Demonstratio quod in quolibet corpore sit Centrum Gravitatis}
+\newline \bracks{April 1677\,(?) \textendash\ Oktober 1684\,(?)}}
+\label{41137}
+\include{gesamttex/edit_VIII-4/LH_35_09_10_007.tex}
+
+
+
+
+\chapter[tocentry={De centro gravitatis
+\enskip März 1678 (a.\,St.)},
+head={De centro gravitatis}]
+{\MakeUppercase{De centro gravitatis}
+\newline März 1678 (a.\,St.)}
+
+\label{60279}
+\include{gesamttex/edit_VIII-4/LH_37_05_021.tex}
+
+
+
+
+\chapter[tocentry={Demonstration analytique du principe de l'equilibre et qu'il y a un centre de gravité dans toutes les figures
+\enskip \bracks{Ende April -- Dezember 1679\,(?)}},
+head={Demonstration analytique du principe de l'equilibre}]%
+{\MakeUppercase{Demonstration analytique du principe de l'equilibre et qu'il y a un centre de gravité dans toutes les figures}
+\newline \bracks{Ende April -- Dezember 1679\,(?)}}
+\label{intro_demonstration-equilibre}
+\include{gesamttex/edit_VIII-4/intro_demonstration-equilibre.tex}
+\section[tocentry={Regula aequilibrii
+\enskip \bracks{Ende April 1679\,(?)}},
+head={Regula aequilibrii}]
+{\MakeUppercase{Regula aequilibrii}
+\newline \bracks{Ende April 1679\,(?)}}
+\label{57032}
+\include{gesamttex/edit_VIII-4/LH_37_03_063.tex}
+\section[tocentry={Theorema aequiponderantium
+\enskip \bracks{Ende April 1679\,(?)}},
+head={Theorema aequiponderantium}]
+{\MakeUppercase{Theorema aequiponderantium}
+\newline \bracks{Ende April 1679\,(?)}}
+\label{57036}
+\include{gesamttex/edit_VIII-4/LH_37_03_082-083.tex}
+\section[tocentry={Demonstration du principe de l'equilibre et qu'il y a un centre de gravité dans toutes les figures
+\enskip \bracks{Ende April -- Dezember 1679\,(?)}},
+head={Demonstration du principe de l'equilibre}]
+{\MakeUppercase{Demonstration du principe de l'equilibre et qu'il y a un centre de gravité dans toutes les figures}
+\newline \bracks{Ende April -- Dezember 1679\,(?)}}
+\label{57033+41135}
+\include{gesamttex/edit_VIII-4/LH_35_09_10_003-004+37_03_064.tex}  
+\section[tocentry={Demonstration analytique du principe de l'équilibre 
+\enskip \bracks{Ende April -- Dezember 1679\,(?)}},
+head={Demonstration analytique du principe de l'équilibre}]
+{\MakeUppercase{Demonstration analytique du principe de l'équilibre} 
+\newline \bracks{Ende April -- Dezember 1679\,(?)}}
+\label{41134}
+\include{gesamttex/edit_VIII-4/LH_35_09_10_001-002.tex}
+\section[tocentry={Demonstration analytique du Principe de l'Equilibre et qu'il y a un centre de gravité dans toutes les figures
+\enskip \bracks{Ende April -- Dezember 1679\,(?)}},
+head={Demonstration analytique du Principe de l'Equilibre}]
+{\MakeUppercase{Demonstration analytique du Principe de l'Equilibre et qu'il y a un centre de gravité dans toutes les figures}
+\newline \bracks{Ende April -- Dezember 1679\,(?)}}
+\label{41136}
+\include{gesamttex/edit_VIII-4/LH_35_09_10_005-006.tex}
+
+
+
+
+
+\chapter[tocentry={De vectibus conjugatis et figuris dentium in rotis
+\enskip 25. Oktober (4. November) 1679
+},
+head={De vectibus conjugatis et figuris dentium in rotis}]%
+{\MakeUppercase{De vectibus conjugatis et figuris dentium in rotis}
+\newline 25. Oktober (4. November) 1679
+}
+
+\label{intro_vectibus-conjugatis}
+\include{gesamttex/edit_VIII-4/intro_vectibus-conjugatis.tex}
+
+\section[tocentry={De vectibus conjugatis et figuris dentium in rotis scheda prima},  	%
+head={De vectibus conjugatis et figuris dentium in rotis scheda prima}]%
+{\MakeUppercase{De vectibus conjugatis et figuris dentium in rotis scheda prima}}  	%
+
+\label{57034}
+\include{gesamttex/edit_VIII-4/LH_37_03_075-076.tex}
+
+\section[tocentry={De vectibus conjugatis et figuris dentium in rotis scheda secunda},  	%
+head={De vectibus conjugatis et figuris dentium in rotis scheda secunda}]%
+{\MakeUppercase{De vectibus conjugatis et figuris dentium in rotis scheda secunda}}  	%
+
+\label{57035}
+\include{gesamttex/edit_VIII-4/LH_37_03_081.tex}
+
+
+
+
+
+\chapter[tocentry={Regula inclinationis planorum ex evitatione motus perpetui demonstrata
+\enskip \bracks{um 1680\,(?)}},
+head={Regula inclinationis planorum}]
+{\MakeUppercase{Regula inclinationis planorum ex evitatione motus perpetui demonstrata}
+\newline \bracks{um 1680\,(?)}%
+}
+
+\label{60129}
+\include{gesamttex/edit_VIII-4/LH_35_10_16_009.tex}
+
+
+
+
+
+\chapter[tocentry={Aus und zu Dechales, Cursus (Statik)
+\enskip\bracks{Winter 1682/1683 -- erste Hälfte 1685}},
+head={Aus und zu Dechales, Cursus (Statik)}]%
+{\MakeUppercase{Aus und zu Dechales, Cursus (Statik)}
+\newline \bracks{Winter 1682/1683 -- erste Hälfte 1685}}
+\label{41182-2}
+\include{gesamttex/edit_VIII-4/LH_35_09_17_005-006_2.tex} 
+
+
+
+
+
+
+
+\chapter[tocentry={Kritisches zu G.\,F.\,Vanni, Specimen libri de momentis gravium
+\enskip \bracks{27. September \textendash\ November 1684}},
+head={Kritisches zu Vanni, Specimen}]%
+{\MakeUppercase{Kritisches zu G.\,F.\,Vanni, Specimen libri de momentis gravium}
+\newline \bracks{27. September \textendash\ November 1684}}%
+\label{intro_vanni-specimen}
+\include{gesamttex/edit_VIII-4/intro_vanni-specimen.tex}
+\section[tocentry={Animadversio in Specimen libri de momentis gravium
+\enskip \bracks{27. September \textendash\ 17. Oktober 1684}%
+},
+head={Animadversio in Specimen}]%
+{\MakeUppercase{Animadversio in Specimen libri de momentis gravium}
+\newline \bracks{27. September \textendash\ 17. Oktober 1684}
+}%
+\label{41667}
+\include{gesamttex/edit_VIII-4/LH_35_05_28_008-009.tex}
+\section[tocentry={Brevis annotatio circa Specimen libri de momentis gravium
+\enskip November 1684%
+},
+head={Brevis annotatio circa Specimen}]%
+{\MakeUppercase{Brevis annotatio circa Specimen libri de momentis gravium}
+\newline November 1684%
+}
+\label{55606}
+\include{gesamttex/edit_VIII-4/AE_1684_514.tex}
+
+
+
+
+
+\chapter[tocentry={Aufzeichnungen zum Schwerpunkt
+\enskip \bracks{1679 \textendash\ Januar 1687\,(?)}},
+head={Aufzeichnungen zum Schwerpunkt}]%
+{\MakeUppercase{Aufzeichnungen zum Schwerpunkt}
+\newline \bracks{1679 \textendash\ Januar 1687\,(?)}}
+
+\label{Cc2-1421}	%
+\label{5konzepte133}	%
+\include{gesamttex/edit_VIII-4/LH_35_08_30_133.tex}
+
+
+
+
+\chapter[tocentry={Singulares quaedam ratiocinationes circa centrum gravitatis
+\enskip \bracks{September 1685\,(?) \textendash\ Januar 1687\,(?)}
+},
+head={Singulares quaedam ratiocinationes circa centrum gravitatis}]%
+{\MakeUppercase{Singulares quaedam ratiocinationes circa centrum gravitatis}
+\newline \bracks{September 1685\,(?) \textendash\ Januar 1687\,(?)}
+}
+
+\label{60309}
+\include{gesamttex/edit_VIII-4/LH_37_05_064-065.tex}
+
+
+
+
+\chapter[tocentry={Demonstratio geometrica regulae apud Staticos receptae de momentis gravium in planis inclinatis
+\enskip \bracks{Ende September \textendash\ November 1685}%
+},
+head={Demonstratio geometrica regulae apud Staticos receptae}]%
+{\MakeUppercase{Demonstratio geometrica regulae apud Staticos receptae de momentis gravium in planis inclinatis} 
+\newline \bracks{Ende September \textendash\ November 1685}%
+}
+
+\label{intro_vanni-demonstratio}
+\include{gesamttex/edit_VIII-4/intro_vanni-demonstratio.tex}
+\section[tocentry={Solutio casus de globo duobus planis incumbente ex literis I.\,F. Vannii
+\enskip \bracks{Ende September 1685}%
+},
+head={Solutio casus \bracks{...}  ex literis I.\,F. Vannii}]%
+{\MakeUppercase{Solutio casus de globo duobus planis incumbente ex literis I.\,F. Vannii}
+\newline \bracks{Ende September 1685}%
+}
+\label{32310}
+\include{gesamttex/edit_VIII-4/LBr_724_016a.tex}
+\section[tocentry={Centrum commune gravium connexorum in aequilibrio non attollitur
+\enskip \bracks{Ende September 1685\,(?)}%
+},
+head={Centrum commune gravium connexorum in aequilibrio}]
+{\MakeUppercase{Centrum commune gravium in aequilibrio non attollitur}
+\newline \bracks{Ende September 1685\,(?)}%
+}
+\label{60341}
+\include{gesamttex/edit_VIII-4/LH_37_05_133.tex}
+\section[tocentry={Demonstratio geometrica regulae apud staticos receptae de momentis gravium in planis inclinatis
+\enskip \bracks{Ende September 1685}%
+},
+head={Demonstratio geometrica regulae apud staticos receptae}]%
+{\MakeUppercase{Demonstratio geometrica regulae apud staticos receptae de momentis gravium in planis inclinatis} 
+\newline \bracks{Ende September 1685}%
+}
+\label{32313}
+\include{gesamttex/edit_VIII-4/LBr_724_018-019.tex}
+\section[tocentry={Demonstratio geometrica regulae apud Staticos receptae de momentis gravium in planis inclinatis
+\enskip \bracks{Ende September \textendash\ November 1685}%
+},
+head={Demonstratio geometrica regulae apud Staticos receptae}]%
+{\MakeUppercase{Demonstratio geometrica regulae apud Staticos receptae de momentis gravium in planis inclinatis} 
+\newline \bracks{Ende September \textendash\ November 1685}%
+}
+\label{49409}
+\include{gesamttex/edit_VIII-4/AE_1685_501-505.tex}
+
+
+
+
+
+\chapter[tocentry={Aus und zu F.~Spoleti, De momento quo gravia nituntur deorsum und De secretione bilis in hepate
+\enskip \bracks{1686 \textendash\ Februar 1687}},
+head={Aus und zu Spoleti, De momento und De secretione}]
+{\MakeUppercase{Aus und zu F.~Spoleti, De momento quo gravia nituntur deorsum und De secretione bilis in hepate}
+\newline \bracks{1686 \textendash\ Februar 1687}}
+\label{intro_spoleti}
+\include{gesamttex/edit_VIII-4/intro_spoleti.tex}
+\section[tocentry={Aus und zu F.~Spoleti, De momento quo gravia nituntur deorsum und De secretione bilis in hepate
+},
+head={Aus und zu Spoleti, De momento und De secretione}]
+{\MakeUppercase{Aus und zu F.~Spoleti, De momento quo gravia nituntur deorsum und De secretione bilis in hepate}
+}
+\label{60458}
+\include{gesamttex/edit_VIII-4/LH_03_05_018.tex}
+\section[tocentry={Rezension zu F.~Spoleti, De momento quo gravia nituntur deorsum und De secretione bilis in hepate
+},
+head={Rezension zu Spoleti, De momento und De secretione bilis}]
+{\MakeUppercase{Rezension zu F.~Spoleti, De momento quo gravia nituntur deorsum und De secretione bilis in hepate}
+}
+\label{41200}
+\include{gesamttex/edit_VIII-4/LH_35_09_20_003-004.tex}
+
+\chapter[tocentry={Rezension zu G.\,F.\,Vanni, Exegeses physico-mathematicae
+\enskip \bracks{Ende Oktober 1686 \textendash\ April 1687}%
+},
+head={Rezension zu Vanni, Exegeses physico-mathematicae}]%
+{\MakeUppercase{Rezension zu G.\,F.\,Vanni, Exegeses physico-mathematicae}
+\newline \bracks{Ende Oktober 1686 \textendash\ April 1687}%
+}
+
+\label{41199}
+\include{gesamttex/edit_VIII-4/AE_1687_197-198.tex}
+
+
+
+
+
+\chapter[tocentry={Motus cubi in plano inclinato
+\enskip\bracks{8.\;Mai 1688 -- Mitte Mai 1690\;(?)}},
+head={Motus cubi in plano inclinato}]%
+{\MakeUppercase{Motus cubi in plano inclinato}
+\newline\bracks{8.\;Mai 1688 -- Mitte Mai 1690\;(?)}}
+\label{60118}
+\include{gesamttex/edit_VIII-4/LH_35_10_14_012.tex}
+
+
+
+
+
+\chapter[tocentry={Aus und zu P.\;de\;Fermat, Varia opera mathematica
+\enskip \bracks{Mitte April \textendash\ November 1689}},
+head={Aus und zu P.\;de\;Fermat, Varia opera mathematica}]%
+{\MakeUppercase{Aus und zu P.\;de\;Fermat, Varia opera mathematica}
+\newline \bracks{Mitte April \textendash\ November 1689}}%
+\label{58229}
+\include{gesamttex/edit_VIII-4/LH_35_14_02_022-023.tex}
+
+
+
+
+
+\chapter[tocentry={Centrum gravitatis relativum vel absolutum in curvis
+\enskip\bracks{%
+Mitte April -- November 1689%
+}},
+head={Centrum gravitatis in curvis}]%
+{\MakeUppercase{Centrum gravitatis relativum vel absolutum in curvis} %
+\newline\bracks{%
+Mitte April -- November 1689%
+}%
+}
+\label{58240}
+\include{gesamttex/edit_VIII-4/LH_35_14_02_045.tex}
+
+
+
+\chapter[tocentry={De pondere in plano inclinato, per brachium horizonti obliquum in stateram agente
+\enskip\bracks{%
+Mitte April -- November 1689%
+}},
+head={De pondere in plano inclinato}]%
+{\MakeUppercase{De pondere in plano inclinato, per brachium horizonti obliquum in stateram agente%
+}
+\newline\bracks{%
+Mitte April -- November 1689%
+}}
+\label{60197}
+\include{gesamttex/edit_VIII-4/LH_37_03_062.tex}
+
+
+
+\chapter[tocentry={De via centri gravitatis solidi generati invenienda
+\enskip \bracks{Sommer bis Herbst 1689\,(?)}},
+head={De via centri gravitatis solidi generati invenienda}]%
+{\MakeUppercase{De via centri gravitatis solidi generati invenienda}
+\newline \bracks{Sommer bis Herbst 1689\,(?)}}
+
+\label{58657}
+\label{58656-B}		%
+\include{gesamttex/edit_VIII-4/LH_35_06_23_003r.tex}
+
+
+
+
+\chapter[tocentry={Aus und zu V.~Giordani, De componendis gravium momentis dissertatio und Fundamentum doctrinae motus gravium
+\enskip \bracks{Mitte November 1689 \textendash\ März 1690}%
+},
+head={Aus und zu Giordani, De componendis momentis und Fundamentum}]%
+{\MakeUppercase{Aus und zu V.~Giordani, De componendis gravium momentis dissertatio und Fundamentum doctrinae motus gravium}
+\newline \bracks{Mitte November 1689 \textendash\ März 1690}%
+}
+
+\label{58253}
+\include{gesamttex/edit_VIII-4/LH_35_14_02_089.tex}
+
+
+
+\chapter[tocentry={Aus und zu P.~Varignon, Projet d'une nouvelle mechanique
+\enskip \bracks{Dezember 1689 \textendash\ 2.~Februar 1690}
+},
+head={Aus und zu Varignon, Projet}]%
+{\MakeUppercase{Aus und zu P.~Varignon, Projet d'une nouvelle mechanique}
+\newline \bracks{Dezember 1689 \textendash\ 2.~Februar 1690}
+}
+
+\label{60365}
+\include{gesamttex/edit_VIII-4/LH_37_05_217-218.tex}
+
+
+
+
+\chapter[tocentry={Vires quas sustentacula globi patiuntur 
+\enskip \bracks{Dezember 1689\,(?) -- Oktober 1690}},
+head={Vires quas sustentacula globi patiuntur}]
+{\MakeUppercase{Vires quas sustentacula globi patiuntur}
+\newline \bracks{Dezember 1689\,(?) -- Oktober 1690}}
+\label{60115}
+\include{gesamttex/edit_VIII-4/LH_35_10_14_008.tex}
+\chapter[tocentry={De inveniendo aequilibrio  globi descendentis in plano sine volutione
+\enskip \bracks{Dezember 1689\,(?) -- Oktober 1690}},
+head={De inveniendo aequilibrio  globi descendentis in plano sine volutione}]
+{\MakeUppercase{De inveniendo aequilibrio  globi descendentis in plano sine volutione}
+\newline \bracks{Dezember 1689\,(?) -- Oktober 1690}}
+\label{intro_globus-volutione}
+\include{gesamttex/edit_VIII-4/intro_globus-volutione.tex}
+\section[tocentry={Globus descendens in plano ita ut non possit volvi, vecte sustentatus},
+head={Globus descendens ita ut non possit volvi, vecte sustentatus}]
+{\MakeUppercase{Globus descendens in plano ita ut non possit volvi, vecte sustentatus}%
+}
+\label{60112}
+\include{gesamttex/edit_VIII-4/LH_35_10_14_005.tex}
+\section[tocentry={Globus descendens in plano sine volutione, chorda sustentatus},
+head={Globus descendens sine volutione, chorda sustentatus}]
+{\MakeUppercase{Globus descendens in plano sine volutione, chorda sustentatus}}
+\label{60220}
+\include{gesamttex/edit_VIII-4/LH_37_04_002.tex}
+
+
+
+\chapter[tocentry={Solutio problematis R.\,P.~Vannii S.\,J.
+\enskip \bracks{April \textendash\ Juni 1690}},
+head={Solutio problematis R.\,P.~Vannii S.\,J.}]
+{\MakeUppercase{Solutio problematis R.\,P.~Vannii S.\,J.}
+\newline \bracks{April \textendash\ Juni 1690}}
+\label{intro_vanni-solutio-problematis}
+\include{gesamttex/edit_VIII-4/intro_vanni-solutio-problematis.tex}
+\section[tocentry={Vis qua pondus unoquoque duorum planorum incumbit
+\enskip \bracks{April -- Mitte Mai 1690}},
+head={Vis qua pondus unoquoque duorum planorum incumbit}]
+{\MakeUppercase{Vis qua pondus unoquoque duorum planorum incumbit}
+\newline \bracks{April -- Mitte Mai 1690}}
+\label{60631}
+\include{gesamttex/edit_VIII-4/LH_42_05_042.tex}
+\section[tocentry={Solutio problematis R.\,P.~Vannii S.\,J.
+\enskip \bracks{April \textendash\ Juni 1690}%
+},
+head={Solutio problematis R.\,P.~Vannii S.\,J.}]
+{\MakeUppercase{Solutio problematis R.\,P.~Vannii S.\,J.}
+\newline \bracks{April \textendash\ Juni 1690}%
+}
+\label{41823}
+\include{gesamttex/edit_VIII-4/LH_35_10_13_009+010-011.tex}
+
+
+
+
+
+\chapter[tocentry={Si concursus nisuum sit extra centrum gravitatis
+\enskip \bracks{April \textendash\ Mai 1690\,(?)}%
+},
+head={Si concursus nisuum sit extra centrum gravitatis}]
+{\MakeUppercase{Si concursus nisuum sit extra centrum gravitatis}
+\newline \bracks{April \textendash\ Mai 1690\,(?)}%
+}
+
+\label{60314}
+\include{gesamttex/edit_VIII-4/LH_37_05_074.tex}
+
+
+
+
+\chapter[tocentry={De invenienda potentia sustentandi onus super planum volvens
+\enskip \bracks{30.\;April -- Mitte Mai 1690}},
+head={De invenienda potentia sustentandi onus super planum volvens}]
+{\MakeUppercase{De invenienda potentia sustentandi onus super planum volvens}
+\newline \bracks{30.\;April -- Mitte Mai 1690}}
+\label{60116}
+\include{gesamttex/edit_VIII-4/LH_35_10_14_009-010.tex}
+
+
+
+
+
+\chapter[tocentry={Sphaera gravis sustentata a duobus planis
+\enskip \bracks{Mitte Juni -- Dezember 1690\,(?)}},
+head={Sphaera gravis sustentata a duobus planis}]
+{\MakeUppercase{Sphaera gravis sustentata a duobus planis}
+\newline \bracks{Mitte Juni -- Dezember 1690\,(?)}}
+\label{60113}
+\include{gesamttex/edit_VIII-4/LH_35_10_14_006.tex}
+
+
+
+
+
+
+\chapter[tocentry={Perinde est ac si grave impellatur in normalibus ad plana
+\enskip \bracks{Mitte Juni -- Dezember 1690\,(?)}},
+head={Perinde est ac si grave impellatur in normalibus ad plana}]
+{\MakeUppercase{Perinde est ac si grave impellatur in normalibus ad plana}
+\newline \bracks{Mitte Juni -- Dezember 1690\,(?)}}
+\label{60114}
+\include{gesamttex/edit_VIII-4/LH_35_10_14_007.tex}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter[tocentry={De tensionibus funium et obliquis directionibus
+\enskip \bracks{Herbst 1690~(?)}},
+head={De tensionibus funium}]%
+{\MakeUppercase{De tensionibus funium et obliquis directionibus}
+\newline \bracks{Herbst 1690~(?)}}
+\label{58943}
+\include{gesamttex/edit_VIII-4/LH_35_11_14_015.tex}
+
+
+
+\chapter[tocentry={De globo brachiis sive planis mobilibus incumbente
+\enskip \bracks{ab Mai 1692}},
+head={De globo brachiis sive planis mobilibus incumbente}]
+{\MakeUppercase{De globo brachiis sive planis mobilibus incumbente}
+\newline \bracks{ab Mai 1692}}
+\label{60110}
+\include{gesamttex/edit_VIII-4/LH_35_10_14_003.tex}
+\chapter[tocentry={Quae sit proportio gravitatis ponderis ex pluribus chordis suspensi ad pondera sustinentia
+\enskip \bracks{Mai 1692 \textendash\ November 1694}},
+head={Gravitas ponderis ex pluribus chordis suspensi}]
+{\MakeUppercase{Quae sit proportio gravitatis ponderis ex pluribus chordis suspensi ad pondera sustinentia}
+\newline \bracks{Mai 1692 \textendash\ November 1694}}
+
+\label{60105}		%
+\include{gesamttex/edit_VIII-4/LH_35_10_13_006+013.tex}
+
+
+
+
+
+
+\chapter[tocentry={Kritisches zu G.\,F.~Vanni, Investigatio momentorum
+\enskip \bracks{Ende Februar \textendash\ Anfang März 1694}},
+head={Kritisches zu Vanni, Investigatio momentorum}]
+{\MakeUppercase{Kritisches zu G.\,F.~Vanni, Investigatio momentorum}
+\newline \bracks{Ende Februar \textendash\ Anfang März 1694}}
+\label{intro_vanni-investigatio}
+\include{gesamttex/edit_VIII-4/intro_vanni-investigatio.tex}
+\section[tocentry={Rezension zu G.\,F.~Vanni, Investigatio momentorum
+\enskip März 1694%
+},
+head={Rezension zu Vanni, Investigatio momentorum}]
+{\MakeUppercase{Rezension zu G.\,F.~Vanni, Investigatio momentorum}
+März 1694%
+}
+\label{61037}
+\include{gesamttex/edit_VIII-4/AE_1694_112-113.tex}
+\section[tocentry={Ex Relatione mea de novissimo libro P.\,Vanni de momentis gravium
+\enskip \bracks{Ende Februar \textendash\ Anfang März 1694}},
+head={Ex Relatione mea de novissimo libro P.\,Vanni}]
+{\MakeUppercase{Ex Relatione mea de novissimo libro P.\,Vanni de momentis gravium} 
+\newline \bracks{Ende Februar \textendash\ Anfang März 1694}}
+\label{41824}
+\include{gesamttex/edit_VIII-4/LH_35_10_14_002.tex}
+
+
+
+
+\chapter[tocentry={Theoremata duo de planis inclinatis adversus Vannium
+\enskip \bracks{1695\,(?) \textendash\ 1700\,(?)}},
+head={Theoremata duo de planis inclinatis adversus Vannium}]%
+{\MakeUppercase{Theoremata duo de planis inclinatis adversus Vannium}
+\newline \bracks{1695\,(?) \textendash\ 1700\,(?)}}
+\label{intro_theoremata-duo-vanni}
+\include{gesamttex/edit_VIII-4/intro_theoremata-duo-vanni.tex}
+\section[tocentry={Theorema de viribus urgendi regularum inclinatarum
+},
+head={Theorema de viribus urgendi regularum inclinatarum}]
+{\MakeUppercase{Theorema de viribus urgendi regularum inclinatarum}
+}
+\label{60030}
+\include{gesamttex/edit_VIII-4/LH_35_10_06_038.tex}
+\section[tocentry={Theoremata duo de planis inclinatis adversus Vannium},
+head={Theoremata duo de planis inclinatis adversus Vannium}]
+{\MakeUppercase{Theoremata duo de planis inclinatis adversus Vannium}}
+\label{60100}
+\include{gesamttex/edit_VIII-4/LH_35_10_13_001-002.tex}
+
+
+
+
+
+\chapter[tocentry={Demonstratio quod centrum gravitatis in quavis figura existit
+\enskip \bracks{November 1703\,(?) \textendash\ 1708\,(?)}
+},
+head={Demonstratio quod centrum gravitatis in quavis figura existit}]%
+{\MakeUppercase{Demonstratio quod centrum gravitatis in quavis figura existit}
+\newline \bracks{November 1703\,(?) \textendash\ 1708\,(?)}
+}
+
+\label{58942}
+\include{gesamttex/edit_VIII-4/LH_35_11_14_008.tex}
+
+
+
+
+\chapter[tocentry={Aus und zu G.~Saccheri, Neo-statica
+\enskip \bracks{Mitte Dezember 1712 \textendash\ Februar 1713}},
+head={Aus und zu Saccheri, Neo-statica}]
+{\MakeUppercase{Aus und zu G.~Saccheri, Neo-statica}
+\newline \bracks{Mitte Dezember 1712 \textendash\ Februar 1713}}
+\label{intro_saccheri}
+\include{gesamttex/edit_VIII-4/intro_saccheri.tex}
+\section[tocentry={Aus und zu G.~Saccheri, Neo-statica
+\enskip \bracks{Mitte Dezember 1712 \textendash\ Februar 1713}%
+},
+head={Aus und zu Saccheri, Neo-statica}]
+{\MakeUppercase{Aus und zu G.~Saccheri, Neo-statica}
+\newline \bracks{Mitte Dezember 1712 \textendash\ Februar 1713}%
+}
+\label{60123}
+\include{gesamttex/edit_VIII-4/LH_35_10_16_003-004.tex}
+\section[tocentry={De motuum compositione ac de ratione solicitationum apud Saccherium
+\enskip \bracks{Mitte Dezember 1712 \textendash\ Februar 1713}%
+},
+head={De motuum compositione ac de ratione solicitationum}]
+{\MakeUppercase{De motuum compositione ac de ratione solicitationum apud Saccherium}
+\newline \bracks{Mitte Dezember 1712 \textendash\ Februar 1713}%
+}
+\label{60124}
+\include{gesamttex/edit_VIII-4/LH_35_10_16_004.tex}
+\section[tocentry={De motuum compositione apud Saccherium ac de ratione solicitationum Neostatice considerata
+\enskip Februar 1713%
+},
+head={De ratione solicitationum Neostatice considerata}]
+{\MakeUppercase{De motuum compositione apud Saccherium ac de ratione solicitationum Neostatice considerata}
+\newline Februar 1713%
+}
+\label{60122}
+\include{gesamttex/edit_VIII-4/LH_35_10_16_001-002.tex}
+
+
+
+
+
+
+\chapter[tocentry={Linea catenae suspensae
+\enskip\bracks{%
+Mitte Mai -- Ende Juni 1690  oder  Ende 1712 -- September 1714%
+}}, %
+head={Linea catenae suspensae}]%
+{\MakeUppercase{Linea catenae suspensae}
+\newline\bracks{%
+Mitte Mai -- Ende Juni 1690  oder  Ende 1712 -- September 1714}}%
+\label{60128}
+\include{gesamttex/edit_VIII-4/LH_35_10_16_008.tex}
+
+
+
+
+
+
+
+
+
+
+
+
+\part{III.~STOSS} 
+
+
+
+
+\chapter[tocentry={Zeichnungen zu Stoßfällen im Billardspiel
+\enskip \bracks{ab 1677\,(?)}},
+head={Zeichnungen zu Stoßfällen im Billardspiel}]%
+{\MakeUppercase{Zeichnungen zu Stoßfällen im Billardspiel} 
+\newline \bracks{ab 1677\,(?)}}
+\label{60221-B}
+\include{gesamttex/edit_VIII-4/LH_37_04_003.tex}
+
+
+
+\chapter[tocentry={Quomodo potentia respectiva in concursu aestimetur
+\enskip\bracks{1680 \textendash\ 1683\,(?)}},
+head={Quomodo potentia respectiva aestimetur}]%
+{\MakeUppercase{Quomodo potentia respectiva in concursu aestimetur}
+\newline\bracks{1680 \textendash\ 1683\,(?)}}
+\label{60243}
+\include{gesamttex/edit_VIII-4/LH_37_04_087.tex}
+
+
+
+
+\chapter[tocentry={Notae in septem regulas motus Cartesii 
+\enskip \bracks{1685}},
+head={Notae in septem regulas motus Cartesii}]%
+{\MakeUppercase{Notae in septem regulas motus Cartesii}
+\newline \bracks{1685}}
+
+\label{60099}
+\include{gesamttex/edit_VIII-4/LH_35_10_12_038.tex}
+
+
+
+
+\chapter[tocentry={Vis respectiva in circulationem conversa
+\enskip\bracks{%
+ab Herbst 1688%
+}},
+head={Vis respectiva in circulationem conversa}]%
+{\MakeUppercase{Vis respectiva in circulationem conversa}
+\newline\bracks{%
+ab Herbst 1688%
+}}
+\label{60111}
+\include{gesamttex/edit_VIII-4/LH_35_10_14_004.tex}
+
+
+
+\chapter[tocentry={Calculus virium in incursu obliquo recto unius corporis in duo 
+\enskip \bracks{1686 \textendash\ 1690\,(?)}},
+head={Calculus virium in incursu obliquo recto unius corporis in duo}]%
+{\MakeUppercase{Calculus virium in incursu obliquo recto unius corporis\linebreak in duo}
+\newline \bracks{1686 \textendash\ 1690\,(?)}}
+\label{60048}
+\include{gesamttex/edit_VIII-4/LH_35_10_07_022.tex}
+
+
+
+\chapter[tocentry={Summa directionum servata
+\enskip\bracks{%
+Mitte April -- November 1689%
+}},
+head={Summa directionum servata}]%
+{\MakeUppercase{Summa directionum servata}
+\newline\bracks{%
+Mitte April -- November 1689%
+}}
+\label{58220}
+\include{gesamttex/edit_VIII-4/LH_35_14_02_006.tex}
+
+
+
+\chapter[tocentry={Potentia absoluta et conservativa in concursu
+\enskip\bracks{%
+Sommer -- November 1689%
+}},
+head={Potentia absoluta et conservativa in concursu}]%
+{\MakeUppercase{Potentia absoluta et conservativa in concursu}
+\newline\bracks{%
+Sommer -- November 1689%
+}}
+\label{58235}
+\include{gesamttex/edit_VIII-4/LH_35_14_02_040.tex}
+
+
+
+\chapter[tocentry={Regula de progressu centri gravitatis
+\enskip\bracks{Dezember 1689}},
+head={Regula de progressu centri gravitatis}]%
+{\MakeUppercase{Regula de progressu centri gravitatis}
+\newline\bracks{Dezember 1689}}
+\label{66097}
+\include{gesamttex/edit_VIII-4/LH_35_10_11_088.tex}
+
+
+
+\chapter[tocentry={De eccentrici impulsus effectu
+\enskip\bracks{%
+Dezember\;(?)} 1689 \textendash\ Sommer 1690%
+},
+head={De eccentrici impulsus effectu}]%
+{\MakeUppercase{De eccentrici impulsus effectu}
+\newline\bracks{%
+Dezember\;(?) 1689 \textendash\ Sommer 1690%
+}}
+\label{impulsuseccentricus}
+\include{gesamttex/edit_VIII-4/impulsusecc_intro.tex}
+
+
+\section[tocentry={Impulsus eccentrice directi effectum explicare
+\enskip\bracks{%
+Dezember\;(?) 1689 \textendash\ Sommer 1690%
+}},
+head={Impulsus eccentrice directi effectus}]%
+{\MakeUppercase{Impulsus eccentrice directi effectum explicare}
+\newline\bracks{%
+Dezember\;(?) 1689 \textendash\ Sommer 1690%
+}%
+}
+\label{60142+60297}
+\include{gesamttex/edit_VIII-4/LH_35_10_17_009+37_05_041.tex}
+
+
+\section[tocentry={Directio conatuum eccentrica
+\enskip\bracks{%
+Februar\;(?) \textendash\ Sommer 1690%
+}},
+head={Directio conatuum eccentrica}]%
+{\MakeUppercase{Directio conatuum eccentrica}
+\newline\bracks{%
+Februar\;(?) \textendash\ Sommer 1690%
+}}
+\label{60299}
+\include{gesamttex/edit_VIII-4/LH_37_05_043.tex}
+
+
+
+\chapter[tocentry={De impulsu eccentrico
+\enskip\bracks{%
+April \textendash\ Oktober 1690%
+}},
+head={De impulsu eccentrico}]%
+{\MakeUppercase{De impulsu eccentrico}
+\newline\bracks{%
+April \textendash\ Oktober 1690%
+}}
+\label{60300}
+\include{gesamttex/edit_VIII-4/LH_37_05_044.tex}
+
+
+
+\chapter[tocentry={Phorographica
+\enskip \bracks{Oktober 1690 \textendash\ 1697}},
+head={Phorographica}]%
+{\MakeUppercase{Phorographica}
+\newline \bracks{Oktober 1690 \textendash\ 1697}}
+
+\label{60356}
+\include{gesamttex/edit_VIII-4/LH_37_05_189.tex}
+
+
+
+
+
+
+\chapter[tocentry={Corpora diversa incurrentia in idem, idem efficere possunt
+\enskip\bracks{%
+Mitte Juni 1690 \textendash\ 1696\;(?)%
+}},
+head={Corpora diversa incurrentia idem efficere possunt}]%
+{\MakeUppercase{Corpora diversa incurrentia in idem, idem efficere possunt}
+\newline\bracks{%
+Mitte Juni 1690 \textendash\ 1696\;(?)}%
+}
+\label{41121}
+\include{gesamttex/edit_VIII-4/LH_35_09_07_022-023.tex}
+
+
+
+\chapter[tocentry={Casus concursuum distinguendi
+\enskip\bracks{%
+ab Frühjahr 1690 (?)%
+}}, %
+head={Casus concursuum distinguendi}]%
+{\MakeUppercase{Casus concursuum distinguendi}
+\newline\bracks{%
+ab Frühjahr 1690 (?)%
+}}%
+\label{58946}
+\include{gesamttex/edit_VIII-4/LH_35_11_14_031.tex}
+
+
+
+\chapter[tocentry={An ex solo principio conservandarum virium omnia in concursu duci possint 
+\enskip \bracks{Mitte September 1690 \textendash\ 1696}},
+head={An ex solo principio conservandarum virium omnia duci possint }]%
+{\MakeUppercase{An ex solo principio conservandarum virium omnia in concursu duci possint}
+\newline \bracks{Mitte September 1690 \textendash\ 1696}}
+\label{41780}
+\include{gesamttex/edit_VIII-4/LH_37_03_067.tex}	
+
+
+
+
+
+\chapter[tocentry={Concursus plurium globorum in plures
+\enskip \bracks{Mitte September 1690 \textendash\ 1696}},
+head={Concursus plurium globorum in plures}]%
+{\MakeUppercase{Concursus plurium globorum in plures}
+\newline \bracks{Mitte September 1690 \textendash\ 1696}}
+
+\label{42014}
+\include{gesamttex/edit_VIII-4/LH_35_08_30_040.tex}
+
+
+
+
+\chapter[tocentry={Methodus inveniendi vim respectivam in concursu
+\enskip\bracks{%
+Herbst 1690 (?)%
+}},
+head={Methodus inveniendi vim respectivam in concursu}]%
+{\MakeUppercase{Methodus inveniendi vim respectivam in concursu}
+\newline\bracks{%
+Herbst 1690 (?)%
+}}%
+\label{58949}
+\include{gesamttex/edit_VIII-4/LH_35_11_14_034.tex}
+
+
+
+
+\chapter[tocentry={Oportet ut semper eadem sit vis respectiva inter tria corpora
+\enskip \bracks{Ende September 1690\,(?)}},
+head={Vis respectiva inter tria corpora}]%
+{\MakeUppercase{Oportet ut semper eadem sit vis respectiva inter tria corpora}
+\newline \bracks{Ende September 1690\,(?)}}
+
+\label{53450}
+\include{gesamttex/edit_VIII-4/LH_37_04_168.tex}
+
+
+
+\chapter[tocentry={De tribus globis triangulatim concurrentibus, deque methodo per virium respectivarum combinationem utcunque 
+\enskip \bracks{Oktober 1690 \textendash\ November 1694\,(?)}},
+head={De tribus globis triangulatim concurrentibus}]%
+{\MakeUppercase{De tribus globis triangulatim concurrentibus, 
+deque methodo per virium respectivarum combinationem utcunque}
+\newline \bracks{Oktober 1690 \textendash\ November 1694\,(?)}}
+\label{60298}
+\include{gesamttex/edit_VIII-4/LH_37_05_042.tex}
+
+
+
+\chapter[tocentry={Dubium est an vis respectiva in concursu obliquo servetur
+\enskip \bracks{Oktober 1690 \textendash\ 1696\,(?)}},
+head={Dubium est an vis respectiva in concursu obliquo servetur}]%
+{\MakeUppercase{Dubium est an vis respectiva in concursu obliquo servetur}
+\newline \bracks{Oktober 1690 \textendash\ 1696\,(?)}}
+\label{58951}
+\include{gesamttex/edit_VIII-4/LH_35_11_14_036.tex}
+
+
+
+\chapter[tocentry={Schedae de impulsu eccentrico
+\enskip 31.\;Oktober (10.\;November) 1690},
+head={Schedae de impulsu eccentrico}]%
+{\MakeUppercase{Schedae de impulsu eccentrico}
+\newline 31.\;Oktober (10.\;November) 1690}
+\label{sdie_intro}
+\include{gesamttex/edit_VIII-4/sdie_intro.tex}
+
+
+\section[tocentry={De impulsu eccentrico scheda prima
+\enskip 31.\;Oktober (10.\;November) 1690},
+head={De impulsu eccentrico scheda prima}]%
+{\MakeUppercase{De impulsu eccentrico scheda prima}
+\newline 31.\;Oktober (10.\;November) 1690}
+\label{58940}
+\include{gesamttex/edit_VIII-4/LH_35_11_14_005-006.tex}
+
+
+\section[tocentry={De impulsu eccentrico scheda secunda
+\enskip 31.\;Oktober (10.\;November) 1690},
+head={De impulsu eccentrico scheda secunda}]%
+{\MakeUppercase{De impulsu eccentrico scheda secunda}
+\newline 31.\;Oktober (10.\;November) 1690}
+\label{58939}
+\include{gesamttex/edit_VIII-4/LH_35_11_14_003-004.tex}
+
+
+
+\chapter[tocentry={Compositio motuum in concursu plurimo
+\enskip\bracks{%
+10.\;November\;(?) 1690 \textendash\ September 1691\;(?)%
+}},
+head={Compositio motuum in concursu plurimo}]%
+{\MakeUppercase{Compositio motuum in concursu plurimo}
+\newline\bracks{%
+10.\;November\;(?) 1690 \textendash\ September 1691\;(?)%
+}}
+\label{60295}
+\include{gesamttex/edit_VIII-4/LH_37_05_039.tex}
+
+
+
+\chapter[tocentry={Arcanum eccentrici concursus detectum
+\enskip\bracks{10.\;November\;(?) 1690 \textendash\ September 1691~(?)}},
+head={Arcanum eccentrici concursus detectum}]%
+{\MakeUppercase{Arcanum eccentrici concursus detectum}
+\newline\bracks{10.\;November\;(?) 1690 \textendash\ September 1691~(?)}}
+\label{60339}
+\include{gesamttex/edit_VIII-4/LH_37_05_124-125.tex}
+
+
+
+\chapter[tocentry={De corporum gyrantium concursu deque concursus obliquitate
+\enskip\bracks{%
+ab 10.\;November\;(?) 1690%
+}},
+head={De corporum gyrantium concursu deque concursus obliquitate}]%
+{\MakeUppercase{De corporum gyrantium concursu deque concursus obliquitate}
+\newline\bracks{%
+ab 10.\;November\;(?) 1690%
+}}%
+\label{58950}
+\include{gesamttex/edit_VIII-4/LH_35_11_14_035.tex}
+
+
+
+
+
+
+\chapter[tocentry={Theorema de incursu duorum corporum in unum, speciatim recto
+\enskip \bracks{Januar 1691 \textendash\ 7.~Februar 1696}},
+head={Theorema de incursu duorum corporum in unum, speciatim recto}]%
+{\MakeUppercase{Theorema de incursu duorum corporum in unum, speciatim recto}
+\newline \bracks{Januar 1691 \textendash\ 7.~Februar 1696}}
+\label{58300}
+\include{gesamttex/edit_VIII-4/LH_35_13_03_242.tex}
+
+
+
+\chapter[tocentry={Potentia ictu translata in alia corpora
+\enskip\bracks{%
+Januar 1691 \textendash\ März 1698\;(?)%
+}},
+head={Potentia ictu translata in alia corpora}]%
+{\MakeUppercase{Potentia ictu translata in alia corpora}
+\newline\bracks{%
+Januar 1691 \textendash\ März 1698\;(?)%
+}}
+\label{60359}
+\include{gesamttex/edit_VIII-4/LH_37_05_196-197.tex}
+
+
+
+\chapter[tocentry={Concursus eccentrici casus simplicissimus
+\enskip September 1691},
+head={Concursus eccentrici casus simplicissimus}]%
+{\MakeUppercase{Concursus eccentrici casus simplicissimus}
+\newline September 1691} %
+\label{cecs_intro}
+\include{gesamttex/edit_VIII-4/cecs_intro.tex}
+
+\section[tocentry={Casus eccentrici concursus simplicissimus. Scheda prima
+\enskip September 1691},
+head={Casus eccentrici concursus simplicissimus. Scheda I%
+}]%
+{\MakeUppercase{Casus eccentrici concursus simplicissimus. Scheda prima}
+\newline September 1691}
+\label{60106}
+\include{gesamttex/edit_VIII-4/LH_35_10_13_007.tex}
+
+\section[tocentry={Concursus eccentrici casus simplicissimus. Scheda secunda
+\enskip September 1691},
+head={Concursus eccentrici casus simplicissimus. Scheda II%
+}]%
+{\MakeUppercase{Concursus eccentrici casus simplicissimus. Scheda secunda}
+\newline September 1691}
+\label{60107}
+\include{gesamttex/edit_VIII-4/LH_35_10_13_008.tex}
+
+
+
+\chapter[tocentry={Casus concursuum methodo solvendi
+\enskip\bracks{%
+ab 10.\;November 1690~(?)%
+}},
+head={Casus concursuum methodo solvendi}]%
+{\MakeUppercase{Casus concursuum methodo solvendi}
+\newline\bracks{%
+ab 10.\;November 1690~(?)%
+}}%
+\label{58947}
+\include{gesamttex/edit_VIII-4/LH_35_11_14_032.tex}
+
+
+
+
+\chapter[tocentry={Ex conservatione potentiae, tam absolutae quam respectivae, possunt derivari phaenomena concursus trium corporum
+\enskip \bracks{8.~Mai 1693 \textendash\ 1696}%
+},
+head={Phaenomena concursus trium corporum}]%
+{\MakeUppercase{Ex conservatione potentiae, tam absolutae quam respectivae, possunt derivari phaenomena concursus\linebreak trium corporum}
+\newline \bracks{8.~Mai 1693 \textendash\ 1696}%
+}
+\label{intro_tam-abs-quam-resp}
+\include{gesamttex/edit_VIII-4/intro_tam-abs-quam-resp.tex}
+\section[tocentry={Ex conservatione potentiae, tam absolutae quam respectivae, possunt derivari phaenomena concursus trium corporum
+},
+head={Phaenomena concursus trium corporum}]%
+{\MakeUppercase{Ex conservatione potentiae, tam absolutae quam respectivae, possunt derivari phaenomena concursus\linebreak trium corporum} 
+}
+\label{58293}
+\include{gesamttex/edit_VIII-4/LH_35_13_03_220-221.tex}
+\section[tocentry={Hilfsrechnungen zum schiefen Mehrkörperstoß},
+head={Hilfsrechnungen zum schiefen Mehrkörperstoß}]
+{\MakeUppercase{Hilfsrechnungen zum schiefen Mehrkörperstoß}}
+\label{39763}
+\include{gesamttex/edit_VIII-4/LH_04_01_04d_02_004v.tex}
+
+
+
+
+
+\chapter[tocentry={De servanda vi, quantitate progressionis ac celeritate
+\enskip \bracks{1696\,(?) \textendash\ 1700\,(?)}},
+head={De servanda vi, quantitate progressionis ac celeritate}]%
+{\MakeUppercase{De servanda vi, quantitate progressionis ac celeritate}
+\newline \bracks{1696\,(?) \textendash\ 1700\,(?)}}
+\label{intro_serv-quant-progressionis}
+\include{gesamttex/edit_VIII-4/intro_servanda-quant-progressionis.tex}
+\section[tocentry={De progressionibus seu viribus impeditivis in ictu},
+head={De progressionibus seu viribus impeditivis in ictu}]%
+{\MakeUppercase{De progressionibus seu viribus impeditivis in ictu}}
+\label{60308}
+\include{gesamttex/edit_VIII-4/LH_37_05_063.tex}
+\section[tocentry={Accessio calculi dynamici},
+head={Accessio calculi dynamici}]%
+{\MakeUppercase{Accessio calculi dynamici}}
+\label{60307}
+\include{gesamttex/edit_VIII-4/LH_37_05_062.tex}
+
+
+
+\chapter[tocentry={Ope principii celeritatum molibus reciprocarum ac hypotheseos penetrationis cuncta in concursu duorum possunt derivari
+\enskip \bracks{August 1697\,(?) \textendash\ April 1703\,(?)}},
+head={Principia celeritatum molibus reciprocarum ac penetrationis}]%
+{\MakeUppercase{Ope principii celeritatum molibus reciprocarum ac hypotheseos penetrationis cuncta in concursu duorum possunt derivari}
+\newline \bracks{August 1697\,(?) \textendash\ April 1703\,(?)}}
+
+\label{58297}
+\include{gesamttex/edit_VIII-4/LH_35_13_03_237-238.tex}
+
+
+
+\chapter[tocentry={Id corpus alteri ingruit, in quo est ratio appropinquationis 
+\enskip \bracks{Mitte November 1697 \textendash\ 1698}},
+head={Id corpus alteri ingruit, in quo est ratio appropinquationis}]%
+{\MakeUppercase{Id corpus alteri ingruit, in quo est ratio appropinquationis}
+\newline \bracks{Mitte November 1697 \textendash\ 1698}}
+\label{60360}
+\include{gesamttex/edit_VIII-4/LH_37_05_198.tex}   
+
+
+
+\chapter[tocentry={De celeritatibus quae in corporibus duobus concurrentibus manent residuae 
+\enskip \bracks{2.\ Hälfte Oktober 1698}},
+head={De celeritatibus quae \bracks{...} manent residuae}]%
+{\MakeUppercase{De celeritatibus quae in corporibus duobus concurrentibus manent residuae}
+\newline \bracks{2.\ Hälfte Oktober 1698}}
+\label{60358}
+\include{gesamttex/edit_VIII-4/LH_37_05_195.tex}
+
+
+
+\chapter[tocentry={De celeritatibus in concursu amissis, recuperatis ac recuperandis 
+\enskip \bracks{2.\ Hälfte Oktober 1698\,(?)}}, %
+head={De celeritatibus in concursu amissis, recuperatis ac recuperandis}]%
+{\MakeUppercase{De celeritatibus in concursu amissis, recuperatis ac recuperandis} 
+\newline \bracks{2.\ Hälfte Oktober 1698\,(?)}}
+\label{60362}    
+\include{gesamttex/edit_VIII-4/LH_37_05_200.tex}
+
+
+
+
+\chapter[tocentry={Demonstratio duarum Hypothesium ad reddendas rationes legum motus et concursus
+\enskip \bracks{Juni 1703 \textendash\ Ende 1714\,(?)}%
+},
+head={Demonstratio duarum Hypothesium}]%
+{\MakeUppercase{Demonstratio duarum Hypothesium ad reddendas rationes legum motus et concursus}
+\newline \bracks{Juni 1703 \textendash\ Ende 1714\,(?)}%
+}
+
+\label{60354}
+\include{gesamttex/edit_VIII-4/LH_37_05_183-184.tex}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\addtocontents{toc}{\protect\vspace*{\fill}\protect\pagebreak}
+\part{IV.~NACHTRÄGE}
+
+
+
+
+
+
+\part[tocentry={IV.A.~OPTICA (Zu Bd VIII, 1)},
+head={IV.A.~OPTICA}]%
+{IV.A.~OPTICA \textls[0]{(Zu Bd VIII, 1)}}	%
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0pt}}        %
+
+\chapter[tocentry={Qui fit quod charta opaca superfuso oleo fit perspicua
+\enskip\bracks{Herbst 1670 \textendash\ Frühjahr 1672\,(?)}},
+head={Qui fit quod charta opaca superfuso oleo fit perspicua}]%
+{\MakeUppercase{Qui fit quod charta opaca superfuso oleo fit perspicua}
+\newline\bracks{Herbst 1670 \textendash\ Frühjahr 1672\,(?)}}
+\label{41385}
+\include{gesamttex/edit_VIII-4/LH_04_03_05e_017.tex}
+
+
+
+
+
+\part[tocentry={IV.B.~PNEUMATICA (Zu Bd VIII, 1)},
+head={IV.B.~PNEUMATICA}]%
+{IV.B.~PNEUMATICA \textls[0]{(Zu Bd VIII, 1)}}	%
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0pt}}        %
+
+
+
+\chapter[tocentry={Kapillarität und Perpetuum mobile
+\enskip\bracks{Oktober 1674 -- September 1676~(?)}},
+head={Kapillarität und Perpetuum mobile}]%
+{\MakeUppercase{Kapillarität und Perpetuum mobile}
+\newline\bracks{Oktober 1674 -- September 1676~(?)}}
+\label{56216}
+\include{gesamttex/edit_VIII-4/Gerland_1906_009-010.tex}
+
+
+
+
+\chapter[tocentry={Calculus elasticus et similes
+\enskip%
+\bracks{%
+Dezember 1674 -- 1675~(?)%
+}%
+},
+head={Calculus elasticus et similes}]%
+{\MakeUppercase{Calculus elasticus et similes}
+\newline%
+\bracks{%
+Dezember 1674 -- 1675~(?)%
+}%
+}
+\label{Cc2_847-1}
+\include{gesamttex/edit_VIII-4/LH_35_08_30_121-1.tex}
+
+
+
+
+
+\part[tocentry={IV.C.~TECHNICA (Zu Bd VIII, 1)},
+head={IV.C.~TECHNICA}]%
+{IV.C.~TECHNICA \textls[0]{(Zu Bd VIII, 1)}}	%
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0pt}}        %
+
+
+\chapter[tocentry={Rechnungen und Zeichnungen zu verschiedenen Gegenständen
+\enskip\bracks{Februar -- 25. April 1676}},
+head={Rechnungen und Zeichnungen zu verschiedenen Gegenständen}]%
+{\MakeUppercase{Rechnungen und Zeichnungen zu verschiedenen Gegenständen}
+\newline\bracks{Februar -- 25. April 1676}}
+\label{Cc2_1381}
+\include{gesamttex/edit_VIII-4/LH_04_03_09b_010.tex}
+
+
+
+
+
+\part[tocentry={IV.D.~MECHANICA -- SPEZIELLE PROBLEME (Zu Bd VIII, 2)},
+head={IV.D.~MECHANICA -- SPEZIELLE PROBLEME}]%
+{IV.D.~MECHANICA -- SPEZIELLE PROBLEME \textls[0]{(Zu Bd VIII, 2)}}	%
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0pt}}        %
+
+
+
+\chapter[tocentry={De curvis inveniendis ope vectium conjugatorum
+\enskip \bracks{Dezember 1674 -- 1675\,(?)}},
+head={De curvis inveniendis ope vectium conjugatorum}]%
+{\MakeUppercase{De curvis inveniendis ope vectium conjugatorum}
+\newline \bracks{Dezember 1674 -- 1675\,(?)}}
+\label{Cc2_847-2}
+\include{gesamttex/edit_VIII-4/LH_35_08_30_121.tex}
+
+
+
+
+
+
+\part[tocentry={IV.E.~STOSS (Zu Bd VIII, 2)},
+head={IV.E.~STOSS}]%
+{IV.E.~STOSS \textls[0]{(Zu Bd VIII, 2)}}	%
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0pt}}        %
+
+
+\chapter[tocentry={Ictus e resistentia motui fortior factus
+\enskip\bracks{1673 -- 1674~(?)}}, %
+head={Ictus e resistentia motui fortior factus}]%
+{\MakeUppercase{Ictus e resistentia motui fortior factus}
+\newline\bracks{1673 -- 1674~(?)}} %
+\label{Cc2-0481}
+\include{gesamttex/edit_VIII-4/LH_37_04_033.tex}
+
+
+
+
+
+
+\part[tocentry={IV.F.~MEDICA (Zu Bd VIII, 2)},
+head={IV.F.~MEDICA}]%
+{IV.F.~MEDICA \textls[0]{(Zu Bd VIII, 2)}}	%
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0pt}}        %
+
+
+\chapter[tocentry={Nova et utilis designatio scribendi calendarii
+\enskip\bracks{Frühjahr 1670\;(?) -- Anfang 1672\;(?)}},
+head={Nova et utilis designatio scribendi calendarii}]%
+{\MakeUppercase{Nova et utilis designatio scribendi calendarii}
+\newline\bracks{Frühjahr 1670\;(?) -- Anfang 1672\;(?)}}
+\label{60646}
+\include{gesamttex/edit_VIII-4/LH_01_03_08d_006.tex}
+
+
+
+
+
+
+
+
+
+
+
+
+\backmatter
+
+
+\part{VERZEICHNISSE}
+
+
+\indexprologue[\vspace{4ex}]%
+{\small\noindent
+Kaiser werden unter dem Stichwort Kaiser mit nachfolgendem Namen, 
+Päpste unter dem Stichwort Papst mit nachfolgendem Namen aufgeführt. 
+Andere Regenten werden unter dem Namen des von ihnen regierten Staates gelistet. 
+Bei diesen Personengruppen sind die Jahreszahlen Regierungszeiten, bei allen anderen Lebensdaten. 
+Bei Autoren ist zusätzlich das Schriftenverzeichnis heranzuziehen. 
+Es wird nach Seiten zitiert. 
+Kursive Seitenzahlen verweisen auf den Apparat-Teil,
+ein Sternchen auf Leibnizens Zusätze.}		%
+\printindex[index-Namen]
+
+
+
+\chapter{\uppercase{Schriften}}			%
+\begingroup		%
+\setlength{\columnsep}{12pt}		
+\setlength{\columnseprule}{0.4pt}
+\raggedcolumns			%
+\setcounter{unbalance}{50}	%
+\normalem				%
+\begin{multicols}{2}[{\footnotesize\noindent
+Das Schriftenverzeichnis enthält die von Leibniz erwähnte und die in den Erläuterungen benutzte Literatur.
+Autorennamen sind in alphabetischer Reihenfolge aufgeführt, ebenso Werktitel andere Autoren.
+Leibnizens Schriften werden wie folgt gruppiert:
+Editionen; veröffentlichte Bücher; Aufsätze; unveröffentlichte, kritisch edierte Schriften; Briefe; verschollene Handschriften.
+Querverweise innerhalb des Schriftenverzeichnisses erfolgen nach dem Format \bracks{SV\,123}.
+Die kursiv gesetzten Seitenzahlen geben die Stellen im Band an, an denen die Schriften zitiert werden.
+\vspace{\baselineskip}}]
+\printbibliography[keyword=ante-Leibniz,heading=none]
+\printbibliography[keyword=Leibniz-Editionen,heading=none,prenote=Leibniz-Editionen]
+\printbibliography[keyword=Leibniz-Buecher,heading=none,prenote=Leibniz-Buecher]
+\printbibliography[keyword=Leibniz-Aufsaetze,heading=none,prenote=Leibniz-Aufsaetze]
+\printbibliography[keyword=Leibniz-Stuecke,heading=none,prenote=Leibniz-Stuecke]
+\printbibliography[keyword=Leibniz-Briefe,heading=none,prenote=Leibniz-Briefe]
+\printbibliography[keyword=Leibniz-Verschollen,heading=none,prenote=Leibniz-Verschollen]
+\printbibliography[keyword=post-Leibniz,heading=none,prenote=post-Leibniz]
+\end{multicols}
+\endgroup
+
+
+
+\indexprologue[\vspace{4ex}]%
+{\small\noindent
+Einträge in dieses Verzeichnis erfolgen in der jeweils von Leibniz verwendeten Sprache. 
+Die Reihenfolge der Einträge ist rein alphabetisch bestimmt, 
+eine systematische Gliederung findet nicht statt. 
+Es wird nach Seiten zitiert.
+Kursive Seitenzahlen verweisen auf den Apparat-Teil,
+ein Sternchen auf Leibnizens Zusätze.}		%
+\printindex[index-Sachen]
+
+
+
+\indexprologue[\vspace{4ex}]%
+{\small\noindent
+Dieses Verzeichnis listet alle genannten Ortsnamen in ihrer deutschen Version auf. 
+Es wird nach Seiten zitiert.
+Kursive Seitenzahlen verweisen auf den Apparat-Teil,
+ein Sternchen auf Leibnizens Zusätze.}		%
+\printindex[index-Orte]
+
+
+
+\chapter{\uppercase{Fundstellen}}
+\input{gesamttex/VIII,4_Fundstellen}
+
+
+
+\chapter{\uppercase{Konkordanzen}}
+\input{gesamttex/VIII,4_Konkordanzen}
+
+
+
+\chapter{\uppercase{Siglen, Abkürzungen, Zeichen}}
+\input{gesamttex/VIII,4_Siglen}
+
+
+
+\chapbackmatter{Berichtigungen}{BERICHTIGUNGEN UND ERGÄNZUNGEN}
+\input{gesamttex/VIII,4_Berichtigungen}
+
+
+
+
+
+\end{document}
